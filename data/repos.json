@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T13:21:34.568271+00:00",
+  "updated_at": "2026-09-17T14:36:58.754335+00:00",
   "repositories": [
     {
       "id": 1369254248,
@@ -14,10 +14,10 @@
       "created_at": "2026-09-14T04:02:58Z",
       "pushed_at": "2026-09-16T03:53:04Z",
       "category": "Core Utilities",
-      "stars": 2489,
-      "stars_24h": 87,
-      "v24": 87,
-      "trending_score": 9.889,
+      "stars": 2572,
+      "stars_24h": 170,
+      "v24": 170,
+      "trending_score": 10.0293,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -38,6 +38,10 @@
         {
           "ts": 1789651294,
           "stars": 2489
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2572
         }
       ],
       "image_url": "https://github.com/user-attachments/assets/be42d0ff-9cc4-452d-8b36-d5c2a5b11d35",
@@ -61,14 +65,14 @@
         "react",
         "vibe-coding"
       ],
-      "forks": 754,
+      "forks": 756,
       "created_at": "2026-09-02T04:36:34Z",
       "pushed_at": "2026-09-16T10:57:11Z",
       "category": "Core Utilities",
-      "stars": 7267,
-      "stars_24h": 9,
-      "v24": 9,
-      "trending_score": 4.4669,
+      "stars": 7275,
+      "stars_24h": 17,
+      "v24": 17,
+      "trending_score": 4.4529,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -89,6 +93,10 @@
         {
           "ts": 1789651294,
           "stars": 7267
+        },
+        {
+          "ts": 1789655818,
+          "stars": 7275
         }
       ],
       "image_url": "https://raw.githubusercontent.com/lnkiai/m3e-canvas/main/docs/story.gif",
@@ -107,10 +115,10 @@
       "created_at": "2026-09-07T16:16:48Z",
       "pushed_at": "2026-09-17T04:30:24Z",
       "category": "Core Utilities",
-      "stars": 3233,
-      "stars_24h": 13,
-      "v24": 13,
-      "trending_score": 3.439,
+      "stars": 3243,
+      "stars_24h": 23,
+      "v24": 23,
+      "trending_score": 3.4271,
       "hardware_req": "Moderate (8\u201316GB VRAM)",
       "is_local_first": false,
       "is_cuda_ready": true,
@@ -131,6 +139,10 @@
         {
           "ts": 1789651294,
           "stars": 3233
+        },
+        {
+          "ts": 1789655818,
+          "stars": 3243
         }
       ],
       "image_url": null,
@@ -145,14 +157,14 @@
       "language": "HTML",
       "license": "Unlicense",
       "topics": [],
-      "forks": 243,
+      "forks": 244,
       "created_at": "2026-09-07T01:53:36Z",
       "pushed_at": "2026-09-11T05:26:13Z",
       "category": "Core Utilities",
-      "stars": 2930,
-      "stars_24h": 65,
-      "v24": 65,
-      "trending_score": 2.8971,
+      "stars": 2992,
+      "stars_24h": 127,
+      "v24": 127,
+      "trending_score": 2.9402,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -173,6 +185,10 @@
         {
           "ts": 1789651294,
           "stars": 2930
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2992
         }
       ],
       "image_url": "https://raw.githubusercontent.com/eternity4719/HowToLiveBetter/main/og.png",
@@ -187,14 +203,14 @@
       "language": "TypeScript",
       "license": "MIT",
       "topics": [],
-      "forks": 865,
+      "forks": 866,
       "created_at": "2026-09-05T00:24:43Z",
       "pushed_at": "2026-09-06T23:35:06Z",
       "category": "Core Utilities",
-      "stars": 3594,
-      "stars_24h": 0,
-      "v24": 0,
-      "trending_score": 2.8436,
+      "stars": 3595,
+      "stars_24h": 1,
+      "v24": 1,
+      "trending_score": 2.8297,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -215,6 +231,10 @@
         {
           "ts": 1789651294,
           "stars": 3594
+        },
+        {
+          "ts": 1789655818,
+          "stars": 3595
         }
       ],
       "image_url": null,
@@ -229,14 +249,14 @@
       "language": "JavaScript",
       "license": "MIT",
       "topics": [],
-      "forks": 296,
+      "forks": 297,
       "created_at": "2026-08-29T23:51:32Z",
       "pushed_at": "2026-09-13T02:02:21Z",
       "category": "Developer Tooling & CLI",
-      "stars": 5492,
-      "stars_24h": 19,
-      "v24": 19,
-      "trending_score": 2.6683,
+      "stars": 5509,
+      "stars_24h": 36,
+      "v24": 36,
+      "trending_score": 2.6672,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -257,6 +277,10 @@
         {
           "ts": 1789651294,
           "stars": 5492
+        },
+        {
+          "ts": 1789655818,
+          "stars": 5509
         }
       ],
       "image_url": "https://cdn.buymeacoffee.com/buttons/v2/lato-yellow.png",
@@ -271,14 +295,14 @@
       "language": "Python",
       "license": "NOASSERTION",
       "topics": [],
-      "forks": 647,
+      "forks": 646,
       "created_at": "2026-08-27T14:20:58Z",
       "pushed_at": "2026-09-17T00:14:20Z",
       "category": "Core Utilities",
-      "stars": 5722,
+      "stars": 5717,
       "stars_24h": 0,
       "v24": 0,
-      "trending_score": 2.3901,
+      "trending_score": 2.3806,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -299,52 +323,14 @@
         {
           "ts": 1789651294,
           "stars": 5722
+        },
+        {
+          "ts": 1789655818,
+          "stars": 5717
         }
       ],
       "image_url": "https://raw.githubusercontent.com/sapientinc/PRAXIST/main/docs/assets/brand/praxist-banner.svg",
       "quick_run": "git clone https://github.com/sapientinc/PRAXIST.git"
-    },
-    {
-      "id": 1361260630,
-      "name": "NavierStokesAndEuler",
-      "full_name": "openai/NavierStokesAndEuler",
-      "url": "https://github.com/openai/NavierStokesAndEuler",
-      "description": "Lean certificates accompanying Navier-Stokes and Euler results",
-      "language": "Lean",
-      "license": "Apache-2.0",
-      "topics": [],
-      "forks": 200,
-      "created_at": "2026-09-08T10:53:38Z",
-      "pushed_at": "2026-09-10T15:14:13Z",
-      "category": "Core Utilities",
-      "stars": 1933,
-      "stars_24h": 1,
-      "v24": 1,
-      "trending_score": 2.2754,
-      "hardware_req": "CPU / Minimal RAM",
-      "is_local_first": false,
-      "is_cuda_ready": false,
-      "authenticity_score": 99,
-      "star_history": [
-        {
-          "ts": 1789646427,
-          "stars": 1932
-        },
-        {
-          "ts": 1789647750,
-          "stars": 1933
-        },
-        {
-          "ts": 1789648014,
-          "stars": 1933
-        },
-        {
-          "ts": 1789651294,
-          "stars": 1933
-        }
-      ],
-      "image_url": null,
-      "quick_run": "git clone https://github.com/openai/NavierStokesAndEuler.git"
     },
     {
       "id": 1349601607,
@@ -366,10 +352,10 @@
       "created_at": "2026-08-28T12:57:24Z",
       "pushed_at": "2026-09-13T03:22:46Z",
       "category": "Autonomous Agents",
-      "stars": 5110,
-      "stars_24h": 17,
-      "v24": 17,
-      "trending_score": 2.2603,
+      "stars": 5135,
+      "stars_24h": 42,
+      "v24": 42,
+      "trending_score": 2.2639,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -390,10 +376,60 @@
         {
           "ts": 1789651294,
           "stars": 5110
+        },
+        {
+          "ts": 1789655818,
+          "stars": 5135
         }
       ],
       "image_url": null,
       "quick_run": "git clone https://github.com/XiaoDuoYa/codex-with-chatgpt.git"
+    },
+    {
+      "id": 1361260630,
+      "name": "NavierStokesAndEuler",
+      "full_name": "openai/NavierStokesAndEuler",
+      "url": "https://github.com/openai/NavierStokesAndEuler",
+      "description": "Lean certificates accompanying Navier-Stokes and Euler results",
+      "language": "Lean",
+      "license": "Apache-2.0",
+      "topics": [],
+      "forks": 200,
+      "created_at": "2026-09-08T10:53:38Z",
+      "pushed_at": "2026-09-10T15:14:13Z",
+      "category": "Core Utilities",
+      "stars": 1933,
+      "stars_24h": 1,
+      "v24": 1,
+      "trending_score": 2.2593,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1932
+        },
+        {
+          "ts": 1789647750,
+          "stars": 1933
+        },
+        {
+          "ts": 1789648014,
+          "stars": 1933
+        },
+        {
+          "ts": 1789651294,
+          "stars": 1933
+        },
+        {
+          "ts": 1789655818,
+          "stars": 1933
+        }
+      ],
+      "image_url": null,
+      "quick_run": "git clone https://github.com/openai/NavierStokesAndEuler.git"
     },
     {
       "id": 1361439328,
@@ -404,14 +440,14 @@
       "language": "Python",
       "license": "Apache-2.0",
       "topics": [],
-      "forks": 156,
+      "forks": 157,
       "created_at": "2026-09-08T13:41:47Z",
       "pushed_at": "2026-09-17T04:29:50Z",
       "category": "Core Utilities",
-      "stars": 1882,
-      "stars_24h": 9,
-      "v24": 9,
-      "trending_score": 2.2511,
+      "stars": 1886,
+      "stars_24h": 13,
+      "v24": 13,
+      "trending_score": 2.2397,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -432,6 +468,10 @@
         {
           "ts": 1789651294,
           "stars": 1882
+        },
+        {
+          "ts": 1789655818,
+          "stars": 1886
         }
       ],
       "image_url": "https://raw.githubusercontent.com/Edge0-AI/Edge0/main/assets/20260908-223115.jpg",
@@ -457,12 +497,12 @@
       ],
       "forks": 251,
       "created_at": "2026-09-08T17:19:54Z",
-      "pushed_at": "2026-09-17T12:02:27Z",
+      "pushed_at": "2026-09-17T13:46:14Z",
       "category": "Autonomous Agents",
-      "stars": 1555,
-      "stars_24h": 5,
-      "v24": 5,
-      "trending_score": 1.8995,
+      "stars": 1560,
+      "stars_24h": 10,
+      "v24": 10,
+      "trending_score": 1.8917,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -483,6 +523,10 @@
         {
           "ts": 1789651294,
           "stars": 1555
+        },
+        {
+          "ts": 1789655818,
+          "stars": 1560
         }
       ],
       "image_url": null,
@@ -497,14 +541,14 @@
       "language": "Python",
       "license": "AGPL-3.0",
       "topics": [],
-      "forks": 2683,
+      "forks": 2687,
       "created_at": "2026-09-04T15:00:53Z",
       "pushed_at": "2026-09-11T18:44:51Z",
       "category": "Developer Tooling & CLI",
-      "stars": 2391,
-      "stars_24h": 2,
-      "v24": 2,
-      "trending_score": 1.8209,
+      "stars": 2394,
+      "stars_24h": 5,
+      "v24": 5,
+      "trending_score": 1.8141,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": true,
       "is_cuda_ready": false,
@@ -525,6 +569,10 @@
         {
           "ts": 1789651294,
           "stars": 2391
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2394
         }
       ],
       "image_url": null,
@@ -539,14 +587,14 @@
       "language": "HTML",
       "license": "MIT",
       "topics": [],
-      "forks": 268,
+      "forks": 270,
       "created_at": "2026-09-05T21:57:22Z",
-      "pushed_at": "2026-09-17T13:10:21Z",
+      "pushed_at": "2026-09-17T14:15:56Z",
       "category": "Core Utilities",
-      "stars": 2078,
-      "stars_24h": 4,
-      "v24": 4,
-      "trending_score": 1.803,
+      "stars": 2083,
+      "stars_24h": 9,
+      "v24": 9,
+      "trending_score": 1.7972,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -567,6 +615,10 @@
         {
           "ts": 1789651294,
           "stars": 2078
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2083
         }
       ],
       "image_url": "https://raw.githubusercontent.com/yang0/handraw-style/master/images/A_001-016.png",
@@ -594,10 +646,10 @@
       "created_at": "2026-08-27T12:46:32Z",
       "pushed_at": "2026-09-17T08:47:27Z",
       "category": "Systems & Infrastructure",
-      "stars": 4316,
-      "stars_24h": 3,
-      "v24": 3,
-      "trending_score": 1.7958,
+      "stars": 4321,
+      "stars_24h": 8,
+      "v24": 8,
+      "trending_score": 1.7924,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": true,
       "is_cuda_ready": false,
@@ -618,6 +670,10 @@
         {
           "ts": 1789651294,
           "stars": 4316
+        },
+        {
+          "ts": 1789655818,
+          "stars": 4321
         }
       ],
       "image_url": "https://raw.githubusercontent.com/crmne/spotifast/main/docs/screenshot.png",
@@ -642,10 +698,10 @@
       "created_at": "2026-08-21T11:56:39Z",
       "pushed_at": "2026-09-03T05:36:26Z",
       "category": "Core Utilities",
-      "stars": 5889,
-      "stars_24h": 2,
-      "v24": 2,
-      "trending_score": 1.7894,
+      "stars": 5891,
+      "stars_24h": 4,
+      "v24": 4,
+      "trending_score": 1.7857,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -666,52 +722,14 @@
         {
           "ts": 1789651294,
           "stars": 5889
+        },
+        {
+          "ts": 1789655818,
+          "stars": 5891
         }
       ],
       "image_url": "https://raw.githubusercontent.com/MengTo/threeui/main/assets/preview.jpg",
       "quick_run": "npm install @designcodeio/threeui"
-    },
-    {
-      "id": 1356159928,
-      "name": "niubigeo",
-      "full_name": "Albert-Weasker/niubigeo",
-      "url": "https://github.com/Albert-Weasker/niubigeo",
-      "description": "Open-source AI brand visibility and competitor reports. Official website: https://niubigeo.ai/ | Paid services: AI testing by real people and GEO optimization. Pricing: https://niubigeo.ai/pricing",
-      "language": "TypeScript",
-      "license": "Apache-2.0",
-      "topics": [],
-      "forks": 99,
-      "created_at": "2026-09-03T15:55:54Z",
-      "pushed_at": "2026-09-16T19:11:03Z",
-      "category": "Core Utilities",
-      "stars": 2508,
-      "stars_24h": 0,
-      "v24": 0,
-      "trending_score": 1.7471,
-      "hardware_req": "CPU / Minimal RAM",
-      "is_local_first": false,
-      "is_cuda_ready": false,
-      "authenticity_score": 99,
-      "star_history": [
-        {
-          "ts": 1789646427,
-          "stars": 2508
-        },
-        {
-          "ts": 1789647750,
-          "stars": 2508
-        },
-        {
-          "ts": 1789648014,
-          "stars": 2508
-        },
-        {
-          "ts": 1789651294,
-          "stars": 2508
-        }
-      ],
-      "image_url": "https://raw.githubusercontent.com/Albert-Weasker/niubigeo/main/assets/screenshots/v0.2.0-rc.1/R04-models.png",
-      "quick_run": "git clone https://github.com/Albert-Weasker/niubigeo.git"
     },
     {
       "id": 1348410551,
@@ -729,7 +747,7 @@
       "stars": 4212,
       "stars_24h": 0,
       "v24": 0,
-      "trending_score": 1.747,
+      "trending_score": 1.7416,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -750,10 +768,60 @@
         {
           "ts": 1789651294,
           "stars": 4212
+        },
+        {
+          "ts": 1789655818,
+          "stars": 4212
         }
       ],
       "image_url": null,
       "quick_run": "git clone https://github.com/HEJustinSun/my-girlfriend-jingtian-latex.git"
+    },
+    {
+      "id": 1356159928,
+      "name": "niubigeo",
+      "full_name": "Albert-Weasker/niubigeo",
+      "url": "https://github.com/Albert-Weasker/niubigeo",
+      "description": "Open-source AI brand visibility and competitor reports. Official website: https://niubigeo.ai/ | Paid services: AI testing by real people and GEO optimization. Pricing: https://niubigeo.ai/pricing",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "topics": [],
+      "forks": 99,
+      "created_at": "2026-09-03T15:55:54Z",
+      "pushed_at": "2026-09-16T19:11:03Z",
+      "category": "Core Utilities",
+      "stars": 2508,
+      "stars_24h": 0,
+      "v24": 0,
+      "trending_score": 1.739,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2508
+        },
+        {
+          "ts": 1789647750,
+          "stars": 2508
+        },
+        {
+          "ts": 1789648014,
+          "stars": 2508
+        },
+        {
+          "ts": 1789651294,
+          "stars": 2508
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2508
+        }
+      ],
+      "image_url": "https://raw.githubusercontent.com/Albert-Weasker/niubigeo/main/assets/screenshots/v0.2.0-rc.1/R04-models.png",
+      "quick_run": "git clone https://github.com/Albert-Weasker/niubigeo.git"
     },
     {
       "id": 1353548665,
@@ -764,14 +832,14 @@
       "language": "Python",
       "license": "Apache-2.0",
       "topics": [],
-      "forks": 571,
+      "forks": 573,
       "created_at": "2026-09-01T12:30:12Z",
       "pushed_at": "2026-09-11T07:03:32Z",
       "category": "Autonomous Agents",
-      "stars": 2946,
-      "stars_24h": 1,
-      "v24": 1,
-      "trending_score": 1.7171,
+      "stars": 2949,
+      "stars_24h": 4,
+      "v24": 4,
+      "trending_score": 1.7119,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -792,10 +860,69 @@
         {
           "ts": 1789651294,
           "stars": 2946
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2949
         }
       ],
       "image_url": null,
       "quick_run": "git clone https://github.com/anthropics/commerce-agents.git"
+    },
+    {
+      "id": 1351879111,
+      "name": "reef",
+      "full_name": "Human-Agent-Society/reef",
+      "url": "https://github.com/Human-Agent-Society/reef",
+      "description": "Continual learning infra for self-improving agents",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [
+        "agent-infrastructure",
+        "ai-agents",
+        "continual-learning",
+        "inference",
+        "llm",
+        "llm-training",
+        "reinforcement-learning",
+        "self-improving-agents"
+      ],
+      "forks": 230,
+      "created_at": "2026-08-31T01:39:18Z",
+      "pushed_at": "2026-09-17T14:28:26Z",
+      "category": "Local AI & Inference",
+      "stars": 3021,
+      "stars_24h": 110,
+      "v24": 110,
+      "trending_score": 1.575,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2911
+        },
+        {
+          "ts": 1789647750,
+          "stars": 2911
+        },
+        {
+          "ts": 1789648014,
+          "stars": 2911
+        },
+        {
+          "ts": 1789651294,
+          "stars": 2914
+        },
+        {
+          "ts": 1789655818,
+          "stars": 3021
+        }
+      ],
+      "image_url": "https://raw.githubusercontent.com/Human-Agent-Society/reef/main/docs/assets/reef-logo-light.svg",
+      "quick_run": "git clone https://github.com/Human-Agent-Society/reef.git"
     },
     {
       "id": 1358295353,
@@ -806,14 +933,14 @@
       "language": "Swift",
       "license": "MIT",
       "topics": [],
-      "forks": 285,
+      "forks": 286,
       "created_at": "2026-09-05T14:55:35Z",
       "pushed_at": "2026-09-17T08:17:19Z",
       "category": "Core Utilities",
-      "stars": 1853,
-      "stars_24h": 16,
-      "v24": 16,
-      "trending_score": 1.5589,
+      "stars": 1862,
+      "stars_24h": 25,
+      "v24": 25,
+      "trending_score": 1.558,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -834,6 +961,10 @@
         {
           "ts": 1789651294,
           "stars": 1853
+        },
+        {
+          "ts": 1789655818,
+          "stars": 1862
         }
       ],
       "image_url": "https://raw.githubusercontent.com/vinzdg/codenotch/main/docs/design/codenotch-banner.png",
@@ -855,7 +986,7 @@
       "stars": 1576,
       "stars_24h": 3,
       "v24": 3,
-      "trending_score": 1.5491,
+      "trending_score": 1.5396,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -876,61 +1007,14 @@
         {
           "ts": 1789651294,
           "stars": 1576
+        },
+        {
+          "ts": 1789655818,
+          "stars": 1576
         }
       ],
       "image_url": null,
       "quick_run": "git clone https://github.com/EverettFish/holo-card-studio.git"
-    },
-    {
-      "id": 1351879111,
-      "name": "reef",
-      "full_name": "Human-Agent-Society/reef",
-      "url": "https://github.com/Human-Agent-Society/reef",
-      "description": "Continual learning infra for self-improving agents",
-      "language": "Python",
-      "license": "Apache-2.0",
-      "topics": [
-        "agent-infrastructure",
-        "ai-agents",
-        "continual-learning",
-        "inference",
-        "llm",
-        "llm-training",
-        "reinforcement-learning",
-        "self-improving-agents"
-      ],
-      "forks": 226,
-      "created_at": "2026-08-31T01:39:18Z",
-      "pushed_at": "2026-09-17T12:46:01Z",
-      "category": "Local AI & Inference",
-      "stars": 2914,
-      "stars_24h": 3,
-      "v24": 3,
-      "trending_score": 1.5249,
-      "hardware_req": "CPU / Minimal RAM",
-      "is_local_first": false,
-      "is_cuda_ready": false,
-      "authenticity_score": 99,
-      "star_history": [
-        {
-          "ts": 1789646427,
-          "stars": 2911
-        },
-        {
-          "ts": 1789647750,
-          "stars": 2911
-        },
-        {
-          "ts": 1789648014,
-          "stars": 2911
-        },
-        {
-          "ts": 1789651294,
-          "stars": 2914
-        }
-      ],
-      "image_url": "https://raw.githubusercontent.com/Human-Agent-Society/reef/main/docs/assets/reef-logo-light.svg",
-      "quick_run": "git clone https://github.com/Human-Agent-Society/reef.git"
     },
     {
       "id": 1339742577,
@@ -941,14 +1025,14 @@
       "language": "Python",
       "license": "Apache-2.0",
       "topics": [],
-      "forks": 248,
+      "forks": 250,
       "created_at": "2026-08-19T15:31:34Z",
       "pushed_at": "2026-09-16T08:59:22Z",
       "category": "Core Utilities",
-      "stars": 5151,
-      "stars_24h": 17,
-      "v24": 17,
-      "trending_score": 1.4413,
+      "stars": 5159,
+      "stars_24h": 25,
+      "v24": 25,
+      "trending_score": 1.4403,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -969,6 +1053,10 @@
         {
           "ts": 1789651294,
           "stars": 5151
+        },
+        {
+          "ts": 1789655818,
+          "stars": 5159
         }
       ],
       "image_url": "https://raw.githubusercontent.com/amagine-ai/Amagine3D/main/docs/assets/readme/examples/example-01.gif",
@@ -985,12 +1073,12 @@
       "topics": [],
       "forks": 167,
       "created_at": "2026-09-02T14:48:47Z",
-      "pushed_at": "2026-09-17T12:38:34Z",
+      "pushed_at": "2026-09-17T14:29:54Z",
       "category": "Autonomous Agents",
-      "stars": 2168,
-      "stars_24h": 2,
-      "v24": 2,
-      "trending_score": 1.3799,
+      "stars": 2169,
+      "stars_24h": 3,
+      "v24": 3,
+      "trending_score": 1.3746,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1011,6 +1099,10 @@
         {
           "ts": 1789651294,
           "stars": 2168
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2169
         }
       ],
       "image_url": "https://raw.githubusercontent.com/NVlabs/SoL-Pi/main/assets/sol-pi-hero.png",
@@ -1025,14 +1117,14 @@
       "language": "TypeScript",
       "license": "NOASSERTION",
       "topics": [],
-      "forks": 18,
+      "forks": 19,
       "created_at": "2026-09-04T06:20:19Z",
       "pushed_at": "2026-09-17T07:01:45Z",
       "category": "Core Utilities",
-      "stars": 1829,
-      "stars_24h": 4,
-      "v24": 4,
-      "trending_score": 1.346,
+      "stars": 1839,
+      "stars_24h": 14,
+      "v24": 14,
+      "trending_score": 1.3468,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1053,6 +1145,10 @@
         {
           "ts": 1789651294,
           "stars": 1829
+        },
+        {
+          "ts": 1789655818,
+          "stars": 1839
         }
       ],
       "image_url": null,
@@ -1076,14 +1172,14 @@
         "distributed-systems",
         "gpu"
       ],
-      "forks": 286,
+      "forks": 288,
       "created_at": "2026-08-22T15:30:41Z",
       "pushed_at": "2026-09-17T03:18:53Z",
       "category": "Local AI & Inference",
-      "stars": 4083,
-      "stars_24h": 12,
-      "v24": 12,
-      "trending_score": 1.3096,
+      "stars": 4096,
+      "stars_24h": 25,
+      "v24": 25,
+      "trending_score": 1.3104,
       "hardware_req": "Moderate (8\u201316GB VRAM)",
       "is_local_first": false,
       "is_cuda_ready": true,
@@ -1104,6 +1200,10 @@
         {
           "ts": 1789651294,
           "stars": 4083
+        },
+        {
+          "ts": 1789655818,
+          "stars": 4096
         }
       ],
       "image_url": null,
@@ -1131,10 +1231,10 @@
       "created_at": "2026-09-02T11:51:38Z",
       "pushed_at": "2026-09-17T13:17:42Z",
       "category": "Autonomous Agents",
-      "stars": 2011,
-      "stars_24h": 6,
-      "v24": 6,
-      "trending_score": 1.267,
+      "stars": 2014,
+      "stars_24h": 9,
+      "v24": 9,
+      "trending_score": 1.2634,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1155,6 +1255,10 @@
         {
           "ts": 1789651294,
           "stars": 2011
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2014
         }
       ],
       "image_url": "https://raw.githubusercontent.com/shadcn-ui/lint/main/docs/assets/cover.png",
@@ -1176,7 +1280,7 @@
       "stars": 1464,
       "stars_24h": 4,
       "v24": 4,
-      "trending_score": 1.2377,
+      "trending_score": 1.2309,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1196,6 +1300,10 @@
         },
         {
           "ts": 1789651294,
+          "stars": 1464
+        },
+        {
+          "ts": 1789655818,
           "stars": 1464
         }
       ],
@@ -1227,7 +1335,7 @@
       "stars": 2768,
       "stars_24h": 0,
       "v24": 0,
-      "trending_score": 1.218,
+      "trending_score": 1.2141,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1248,6 +1356,10 @@
         {
           "ts": 1789651294,
           "stars": 2768
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2768
         }
       ],
       "image_url": null,
@@ -1262,14 +1374,14 @@
       "language": "TypeScript",
       "license": "Custom",
       "topics": [],
-      "forks": 3637,
+      "forks": 3636,
       "created_at": "2026-08-23T20:53:01Z",
       "pushed_at": "2026-08-23T20:53:35Z",
       "category": "Core Utilities",
       "stars": 3505,
       "stars_24h": 0,
       "v24": 0,
-      "trending_score": 1.194,
+      "trending_score": 1.1909,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1289,6 +1401,10 @@
         },
         {
           "ts": 1789651294,
+          "stars": 3505
+        },
+        {
+          "ts": 1789655818,
           "stars": 3505
         }
       ],
@@ -1315,12 +1431,12 @@
       ],
       "forks": 174,
       "created_at": "2026-08-28T05:56:49Z",
-      "pushed_at": "2026-09-16T22:13:01Z",
+      "pushed_at": "2026-09-17T14:36:47Z",
       "category": "Autonomous Agents",
       "stars": 2661,
       "stars_24h": 3,
       "v24": 3,
-      "trending_score": 1.156,
+      "trending_score": 1.1523,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1340,6 +1456,10 @@
         },
         {
           "ts": 1789651294,
+          "stars": 2661
+        },
+        {
+          "ts": 1789655818,
           "stars": 2661
         }
       ],
@@ -1364,14 +1484,14 @@
         "terminal-agent",
         "tui"
       ],
-      "forks": 198,
+      "forks": 199,
       "created_at": "2026-08-22T05:07:35Z",
-      "pushed_at": "2026-09-17T07:37:04Z",
+      "pushed_at": "2026-09-17T13:25:17Z",
       "category": "Autonomous Agents",
-      "stars": 3444,
-      "stars_24h": 3,
-      "v24": 3,
-      "trending_score": 1.0821,
+      "stars": 3449,
+      "stars_24h": 8,
+      "v24": 8,
+      "trending_score": 1.081,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1392,6 +1512,10 @@
         {
           "ts": 1789651294,
           "stars": 3444
+        },
+        {
+          "ts": 1789655818,
+          "stars": 3449
         }
       ],
       "image_url": "https://raw.githubusercontent.com/ApodexAI/FrontierAgent/main/assets/apodex_logo.jpeg",
@@ -1413,7 +1537,7 @@
       "stars": 1751,
       "stars_24h": 0,
       "v24": 0,
-      "trending_score": 1.0724,
+      "trending_score": 1.0679,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1433,6 +1557,10 @@
         },
         {
           "ts": 1789651294,
+          "stars": 1751
+        },
+        {
+          "ts": 1789655818,
           "stars": 1751
         }
       ],
@@ -1457,14 +1585,14 @@
         "cross-platform",
         "desktop-app"
       ],
-      "forks": 232,
+      "forks": 235,
       "created_at": "2026-08-25T18:34:47Z",
-      "pushed_at": "2026-09-17T13:04:39Z",
+      "pushed_at": "2026-09-17T14:21:14Z",
       "category": "Local-First & Sovereign Apps",
-      "stars": 2633,
-      "stars_24h": 10,
-      "v24": 10,
-      "trending_score": 0.9913,
+      "stars": 2639,
+      "stars_24h": 16,
+      "v24": 16,
+      "trending_score": 0.9907,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1485,6 +1613,10 @@
         {
           "ts": 1789651294,
           "stars": 2633
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2639
         }
       ],
       "image_url": "https://cdn.jsdelivr.net/gh/jub0t/Concat@main/assets/logo-dark.png",
@@ -1508,14 +1640,14 @@
         "macos",
         "mcp"
       ],
-      "forks": 406,
+      "forks": 407,
       "created_at": "2026-08-22T14:16:24Z",
       "pushed_at": "2026-09-17T12:59:09Z",
       "category": "Autonomous Agents",
-      "stars": 3026,
-      "stars_24h": 17,
-      "v24": 17,
-      "trending_score": 0.9682,
+      "stars": 3040,
+      "stars_24h": 31,
+      "v24": 31,
+      "trending_score": 0.9702,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": true,
       "is_cuda_ready": false,
@@ -1536,6 +1668,10 @@
         {
           "ts": 1789651294,
           "stars": 3026
+        },
+        {
+          "ts": 1789655818,
+          "stars": 3040
         }
       ],
       "image_url": "https://raw.githubusercontent.com/totec448-spec/chat-on-steroids/main/docs/images/workspace.png",
@@ -1554,10 +1690,10 @@
       "created_at": "2026-09-03T00:42:03Z",
       "pushed_at": "2026-09-15T21:31:25Z",
       "category": "Core Utilities",
-      "stars": 1421,
-      "stars_24h": 0,
-      "v24": 0,
-      "trending_score": 0.9365,
+      "stars": 1423,
+      "stars_24h": 2,
+      "v24": 2,
+      "trending_score": 0.9336,
       "hardware_req": "Moderate (8\u201316GB VRAM)",
       "is_local_first": false,
       "is_cuda_ready": true,
@@ -1566,6 +1702,10 @@
         {
           "ts": 1789651294,
           "stars": 1421
+        },
+        {
+          "ts": 1789655818,
+          "stars": 1423
         }
       ],
       "image_url": null,
@@ -1587,7 +1727,7 @@
       "stars": 2523,
       "stars_24h": 1,
       "v24": 1,
-      "trending_score": 0.8624,
+      "trending_score": 0.8601,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1607,6 +1747,10 @@
         },
         {
           "ts": 1789651294,
+          "stars": 2523
+        },
+        {
+          "ts": 1789655818,
           "stars": 2523
         }
       ],
@@ -1635,10 +1779,10 @@
       "created_at": "2026-08-19T06:07:45Z",
       "pushed_at": "2026-09-02T18:49:42Z",
       "category": "Autonomous Agents",
-      "stars": 3121,
-      "stars_24h": 0,
-      "v24": 0,
-      "trending_score": 0.8588,
+      "stars": 3123,
+      "stars_24h": 2,
+      "v24": 2,
+      "trending_score": 0.8574,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1659,6 +1803,10 @@
         {
           "ts": 1789651294,
           "stars": 3121
+        },
+        {
+          "ts": 1789655818,
+          "stars": 3123
         }
       ],
       "image_url": "https://raw.githubusercontent.com/yanliudesign/mono-color-skill/main/swatches/cobalt.svg",
@@ -1686,10 +1834,10 @@
       "created_at": "2026-08-22T15:25:08Z",
       "pushed_at": "2026-09-04T23:33:30Z",
       "category": "Autonomous Agents",
-      "stars": 2540,
-      "stars_24h": 1,
-      "v24": 1,
-      "trending_score": 0.8145,
+      "stars": 2544,
+      "stars_24h": 5,
+      "v24": 5,
+      "trending_score": 0.8138,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1710,6 +1858,10 @@
         {
           "ts": 1789651294,
           "stars": 2540
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2544
         }
       ],
       "image_url": "https://raw.githubusercontent.com/nateherkai/scroll-craft/main/media/ais.webp",
@@ -1737,7 +1889,7 @@
       "stars": 1521,
       "stars_24h": 0,
       "v24": 0,
-      "trending_score": 0.8089,
+      "trending_score": 0.8058,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1758,6 +1910,10 @@
         {
           "ts": 1789651294,
           "stars": 1521
+        },
+        {
+          "ts": 1789655818,
+          "stars": 1521
         }
       ],
       "image_url": null,
@@ -1776,10 +1932,10 @@
       "created_at": "2026-08-24T12:36:59Z",
       "pushed_at": "2026-09-17T11:39:46Z",
       "category": "Autonomous Agents",
-      "stars": 2092,
-      "stars_24h": 0,
-      "v24": 0,
-      "trending_score": 0.737,
+      "stars": 2094,
+      "stars_24h": 2,
+      "v24": 2,
+      "trending_score": 0.7357,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1800,6 +1956,10 @@
         {
           "ts": 1789651294,
           "stars": 2092
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2094
         }
       ],
       "image_url": "https://raw.githubusercontent.com/kacperkapusciak/goldie/main/assets/software-mansion-logo-positive-s-left-top@1x.png",
@@ -1814,14 +1974,14 @@
       "language": "TypeScript",
       "license": "Custom",
       "topics": [],
-      "forks": 204,
+      "forks": 206,
       "created_at": "2026-08-24T16:45:07Z",
       "pushed_at": "2026-08-25T21:49:59Z",
       "category": "Core Utilities",
-      "stars": 2041,
-      "stars_24h": 5,
-      "v24": 5,
-      "trending_score": 0.7255,
+      "stars": 2043,
+      "stars_24h": 7,
+      "v24": 7,
+      "trending_score": 0.7242,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1842,6 +2002,10 @@
         {
           "ts": 1789651294,
           "stars": 2041
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2043
         }
       ],
       "image_url": "https://raw.githubusercontent.com/amosblomqvist/learn/main/assets/thumbnail.png",
@@ -1869,10 +2033,10 @@
       "created_at": "2026-08-23T21:55:30Z",
       "pushed_at": "2026-09-15T21:12:30Z",
       "category": "Core Utilities",
-      "stars": 2117,
-      "stars_24h": 2,
-      "v24": 2,
-      "trending_score": 0.7228,
+      "stars": 2118,
+      "stars_24h": 3,
+      "v24": 3,
+      "trending_score": 0.7212,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1893,6 +2057,10 @@
         {
           "ts": 1789651294,
           "stars": 2117
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2118
         }
       ],
       "image_url": "https://raw.githubusercontent.com/omacom/try-omarchy/main/macos/OmarchyIcon.svg",
@@ -1916,14 +2084,14 @@
         "claude-skills",
         "mcp"
       ],
-      "forks": 235,
+      "forks": 236,
       "created_at": "2026-08-28T18:03:04Z",
       "pushed_at": "2026-09-16T23:24:31Z",
       "category": "Autonomous Agents",
-      "stars": 1583,
-      "stars_24h": 0,
-      "v24": 0,
-      "trending_score": 0.7095,
+      "stars": 1585,
+      "stars_24h": 2,
+      "v24": 2,
+      "trending_score": 0.7081,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1944,6 +2112,10 @@
         {
           "ts": 1789651294,
           "stars": 1583
+        },
+        {
+          "ts": 1789655818,
+          "stars": 1585
         }
       ],
       "image_url": "https://raw.githubusercontent.com/cbrock84/headcount/main/docs/assets/org-chart-light.png",
@@ -1958,14 +2130,14 @@
       "language": "TypeScript",
       "license": "Custom",
       "topics": [],
-      "forks": 73,
+      "forks": 74,
       "created_at": "2026-08-26T06:09:58Z",
       "pushed_at": "2026-09-17T01:53:26Z",
       "category": "Core Utilities",
-      "stars": 1671,
-      "stars_24h": 8,
-      "v24": 8,
-      "trending_score": 0.6461,
+      "stars": 1677,
+      "stars_24h": 14,
+      "v24": 14,
+      "trending_score": 0.6465,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1986,6 +2158,10 @@
         {
           "ts": 1789651294,
           "stars": 1671
+        },
+        {
+          "ts": 1789655818,
+          "stars": 1677
         }
       ],
       "image_url": null,
@@ -2013,10 +2189,10 @@
       "created_at": "2026-08-22T14:28:41Z",
       "pushed_at": "2026-09-17T13:02:00Z",
       "category": "Autonomous Agents",
-      "stars": 1983,
-      "stars_24h": 2,
-      "v24": 2,
-      "trending_score": 0.6347,
+      "stars": 1987,
+      "stars_24h": 6,
+      "v24": 6,
+      "trending_score": 0.6344,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -2037,6 +2213,10 @@
         {
           "ts": 1789651294,
           "stars": 1983
+        },
+        {
+          "ts": 1789655818,
+          "stars": 1987
         }
       ],
       "image_url": "https://raw.githubusercontent.com/duty1g/x64dbg-mcp-server/main/logo.png",
@@ -2059,14 +2239,14 @@
         "tiktok-automation-script",
         "webdriveragent"
       ],
-      "forks": 283,
+      "forks": 284,
       "created_at": "2026-08-27T04:55:36Z",
       "pushed_at": "2026-09-07T10:50:41Z",
       "category": "Autonomous Agents",
-      "stars": 1494,
-      "stars_24h": 1,
-      "v24": 1,
-      "trending_score": 0.6098,
+      "stars": 1495,
+      "stars_24h": 2,
+      "v24": 2,
+      "trending_score": 0.6084,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": true,
       "is_cuda_ready": false,
@@ -2087,6 +2267,10 @@
         {
           "ts": 1789651294,
           "stars": 1494
+        },
+        {
+          "ts": 1789655818,
+          "stars": 1495
         }
       ],
       "image_url": null,
@@ -2112,7 +2296,7 @@
       "stars": 1603,
       "stars_24h": 0,
       "v24": 0,
-      "trending_score": 0.5825,
+      "trending_score": 0.5808,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -2132,6 +2316,10 @@
         },
         {
           "ts": 1789651294,
+          "stars": 1603
+        },
+        {
+          "ts": 1789655818,
           "stars": 1603
         }
       ],
@@ -2154,7 +2342,7 @@
       "stars": 1663,
       "stars_24h": 0,
       "v24": 0,
-      "trending_score": 0.5215,
+      "trending_score": 0.5202,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -2175,6 +2363,10 @@
         {
           "ts": 1789651294,
           "stars": 1663
+        },
+        {
+          "ts": 1789655818,
+          "stars": 1663
         }
       ],
       "image_url": null,
@@ -2193,10 +2385,10 @@
       "created_at": "2026-08-22T11:18:12Z",
       "pushed_at": "2026-09-08T03:50:39Z",
       "category": "Core Utilities",
-      "stars": 1606,
-      "stars_24h": 4,
-      "v24": 4,
-      "trending_score": 0.5108,
+      "stars": 1609,
+      "stars_24h": 7,
+      "v24": 7,
+      "trending_score": 0.5105,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -2217,6 +2409,10 @@
         {
           "ts": 1789651294,
           "stars": 1606
+        },
+        {
+          "ts": 1789655818,
+          "stars": 1609
         }
       ],
       "image_url": "https://raw.githubusercontent.com/FireRedTeam/FireRedAudio/main/assets/fireredaudio_logo.png",
@@ -2238,7 +2434,7 @@
       "stars": 1725,
       "stars_24h": 6,
       "v24": 6,
-      "trending_score": 0.4984,
+      "trending_score": 0.4972,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -2258,6 +2454,10 @@
         },
         {
           "ts": 1789651294,
+          "stars": 1725
+        },
+        {
+          "ts": 1789655818,
           "stars": 1725
         }
       ],
