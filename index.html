@@ -28,83 +28,91 @@
 </head>
 <body class="bg-radarDark text-slate-200 min-h-screen font-sans selection:bg-cyan-500/20 antialiased">
   
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-    
-    <!-- Top Bar -->
-    <header class="flex flex-col md:flex-row md:items-center justify-between pb-6 border-b border-borderDark gap-4">
-      <div>
-        <div class="flex items-center gap-3">
-          <div class="p-2 bg-cyan-500/10 text-cyan-400 rounded-lg ring-1 ring-cyan-500/30">
-            <svg class="w-5 h-5 animate-spin" style="animation-duration: 8s;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6.364 1.636l-.707.707M21 12h-1M18.364 17.636l-.707-.707M12 21v-1M5.636 18.364l.707-.707M3 12h1M5.636 5.636l.707.707"/></svg>
+  <!-- STICKY TOPBAR WRAPPER (Stays fixed during scroll) -->
+  <div class="sticky top-0 z-50 bg-radarDark/95 backdrop-blur-md border-b border-borderDark shadow-xl shadow-black/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      
+      <!-- Header Row -->
+      <header class="flex flex-col md:flex-row md:items-center justify-between pb-3 gap-4">
+        <div>
+          <div class="flex items-center gap-3">
+            <div class="p-1.5 bg-cyan-500/10 text-cyan-400 rounded-lg ring-1 ring-cyan-500/30">
+              <svg class="w-5 h-5 animate-spin" style="animation-duration: 8s;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6.364 1.636l-.707.707M21 12h-1M18.364 17.636l-.707-.707M12 21v-1M5.636 18.364l.707-.707M3 12h1M5.636 5.636l.707.707"/></svg>
+            </div>
+            <h1 class="text-xl font-black tracking-tight text-white">
+              DEV<span class="text-cyan-400">RADAR</span>
+            </h1>
+            <span class="text-[10px] font-mono uppercase bg-slate-800/80 border border-slate-700 px-2 py-0.5 rounded text-cyan-300">Live Pulse</span>
           </div>
-          <h1 class="text-2xl font-black tracking-tight text-white">
-            DEV<span class="text-cyan-400">RADAR</span>
-          </h1>
-          <span class="text-xs font-mono uppercase bg-slate-800/80 border border-slate-700 px-2 py-0.5 rounded text-cyan-300">Live Pulse</span>
+          <p class="text-xs text-slate-400 mt-0.5">Autonomous verifier ranking verified repositories by velocity, authenticity & local-first readiness.</p>
         </div>
-        <p class="text-xs text-slate-400 mt-1">Autonomous verifier ranking verified repositories by velocity, authenticity & local-first readiness.</p>
+
+        <div class="flex items-center gap-3 text-xs font-mono text-slate-400 bg-cardDark border border-borderDark px-3 py-1.5 rounded-lg self-start md:self-auto">
+          <span class="inline-block w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+          <span id="syncIndicator">Connecting to pipeline...</span>
+        </div>
+      </header>
+
+      <!-- Filter Controls Grid -->
+      <div class="flex flex-col gap-2.5 pt-1">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-2.5">
+          
+          <!-- Search box with count indicator -->
+          <div class="relative md:col-span-6">
+            <input 
+              id="searchBox" 
+              type="text" 
+              placeholder="Filter repositories, topics, differentiators..." 
+              class="w-full bg-cardDark border border-borderDark text-xs rounded-lg pl-3 pr-20 py-2 text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-cyan-500"
+            />
+            <span id="matchCounter" class="absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] font-mono text-slate-500 bg-slate-900 px-1.5 py-0.5 rounded border border-borderDark">0 items</span>
+          </div>
+
+          <!-- Category selector -->
+          <select id="categoryFilter" class="bg-cardDark border border-borderDark text-xs rounded-lg px-3 py-2 text-slate-300 md:col-span-3 focus:outline-none focus:ring-1 focus:ring-cyan-500">
+            <option value="all">All Disciplines</option>
+            <option value="Local AI & Inference">Local AI & Inference</option>
+            <option value="Autonomous Agents">Autonomous Agents</option>
+            <option value="Developer Tooling & CLI">Developer Tooling & CLI</option>
+            <option value="Systems & Infrastructure">Systems & Infrastructure</option>
+            <option value="Local-First & Sovereign Apps">Local-First & Sovereign Apps</option>
+            <option value="Security & Reverse Eng">Security & Reverse Eng</option>
+          </select>
+
+          <!-- Metric Sort dropdown -->
+          <select id="sortSelect" class="bg-cardDark border border-borderDark text-xs rounded-lg px-3 py-2 text-slate-300 md:col-span-3 focus:outline-none focus:ring-1 focus:ring-cyan-500">
+            <option value="trending">Breakout Score (Velocity / Age)</option>
+            <option value="delta">24h Star Velocity 🚀</option>
+            <option value="stars">Total Stargazers ⭐</option>
+            <option value="recency">Discovery Date (Newest) 🕒</option>
+            <option value="authenticity">Authenticity % (Anti-Bot) 🛡️</option>
+          </select>
+        </div>
+
+        <!-- Spec Pill Toggles -->
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="text-xs text-slate-500 mr-1 font-mono">Specs (Any):</span>
+          <button id="toggleLocalFirst" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">
+            🔒 Local-First
+          </button>
+          <button id="toggleCuda" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">
+            ⚡ GPU / CUDA
+          </button>
+          <button id="toggleOrganic" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">
+            🛡️ High Authenticity (>85%)
+          </button>
+        </div>
       </div>
 
-      <div class="flex items-center gap-3 text-xs font-mono text-slate-400 bg-cardDark border border-borderDark px-3 py-2 rounded-lg">
-        <span class="inline-block w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
-        <span id="syncIndicator">Connecting to pipeline...</span>
-      </div>
-    </header>
-
-    <!-- Search and Controls Grid -->
-    <div class="mt-6 flex flex-col gap-3">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-3">
-        
-        <!-- Search box -->
-        <input 
-          id="searchBox" 
-          type="text" 
-          placeholder="Filter repositories, topics, differentiators..." 
-          class="bg-cardDark border border-borderDark text-sm rounded-lg px-4 py-2 text-white placeholder-slate-500 md:col-span-6 focus:outline-none focus:ring-1 focus:ring-cyan-500"
-        />
-
-        <!-- Category selector -->
-        <select id="categoryFilter" class="bg-cardDark border border-borderDark text-xs rounded-lg px-3 py-2 text-slate-300 md:col-span-3 focus:outline-none focus:ring-1 focus:ring-cyan-500">
-          <option value="all">All Disciplines</option>
-          <option value="Local AI & Inference">Local AI & Inference</option>
-          <option value="Autonomous Agents">Autonomous Agents</option>
-          <option value="Developer Tooling & CLI">Developer Tooling & CLI</option>
-          <option value="Systems & Infrastructure">Systems & Infrastructure</option>
-          <option value="Local-First & Sovereign Apps">Local-First & Sovereign Apps</option>
-          <option value="Security & Reverse Eng">Security & Reverse Eng</option>
-        </select>
-
-        <!-- Metric Sort dropdown -->
-        <select id="sortSelect" class="bg-cardDark border border-borderDark text-xs rounded-lg px-3 py-2 text-slate-300 md:col-span-3 focus:outline-none focus:ring-1 focus:ring-cyan-500">
-          <option value="trending">Breakout Score (Velocity / Age)</option>
-          <option value="delta">24h Star Velocity 🚀</option>
-          <option value="stars">Total Stargazers ⭐</option>
-          <option value="recency">Discovery Date (Newest) 🕒</option>
-          <option value="authenticity">Authenticity % (Anti-Bot) 🛡️</option>
-        </select>
-      </div>
-
-      <!-- Quick Toggles / Spec Pills (OR-Logic) -->
-      <div class="flex flex-wrap items-center gap-2 pt-2">
-        <span class="text-xs text-slate-500 mr-2 font-mono">Specs (Any):</span>
-        <button id="toggleLocalFirst" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">
-          🔒 Local-First
-        </button>
-        <button id="toggleCuda" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">
-          ⚡ GPU / CUDA
-        </button>
-        <button id="toggleOrganic" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">
-          🛡️ High Authenticity (>85%)
-        </button>
-      </div>
     </div>
+  </div>
 
-    <!-- Repository Cards Container -->
-    <div id="repoList" class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+  <!-- SCROLLABLE REPOSITORY CONTENT AREA -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <div id="repoList" class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div class="col-span-full py-20 text-center text-slate-500 font-mono text-sm">Streaming repository feed...</div>
     </div>
-
-  </div>
+  </main>
 
   <script>
     let repositories = [];
@@ -113,7 +121,6 @@
     let filterCuda = false;
     let filterOrganic = false;
 
-    // Sparkline SVG generator
     function generateSparkline(history) {
       if (!history || history.length < 2) return '';
       const stars = history.map(h => h.stars);
@@ -163,14 +170,11 @@
       const cat = document.getElementById('categoryFilter').value;
       const sort = document.getElementById('sortSelect').value;
 
-      // Inclusive OR-Filter logic for specs
       const anySpecActive = filterLocalFirst || filterCuda || filterOrganic;
 
       let items = repositories.filter(repo => {
         const matchesSearch = repo.name.toLowerCase().includes(search) || 
-                      repo.description.toLowerCase().includes(search) ||
-                      (repo.differentiator && repo.differentiator.toLowerCase().includes(search)) ||
-                      repo.language.toLowerCase().includes(search);
+                              repo.description.toLowerCase().includes(search);
         const matchesCat = (cat === 'all') || (repo.category === cat);
 
         let matchesSpecs = true;
@@ -182,6 +186,9 @@
 
         return matchesSearch && matchesCat && matchesSpecs;
       });
+
+      // Update counter pill in search bar
+      document.getElementById('matchCounter').textContent = `${items.length} items`;
 
       // Sorting handler
       if (sort === 'delta') items.sort((a, b) => b.stars_24h - a.stars_24h);
@@ -224,7 +231,6 @@
               </p>
             </div>
 
-            <!-- Footer Details & Specs -->
             <div class="mt-4 pt-3.5 border-t border-borderDark flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
               <div class="flex items-center gap-2 text-slate-400">
                 <span class="text-slate-300">${r.language}</span>
@@ -243,7 +249,6 @@
       }).join('');
     }
 
-    // Toggle button handler
     function setupToggle(btnId, getState, setState) {
       const btn = document.getElementById(btnId);
       btn.addEventListener('click', () => {
