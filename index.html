@@ -28,6 +28,7 @@
 </head>
 <body class="bg-radarDark text-slate-200 min-h-screen font-sans selection:bg-cyan-500/20 antialiased">
   
+  <!-- STICKY TOPBAR -->
   <div class="sticky top-0 z-50 bg-radarDark/95 backdrop-blur-md border-b border-borderDark shadow-xl shadow-black/40">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
       
@@ -51,9 +52,9 @@
         </div>
       </header>
 
+      <!-- Filter Controls -->
       <div class="flex flex-col gap-2.5 pt-1">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-2.5">
-          
           <div class="relative md:col-span-6">
             <input 
               id="searchBox" 
@@ -97,7 +98,6 @@
             </button>
           </div>
 
-          <!-- Deep GitHub Fallback Button -->
           <button id="globalSearchBtn" class="text-[11px] font-mono text-cyan-400 hover:text-cyan-300 underline underline-offset-4 hidden">
             🌐 Search entire GitHub for "<span id="globalQueryText"></span>" &rarr;
           </button>
@@ -107,8 +107,9 @@
     </div>
   </div>
 
+  <!-- MAIN REPO GRID -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-    <div id="repoList" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div id="repoList" class="grid grid-cols-1 md:grid-cols-2 gap-5">
       <div class="col-span-full py-20 text-center text-slate-500 font-mono text-sm">Streaming repository feed...</div>
     </div>
   </main>
@@ -140,6 +141,20 @@
           <polyline fill="none" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="${points}" />
         </svg>
       `;
+    }
+
+    function copyToClipboard(text, btnId) {
+      navigator.clipboard.writeText(text);
+      const el = document.getElementById(btnId);
+      if (el) {
+        const orig = el.textContent;
+        el.textContent = 'COPIED!';
+        el.classList.add('text-emerald-400');
+        setTimeout(() => {
+          el.textContent = orig;
+          el.classList.remove('text-emerald-400');
+        }, 1500);
+      }
     }
 
     async function loadDataset() {
@@ -188,10 +203,8 @@
         return matchesSearch && matchesCat && matchesSpecs;
       });
 
-      // Update counter
       document.getElementById('matchCounter').textContent = `${items.length} items`;
 
-      // Update Global Search Fallback trigger
       const globalBtn = document.getElementById('globalSearchBtn');
       const querySpan = document.getElementById('globalQueryText');
       if (search.length > 1) {
@@ -204,7 +217,6 @@
         globalBtn.classList.add('hidden');
       }
 
-      // Sorting
       if (sort === 'delta') items.sort((a, b) => b.stars_24h - a.stars_24h);
       else if (sort === 'stars') items.sort((a, b) => b.stars - a.stars);
       else if (sort === 'recency') items.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
@@ -225,25 +237,39 @@
         return;
       }
 
-      target.innerHTML = items.map((r) => {
+      target.innerHTML = items.map((r, idx) => {
         const daysAgo = Math.max(1, Math.round((Date.now() - new Date(r.created_at).getTime()) / (1000 * 3600 * 24)));
         const authColor = r.authenticity_score >= 85 ? 'text-emerald-400 bg-emerald-500/10' : 'text-amber-400 bg-amber-500/10';
+        const copyBtnId = `btn-copy-${idx}`;
+
+        // Preview screenshot or fallback placeholder
+        const mediaHtml = r.image_url 
+          ? `<div class="w-full h-36 bg-slate-900 border-b border-borderDark overflow-hidden relative">
+               <img src="${r.image_url}" alt="Demo preview" class="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition duration-300" loading="lazy" onerror="this.parentElement.style.display='none';" />
+             </div>`
+          : '';
 
         return `
-          <div class="bg-cardDark border border-borderDark hover:border-cyan-500/50 transition duration-200 rounded-xl p-5 flex flex-col justify-between">
-            <div>
+          <div class="bg-cardDark border border-borderDark hover:border-cyan-500/50 transition duration-200 rounded-xl overflow-hidden flex flex-col justify-between shadow-lg">
+            
+            ${mediaHtml}
+
+            <div class="p-5 flex flex-col flex-1">
               <div class="flex items-center justify-between gap-2">
-                <span class="text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-slate-800 text-cyan-300 border border-slate-700">
+                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-800 text-cyan-300 border border-slate-700">
                   ${r.category}
                 </span>
-                <span class="text-xs text-slate-500 font-mono">${daysAgo}d old</span>
+                <div class="flex items-center gap-2">
+                  <span class="text-[10px] font-mono text-slate-400 border border-borderDark px-1.5 py-0.5 rounded bg-slate-900">${r.license}</span>
+                  <span class="text-xs text-slate-500 font-mono">${daysAgo}d old</span>
+                </div>
               </div>
 
               <div class="mt-3 flex items-baseline justify-between gap-2">
                 <a href="${r.url}" target="_blank" rel="noopener noreferrer" class="text-base font-bold text-white hover:text-cyan-400 transition truncate">
                   ${r.full_name}
                 </a>
-                <span class="text-xs font-mono px-1.5 py-0.5 rounded ${authColor}">
+                <span class="text-[11px] font-mono px-1.5 py-0.5 rounded ${authColor}">
                   ${r.authenticity_score}% Organic
                 </span>
               </div>
@@ -251,9 +277,22 @@
               <p class="mt-2 text-xs text-slate-400 leading-relaxed line-clamp-2">
                 ${r.description}
               </p>
+
+              <!-- Quick Run Terminal Pill -->
+              <div class="mt-3 p-2 bg-slate-900 rounded-lg border border-borderDark flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2 overflow-hidden">
+                  <span class="text-xs text-cyan-400 font-mono font-bold">$</span>
+                  <code class="text-[11px] text-slate-300 font-mono truncate select-all">${r.quick_run || 'git clone ' + r.url}</code>
+                </div>
+                <button id="${copyBtnId}" onclick="copyToClipboard('${(r.quick_run || '').replace(/'/g, "\\'")}', '${copyBtnId}')" 
+                        class="text-[10px] font-mono uppercase text-slate-400 hover:text-white px-1.5 py-0.5 rounded bg-slate-800 border border-borderDark transition">
+                  COPY
+                </button>
+              </div>
             </div>
 
-            <div class="mt-4 pt-3.5 border-t border-borderDark flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
+            <!-- Footer Details & Specs -->
+            <div class="px-5 py-3 border-t border-borderDark bg-slate-950/40 flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
               <div class="flex items-center gap-2 text-slate-400">
                 <span class="text-slate-300">${r.language}</span>
                 <span>•</span>
@@ -266,6 +305,7 @@
                 <span class="text-amber-400 font-semibold">⭐ ${r.stars.toLocaleString()}</span>
               </div>
             </div>
+
           </div>
         `;
       }).join('');
