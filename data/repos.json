@@ -1,0 +1,1155 @@
+{
+  "updated_at": "2026-09-17T12:00:27.947078+00:00",
+  "repositories": [
+    {
+      "id": 1369254248,
+      "name": "ai-sucks-butt",
+      "full_name": "ai-sucks-butt/ai-sucks-butt",
+      "url": "https://github.com/ai-sucks-butt/ai-sucks-butt",
+      "description": "If you think AI sucks, star the repo.",
+      "language": "Python",
+      "category": "Core Utilities",
+      "stars": 2402,
+      "stars_24h": 0,
+      "created_at": "2026-09-14T04:02:58Z",
+      "trending_score": 9.7405,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 70,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2402
+        }
+      ]
+    },
+    {
+      "id": 1354310030,
+      "name": "m3e-canvas",
+      "full_name": "lnkiai/m3e-canvas",
+      "url": "https://github.com/lnkiai/m3e-canvas",
+      "description": "Sketch Material 3 Expressive screens in the browser and turn them into vibe-coding prompts.",
+      "language": "TypeScript",
+      "category": "Core Utilities",
+      "stars": 7258,
+      "stars_24h": 0,
+      "created_at": "2026-09-02T04:36:34Z",
+      "trending_score": 4.4818,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 7258
+        }
+      ]
+    },
+    {
+      "id": 1360432710,
+      "name": "dlssg_for_sm86",
+      "full_name": "sdli1995/dlssg_for_sm86",
+      "url": "https://github.com/sdli1995/dlssg_for_sm86",
+      "description": "Here is a dlssg for RTX30 Series GPU ",
+      "language": "Unspecified",
+      "category": "Core Utilities",
+      "stars": 3220,
+      "stars_24h": 0,
+      "created_at": "2026-09-07T16:16:48Z",
+      "trending_score": 3.4495,
+      "hardware_req": "Moderate (8\u201316GB VRAM)",
+      "is_local_first": false,
+      "is_cuda_ready": true,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 3220
+        }
+      ]
+    },
+    {
+      "id": 1357699236,
+      "name": "human-atlas",
+      "full_name": "ashemag/human-atlas",
+      "url": "https://github.com/ashemag/human-atlas",
+      "description": "Open-source 3D anatomy explorer: 2,234 selectable BodyParts3D meshes, system layers, search, and exploded views.",
+      "language": "TypeScript",
+      "category": "Core Utilities",
+      "stars": 3594,
+      "stars_24h": 0,
+      "created_at": "2026-09-05T00:24:43Z",
+      "trending_score": 2.8595,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 3594
+        }
+      ]
+    },
+    {
+      "id": 1359648985,
+      "name": "HowToLiveBetter",
+      "full_name": "eternity4719/HowToLiveBetter",
+      "url": "https://github.com/eternity4719/HowToLiveBetter",
+      "description": "\u6309\u6027\u4ef7\u6bd4\u6392\u5e8f\u7684\u5faa\u8bc1\u751f\u6d3b\u6307\u5357\uff1a\u957f\u5bff\u9632\u75c5\u3001\u6025\u6551\u3001\u7701\u94b1\u7406\u8d22\u3001\u6cd5\u5f8b\u7ea2\u7ebf\u3001\u5931\u4e1a\u4e0e\u5de5\u4f24\u3001\u533b\u4fdd\u793e\u4fdd\u3001\u604b\u7231\u5a5a\u80b2\u3001\u6000\u5b55\u80b2\u513f\u3001\u521b\u4e1a\u4e0e\u505a\u5e73\u53f0\u5408\u89c4\u3001\u51fa\u56fd\u4e0e\u6280\u80fd\u3002\u6bcf\u6761\u5199\u660e\u6210\u672c\u3001\u6536\u76ca\u3001\u8bc1\u636e\u7b49\u7ea7\u548c\u539f\u59cb\u51fa\u5904\uff0c\u53ea\u5f15\u671f\u520a\u8bba\u6587\u4e0e\u5b98\u65b9\u6587\u4ef6\u3002",
+      "language": "HTML",
+      "category": "Core Utilities",
+      "stars": 2865,
+      "stars_24h": 0,
+      "created_at": "2026-09-07T01:53:36Z",
+      "trending_score": 2.8519,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2865
+        }
+      ]
+    },
+    {
+      "id": 1350984217,
+      "name": "DLSS5-Swapper",
+      "full_name": "rakanki911/DLSS5-Swapper",
+      "url": "https://github.com/rakanki911/DLSS5-Swapper",
+      "description": "Install, tune and restore DLSS 5 in your games with one click. Native RenoDX, DLSS5-Feeder for games without DLSS, OptiScaler and multipass routes; DirectX 8/9/11/12, Vulkan, OpenGL, DirectDraw and emulators. In-game F8 overlay, automatic backups, and a community page showing what works on your games and your graphics card.",
+      "language": "JavaScript",
+      "category": "Developer Tooling & CLI",
+      "stars": 5473,
+      "stars_24h": 0,
+      "created_at": "2026-08-29T23:51:32Z",
+      "trending_score": 2.6692,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 5473
+        }
+      ]
+    },
+    {
+      "id": 1348577064,
+      "name": "PRAXIST",
+      "full_name": "sapientinc/PRAXIST",
+      "url": "https://github.com/sapientinc/PRAXIST",
+      "description": "Autonomous research system for measurable, computer-executable research.",
+      "language": "Python",
+      "category": "Core Utilities",
+      "stars": 5725,
+      "stars_24h": 0,
+      "created_at": "2026-08-27T14:20:58Z",
+      "trending_score": 2.3994,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 5725
+        }
+      ]
+    },
+    {
+      "id": 1361260630,
+      "name": "NavierStokesAndEuler",
+      "full_name": "openai/NavierStokesAndEuler",
+      "url": "https://github.com/openai/NavierStokesAndEuler",
+      "description": "Lean certificates accompanying Navier-Stokes and Euler results",
+      "language": "Lean",
+      "category": "Core Utilities",
+      "stars": 1932,
+      "stars_24h": 0,
+      "created_at": "2026-09-08T10:53:38Z",
+      "trending_score": 2.2918,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1932
+        }
+      ]
+    },
+    {
+      "id": 1349601607,
+      "name": "codex-with-chatgpt",
+      "full_name": "XiaoDuoYa/codex-with-chatgpt",
+      "url": "https://github.com/XiaoDuoYa/codex-with-chatgpt",
+      "description": "ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.",
+      "language": "TypeScript",
+      "category": "Autonomous Agents",
+      "stars": 5093,
+      "stars_24h": 0,
+      "created_at": "2026-08-28T12:57:24Z",
+      "trending_score": 2.2607,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 5093
+        }
+      ]
+    },
+    {
+      "id": 1361439328,
+      "name": "Edge0",
+      "full_name": "Edge0-AI/Edge0",
+      "url": "https://github.com/Edge0-AI/Edge0",
+      "description": "No description provided.",
+      "language": "Python",
+      "category": "Core Utilities",
+      "stars": 1873,
+      "stars_24h": 0,
+      "created_at": "2026-09-08T13:41:47Z",
+      "trending_score": 2.2578,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1873
+        }
+      ]
+    },
+    {
+      "id": 1361693766,
+      "name": "anything2explainer",
+      "full_name": "Vincentwei1021/anything2explainer",
+      "url": "https://github.com/Vincentwei1021/anything2explainer",
+      "description": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
+      "language": "TypeScript",
+      "category": "Autonomous Agents",
+      "stars": 1550,
+      "stars_24h": 0,
+      "created_at": "2026-09-08T17:19:54Z",
+      "trending_score": 1.9085,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1550
+        }
+      ]
+    },
+    {
+      "id": 1357272370,
+      "name": "wechat-intelligence-hub",
+      "full_name": "Rion-Wu-tech/wechat-intelligence-hub",
+      "url": "https://github.com/Rion-Wu-tech/wechat-intelligence-hub",
+      "description": "Local-first WeChat intelligence system with a read-only CLI, Codex skills, searchable chat history, daily briefings, follow-ups and opportunity tracking.",
+      "language": "Python",
+      "category": "Developer Tooling & CLI",
+      "stars": 2389,
+      "stars_24h": 0,
+      "created_at": "2026-09-04T15:00:53Z",
+      "trending_score": 1.8293,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": true,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2389
+        }
+      ]
+    },
+    {
+      "id": 1358588929,
+      "name": "handraw-style",
+      "full_name": "yang0/handraw-style",
+      "url": "https://github.com/yang0/handraw-style",
+      "description": "\u624b\u7ed8\u98ce\u683c\u7f16\u53f7\u753b\u5eca\u4e0e\u53cc\u8bed\u63d0\u793a\u8bcd Skill",
+      "language": "HTML",
+      "category": "Core Utilities",
+      "stars": 2074,
+      "stars_24h": 0,
+      "created_at": "2026-09-05T21:57:22Z",
+      "trending_score": 1.8103,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2074
+        }
+      ]
+    },
+    {
+      "id": 1348483831,
+      "name": "spotifast",
+      "full_name": "crmne/spotifast",
+      "url": "https://github.com/crmne/spotifast",
+      "description": "Spotify, native and fast. One lightweight Rust app for your whole library, local playback, and Spotify Connect on Linux, macOS, and Windows.",
+      "language": "Rust",
+      "category": "Developer Tooling & CLI",
+      "stars": 4313,
+      "stars_24h": 0,
+      "created_at": "2026-08-27T12:46:32Z",
+      "trending_score": 1.8006,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": true,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 4313
+        }
+      ]
+    },
+    {
+      "id": 1341759590,
+      "name": "threeui",
+      "full_name": "MengTo/threeui",
+      "url": "https://github.com/MengTo/threeui",
+      "description": "Open-source ThreeUI Community catalog with live interactive components and complete Community source.",
+      "language": "HTML",
+      "category": "Core Utilities",
+      "stars": 5887,
+      "stars_24h": 0,
+      "created_at": "2026-08-21T11:56:39Z",
+      "trending_score": 1.7935,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 5887
+        }
+      ]
+    },
+    {
+      "id": 1356159928,
+      "name": "niubigeo",
+      "full_name": "Albert-Weasker/niubigeo",
+      "url": "https://github.com/Albert-Weasker/niubigeo",
+      "description": "Open-source AI brand visibility and competitor reports. Official website: https://niubigeo.ai/ | Paid services: AI testing by real people and GEO optimization. Pricing: https://niubigeo.ai/pricing",
+      "language": "TypeScript",
+      "category": "Core Utilities",
+      "stars": 2508,
+      "stars_24h": 0,
+      "created_at": "2026-09-03T15:55:54Z",
+      "trending_score": 1.756,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2508
+        }
+      ]
+    },
+    {
+      "id": 1348410551,
+      "name": "my-girlfriend-jingtian-latex",
+      "full_name": "HEJustinSun/my-girlfriend-jingtian-latex",
+      "url": "https://github.com/HEJustinSun/my-girlfriend-jingtian-latex",
+      "description": "No description provided.",
+      "language": "TeX",
+      "category": "Core Utilities",
+      "stars": 4212,
+      "stars_24h": 0,
+      "created_at": "2026-08-27T11:28:44Z",
+      "trending_score": 1.7528,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 4212
+        }
+      ]
+    },
+    {
+      "id": 1353548665,
+      "name": "commerce-agents",
+      "full_name": "anthropics/commerce-agents",
+      "url": "https://github.com/anthropics/commerce-agents",
+      "description": "Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included.",
+      "language": "Python",
+      "category": "Autonomous Agents",
+      "stars": 2945,
+      "stars_24h": 0,
+      "created_at": "2026-09-01T12:30:12Z",
+      "trending_score": 1.724,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2945
+        }
+      ]
+    },
+    {
+      "id": 1359610661,
+      "name": "holo-card-studio",
+      "full_name": "EverettFish/holo-card-studio",
+      "url": "https://github.com/EverettFish/holo-card-studio",
+      "description": "Turn the user's description or uploaded reference into a finished, editable Blender card and an interactive Three.js page. Preserve the requested subject, style, typography and destination. This skill contains code and text only; generated artwork belongs in the user's output project.",
+      "language": "Python",
+      "category": "Core Utilities",
+      "stars": 1573,
+      "stars_24h": 0,
+      "created_at": "2026-09-07T00:41:18Z",
+      "trending_score": 1.5565,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1573
+        }
+      ]
+    },
+    {
+      "id": 1358295353,
+      "name": "codenotch",
+      "full_name": "vinzdg/codenotch",
+      "url": "https://github.com/vinzdg/codenotch",
+      "description": "A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigravity to a screen edge.",
+      "language": "Swift",
+      "category": "Core Utilities",
+      "stars": 1837,
+      "stars_24h": 0,
+      "created_at": "2026-09-05T14:55:35Z",
+      "trending_score": 1.5545,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1837
+        }
+      ]
+    },
+    {
+      "id": 1351879111,
+      "name": "reef",
+      "full_name": "Human-Agent-Society/reef",
+      "url": "https://github.com/Human-Agent-Society/reef",
+      "description": "Continual learning infra for self-improving agents",
+      "language": "Python",
+      "category": "Local AI & Inference",
+      "stars": 2911,
+      "stars_24h": 0,
+      "created_at": "2026-08-31T01:39:18Z",
+      "trending_score": 1.5294,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2911
+        }
+      ]
+    },
+    {
+      "id": 1339742577,
+      "name": "Amagine3D",
+      "full_name": "amagine-ai/Amagine3D",
+      "url": "https://github.com/amagine-ai/Amagine3D",
+      "description": "Amagine3D: From hardware requirements to editable 3D designs",
+      "language": "Python",
+      "category": "Core Utilities",
+      "stars": 5134,
+      "stars_24h": 0,
+      "created_at": "2026-08-19T15:31:34Z",
+      "trending_score": 1.4401,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 5134
+        }
+      ]
+    },
+    {
+      "id": 1354887280,
+      "name": "SoL-Pi",
+      "full_name": "NVlabs/SoL-Pi",
+      "url": "https://github.com/NVlabs/SoL-Pi",
+      "description": "SoL-Pi: Scaling Auto-Research Loops for Efficient Agent Harnesses",
+      "language": "TypeScript",
+      "category": "Autonomous Agents",
+      "stars": 2166,
+      "stars_24h": 0,
+      "created_at": "2026-09-02T14:48:47Z",
+      "trending_score": 1.3851,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2166
+        }
+      ]
+    },
+    {
+      "id": 1356772546,
+      "name": "vista",
+      "full_name": "Mantitup-Org/vista",
+      "url": "https://github.com/Mantitup-Org/vista",
+      "description": "No description provided.",
+      "language": "TypeScript",
+      "category": "Core Utilities",
+      "stars": 1825,
+      "stars_24h": 0,
+      "created_at": "2026-09-04T06:20:19Z",
+      "trending_score": 1.3502,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 70,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1825
+        }
+      ]
+    },
+    {
+      "id": 1342935078,
+      "name": "ai-infra-book",
+      "full_name": "bojieli/ai-infra-book",
+      "url": "https://github.com/bojieli/ai-infra-book",
+      "description": "\u300a\u6df1\u5165\u7406\u89e3 AI Infra\uff1a\u91cf\u5316\u5206\u6790\u4e0e\u7cfb\u7edf\u8bbe\u8ba1\u300b\uff08\u674e\u535a\u6770 \u8457\uff09\u5f00\u6e90\u4e66\u7a3f\uff1a\u4ece\u786c\u4ef6\u7ea6\u675f\u548c\u6a21\u578b\u67b6\u6784\u51fa\u53d1\uff0c\u91cf\u5316\u63a8\u5bfc LLM \u63a8\u7406\u4e0e\u8bad\u7ec3\u7cfb\u7edf\u8bbe\u8ba1\u3002\u542b\u5168\u4e66\u6b63\u6587\u3001PDF\u3001\u914d\u5957\u8ba1\u7b97\u5de5\u5177\u4e0e\u5b9e\u9a8c",
+      "language": "Python",
+      "category": "Local AI & Inference",
+      "stars": 4071,
+      "stars_24h": 0,
+      "created_at": "2026-08-22T15:30:41Z",
+      "trending_score": 1.3093,
+      "hardware_req": "Moderate (8\u201316GB VRAM)",
+      "is_local_first": false,
+      "is_cuda_ready": true,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 4071
+        }
+      ]
+    },
+    {
+      "id": 1354701193,
+      "name": "lint",
+      "full_name": "shadcn-ui/lint",
+      "url": "https://github.com/shadcn-ui/lint",
+      "description": "An agent-first linter for Tailwind design systems. Write design system rules that agents can verify.",
+      "language": "TypeScript",
+      "category": "Autonomous Agents",
+      "stars": 2005,
+      "stars_24h": 0,
+      "created_at": "2026-09-02T11:51:38Z",
+      "trending_score": 1.2691,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 70,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2005
+        }
+      ]
+    },
+    {
+      "id": 1358346534,
+      "name": "codex-astra-luna-orchestrator",
+      "full_name": "donvito/codex-astra-luna-orchestrator",
+      "url": "https://github.com/donvito/codex-astra-luna-orchestrator",
+      "description": "Use Astra as orchestrator and Luna for subagents in Codex",
+      "language": "Python",
+      "category": "Autonomous Agents",
+      "stars": 1460,
+      "stars_24h": 0,
+      "created_at": "2026-09-05T16:03:06Z",
+      "trending_score": 1.2416,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1460
+        }
+      ]
+    },
+    {
+      "id": 1349507889,
+      "name": "PawWork_ZhuaZhua",
+      "full_name": "Player-YN/PawWork_ZhuaZhua",
+      "url": "https://github.com/Player-YN/PawWork_ZhuaZhua",
+      "description": "Paw Work - selection-first web agent for Chrome: select on the live page, describe the outcome, take away an editable office file. BYOK, sandboxed, no server.",
+      "language": "JavaScript",
+      "category": "Local AI & Inference",
+      "stars": 2768,
+      "stars_24h": 0,
+      "created_at": "2026-08-28T10:56:56Z",
+      "trending_score": 1.2223,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 70,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2768
+        }
+      ]
+    },
+    {
+      "id": 1344208527,
+      "name": "grok-bot-0.18-reconstructed",
+      "full_name": "b-nnett/grok-bot-0.18-reconstructed",
+      "url": "https://github.com/b-nnett/grok-bot-0.18-reconstructed",
+      "description": "Unofficial source-oriented reconstruction and extension of Grok Bot 0.18.0 for macOS",
+      "language": "TypeScript",
+      "category": "Core Utilities",
+      "stars": 3505,
+      "stars_24h": 0,
+      "created_at": "2026-08-23T20:53:01Z",
+      "trending_score": 1.1974,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 3505
+        }
+      ]
+    },
+    {
+      "id": 1349253750,
+      "name": "sepia",
+      "full_name": "Nanako0129/sepia",
+      "url": "https://github.com/Nanako0129/sepia",
+      "description": "De-AI writing skill for any Agent Skills-compatible agent (77+ via the Skills CLI), with native plugins for Claude Code, Codex, Grok Build, and Antigravity. Narrative-architecture repair for fiction, venue-matched rules for professional prose. Based on StoryScope (arXiv:2604.03136).",
+      "language": "Python",
+      "category": "Local AI & Inference",
+      "stars": 2658,
+      "stars_24h": 0,
+      "created_at": "2026-08-28T05:56:49Z",
+      "trending_score": 1.1587,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2658
+        }
+      ]
+    },
+    {
+      "id": 1342461518,
+      "name": "FrontierAgent",
+      "full_name": "ApodexAI/FrontierAgent",
+      "url": "https://github.com/ApodexAI/FrontierAgent",
+      "description": "\ud83e\udde9 FrontierAgent, our agent framework, open-sourced alongside it \u2014 native command-line TUI, ReAct and Agent Team modes, one command on macOS and Linux, no preinstall, no hard Docker dependency.",
+      "language": "Python",
+      "category": "Autonomous Agents",
+      "stars": 3441,
+      "stars_24h": 0,
+      "created_at": "2026-08-22T05:07:35Z",
+      "trending_score": 1.084,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 3441
+        }
+      ]
+    },
+    {
+      "id": 1354267344,
+      "name": "sonicloud_opensdk",
+      "full_name": "SonicloudTech/sonicloud_opensdk",
+      "url": "https://github.com/SonicloudTech/sonicloud_opensdk",
+      "description": "\u58f0\u4e91\u5f55\u97f3\u5361 Recorder \u662f\u4e00\u5957\u9762\u5411\u5f00\u53d1\u8005\u548c\u884c\u4e1a\u5ba2\u6237\u7684\u667a\u80fd\u5f55\u97f3\u786c\u4ef6\u63a5\u5165\u65b9\u6848\u3002 \u9879\u76ee\u4ee5\u5f55\u97f3\u5361\u7247\u786c\u4ef6\u4e3a\u6838\u5fc3\uff0c\u5f00\u653e BLE \u534f\u8bae SDK \u53ca Android\u3001iOS\u3001\u9e3f\u8499\u3001Flutter \u63a5\u5165\u793a\u4f8b\uff0c\u540c\u65f6\u63d0\u4f9b Windows/macOS \u684c\u9762\u7aef Demo\uff0c\u652f\u6301\u8bbe\u5907\u8fde\u63a5\u3001\u5f55\u97f3\u63a7\u5236\u3001\u5b9e\u65f6\u97f3\u9891\u3001\u6587\u4ef6\u4f20\u8f93\u3001OTA \u5347\u7ea7\u548c\u8bed\u97f3\u8f6c\u5199\u7b49\u80fd\u529b\uff0c\u5e2e\u52a9\u5f00\u53d1\u8005\u5feb\u901f\u5c06\u5f55\u97f3\u786c\u4ef6\u63a5\u5165\u81ea\u5df1\u7684 App\u3001\u684c\u9762\u8f6f\u4ef6\u6216\u884c\u4e1a\u7cfb\u7edf\u3002 \u5982\u9700\u83b7\u53d6\u786c\u4ef6\u89c4\u683c\u3001\u6837\u673a\u3001\u5b8c\u6574\u534f\u8bae\u3001SDK \u8d44\u6599\u6216\u5b9a\u5236\u670d\u52a1\uff0c\u8bf7\u8054\u7cfb\u5b89\u5fbd\u58f0\u4e91",
+      "language": "HTML",
+      "category": "Core Utilities",
+      "stars": 1751,
+      "stars_24h": 0,
+      "created_at": "2026-09-02T03:32:02Z",
+      "trending_score": 1.0773,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1751
+        }
+      ]
+    },
+    {
+      "id": 1346499044,
+      "name": "Concat",
+      "full_name": "jub0t/Concat",
+      "url": "https://github.com/jub0t/Concat",
+      "description": "Open-Source CapCut replacement.",
+      "language": "Rust",
+      "category": "Local-First & Sovereign Apps",
+      "stars": 2623,
+      "stars_24h": 0,
+      "created_at": "2026-08-25T18:34:47Z",
+      "trending_score": 0.9906,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": true,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2623
+        }
+      ]
+    },
+    {
+      "id": 1342876750,
+      "name": "chat-on-steroids",
+      "full_name": "totec448-spec/chat-on-steroids",
+      "url": "https://github.com/totec448-spec/chat-on-steroids",
+      "description": "Cross-platform local MCP capabilities for ChatGPT with Chrome integration, Goal, Compact & Resume, and durable multi-agent workflows.",
+      "language": "TypeScript",
+      "category": "Autonomous Agents",
+      "stars": 3009,
+      "stars_24h": 0,
+      "created_at": "2026-08-22T14:16:24Z",
+      "trending_score": 0.9653,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": true,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 3009
+        }
+      ]
+    },
+    {
+      "id": 1344273611,
+      "name": "walgit",
+      "full_name": "tobi/walgit",
+      "url": "https://github.com/tobi/walgit",
+      "description": "No description provided.",
+      "language": "Rust",
+      "category": "Core Utilities",
+      "stars": 2522,
+      "stars_24h": 0,
+      "created_at": "2026-08-23T22:28:01Z",
+      "trending_score": 0.8645,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2522
+        }
+      ]
+    },
+    {
+      "id": 1339161831,
+      "name": "mono-color-skill",
+      "full_name": "yanliudesign/mono-color-skill",
+      "url": "https://github.com/yanliudesign/mono-color-skill",
+      "description": "One-ink editorial print image skill \u2014 warm paper, halftone photography, active negative space, and restrained typography.",
+      "language": "Python",
+      "category": "Autonomous Agents",
+      "stars": 3121,
+      "stars_24h": 0,
+      "created_at": "2026-08-19T06:07:45Z",
+      "trending_score": 0.8608,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 70,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 3121
+        }
+      ]
+    },
+    {
+      "id": 1342930695,
+      "name": "scroll-craft",
+      "full_name": "nateherkai/scroll-craft",
+      "url": "https://github.com/nateherkai/scroll-craft",
+      "description": "An agent skill for building premium, immersive, scroll-driven websites. Works with Codex, Claude Code, and other coding agents. Also available as a Claude Code plugin.",
+      "language": "JavaScript",
+      "category": "Autonomous Agents",
+      "stars": 2539,
+      "stars_24h": 0,
+      "created_at": "2026-08-22T15:25:08Z",
+      "trending_score": 0.8164,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2539
+        }
+      ]
+    },
+    {
+      "id": 1352104394,
+      "name": "cn",
+      "full_name": "shadcn-ui/cn",
+      "url": "https://github.com/shadcn-ui/cn",
+      "description": "cn is a new engine for Tailwind class merging and conflict resolution. It replaces tailwind-merge and clsx. Same APIs. Full parity. And it is 30\u00d7 faster.",
+      "language": "TypeScript",
+      "category": "Core Utilities",
+      "stars": 1521,
+      "stars_24h": 0,
+      "created_at": "2026-08-31T07:04:03Z",
+      "trending_score": 0.8122,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 70,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1521
+        }
+      ]
+    },
+    {
+      "id": 1352493419,
+      "name": "NoGraphicsAPI",
+      "full_name": "sebbbi/NoGraphicsAPI",
+      "url": "https://github.com/sebbbi/NoGraphicsAPI",
+      "description": "Minimal graphics API. Built on top of latest Vulkan extensions. As close as possibly to my \"No Graphics API\" blog post and the SIGGRAPH talk.",
+      "language": "C++",
+      "category": "Core Utilities",
+      "stars": 1418,
+      "stars_24h": 0,
+      "created_at": "2026-08-31T14:14:12Z",
+      "trending_score": 0.7738,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1418
+        }
+      ]
+    },
+    {
+      "id": 1344939825,
+      "name": "goldie",
+      "full_name": "kacperkapusciak/goldie",
+      "url": "https://github.com/kacperkapusciak/goldie",
+      "description": "\u2728 agentic app store previews and screenshots",
+      "language": "TypeScript",
+      "category": "Autonomous Agents",
+      "stars": 2092,
+      "stars_24h": 0,
+      "created_at": "2026-08-24T12:36:59Z",
+      "trending_score": 0.7391,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2092
+        }
+      ]
+    },
+    {
+      "id": 1345185947,
+      "name": "learn",
+      "full_name": "amosblomqvist/learn",
+      "url": "https://github.com/amosblomqvist/learn",
+      "description": "My AI learning system.",
+      "language": "TypeScript",
+      "category": "Core Utilities",
+      "stars": 2036,
+      "stars_24h": 0,
+      "created_at": "2026-08-24T16:45:07Z",
+      "trending_score": 0.7258,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2036
+        }
+      ]
+    },
+    {
+      "id": 1344252356,
+      "name": "try-omarchy",
+      "full_name": "omacom/try-omarchy",
+      "url": "https://github.com/omacom/try-omarchy",
+      "description": "Run Omarchy on MacOS without any setup.",
+      "language": "Swift",
+      "category": "Core Utilities",
+      "stars": 2115,
+      "stars_24h": 0,
+      "created_at": "2026-08-23T21:55:30Z",
+      "trending_score": 0.7242,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2115
+        }
+      ]
+    },
+    {
+      "id": 1349898907,
+      "name": "headcount",
+      "full_name": "cbrock84/headcount",
+      "url": "https://github.com/cbrock84/headcount",
+      "description": "An agent organization structured as a company \u2014 15+ departments, 125+ skills, each independently installable, citing the standards and regulators that settle the question. Runs in Claude Code and ChatGPT.",
+      "language": "Markdown",
+      "category": "Autonomous Agents",
+      "stars": 1583,
+      "stars_24h": 0,
+      "created_at": "2026-08-28T18:03:04Z",
+      "trending_score": 0.7121,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1583
+        }
+      ]
+    },
+    {
+      "id": 1346970181,
+      "name": "open-higgsfield",
+      "full_name": "wide-trace/open-higgsfield",
+      "url": "https://github.com/wide-trace/open-higgsfield",
+      "description": "A studio for image and video generation \u2014 one prompt bar, each model\u2019s own settings, and every finished run in one gallery.",
+      "language": "TypeScript",
+      "category": "Core Utilities",
+      "stars": 1663,
+      "stars_24h": 0,
+      "created_at": "2026-08-26T06:09:58Z",
+      "trending_score": 0.6451,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1663
+        }
+      ]
+    },
+    {
+      "id": 1342886503,
+      "name": "x64dbg-mcp-server",
+      "full_name": "duty1g/x64dbg-mcp-server",
+      "url": "https://github.com/duty1g/x64dbg-mcp-server",
+      "description": "x64dbg-MCP Server is a native MCP (Model Context Protocol) plugin for x64dbg that exposes the debugger's full functionality over HTTP. Connect any MCP-compatible AI assistant and control x64dbg programmatically: set breakpoints, step through code, read memory, dump registers, and more.  Built with Zig \u2014 zero dependencies, single-binary output, cros",
+      "language": "Zig",
+      "category": "Autonomous Agents",
+      "stars": 1981,
+      "stars_24h": 0,
+      "created_at": "2026-08-22T14:28:41Z",
+      "trending_score": 0.6358,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1981
+        }
+      ]
+    },
+    {
+      "id": 1348084390,
+      "name": "prod-FARM-IOS-Core",
+      "full_name": "Git-Agni/prod-FARM-IOS-Core",
+      "url": "https://github.com/Git-Agni/prod-FARM-IOS-Core",
+      "description": "A farm of real iPhones, run from your Mac. Open-source iOS device automation with live control, a Postgres-backed scheduler, and TikTok workflows. Self-hosted, Apache-2.0.",
+      "language": "TypeScript",
+      "category": "Autonomous Agents",
+      "stars": 1493,
+      "stars_24h": 0,
+      "created_at": "2026-08-27T04:55:36Z",
+      "trending_score": 0.6114,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": true,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1493
+        }
+      ]
+    },
+    {
+      "id": 1345606017,
+      "name": "WeMM-Embedding",
+      "full_name": "Tencent/WeMM-Embedding",
+      "url": "https://github.com/Tencent/WeMM-Embedding",
+      "description": "WeMM-Embedding is a family of universal multimodal embedding models by the WeChat Vision Team at Tencent, supporting multimodal understanding and retrieval.",
+      "language": "Python",
+      "category": "Local AI & Inference",
+      "stars": 1603,
+      "stars_24h": 0,
+      "created_at": "2026-08-25T02:46:10Z",
+      "trending_score": 0.5842,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1603
+        }
+      ]
+    },
+    {
+      "id": 1342432270,
+      "name": "anti-mage",
+      "full_name": "N4darae/anti-mage",
+      "url": "https://github.com/N4darae/anti-mage",
+      "description": "For detecting anti-detect browsers and spoofed profiles through runtime coherence analysis.",
+      "language": "Go",
+      "category": "Core Utilities",
+      "stars": 1663,
+      "stars_24h": 0,
+      "created_at": "2026-08-22T04:11:00Z",
+      "trending_score": 0.5229,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1663
+        }
+      ]
+    },
+    {
+      "id": 1342737409,
+      "name": "FireRedAudio",
+      "full_name": "FireRedTeam/FireRedAudio",
+      "url": "https://github.com/FireRedTeam/FireRedAudio",
+      "description": "No description provided.",
+      "language": "Python",
+      "category": "Core Utilities",
+      "stars": 1602,
+      "stars_24h": 0,
+      "created_at": "2026-08-22T11:18:12Z",
+      "trending_score": 0.5109,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 70,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1602
+        }
+      ]
+    },
+    {
+      "id": 1340501779,
+      "name": "lieflat-less-ai-tone",
+      "full_name": "larashero3-dotcom/lieflat-less-ai-tone",
+      "url": "https://github.com/larashero3-dotcom/lieflat-less-ai-tone",
+      "description": "\u4e00\u4e2a\u57fa\u4e8e 283 \u4e07\u5b57\u8bed\u6599\u7edf\u8ba1\u7684\u53bb AI \u5473 skill \u00b7 An AI-tone removal skill grounded in a 2.83-million-character corpus study",
+      "language": "Python",
+      "category": "Core Utilities",
+      "stars": 1719,
+      "stars_24h": 0,
+      "created_at": "2026-08-20T09:07:59Z",
+      "trending_score": 0.4979,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1719
+        }
+      ]
+    }
+  ]
+}
