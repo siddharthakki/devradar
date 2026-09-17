@@ -168,7 +168,9 @@
 
       let items = repositories.filter(repo => {
         const matchesSearch = repo.name.toLowerCase().includes(search) || 
-                              repo.description.toLowerCase().includes(search);
+                      repo.description.toLowerCase().includes(search) ||
+                      (repo.differentiator && repo.differentiator.toLowerCase().includes(search)) ||
+                      repo.language.toLowerCase().includes(search);
         const matchesCat = (cat === 'all') || (repo.category === cat);
 
         let matchesSpecs = true;
