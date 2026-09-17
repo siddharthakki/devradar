@@ -1,15 +1,18 @@
 ﻿name: Deploy Dashboard to Pages
+
 on:
   push:
     branches: [ main ]
-    paths: [ 'index.html', 'data/repos.json' ]
   workflow_dispatch:
+
 permissions:
   pages: write
   id-token: write
+
 concurrency:
   group: "pages"
   cancel-in-progress: true
+
 jobs:
   deploy:
     environment:
