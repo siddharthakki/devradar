@@ -38,10 +38,9 @@ def profile_specs(desc, topics):
     return {"hardware_req": vram, "is_local_first": is_local, "is_cuda_ready": "cuda" in text or "gpu" in text}
 
 def extract_readme_metadata(full_name, default_branch="main"):
-    """Extracts first valid screenshot/gif and install command from raw README."""
     image_url = None
     quick_run = f"git clone https://github.com/{full_name}.git"
-    
+
     for branch in [default_branch, "master", "main"]:
         url = f"https://raw.githubusercontent.com/{full_name}/{branch}/README.md"
         try:
@@ -49,25 +48,39 @@ def extract_readme_metadata(full_name, default_branch="main"):
             if r.status_code == 200:
                 text = r.text
 
-                # Find markdown images: ![alt](url)
-                img_matches = re.findall(r'!\[.*?\]\((https?:\/\/.*?(\.png|\.jpg|\.jpeg|\.gif|\.webp)[^\)]*)\)', text, re.IGNORECASE)
-                if not img_matches:
-                    # HTML img tags
-                    img_matches = re.findall(r'<img[^>]+src=["\'](https?:\/\/.*?(\.png|\.jpg|\.jpeg|\.gif|\.webp)[^"\']*)["\']', text, re.IGNORECASE)
-                
-                if img_matches:
-                    for match in img_matches:
-                        candidate = match[0]
-                        # Filter out common small badges and CI shields
-                        if not any(b in candidate for b in ["shields.io", "badge", "actions/workflows", "codecov", "travis-ci"]):
-                            image_url = candidate
+                # Match Markdown images: ![alt](target) and HTML images: <img src="target">
+                md_targets = re.findall(r'!\[.*?\]\(([^ \)]+)', text)
+                html_targets = re.findall(r'<img[^>]+src=["\']([^"\']+)["\']', text, re.IGNORECASE)
+                candidates = md_targets + html_targets
+
+                badge_filters = ["shields.io", "badge.svg", "actions/workflows", "codecov", "travis-ci", "github-readme-stats", "licence", "license"]
+
+                for src in candidates:
+                    src = src.strip().strip('"').strip("'")
+                    if any(b in src.lower() for b in badge_filters):
+                        continue
+
+                    # GitHub user-attachments CDN links
+                    if "github.com/user-attachments/assets" in src or "raw.githubusercontent.com" in src:
+                        image_url = src
+                        break
+
+                    # External image URLs
+                    if src.startswith("http://") or src.startswith("https://"):
+                        if any(src.lower().endswith(ext) for ext in [".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg"]):
+                            image_url = src
                             break
 
-                # Extract Quick Run Command
+                    # Relative asset paths inside the repo (e.g. assets/preview.png, ./screenshot.jpg)
+                    clean_rel = src.lstrip("./").lstrip("/")
+                    if any(clean_rel.lower().endswith(ext) for ext in [".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg"]):
+                        image_url = f"https://raw.githubusercontent.com/{full_name}/{branch}/{clean_rel}"
+                        break
+
                 cmd_match = re.search(r'```(?:bash|sh|shell)?\s*(docker run[^\n`]+|pip install[^\n`]+|npm (?:i|install)[^\n`]+|cargo install[^\n`]+)\s*```', text, re.IGNORECASE)
                 if cmd_match:
                     quick_run = cmd_match.group(1).strip()
-                
+
                 break
         except Exception:
             pass
@@ -99,11 +112,11 @@ def run():
         prev = existing.get(r_id, {})
         stars = r["stargazers_count"]
         forks = r.get("forks_count", 0)
-        
+
         history = prev.get("star_history", [])
         history.append({"ts": now_ts, "stars": stars})
         history = [h for h in history if h["ts"] >= now_ts - 7 * 86400]
-        
+
         day_ago = now_ts - 86400
         pts = [h["stars"] for h in history if h["ts"] <= day_ago]
         delta_24h = max(0, stars - (pts[-1] if pts else history[0]["stars"]))
@@ -116,10 +129,10 @@ def run():
         specs = profile_specs(r.get("description"), topics)
         auth = 95 if stars < 20 else max(20, min(99, int(100 - (30 if forks / max(1, stars) < 0.03 else 0))))
 
-        # Reuse cached image/cmd or fetch
+        # Force re-extract if image was missing
         img_url = prev.get("image_url")
         quick_run = prev.get("quick_run")
-        if not img_url or not quick_run:
+        if not img_url:
             img_url, quick_run = extract_readme_metadata(r["full_name"], r.get("default_branch", "main"))
 
         license_info = r.get("license") or {}
