@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How DevRadar Works — Methodology & Pipeline</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            radarDark: '#080c14',
+            cardDark: '#0f172a',
+            borderDark: '#1e293b',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-radarDark text-slate-200 min-h-screen font-sans selection:bg-cyan-500/20 antialiased p-6 sm:p-12">
+  <div class="max-w-4xl mx-auto">
+    <div class="flex items-center justify-between pb-6 border-b border-borderDark mb-8">
+      <a href="index.html" class="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-mono text-sm transition">
+        &larr; Back to Dashboard
+      </a>
+      <span class="text-xs font-mono uppercase bg-slate-800 text-cyan-300 px-2.5 py-1 rounded border border-slate-700">Methodology v1.4</span>
+    </div>
+
+    <h1 class="text-3xl font-black text-white tracking-tight">How <span class="text-cyan-400">DevRadar</span> Works</h1>
+    <p class="mt-2 text-slate-400 leading-relaxed text-sm">An autonomous open-source intelligence pipeline separating genuine architectural momentum from bot-manipulated hype.</p>
+
+    <div class="mt-10 space-y-8 text-sm">
+      <section class="bg-cardDark border border-borderDark rounded-xl p-6">
+        <h2 class="text-lg font-bold text-white flex items-center gap-2">
+          <span>🚀</span> Star Velocity & Momentum Decay
+        </h2>
+        <p class="mt-2 text-slate-400 leading-relaxed">
+          Standard GitHub trending metrics favor established corporate behemoths with 60,000+ legacy stars. DevRadar isolates fast-rising breakout tools using a gravity-decay velocity model:
+        </p>
+        <div class="my-4 p-3 bg-slate-900 rounded font-mono text-xs text-cyan-300 border border-slate-800">
+          Score = Stars / (Age_Hours + 2.0)^1.25
+        </div>
+        <p class="text-slate-400 leading-relaxed">
+          This prioritizes projects gaining rapid daily adoption within their first 7 to 30 days while dampening older repositories with dormant maintainer activity.
+        </p>
+      </section>
+
+      <section class="bg-cardDark border border-borderDark rounded-xl p-6">
+        <h2 class="text-lg font-bold text-white flex items-center gap-2">
+          <span>🛡️</span> Authenticity & Anti-Bot Index
+        </h2>
+        <p class="mt-2 text-slate-400 leading-relaxed">
+          To combat coordinated star farms, DevRadar computes an authenticity ratio analyzing structural engagement indicators:
+        </p>
+        <ul class="list-disc list-inside mt-3 space-y-1.5 text-slate-400">
+          <li><strong class="text-slate-200">Fork-to-Star Ratio:</strong> Real repositories typically display at least a 3–8% fork ratio. Extreme imbalances (<1.5% with high star bursts) are flagged.</li>
+          <li><strong class="text-slate-200">Velocity Deviation:</strong> Unnatural sudden spikes without organic issue or PR activity trigger score deductions.</li>
+        </ul>
+      </section>
+
+      <section class="bg-cardDark border border-borderDark rounded-xl p-6">
+        <h2 class="text-lg font-bold text-white flex items-center gap-2">
+          <span>⚙️</span> Hardware & Local-First Profiling
+        </h2>
+        <p class="mt-2 text-slate-400 leading-relaxed">
+          Each repository is inspected for self-hosting and local hardware viability. Readme manifests, configs, and models are categorized into CPU/Minimal, Unified Apple Silicon, or Heavy CUDA (16–24GB+ VRAM) requirements before you clone.
+        </p>
+      </section>
+
+      <section class="bg-cardDark border border-borderDark rounded-xl p-6">
+        <h2 class="text-lg font-bold text-white flex items-center gap-2">
+          <span>🔄</span> Autonomous Pipeline Architecture
+        </h2>
+        <p class="mt-2 text-slate-400 leading-relaxed">
+          DevRadar operates 100% serverlessly. A GitHub Action executes on an hourly cron schedule, running <code class="text-cyan-300">engine/analyzer.py</code> and updating atomic time-series history in <code class="text-cyan-300">data/repos.json</code> and <code class="text-cyan-300">data/history.json</code>.
+        </p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
