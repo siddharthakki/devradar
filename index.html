@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevRadar — Autonomous Open-Source Intelligence</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            radarDark: '#080c14',
+            cardDark: '#0f172a',
+            borderDark: '#1e293b',
+            accentGlow: '#38bdf8'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom scrollbar */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #080c14; }
+    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
+  </style>
+</head>
+<body class="bg-radarDark text-slate-200 min-h-screen font-sans selection:bg-cyan-500/20 antialiased">
+  
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    
+    <!-- Top Bar -->
+    <header class="flex flex-col md:flex-row md:items-center justify-between pb-6 border-b border-borderDark gap-4">
+      <div>
+        <div class="flex items-center gap-3">
+          <div class="p-2 bg-cyan-500/10 text-cyan-400 rounded-lg ring-1 ring-cyan-500/30">
+            <svg class="w-5 h-5 animate-spin" style="animation-duration: 8s;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6.364 1.636l-.707.707M21 12h-1M18.364 17.636l-.707-.707M12 21v-1M5.636 18.364l.707-.707M3 12h1M5.636 5.636l.707.707"/></svg>
+          </div>
+          <h1 class="text-2xl font-black tracking-tight text-white">
+            DEV<span class="text-cyan-400">RADAR</span>
+          </h1>
+          <span class="text-xs font-mono uppercase bg-slate-800/80 border border-slate-700 px-2 py-0.5 rounded text-cyan-300">Live Pulse</span>
+        </div>
+        <p class="text-xs text-slate-400 mt-1">Autonomous verifier ranking verified repositories by velocity, authenticity & local-first readiness.</p>
+      </div>
+
+      <div class="flex items-center gap-3 text-xs font-mono text-slate-400 bg-cardDark border border-borderDark px-3 py-2 rounded-lg">
+        <span class="inline-block w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+        <span id="syncIndicator">Connecting to pipeline...</span>
+      </div>
+    </header>
+
+    <!-- Search and Controls Grid -->
+    <div class="mt-6 flex flex-col gap-3">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-3">
+        
+        <!-- Search box -->
+        <input 
+          id="searchBox" 
+          type="text" 
+          placeholder="Filter repositories, topics, differentiators..." 
+          class="bg-cardDark border border-borderDark text-sm rounded-lg px-4 py-2 text-white placeholder-slate-500 md:col-span-6 focus:outline-none focus:ring-1 focus:ring-cyan-500"
+        />
+
+        <!-- Category selector -->
+        <select id="categoryFilter" class="bg-cardDark border border-borderDark text-xs rounded-lg px-3 py-2 text-slate-300 md:col-span-3 focus:outline-none focus:ring-1 focus:ring-cyan-500">
+          <option value="all">All Disciplines</option>
+          <option value="Local AI & Inference">Local AI & Inference</option>
+          <option value="Autonomous Agents & Workflows">Autonomous Agents & Workflows</option>
+          <option value="Developer Tooling & CLI">Developer Tooling & CLI</option>
+          <option value="Systems & Cloud Infrastructure">Systems & Infrastructure</option>
+          <option value="Local-First & UI Apps">Local-First & Sovereign Apps</option>
+          <option value="Security & Reverse Engineering">Security & Reverse Eng</option>
+        </select>
+
+        <!-- Metric Sort dropdown -->
+        <select id="sortSelect" class="bg-cardDark border border-borderDark text-xs rounded-lg px-3 py-2 text-slate-300 md:col-span-3 focus:outline-none focus:ring-1 focus:ring-cyan-500">
+          <option value="trending">Breakout Score (Velocity / Age)</option>
+          <option value="delta">24h Star Velocity 🚀</option>
+          <option value="stars">Total Stargazers ⭐</option>
+          <option value="recency">Discovery Date (Newest) 🕒</option>
+          <option value="authenticity">Authenticity % (Anti-Bot) 🛡️</option>
+        </select>
+      </div>
+
+      <!-- Quick Toggles / Spec Pills -->
+      <div class="flex flex-wrap items-center gap-2 pt-2">
+        <span class="text-xs text-slate-500 mr-2 font-mono">Specs:</span>
+        <button id="toggleLocalFirst" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">
+          🔒 Local-First Only
+        </button>
+        <button id="toggleCuda" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">
+          ⚡ GPU / CUDA Enabled
+        </button>
+        <button id="toggleOrganic" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">
+          🛡️ High Authenticity (>85%)
+        </button>
+      </div>
+    </div>
+
+    <!-- Repository Cards Container -->
+    <div id="repoList" class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="col-span-full py-20 text-center text-slate-500 font-mono text-sm">Streaming repository feed...</div>
+    </div>
+
+  </div>
+
+  <script>
+    let repositories = [];
+    let lastEtag = null;
+    let filterLocalFirst = false;
+    let filterCuda = false;
+    let filterOrganic = false;
+
+    async function loadDataset() {
+      try {
+        const headers = {};
+        if (lastEtag) headers['If-None-Match'] = lastEtag;
+
+        const response = await fetch('data/repos.json', { headers });
+        if (response.status === 304) return; // Cached
+
+        if (response.ok) {
+          lastEtag = response.headers.get('ETag');
+          const data = await response.json();
+          repositories = data.repositories || [];
+          
+          const syncTime = new Date(data.updated_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+          document.getElementById('syncIndicator').textContent = `Pipeline synced: ${syncTime}`;
+          render();
+        }
+      } catch (err) {
+        console.warn('Dataset streaming notice:', err);
+      }
+    }
+
+    function render() {
+      const search = document.getElementById('searchBox').value.toLowerCase();
+      const cat = document.getElementById('categoryFilter').value;
+      const sort = document.getElementById('sortSelect').value;
+
+      let items = repositories.filter(repo => {
+        const matchesSearch = repo.name.toLowerCase().includes(search) || 
+                              repo.description.toLowerCase().includes(search) ||
+                              repo.differentiator.toLowerCase().includes(search);
+        const matchesCat = (cat === 'all') || (repo.category === cat);
+        const matchesLocal = !filterLocalFirst || repo.is_local_first;
+        const matchesCuda = !filterCuda || repo.is_cuda_ready;
+        const matchesOrganic = !filterOrganic || repo.authenticity_score >= 85;
+
+        return matchesSearch && matchesCat && matchesLocal && matchesCuda && matchesOrganic;
+      });
+
+      // Sorting handler
+      if (sort === 'delta') items.sort((a, b) => b.stars_24h - a.stars_24h);
+      else if (sort === 'stars') items.sort((a, b) => b.stars - a.stars);
+      else if (sort === 'recency') items.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+      else if (sort === 'authenticity') items.sort((a, b) => b.authenticity_score - a.authenticity_score);
+      else items.sort((a, b) => b.trending_score - a.trending_score);
+
+      const target = document.getElementById('repoList');
+      if (!items.length) {
+        target.innerHTML = `<div class="col-span-full py-16 text-center text-slate-500 font-mono text-sm">No repositories matching selected constraints.</div>`;
+        return;
+      }
+
+      target.innerHTML = items.map((r, idx) => {
+        const daysAgo = Math.max(1, Math.round((Date.now() - new Date(r.created_at).getTime()) / (1000 * 3600 * 24)));
+        const authColor = r.authenticity_score >= 85 ? 'text-emerald-400 bg-emerald-500/10' : 'text-amber-400 bg-amber-500/10';
+
+        return `
+          <div class="bg-cardDark border border-borderDark hover:border-cyan-500/50 transition duration-200 rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-slate-800 text-cyan-300 border border-slate-700">
+                  ${r.category}
+                </span>
+                <span class="text-xs text-slate-500 font-mono">${daysAgo}d old</span>
+              </div>
+
+              <div class="mt-3 flex items-baseline justify-between gap-2">
+                <a href="${r.url}" target="_blank" rel="noopener noreferrer" class="text-base font-bold text-white hover:text-cyan-400 transition truncate">
+                  ${r.full_name}
+                </a>
+                <span class="text-xs font-mono px-1.5 py-0.5 rounded ${authColor}">
+                  ${r.authenticity_score}% Organic
+                </span>
+              </div>
+
+              <p class="mt-2 text-xs text-slate-400 leading-relaxed line-clamp-2">
+                ${r.description}
+              </p>
+
+              <!-- Differentiator Box -->
+              <div class="mt-3.5 p-2.5 bg-slate-900/80 rounded-lg border border-borderDark/80 flex items-start gap-2">
+                <span class="text-cyan-400 text-xs">💡</span>
+                <p class="text-[11px] text-slate-300 leading-snug font-mono">${r.differentiator}</p>
+              </div>
+            </div>
+
+            <!-- Footer Details & Specs -->
+            <div class="mt-4 pt-3.5 border-t border-borderDark flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
+              <div class="flex items-center gap-2 text-slate-400">
+                <span class="text-slate-300">${r.language}</span>
+                <span>•</span>
+                <span class="text-[11px] text-slate-400">${r.hardware_req}</span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                ${r.stars_24h > 0 ? `<span class="text-cyan-400 font-bold">+${r.stars_24h} 24h</span>` : ''}
+                <span class="text-amber-400 font-semibold">⭐ ${r.stars.toLocaleString()}</span>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Toggle button handlers
+    function setupToggle(btnId, getState, setState) {
+      const btn = document.getElementById(btnId);
+      btn.addEventListener('click', () => {
+        const next = !getState();
+        setState(next);
+        btn.classList.toggle('bg-cyan-500/10', next);
+        btn.classList.toggle('text-cyan-400', next);
+        btn.classList.toggle('border-cyan-500/30', next);
+        render();
+      });
+    }
+
+    setupToggle('toggleLocalFirst', () => filterLocalFirst, (v) => filterLocalFirst = v);
+    setupToggle('toggleCuda', () => filterCuda, (v) => filterCuda = v);
+    setupToggle('toggleOrganic', () => filterOrganic, (v) => filterOrganic = v);
+
+    document.getElementById('searchBox').addEventListener('input', render);
+    document.getElementById('categoryFilter').addEventListener('change', render);
+    document.getElementById('sortSelect').addEventListener('change', render);
+
+    // Initial load and live-sync polling every 60 seconds
+    loadDataset();
+    setInterval(loadDataset, 60000);
+  </script>
+</body>
+</html>

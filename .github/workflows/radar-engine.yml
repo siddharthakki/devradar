@@ -1,0 +1,24 @@
+﻿name: DevRadar Engine Sync
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  run-engine:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r engine/requirements.txt
+      - run: python engine/analyzer.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: |
+          git config --global user.name "devradar-bot[bot]"
+          git config --global user.email "bot@devradar.local"
+          git add data/repos.json
+          git diff --staged --quiet || (git commit -m "chore(data): sync open-source radar [skip ci]" && git push)
