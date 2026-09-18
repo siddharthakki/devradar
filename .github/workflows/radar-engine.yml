@@ -19,12 +19,14 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - run: pip install -r engine/requirements.txt
+      - name: Install Dependencies
+        run: pip install -r engine/requirements.txt
 
       - name: Ingest & Categorize Repos
         run: python engine/analyzer.py
@@ -36,8 +38,14 @@ jobs:
 
       - name: Commit and push snapshots
         run: |
-          git config --global user.name "devradar-bot"
-          git config --global user.email "bot@users.noreply.github.com"
-          git pull origin main --rebase
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git rebase origin/main
           git add data/
-          git diff --staged --quiet || (git commit -m "chore(data): sync radar & distribution endpoints [skip ci]" && git push origin main)
+          if git diff --staged --quiet; then
+            echo "No data changes detected this hour. Working tree clean."
+          else
+            git commit -m "chore(data): sync radar & distribution endpoints [skip ci]"
+            git push origin main
+          fi
