@@ -29,8 +29,9 @@
 </head>
 <body class="bg-radarDark text-slate-200 min-h-screen font-sans selection:bg-cyan-500/20 antialiased">
   
+  <!-- STICKY TOPBAR CONTAINER (Full-Width Fluid) -->
   <div class="sticky top-0 z-50 bg-radarDark/95 backdrop-blur-md border-b border-borderDark shadow-xl shadow-black/40">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
+    <div class="w-full px-4 sm:px-6 lg:px-10 py-3.5">
       <header class="flex flex-col md:flex-row md:items-center justify-between pb-3 gap-3">
         <div>
           <div class="flex items-center gap-3">
@@ -50,13 +51,17 @@
             <span id="syncIndicator">Connecting to pipeline...</span>
             <span class="text-[10px] text-cyan-400/80 ml-1 font-semibold">(Hourly Sync)</span>
           </div>
+          <span class="text-slate-600">|</span>
+          <!-- Client Platform / GPU Detector -->
+          <span id="clientHwBadge" class="text-[11px] text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">Detecting GPU...</span>
         </div>
       </header>
 
+      <!-- Filter Controls Grid -->
       <div class="flex flex-col gap-2.5 pt-1">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-2">
           <div class="relative md:col-span-5">
-            <input id="searchBox" type="text" placeholder="Search across all 20 disciplines..." class="w-full bg-cardDark border border-borderDark text-xs rounded-lg pl-3 pr-24 py-2 text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-cyan-500" />
+            <input id="searchBox" type="text" placeholder="Search across all 20 disciplines..." class="w-full bg-cardDark border border-borderDark text-xs rounded-lg pl-3 pr-28 py-2 text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-cyan-500" />
             <span id="matchCounter" class="absolute right-2 top-1/2 -translate-y-1/2 text-[10px] font-mono text-cyan-400 bg-slate-900 px-2 py-0.5 rounded border border-borderDark font-semibold">0 repos found</span>
           </div>
 
@@ -82,6 +87,7 @@
             <button id="toggleLocalFirst" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">🔒 Local-First</button>
             <button id="toggleCuda" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">⚡ GPU / CUDA</button>
             <button id="toggleOrganic" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">🛡️ High Authenticity (>85%)</button>
+            <button id="toggleRunnable" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">🖥️ Compatible With My PC</button>
           </div>
           <button id="globalSearchBtn" class="text-[11px] font-mono text-cyan-400 hover:text-cyan-300 underline underline-offset-4 hidden">
             🌐 Query global GitHub for "<span id="globalQueryText"></span>" &rarr;
@@ -91,8 +97,8 @@
     </div>
   </div>
 
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-    <!-- Active Filter Status Banner -->
+  <!-- MAIN FLUID CONTENT WRAPPER -->
+  <main class="w-full px-4 sm:px-6 lg:px-10 py-6">
     <div id="filterStatusBanner" class="hidden mb-6 p-3 bg-slate-900 border border-borderDark rounded-xl flex items-center justify-between text-xs font-mono">
       <div class="flex items-center gap-2">
         <span class="text-cyan-400 font-bold" id="bannerTitle">Viewing Discipline</span>
@@ -115,8 +121,27 @@
     let filterLocalFirst = false;
     let filterCuda = false;
     let filterOrganic = false;
+    let filterRunnable = false;
+    let hasLocalGpu = false;
 
-    // Attach to window so HTML inline onclicks work reliably across module boundaries
+    // Detect client hardware via WebGL
+    function detectHardware() {
+      try {
+        const canvas = document.createElement('canvas');
+        const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+        if (gl) {
+          const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+          const renderer = debugInfo ? gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL) : '';
+          hasLocalGpu = /nvidia|rtx|gtx|radeon|apple/i.test(renderer);
+          document.getElementById('clientHwBadge').textContent = hasLocalGpu ? '⚡ Discrete/Metal GPU' : '💻 Standard CPU';
+        } else {
+          document.getElementById('clientHwBadge').textContent = '💻 Standard Host';
+        }
+      } catch (e) {
+        document.getElementById('clientHwBadge').textContent = '💻 Standard Host';
+      }
+    }
+
     window.selectCategory = function(cat) {
       const select = document.getElementById('categoryFilter');
       if (select) {
@@ -154,12 +179,10 @@
       try {
         const cacheBuster = `?t=${Date.now()}`;
         const res = await fetch(`data/repos.json${cacheBuster}`);
-        
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
-        
         const rawItems = Array.isArray(data) ? data : (data.repositories || []);
-        
+
         repositories = rawItems.map(r => {
           const category = r.category && TAXONOMY[r.category] ? r.category : classifyRepo(r);
           const breakoutScore = computeBreakoutScore({ ...r, category });
@@ -174,7 +197,7 @@
         populateFilters();
         render();
       } catch (err) {
-        console.warn('Primary repos.json fetch failed:', err);
+        console.warn('Primary fetch error:', err);
         document.getElementById('syncIndicator').textContent = 'Sync delayed (Action cron pending)';
         document.getElementById('syncPulse').classList.remove('bg-cyan-400');
         document.getElementById('syncPulse').classList.add('bg-amber-400');
@@ -203,7 +226,6 @@
       const cmdIcon = getCommandIcon(r.quick_run);
       const desc = r.description?.trim() || '<span class="italic text-slate-500">[No description provided]</span>';
 
-      // Related repos calculation
       const similar = getSimilarRepos(r, repositories, 2);
       let similarPills = '';
       if (similar.length > 0) {
@@ -234,7 +256,7 @@
           ${mediaHtml}
           <div class="p-4 flex flex-col flex-1">
             <div class="flex items-center justify-between gap-2">
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-cyan-300 border border-slate-700 truncate max-w-[200px]">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-cyan-300 border border-slate-700 truncate max-w-[180px]">
                 ${r.category}
               </span>
               <div class="flex items-center gap-2">
@@ -272,7 +294,7 @@
             <div class="flex items-center gap-2 text-slate-400 text-[11px]">
               <span class="text-slate-300">${r.language || 'Code'}</span>
               <span>•</span>
-              <span>${r.hardware_req || 'Minimal'}</span>
+              <span class="${r.is_cuda_ready && !hasLocalGpu ? 'text-amber-400' : ''}">${r.hardware_req || 'Minimal'}</span>
             </div>
             <div class="flex items-center gap-2">
               ${(r.stars_24h || r.v24) > 0 ? `<span class="text-cyan-400 font-bold text-[11px]">+${r.stars_24h || r.v24} 24h</span>` : ''}
@@ -289,7 +311,7 @@
       const selectedLic = document.getElementById('licenseFilter').value;
       const sortType = document.getElementById('sortSelect').value;
 
-      const anySpecActive = filterLocalFirst || filterCuda || filterOrganic;
+      const anySpecActive = filterLocalFirst || filterCuda || filterOrganic || filterRunnable;
 
       let filtered = repositories.filter(repo => {
         const matchesSearch = !search || 
@@ -303,18 +325,19 @@
 
         let matchesSpecs = true;
         if (anySpecActive) {
-          matchesSpecs = (filterLocalFirst && repo.is_local_first) ||
-                         (filterCuda && repo.is_cuda_ready) ||
-                         (filterOrganic && (repo.authenticity_score || 95) >= 85);
+          const runnableOk = !filterRunnable || (!repo.is_cuda_ready || hasLocalGpu);
+          matchesSpecs = runnableOk && (
+            (filterLocalFirst && repo.is_local_first) ||
+            (filterCuda && repo.is_cuda_ready) ||
+            (filterOrganic && (repo.authenticity_score || 95) >= 85)
+          );
         }
 
         return matchesSearch && matchesLic && matchesSpecs;
       });
 
-      // Update total match counter
       document.getElementById('matchCounter').textContent = `${filtered.length} repos found`;
 
-      // Sorting
       if (sortType === 'delta') filtered.sort((a, b) => (b.stars_24h || b.v24 || 0) - (a.stars_24h || a.v24 || 0));
       else if (sortType === 'stars') filtered.sort((a, b) => (b.stars || 0) - (a.stars || 0));
       else if (sortType === 'recency') filtered.sort((a, b) => new Date(b.pushed_at || b.created_at || 0) - new Date(a.pushed_at || a.created_at || 0));
@@ -323,10 +346,8 @@
       const container = document.getElementById('repoContainer');
       const banner = document.getElementById('filterStatusBanner');
 
-      // Specific Category Flat View
       if (selectedCat !== 'all') {
         const catItems = filtered.filter(r => r.category === selectedCat);
-        
         banner.classList.remove('hidden');
         document.getElementById('bannerTitle').textContent = selectedCat;
         document.getElementById('bannerCount').textContent = `(${catItems.length} repos)`;
@@ -336,7 +357,7 @@
           return;
         }
         container.innerHTML = `
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
             ${catItems.map((r, i) => renderCard(r, i)).join('')}
           </div>
         `;
@@ -345,17 +366,16 @@
 
       banner.classList.add('hidden');
 
-      // Matrix View (Grouped by Category)
       const activeCategories = Object.keys(TAXONOMY).filter(cat => filtered.some(r => r.category === cat));
-
       if (!activeCategories.length) {
         container.innerHTML = `<div class="py-16 text-center text-slate-500 font-mono text-sm">No repositories matching selected constraints.</div>`;
         return;
       }
 
+      // Fluid Breakpoints: scales up to 5-6 cards across modern ultrawides
       container.innerHTML = activeCategories.map(cat => {
         const catAll = filtered.filter(r => r.category === cat);
-        const catSlice = catAll.slice(0, 4);
+        const catSlice = catAll.slice(0, 5);
 
         return `
           <section class="mb-10">
@@ -369,7 +389,7 @@
                 View all ${catAll.length} &rarr;
               </button>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
               ${catSlice.map((r, i) => renderCard(r, `${cat}-${i}`)).join('')}
             </div>
           </section>
@@ -392,12 +412,14 @@
     setupToggle('toggleLocalFirst', () => filterLocalFirst, v => filterLocalFirst = v);
     setupToggle('toggleCuda', () => filterCuda, v => filterCuda = v);
     setupToggle('toggleOrganic', () => filterOrganic, v => filterOrganic = v);
+    setupToggle('toggleRunnable', () => filterRunnable, v => filterRunnable = v);
 
     document.getElementById('searchBox').addEventListener('input', render);
     document.getElementById('categoryFilter').addEventListener('change', render);
     document.getElementById('licenseFilter').addEventListener('change', render);
     document.getElementById('sortSelect').addEventListener('change', render);
 
+    detectHardware();
     loadDataset();
     setInterval(loadDataset, 60000);
   </script>
