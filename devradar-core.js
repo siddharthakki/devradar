@@ -1,6 +1,6 @@
 ﻿/**
  * DevRadar Core Engine
- * 20-Category Taxonomy, Composite Breakout Ranking & Jaccard Similarity
+ * 20-Category Taxonomy, Composite Breakout Ranking & Resilient Similarity Engine
  */
 
 export const TAXONOMY = {
@@ -56,7 +56,6 @@ export function computeBreakoutScore(repo) {
   const stars = Math.max(1, repo.stars || repo.stargazers_count || 1);
   const authBonus = (repo.authenticity_score || 85) / 100;
 
-  // Recency multiplier
   const lastActive = new Date(repo.pushed_at || repo.created_at || Date.now());
   const daysSincePush = Math.max(0, (Date.now() - lastActive.getTime()) / (1000 * 3600 * 24));
   
@@ -71,32 +70,39 @@ export function computeBreakoutScore(repo) {
   return Number(((velocityWeight + (authority * 2.5)) * recencyMultiplier * authBonus).toFixed(2));
 }
 
-export function computeJaccardSimilarity(repoA, repoB) {
-  if (repoA.full_name === repoB.full_name) return 0;
+export function computeSimilarity(repoA, repoB) {
+  if ((repoA.full_name || repoA.name) === (repoB.full_name || repoB.name)) return -1;
 
-  const setA = new Set([
-    ...(repoA.topics || []).map(t => t.toLowerCase()),
-    (repoA.language || '').toLowerCase(),
-    (repoA.category || '').toLowerCase()
-  ].filter(Boolean));
+  let score = 0;
 
-  const setB = new Set([
-    ...(repoB.topics || []).map(t => t.toLowerCase()),
-    (repoB.language || '').toLowerCase(),
-    (repoB.category || '').toLowerCase()
-  ].filter(Boolean));
+  // 1. Same category gives baseline affinity
+  if (repoA.category && repoB.category && repoA.category === repoB.category) {
+    score += 0.45;
+  }
 
-  const intersection = new Set([...setA].filter(x => setB.has(x)));
-  const union = new Set([...setA, ...setB]);
+  // 2. Same primary language
+  if (repoA.language && repoB.language && repoA.language.toLowerCase() === repoB.language.toLowerCase()) {
+    score += 0.25;
+  }
 
-  return union.size === 0 ? 0 : intersection.size / union.size;
+  // 3. Jaccard similarity across topics
+  const topicsA = new Set((repoA.topics || []).map(t => t.toLowerCase()));
+  const topicsB = new Set((repoB.topics || []).map(t => t.toLowerCase()));
+  
+  if (topicsA.size > 0 && topicsB.size > 0) {
+    const intersection = new Set([...topicsA].filter(x => topicsB.has(x)));
+    const union = new Set([...topicsA, ...topicsB]);
+    score += (intersection.size / union.size) * 0.5;
+  }
+
+  return score;
 }
 
-export function getSimilarRepos(targetRepo, allRepos, limit = 3) {
+export function getSimilarRepos(targetRepo, allRepos, limit = 2) {
   return allRepos
     .filter(r => (r.full_name || r.name) !== (targetRepo.full_name || targetRepo.name))
-    .map(r => ({ repo: r, score: computeJaccardSimilarity(targetRepo, r) }))
-    .filter(item => item.score > 0.12)
+    .map(r => ({ repo: r, score: computeSimilarity(targetRepo, r) }))
+    .filter(item => item.score > 0.2) // Relaxed threshold so alternatives always appear
     .sort((a, b) => b.score - a.score)
     .slice(0, limit)
     .map(item => item.repo);
