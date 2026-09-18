@@ -25,165 +25,148 @@
   </script>
   <style>
     :root[data-theme="amber"] {
-      --bg-radar: #0c0a09;
-      --bg-card: #1c1917;
-      --border-color: #292524;
-      --accent-primary: #f59e0b;
-      --accent-secondary: #fbbf24;
-      --text-main: #e7e5e4;
-      --text-muted: #a8a29e;
+      --bg-radar: #0c0a09; --bg-card: #1c1917; --border-color: #292524;
+      --accent-primary: #f59e0b; --accent-secondary: #fbbf24;
+      --text-main: #e7e5e4; --text-muted: #a8a29e;
     }
     :root[data-theme="emerald"] {
-      --bg-radar: #021a14;
-      --bg-card: #062b22;
-      --border-color: #0f3e33;
-      --accent-primary: #10b981;
-      --accent-secondary: #34d399;
-      --text-main: #d1fae5;
-      --text-muted: #6ee7b7;
+      --bg-radar: #021a14; --bg-card: #062b22; --border-color: #0f3e33;
+      --accent-primary: #10b981; --accent-secondary: #34d399;
+      --text-main: #d1fae5; --text-muted: #6ee7b7;
     }
     :root[data-theme="violet"] {
-      --bg-radar: #090514;
-      --bg-card: #130c25;
-      --border-color: #261845;
-      --accent-primary: #a855f7;
-      --accent-secondary: #ec4899;
-      --text-main: #f3e8ff;
-      --text-muted: #c084fc;
+      --bg-radar: #090514; --bg-card: #130c25; --border-color: #261845;
+      --accent-primary: #a855f7; --accent-secondary: #ec4899;
+      --text-main: #f3e8ff; --text-muted: #c084fc;
     }
     :root[data-theme="copper"] {
-      --bg-radar: #0e0706;
-      --bg-card: #1c0f0d;
-      --border-color: #2d1714;
-      --accent-primary: #ea580c;
-      --accent-secondary: #e11d48;
-      --text-main: #fde8e5;
-      --text-muted: #fb923c;
+      --bg-radar: #0e0706; --bg-card: #1c0f0d; --border-color: #2d1714;
+      --accent-primary: #ea580c; --accent-secondary: #e11d48;
+      --text-main: #fde8e5; --text-muted: #fb923c;
     }
     :root[data-theme="titanium"] {
-      --bg-radar: #000000;
-      --bg-card: #111111;
-      --border-color: #262626;
-      --accent-primary: #ffffff;
-      --accent-secondary: #a3a3a3;
-      --text-main: #f5f5f5;
-      --text-muted: #737373;
+      --bg-radar: #000000; --bg-card: #111111; --border-color: #262626;
+      --accent-primary: #ffffff; --accent-secondary: #a3a3a3;
+      --text-main: #f5f5f5; --text-muted: #737373;
     }
     :root[data-theme="cyan"] {
-      --bg-radar: #080c14;
-      --bg-card: #0f172a;
-      --border-color: #1e293b;
-      --accent-primary: #38bdf8;
-      --accent-secondary: #22d3ee;
-      --text-main: #f1f5f9;
-      --text-muted: #94a3b8;
+      --bg-radar: #080c14; --bg-card: #0f172a; --border-color: #1e293b;
+      --accent-primary: #38bdf8; --accent-secondary: #22d3ee;
+      --text-main: #f1f5f9; --text-muted: #94a3b8;
     }
-
     body {
       background-color: var(--bg-radar);
       color: var(--text-main);
       transition: background-color 0.2s ease, color 0.2s ease;
     }
-    ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-track { background: var(--bg-radar); }
-    ::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 3px; }
-    .tooltip-bubble { visibility: hidden; opacity: 0; transition: opacity 0.15s ease-in-out; }
-    .has-tooltip:hover .tooltip-bubble { visibility: visible; opacity: 1; }
+    .skeleton-box {
+      background: linear-gradient(90deg, var(--bg-card) 25%, var(--border-color) 50%, var(--bg-card) 75%);
+      background-size: 200% 100%;
+      animation: skeleton-pulse 1.5s infinite;
+    }
+    @keyframes skeleton-pulse {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
   </style>
 </head>
 <body class="min-h-screen font-sans antialiased">
   
-  <div class="sticky top-0 z-50 bg-radarDark/95 backdrop-blur-md border-b border-borderDark shadow-xl">
-    <div class="w-full px-4 sm:px-6 lg:px-10 py-3.5">
-      <header class="flex flex-col md:flex-row md:items-center justify-between pb-3 gap-3">
+  <header class="sticky top-0 z-50 bg-radarDark/95 backdrop-blur-md border-b border-borderDark shadow-xl">
+    <div class="w-full px-4 sm:px-6 lg:px-10 py-3">
+      <div class="flex items-center justify-between gap-3">
         <div>
           <div class="flex items-center gap-3">
-            <div class="p-1.5 rounded-lg ring-1 ring-accentPrimary/30 bg-cardDark text-accentPrimary">
-              <svg class="w-5 h-5 animate-spin" style="animation-duration: 8s;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6.364 1.636l-.707.707M21 12h-1M18.364 17.636l-.707-.707M12 21v-1M5.636 18.364l.707-.707M3 12h1M5.636 5.636l.707.707"/></svg>
-            </div>
             <h1 class="text-xl font-black tracking-tight text-textMain">DEV<span class="text-accentPrimary">RADAR</span></h1>
-            <span class="text-[10px] font-mono uppercase px-2 py-0.5 rounded border border-borderDark text-accentSecondary bg-cardDark">Matrix Core</span>
-            <a href="how-it-works.html" class="text-xs font-mono text-textMuted hover:text-accentSecondary underline underline-offset-4 ml-2 transition">How it works ↗</a>
+            <a href="how-it-works.html" class="text-xs font-mono text-textMuted hover:text-accentSecondary underline underline-offset-4 transition">Methodology ↗</a>
           </div>
-          <p class="text-xs text-textMuted mt-0.5">20-discipline intelligence leaderboard ranked by star velocity, authority & recency decay.</p>
+          <p class="text-xs text-textMuted hidden sm:block">Autonomous discovery engine ranking breakout open source by 24h velocity & authenticity.</p>
         </div>
 
-        <div class="flex items-center gap-3 text-xs font-mono text-textMuted self-start md:self-auto">
-          <!-- Theme Switcher Dropdown -->
-          <div class="flex items-center gap-1.5 bg-cardDark border border-borderDark px-2.5 py-1.5 rounded-lg">
-            <span class="text-textMuted">🎨</span>
+        <div class="flex items-center gap-2 sm:gap-3 text-xs font-mono text-textMuted">
+          <!-- Theme Picker -->
+          <div class="flex items-center gap-1 bg-cardDark border border-borderDark px-2 py-1.5 rounded-lg">
+            <label for="themeSelect" class="sr-only">Color Theme</label>
+            <span>🎨</span>
             <select id="themeSelect" class="bg-transparent text-textMain text-xs font-mono focus:outline-none cursor-pointer">
-              <option value="amber" class="bg-cardDark">Cyber Amber</option>
-              <option value="emerald" class="bg-cardDark">Emerald Matrix</option>
-              <option value="violet" class="bg-cardDark">Hyper-Violet</option>
-              <option value="copper" class="bg-cardDark">Solar Copper</option>
-              <option value="titanium" class="bg-cardDark">Titanium Matte</option>
-              <option value="cyan" class="bg-cardDark">Obsidian Cyan</option>
+              <option value="amber" class="bg-cardDark">Amber</option>
+              <option value="emerald" class="bg-cardDark">Emerald</option>
+              <option value="violet" class="bg-cardDark">Violet</option>
+              <option value="copper" class="bg-cardDark">Copper</option>
+              <option value="titanium" class="bg-cardDark">Titanium</option>
+              <option value="cyan" class="bg-cardDark">Cyan</option>
             </select>
           </div>
 
-          <div class="flex items-center gap-2 bg-cardDark border border-borderDark px-3 py-1.5 rounded-lg">
-            <span id="syncPulse" class="inline-block w-2 h-2 rounded-full bg-accentPrimary animate-ping"></span>
-            <div>
-              <span id="syncIndicator">Connecting...</span>
-              <span class="text-[10px] text-accentSecondary ml-1 font-semibold">(Hourly Sync)</span>
-            </div>
-          </div>
-        </div>
-      </header>
+          <!-- My Radar Bookmark View Toggle -->
+          <button id="toggleBookmarksBtn" aria-label="View Saved Bookmarks" class="flex items-center gap-1 px-2.5 py-1.5 rounded-lg border border-borderDark bg-cardDark text-textMain hover:border-accentPrimary transition">
+            <span>🔖</span>
+            <span class="hidden sm:inline">My Radar</span>
+            <span id="bookmarkCount" class="text-[10px] bg-radarDark px-1.5 py-0.2 rounded border border-borderDark">0</span>
+          </button>
 
-      <!-- Filter Controls Grid -->
-      <div class="flex flex-col gap-2.5 pt-1">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-2">
-          <div class="relative md:col-span-5">
-            <input id="searchBox" type="text" placeholder="Search across all 20 disciplines..." class="w-full bg-cardDark border border-borderDark text-xs rounded-lg pl-3 pr-28 py-2 text-textMain placeholder:text-textMuted/60 focus:outline-none focus:ring-1 focus:ring-accentPrimary" />
-            <span id="matchCounter" class="absolute right-2 top-1/2 -translate-y-1/2 text-[10px] font-mono text-accentPrimary bg-radarDark px-2 py-0.5 rounded border border-borderDark font-semibold">0 repos found</span>
-          </div>
-
-          <select id="categoryFilter" class="bg-cardDark border border-borderDark text-xs rounded-lg px-2.5 py-2 text-textMain md:col-span-3 focus:outline-none focus:ring-1 focus:ring-accentPrimary">
-            <option value="all">Matrix View (All 20 Disciplines)</option>
-          </select>
-
-          <select id="licenseFilter" class="bg-cardDark border border-borderDark text-xs rounded-lg px-2.5 py-2 text-textMain md:col-span-2 focus:outline-none focus:ring-1 focus:ring-accentPrimary">
-            <option value="all">All Licenses</option>
-          </select>
-
-          <select id="sortSelect" class="bg-cardDark border border-borderDark text-xs rounded-lg px-2.5 py-2 text-textMain md:col-span-2 focus:outline-none focus:ring-1 focus:ring-accentPrimary">
-            <option value="breakout">Composite Breakout Score 🔥</option>
-            <option value="delta">24h Star Velocity 🚀</option>
-            <option value="stars">Total Stargazers ⭐</option>
-            <option value="recency">Active Push (Recent) 🕒</option>
-          </select>
-        </div>
-
-        <div class="flex flex-wrap items-center justify-between gap-2">
-          <div class="flex flex-wrap items-center gap-2">
-            <span class="text-xs text-textMuted mr-1 font-mono">Specs:</span>
-            <button id="toggleLocalFirst" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-textMuted hover:text-textMain transition">🔒 Local-First</button>
-            <button id="toggleCuda" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-textMuted hover:text-textMain transition">⚡ GPU / CUDA</button>
-            <button id="toggleOrganic" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-textMuted hover:text-textMain transition">🛡️ High Authenticity (>85%)</button>
-          </div>
-          <button id="globalSearchBtn" class="text-[11px] font-mono text-accentPrimary hover:underline hidden">
-            🌐 Query global GitHub for "<span id="globalQueryText"></span>" &rarr;
+          <!-- Mobile Filter Accordion Button -->
+          <button id="mobileFilterToggle" aria-label="Toggle Filter Controls" class="md:hidden p-2 rounded-lg border border-borderDark bg-cardDark text-textMain">
+            ⚡ Filters
           </button>
         </div>
       </div>
+
+      <!-- Controls Drawer (Collapsible on Mobile) -->
+      <div id="filterDrawer" class="hidden md:flex flex-col gap-2.5 pt-3">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-2">
+          <div class="relative md:col-span-5">
+            <input id="searchBox" type="search" placeholder="Search name, language, keywords..." aria-label="Search repositories" class="w-full bg-cardDark border border-borderDark text-xs rounded-lg pl-3 pr-24 py-2 text-textMain placeholder:text-textMuted/60 focus:outline-none focus:ring-1 focus:ring-accentPrimary" />
+            <span id="matchCounter" class="absolute right-2 top-1/2 -translate-y-1/2 text-[10px] font-mono text-accentPrimary bg-radarDark px-2 py-0.5 rounded border border-borderDark font-semibold">0 repos</span>
+          </div>
+
+          <select id="categoryFilter" aria-label="Filter by Discipline" class="bg-cardDark border border-borderDark text-xs rounded-lg px-2.5 py-2 text-textMain md:col-span-3 focus:outline-none focus:ring-1 focus:ring-accentPrimary">
+            <option value="all">Matrix View (All 20 Disciplines)</option>
+          </select>
+
+          <select id="licenseFilter" aria-label="Filter by License" class="bg-cardDark border border-borderDark text-xs rounded-lg px-2.5 py-2 text-textMain md:col-span-2 focus:outline-none focus:ring-1 focus:ring-accentPrimary">
+            <option value="all">All Licenses</option>
+          </select>
+
+          <select id="sortSelect" aria-label="Sort Repositories" class="bg-cardDark border border-borderDark text-xs rounded-lg px-2.5 py-2 text-textMain md:col-span-2 focus:outline-none focus:ring-1 focus:ring-accentPrimary">
+            <option value="breakout">Breakout Score 🔥</option>
+            <option value="delta">24h Velocity 🚀</option>
+            <option value="stars">Total Stars ⭐</option>
+            <option value="recency">Pushed Recently 🕒</option>
+          </select>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="text-xs text-textMuted mr-1 font-mono">Specs:</span>
+          <button id="toggleLocalFirst" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-textMuted hover:text-textMain transition">🔒 Local-First</button>
+          <button id="toggleCuda" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-textMuted hover:text-textMain transition">⚡ GPU / CUDA</button>
+          <button id="toggleOrganic" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-textMuted hover:text-textMain transition">🛡️ High Authenticity</button>
+        </div>
+      </div>
     </div>
-  </div>
+  </header>
 
   <main class="w-full px-4 sm:px-6 lg:px-10 py-6">
     <div id="filterStatusBanner" class="hidden mb-6 p-3 bg-cardDark border border-borderDark rounded-xl flex items-center justify-between text-xs font-mono">
       <div class="flex items-center gap-2">
-        <span class="text-accentPrimary font-bold" id="bannerTitle">Viewing Discipline</span>
-        <span class="text-textMuted" id="bannerCount">(0 repositories)</span>
+        <span class="text-accentPrimary font-bold" id="bannerTitle">Viewing</span>
+        <span class="text-textMuted" id="bannerCount"></span>
       </div>
       <button onclick="window.selectCategory('all')" class="text-xs text-accentSecondary underline">
         &larr; Back to Matrix View
       </button>
     </div>
 
+    <!-- Repository Target Container -->
     <div id="repoContainer">
-      <div class="py-20 text-center text-textMuted font-mono text-sm">Streaming repository feed...</div>
+      <!-- High-Fidelity Loading Skeletons -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
+        <div class="h-64 rounded-xl border border-borderDark skeleton-box"></div>
+        <div class="h-64 rounded-xl border border-borderDark skeleton-box"></div>
+        <div class="h-64 rounded-xl border border-borderDark skeleton-box"></div>
+        <div class="h-64 rounded-xl border border-borderDark skeleton-box"></div>
+        <div class="h-64 rounded-xl border border-borderDark skeleton-box"></div>
+      </div>
     </div>
   </main>
 
@@ -191,20 +174,44 @@
     import { TAXONOMY, classifyRepo, computeBreakoutScore, getSimilarRepos } from './devradar-core.js';
 
     let repositories = [];
+    let bookmarks = JSON.parse(localStorage.getItem('devradar-bookmarks') || '[]');
+    let showBookmarksOnly = false;
     let filterLocalFirst = false;
     let filterCuda = false;
     let filterOrganic = false;
 
-    // Theme selector with localStorage persistence
+    // Theme Switcher Init
     const themeSelect = document.getElementById('themeSelect');
     const savedTheme = localStorage.getItem('devradar-theme') || 'amber';
     document.documentElement.setAttribute('data-theme', savedTheme);
     themeSelect.value = savedTheme;
-
     themeSelect.addEventListener('change', (e) => {
-      const selected = e.target.value;
-      document.documentElement.setAttribute('data-theme', selected);
-      localStorage.setItem('devradar-theme', selected);
+      document.documentElement.setAttribute('data-theme', e.target.value);
+      localStorage.setItem('devradar-theme', e.target.value);
+    });
+
+    // Mobile drawer toggle
+    document.getElementById('mobileFilterToggle').addEventListener('click', () => {
+      document.getElementById('filterDrawer').classList.toggle('hidden');
+    });
+
+    window.toggleBookmark = function(repoName) {
+      const idx = bookmarks.indexOf(repoName);
+      if (idx > -1) bookmarks.splice(idx, 1);
+      else bookmarks.push(repoName);
+      localStorage.setItem('devradar-bookmarks', JSON.stringify(bookmarks));
+      updateBookmarkCounter();
+      render();
+    };
+
+    function updateBookmarkCounter() {
+      document.getElementById('bookmarkCount').textContent = bookmarks.length;
+    }
+
+    document.getElementById('toggleBookmarksBtn').addEventListener('click', () => {
+      showBookmarksOnly = !showBookmarksOnly;
+      document.getElementById('toggleBookmarksBtn').classList.toggle('border-accentPrimary', showBookmarksOnly);
+      render();
     });
 
     window.selectCategory = function(cat) {
@@ -240,6 +247,28 @@
       return '💻';
     }
 
+    function generateSparkline(history) {
+      if (!history || history.length < 2) return '';
+      const stars = history.map(h => h.stars);
+      const min = Math.min(...stars);
+      const max = Math.max(...stars);
+      const range = max - min || 1;
+      const width = 64;
+      const height = 18;
+
+      const points = stars.map((val, idx) => {
+        const x = (idx / (stars.length - 1)) * width;
+        const y = height - ((val - min) / range) * (height - 4) - 2;
+        return `${x.toFixed(1)},${y.toFixed(1)}`;
+      }).join(' ');
+
+      return `
+        <svg class="w-16 h-4 overflow-visible inline-block opacity-85 hover:opacity-100 transition" viewBox="0 0 ${width} ${height}" aria-hidden="true">
+          <polyline fill="none" stroke="var(--accent-secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="${points}" />
+        </svg>
+      `;
+    }
+
     async function loadDataset() {
       try {
         const res = await fetch(`data/repos.json?t=${Date.now()}`);
@@ -253,13 +282,11 @@
           return { ...r, category, breakout_score: breakoutScore };
         });
 
-        const syncTime = data.updated_at ? new Date(data.updated_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : 'Live';
-        document.getElementById('syncIndicator').textContent = `Pipeline synced: ${syncTime}`;
         populateFilters();
+        updateBookmarkCounter();
         render();
       } catch (err) {
-        console.warn('Load notice:', err);
-        document.getElementById('syncIndicator').textContent = 'Sync delayed';
+        console.warn('Sync load notice:', err);
       }
     }
 
@@ -280,6 +307,7 @@
 
     function renderCard(r, idx) {
       const daysAgo = Math.max(1, Math.round((Date.now() - new Date(r.created_at || Date.now()).getTime()) / (1000 * 3600 * 24)));
+      const isBookmarked = bookmarks.includes(r.full_name || r.name);
       const copyBtnId = `btn-copy-${idx}-${Math.floor(Math.random()*1000)}`;
       const cmdIcon = getCommandIcon(r.quick_run);
       const desc = r.description?.trim() || '<span class="italic text-textMuted/60">[No description provided]</span>';
@@ -288,13 +316,13 @@
       let similarPills = '';
       if (similar.length > 0) {
         similarPills = `
-          <div class="mt-3 pt-2.5 border-t border-borderDark flex items-center gap-1.5 text-[10px] font-mono text-textMuted overflow-hidden">
+          <div class="mt-3 pt-2 border-t border-borderDark flex items-center gap-1.5 text-[10px] font-mono text-textMuted overflow-hidden">
             <span class="text-textMuted/60 shrink-0">Related:</span>
             <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
               ${similar.map(s => `
                 <a href="${s.url}" target="_blank" rel="noopener noreferrer" 
                    title="${s.description || s.name}"
-                   class="px-1.5 py-0.5 rounded bg-radarDark border border-borderDark hover:border-accentPrimary text-accentSecondary transition shrink-0 truncate max-w-[130px]">
+                   class="px-1.5 py-0.5 rounded bg-radarDark border border-borderDark hover:border-accentPrimary text-accentSecondary transition shrink-0 truncate max-w-[120px]">
                   ${s.name}
                 </a>
               `).join('')}
@@ -305,21 +333,23 @@
 
       const mediaHtml = r.image_url 
         ? `<div class="w-full h-32 bg-radarDark border-b border-borderDark overflow-hidden relative">
-             <img src="${r.image_url}" alt="Preview" class="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition" loading="lazy" onerror="this.parentElement.style.display='none';" />
+             <img src="${r.image_url}" alt="Repository preview" class="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition" loading="lazy" onerror="this.parentElement.style.display='none';" />
            </div>`
         : '';
 
       return `
-        <div class="bg-cardDark border border-borderDark hover:border-accentPrimary/50 transition duration-200 rounded-xl overflow-hidden flex flex-col justify-between shadow-lg">
+        <article class="bg-cardDark border border-borderDark hover:border-accentPrimary/50 transition duration-200 rounded-xl overflow-hidden flex flex-col justify-between shadow-lg">
           ${mediaHtml}
           <div class="p-4 flex flex-col flex-1">
             <div class="flex items-center justify-between gap-2">
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-radarDark text-accentSecondary border border-borderDark truncate max-w-[180px]">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-radarDark text-accentSecondary border border-borderDark truncate max-w-[170px]">
                 ${r.category}
               </span>
-              <div class="flex items-center gap-2">
+              <div class="flex items-center gap-1.5">
                 <span class="text-[10px] font-mono text-textMuted border border-borderDark px-1.5 py-0.5 rounded bg-radarDark">${r.license || 'MIT'}</span>
-                <span class="text-[11px] text-textMuted font-mono">${daysAgo}d old</span>
+                <button onclick="window.toggleBookmark('${r.full_name || r.name}')" aria-label="Bookmark ${r.name}" class="text-sm hover:scale-125 transition">
+                  ${isBookmarked ? '🔖' : '📑'}
+                </button>
               </div>
             </div>
 
@@ -327,7 +357,7 @@
               <a href="${r.url}" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-textMain hover:text-accentPrimary transition truncate">
                 ${r.full_name || r.name}
               </a>
-              <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-radarDark text-accentPrimary border border-borderDark">
+              <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-radarDark text-accentPrimary border border-borderDark" title="Calculated from fork ratio and velocity distribution">
                 ${r.authenticity_score || 95}% Organic
               </span>
             </div>
@@ -336,10 +366,11 @@
 
             <div class="mt-3 p-1.5 bg-radarDark rounded-lg border border-borderDark flex items-center justify-between gap-2">
               <div class="flex items-center gap-1.5 overflow-hidden">
-                <span class="text-xs select-none">${cmdIcon}</span>
+                <span class="text-xs select-none" aria-hidden="true">${cmdIcon}</span>
                 <code class="text-[10px] text-textMain font-mono truncate select-all">${r.quick_run || 'git clone ' + (r.url || '')}</code>
               </div>
               <button id="${copyBtnId}" onclick="copyToClipboard('${(r.quick_run || 'git clone ' + (r.url || '')).replace(/'/g, "\\'")}', '${copyBtnId}')" 
+                      aria-label="Copy clone command"
                       class="text-[9px] font-mono uppercase text-textMuted hover:text-textMain px-2 py-0.5 rounded bg-cardDark border border-borderDark transition">
                 COPY
               </button>
@@ -355,11 +386,12 @@
               <span>${r.hardware_req || 'Minimal'}</span>
             </div>
             <div class="flex items-center gap-2">
+              ${generateSparkline(r.star_history)}
               ${(r.stars_24h || r.v24) > 0 ? `<span class="text-accentSecondary font-bold text-[11px]">+${r.stars_24h || r.v24} 24h</span>` : ''}
               <span class="text-accentPrimary font-semibold text-[11px]">⭐ ${(r.stars || 0).toLocaleString()}</span>
             </div>
           </div>
-        </div>
+        </article>
       `;
     }
 
@@ -372,6 +404,8 @@
       const anySpecActive = filterLocalFirst || filterCuda || filterOrganic;
 
       let filtered = repositories.filter(repo => {
+        if (showBookmarksOnly && !bookmarks.includes(repo.full_name || repo.name)) return false;
+
         const matchesSearch = !search || 
           (repo.name || '').toLowerCase().includes(search) || 
           (repo.full_name || '').toLowerCase().includes(search) ||
@@ -391,7 +425,7 @@
         return matchesSearch && matchesLic && matchesSpecs;
       });
 
-      document.getElementById('matchCounter').textContent = `${filtered.length} repos found`;
+      document.getElementById('matchCounter').textContent = `${filtered.length} repos`;
 
       if (sortType === 'delta') filtered.sort((a, b) => (b.stars_24h || b.v24 || 0) - (a.stars_24h || a.v24 || 0));
       else if (sortType === 'stars') filtered.sort((a, b) => (b.stars || 0) - (a.stars || 0));
@@ -400,6 +434,22 @@
 
       const container = document.getElementById('repoContainer');
       const banner = document.getElementById('filterStatusBanner');
+
+      if (showBookmarksOnly) {
+        banner.classList.remove('hidden');
+        document.getElementById('bannerTitle').textContent = "My Bookmarked Radar";
+        document.getElementById('bannerCount').textContent = `(${filtered.length} repositories saved)`;
+        if (!filtered.length) {
+          container.innerHTML = `<div class="py-16 text-center text-textMuted font-mono text-sm">No bookmarked repositories yet. Click 📑 on any card to save it.</div>`;
+          return;
+        }
+        container.innerHTML = `
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
+            ${filtered.map((r, i) => renderCard(r, i)).join('')}
+          </div>
+        `;
+        return;
+      }
 
       if (selectedCat !== 'all') {
         const catItems = filtered.filter(r => r.category === selectedCat);
