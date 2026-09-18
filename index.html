@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="amber">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,49 +11,124 @@
       theme: {
         extend: {
           colors: {
-            radarDark: '#080c14',
-            cardDark: '#0f172a',
-            borderDark: '#1e293b',
+            radarDark: 'var(--bg-radar)',
+            cardDark: 'var(--bg-card)',
+            borderDark: 'var(--border-color)',
+            accentPrimary: 'var(--accent-primary)',
+            accentSecondary: 'var(--accent-secondary)',
+            textMain: 'var(--text-main)',
+            textMuted: 'var(--text-muted)',
           }
         }
       }
     }
   </script>
   <style>
+    :root[data-theme="amber"] {
+      --bg-radar: #0c0a09;
+      --bg-card: #1c1917;
+      --border-color: #292524;
+      --accent-primary: #f59e0b;
+      --accent-secondary: #fbbf24;
+      --text-main: #e7e5e4;
+      --text-muted: #a8a29e;
+    }
+    :root[data-theme="emerald"] {
+      --bg-radar: #021a14;
+      --bg-card: #062b22;
+      --border-color: #0f3e33;
+      --accent-primary: #10b981;
+      --accent-secondary: #34d399;
+      --text-main: #d1fae5;
+      --text-muted: #6ee7b7;
+    }
+    :root[data-theme="violet"] {
+      --bg-radar: #090514;
+      --bg-card: #130c25;
+      --border-color: #261845;
+      --accent-primary: #a855f7;
+      --accent-secondary: #ec4899;
+      --text-main: #f3e8ff;
+      --text-muted: #c084fc;
+    }
+    :root[data-theme="copper"] {
+      --bg-radar: #0e0706;
+      --bg-card: #1c0f0d;
+      --border-color: #2d1714;
+      --accent-primary: #ea580c;
+      --accent-secondary: #e11d48;
+      --text-main: #fde8e5;
+      --text-muted: #fb923c;
+    }
+    :root[data-theme="titanium"] {
+      --bg-radar: #000000;
+      --bg-card: #111111;
+      --border-color: #262626;
+      --accent-primary: #ffffff;
+      --accent-secondary: #a3a3a3;
+      --text-main: #f5f5f5;
+      --text-muted: #737373;
+    }
+    :root[data-theme="cyan"] {
+      --bg-radar: #080c14;
+      --bg-card: #0f172a;
+      --border-color: #1e293b;
+      --accent-primary: #38bdf8;
+      --accent-secondary: #22d3ee;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+    }
+
+    body {
+      background-color: var(--bg-radar);
+      color: var(--text-main);
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
     ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-track { background: #080c14; }
-    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
+    ::-webkit-scrollbar-track { background: var(--bg-radar); }
+    ::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 3px; }
     .tooltip-bubble { visibility: hidden; opacity: 0; transition: opacity 0.15s ease-in-out; }
     .has-tooltip:hover .tooltip-bubble { visibility: visible; opacity: 1; }
   </style>
 </head>
-<body class="bg-radarDark text-slate-200 min-h-screen font-sans selection:bg-cyan-500/20 antialiased">
+<body class="min-h-screen font-sans antialiased">
   
-  <!-- STICKY TOPBAR CONTAINER (Full-Width Fluid) -->
-  <div class="sticky top-0 z-50 bg-radarDark/95 backdrop-blur-md border-b border-borderDark shadow-xl shadow-black/40">
+  <div class="sticky top-0 z-50 bg-radarDark/95 backdrop-blur-md border-b border-borderDark shadow-xl">
     <div class="w-full px-4 sm:px-6 lg:px-10 py-3.5">
       <header class="flex flex-col md:flex-row md:items-center justify-between pb-3 gap-3">
         <div>
           <div class="flex items-center gap-3">
-            <div class="p-1.5 bg-cyan-500/10 text-cyan-400 rounded-lg ring-1 ring-cyan-500/30">
+            <div class="p-1.5 rounded-lg ring-1 ring-accentPrimary/30 bg-cardDark text-accentPrimary">
               <svg class="w-5 h-5 animate-spin" style="animation-duration: 8s;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6.364 1.636l-.707.707M21 12h-1M18.364 17.636l-.707-.707M12 21v-1M5.636 18.364l.707-.707M3 12h1M5.636 5.636l.707.707"/></svg>
             </div>
-            <h1 class="text-xl font-black tracking-tight text-white">DEV<span class="text-cyan-400">RADAR</span></h1>
-            <span class="text-[10px] font-mono uppercase bg-slate-800/80 border border-slate-700 px-2 py-0.5 rounded text-cyan-300">Matrix Core</span>
-            <a href="how-it-works.html" class="text-xs font-mono text-slate-400 hover:text-cyan-300 underline underline-offset-4 ml-2 transition">How it works ↗</a>
+            <h1 class="text-xl font-black tracking-tight text-textMain">DEV<span class="text-accentPrimary">RADAR</span></h1>
+            <span class="text-[10px] font-mono uppercase px-2 py-0.5 rounded border border-borderDark text-accentSecondary bg-cardDark">Matrix Core</span>
+            <a href="how-it-works.html" class="text-xs font-mono text-textMuted hover:text-accentSecondary underline underline-offset-4 ml-2 transition">How it works ↗</a>
           </div>
-          <p class="text-xs text-slate-400 mt-0.5">20-discipline intelligence leaderboard ranked by star velocity, authority & recency decay.</p>
+          <p class="text-xs text-textMuted mt-0.5">20-discipline intelligence leaderboard ranked by star velocity, authority & recency decay.</p>
         </div>
 
-        <div class="flex items-center gap-3 text-xs font-mono text-slate-400 bg-cardDark border border-borderDark px-3 py-1.5 rounded-lg self-start md:self-auto">
-          <span id="syncPulse" class="inline-block w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
-          <div>
-            <span id="syncIndicator">Connecting to pipeline...</span>
-            <span class="text-[10px] text-cyan-400/80 ml-1 font-semibold">(Hourly Sync)</span>
+        <div class="flex items-center gap-3 text-xs font-mono text-textMuted self-start md:self-auto">
+          <!-- Theme Switcher Dropdown -->
+          <div class="flex items-center gap-1.5 bg-cardDark border border-borderDark px-2.5 py-1.5 rounded-lg">
+            <span class="text-textMuted">🎨</span>
+            <select id="themeSelect" class="bg-transparent text-textMain text-xs font-mono focus:outline-none cursor-pointer">
+              <option value="amber" class="bg-cardDark">Cyber Amber</option>
+              <option value="emerald" class="bg-cardDark">Emerald Matrix</option>
+              <option value="violet" class="bg-cardDark">Hyper-Violet</option>
+              <option value="copper" class="bg-cardDark">Solar Copper</option>
+              <option value="titanium" class="bg-cardDark">Titanium Matte</option>
+              <option value="cyan" class="bg-cardDark">Obsidian Cyan</option>
+            </select>
           </div>
-          <span class="text-slate-600">|</span>
-          <!-- Client Platform / GPU Detector -->
-          <span id="clientHwBadge" class="text-[11px] text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">Detecting GPU...</span>
+
+          <div class="flex items-center gap-2 bg-cardDark border border-borderDark px-3 py-1.5 rounded-lg">
+            <span id="syncPulse" class="inline-block w-2 h-2 rounded-full bg-accentPrimary animate-ping"></span>
+            <div>
+              <span id="syncIndicator">Connecting...</span>
+              <span class="text-[10px] text-accentSecondary ml-1 font-semibold">(Hourly Sync)</span>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -61,19 +136,19 @@
       <div class="flex flex-col gap-2.5 pt-1">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-2">
           <div class="relative md:col-span-5">
-            <input id="searchBox" type="text" placeholder="Search across all 20 disciplines..." class="w-full bg-cardDark border border-borderDark text-xs rounded-lg pl-3 pr-28 py-2 text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-cyan-500" />
-            <span id="matchCounter" class="absolute right-2 top-1/2 -translate-y-1/2 text-[10px] font-mono text-cyan-400 bg-slate-900 px-2 py-0.5 rounded border border-borderDark font-semibold">0 repos found</span>
+            <input id="searchBox" type="text" placeholder="Search across all 20 disciplines..." class="w-full bg-cardDark border border-borderDark text-xs rounded-lg pl-3 pr-28 py-2 text-textMain placeholder:text-textMuted/60 focus:outline-none focus:ring-1 focus:ring-accentPrimary" />
+            <span id="matchCounter" class="absolute right-2 top-1/2 -translate-y-1/2 text-[10px] font-mono text-accentPrimary bg-radarDark px-2 py-0.5 rounded border border-borderDark font-semibold">0 repos found</span>
           </div>
 
-          <select id="categoryFilter" class="bg-cardDark border border-borderDark text-xs rounded-lg px-2.5 py-2 text-slate-300 md:col-span-3 focus:outline-none focus:ring-1 focus:ring-cyan-500">
+          <select id="categoryFilter" class="bg-cardDark border border-borderDark text-xs rounded-lg px-2.5 py-2 text-textMain md:col-span-3 focus:outline-none focus:ring-1 focus:ring-accentPrimary">
             <option value="all">Matrix View (All 20 Disciplines)</option>
           </select>
 
-          <select id="licenseFilter" class="bg-cardDark border border-borderDark text-xs rounded-lg px-2.5 py-2 text-slate-300 md:col-span-2 focus:outline-none focus:ring-1 focus:ring-cyan-500">
+          <select id="licenseFilter" class="bg-cardDark border border-borderDark text-xs rounded-lg px-2.5 py-2 text-textMain md:col-span-2 focus:outline-none focus:ring-1 focus:ring-accentPrimary">
             <option value="all">All Licenses</option>
           </select>
 
-          <select id="sortSelect" class="bg-cardDark border border-borderDark text-xs rounded-lg px-2.5 py-2 text-slate-300 md:col-span-2 focus:outline-none focus:ring-1 focus:ring-cyan-500">
+          <select id="sortSelect" class="bg-cardDark border border-borderDark text-xs rounded-lg px-2.5 py-2 text-textMain md:col-span-2 focus:outline-none focus:ring-1 focus:ring-accentPrimary">
             <option value="breakout">Composite Breakout Score 🔥</option>
             <option value="delta">24h Star Velocity 🚀</option>
             <option value="stars">Total Stargazers ⭐</option>
@@ -83,13 +158,12 @@
 
         <div class="flex flex-wrap items-center justify-between gap-2">
           <div class="flex flex-wrap items-center gap-2">
-            <span class="text-xs text-slate-500 mr-1 font-mono">Specs:</span>
-            <button id="toggleLocalFirst" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">🔒 Local-First</button>
-            <button id="toggleCuda" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">⚡ GPU / CUDA</button>
-            <button id="toggleOrganic" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">🛡️ High Authenticity (>85%)</button>
-            <button id="toggleRunnable" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">🖥️ Compatible With My PC</button>
+            <span class="text-xs text-textMuted mr-1 font-mono">Specs:</span>
+            <button id="toggleLocalFirst" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-textMuted hover:text-textMain transition">🔒 Local-First</button>
+            <button id="toggleCuda" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-textMuted hover:text-textMain transition">⚡ GPU / CUDA</button>
+            <button id="toggleOrganic" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-textMuted hover:text-textMain transition">🛡️ High Authenticity (>85%)</button>
           </div>
-          <button id="globalSearchBtn" class="text-[11px] font-mono text-cyan-400 hover:text-cyan-300 underline underline-offset-4 hidden">
+          <button id="globalSearchBtn" class="text-[11px] font-mono text-accentPrimary hover:underline hidden">
             🌐 Query global GitHub for "<span id="globalQueryText"></span>" &rarr;
           </button>
         </div>
@@ -97,20 +171,19 @@
     </div>
   </div>
 
-  <!-- MAIN FLUID CONTENT WRAPPER -->
   <main class="w-full px-4 sm:px-6 lg:px-10 py-6">
-    <div id="filterStatusBanner" class="hidden mb-6 p-3 bg-slate-900 border border-borderDark rounded-xl flex items-center justify-between text-xs font-mono">
+    <div id="filterStatusBanner" class="hidden mb-6 p-3 bg-cardDark border border-borderDark rounded-xl flex items-center justify-between text-xs font-mono">
       <div class="flex items-center gap-2">
-        <span class="text-cyan-400 font-bold" id="bannerTitle">Viewing Discipline</span>
-        <span class="text-slate-400" id="bannerCount">(0 repositories)</span>
+        <span class="text-accentPrimary font-bold" id="bannerTitle">Viewing Discipline</span>
+        <span class="text-textMuted" id="bannerCount">(0 repositories)</span>
       </div>
-      <button onclick="window.selectCategory('all')" class="text-xs text-cyan-400 hover:text-cyan-300 underline underline-offset-2">
+      <button onclick="window.selectCategory('all')" class="text-xs text-accentSecondary underline">
         &larr; Back to Matrix View
       </button>
     </div>
 
     <div id="repoContainer">
-      <div class="py-20 text-center text-slate-500 font-mono text-sm">Streaming repository feed...</div>
+      <div class="py-20 text-center text-textMuted font-mono text-sm">Streaming repository feed...</div>
     </div>
   </main>
 
@@ -121,26 +194,18 @@
     let filterLocalFirst = false;
     let filterCuda = false;
     let filterOrganic = false;
-    let filterRunnable = false;
-    let hasLocalGpu = false;
 
-    // Detect client hardware via WebGL
-    function detectHardware() {
-      try {
-        const canvas = document.createElement('canvas');
-        const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
-        if (gl) {
-          const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
-          const renderer = debugInfo ? gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL) : '';
-          hasLocalGpu = /nvidia|rtx|gtx|radeon|apple/i.test(renderer);
-          document.getElementById('clientHwBadge').textContent = hasLocalGpu ? '⚡ Discrete/Metal GPU' : '💻 Standard CPU';
-        } else {
-          document.getElementById('clientHwBadge').textContent = '💻 Standard Host';
-        }
-      } catch (e) {
-        document.getElementById('clientHwBadge').textContent = '💻 Standard Host';
-      }
-    }
+    // Theme selector with localStorage persistence
+    const themeSelect = document.getElementById('themeSelect');
+    const savedTheme = localStorage.getItem('devradar-theme') || 'amber';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    themeSelect.value = savedTheme;
+
+    themeSelect.addEventListener('change', (e) => {
+      const selected = e.target.value;
+      document.documentElement.setAttribute('data-theme', selected);
+      localStorage.setItem('devradar-theme', selected);
+    });
 
     window.selectCategory = function(cat) {
       const select = document.getElementById('categoryFilter');
@@ -157,10 +222,10 @@
       if (el) {
         const orig = el.textContent;
         el.textContent = 'COPIED!';
-        el.classList.add('text-emerald-400');
+        el.style.color = 'var(--accent-secondary)';
         setTimeout(() => {
           el.textContent = orig;
-          el.classList.remove('text-emerald-400');
+          el.style.color = '';
         }, 1500);
       }
     };
@@ -177,8 +242,7 @@
 
     async function loadDataset() {
       try {
-        const cacheBuster = `?t=${Date.now()}`;
-        const res = await fetch(`data/repos.json${cacheBuster}`);
+        const res = await fetch(`data/repos.json?t=${Date.now()}`);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
         const rawItems = Array.isArray(data) ? data : (data.repositories || []);
@@ -191,16 +255,11 @@
 
         const syncTime = data.updated_at ? new Date(data.updated_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : 'Live';
         document.getElementById('syncIndicator').textContent = `Pipeline synced: ${syncTime}`;
-        document.getElementById('syncPulse').classList.remove('bg-amber-400');
-        document.getElementById('syncPulse').classList.add('bg-cyan-400');
-
         populateFilters();
         render();
       } catch (err) {
-        console.warn('Primary fetch error:', err);
-        document.getElementById('syncIndicator').textContent = 'Sync delayed (Action cron pending)';
-        document.getElementById('syncPulse').classList.remove('bg-cyan-400');
-        document.getElementById('syncPulse').classList.add('bg-amber-400');
+        console.warn('Load notice:', err);
+        document.getElementById('syncIndicator').textContent = 'Sync delayed';
       }
     }
 
@@ -221,22 +280,21 @@
 
     function renderCard(r, idx) {
       const daysAgo = Math.max(1, Math.round((Date.now() - new Date(r.created_at || Date.now()).getTime()) / (1000 * 3600 * 24)));
-      const authColor = (r.authenticity_score || 95) >= 85 ? 'text-emerald-400 bg-emerald-500/10' : 'text-amber-400 bg-amber-500/10';
       const copyBtnId = `btn-copy-${idx}-${Math.floor(Math.random()*1000)}`;
       const cmdIcon = getCommandIcon(r.quick_run);
-      const desc = r.description?.trim() || '<span class="italic text-slate-500">[No description provided]</span>';
+      const desc = r.description?.trim() || '<span class="italic text-textMuted/60">[No description provided]</span>';
 
       const similar = getSimilarRepos(r, repositories, 2);
       let similarPills = '';
       if (similar.length > 0) {
         similarPills = `
-          <div class="mt-3 pt-2.5 border-t border-borderDark/80 flex items-center gap-1.5 text-[10px] font-mono text-slate-400 overflow-hidden">
-            <span class="text-slate-500 shrink-0">Related:</span>
+          <div class="mt-3 pt-2.5 border-t border-borderDark flex items-center gap-1.5 text-[10px] font-mono text-textMuted overflow-hidden">
+            <span class="text-textMuted/60 shrink-0">Related:</span>
             <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
               ${similar.map(s => `
                 <a href="${s.url}" target="_blank" rel="noopener noreferrer" 
                    title="${s.description || s.name}"
-                   class="px-1.5 py-0.5 rounded bg-slate-900 border border-slate-700 hover:border-cyan-400 text-cyan-300 transition shrink-0 truncate max-w-[130px]">
+                   class="px-1.5 py-0.5 rounded bg-radarDark border border-borderDark hover:border-accentPrimary text-accentSecondary transition shrink-0 truncate max-w-[130px]">
                   ${s.name}
                 </a>
               `).join('')}
@@ -246,43 +304,43 @@
       }
 
       const mediaHtml = r.image_url 
-        ? `<div class="w-full h-32 bg-slate-900 border-b border-borderDark overflow-hidden relative">
+        ? `<div class="w-full h-32 bg-radarDark border-b border-borderDark overflow-hidden relative">
              <img src="${r.image_url}" alt="Preview" class="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition" loading="lazy" onerror="this.parentElement.style.display='none';" />
            </div>`
         : '';
 
       return `
-        <div class="bg-cardDark border border-borderDark hover:border-cyan-500/50 transition duration-200 rounded-xl overflow-hidden flex flex-col justify-between shadow-lg">
+        <div class="bg-cardDark border border-borderDark hover:border-accentPrimary/50 transition duration-200 rounded-xl overflow-hidden flex flex-col justify-between shadow-lg">
           ${mediaHtml}
           <div class="p-4 flex flex-col flex-1">
             <div class="flex items-center justify-between gap-2">
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-cyan-300 border border-slate-700 truncate max-w-[180px]">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-radarDark text-accentSecondary border border-borderDark truncate max-w-[180px]">
                 ${r.category}
               </span>
               <div class="flex items-center gap-2">
-                <span class="text-[10px] font-mono text-slate-400 border border-borderDark px-1.5 py-0.5 rounded bg-slate-900">${r.license || 'MIT'}</span>
-                <span class="text-[11px] text-slate-500 font-mono">${daysAgo}d old</span>
+                <span class="text-[10px] font-mono text-textMuted border border-borderDark px-1.5 py-0.5 rounded bg-radarDark">${r.license || 'MIT'}</span>
+                <span class="text-[11px] text-textMuted font-mono">${daysAgo}d old</span>
               </div>
             </div>
 
             <div class="mt-2.5 flex items-baseline justify-between gap-2">
-              <a href="${r.url}" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-white hover:text-cyan-400 transition truncate">
+              <a href="${r.url}" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-textMain hover:text-accentPrimary transition truncate">
                 ${r.full_name || r.name}
               </a>
-              <span class="text-[10px] font-mono px-1.5 py-0.5 rounded ${authColor}">
+              <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-radarDark text-accentPrimary border border-borderDark">
                 ${r.authenticity_score || 95}% Organic
               </span>
             </div>
 
-            <p class="mt-1.5 text-xs text-slate-400 leading-relaxed line-clamp-2">${desc}</p>
+            <p class="mt-1.5 text-xs text-textMuted leading-relaxed line-clamp-2">${desc}</p>
 
-            <div class="mt-3 p-1.5 bg-slate-900 rounded-lg border border-borderDark flex items-center justify-between gap-2">
+            <div class="mt-3 p-1.5 bg-radarDark rounded-lg border border-borderDark flex items-center justify-between gap-2">
               <div class="flex items-center gap-1.5 overflow-hidden">
                 <span class="text-xs select-none">${cmdIcon}</span>
-                <code class="text-[10px] text-slate-300 font-mono truncate select-all">${r.quick_run || 'git clone ' + (r.url || '')}</code>
+                <code class="text-[10px] text-textMain font-mono truncate select-all">${r.quick_run || 'git clone ' + (r.url || '')}</code>
               </div>
               <button id="${copyBtnId}" onclick="copyToClipboard('${(r.quick_run || 'git clone ' + (r.url || '')).replace(/'/g, "\\'")}', '${copyBtnId}')" 
-                      class="text-[9px] font-mono uppercase text-slate-400 hover:text-white px-2 py-0.5 rounded bg-slate-800 border border-borderDark transition">
+                      class="text-[9px] font-mono uppercase text-textMuted hover:text-textMain px-2 py-0.5 rounded bg-cardDark border border-borderDark transition">
                 COPY
               </button>
             </div>
@@ -290,15 +348,15 @@
             ${similarPills}
           </div>
 
-          <div class="px-4 py-2.5 border-t border-borderDark bg-slate-950/40 flex items-center justify-between text-xs font-mono">
-            <div class="flex items-center gap-2 text-slate-400 text-[11px]">
-              <span class="text-slate-300">${r.language || 'Code'}</span>
+          <div class="px-4 py-2.5 border-t border-borderDark bg-radarDark/60 flex items-center justify-between text-xs font-mono">
+            <div class="flex items-center gap-2 text-textMuted text-[11px]">
+              <span class="text-textMain">${r.language || 'Code'}</span>
               <span>•</span>
-              <span class="${r.is_cuda_ready && !hasLocalGpu ? 'text-amber-400' : ''}">${r.hardware_req || 'Minimal'}</span>
+              <span>${r.hardware_req || 'Minimal'}</span>
             </div>
             <div class="flex items-center gap-2">
-              ${(r.stars_24h || r.v24) > 0 ? `<span class="text-cyan-400 font-bold text-[11px]">+${r.stars_24h || r.v24} 24h</span>` : ''}
-              <span class="text-amber-400 font-semibold text-[11px]">⭐ ${(r.stars || 0).toLocaleString()}</span>
+              ${(r.stars_24h || r.v24) > 0 ? `<span class="text-accentSecondary font-bold text-[11px]">+${r.stars_24h || r.v24} 24h</span>` : ''}
+              <span class="text-accentPrimary font-semibold text-[11px]">⭐ ${(r.stars || 0).toLocaleString()}</span>
             </div>
           </div>
         </div>
@@ -311,7 +369,7 @@
       const selectedLic = document.getElementById('licenseFilter').value;
       const sortType = document.getElementById('sortSelect').value;
 
-      const anySpecActive = filterLocalFirst || filterCuda || filterOrganic || filterRunnable;
+      const anySpecActive = filterLocalFirst || filterCuda || filterOrganic;
 
       let filtered = repositories.filter(repo => {
         const matchesSearch = !search || 
@@ -325,12 +383,9 @@
 
         let matchesSpecs = true;
         if (anySpecActive) {
-          const runnableOk = !filterRunnable || (!repo.is_cuda_ready || hasLocalGpu);
-          matchesSpecs = runnableOk && (
-            (filterLocalFirst && repo.is_local_first) ||
-            (filterCuda && repo.is_cuda_ready) ||
-            (filterOrganic && (repo.authenticity_score || 95) >= 85)
-          );
+          matchesSpecs = (filterLocalFirst && repo.is_local_first) ||
+                         (filterCuda && repo.is_cuda_ready) ||
+                         (filterOrganic && (repo.authenticity_score || 95) >= 85);
         }
 
         return matchesSearch && matchesLic && matchesSpecs;
@@ -353,7 +408,7 @@
         document.getElementById('bannerCount').textContent = `(${catItems.length} repos)`;
 
         if (!catItems.length) {
-          container.innerHTML = `<div class="py-16 text-center text-slate-500 font-mono text-sm">No repositories found in "${selectedCat}".</div>`;
+          container.innerHTML = `<div class="py-16 text-center text-textMuted font-mono text-sm">No repositories found in "${selectedCat}".</div>`;
           return;
         }
         container.innerHTML = `
@@ -368,11 +423,10 @@
 
       const activeCategories = Object.keys(TAXONOMY).filter(cat => filtered.some(r => r.category === cat));
       if (!activeCategories.length) {
-        container.innerHTML = `<div class="py-16 text-center text-slate-500 font-mono text-sm">No repositories matching selected constraints.</div>`;
+        container.innerHTML = `<div class="py-16 text-center text-textMuted font-mono text-sm">No repositories matching selected constraints.</div>`;
         return;
       }
 
-      // Fluid Breakpoints: scales up to 5-6 cards across modern ultrawides
       container.innerHTML = activeCategories.map(cat => {
         const catAll = filtered.filter(r => r.category === cat);
         const catSlice = catAll.slice(0, 5);
@@ -381,11 +435,11 @@
           <section class="mb-10">
             <div class="flex items-center justify-between pb-2 mb-4 border-b border-borderDark/80">
               <div class="flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
-                <h2 class="text-sm font-bold tracking-tight text-white">${cat}</h2>
-                <span class="text-[11px] font-mono text-slate-500">(${catAll.length})</span>
+                <span class="w-2 h-2 rounded-full bg-accentPrimary"></span>
+                <h2 class="text-sm font-bold tracking-tight text-textMain">${cat}</h2>
+                <span class="text-[11px] font-mono text-textMuted">(${catAll.length})</span>
               </div>
-              <button onclick="window.selectCategory('${cat}')" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 transition flex items-center gap-1">
+              <button onclick="window.selectCategory('${cat}')" class="text-xs font-mono text-accentPrimary hover:text-accentSecondary transition flex items-center gap-1">
                 View all ${catAll.length} &rarr;
               </button>
             </div>
@@ -402,9 +456,8 @@
       btn.addEventListener('click', () => {
         const next = !getState();
         setState(next);
-        btn.classList.toggle('bg-cyan-500/10', next);
-        btn.classList.toggle('text-cyan-400', next);
-        btn.classList.toggle('border-cyan-500/30', next);
+        btn.classList.toggle('border-accentPrimary', next);
+        btn.classList.toggle('text-accentPrimary', next);
         render();
       });
     }
@@ -412,14 +465,12 @@
     setupToggle('toggleLocalFirst', () => filterLocalFirst, v => filterLocalFirst = v);
     setupToggle('toggleCuda', () => filterCuda, v => filterCuda = v);
     setupToggle('toggleOrganic', () => filterOrganic, v => filterOrganic = v);
-    setupToggle('toggleRunnable', () => filterRunnable, v => filterRunnable = v);
 
     document.getElementById('searchBox').addEventListener('input', render);
     document.getElementById('categoryFilter').addEventListener('change', render);
     document.getElementById('licenseFilter').addEventListener('change', render);
     document.getElementById('sortSelect').addEventListener('change', render);
 
-    detectHardware();
     loadDataset();
     setInterval(loadDataset, 60000);
   </script>
