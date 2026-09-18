@@ -96,15 +96,13 @@
         </div>
       </div>
 
-      <!-- 1. COMPOSITE CHIP BUILDER & SEARCH BOX -->
+      <!-- COMPOSITE SEARCH & CHIPS BAR -->
       <div class="mt-3 relative">
         <div id="searchContainer" class="w-full bg-cardDark border border-borderDark focus-within:border-accentPrimary rounded-xl p-1.5 flex flex-wrap items-center gap-1.5 transition">
           <span class="text-textMuted pl-2 select-none text-xs">🔍</span>
           
-          <!-- Active Token Chips Render Here -->
           <div id="activeChips" class="flex flex-wrap items-center gap-1.5"></div>
 
-          <!-- Free-text input with Ghost Text Placeholders -->
           <input 
             id="searchBox" 
             type="text" 
@@ -118,7 +116,7 @@
           </span>
         </div>
 
-        <!-- 3. SYNTAX AUTOCOMPLETE POPUP (: trigger) -->
+        <!-- SYNTAX AUTOCOMPLETE POPUP -->
         <div id="autocompletePopup" class="absolute top-full left-0 mt-1 w-72 bg-cardDark border border-borderDark rounded-xl shadow-2xl z-50 hidden py-1 text-xs font-mono">
           <div class="px-3 py-1.5 text-[10px] text-textMuted border-b border-borderDark uppercase tracking-wider font-semibold" id="autocompleteTitle">
             Filter Values
@@ -127,7 +125,7 @@
         </div>
       </div>
 
-      <!-- 4. NATURAL LANGUAGE TRANSLATE BADGE -->
+      <!-- NATURAL LANGUAGE TRANSLATE BADGE -->
       <div id="nlTranslateBanner" class="hidden mt-2 p-2 bg-cardDark/80 border border-borderDark rounded-lg flex items-center justify-between text-xs font-mono">
         <div class="flex items-center gap-2">
           <span class="text-accentSecondary">✨ Intent Translated:</span>
@@ -136,7 +134,7 @@
         <button onclick="window.clearNlTranslation()" class="text-textMuted hover:text-textMain text-[11px]">&times; Reset</button>
       </div>
 
-      <!-- 1. INLINE CHIP BUILDER RIBBONS -->
+      <!-- INLINE CHIP BUILDER RIBBONS -->
       <div class="mt-2.5 flex flex-col gap-1.5 text-[11px] font-mono">
         <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
           <span class="text-textMuted/60 shrink-0 select-none">Discipline:</span>
@@ -175,22 +173,21 @@
   </main>
 
   <script type="module">
-    import { TAXONOMY, classifyRepo, computeBreakoutScore, getSimilarRepos, parseNaturalLanguage } from './devradar-core.js';
+    import { TAXONOMY, classifyRepo, computeBreakoutScore, parseNaturalLanguage } from './devradar-core.js';
 
     let repositories = [];
     let bookmarks = JSON.parse(localStorage.getItem('devradar-bookmarks') || '[]');
     let showBookmarksOnly = false;
-    let activeChips = []; // Array of { key: 'lang'|'discipline'|'needs'|'lic'|'stage', val: string }
-    let nlFilters = {}; // Active natural language parsed constraints
+    let activeChips = [];
+    let parsedNl = { cleanText: '', filters: {} };
 
-    // 2. ROTATING GHOST TEXT EXAMPLES
+    // Ghost placeholder rotator
     const ghostExamples = [
-      "lang:python needs:gpu stars:>1000",
-      "local-first llm engine for macos",
-      "rag framework lang:typescript lic:apache-2.0",
+      "lang:python needs:gpu",
+      "local-first llm engine without gpu",
+      "rag framework lang:typescript",
       "agent framework needs:mcp",
-      "fast audio whisper without gpu",
-      "discipline:\"CLI & TUI Tooling\" lang:rust"
+      "fast cli tool in rust"
     ];
     let ghostIndex = 0;
     const searchInput = document.getElementById('searchBox');
@@ -202,13 +199,12 @@
       }
     }, 3500);
 
-    // 3. SYNTAX AUTOCOMPLETE DICTIONARY
+    // Syntax Autocomplete dictionary
     const schemaMap = {
-      "lang:": ["python", "rust", "typescript", "javascript", "go", "c++"],
-      "discipline:": ["\"Local LLM Engines\"", "\"Multi-Agent Frameworks\"", "\"RAG Engines\"", "\"CLI & TUI Tooling\"", "\"Vision & OCR\""],
-      "needs:": ["cpu-only", "gpu", "local-first", "mcp", "real-time"],
-      "lic:": ["mit", "apache-2.0", "gpl-3.0", "bsd-3-clause"],
-      "stage:": ["mature", "active", "experimental", "maintenance"]
+      "lang:": ["python", "rust", "typescript", "javascript", "go"],
+      "discipline:": ["\"Local LLM Engines\"", "\"Multi-Agent Frameworks\"", "\"RAG Engines\"", "\"CLI & TUI Tooling\""],
+      "needs:": ["cpu-only", "gpu", "local-first", "mcp"],
+      "lic:": ["mit", "apache-2.0", "gpl-3.0"]
     };
 
     const autocompletePopup = document.getElementById('autocompletePopup');
@@ -217,9 +213,7 @@
 
     searchInput.addEventListener('input', (e) => {
       const val = e.target.value;
-      
-      // Check for syntax trigger (ends with key:)
-      const match = val.match(/(lang:|discipline:|needs:|lic:|stage:)$/i);
+      const match = val.match(/(lang:|discipline:|needs:|lic:)$/i);
       if (match) {
         const trigger = match[1].toLowerCase();
         showAutocomplete(trigger);
@@ -227,8 +221,9 @@
         autocompletePopup.classList.add('hidden');
       }
 
-      // Check for natural language triggers
-      parseNaturalLanguage(val);
+      // Safe call into imported pure function
+      parsedNl = parseNaturalLanguage(val);
+      updateNlBanner();
       render();
     });
 
@@ -248,23 +243,21 @@
     window.selectAutocomplete = function(trigger, opt) {
       const key = trigger.replace(':', '');
       window.addChip(key, opt.replace(/"/g, ''));
-      // Remove trigger text from input
       searchInput.value = searchInput.value.replace(new RegExp(trigger + '$', 'i'), '').trim();
       autocompletePopup.classList.add('hidden');
       searchInput.focus();
+      parsedNl = parseNaturalLanguage(searchInput.value);
+      updateNlBanner();
       render();
     };
 
-    // Close autocomplete on external click
     document.addEventListener('click', (e) => {
       if (!document.getElementById('searchContainer').contains(e.target) && !autocompletePopup.contains(e.target)) {
         autocompletePopup.classList.add('hidden');
       }
     });
 
-    // 1. INLINE CHIP BUILDER LOGIC
     window.addChip = function(key, val) {
-      // Prevent duplicate identical chips
       if (!activeChips.some(c => c.key === key && c.val.toLowerCase() === val.toLowerCase())) {
         activeChips.push({ key, val });
         renderChips();
@@ -289,43 +282,26 @@
       `).join('');
     }
 
-    // 4. NATURAL LANGUAGE TRANSLATOR
-    function parseNaturalLanguage(raw) {
-      const q = raw.toLowerCase();
-      nlFilters = {};
-
-      if (q.includes("without gpu") || q.includes("no gpu") || q.includes("on cpu") || q.includes("for mac")) {
-        nlFilters.needs = "cpu-only";
-      } else if (q.includes("with gpu") || q.includes("needs cuda") || q.includes("rtx")) {
-        nlFilters.needs = "gpu";
-      }
-
-      if (q.includes("in python") || q.includes("for python")) {
-        nlFilters.lang = "python";
-      } else if (q.includes("in rust")) {
-        nlFilters.lang = "rust";
-      } else if (q.includes("in typescript") || q.includes("in ts")) {
-        nlFilters.lang = "typescript";
-      }
-
+    function updateNlBanner() {
       const banner = document.getElementById('nlTranslateBanner');
       const pill = document.getElementById('translatedPill');
-
-      if (Object.keys(nlFilters).length > 0) {
+      const keys = Object.keys(parsedNl.filters || {});
+      if (keys.length > 0) {
         banner.classList.remove('hidden');
-        pill.textContent = Object.entries(nlFilters).map(([k, v]) => `${k}:${v}`).join(' ');
+        pill.textContent = keys.map(k => `${k}:"${parsedNl.filters[k]}"`).join(' ');
       } else {
         banner.classList.add('hidden');
       }
     }
 
     window.clearNlTranslation = function() {
-      nlFilters = {};
-      document.getElementById('nlTranslateBanner').classList.add('hidden');
+      searchInput.value = '';
+      parsedNl = { cleanText: '', filters: {} };
+      updateNlBanner();
       render();
     };
 
-    // THEME SELECTION
+    // Theme Picker
     const themeSelect = document.getElementById('themeSelect');
     const savedTheme = localStorage.getItem('devradar-theme') || 'amber';
     document.documentElement.setAttribute('data-theme', savedTheme);
@@ -335,7 +311,7 @@
       localStorage.setItem('devradar-theme', e.target.value);
     });
 
-    // BOOKMARKS
+    // Bookmarks
     window.toggleBookmark = function(repoName) {
       const idx = bookmarks.indexOf(repoName);
       if (idx > -1) bookmarks.splice(idx, 1);
@@ -352,8 +328,10 @@
     });
 
     async function loadDataset() {
+      const container = document.getElementById('repoContainer');
       try {
         const res = await fetch(`data/repos.json?t=${Date.now()}`);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
         const rawItems = Array.isArray(data) ? data : (data.repositories || []);
 
@@ -366,12 +344,17 @@
         document.getElementById('bookmarkCount').textContent = bookmarks.length;
         render();
       } catch (err) {
-        console.warn('Pipeline fetch warning:', err);
+        console.error('Failed to load dataset:', err);
+        container.innerHTML = `
+          <div class="col-span-full py-16 text-center text-amber-400 font-mono text-xs">
+            <p>Failed to load data/repos.json.</p>
+            <p class="text-textMuted mt-1">Make sure you ran the engine locally or triggered GitHub Actions.</p>
+          </div>
+        `;
       }
     }
 
-    function renderCard(r, idx) {
-      const daysAgo = Math.max(1, Math.round((Date.now() - new Date(r.created_at || Date.now()).getTime()) / (1000 * 3600 * 24)));
+    function renderCard(r) {
       const isBookmarked = bookmarks.includes(r.full_name || r.name);
       const stage = r.health?.stage || 'active';
       const stagePill = stage === 'mature' 
@@ -402,7 +385,7 @@
 
             <div class="mt-3 flex flex-wrap gap-1">
               ${(r.capabilities?.intent_tags || []).slice(0, 2).map(tag => `<span class="text-[9px] font-mono px-1.5 py-0.2 rounded bg-radarDark text-textMuted border border-borderDark">${tag}</span>`).join('')}
-              <span class="text-[9px] font-mono px-1.5 py-0.2 rounded bg-radarDark text-textMuted border border-borderDark">${r.hardware_req}</span>
+              <span class="text-[9px] font-mono px-1.5 py-0.2 rounded bg-radarDark text-textMuted border border-borderDark">${r.hardware_req || 'Minimal'}</span>
             </div>
           </div>
 
@@ -410,7 +393,7 @@
             <span class="text-textMuted text-[11px]">${r.language}</span>
             <div class="flex items-center gap-2">
               ${(r.stars_24h > 0) ? `<span class="text-accentSecondary text-[11px] font-bold">+${r.stars_24h} 24h</span>` : ''}
-              <span class="text-accentPrimary text-[11px] font-semibold">⭐ ${r.stars.toLocaleString()}</span>
+              <span class="text-accentPrimary text-[11px] font-semibold">⭐ ${(r.stars || 0).toLocaleString()}</span>
             </div>
           </div>
         </div>
@@ -418,15 +401,13 @@
     }
 
     function render() {
-      const rawSearch = searchInput.value.toLowerCase().trim();
-
-      // Clean search string by stripping out any typed key:value tokens handled by chips
-      const cleanFreeText = rawSearch.replace(/(lang|discipline|needs|lic|stage):[^\s]+/gi, '').trim();
+      const cleanFreeText = (parsedNl.cleanText || searchInput.value || '').toLowerCase().trim();
+      const nlF = parsedNl.filters || {};
 
       let filtered = repositories.filter(r => {
         if (showBookmarksOnly && !bookmarks.includes(r.full_name || r.name)) return false;
 
-        // Apply Active Chips Constraints
+        // Apply Active Filter Chips
         for (const chip of activeChips) {
           const k = chip.key.toLowerCase();
           const v = chip.val.toLowerCase();
@@ -434,7 +415,6 @@
           if (k === 'lang' && (r.language || '').toLowerCase() !== v) return false;
           if (k === 'discipline' && (r.category || '').toLowerCase() !== v) return false;
           if (k === 'lic' && (r.license || '').toLowerCase() !== v) return false;
-          if (k === 'stage' && (r.health?.stage || '').toLowerCase() !== v) return false;
           if (k === 'needs') {
             if (v === 'cpu-only' && r.is_cuda_ready && !r.capabilities?.hardware?.cpu_supported) return false;
             if (v === 'gpu' && !r.is_cuda_ready) return false;
@@ -443,19 +423,16 @@
           }
         }
 
-        // Apply Natural Language Inferred Constraints
-        if (nlFilters.needs) {
-          if (nlFilters.needs === 'cpu-only' && r.is_cuda_ready && !r.capabilities?.hardware?.cpu_supported) return false;
-          if (nlFilters.needs === 'gpu' && !r.is_cuda_ready) return false;
-        }
-        if (nlFilters.lang && !(r.language || '').toLowerCase().includes(nlFilters.lang)) {
-          return false;
-        }
+        // Apply Natural Language Inferred Filters
+        if (nlF.discipline && (r.category || '').toLowerCase() !== nlF.discipline.toLowerCase()) return false;
+        if (nlF.needs === 'cpu-only' && r.is_cuda_ready && !r.capabilities?.hardware?.cpu_supported) return false;
+        if (nlF.needs === 'gpu' && !r.is_cuda_ready) return false;
+        if (nlF.lang && !(r.language || '').toLowerCase().includes(nlF.lang.toLowerCase())) return false;
 
-        // Free-text query evaluation
+        // Free-text query matching
         if (cleanFreeText) {
-          const hay = `${r.name} ${r.full_name} ${r.description} ${r.language} ${(r.topics || []).join(' ')}`.toLowerCase();
-          if (!hay.includes(cleanFreeText)) return false;
+          const haystack = `${r.name} ${r.full_name} ${r.description} ${r.language} ${(r.topics || []).join(' ')}`.toLowerCase();
+          if (!haystack.includes(cleanFreeText)) return false;
         }
 
         return true;
@@ -463,15 +440,19 @@
 
       document.getElementById('matchCounter').textContent = `${filtered.length} repos`;
 
+      // Sort by breakout score
+      filtered.sort((a, b) => (b.breakout_score || 0) - (a.breakout_score || 0));
+
       const container = document.getElementById('repoContainer');
       if (!filtered.length) {
-        container.innerHTML = `<div class="py-20 text-center text-textMuted font-mono text-sm col-span-full">No repositories match this query. Try removing some filter chips.</div>`;
+        container.innerHTML = `<div class="py-20 text-center text-textMuted font-mono text-sm col-span-full">No repositories match this query. Try clicking different filter chips.</div>`;
         return;
       }
 
-      container.innerHTML = filtered.map((r, i) => renderCard(r, i)).join('');
+      container.innerHTML = filtered.map(r => renderCard(r)).join('');
     }
 
+    // Initialize dataset
     loadDataset();
   </script>
 </body>
