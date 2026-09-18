@@ -175,7 +175,7 @@
   </main>
 
   <script type="module">
-    import { TAXONOMY, classifyRepo, computeBreakoutScore, getSimilarRepos } from './devradar-core.js';
+    import { TAXONOMY, classifyRepo, computeBreakoutScore, getSimilarRepos, parseNaturalLanguage } from './devradar-core.js';
 
     let repositories = [];
     let bookmarks = JSON.parse(localStorage.getItem('devradar-bookmarks') || '[]');
