@@ -23,44 +23,29 @@
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: #080c14; }
     ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
-    .tooltip-bubble {
-      visibility: hidden;
-      opacity: 0;
-      transition: opacity 0.15s ease-in-out;
-    }
-    .has-tooltip:hover .tooltip-bubble {
-      visibility: visible;
-      opacity: 1;
-    }
+    .tooltip-bubble { visibility: hidden; opacity: 0; transition: opacity 0.15s ease-in-out; }
+    .has-tooltip:hover .tooltip-bubble { visibility: visible; opacity: 1; }
   </style>
 </head>
 <body class="bg-radarDark text-slate-200 min-h-screen font-sans selection:bg-cyan-500/20 antialiased">
   
-  <!-- STICKY TOPBAR CONTAINER -->
   <div class="sticky top-0 z-50 bg-radarDark/95 backdrop-blur-md border-b border-borderDark shadow-xl shadow-black/40">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
-      
-      <!-- Top Title Bar -->
       <header class="flex flex-col md:flex-row md:items-center justify-between pb-3 gap-3">
         <div>
           <div class="flex items-center gap-3">
             <div class="p-1.5 bg-cyan-500/10 text-cyan-400 rounded-lg ring-1 ring-cyan-500/30">
               <svg class="w-5 h-5 animate-spin" style="animation-duration: 8s;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6.364 1.636l-.707.707M21 12h-1M18.364 17.636l-.707-.707M12 21v-1M5.636 18.364l.707-.707M3 12h1M5.636 5.636l.707.707"/></svg>
             </div>
-            <h1 class="text-xl font-black tracking-tight text-white">
-              DEV<span class="text-cyan-400">RADAR</span>
-            </h1>
-            <span class="text-[10px] font-mono uppercase bg-slate-800/80 border border-slate-700 px-2 py-0.5 rounded text-cyan-300">Live Pulse</span>
-            <a href="how-it-works.html" class="text-xs font-mono text-slate-400 hover:text-cyan-300 underline underline-offset-4 ml-2 transition">
-              How it works ↗
-            </a>
+            <h1 class="text-xl font-black tracking-tight text-white">DEV<span class="text-cyan-400">RADAR</span></h1>
+            <span class="text-[10px] font-mono uppercase bg-slate-800/80 border border-slate-700 px-2 py-0.5 rounded text-cyan-300">Matrix Core</span>
+            <a href="how-it-works.html" class="text-xs font-mono text-slate-400 hover:text-cyan-300 underline underline-offset-4 ml-2 transition">How it works ↗</a>
           </div>
-          <p class="text-xs text-slate-400 mt-0.5">Autonomous discovery engine ranking verified software by 24h velocity, authenticity & local-first readiness.</p>
+          <p class="text-xs text-slate-400 mt-0.5">20-discipline intelligence leaderboard ranked by star velocity, authority & recency decay.</p>
         </div>
 
-        <!-- Sync Indicator with Frequency -->
         <div class="flex items-center gap-3 text-xs font-mono text-slate-400 bg-cardDark border border-borderDark px-3 py-1.5 rounded-lg self-start md:self-auto">
-          <span class="inline-block w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+          <span id="syncPulse" class="inline-block w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
           <div>
             <span id="syncIndicator">Connecting to pipeline...</span>
             <span class="text-[10px] text-cyan-400/80 ml-1 font-semibold">(Hourly Sync)</span>
@@ -68,119 +53,59 @@
         </div>
       </header>
 
-      <!-- Filter Controls Grid -->
       <div class="flex flex-col gap-2.5 pt-1">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-2">
-          
-          <!-- Internal Client-side Search Box -->
           <div class="relative md:col-span-5">
-            <input 
-              id="searchBox" 
-              type="text" 
-              placeholder="Search name, description, language..." 
-              class="w-full bg-cardDark border border-borderDark text-xs rounded-lg pl-3 pr-20 py-2 text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-cyan-500"
-            />
+            <input id="searchBox" type="text" placeholder="Search across all 20 disciplines..." class="w-full bg-cardDark border border-borderDark text-xs rounded-lg pl-3 pr-20 py-2 text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-cyan-500" />
             <span id="matchCounter" class="absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] font-mono text-slate-500 bg-slate-900 px-1.5 py-0.5 rounded border border-borderDark">0 items</span>
           </div>
 
-          <!-- Category Selector -->
           <select id="categoryFilter" class="bg-cardDark border border-borderDark text-xs rounded-lg px-2.5 py-2 text-slate-300 md:col-span-3 focus:outline-none focus:ring-1 focus:ring-cyan-500">
-            <option value="all">All Disciplines</option>
-            <option value="Local AI & Inference">Local AI & Inference</option>
-            <option value="Autonomous Agents">Autonomous Agents</option>
-            <option value="Developer Tooling & CLI">Developer Tooling & CLI</option>
-            <option value="Systems & Infrastructure">Systems & Infrastructure</option>
-            <option value="Local-First & Sovereign Apps">Local-First & Sovereign Apps</option>
-            <option value="Security & Reverse Eng">Security & Reverse Eng</option>
+            <option value="all">Matrix View (All 20 Disciplines)</option>
           </select>
 
-          <!-- License Selector -->
           <select id="licenseFilter" class="bg-cardDark border border-borderDark text-xs rounded-lg px-2.5 py-2 text-slate-300 md:col-span-2 focus:outline-none focus:ring-1 focus:ring-cyan-500">
             <option value="all">All Licenses</option>
           </select>
 
-          <!-- Metric Sort Selector -->
           <select id="sortSelect" class="bg-cardDark border border-borderDark text-xs rounded-lg px-2.5 py-2 text-slate-300 md:col-span-2 focus:outline-none focus:ring-1 focus:ring-cyan-500">
-            <option value="trending">Breakout Velocity</option>
-            <option value="delta">24h Gain 🚀</option>
-            <option value="stars">Total Stars ⭐</option>
-            <option value="recency">Discovery (New) 🕒</option>
-            <option value="authenticity">Authenticity % 🛡️</option>
+            <option value="breakout">Composite Breakout Score 🔥</option>
+            <option value="delta">24h Star Velocity 🚀</option>
+            <option value="stars">Total Stargazers ⭐</option>
+            <option value="recency">Active Push (Recent) 🕒</option>
           </select>
         </div>
 
-        <!-- Spec Pill Toggles & Global Search Fallback -->
         <div class="flex flex-wrap items-center justify-between gap-2">
           <div class="flex flex-wrap items-center gap-2">
             <span class="text-xs text-slate-500 mr-1 font-mono">Specs:</span>
-            <button id="toggleLocalFirst" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">
-              🔒 Local-First
-            </button>
-            <button id="toggleCuda" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">
-              ⚡ GPU / CUDA
-            </button>
-            <button id="toggleOrganic" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">
-              🛡️ High Authenticity (>85%)
-            </button>
+            <button id="toggleLocalFirst" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">🔒 Local-First</button>
+            <button id="toggleCuda" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">⚡ GPU / CUDA</button>
+            <button id="toggleOrganic" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-slate-400 hover:text-white transition">🛡️ High Authenticity (>85%)</button>
           </div>
-
           <button id="globalSearchBtn" class="text-[11px] font-mono text-cyan-400 hover:text-cyan-300 underline underline-offset-4 hidden">
-            🌐 Search entire GitHub for "<span id="globalQueryText"></span>" &rarr;
+            🌐 Query global GitHub for "<span id="globalQueryText"></span>" &rarr;
           </button>
         </div>
       </div>
-
     </div>
   </div>
 
-  <!-- MAIN REPOSITORY STREAM CONTAINER -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-    <div id="repoList" class="grid grid-cols-1 md:grid-cols-2 gap-5">
-      <div class="col-span-full py-20 text-center text-slate-500 font-mono text-sm">Streaming repository feed...</div>
+    <div id="repoContainer">
+      <div class="py-20 text-center text-slate-500 font-mono text-sm">Streaming repository feed...</div>
     </div>
   </main>
 
-  <script>
+  <script type="module">
+    import { TAXONOMY, classifyRepo, computeBreakoutScore, getSimilarRepos } from './devradar-core.js';
+
     let repositories = [];
-    let lastEtag = null;
     let filterLocalFirst = false;
     let filterCuda = false;
     let filterOrganic = false;
 
-    function getCommandIcon(cmd) {
-      if (!cmd) return '💻';
-      const c = cmd.toLowerCase().trim();
-      if (c.startsWith('npm') || c.startsWith('npx')) return '📦';
-      if (c.startsWith('pip') || c.startsWith('python')) return '🐍';
-      if (c.startsWith('docker')) return '🐳';
-      if (c.startsWith('cargo')) return '🦀';
-      if (c.startsWith('git')) return '💻';
-      return '⚙️';
-    }
-
-    function generateSparkline(history) {
-      if (!history || history.length < 2) return '';
-      const stars = history.map(h => h.stars);
-      const min = Math.min(...stars);
-      const max = Math.max(...stars);
-      const range = max - min || 1;
-      const width = 64;
-      const height = 18;
-
-      const points = stars.map((val, idx) => {
-        const x = (idx / (stars.length - 1)) * width;
-        const y = height - ((val - min) / range) * (height - 4) - 2;
-        return `${x.toFixed(1)},${y.toFixed(1)}`;
-      }).join(' ');
-
-      return `
-        <svg class="w-16 h-4 overflow-visible inline-block opacity-80 hover:opacity-100 transition" viewBox="0 0 ${width} ${height}" title="7-day Star Growth Trajectory">
-          <polyline fill="none" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="${points}" />
-        </svg>
-      `;
-    }
-
-    function copyToClipboard(text, btnId) {
+    window.copyToClipboard = function(text, btnId) {
       navigator.clipboard.writeText(text);
       const el = document.getElementById(btnId);
       if (el) {
@@ -192,192 +117,218 @@
           el.classList.remove('text-emerald-400');
         }, 1500);
       }
-    }
+    };
 
-    function populateLicenseFilter() {
-      const select = document.getElementById('licenseFilter');
-      const licenses = Array.from(new Set(repositories.map(r => r.license).filter(Boolean))).sort();
-      select.innerHTML = '<option value="all">All Licenses</option>';
-      licenses.forEach(lic => {
-        select.innerHTML += `<option value="${lic}">${lic}</option>`;
-      });
+    function getCommandIcon(cmd) {
+      if (!cmd) return '💻';
+      const c = cmd.toLowerCase().trim();
+      if (c.startsWith('npm') || c.startsWith('npx')) return '📦';
+      if (c.startsWith('pip') || c.startsWith('python')) return '🐍';
+      if (c.startsWith('docker')) return '🐳';
+      if (c.startsWith('cargo')) return '🦀';
+      return '💻';
     }
 
     async function loadDataset() {
       try {
-        const headers = {};
-        if (lastEtag) headers['If-None-Match'] = lastEtag;
+        const cacheBuster = `?t=${Date.now()}`;
+        const res = await fetch(`data/repos.json${cacheBuster}`);
+        
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        
+        const rawItems = Array.isArray(data) ? data : (data.repositories || []);
+        
+        // Enrich raw items through Core Engine
+        repositories = rawItems.map(r => {
+          const category = r.category && TAXONOMY[r.category] ? r.category : classifyRepo(r);
+          const breakoutScore = computeBreakoutScore({ ...r, category });
+          return { ...r, category, breakout_score: breakoutScore };
+        });
 
-        const response = await fetch('data/repos.json', { headers });
-        if (response.status === 304) return;
+        const syncTime = data.updated_at ? new Date(data.updated_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : 'Live';
+        document.getElementById('syncIndicator').textContent = `Pipeline synced: ${syncTime}`;
+        document.getElementById('syncPulse').classList.remove('bg-amber-400');
+        document.getElementById('syncPulse').classList.add('bg-cyan-400');
 
-        if (response.ok) {
-          lastEtag = response.headers.get('ETag');
-          const data = await response.json();
-          repositories = data.repositories || [];
-          
-          const syncTime = new Date(data.updated_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-          document.getElementById('syncIndicator').textContent = `Pipeline synced: ${syncTime}`;
-          populateLicenseFilter();
-          render();
-        }
+        populateFilters();
+        render();
       } catch (err) {
-        console.warn('Dataset streaming notice:', err);
+        console.warn('Primary repos.json fetch failed, checking snapshot fallback...', err);
+        document.getElementById('syncIndicator').textContent = 'Sync delayed (Action cron pending)';
+        document.getElementById('syncPulse').classList.remove('bg-cyan-400');
+        document.getElementById('syncPulse').classList.add('bg-amber-400');
       }
+    }
+
+    function populateFilters() {
+      const catSelect = document.getElementById('categoryFilter');
+      catSelect.innerHTML = '<option value="all">Matrix View (All 20 Disciplines)</option>';
+      Object.keys(TAXONOMY).forEach(cat => {
+        catSelect.innerHTML += `<option value="${cat}">${cat}</option>`;
+      });
+
+      const licSelect = document.getElementById('licenseFilter');
+      const licenses = Array.from(new Set(repositories.map(r => r.license).filter(Boolean))).sort();
+      licSelect.innerHTML = '<option value="all">All Licenses</option>';
+      licenses.forEach(lic => {
+        licSelect.innerHTML += `<option value="${lic}">${lic}</option>`;
+      });
+    }
+
+    function renderCard(r, idx) {
+      const daysAgo = Math.max(1, Math.round((Date.now() - new Date(r.created_at || Date.now()).getTime()) / (1000 * 3600 * 24)));
+      const authColor = (r.authenticity_score || 95) >= 85 ? 'text-emerald-400 bg-emerald-500/10' : 'text-amber-400 bg-amber-500/10';
+      const copyBtnId = `btn-copy-${idx}-${Math.floor(Math.random()*1000)}`;
+      const cmdIcon = getCommandIcon(r.quick_run);
+      const desc = r.description?.trim() || '<span class="italic text-slate-500">[No description provided]</span>';
+
+      const similar = getSimilarRepos(r, repositories, 2);
+      const similarPills = similar.length > 0 
+        ? `<div class="mt-2.5 pt-2 border-t border-slate-800/80 flex items-center gap-1.5 text-[10px] font-mono text-slate-400">
+             <span class="text-slate-500">Related:</span>
+             ${similar.map(s => `<a href="${s.url}" target="_blank" class="px-1.5 py-0.5 rounded bg-slate-900 border border-borderDark text-cyan-400 hover:border-cyan-500 transition">${s.name}</a>`).join('')}
+           </div>`
+        : '';
+
+      const mediaHtml = r.image_url 
+        ? `<div class="w-full h-32 bg-slate-900 border-b border-borderDark overflow-hidden relative">
+             <img src="${r.image_url}" alt="Preview" class="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition" loading="lazy" onerror="this.parentElement.style.display='none';" />
+           </div>`
+        : '';
+
+      return `
+        <div class="bg-cardDark border border-borderDark hover:border-cyan-500/50 transition duration-200 rounded-xl overflow-hidden flex flex-col justify-between shadow-lg">
+          ${mediaHtml}
+          <div class="p-4 flex flex-col flex-1">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-cyan-300 border border-slate-700 truncate max-w-[200px]">
+                ${r.category}
+              </span>
+              <div class="flex items-center gap-2">
+                <span class="text-[10px] font-mono text-slate-400 border border-borderDark px-1.5 py-0.5 rounded bg-slate-900">${r.license || 'MIT'}</span>
+                <span class="text-[11px] text-slate-500 font-mono">${daysAgo}d old</span>
+              </div>
+            </div>
+
+            <div class="mt-2.5 flex items-baseline justify-between gap-2">
+              <a href="${r.url}" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-white hover:text-cyan-400 transition truncate">
+                ${r.full_name || r.name}
+              </a>
+              <span class="text-[10px] font-mono px-1.5 py-0.5 rounded ${authColor}">
+                ${r.authenticity_score || 95}% Organic
+              </span>
+            </div>
+
+            <p class="mt-1.5 text-xs text-slate-400 leading-relaxed line-clamp-2">${desc}</p>
+
+            <div class="mt-3 p-1.5 bg-slate-900 rounded-lg border border-borderDark flex items-center justify-between gap-2">
+              <div class="flex items-center gap-1.5 overflow-hidden">
+                <span class="text-xs select-none">${cmdIcon}</span>
+                <code class="text-[10px] text-slate-300 font-mono truncate select-all">${r.quick_run || 'git clone ' + (r.url || '')}</code>
+              </div>
+              <button id="${copyBtnId}" onclick="copyToClipboard('${(r.quick_run || 'git clone ' + (r.url || '')).replace(/'/g, "\\'")}', '${copyBtnId}')" 
+                      class="text-[9px] font-mono uppercase text-slate-400 hover:text-white px-2 py-0.5 rounded bg-slate-800 border border-borderDark transition">
+                COPY
+              </button>
+            </div>
+
+            ${similarPills}
+          </div>
+
+          <div class="px-4 py-2.5 border-t border-borderDark bg-slate-950/40 flex items-center justify-between text-xs font-mono">
+            <div class="flex items-center gap-2 text-slate-400 text-[11px]">
+              <span class="text-slate-300">${r.language || 'Code'}</span>
+              <span>•</span>
+              <span>${r.hardware_req || 'Minimal'}</span>
+            </div>
+            <div class="flex items-center gap-2">
+              ${(r.stars_24h || r.v24) > 0 ? `<span class="text-cyan-400 font-bold text-[11px]">+${r.stars_24h || r.v24} 24h</span>` : ''}
+              <span class="text-amber-400 font-semibold text-[11px]">⭐ ${(r.stars || 0).toLocaleString()}</span>
+            </div>
+          </div>
+        </div>
+      `;
     }
 
     function render() {
       const search = document.getElementById('searchBox').value.toLowerCase().trim();
-      const cat = document.getElementById('categoryFilter').value;
-      const lic = document.getElementById('licenseFilter').value;
-      const sort = document.getElementById('sortSelect').value;
+      const selectedCat = document.getElementById('categoryFilter').value;
+      const selectedLic = document.getElementById('licenseFilter').value;
+      const sortType = document.getElementById('sortSelect').value;
 
       const anySpecActive = filterLocalFirst || filterCuda || filterOrganic;
 
-      let items = repositories.filter(repo => {
-        const descText = (repo.description || '').toLowerCase();
-        const langText = (repo.language || '').toLowerCase();
-        const nameText = (repo.name || '').toLowerCase();
-        const fullNameText = (repo.full_name || '').toLowerCase();
-
+      let filtered = repositories.filter(repo => {
         const matchesSearch = !search || 
-                              nameText.includes(search) || 
-                              fullNameText.includes(search) ||
-                              descText.includes(search) ||
-                              langText.includes(search);
+          (repo.name || '').toLowerCase().includes(search) || 
+          (repo.full_name || '').toLowerCase().includes(search) ||
+          (repo.description || '').toLowerCase().includes(search) ||
+          (repo.language || '').toLowerCase().includes(search) ||
+          (repo.topics || []).some(t => t.toLowerCase().includes(search));
 
-        const matchesCat = (cat === 'all') || (repo.category === cat);
-        const matchesLic = (lic === 'all') || (repo.license === lic);
+        const matchesLic = (selectedLic === 'all') || (repo.license === selectedLic);
 
         let matchesSpecs = true;
         if (anySpecActive) {
           matchesSpecs = (filterLocalFirst && repo.is_local_first) ||
                          (filterCuda && repo.is_cuda_ready) ||
-                         (filterOrganic && repo.authenticity_score >= 85);
+                         (filterOrganic && (repo.authenticity_score || 95) >= 85);
         }
 
-        return matchesSearch && matchesCat && matchesLic && matchesSpecs;
+        return matchesSearch && matchesLic && matchesSpecs;
       });
 
-      document.getElementById('matchCounter').textContent = `${items.length} items`;
-
-      // Global search button update
-      const globalBtn = document.getElementById('globalSearchBtn');
-      const querySpan = document.getElementById('globalQueryText');
-      if (search.length > 1) {
-        querySpan.textContent = search;
-        globalBtn.classList.remove('hidden');
-        globalBtn.onclick = () => {
-          window.open(`https://github.com/search?q=${encodeURIComponent(search)}&type=repositories&s=stars&o=desc`, '_blank');
-        };
-      } else {
-        globalBtn.classList.add('hidden');
-      }
+      document.getElementById('matchCounter').textContent = `${filtered.length} items`;
 
       // Sorting
-      if (sort === 'delta') items.sort((a, b) => (b.stars_24h || 0) - (a.stars_24h || 0));
-      else if (sort === 'stars') items.sort((a, b) => b.stars - a.stars);
-      else if (sort === 'recency') items.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
-      else if (sort === 'authenticity') items.sort((a, b) => b.authenticity_score - a.authenticity_score);
-      else items.sort((a, b) => b.trending_score - a.trending_score);
+      if (sortType === 'delta') filtered.sort((a, b) => (b.stars_24h || b.v24 || 0) - (a.stars_24h || a.v24 || 0));
+      else if (sortType === 'stars') filtered.sort((a, b) => (b.stars || 0) - (a.stars || 0));
+      else if (sortType === 'recency') filtered.sort((a, b) => new Date(b.pushed_at || b.created_at || 0) - new Date(a.pushed_at || a.created_at || 0));
+      else filtered.sort((a, b) => (b.breakout_score || 0) - (a.breakout_score || 0));
 
-      const target = document.getElementById('repoList');
-      if (!items.length) {
-        target.innerHTML = `
-          <div class="col-span-full py-16 text-center text-slate-500 font-mono text-sm">
-            <p>No verified repositories matching your filters.</p>
-            <button onclick="window.open('https://github.com/search?q=${encodeURIComponent(search)}&type=repositories&s=stars&o=desc', '_blank')" 
-                    class="mt-3 px-4 py-2 text-xs rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/20 transition">
-              Query global GitHub directory &rarr;
-            </button>
+      const container = document.getElementById('repoContainer');
+
+      // If specific category selected, render flat list
+      if (selectedCat !== 'all') {
+        const catItems = filtered.filter(r => r.category === selectedCat);
+        if (!catItems.length) {
+          container.innerHTML = `<div class="py-16 text-center text-slate-500 font-mono text-sm">No repositories found in ${selectedCat}.</div>`;
+          return;
+        }
+        container.innerHTML = `
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            ${catItems.map((r, i) => renderCard(r, i)).join('')}
           </div>
         `;
         return;
       }
 
-      target.innerHTML = items.map((r, idx) => {
-        const daysAgo = Math.max(1, Math.round((Date.now() - new Date(r.created_at).getTime()) / (1000 * 3600 * 24)));
-        const authColor = r.authenticity_score >= 85 ? 'text-emerald-400 bg-emerald-500/10' : 'text-amber-400 bg-amber-500/10';
-        const copyBtnId = `btn-copy-${idx}`;
-        const cmdIcon = getCommandIcon(r.quick_run);
+      // Render Category Matrix View (Top 3-4 per active discipline)
+      const activeCategories = Object.keys(TAXONOMY).filter(cat => filtered.some(r => r.category === cat));
 
-        // Fallback for missing descriptions
-        const descriptionDisplay = (r.description && r.description.trim().length > 0)
-          ? r.description
-          : '<span class="italic text-slate-500">[No description provided]</span>';
+      if (!activeCategories.length) {
+        container.innerHTML = `<div class="py-16 text-center text-slate-500 font-mono text-sm">No repositories matching selected constraints.</div>`;
+        return;
+      }
 
-        const mediaHtml = r.image_url 
-          ? `<div class="w-full h-36 bg-slate-900 border-b border-borderDark overflow-hidden relative">
-               <img src="${r.image_url}" alt="Demo preview" class="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition duration-300" loading="lazy" onerror="this.parentElement.style.display='none';" />
-             </div>`
-          : '';
-
+      container.innerHTML = activeCategories.map(cat => {
+        const catItems = filtered.filter(r => r.category === cat).slice(0, 4);
         return `
-          <div class="bg-cardDark border border-borderDark hover:border-cyan-500/50 transition duration-200 rounded-xl overflow-hidden flex flex-col justify-between shadow-lg">
-            ${mediaHtml}
-
-            <div class="p-5 flex flex-col flex-1">
-              <div class="flex items-center justify-between gap-2">
-                <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-800 text-cyan-300 border border-slate-700">
-                  ${r.category}
-                </span>
-                <div class="flex items-center gap-2">
-                  <span class="text-[10px] font-mono text-slate-400 border border-borderDark px-1.5 py-0.5 rounded bg-slate-900">${r.license || 'Custom'}</span>
-                  <span class="text-xs text-slate-500 font-mono">${daysAgo}d old</span>
-                </div>
-              </div>
-
-              <div class="mt-3 flex items-baseline justify-between gap-2">
-                <a href="${r.url}" target="_blank" rel="noopener noreferrer" class="text-base font-bold text-white hover:text-cyan-400 transition truncate">
-                  ${r.full_name}
-                </a>
-
-                <!-- Authenticity Badge with Tooltip -->
-                <div class="relative has-tooltip">
-                  <span class="text-[11px] font-mono px-1.5 py-0.5 rounded cursor-help flex items-center gap-1 ${authColor}">
-                    ${r.authenticity_score}% Organic
-                    <span class="text-[9px] opacity-75">ⓘ</span>
-                  </span>
-                  <div class="tooltip-bubble absolute right-0 bottom-full mb-1.5 w-52 p-2.5 rounded-lg bg-slate-950 border border-borderDark shadow-2xl text-[11px] text-slate-300 leading-tight z-30 pointer-events-none">
-                    <p class="font-bold text-cyan-400 mb-1">Authenticity Score</p>
-                    Evaluates fork ratio, velocity distribution, and account age patterns to filter out star-farm spikes.
-                  </div>
-                </div>
-              </div>
-
-              <p class="mt-2 text-xs text-slate-400 leading-relaxed line-clamp-2">
-                ${descriptionDisplay}
-              </p>
-
-              <!-- Quick Run Command Pill with Type Icon -->
-              <div class="mt-3 p-2 bg-slate-900 rounded-lg border border-borderDark flex items-center justify-between gap-2">
-                <div class="flex items-center gap-2 overflow-hidden">
-                  <span class="text-sm select-none" title="Command Type">${cmdIcon}</span>
-                  <code class="text-[11px] text-slate-300 font-mono truncate select-all">${r.quick_run || 'git clone ' + r.url}</code>
-                </div>
-                <button id="${copyBtnId}" onclick="copyToClipboard('${(r.quick_run || '').replace(/'/g, "\\'")}', '${copyBtnId}')" 
-                        class="text-[10px] font-mono uppercase text-slate-400 hover:text-white px-2 py-0.5 rounded bg-slate-800 border border-borderDark transition">
-                  COPY
-                </button>
-              </div>
+          <section class="mb-10">
+            <div class="flex items-center justify-between pb-2 mb-4 border-b border-borderDark/80">
+              <h2 class="text-sm font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+                ${cat}
+              </h2>
+              <button onclick="document.getElementById('categoryFilter').value = '${cat}'; render();" class="text-xs font-mono text-cyan-400 hover:text-cyan-300">
+                View all &rarr;
+              </button>
             </div>
-
-            <!-- Card Specs Footer -->
-            <div class="px-5 py-3 border-t border-borderDark bg-slate-950/40 flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
-              <div class="flex items-center gap-2 text-slate-400">
-                <span class="text-slate-300">${r.language || 'Code'}</span>
-                <span>•</span>
-                <span class="text-[11px] text-slate-400">${r.hardware_req}</span>
-              </div>
-
-              <div class="flex items-center gap-3">
-                ${generateSparkline(r.star_history)}
-                ${r.stars_24h > 0 ? `<span class="text-cyan-400 font-bold">+${r.stars_24h} 24h</span>` : ''}
-                <span class="text-amber-400 font-semibold">⭐ ${r.stars.toLocaleString()}</span>
-              </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              ${catItems.map((r, i) => renderCard(r, `${cat}-${i}`)).join('')}
             </div>
-
-          </div>
+          </section>
         `;
       }).join('');
     }
@@ -394,18 +345,11 @@
       });
     }
 
-    setupToggle('toggleLocalFirst', () => filterLocalFirst, (v) => filterLocalFirst = v);
-    setupToggle('toggleCuda', () => filterCuda, (v) => filterCuda = v);
-    setupToggle('toggleOrganic', () => filterOrganic, (v) => filterOrganic = v);
+    setupToggle('toggleLocalFirst', () => filterLocalFirst, v => filterLocalFirst = v);
+    setupToggle('toggleCuda', () => filterCuda, v => filterCuda = v);
+    setupToggle('toggleOrganic', () => filterOrganic, v => filterOrganic = v);
 
     document.getElementById('searchBox').addEventListener('input', render);
-    document.getElementById('searchBox').addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') {
-        const q = e.target.value.trim();
-        if (q) window.open(`https://github.com/search?q=${encodeURIComponent(q)}&type=repositories&s=stars&o=desc`, '_blank');
-      }
-    });
-
     document.getElementById('categoryFilter').addEventListener('change', render);
     document.getElementById('licenseFilter').addEventListener('change', render);
     document.getElementById('sortSelect').addEventListener('change', render);
