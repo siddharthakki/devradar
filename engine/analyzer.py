@@ -2,13 +2,13 @@
 import re
 import json
 import time
+import urllib.parse
 from datetime import datetime, timezone
 import urllib.request
 import urllib.error
 
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
-# Search Seeds spanning modern open source workloads
 SEEDS = [
     "llm inference", "multi-agent", "rag", "vector database",
     "stable-diffusion comfyui", "whisper tts voice", "vlm ocr",
@@ -27,6 +27,20 @@ def fetch_json(url):
     except Exception as e:
         print(f"Failed to fetch {url}: {e}")
         return None
+
+def normalize_history_entry(entry):
+    """Safely converts legacy list/str snapshots into standardized dicts."""
+    if isinstance(entry, dict):
+        return {
+            "ts": int(entry.get("ts", 0)),
+            "stars": int(entry.get("stars", 0))
+        }
+    elif isinstance(entry, (list, tuple)) and len(entry) >= 2:
+        try:
+            return {"ts": int(entry[0]), "stars": int(entry[1])}
+        except (ValueError, TypeError):
+            return None
+    return None
 
 def extract_capabilities(repo, readme_text=""):
     text = f"{repo.get('name', '')} {repo.get('description', '')} {' '.join(repo.get('topics', []))} {readme_text}".lower()
@@ -106,19 +120,24 @@ def analyze_health(repo):
     
     last_push_days = 999
     if pushed_at:
-        dt = datetime.fromisoformat(pushed_at.replace("Z", "+00:00"))
-        last_push_days = max(0, int((now - dt).total_seconds() / 86400))
+        try:
+            dt = datetime.fromisoformat(pushed_at.replace("Z", "+00:00"))
+            last_push_days = max(0, int((now - dt).total_seconds() / 86400))
+        except Exception:
+            last_push_days = 0
 
     age_days = 100
     if created_at:
-        dt = datetime.fromisoformat(created_at.replace("Z", "+00:00"))
-        age_days = max(1, int((now - dt).total_seconds() / 86400))
+        try:
+            dt = datetime.fromisoformat(created_at.replace("Z", "+00:00"))
+            age_days = max(1, int((now - dt).total_seconds() / 86400))
+        except Exception:
+            age_days = 30
 
     stars = repo.get("stargazers_count", 0)
     forks = repo.get("forks_count", 0)
     open_issues = repo.get("open_issues_count", 0)
 
-    # Readiness Tagging Heuristic
     if last_push_days > 90:
         stage = "maintenance"
     elif age_days < 60 and stars < 500:
@@ -128,7 +147,6 @@ def analyze_health(repo):
     else:
         stage = "active"
 
-    # Authenticity: Fork/Star balance check
     fork_ratio = (forks / stars) if stars > 0 else 0.05
     authenticity = 95
     if fork_ratio < 0.015 and stars > 500:
@@ -148,13 +166,22 @@ def analyze_health(repo):
 def run_pipeline():
     os.makedirs("data", exist_ok=True)
     history_file = os.path.join("data", "history.json")
-    history = {}
+    raw_history = {}
     if os.path.exists(history_file):
         try:
             with open(history_file, "r", encoding="utf-8") as f:
-                history = json.load(f)
+                raw_history = json.load(f)
         except Exception:
-            history = {}
+            raw_history = {}
+
+    # Normalize loaded history safely
+    history = {}
+    for key, entries in raw_history.items():
+        if isinstance(entries, list):
+            valid = [normalize_history_entry(e) for e in entries]
+            history[key] = [v for v in valid if v is not None]
+        else:
+            history[key] = []
 
     all_repos = {}
     print("Collecting high-signal open-source repositories...")
@@ -179,26 +206,22 @@ def run_pipeline():
 
     for full_name, repo in all_repos.items():
         stars = repo.get("stargazers_count", 0)
-        
-        # Velocity Tracking (24h)
         repo_history = history.get(full_name, [])
+
         v24 = 0
         if repo_history:
-            # Filter entries older than 20 hours
-            day_old = [h for h in repo_history if (now_ts - h.get("ts", 0)) >= 72000]
+            day_old = [h for h in repo_history if (now_ts - h["ts"]) >= 72000]
             if day_old:
-                v24 = max(0, stars - day_old[-1].get("stars", stars))
+                v24 = max(0, stars - day_old[-1]["stars"])
             else:
-                v24 = max(0, stars - repo_history[0].get("stars", stars))
+                v24 = max(0, stars - repo_history[0]["stars"])
 
-        # Append snapshot (keeping last 14 days)
         repo_history.append({"ts": now_ts, "stars": stars})
         history[full_name] = repo_history[-14:]
 
         capabilities = extract_capabilities(repo)
         health = analyze_health(repo)
 
-        # Quick run construction
         lang = (repo.get("language") or "").lower()
         if lang == "python":
             quick_run = f"pip install {repo.get('name')}"
@@ -234,7 +257,6 @@ def run_pipeline():
             "health": health
         })
 
-    # Save outputs
     with open(history_file, "w", encoding="utf-8") as f:
         json.dump(history, f, indent=2)
 
