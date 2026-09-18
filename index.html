@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DevRadar — Autonomous Open-Source Intelligence</title>
+  <title>DevRadar — Autonomous Open-Source Matchmaker</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -54,23 +54,15 @@
       --accent-primary: #38bdf8; --accent-secondary: #22d3ee;
       --text-main: #f1f5f9; --text-muted: #94a3b8;
     }
-    body {
-      background-color: var(--bg-radar);
-      color: var(--text-main);
-      transition: background-color 0.2s ease, color 0.2s ease;
-    }
-    .skeleton-box {
-      background: linear-gradient(90deg, var(--bg-card) 25%, var(--border-color) 50%, var(--bg-card) 75%);
-      background-size: 200% 100%;
-      animation: skeleton-pulse 1.5s infinite;
-    }
-    @keyframes skeleton-pulse {
-      0% { background-position: 200% 0; }
-      100% { background-position: -200% 0; }
-    }
+    body { background-color: var(--bg-radar); color: var(--text-main); transition: background-color 0.2s; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg-radar); }
+    ::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 3px; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
   </style>
 </head>
-<body class="min-h-screen font-sans antialiased">
+<body class="min-h-screen font-sans antialiased pb-24">
   
   <header class="sticky top-0 z-50 bg-radarDark/95 backdrop-blur-md border-b border-borderDark shadow-xl">
     <div class="w-full px-4 sm:px-6 lg:px-10 py-3">
@@ -78,15 +70,23 @@
         <div>
           <div class="flex items-center gap-3">
             <h1 class="text-xl font-black tracking-tight text-textMain">DEV<span class="text-accentPrimary">RADAR</span></h1>
-            <a href="how-it-works.html" class="text-xs font-mono text-textMuted hover:text-accentSecondary underline underline-offset-4 transition">Methodology ↗</a> <a href="data/feed.xml" target="_blank" title="RSS 2.0 Feed" class="text-xs font-mono text-textMuted hover:text-accentSecondary transition ml-2">📡 RSS</a>
+            <span class="text-[10px] font-mono uppercase px-2 py-0.5 rounded border border-borderDark text-accentSecondary bg-cardDark">Intent Engine</span>
+            <a href="how-it-works.html" class="text-xs font-mono text-textMuted hover:text-accentSecondary underline ml-2 transition">Methodology ↗</a>
+            <a href="data/feed.xml" target="_blank" class="text-xs font-mono text-textMuted hover:text-accentSecondary ml-2">📡 RSS</a>
           </div>
-          <p class="text-xs text-textMuted hidden sm:block">Autonomous discovery engine ranking breakout open source by 24h velocity & authenticity.</p>
+          <p class="text-xs text-textMuted hidden sm:block">Matchmaking software by architectural intent, hardware viability & real health metrics.</p>
         </div>
 
         <div class="flex items-center gap-2 sm:gap-3 text-xs font-mono text-textMuted">
-          <!-- Theme Picker -->
+          <button id="openStackModal" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-borderDark bg-cardDark text-textMain hover:border-accentPrimary transition">
+            <span>⚙️</span> <span class="hidden sm:inline">My Stack</span>
+          </button>
+
+          <button id="toggleBookmarksBtn" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-borderDark bg-cardDark text-textMain hover:border-accentPrimary transition">
+            <span>🔖</span> <span id="bookmarkCount" class="text-[10px] bg-radarDark px-1.5 py-0.5 rounded border border-borderDark">0</span>
+          </button>
+
           <div class="flex items-center gap-1 bg-cardDark border border-borderDark px-2 py-1.5 rounded-lg">
-            <label for="themeSelect" class="sr-only">Color Theme</label>
             <span>🎨</span>
             <select id="themeSelect" class="bg-transparent text-textMain text-xs font-mono focus:outline-none cursor-pointer">
               <option value="amber" class="bg-cardDark">Amber</option>
@@ -97,88 +97,123 @@
               <option value="cyan" class="bg-cardDark">Cyan</option>
             </select>
           </div>
-
-          <!-- My Radar Bookmark View Toggle -->
-          <button id="toggleBookmarksBtn" aria-label="View Saved Bookmarks" class="flex items-center gap-1 px-2.5 py-1.5 rounded-lg border border-borderDark bg-cardDark text-textMain hover:border-accentPrimary transition">
-            <span>🔖</span>
-            <span class="hidden sm:inline">My Radar</span>
-            <span id="bookmarkCount" class="text-[10px] bg-radarDark px-1.5 py-0.2 rounded border border-borderDark">0</span>
-          </button>
-
-          <!-- Mobile Filter Accordion Button -->
-          <button id="mobileFilterToggle" aria-label="Toggle Filter Controls" class="md:hidden p-2 rounded-lg border border-borderDark bg-cardDark text-textMain">
-            ⚡ Filters
-          </button>
         </div>
       </div>
 
-      <!-- Controls Drawer (Collapsible on Mobile) -->
-      <div id="filterDrawer" class="hidden md:flex flex-col gap-2.5 pt-3">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-2">
-          <div class="relative md:col-span-5">
-            <input id="searchBox" type="search" placeholder="Search name, language, keywords..." aria-label="Search repositories" class="w-full bg-cardDark border border-borderDark text-xs rounded-lg pl-3 pr-24 py-2 text-textMain placeholder:text-textMuted/60 focus:outline-none focus:ring-1 focus:ring-accentPrimary" />
-            <span id="matchCounter" class="absolute right-2 top-1/2 -translate-y-1/2 text-[10px] font-mono text-accentPrimary bg-radarDark px-2 py-0.5 rounded border border-borderDark font-semibold">0 repos</span>
-          </div>
+      <!-- Natural Intent Query Ribbon -->
+      <div class="mt-3 flex items-center gap-2 overflow-x-auto no-scrollbar py-1 text-xs font-mono">
+        <span class="text-textMuted shrink-0">I need to:</span>
+        <button onclick="window.applyIntent('drop-in-replacement')" class="intent-pill px-2.5 py-1 rounded-full bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">🔄 Find Drop-in Replacements</button>
+        <button onclick="window.applyIntent('runs-on-cpu')" class="intent-pill px-2.5 py-1 rounded-full bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">💻 Run on CPU / Mac</button>
+        <button onclick="window.applyIntent('mcp-server')" class="intent-pill px-2.5 py-1 rounded-full bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">🔌 Connect via MCP Server</button>
+        <button onclick="window.applyIntent('self-hosted')" class="intent-pill px-2.5 py-1 rounded-full bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">🏠 Self-Host on Server</button>
+        <button onclick="window.applyIntent('real-time')" class="intent-pill px-2.5 py-1 rounded-full bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">⚡ Real-time / Streaming</button>
+      </div>
 
-          <select id="categoryFilter" aria-label="Filter by Discipline" class="bg-cardDark border border-borderDark text-xs rounded-lg px-2.5 py-2 text-textMain md:col-span-3 focus:outline-none focus:ring-1 focus:ring-accentPrimary">
-            <option value="all">Matrix View (All 20 Disciplines)</option>
-          </select>
-
-          <select id="licenseFilter" aria-label="Filter by License" class="bg-cardDark border border-borderDark text-xs rounded-lg px-2.5 py-2 text-textMain md:col-span-2 focus:outline-none focus:ring-1 focus:ring-accentPrimary">
-            <option value="all">All Licenses</option>
-          </select>
-
-          <select id="sortSelect" aria-label="Sort Repositories" class="bg-cardDark border border-borderDark text-xs rounded-lg px-2.5 py-2 text-textMain md:col-span-2 focus:outline-none focus:ring-1 focus:ring-accentPrimary">
-            <option value="breakout">Breakout Score 🔥</option>
-            <option value="delta">24h Velocity 🚀</option>
-            <option value="stars">Total Stars ⭐</option>
-            <option value="recency">Pushed Recently 🕒</option>
-          </select>
+      <!-- Filter Controls Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-2 mt-2.5">
+        <div class="relative md:col-span-5">
+          <input id="searchBox" type="search" placeholder="Search intent, stack, or name (e.g., 'rag python docker')..." class="w-full bg-cardDark border border-borderDark text-xs rounded-lg pl-3 pr-24 py-2 text-textMain placeholder:text-textMuted/60 focus:outline-none focus:ring-1 focus:ring-accentPrimary" />
+          <span id="matchCounter" class="absolute right-2 top-1/2 -translate-y-1/2 text-[10px] font-mono text-accentPrimary bg-radarDark px-2 py-0.5 rounded border border-borderDark font-semibold">0 repos</span>
         </div>
 
-        <div class="flex flex-wrap items-center gap-2">
-          <span class="text-xs text-textMuted mr-1 font-mono">Specs:</span>
-          <button id="toggleLocalFirst" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-textMuted hover:text-textMain transition">🔒 Local-First</button>
-          <button id="toggleCuda" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-textMuted hover:text-textMain transition">⚡ GPU / CUDA</button>
-          <button id="toggleOrganic" class="px-2.5 py-1 text-xs rounded-full border border-borderDark bg-cardDark text-textMuted hover:text-textMain transition">🛡️ High Authenticity</button>
-        </div>
+        <select id="stageFilter" class="bg-cardDark border border-borderDark text-xs rounded-lg px-2.5 py-2 text-textMain md:col-span-2 focus:outline-none focus:ring-1 focus:ring-accentPrimary">
+          <option value="all">All Stages</option>
+          <option value="mature">🟢 Mature / Prod-Ready</option>
+          <option value="active">⚡ Active Growth</option>
+          <option value="experimental">🧪 Experimental</option>
+          <option value="maintenance">⚠️ Maintenance</option>
+        </select>
+
+        <select id="interactionFilter" class="bg-cardDark border border-borderDark text-xs rounded-lg px-2.5 py-2 text-textMain md:col-span-2 focus:outline-none focus:ring-1 focus:ring-accentPrimary">
+          <option value="all">Any Interface</option>
+          <option value="cli">Terminal / CLI</option>
+          <option value="library">SDK / Library</option>
+          <option value="service">HTTP / Microservice</option>
+          <option value="desktop">Desktop App</option>
+        </select>
+
+        <select id="sortSelect" class="bg-cardDark border border-borderDark text-xs rounded-lg px-2.5 py-2 text-textMain md:col-span-3 focus:outline-none focus:ring-1 focus:ring-accentPrimary">
+          <option value="breakout">Breakout Momentum 🔥</option>
+          <option value="delta">24h Star Velocity 🚀</option>
+          <option value="stars">Total Stargazers ⭐</option>
+          <option value="health">Maintenance Health 🩺</option>
+        </select>
       </div>
     </div>
   </header>
 
   <main class="w-full px-4 sm:px-6 lg:px-10 py-6">
-    <div id="filterStatusBanner" class="hidden mb-6 p-3 bg-cardDark border border-borderDark rounded-xl flex items-center justify-between text-xs font-mono">
-      <div class="flex items-center gap-2">
-        <span class="text-accentPrimary font-bold" id="bannerTitle">Viewing</span>
-        <span class="text-textMuted" id="bannerCount"></span>
-      </div>
-      <button onclick="window.selectCategory('all')" class="text-xs text-accentSecondary underline">
-        &larr; Back to Matrix View
-      </button>
-    </div>
-
-    <!-- Repository Target Container -->
-    <div id="repoContainer">
-      <!-- High-Fidelity Loading Skeletons -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
-        <div class="h-64 rounded-xl border border-borderDark skeleton-box"></div>
-        <div class="h-64 rounded-xl border border-borderDark skeleton-box"></div>
-        <div class="h-64 rounded-xl border border-borderDark skeleton-box"></div>
-        <div class="h-64 rounded-xl border border-borderDark skeleton-box"></div>
-        <div class="h-64 rounded-xl border border-borderDark skeleton-box"></div>
-      </div>
+    <div id="repoContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
+      <div class="py-20 text-center text-textMuted font-mono text-sm col-span-full">Connecting to intent engine...</div>
     </div>
   </main>
+
+  <!-- Side-by-Side Comparison Floating Tray -->
+  <div id="compareTray" class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-cardDark border border-borderDark rounded-2xl shadow-2xl px-5 py-3.5 z-40 hidden items-center gap-4 text-xs font-mono">
+    <div class="flex items-center gap-2" id="compareSlots"></div>
+    <button onclick="window.openCompareModal()" class="px-3 py-1.5 rounded-lg bg-accentPrimary text-radarDark font-bold hover:opacity-90 transition">
+      Compare Specs &rarr;
+    </button>
+    <button onclick="window.clearCompare()" class="text-textMuted hover:text-textMain">&times;</button>
+  </div>
+
+  <!-- Comparison Modal -->
+  <div id="compareModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-cardDark border border-borderDark rounded-2xl max-w-5xl w-full p-6 max-h-[90vh] overflow-y-auto">
+      <div class="flex items-center justify-between pb-4 border-b border-borderDark">
+        <h3 class="text-lg font-bold text-textMain flex items-center gap-2">
+          <span>⚖️</span> Architecture & Health Diff
+        </h3>
+        <button onclick="document.getElementById('compareModal').classList.add('hidden')" class="text-textMuted hover:text-textMain text-xl">&times;</button>
+      </div>
+      <div id="compareContent" class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6"></div>
+    </div>
+  </div>
+
+  <!-- My Stack Configuration Modal -->
+  <div id="stackModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-cardDark border border-borderDark rounded-2xl max-w-lg w-full p-6 text-xs font-mono">
+      <div class="flex items-center justify-between pb-3 border-b border-borderDark">
+        <h3 class="text-sm font-bold text-textMain">🛠️ My Stack Profile</h3>
+        <button onclick="document.getElementById('stackModal').classList.add('hidden')" class="text-textMuted hover:text-textMain text-lg">&times;</button>
+      </div>
+      <p class="text-textMuted my-3">Set your workstation constraints. DevRadar will pre-filter repositories to match your machine.</p>
+
+      <div class="space-y-4">
+        <div>
+          <label class="block text-textMain mb-1">Primary Languages</label>
+          <input id="stackLanguages" placeholder="e.g. Python, TypeScript, Rust" class="w-full bg-radarDark border border-borderDark rounded p-2 text-textMain focus:outline-none focus:border-accentPrimary" />
+        </div>
+        <div>
+          <label class="block text-textMain mb-1">Hardware Constraints</label>
+          <select id="stackHardware" class="w-full bg-radarDark border border-borderDark rounded p-2 text-textMain">
+            <option value="any">Any (Has NVIDIA GPU / Cloud)</option>
+            <option value="cpu">CPU-Only / Apple Silicon</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-textMain mb-1">License Exclusions</label>
+          <div class="flex gap-4 text-textMuted">
+            <label><input type="checkbox" id="stackAvoidCopyleft" /> Avoid AGPL / Strict Copyleft</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 flex justify-end gap-2">
+        <button onclick="window.saveStackProfile()" class="px-4 py-2 rounded bg-accentPrimary text-radarDark font-bold">Apply Profile</button>
+      </div>
+    </div>
+  </div>
 
   <script type="module">
     import { TAXONOMY, classifyRepo, computeBreakoutScore, getSimilarRepos } from './devradar-core.js';
 
     let repositories = [];
     let bookmarks = JSON.parse(localStorage.getItem('devradar-bookmarks') || '[]');
-    let showBookmarksOnly = false;
-    let filterLocalFirst = false;
-    let filterCuda = false;
-    let filterOrganic = false;
+    let compareList = [];
+    let activeIntent = null;
+    let stackProfile = JSON.parse(localStorage.getItem('devradar-stack-profile') || '{"languages":"","hardware":"any","avoidCopyleft":false}');
 
     // Theme Switcher Init
     const themeSelect = document.getElementById('themeSelect');
@@ -190,89 +225,111 @@
       localStorage.setItem('devradar-theme', e.target.value);
     });
 
-    // Mobile drawer toggle
-    document.getElementById('mobileFilterToggle').addEventListener('click', () => {
-      document.getElementById('filterDrawer').classList.toggle('hidden');
-    });
-
-    window.toggleBookmark = function(repoName) {
-      const idx = bookmarks.indexOf(repoName);
-      if (idx > -1) bookmarks.splice(idx, 1);
-      else bookmarks.push(repoName);
-      localStorage.setItem('devradar-bookmarks', JSON.stringify(bookmarks));
-      updateBookmarkCounter();
+    window.applyIntent = function(tag) {
+      if (activeIntent === tag) {
+        activeIntent = null;
+        document.querySelectorAll('.intent-pill').forEach(el => el.classList.remove('border-accentPrimary', 'text-accentPrimary'));
+      } else {
+        activeIntent = tag;
+        document.querySelectorAll('.intent-pill').forEach(el => {
+          el.classList.toggle('border-accentPrimary', el.innerText.includes(tag) || el.getAttribute('onclick').includes(tag));
+          el.classList.toggle('text-accentPrimary', el.innerText.includes(tag) || el.getAttribute('onclick').includes(tag));
+        });
+      }
       render();
     };
 
-    function updateBookmarkCounter() {
-      document.getElementById('bookmarkCount').textContent = bookmarks.length;
+    window.toggleCompare = function(repoName) {
+      const idx = compareList.indexOf(repoName);
+      if (idx > -1) compareList.splice(idx, 1);
+      else if (compareList.length < 3) compareList.push(repoName);
+      else alert("You can compare up to 3 repositories simultaneously.");
+      updateCompareTray();
+    };
+
+    function updateCompareTray() {
+      const tray = document.getElementById('compareTray');
+      const slots = document.getElementById('compareSlots');
+      if (!compareList.length) {
+        tray.classList.add('hidden');
+        tray.classList.remove('flex');
+        return;
+      }
+      tray.classList.remove('hidden');
+      tray.classList.add('flex');
+      slots.innerHTML = compareList.map(name => `
+        <span class="px-2 py-1 bg-radarDark border border-borderDark rounded text-accentSecondary flex items-center gap-1">
+          ${name.split('/')[1] || name}
+          <button onclick="window.toggleCompare('${name}')" class="text-textMuted hover:text-textMain">&times;</button>
+        </span>
+      `).join('');
     }
 
-    document.getElementById('toggleBookmarksBtn').addEventListener('click', () => {
-      showBookmarksOnly = !showBookmarksOnly;
-      document.getElementById('toggleBookmarksBtn').classList.toggle('border-accentPrimary', showBookmarksOnly);
+    window.clearCompare = function() {
+      compareList = [];
+      updateCompareTray();
       render();
+    };
+
+    window.openCompareModal = function() {
+      const modal = document.getElementById('compareModal');
+      const content = document.getElementById('compareContent');
+      const targets = repositories.filter(r => compareList.includes(r.full_name || r.name));
+      
+      content.innerHTML = targets.map(r => {
+        const stage = r.health?.stage || 'active';
+        return `
+          <div class="p-5 rounded-xl bg-radarDark border border-borderDark flex flex-col justify-between space-y-4">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-cardDark border border-borderDark text-accentPrimary">${stage}</span>
+                <span class="text-xs font-mono text-textMuted">${r.license}</span>
+              </div>
+              <h4 class="text-base font-bold text-textMain mt-2">${r.full_name}</h4>
+              <p class="text-xs text-textMuted mt-1 leading-relaxed">${r.description || ''}</p>
+            </div>
+
+            <div class="space-y-2 border-t border-borderDark pt-3 text-xs font-mono">
+              <div class="flex justify-between"><span class="text-textMuted">Floor:</span> <span>${r.hardware_req}</span></div>
+              <div class="flex justify-between"><span class="text-textMuted">Interface:</span> <span>${(r.capabilities?.interaction || []).join(', ')}</span></div>
+              <div class="flex justify-between"><span class="text-textMuted">Integration:</span> <span>${(r.capabilities?.integrations || []).join(', ')}</span></div>
+              <div class="flex justify-between"><span class="text-textMuted">Last Push:</span> <span>${r.health?.last_push_days ?? 0}d ago</span></div>
+              <div class="flex justify-between"><span class="text-textMuted">Authenticity:</span> <span class="text-emerald-400">${r.authenticity_score}% Organic</span></div>
+              <div class="flex justify-between"><span class="text-textMuted">Total Stars:</span> <span>⭐ ${r.stars.toLocaleString()}</span></div>
+            </div>
+
+            <a href="${r.url}" target="_blank" class="w-full text-center py-2 rounded bg-cardDark border border-borderDark text-textMain hover:border-accentPrimary transition text-xs font-mono">
+              Inspect on GitHub ↗
+            </a>
+          </div>
+        `;
+      }).join('');
+
+      modal.classList.remove('hidden');
+    };
+
+    // Stack Modal Logic
+    document.getElementById('openStackModal').addEventListener('click', () => {
+      document.getElementById('stackLanguages').value = stackProfile.languages || '';
+      document.getElementById('stackHardware').value = stackProfile.hardware || 'any';
+      document.getElementById('stackAvoidCopyleft').checked = !!stackProfile.avoidCopyleft;
+      document.getElementById('stackModal').classList.remove('hidden');
     });
 
-    window.selectCategory = function(cat) {
-      const select = document.getElementById('categoryFilter');
-      if (select) {
-        select.value = cat;
-        render();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
+    window.saveStackProfile = function() {
+      stackProfile = {
+        languages: document.getElementById('stackLanguages').value.trim(),
+        hardware: document.getElementById('stackHardware').value,
+        avoidCopyleft: document.getElementById('stackAvoidCopyleft').checked
+      };
+      localStorage.setItem('devradar-stack-profile', JSON.stringify(stackProfile));
+      document.getElementById('stackModal').classList.add('hidden');
+      render();
     };
-
-    window.copyToClipboard = function(text, btnId) {
-      navigator.clipboard.writeText(text);
-      const el = document.getElementById(btnId);
-      if (el) {
-        const orig = el.textContent;
-        el.textContent = 'COPIED!';
-        el.style.color = 'var(--accent-secondary)';
-        setTimeout(() => {
-          el.textContent = orig;
-          el.style.color = '';
-        }, 1500);
-      }
-    };
-
-    function getCommandIcon(cmd) {
-      if (!cmd) return '💻';
-      const c = cmd.toLowerCase().trim();
-      if (c.startsWith('npm') || c.startsWith('npx')) return '📦';
-      if (c.startsWith('pip') || c.startsWith('python')) return '🐍';
-      if (c.startsWith('docker')) return '🐳';
-      if (c.startsWith('cargo')) return '🦀';
-      return '💻';
-    }
-
-    function generateSparkline(history) {
-      if (!history || history.length < 2) return '';
-      const stars = history.map(h => h.stars);
-      const min = Math.min(...stars);
-      const max = Math.max(...stars);
-      const range = max - min || 1;
-      const width = 64;
-      const height = 18;
-
-      const points = stars.map((val, idx) => {
-        const x = (idx / (stars.length - 1)) * width;
-        const y = height - ((val - min) / range) * (height - 4) - 2;
-        return `${x.toFixed(1)},${y.toFixed(1)}`;
-      }).join(' ');
-
-      return `
-        <svg class="w-16 h-4 overflow-visible inline-block opacity-85 hover:opacity-100 transition" viewBox="0 0 ${width} ${height}" aria-hidden="true">
-          <polyline fill="none" stroke="var(--accent-secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="${points}" />
-        </svg>
-      `;
-    }
 
     async function loadDataset() {
       try {
         const res = await fetch(`data/repos.json?t=${Date.now()}`);
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
         const rawItems = Array.isArray(data) ? data : (data.repositories || []);
 
@@ -282,248 +339,113 @@
           return { ...r, category, breakout_score: breakoutScore };
         });
 
-        populateFilters();
-        updateBookmarkCounter();
+        document.getElementById('bookmarkCount').textContent = bookmarks.length;
         render();
       } catch (err) {
-        console.warn('Sync load notice:', err);
+        console.warn('Pipeline fetch warning:', err);
       }
-    }
-
-    function populateFilters() {
-      const catSelect = document.getElementById('categoryFilter');
-      catSelect.innerHTML = '<option value="all">Matrix View (All 20 Disciplines)</option>';
-      Object.keys(TAXONOMY).forEach(cat => {
-        catSelect.innerHTML += `<option value="${cat}">${cat}</option>`;
-      });
-
-      const licSelect = document.getElementById('licenseFilter');
-      const licenses = Array.from(new Set(repositories.map(r => r.license).filter(Boolean))).sort();
-      licSelect.innerHTML = '<option value="all">All Licenses</option>';
-      licenses.forEach(lic => {
-        licSelect.innerHTML += `<option value="${lic}">${lic}</option>`;
-      });
-    }
-
-    function renderCard(r, idx) {
-      const daysAgo = Math.max(1, Math.round((Date.now() - new Date(r.created_at || Date.now()).getTime()) / (1000 * 3600 * 24)));
-      const isBookmarked = bookmarks.includes(r.full_name || r.name);
-      const copyBtnId = `btn-copy-${idx}-${Math.floor(Math.random()*1000)}`;
-      const cmdIcon = getCommandIcon(r.quick_run);
-      const desc = r.description?.trim() || '<span class="italic text-textMuted/60">[No description provided]</span>';
-
-      const similar = getSimilarRepos(r, repositories, 2);
-      let similarPills = '';
-      if (similar.length > 0) {
-        similarPills = `
-          <div class="mt-3 pt-2 border-t border-borderDark flex items-center gap-1.5 text-[10px] font-mono text-textMuted overflow-hidden">
-            <span class="text-textMuted/60 shrink-0">Related:</span>
-            <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
-              ${similar.map(s => `
-                <a href="${s.url}" target="_blank" rel="noopener noreferrer" 
-                   title="${s.description || s.name}"
-                   class="px-1.5 py-0.5 rounded bg-radarDark border border-borderDark hover:border-accentPrimary text-accentSecondary transition shrink-0 truncate max-w-[120px]">
-                  ${s.name}
-                </a>
-              `).join('')}
-            </div>
-          </div>
-        `;
-      }
-
-      const mediaHtml = r.image_url 
-        ? `<div class="w-full h-32 bg-radarDark border-b border-borderDark overflow-hidden relative">
-             <img src="${r.image_url}" alt="Repository preview" class="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition" loading="lazy" onerror="this.parentElement.style.display='none';" />
-           </div>`
-        : '';
-
-      return `
-        <article class="bg-cardDark border border-borderDark hover:border-accentPrimary/50 transition duration-200 rounded-xl overflow-hidden flex flex-col justify-between shadow-lg">
-          ${mediaHtml}
-          <div class="p-4 flex flex-col flex-1">
-            <div class="flex items-center justify-between gap-2">
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-radarDark text-accentSecondary border border-borderDark truncate max-w-[170px]">
-                ${r.category}
-              </span>
-              <div class="flex items-center gap-1.5">
-                <span class="text-[10px] font-mono text-textMuted border border-borderDark px-1.5 py-0.5 rounded bg-radarDark">${r.license || 'MIT'}</span>
-                <button onclick="window.toggleBookmark('${r.full_name || r.name}')" aria-label="Bookmark ${r.name}" class="text-sm hover:scale-125 transition">
-                  ${isBookmarked ? '🔖' : '📑'}
-                </button>
-              </div>
-            </div>
-
-            <div class="mt-2.5 flex items-baseline justify-between gap-2">
-              <a href="${r.url}" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-textMain hover:text-accentPrimary transition truncate">
-                ${r.full_name || r.name}
-              </a>
-              <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-radarDark text-accentPrimary border border-borderDark" title="Calculated from fork ratio and velocity distribution">
-                ${r.authenticity_score || 95}% Organic
-              </span>
-            </div>
-
-            <p class="mt-1.5 text-xs text-textMuted leading-relaxed line-clamp-2">${desc}</p>
-
-            <div class="mt-3 p-1.5 bg-radarDark rounded-lg border border-borderDark flex items-center justify-between gap-2">
-              <div class="flex items-center gap-1.5 overflow-hidden">
-                <span class="text-xs select-none" aria-hidden="true">${cmdIcon}</span>
-                <code class="text-[10px] text-textMain font-mono truncate select-all">${r.quick_run || 'git clone ' + (r.url || '')}</code>
-              </div>
-              <button id="${copyBtnId}" onclick="copyToClipboard('${(r.quick_run || 'git clone ' + (r.url || '')).replace(/'/g, "\\'")}', '${copyBtnId}')" 
-                      aria-label="Copy clone command"
-                      class="text-[9px] font-mono uppercase text-textMuted hover:text-textMain px-2 py-0.5 rounded bg-cardDark border border-borderDark transition">
-                COPY
-              </button>
-            </div>
-
-            ${similarPills}
-          </div>
-
-          <div class="px-4 py-2.5 border-t border-borderDark bg-radarDark/60 flex items-center justify-between text-xs font-mono">
-            <div class="flex items-center gap-2 text-textMuted text-[11px]">
-              <span class="text-textMain">${r.language || 'Code'}</span>
-              <span>•</span>
-              <span>${r.hardware_req || 'Minimal'}</span>
-            </div>
-            <div class="flex items-center gap-2">
-              ${generateSparkline(r.star_history)}
-              ${(r.stars_24h || r.v24) > 0 ? `<span class="text-accentSecondary font-bold text-[11px]">+${r.stars_24h || r.v24} 24h</span>` : ''}
-              <span class="text-accentPrimary font-semibold text-[11px]">⭐ ${(r.stars || 0).toLocaleString()}</span>
-            </div>
-          </div>
-        </article>
-      `;
     }
 
     function render() {
       const search = document.getElementById('searchBox').value.toLowerCase().trim();
-      const selectedCat = document.getElementById('categoryFilter').value;
-      const selectedLic = document.getElementById('licenseFilter').value;
+      const stage = document.getElementById('stageFilter').value;
+      const interaction = document.getElementById('interactionFilter').value;
       const sortType = document.getElementById('sortSelect').value;
 
-      const anySpecActive = filterLocalFirst || filterCuda || filterOrganic;
-
-      let filtered = repositories.filter(repo => {
-        if (showBookmarksOnly && !bookmarks.includes(repo.full_name || repo.name)) return false;
-
-        const matchesSearch = !search || 
-          (repo.name || '').toLowerCase().includes(search) || 
-          (repo.full_name || '').toLowerCase().includes(search) ||
-          (repo.description || '').toLowerCase().includes(search) ||
-          (repo.language || '').toLowerCase().includes(search) ||
-          (repo.topics || []).some(t => t.toLowerCase().includes(search));
-
-        const matchesLic = (selectedLic === 'all') || (repo.license === selectedLic);
-
-        let matchesSpecs = true;
-        if (anySpecActive) {
-          matchesSpecs = (filterLocalFirst && repo.is_local_first) ||
-                         (filterCuda && repo.is_cuda_ready) ||
-                         (filterOrganic && (repo.authenticity_score || 95) >= 85);
+      let filtered = repositories.filter(r => {
+        // Intent tag filter
+        if (activeIntent && !(r.capabilities?.intent_tags || []).includes(activeIntent) && !(r.capabilities?.integrations || []).includes(activeIntent)) {
+          return false;
         }
 
-        return matchesSearch && matchesLic && matchesSpecs;
+        // Stage & interaction filters
+        if (stage !== 'all' && (r.health?.stage || 'active') !== stage) return false;
+        if (interaction !== 'all' && !(r.capabilities?.interaction || []).includes(interaction)) return false;
+
+        // Stack profile constraints
+        if (stackProfile.hardware === 'cpu' && r.is_cuda_ready && !r.capabilities?.hardware?.cpu_supported) return false;
+        if (stackProfile.avoidCopyleft && (r.license || '').includes('GPL')) return false;
+        if (stackProfile.languages) {
+          const preferred = stackProfile.languages.toLowerCase().split(',').map(s => s.trim());
+          if (!preferred.some(p => (r.language || '').toLowerCase().includes(p))) return false;
+        }
+
+        // Full-text search
+        if (search) {
+          const hay = `${r.name} ${r.full_name} ${r.description} ${r.language} ${(r.topics || []).join(' ')} ${(r.capabilities?.intent_tags || []).join(' ')}`.toLowerCase();
+          if (!hay.includes(search)) return false;
+        }
+
+        return true;
       });
 
       document.getElementById('matchCounter').textContent = `${filtered.length} repos`;
 
-      if (sortType === 'delta') filtered.sort((a, b) => (b.stars_24h || b.v24 || 0) - (a.stars_24h || a.v24 || 0));
-      else if (sortType === 'stars') filtered.sort((a, b) => (b.stars || 0) - (a.stars || 0));
-      else if (sortType === 'recency') filtered.sort((a, b) => new Date(b.pushed_at || b.created_at || 0) - new Date(a.pushed_at || a.created_at || 0));
+      if (sortType === 'delta') filtered.sort((a, b) => (b.stars_24h || 0) - (a.stars_24h || 0));
+      else if (sortType === 'stars') filtered.sort((a, b) => b.stars - a.stars);
+      else if (sortType === 'health') filtered.sort((a, b) => (a.health?.last_push_days ?? 99) - (b.health?.last_push_days ?? 99));
       else filtered.sort((a, b) => (b.breakout_score || 0) - (a.breakout_score || 0));
 
       const container = document.getElementById('repoContainer');
-      const banner = document.getElementById('filterStatusBanner');
-
-      if (showBookmarksOnly) {
-        banner.classList.remove('hidden');
-        document.getElementById('bannerTitle').textContent = "My Bookmarked Radar";
-        document.getElementById('bannerCount').textContent = `(${filtered.length} repositories saved)`;
-        if (!filtered.length) {
-          container.innerHTML = `<div class="py-16 text-center text-textMuted font-mono text-sm">No bookmarked repositories yet. Click 📑 on any card to save it.</div>`;
-          return;
-        }
-        container.innerHTML = `
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
-            ${filtered.map((r, i) => renderCard(r, i)).join('')}
-          </div>
-        `;
+      if (!filtered.length) {
+        container.innerHTML = `<div class="py-20 text-center text-textMuted font-mono text-sm col-span-full">No tools match these intent constraints. Reset filters or stack profile.</div>`;
         return;
       }
 
-      if (selectedCat !== 'all') {
-        const catItems = filtered.filter(r => r.category === selectedCat);
-        banner.classList.remove('hidden');
-        document.getElementById('bannerTitle').textContent = selectedCat;
-        document.getElementById('bannerCount').textContent = `(${catItems.length} repos)`;
-
-        if (!catItems.length) {
-          container.innerHTML = `<div class="py-16 text-center text-textMuted font-mono text-sm">No repositories found in "${selectedCat}".</div>`;
-          return;
-        }
-        container.innerHTML = `
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
-            ${catItems.map((r, i) => renderCard(r, i)).join('')}
-          </div>
-        `;
-        return;
-      }
-
-      banner.classList.add('hidden');
-
-      const activeCategories = Object.keys(TAXONOMY).filter(cat => filtered.some(r => r.category === cat));
-      if (!activeCategories.length) {
-        container.innerHTML = `<div class="py-16 text-center text-textMuted font-mono text-sm">No repositories matching selected constraints.</div>`;
-        return;
-      }
-
-      container.innerHTML = activeCategories.map(cat => {
-        const catAll = filtered.filter(r => r.category === cat);
-        const catSlice = catAll.slice(0, 5);
+      container.innerHTML = filtered.map((r, idx) => {
+        const inCompare = compareList.includes(r.full_name || r.name);
+        const stage = r.health?.stage || 'active';
+        const stagePill = stage === 'mature' 
+          ? '<span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Mature</span>'
+          : (stage === 'experimental' ? '<span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-purple-500/10 text-purple-400 border border-purple-500/20">Experimental</span>' : '');
 
         return `
-          <section class="mb-10">
-            <div class="flex items-center justify-between pb-2 mb-4 border-b border-borderDark/80">
-              <div class="flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-accentPrimary"></span>
-                <h2 class="text-sm font-bold tracking-tight text-textMain">${cat}</h2>
-                <span class="text-[11px] font-mono text-textMuted">(${catAll.length})</span>
+          <div class="bg-cardDark border border-borderDark hover:border-accentPrimary/50 transition rounded-xl p-4 flex flex-col justify-between shadow-lg">
+            <div>
+              <div class="flex items-center justify-between gap-1">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-radarDark text-accentSecondary border border-borderDark truncate max-w-[150px]">${r.category}</span>
+                <div class="flex items-center gap-1.5">
+                  ${stagePill}
+                  <button onclick="window.toggleCompare('${r.full_name || r.name}')" title="Add to comparison" class="text-xs px-1.5 py-0.5 rounded border ${inCompare ? 'border-accentPrimary text-accentPrimary' : 'border-borderDark text-textMuted hover:text-textMain'}">
+                    ⚖️
+                  </button>
+                </div>
               </div>
-              <button onclick="window.selectCategory('${cat}')" class="text-xs font-mono text-accentPrimary hover:text-accentSecondary transition flex items-center gap-1">
-                View all ${catAll.length} &rarr;
-              </button>
+
+              <div class="mt-2.5 flex items-baseline justify-between gap-2">
+                <a href="${r.url}" target="_blank" class="text-sm font-bold text-textMain hover:text-accentPrimary transition truncate">
+                  ${r.full_name || r.name}
+                </a>
+                <span class="text-[10px] font-mono text-textMuted">${r.health?.last_push_days ?? 0}d ago</span>
+              </div>
+
+              <p class="mt-1.5 text-xs text-textMuted leading-relaxed line-clamp-2">${r.description || '[No description provided]'}</p>
+
+              <!-- Capability Intent Badges -->
+              <div class="mt-3 flex flex-wrap gap-1">
+                ${(r.capabilities?.intent_tags || []).slice(0, 2).map(tag => `<span class="text-[9px] font-mono px-1.5 py-0.2 rounded bg-radarDark text-textMuted border border-borderDark">${tag}</span>`).join('')}
+                <span class="text-[9px] font-mono px-1.5 py-0.2 rounded bg-radarDark text-textMuted border border-borderDark">${r.hardware_req}</span>
+              </div>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
-              ${catSlice.map((r, i) => renderCard(r, `${cat}-${i}`)).join('')}
+
+            <div class="mt-4 pt-3 border-t border-borderDark flex items-center justify-between text-xs font-mono">
+              <span class="text-textMuted text-[11px]">${r.language}</span>
+              <div class="flex items-center gap-2">
+                ${(r.stars_24h > 0) ? `<span class="text-accentSecondary text-[11px] font-bold">+${r.stars_24h} 24h</span>` : ''}
+                <span class="text-accentPrimary text-[11px] font-semibold">⭐ ${r.stars.toLocaleString()}</span>
+              </div>
             </div>
-          </section>
+          </div>
         `;
       }).join('');
     }
 
-    function setupToggle(btnId, getState, setState) {
-      const btn = document.getElementById(btnId);
-      btn.addEventListener('click', () => {
-        const next = !getState();
-        setState(next);
-        btn.classList.toggle('border-accentPrimary', next);
-        btn.classList.toggle('text-accentPrimary', next);
-        render();
-      });
-    }
-
-    setupToggle('toggleLocalFirst', () => filterLocalFirst, v => filterLocalFirst = v);
-    setupToggle('toggleCuda', () => filterCuda, v => filterCuda = v);
-    setupToggle('toggleOrganic', () => filterOrganic, v => filterOrganic = v);
-
     document.getElementById('searchBox').addEventListener('input', render);
-    document.getElementById('categoryFilter').addEventListener('change', render);
-    document.getElementById('licenseFilter').addEventListener('change', render);
+    document.getElementById('stageFilter').addEventListener('change', render);
+    document.getElementById('interactionFilter').addEventListener('change', render);
     document.getElementById('sortSelect').addEventListener('change', render);
 
     loadDataset();
-    setInterval(loadDataset, 60000);
   </script>
 </body>
 </html>
-
