@@ -1,0 +1,131 @@
+{
+  "category": "Developer Tooling & CLI",
+  "count": 2,
+  "updated_at": "2026-09-18T09:09:11.025408+00:00",
+  "repositories": [
+    {
+      "id": 1350984217,
+      "name": "DLSS5-Swapper",
+      "full_name": "rakanki911/DLSS5-Swapper",
+      "url": "https://github.com/rakanki911/DLSS5-Swapper",
+      "description": "Install, tune and restore DLSS 5 in your games with one click. Native RenoDX, DLSS5-Feeder for games without DLSS, OptiScaler and multipass routes; DirectX 8/9/11/12, Vulkan, OpenGL, DirectDraw and emulators. In-game F8 overlay, automatic backups, and a community page showing what works on your games and your graphics card.",
+      "language": "JavaScript",
+      "license": "MIT",
+      "topics": [],
+      "forks": 297,
+      "created_at": "2026-08-29T23:51:32Z",
+      "pushed_at": "2026-09-13T02:02:21Z",
+      "category": "Developer Tooling & CLI",
+      "stars": 5599,
+      "stars_24h": 268,
+      "v24": 268,
+      "trending_score": 2.6114,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 5473
+        },
+        {
+          "ts": 1789647750,
+          "stars": 5479
+        },
+        {
+          "ts": 1789648014,
+          "stars": 5479
+        },
+        {
+          "ts": 1789651294,
+          "stars": 5492
+        },
+        {
+          "ts": 1789655818,
+          "stars": 5509
+        },
+        {
+          "ts": 1789663882,
+          "stars": 5527
+        },
+        {
+          "ts": 1789675654,
+          "stars": 5537
+        },
+        {
+          "ts": 1789687711,
+          "stars": 5546
+        },
+        {
+          "ts": 1789704823,
+          "stars": 5599
+        }
+      ],
+      "image_url": "https://cdn.buymeacoffee.com/buttons/v2/lato-yellow.png",
+      "quick_run": "git clone https://github.com/rakanki911/DLSS5-Swapper.git"
+    },
+    {
+      "id": 1357272370,
+      "name": "wechat-intelligence-hub",
+      "full_name": "Rion-Wu-tech/wechat-intelligence-hub",
+      "url": "https://github.com/Rion-Wu-tech/wechat-intelligence-hub",
+      "description": "Local-first WeChat intelligence system with a read-only CLI, Codex skills, searchable chat history, daily briefings, follow-ups and opportunity tracking.",
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "topics": [],
+      "forks": 2692,
+      "created_at": "2026-09-04T15:00:53Z",
+      "pushed_at": "2026-09-11T18:44:51Z",
+      "category": "Developer Tooling & CLI",
+      "stars": 2405,
+      "stars_24h": 20,
+      "v24": 20,
+      "trending_score": 1.7281,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": true,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2389
+        },
+        {
+          "ts": 1789647750,
+          "stars": 2390
+        },
+        {
+          "ts": 1789648014,
+          "stars": 2390
+        },
+        {
+          "ts": 1789651294,
+          "stars": 2391
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2394
+        },
+        {
+          "ts": 1789663882,
+          "stars": 2396
+        },
+        {
+          "ts": 1789675654,
+          "stars": 2398
+        },
+        {
+          "ts": 1789687711,
+          "stars": 2401
+        },
+        {
+          "ts": 1789704823,
+          "stars": 2405
+        }
+      ],
+      "image_url": null,
+      "quick_run": "git clone https://github.com/Rion-Wu-tech/wechat-intelligence-hub.git"
+    }
+  ]
+}

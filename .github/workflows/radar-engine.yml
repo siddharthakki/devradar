@@ -1,25 +1,43 @@
 ﻿name: DevRadar Engine Sync
+
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "17 * * * *"
   workflow_dispatch:
+
 permissions:
   contents: write
+
+concurrency:
+  group: radar-sync
+  cancel-in-progress: false
+
 jobs:
   run-engine:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
       - run: pip install -r engine/requirements.txt
-      - run: python engine/analyzer.py
+
+      - name: Ingest & Categorize Repos
+        run: python engine/analyzer.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Commit data (repos + history + snapshots)
+
+      - name: Generate Feeds & Static API
+        run: python engine/rss.py
+
+      - name: Commit and push snapshots
         run: |
           git config --global user.name "devradar-bot"
           git config --global user.email "bot@users.noreply.github.com"
+          git pull origin main --rebase
           git add data/
-          git diff --staged --quiet || (git commit -m "chore(data): sync radar snapshot [skip ci]" && git push)
+          git diff --staged --quiet || (git commit -m "chore(data): sync radar & distribution endpoints [skip ci]" && git push origin main)

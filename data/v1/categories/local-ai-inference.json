@@ -1,0 +1,286 @@
+{
+  "category": "Local AI & Inference",
+  "count": 4,
+  "updated_at": "2026-09-18T09:09:11.025408+00:00",
+  "repositories": [
+    {
+      "id": 1351879111,
+      "name": "reef",
+      "full_name": "Human-Agent-Society/reef",
+      "url": "https://github.com/Human-Agent-Society/reef",
+      "description": "Continual learning infra for self-improving agents",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [
+        "agent-infrastructure",
+        "ai-agents",
+        "continual-learning",
+        "inference",
+        "llm",
+        "llm-training",
+        "reinforcement-learning",
+        "self-improving-agents"
+      ],
+      "forks": 264,
+      "created_at": "2026-08-31T01:39:18Z",
+      "pushed_at": "2026-09-18T03:33:16Z",
+      "category": "Local AI & Inference",
+      "stars": 3377,
+      "stars_24h": 1156,
+      "v24": 1156,
+      "trending_score": 1.6922,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2911
+        },
+        {
+          "ts": 1789647750,
+          "stars": 2911
+        },
+        {
+          "ts": 1789648014,
+          "stars": 2911
+        },
+        {
+          "ts": 1789651294,
+          "stars": 2914
+        },
+        {
+          "ts": 1789655818,
+          "stars": 3021
+        },
+        {
+          "ts": 1789663882,
+          "stars": 3033
+        },
+        {
+          "ts": 1789675654,
+          "stars": 3042
+        },
+        {
+          "ts": 1789687711,
+          "stars": 3148
+        },
+        {
+          "ts": 1789704823,
+          "stars": 3377
+        }
+      ],
+      "image_url": "https://raw.githubusercontent.com/Human-Agent-Society/reef/main/docs/assets/reef-logo-light.svg",
+      "quick_run": "git clone https://github.com/Human-Agent-Society/reef.git"
+    },
+    {
+      "id": 1342935078,
+      "name": "ai-infra-book",
+      "full_name": "bojieli/ai-infra-book",
+      "url": "https://github.com/bojieli/ai-infra-book",
+      "description": "\u300a\u6df1\u5165\u7406\u89e3 AI Infra\uff1a\u91cf\u5316\u5206\u6790\u4e0e\u7cfb\u7edf\u8bbe\u8ba1\u300b\uff08\u674e\u535a\u6770 \u8457\uff09\u5f00\u6e90\u4e66\u7a3f\uff1a\u4ece\u786c\u4ef6\u7ea6\u675f\u548c\u6a21\u578b\u67b6\u6784\u51fa\u53d1\uff0c\u91cf\u5316\u63a8\u5bfc LLM \u63a8\u7406\u4e0e\u8bad\u7ec3\u7cfb\u7edf\u8bbe\u8ba1\u3002\u542b\u5168\u4e66\u6b63\u6587\u3001PDF\u3001\u914d\u5957\u8ba1\u7b97\u5de5\u5177\u4e0e\u5b9e\u9a8c",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [
+        "accelerator",
+        "ai-infra",
+        "ai-infrastructure",
+        "book",
+        "datacenter-network",
+        "deepseek",
+        "distributed-systems",
+        "gpu"
+      ],
+      "forks": 299,
+      "created_at": "2026-08-22T15:30:41Z",
+      "pushed_at": "2026-09-18T03:02:35Z",
+      "category": "Local AI & Inference",
+      "stars": 4208,
+      "stars_24h": 419,
+      "v24": 419,
+      "trending_score": 1.3105,
+      "hardware_req": "Moderate (8\u201316GB VRAM)",
+      "is_local_first": false,
+      "is_cuda_ready": true,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 4071
+        },
+        {
+          "ts": 1789647750,
+          "stars": 4074
+        },
+        {
+          "ts": 1789648014,
+          "stars": 4074
+        },
+        {
+          "ts": 1789651294,
+          "stars": 4083
+        },
+        {
+          "ts": 1789655818,
+          "stars": 4096
+        },
+        {
+          "ts": 1789663882,
+          "stars": 4117
+        },
+        {
+          "ts": 1789675654,
+          "stars": 4122
+        },
+        {
+          "ts": 1789687711,
+          "stars": 4125
+        },
+        {
+          "ts": 1789704823,
+          "stars": 4208
+        }
+      ],
+      "image_url": null,
+      "quick_run": "git clone https://github.com/bojieli/ai-infra-book.git"
+    },
+    {
+      "id": 1349507889,
+      "name": "PawWork_ZhuaZhua",
+      "full_name": "Player-YN/PawWork_ZhuaZhua",
+      "url": "https://github.com/Player-YN/PawWork_ZhuaZhua",
+      "description": "Paw Work - selection-first web agent for Chrome: select on the live page, describe the outcome, take away an editable office file. BYOK, sandboxed, no server.",
+      "language": "JavaScript",
+      "license": "MIT",
+      "topics": [
+        "ai-agent",
+        "browser-agent",
+        "byok",
+        "chrome-extension",
+        "llm",
+        "pptx",
+        "tldraw",
+        "univer"
+      ],
+      "forks": 10,
+      "created_at": "2026-08-28T10:56:56Z",
+      "pushed_at": "2026-09-17T10:00:44Z",
+      "category": "Local AI & Inference",
+      "stars": 2768,
+      "stars_24h": 0,
+      "v24": 0,
+      "trending_score": 1.1728,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 70,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2768
+        },
+        {
+          "ts": 1789647750,
+          "stars": 2768
+        },
+        {
+          "ts": 1789648014,
+          "stars": 2768
+        },
+        {
+          "ts": 1789651294,
+          "stars": 2768
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2768
+        },
+        {
+          "ts": 1789663882,
+          "stars": 2768
+        },
+        {
+          "ts": 1789675654,
+          "stars": 2768
+        },
+        {
+          "ts": 1789687711,
+          "stars": 2768
+        },
+        {
+          "ts": 1789704823,
+          "stars": 2768
+        }
+      ],
+      "image_url": null,
+      "quick_run": "git clone https://github.com/Player-YN/PawWork_ZhuaZhua.git"
+    },
+    {
+      "id": 1345606017,
+      "name": "WeMM-Embedding",
+      "full_name": "Tencent/WeMM-Embedding",
+      "url": "https://github.com/Tencent/WeMM-Embedding",
+      "description": "WeMM-Embedding is a family of universal multimodal embedding models by the WeChat Vision Team at Tencent, supporting multimodal understanding and retrieval.",
+      "language": "Python",
+      "license": "NOASSERTION",
+      "topics": [
+        "embedding-models",
+        "multimodal",
+        "multimodal-llm"
+      ],
+      "forks": 111,
+      "created_at": "2026-08-25T02:46:10Z",
+      "pushed_at": "2026-09-16T09:31:49Z",
+      "category": "Local AI & Inference",
+      "stars": 1608,
+      "stars_24h": 20,
+      "v24": 20,
+      "trending_score": 0.5656,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1603
+        },
+        {
+          "ts": 1789647750,
+          "stars": 1603
+        },
+        {
+          "ts": 1789648014,
+          "stars": 1603
+        },
+        {
+          "ts": 1789651294,
+          "stars": 1603
+        },
+        {
+          "ts": 1789655818,
+          "stars": 1603
+        },
+        {
+          "ts": 1789663882,
+          "stars": 1604
+        },
+        {
+          "ts": 1789675654,
+          "stars": 1604
+        },
+        {
+          "ts": 1789687711,
+          "stars": 1604
+        },
+        {
+          "ts": 1789704823,
+          "stars": 1608
+        }
+      ],
+      "image_url": "https://raw.githubusercontent.com/Tencent/WeMM-Embedding/main/assets/performance-overview.png",
+      "quick_run": "pip install -r requirements.txt"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "category": "Systems & Infrastructure",
+  "count": 1,
+  "updated_at": "2026-09-18T09:09:11.025408+00:00",
+  "repositories": [
+    {
+      "id": 1348483831,
+      "name": "spotifast",
+      "full_name": "crmne/spotifast",
+      "url": "https://github.com/crmne/spotifast",
+      "description": "Spotify, native and fast. One lightweight Rust app for your whole library, local playback, and Spotify Connect on Linux, macOS, and Windows.",
+      "language": "Rust",
+      "license": "MIT",
+      "topics": [
+        "audio",
+        "cross-platform",
+        "desktop-app",
+        "egui",
+        "gui",
+        "librespot",
+        "linux",
+        "macos"
+      ],
+      "forks": 195,
+      "created_at": "2026-08-27T12:46:32Z",
+      "pushed_at": "2026-09-17T16:10:51Z",
+      "category": "Systems & Infrastructure",
+      "stars": 4338,
+      "stars_24h": 15,
+      "v24": 15,
+      "trending_score": 1.7409,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": true,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 4313
+        },
+        {
+          "ts": 1789647750,
+          "stars": 4314
+        },
+        {
+          "ts": 1789648014,
+          "stars": 4314
+        },
+        {
+          "ts": 1789651294,
+          "stars": 4316
+        },
+        {
+          "ts": 1789655818,
+          "stars": 4321
+        },
+        {
+          "ts": 1789663882,
+          "stars": 4326
+        },
+        {
+          "ts": 1789675654,
+          "stars": 4329
+        },
+        {
+          "ts": 1789687711,
+          "stars": 4335
+        },
+        {
+          "ts": 1789704823,
+          "stars": 4338
+        }
+      ],
+      "image_url": "https://raw.githubusercontent.com/crmne/spotifast/main/docs/screenshot.png",
+      "quick_run": "cargo install --path . --locked"
+    }
+  ]
+}
