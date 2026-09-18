@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-09-17T23:28:31.204181+00:00",
+  "updated_at": "2026-09-18T04:13:43.098767+00:00",
   "repositories": [
     {
       "id": 1373655162,
       "name": "jev-ultrafast",
       "full_name": "browser-use/jev-ultrafast",
       "url": "https://github.com/browser-use/jev-ultrafast",
-      "description": "No description provided.",
+      "description": "i. am. speed.",
       "language": "Python",
       "license": "MIT",
       "topics": [],
-      "forks": 106,
+      "forks": 154,
       "created_at": "2026-09-16T21:30:12Z",
-      "pushed_at": "2026-09-17T21:54:00Z",
+      "pushed_at": "2026-09-18T01:17:37Z",
       "category": "Core Utilities",
-      "stars": 1922,
-      "stars_24h": 292,
-      "v24": 292,
-      "trending_score": 29.8778,
+      "stars": 2713,
+      "stars_24h": 3993,
+      "v24": 3993,
+      "trending_score": 34.6613,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -30,6 +30,10 @@
         {
           "ts": 1789687711,
           "stars": 1922
+        },
+        {
+          "ts": 1789704823,
+          "stars": 2713
         }
       ],
       "image_url": "https://raw.githubusercontent.com/browser-use/jev-ultrafast/main/docs/banner.svg",
@@ -53,14 +57,14 @@
         "react",
         "vibe-coding"
       ],
-      "forks": 759,
+      "forks": 763,
       "created_at": "2026-09-02T04:36:34Z",
       "pushed_at": "2026-09-16T10:57:11Z",
       "category": "Core Utilities",
-      "stars": 7307,
-      "stars_24h": 49,
-      "v24": 49,
-      "trending_score": 4.3428,
+      "stars": 7338,
+      "stars_24h": 157,
+      "v24": 157,
+      "trending_score": 4.2942,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -97,68 +101,14 @@
         {
           "ts": 1789687711,
           "stars": 7307
+        },
+        {
+          "ts": 1789704823,
+          "stars": 7338
         }
       ],
       "image_url": "https://raw.githubusercontent.com/lnkiai/m3e-canvas/main/docs/story.gif",
       "quick_run": "git clone https://github.com/lnkiai/m3e-canvas.git"
-    },
-    {
-      "id": 1360432710,
-      "name": "dlssg_for_sm86",
-      "full_name": "sdli1995/dlssg_for_sm86",
-      "url": "https://github.com/sdli1995/dlssg_for_sm86",
-      "description": "Here is a dlssg for RTX30 Series GPU ",
-      "language": "Unspecified",
-      "license": "Custom",
-      "topics": [],
-      "forks": 197,
-      "created_at": "2026-09-07T16:16:48Z",
-      "pushed_at": "2026-09-17T18:57:39Z",
-      "category": "Core Utilities",
-      "stars": 3294,
-      "stars_24h": 74,
-      "v24": 74,
-      "trending_score": 3.327,
-      "hardware_req": "Moderate (8\u201316GB VRAM)",
-      "is_local_first": false,
-      "is_cuda_ready": true,
-      "authenticity_score": 99,
-      "star_history": [
-        {
-          "ts": 1789646427,
-          "stars": 3220
-        },
-        {
-          "ts": 1789647750,
-          "stars": 3222
-        },
-        {
-          "ts": 1789648014,
-          "stars": 3223
-        },
-        {
-          "ts": 1789651294,
-          "stars": 3233
-        },
-        {
-          "ts": 1789655818,
-          "stars": 3243
-        },
-        {
-          "ts": 1789663882,
-          "stars": 3271
-        },
-        {
-          "ts": 1789675654,
-          "stars": 3289
-        },
-        {
-          "ts": 1789687711,
-          "stars": 3294
-        }
-      ],
-      "image_url": null,
-      "quick_run": "git clone https://github.com/sdli1995/dlssg_for_sm86.git"
     },
     {
       "id": 1359648985,
@@ -169,14 +119,14 @@
       "language": "HTML",
       "license": "Unlicense",
       "topics": [],
-      "forks": 259,
+      "forks": 315,
       "created_at": "2026-09-07T01:53:36Z",
       "pushed_at": "2026-09-11T05:26:13Z",
       "category": "Core Utilities",
-      "stars": 3274,
-      "stars_24h": 409,
-      "v24": 409,
-      "trending_score": 3.0827,
+      "stars": 3980,
+      "stars_24h": 3564,
+      "v24": 3564,
+      "trending_score": 3.6647,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -213,10 +163,76 @@
         {
           "ts": 1789687711,
           "stars": 3274
+        },
+        {
+          "ts": 1789704823,
+          "stars": 3980
         }
       ],
       "image_url": "https://raw.githubusercontent.com/eternity4719/HowToLiveBetter/main/og.png",
       "quick_run": "git clone https://github.com/eternity4719/HowToLiveBetter.git"
+    },
+    {
+      "id": 1360432710,
+      "name": "dlssg_for_sm86",
+      "full_name": "sdli1995/dlssg_for_sm86",
+      "url": "https://github.com/sdli1995/dlssg_for_sm86",
+      "description": "Here is a dlssg for RTX30 Series GPU ",
+      "language": "Unspecified",
+      "license": "Custom",
+      "topics": [],
+      "forks": 198,
+      "created_at": "2026-09-07T16:16:48Z",
+      "pushed_at": "2026-09-17T18:57:39Z",
+      "category": "Core Utilities",
+      "stars": 3323,
+      "stars_24h": 146,
+      "v24": 146,
+      "trending_score": 3.2779,
+      "hardware_req": "Moderate (8\u201316GB VRAM)",
+      "is_local_first": false,
+      "is_cuda_ready": true,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 3220
+        },
+        {
+          "ts": 1789647750,
+          "stars": 3222
+        },
+        {
+          "ts": 1789648014,
+          "stars": 3223
+        },
+        {
+          "ts": 1789651294,
+          "stars": 3233
+        },
+        {
+          "ts": 1789655818,
+          "stars": 3243
+        },
+        {
+          "ts": 1789663882,
+          "stars": 3271
+        },
+        {
+          "ts": 1789675654,
+          "stars": 3289
+        },
+        {
+          "ts": 1789687711,
+          "stars": 3294
+        },
+        {
+          "ts": 1789704823,
+          "stars": 3323
+        }
+      ],
+      "image_url": null,
+      "quick_run": "git clone https://github.com/sdli1995/dlssg_for_sm86.git"
     },
     {
       "id": 1357699236,
@@ -227,14 +243,14 @@
       "language": "TypeScript",
       "license": "MIT",
       "topics": [],
-      "forks": 870,
+      "forks": 875,
       "created_at": "2026-09-05T00:24:43Z",
       "pushed_at": "2026-09-06T23:35:06Z",
       "category": "Core Utilities",
-      "stars": 3604,
-      "stars_24h": 10,
-      "v24": 10,
-      "trending_score": 2.7368,
+      "stars": 3614,
+      "stars_24h": 50,
+      "v24": 50,
+      "trending_score": 2.6932,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -271,6 +287,10 @@
         {
           "ts": 1789687711,
           "stars": 3604
+        },
+        {
+          "ts": 1789704823,
+          "stars": 3614
         }
       ],
       "image_url": null,
@@ -289,10 +309,10 @@
       "created_at": "2026-08-29T23:51:32Z",
       "pushed_at": "2026-09-13T02:02:21Z",
       "category": "Developer Tooling & CLI",
-      "stars": 5546,
-      "stars_24h": 73,
-      "v24": 73,
-      "trending_score": 2.6203,
+      "stars": 5599,
+      "stars_24h": 268,
+      "v24": 268,
+      "trending_score": 2.6114,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -329,6 +349,10 @@
         {
           "ts": 1789687711,
           "stars": 5546
+        },
+        {
+          "ts": 1789704823,
+          "stars": 5599
         }
       ],
       "image_url": "https://cdn.buymeacoffee.com/buttons/v2/lato-yellow.png",
@@ -347,10 +371,10 @@
       "created_at": "2026-08-27T14:20:58Z",
       "pushed_at": "2026-09-17T00:14:20Z",
       "category": "Core Utilities",
-      "stars": 5718,
-      "stars_24h": 0,
-      "v24": 0,
-      "trending_score": 2.33,
+      "stars": 5723,
+      "stars_24h": 25,
+      "v24": 25,
+      "trending_score": 2.3054,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -387,6 +411,10 @@
         {
           "ts": 1789687711,
           "stars": 5718
+        },
+        {
+          "ts": 1789704823,
+          "stars": 5723
         }
       ],
       "image_url": "https://raw.githubusercontent.com/sapientinc/PRAXIST/main/docs/assets/brand/praxist-banner.svg",
@@ -408,14 +436,14 @@
         "model-context-protocol",
         "oauth"
       ],
-      "forks": 508,
+      "forks": 514,
       "created_at": "2026-08-28T12:57:24Z",
       "pushed_at": "2026-09-13T03:22:46Z",
       "category": "Autonomous Agents",
-      "stars": 5193,
-      "stars_24h": 100,
-      "v24": 100,
-      "trending_score": 2.2382,
+      "stars": 5283,
+      "stars_24h": 454,
+      "v24": 454,
+      "trending_score": 2.2498,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -452,6 +480,10 @@
         {
           "ts": 1789687711,
           "stars": 5193
+        },
+        {
+          "ts": 1789704823,
+          "stars": 5283
         }
       ],
       "image_url": null,
@@ -466,14 +498,14 @@
       "language": "Python",
       "license": "Apache-2.0",
       "topics": [],
-      "forks": 161,
+      "forks": 162,
       "created_at": "2026-09-08T13:41:47Z",
       "pushed_at": "2026-09-17T04:29:50Z",
       "category": "Core Utilities",
-      "stars": 1920,
-      "stars_24h": 47,
-      "v24": 47,
-      "trending_score": 2.1697,
+      "stars": 1936,
+      "stars_24h": 81,
+      "v24": 81,
+      "trending_score": 2.1321,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -510,6 +542,10 @@
         {
           "ts": 1789687711,
           "stars": 1920
+        },
+        {
+          "ts": 1789704823,
+          "stars": 1936
         }
       ],
       "image_url": "https://raw.githubusercontent.com/Edge0-AI/Edge0/main/assets/20260908-223115.jpg",
@@ -528,10 +564,10 @@
       "created_at": "2026-09-08T10:53:38Z",
       "pushed_at": "2026-09-10T15:14:13Z",
       "category": "Core Utilities",
-      "stars": 1938,
-      "stars_24h": 6,
-      "v24": 6,
-      "trending_score": 2.1569,
+      "stars": 1943,
+      "stars_24h": 25,
+      "v24": 25,
+      "trending_score": 2.108,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -568,266 +604,14 @@
         {
           "ts": 1789687711,
           "stars": 1938
+        },
+        {
+          "ts": 1789704823,
+          "stars": 1943
         }
       ],
       "image_url": null,
       "quick_run": "git clone https://github.com/openai/NavierStokesAndEuler.git"
-    },
-    {
-      "id": 1361693766,
-      "name": "anything2explainer",
-      "full_name": "Vincentwei1021/anything2explainer",
-      "url": "https://github.com/Vincentwei1021/anything2explainer",
-      "description": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
-      "language": "TypeScript",
-      "license": "NOASSERTION",
-      "topics": [
-        "agent-skills",
-        "ai-agents",
-        "ai-video",
-        "claude-code",
-        "claude-code-skill",
-        "codex",
-        "edge-tts",
-        "educational-video"
-      ],
-      "forks": 255,
-      "created_at": "2026-09-08T17:19:54Z",
-      "pushed_at": "2026-09-17T13:46:14Z",
-      "category": "Autonomous Agents",
-      "stars": 1579,
-      "stars_24h": 29,
-      "v24": 29,
-      "trending_score": 1.8206,
-      "hardware_req": "CPU / Minimal RAM",
-      "is_local_first": false,
-      "is_cuda_ready": false,
-      "authenticity_score": 99,
-      "star_history": [
-        {
-          "ts": 1789646427,
-          "stars": 1550
-        },
-        {
-          "ts": 1789647750,
-          "stars": 1552
-        },
-        {
-          "ts": 1789648014,
-          "stars": 1553
-        },
-        {
-          "ts": 1789651294,
-          "stars": 1555
-        },
-        {
-          "ts": 1789655818,
-          "stars": 1560
-        },
-        {
-          "ts": 1789663882,
-          "stars": 1567
-        },
-        {
-          "ts": 1789675654,
-          "stars": 1571
-        },
-        {
-          "ts": 1789687711,
-          "stars": 1579
-        }
-      ],
-      "image_url": null,
-      "quick_run": "git clone https://github.com/Vincentwei1021/anything2explainer.git"
-    },
-    {
-      "id": 1341759590,
-      "name": "threeui",
-      "full_name": "MengTo/threeui",
-      "url": "https://github.com/MengTo/threeui",
-      "description": "Open-source ThreeUI Community catalog with live interactive components and complete Community source.",
-      "language": "HTML",
-      "license": "MIT",
-      "topics": [
-        "react",
-        "shaders",
-        "threejs",
-        "ui-components",
-        "webgl"
-      ],
-      "forks": 562,
-      "created_at": "2026-08-21T11:56:39Z",
-      "pushed_at": "2026-09-03T05:36:26Z",
-      "category": "Core Utilities",
-      "stars": 5908,
-      "stars_24h": 21,
-      "v24": 21,
-      "trending_score": 1.761,
-      "hardware_req": "CPU / Minimal RAM",
-      "is_local_first": false,
-      "is_cuda_ready": false,
-      "authenticity_score": 99,
-      "star_history": [
-        {
-          "ts": 1789646427,
-          "stars": 5887
-        },
-        {
-          "ts": 1789647750,
-          "stars": 5888
-        },
-        {
-          "ts": 1789648014,
-          "stars": 5888
-        },
-        {
-          "ts": 1789651294,
-          "stars": 5889
-        },
-        {
-          "ts": 1789655818,
-          "stars": 5891
-        },
-        {
-          "ts": 1789663882,
-          "stars": 5899
-        },
-        {
-          "ts": 1789675654,
-          "stars": 5903
-        },
-        {
-          "ts": 1789687711,
-          "stars": 5908
-        }
-      ],
-      "image_url": "https://raw.githubusercontent.com/MengTo/threeui/main/assets/preview.jpg",
-      "quick_run": "npm install @designcodeio/threeui"
-    },
-    {
-      "id": 1348483831,
-      "name": "spotifast",
-      "full_name": "crmne/spotifast",
-      "url": "https://github.com/crmne/spotifast",
-      "description": "Spotify, native and fast. One lightweight Rust app for your whole library, local playback, and Spotify Connect on Linux, macOS, and Windows.",
-      "language": "Rust",
-      "license": "MIT",
-      "topics": [
-        "audio",
-        "cross-platform",
-        "desktop-app",
-        "egui",
-        "gui",
-        "librespot",
-        "linux",
-        "macos"
-      ],
-      "forks": 195,
-      "created_at": "2026-08-27T12:46:32Z",
-      "pushed_at": "2026-09-17T16:10:51Z",
-      "category": "Systems & Infrastructure",
-      "stars": 4335,
-      "stars_24h": 22,
-      "v24": 22,
-      "trending_score": 1.7597,
-      "hardware_req": "CPU / Minimal RAM",
-      "is_local_first": true,
-      "is_cuda_ready": false,
-      "authenticity_score": 99,
-      "star_history": [
-        {
-          "ts": 1789646427,
-          "stars": 4313
-        },
-        {
-          "ts": 1789647750,
-          "stars": 4314
-        },
-        {
-          "ts": 1789648014,
-          "stars": 4314
-        },
-        {
-          "ts": 1789651294,
-          "stars": 4316
-        },
-        {
-          "ts": 1789655818,
-          "stars": 4321
-        },
-        {
-          "ts": 1789663882,
-          "stars": 4326
-        },
-        {
-          "ts": 1789675654,
-          "stars": 4329
-        },
-        {
-          "ts": 1789687711,
-          "stars": 4335
-        }
-      ],
-      "image_url": "https://raw.githubusercontent.com/crmne/spotifast/main/docs/screenshot.png",
-      "quick_run": "cargo install --path . --locked"
-    },
-    {
-      "id": 1357272370,
-      "name": "wechat-intelligence-hub",
-      "full_name": "Rion-Wu-tech/wechat-intelligence-hub",
-      "url": "https://github.com/Rion-Wu-tech/wechat-intelligence-hub",
-      "description": "Local-first WeChat intelligence system with a read-only CLI, Codex skills, searchable chat history, daily briefings, follow-ups and opportunity tracking.",
-      "language": "Python",
-      "license": "AGPL-3.0",
-      "topics": [],
-      "forks": 2690,
-      "created_at": "2026-09-04T15:00:53Z",
-      "pushed_at": "2026-09-11T18:44:51Z",
-      "category": "Developer Tooling & CLI",
-      "stars": 2401,
-      "stars_24h": 12,
-      "v24": 12,
-      "trending_score": 1.7571,
-      "hardware_req": "CPU / Minimal RAM",
-      "is_local_first": true,
-      "is_cuda_ready": false,
-      "authenticity_score": 99,
-      "star_history": [
-        {
-          "ts": 1789646427,
-          "stars": 2389
-        },
-        {
-          "ts": 1789647750,
-          "stars": 2390
-        },
-        {
-          "ts": 1789648014,
-          "stars": 2390
-        },
-        {
-          "ts": 1789651294,
-          "stars": 2391
-        },
-        {
-          "ts": 1789655818,
-          "stars": 2394
-        },
-        {
-          "ts": 1789663882,
-          "stars": 2396
-        },
-        {
-          "ts": 1789675654,
-          "stars": 2398
-        },
-        {
-          "ts": 1789687711,
-          "stars": 2401
-        }
-      ],
-      "image_url": null,
-      "quick_run": "git clone https://github.com/Rion-Wu-tech/wechat-intelligence-hub.git"
     },
     {
       "id": 1358588929,
@@ -838,14 +622,14 @@
       "language": "HTML",
       "license": "MIT",
       "topics": [],
-      "forks": 270,
+      "forks": 288,
       "created_at": "2026-09-05T21:57:22Z",
       "pushed_at": "2026-09-17T23:06:21Z",
       "category": "Core Utilities",
-      "stars": 2097,
-      "stars_24h": 23,
-      "v24": 23,
-      "trending_score": 1.7409,
+      "stars": 2201,
+      "stars_24h": 525,
+      "v24": 525,
+      "trending_score": 1.7906,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -882,144 +666,41 @@
         {
           "ts": 1789687711,
           "stars": 2097
+        },
+        {
+          "ts": 1789704823,
+          "stars": 2201
         }
       ],
       "image_url": "https://raw.githubusercontent.com/yang0/handraw-style/master/images/A_001-016.png",
       "quick_run": "git clone https://github.com/yang0/handraw-style.git"
     },
     {
-      "id": 1348410551,
-      "name": "my-girlfriend-jingtian-latex",
-      "full_name": "HEJustinSun/my-girlfriend-jingtian-latex",
-      "url": "https://github.com/HEJustinSun/my-girlfriend-jingtian-latex",
-      "description": "No description provided.",
-      "language": "TeX",
-      "license": "Custom",
-      "topics": [],
-      "forks": 640,
-      "created_at": "2026-08-27T11:28:44Z",
-      "pushed_at": "2026-08-27T12:23:45Z",
-      "category": "Core Utilities",
-      "stars": 4211,
-      "stars_24h": 0,
-      "v24": 0,
-      "trending_score": 1.704,
-      "hardware_req": "CPU / Minimal RAM",
-      "is_local_first": false,
-      "is_cuda_ready": false,
-      "authenticity_score": 99,
-      "star_history": [
-        {
-          "ts": 1789646427,
-          "stars": 4212
-        },
-        {
-          "ts": 1789647750,
-          "stars": 4212
-        },
-        {
-          "ts": 1789648014,
-          "stars": 4212
-        },
-        {
-          "ts": 1789651294,
-          "stars": 4212
-        },
-        {
-          "ts": 1789655818,
-          "stars": 4212
-        },
-        {
-          "ts": 1789663882,
-          "stars": 4211
-        },
-        {
-          "ts": 1789675654,
-          "stars": 4210
-        },
-        {
-          "ts": 1789687711,
-          "stars": 4211
-        }
-      ],
-      "image_url": null,
-      "quick_run": "git clone https://github.com/HEJustinSun/my-girlfriend-jingtian-latex.git"
-    },
-    {
-      "id": 1356159928,
-      "name": "niubigeo",
-      "full_name": "Albert-Weasker/niubigeo",
-      "url": "https://github.com/Albert-Weasker/niubigeo",
-      "description": "Open-source AI brand visibility and competitor reports. Official website: https://niubigeo.ai/ | Paid services: AI testing by real people and GEO optimization. Pricing: https://niubigeo.ai/pricing",
+      "id": 1361693766,
+      "name": "anything2explainer",
+      "full_name": "Vincentwei1021/anything2explainer",
+      "url": "https://github.com/Vincentwei1021/anything2explainer",
+      "description": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
       "language": "TypeScript",
-      "license": "Apache-2.0",
-      "topics": [],
-      "forks": 99,
-      "created_at": "2026-09-03T15:55:54Z",
-      "pushed_at": "2026-09-16T19:11:03Z",
-      "category": "Core Utilities",
-      "stars": 2511,
-      "stars_24h": 3,
-      "v24": 3,
-      "trending_score": 1.6855,
-      "hardware_req": "CPU / Minimal RAM",
-      "is_local_first": false,
-      "is_cuda_ready": false,
-      "authenticity_score": 99,
-      "star_history": [
-        {
-          "ts": 1789646427,
-          "stars": 2508
-        },
-        {
-          "ts": 1789647750,
-          "stars": 2508
-        },
-        {
-          "ts": 1789648014,
-          "stars": 2508
-        },
-        {
-          "ts": 1789651294,
-          "stars": 2508
-        },
-        {
-          "ts": 1789655818,
-          "stars": 2508
-        },
-        {
-          "ts": 1789663882,
-          "stars": 2508
-        },
-        {
-          "ts": 1789675654,
-          "stars": 2509
-        },
-        {
-          "ts": 1789687711,
-          "stars": 2511
-        }
+      "license": "NOASSERTION",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "ai-video",
+        "claude-code",
+        "claude-code-skill",
+        "codex",
+        "edge-tts",
+        "educational-video"
       ],
-      "image_url": "https://raw.githubusercontent.com/Albert-Weasker/niubigeo/main/assets/screenshots/v0.2.0-rc.1/R04-models.png",
-      "quick_run": "git clone https://github.com/Albert-Weasker/niubigeo.git"
-    },
-    {
-      "id": 1353548665,
-      "name": "commerce-agents",
-      "full_name": "anthropics/commerce-agents",
-      "url": "https://github.com/anthropics/commerce-agents",
-      "description": "Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included.",
-      "language": "Python",
-      "license": "Apache-2.0",
-      "topics": [],
-      "forks": 574,
-      "created_at": "2026-09-01T12:30:12Z",
-      "pushed_at": "2026-09-11T07:03:32Z",
+      "forks": 256,
+      "created_at": "2026-09-08T17:19:54Z",
+      "pushed_at": "2026-09-17T13:46:14Z",
       "category": "Autonomous Agents",
-      "stars": 2951,
-      "stars_24h": 6,
-      "v24": 6,
-      "trending_score": 1.6654,
+      "stars": 1589,
+      "stars_24h": 50,
+      "v24": 50,
+      "trending_score": 1.7847,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1027,39 +708,244 @@
       "star_history": [
         {
           "ts": 1789646427,
-          "stars": 2945
+          "stars": 1550
         },
         {
           "ts": 1789647750,
-          "stars": 2945
+          "stars": 1552
         },
         {
           "ts": 1789648014,
-          "stars": 2945
+          "stars": 1553
         },
         {
           "ts": 1789651294,
-          "stars": 2946
+          "stars": 1555
         },
         {
           "ts": 1789655818,
-          "stars": 2949
+          "stars": 1560
         },
         {
           "ts": 1789663882,
-          "stars": 2950
+          "stars": 1567
         },
         {
           "ts": 1789675654,
-          "stars": 2950
+          "stars": 1571
         },
         {
           "ts": 1789687711,
-          "stars": 2951
+          "stars": 1579
+        },
+        {
+          "ts": 1789704823,
+          "stars": 1589
         }
       ],
       "image_url": null,
-      "quick_run": "git clone https://github.com/anthropics/commerce-agents.git"
+      "quick_run": "git clone https://github.com/Vincentwei1021/anything2explainer.git"
+    },
+    {
+      "id": 1341759590,
+      "name": "threeui",
+      "full_name": "MengTo/threeui",
+      "url": "https://github.com/MengTo/threeui",
+      "description": "Open-source ThreeUI Community catalog with live interactive components and complete Community source.",
+      "language": "HTML",
+      "license": "MIT",
+      "topics": [
+        "react",
+        "shaders",
+        "threejs",
+        "ui-components",
+        "webgl"
+      ],
+      "forks": 564,
+      "created_at": "2026-08-21T11:56:39Z",
+      "pushed_at": "2026-09-03T05:36:26Z",
+      "category": "Core Utilities",
+      "stars": 5912,
+      "stars_24h": 20,
+      "v24": 20,
+      "trending_score": 1.7465,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 5887
+        },
+        {
+          "ts": 1789647750,
+          "stars": 5888
+        },
+        {
+          "ts": 1789648014,
+          "stars": 5888
+        },
+        {
+          "ts": 1789651294,
+          "stars": 5889
+        },
+        {
+          "ts": 1789655818,
+          "stars": 5891
+        },
+        {
+          "ts": 1789663882,
+          "stars": 5899
+        },
+        {
+          "ts": 1789675654,
+          "stars": 5903
+        },
+        {
+          "ts": 1789687711,
+          "stars": 5908
+        },
+        {
+          "ts": 1789704823,
+          "stars": 5912
+        }
+      ],
+      "image_url": "https://raw.githubusercontent.com/MengTo/threeui/main/assets/preview.jpg",
+      "quick_run": "npm install @designcodeio/threeui"
+    },
+    {
+      "id": 1348483831,
+      "name": "spotifast",
+      "full_name": "crmne/spotifast",
+      "url": "https://github.com/crmne/spotifast",
+      "description": "Spotify, native and fast. One lightweight Rust app for your whole library, local playback, and Spotify Connect on Linux, macOS, and Windows.",
+      "language": "Rust",
+      "license": "MIT",
+      "topics": [
+        "audio",
+        "cross-platform",
+        "desktop-app",
+        "egui",
+        "gui",
+        "librespot",
+        "linux",
+        "macos"
+      ],
+      "forks": 195,
+      "created_at": "2026-08-27T12:46:32Z",
+      "pushed_at": "2026-09-17T16:10:51Z",
+      "category": "Systems & Infrastructure",
+      "stars": 4338,
+      "stars_24h": 15,
+      "v24": 15,
+      "trending_score": 1.7409,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": true,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 4313
+        },
+        {
+          "ts": 1789647750,
+          "stars": 4314
+        },
+        {
+          "ts": 1789648014,
+          "stars": 4314
+        },
+        {
+          "ts": 1789651294,
+          "stars": 4316
+        },
+        {
+          "ts": 1789655818,
+          "stars": 4321
+        },
+        {
+          "ts": 1789663882,
+          "stars": 4326
+        },
+        {
+          "ts": 1789675654,
+          "stars": 4329
+        },
+        {
+          "ts": 1789687711,
+          "stars": 4335
+        },
+        {
+          "ts": 1789704823,
+          "stars": 4338
+        }
+      ],
+      "image_url": "https://raw.githubusercontent.com/crmne/spotifast/main/docs/screenshot.png",
+      "quick_run": "cargo install --path . --locked"
+    },
+    {
+      "id": 1357272370,
+      "name": "wechat-intelligence-hub",
+      "full_name": "Rion-Wu-tech/wechat-intelligence-hub",
+      "url": "https://github.com/Rion-Wu-tech/wechat-intelligence-hub",
+      "description": "Local-first WeChat intelligence system with a read-only CLI, Codex skills, searchable chat history, daily briefings, follow-ups and opportunity tracking.",
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "topics": [],
+      "forks": 2692,
+      "created_at": "2026-09-04T15:00:53Z",
+      "pushed_at": "2026-09-11T18:44:51Z",
+      "category": "Developer Tooling & CLI",
+      "stars": 2405,
+      "stars_24h": 20,
+      "v24": 20,
+      "trending_score": 1.7281,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": true,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2389
+        },
+        {
+          "ts": 1789647750,
+          "stars": 2390
+        },
+        {
+          "ts": 1789648014,
+          "stars": 2390
+        },
+        {
+          "ts": 1789651294,
+          "stars": 2391
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2394
+        },
+        {
+          "ts": 1789663882,
+          "stars": 2396
+        },
+        {
+          "ts": 1789675654,
+          "stars": 2398
+        },
+        {
+          "ts": 1789687711,
+          "stars": 2401
+        },
+        {
+          "ts": 1789704823,
+          "stars": 2405
+        }
+      ],
+      "image_url": null,
+      "quick_run": "git clone https://github.com/Rion-Wu-tech/wechat-intelligence-hub.git"
     },
     {
       "id": 1351879111,
@@ -1079,14 +965,14 @@
         "reinforcement-learning",
         "self-improving-agents"
       ],
-      "forks": 245,
+      "forks": 264,
       "created_at": "2026-08-31T01:39:18Z",
-      "pushed_at": "2026-09-17T23:25:08Z",
+      "pushed_at": "2026-09-18T03:33:16Z",
       "category": "Local AI & Inference",
-      "stars": 3148,
-      "stars_24h": 237,
-      "v24": 237,
-      "trending_score": 1.5992,
+      "stars": 3377,
+      "stars_24h": 1156,
+      "v24": 1156,
+      "trending_score": 1.6922,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1123,10 +1009,200 @@
         {
           "ts": 1789687711,
           "stars": 3148
+        },
+        {
+          "ts": 1789704823,
+          "stars": 3377
         }
       ],
       "image_url": "https://raw.githubusercontent.com/Human-Agent-Society/reef/main/docs/assets/reef-logo-light.svg",
       "quick_run": "git clone https://github.com/Human-Agent-Society/reef.git"
+    },
+    {
+      "id": 1348410551,
+      "name": "my-girlfriend-jingtian-latex",
+      "full_name": "HEJustinSun/my-girlfriend-jingtian-latex",
+      "url": "https://github.com/HEJustinSun/my-girlfriend-jingtian-latex",
+      "description": "No description provided.",
+      "language": "TeX",
+      "license": "Custom",
+      "topics": [],
+      "forks": 640,
+      "created_at": "2026-08-27T11:28:44Z",
+      "pushed_at": "2026-08-27T12:23:45Z",
+      "category": "Core Utilities",
+      "stars": 4211,
+      "stars_24h": 0,
+      "v24": 0,
+      "trending_score": 1.6847,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 4212
+        },
+        {
+          "ts": 1789647750,
+          "stars": 4212
+        },
+        {
+          "ts": 1789648014,
+          "stars": 4212
+        },
+        {
+          "ts": 1789651294,
+          "stars": 4212
+        },
+        {
+          "ts": 1789655818,
+          "stars": 4212
+        },
+        {
+          "ts": 1789663882,
+          "stars": 4211
+        },
+        {
+          "ts": 1789675654,
+          "stars": 4210
+        },
+        {
+          "ts": 1789687711,
+          "stars": 4211
+        },
+        {
+          "ts": 1789704823,
+          "stars": 4211
+        }
+      ],
+      "image_url": null,
+      "quick_run": "git clone https://github.com/HEJustinSun/my-girlfriend-jingtian-latex.git"
+    },
+    {
+      "id": 1356159928,
+      "name": "niubigeo",
+      "full_name": "Albert-Weasker/niubigeo",
+      "url": "https://github.com/Albert-Weasker/niubigeo",
+      "description": "Open-source AI brand visibility and competitor reports. Official website: https://niubigeo.ai/ | Paid services: AI testing by real people and GEO optimization. Pricing: https://niubigeo.ai/pricing",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "topics": [],
+      "forks": 99,
+      "created_at": "2026-09-03T15:55:54Z",
+      "pushed_at": "2026-09-16T19:11:03Z",
+      "category": "Core Utilities",
+      "stars": 2513,
+      "stars_24h": 10,
+      "v24": 10,
+      "trending_score": 1.6582,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2508
+        },
+        {
+          "ts": 1789647750,
+          "stars": 2508
+        },
+        {
+          "ts": 1789648014,
+          "stars": 2508
+        },
+        {
+          "ts": 1789651294,
+          "stars": 2508
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2508
+        },
+        {
+          "ts": 1789663882,
+          "stars": 2508
+        },
+        {
+          "ts": 1789675654,
+          "stars": 2509
+        },
+        {
+          "ts": 1789687711,
+          "stars": 2511
+        },
+        {
+          "ts": 1789704823,
+          "stars": 2513
+        }
+      ],
+      "image_url": "https://raw.githubusercontent.com/Albert-Weasker/niubigeo/main/assets/screenshots/v0.2.0-rc.1/R04-models.png",
+      "quick_run": "git clone https://github.com/Albert-Weasker/niubigeo.git"
+    },
+    {
+      "id": 1353548665,
+      "name": "commerce-agents",
+      "full_name": "anthropics/commerce-agents",
+      "url": "https://github.com/anthropics/commerce-agents",
+      "description": "Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [],
+      "forks": 574,
+      "created_at": "2026-09-01T12:30:12Z",
+      "pushed_at": "2026-09-11T07:03:32Z",
+      "category": "Autonomous Agents",
+      "stars": 2958,
+      "stars_24h": 35,
+      "v24": 35,
+      "trending_score": 1.6447,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2945
+        },
+        {
+          "ts": 1789647750,
+          "stars": 2945
+        },
+        {
+          "ts": 1789648014,
+          "stars": 2945
+        },
+        {
+          "ts": 1789651294,
+          "stars": 2946
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2949
+        },
+        {
+          "ts": 1789663882,
+          "stars": 2950
+        },
+        {
+          "ts": 1789675654,
+          "stars": 2950
+        },
+        {
+          "ts": 1789687711,
+          "stars": 2951
+        },
+        {
+          "ts": 1789704823,
+          "stars": 2958
+        }
+      ],
+      "image_url": null,
+      "quick_run": "git clone https://github.com/anthropics/commerce-agents.git"
     },
     {
       "id": 1358295353,
@@ -1137,14 +1213,14 @@
       "language": "Swift",
       "license": "MIT",
       "topics": [],
-      "forks": 291,
+      "forks": 294,
       "created_at": "2026-09-05T14:55:35Z",
-      "pushed_at": "2026-09-17T08:17:19Z",
+      "pushed_at": "2026-09-18T02:27:13Z",
       "category": "Core Utilities",
-      "stars": 1917,
-      "stars_24h": 80,
-      "v24": 80,
-      "trending_score": 1.5447,
+      "stars": 1937,
+      "stars_24h": 101,
+      "v24": 101,
+      "trending_score": 1.5303,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1181,6 +1257,10 @@
         {
           "ts": 1789687711,
           "stars": 1917
+        },
+        {
+          "ts": 1789704823,
+          "stars": 1937
         }
       ],
       "image_url": "https://raw.githubusercontent.com/vinzdg/codenotch/main/docs/design/codenotch-banner.png",
@@ -1195,14 +1275,14 @@
       "language": "Python",
       "license": "NOASSERTION",
       "topics": [],
-      "forks": 220,
+      "forks": 225,
       "created_at": "2026-09-07T00:41:18Z",
       "pushed_at": "2026-09-12T04:56:38Z",
       "category": "Core Utilities",
-      "stars": 1580,
-      "stars_24h": 7,
-      "v24": 7,
-      "trending_score": 1.4792,
+      "stars": 1615,
+      "stars_24h": 177,
+      "v24": 177,
+      "trending_score": 1.4787,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1239,68 +1319,44 @@
         {
           "ts": 1789687711,
           "stars": 1580
+        },
+        {
+          "ts": 1789704823,
+          "stars": 1615
         }
       ],
       "image_url": null,
       "quick_run": "git clone https://github.com/EverettFish/holo-card-studio.git"
     },
     {
-      "id": 1339742577,
-      "name": "Amagine3D",
-      "full_name": "amagine-ai/Amagine3D",
-      "url": "https://github.com/amagine-ai/Amagine3D",
-      "description": "Amagine3D: From hardware requirements to editable 3D designs",
-      "language": "Python",
-      "license": "Apache-2.0",
+      "id": 1360317501,
+      "name": "dream-loop",
+      "full_name": "achimala/dream-loop",
+      "url": "https://github.com/achimala/dream-loop",
+      "description": "Agent skill for impressive 3D visuals using Blender + image gen + subagent critic",
+      "language": "JavaScript",
+      "license": "MIT",
       "topics": [],
-      "forks": 253,
-      "created_at": "2026-08-19T15:31:34Z",
-      "pushed_at": "2026-09-16T08:59:22Z",
-      "category": "Core Utilities",
-      "stars": 5220,
-      "stars_24h": 86,
-      "v24": 86,
-      "trending_score": 1.4345,
+      "forks": 153,
+      "created_at": "2026-09-07T14:19:20Z",
+      "pushed_at": "2026-09-09T22:43:38Z",
+      "category": "Autonomous Agents",
+      "stars": 1403,
+      "stars_24h": 0,
+      "v24": 0,
+      "trending_score": 1.3707,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
       "authenticity_score": 99,
       "star_history": [
         {
-          "ts": 1789646427,
-          "stars": 5134
-        },
-        {
-          "ts": 1789647750,
-          "stars": 5139
-        },
-        {
-          "ts": 1789648014,
-          "stars": 5139
-        },
-        {
-          "ts": 1789651294,
-          "stars": 5151
-        },
-        {
-          "ts": 1789655818,
-          "stars": 5159
-        },
-        {
-          "ts": 1789663882,
-          "stars": 5181
-        },
-        {
-          "ts": 1789675654,
-          "stars": 5204
-        },
-        {
-          "ts": 1789687711,
-          "stars": 5220
+          "ts": 1789704823,
+          "stars": 1403
         }
       ],
-      "image_url": "https://raw.githubusercontent.com/amagine-ai/Amagine3D/main/docs/assets/readme/examples/example-01.gif",
-      "quick_run": "git clone https://github.com/amagine-ai/Amagine3D.git"
+      "image_url": "https://raw.githubusercontent.com/achimala/dream-loop/main/assets/vesper-preview.gif",
+      "quick_run": "git clone https://github.com/achimala/dream-loop.git"
     },
     {
       "id": 1354887280,
@@ -1311,14 +1367,14 @@
       "language": "TypeScript",
       "license": "MIT",
       "topics": [],
-      "forks": 170,
+      "forks": 174,
       "created_at": "2026-09-02T14:48:47Z",
-      "pushed_at": "2026-09-17T23:22:28Z",
+      "pushed_at": "2026-09-18T03:31:08Z",
       "category": "Autonomous Agents",
-      "stars": 2178,
-      "stars_24h": 12,
-      "v24": 12,
-      "trending_score": 1.3392,
+      "stars": 2194,
+      "stars_24h": 81,
+      "v24": 81,
+      "trending_score": 1.3277,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1355,68 +1411,14 @@
         {
           "ts": 1789687711,
           "stars": 2178
+        },
+        {
+          "ts": 1789704823,
+          "stars": 2194
         }
       ],
       "image_url": "https://raw.githubusercontent.com/NVlabs/SoL-Pi/main/assets/sol-pi-hero.png",
       "quick_run": "npm install --global @earendil-works/pi-coding-agent@0.85.1"
-    },
-    {
-      "id": 1356772546,
-      "name": "vista",
-      "full_name": "Mantitup-Org/vista",
-      "url": "https://github.com/Mantitup-Org/vista",
-      "description": "No description provided.",
-      "language": "TypeScript",
-      "license": "NOASSERTION",
-      "topics": [],
-      "forks": 19,
-      "created_at": "2026-09-04T06:20:19Z",
-      "pushed_at": "2026-09-17T07:01:45Z",
-      "category": "Core Utilities",
-      "stars": 1879,
-      "stars_24h": 54,
-      "v24": 54,
-      "trending_score": 1.3302,
-      "hardware_req": "CPU / Minimal RAM",
-      "is_local_first": false,
-      "is_cuda_ready": false,
-      "authenticity_score": 70,
-      "star_history": [
-        {
-          "ts": 1789646427,
-          "stars": 1825
-        },
-        {
-          "ts": 1789647750,
-          "stars": 1825
-        },
-        {
-          "ts": 1789648014,
-          "stars": 1826
-        },
-        {
-          "ts": 1789651294,
-          "stars": 1829
-        },
-        {
-          "ts": 1789655818,
-          "stars": 1839
-        },
-        {
-          "ts": 1789663882,
-          "stars": 1855
-        },
-        {
-          "ts": 1789675654,
-          "stars": 1875
-        },
-        {
-          "ts": 1789687711,
-          "stars": 1879
-        }
-      ],
-      "image_url": null,
-      "quick_run": "git clone https://github.com/Mantitup-Org/vista.git"
     },
     {
       "id": 1342935078,
@@ -1436,14 +1438,14 @@
         "distributed-systems",
         "gpu"
       ],
-      "forks": 290,
+      "forks": 299,
       "created_at": "2026-08-22T15:30:41Z",
-      "pushed_at": "2026-09-17T03:18:53Z",
+      "pushed_at": "2026-09-18T03:02:35Z",
       "category": "Local AI & Inference",
-      "stars": 4125,
-      "stars_24h": 54,
-      "v24": 54,
-      "trending_score": 1.2967,
+      "stars": 4208,
+      "stars_24h": 419,
+      "v24": 419,
+      "trending_score": 1.3105,
       "hardware_req": "Moderate (8\u201316GB VRAM)",
       "is_local_first": false,
       "is_cuda_ready": true,
@@ -1480,10 +1482,76 @@
         {
           "ts": 1789687711,
           "stars": 4125
+        },
+        {
+          "ts": 1789704823,
+          "stars": 4208
         }
       ],
       "image_url": null,
       "quick_run": "git clone https://github.com/bojieli/ai-infra-book.git"
+    },
+    {
+      "id": 1356772546,
+      "name": "vista",
+      "full_name": "Mantitup-Org/vista",
+      "url": "https://github.com/Mantitup-Org/vista",
+      "description": "No description provided.",
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "topics": [],
+      "forks": 19,
+      "created_at": "2026-09-04T06:20:19Z",
+      "pushed_at": "2026-09-17T07:01:45Z",
+      "category": "Core Utilities",
+      "stars": 1882,
+      "stars_24h": 15,
+      "v24": 15,
+      "trending_score": 1.3088,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 70,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1825
+        },
+        {
+          "ts": 1789647750,
+          "stars": 1825
+        },
+        {
+          "ts": 1789648014,
+          "stars": 1826
+        },
+        {
+          "ts": 1789651294,
+          "stars": 1829
+        },
+        {
+          "ts": 1789655818,
+          "stars": 1839
+        },
+        {
+          "ts": 1789663882,
+          "stars": 1855
+        },
+        {
+          "ts": 1789675654,
+          "stars": 1875
+        },
+        {
+          "ts": 1789687711,
+          "stars": 1879
+        },
+        {
+          "ts": 1789704823,
+          "stars": 1882
+        }
+      ],
+      "image_url": null,
+      "quick_run": "git clone https://github.com/Mantitup-Org/vista.git"
     },
     {
       "id": 1354701193,
@@ -1507,10 +1575,10 @@
       "created_at": "2026-09-02T11:51:38Z",
       "pushed_at": "2026-09-17T17:06:14Z",
       "category": "Autonomous Agents",
-      "stars": 2059,
-      "stars_24h": 54,
-      "v24": 54,
-      "trending_score": 1.2535,
+      "stars": 2077,
+      "stars_24h": 91,
+      "v24": 91,
+      "trending_score": 1.2446,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1547,10 +1615,85 @@
         {
           "ts": 1789687711,
           "stars": 2059
+        },
+        {
+          "ts": 1789704823,
+          "stars": 2077
         }
       ],
       "image_url": "https://raw.githubusercontent.com/shadcn-ui/lint/main/docs/assets/cover.png",
       "quick_run": "npm install -D @shadcn/lint oxlint"
+    },
+    {
+      "id": 1349507889,
+      "name": "PawWork_ZhuaZhua",
+      "full_name": "Player-YN/PawWork_ZhuaZhua",
+      "url": "https://github.com/Player-YN/PawWork_ZhuaZhua",
+      "description": "Paw Work - selection-first web agent for Chrome: select on the live page, describe the outcome, take away an editable office file. BYOK, sandboxed, no server.",
+      "language": "JavaScript",
+      "license": "MIT",
+      "topics": [
+        "ai-agent",
+        "browser-agent",
+        "byok",
+        "chrome-extension",
+        "llm",
+        "pptx",
+        "tldraw",
+        "univer"
+      ],
+      "forks": 10,
+      "created_at": "2026-08-28T10:56:56Z",
+      "pushed_at": "2026-09-17T10:00:44Z",
+      "category": "Local AI & Inference",
+      "stars": 2768,
+      "stars_24h": 0,
+      "v24": 0,
+      "trending_score": 1.1728,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 70,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2768
+        },
+        {
+          "ts": 1789647750,
+          "stars": 2768
+        },
+        {
+          "ts": 1789648014,
+          "stars": 2768
+        },
+        {
+          "ts": 1789651294,
+          "stars": 2768
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2768
+        },
+        {
+          "ts": 1789663882,
+          "stars": 2768
+        },
+        {
+          "ts": 1789675654,
+          "stars": 2768
+        },
+        {
+          "ts": 1789687711,
+          "stars": 2768
+        },
+        {
+          "ts": 1789704823,
+          "stars": 2768
+        }
+      ],
+      "image_url": null,
+      "quick_run": "git clone https://github.com/Player-YN/PawWork_ZhuaZhua.git"
     },
     {
       "id": 1358346534,
@@ -1561,14 +1704,14 @@
       "language": "Python",
       "license": "Apache-2.0",
       "topics": [],
-      "forks": 116,
+      "forks": 117,
       "created_at": "2026-09-05T16:03:06Z",
       "pushed_at": "2026-09-17T14:43:26Z",
       "category": "Autonomous Agents",
-      "stars": 1470,
-      "stars_24h": 10,
-      "v24": 10,
-      "trending_score": 1.1901,
+      "stars": 1474,
+      "stars_24h": 20,
+      "v24": 20,
+      "trending_score": 1.17,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1605,77 +1748,14 @@
         {
           "ts": 1789687711,
           "stars": 1470
+        },
+        {
+          "ts": 1789704823,
+          "stars": 1474
         }
       ],
       "image_url": null,
       "quick_run": "git clone https://github.com/donvito/codex-astra-luna-orchestrator.git"
-    },
-    {
-      "id": 1349507889,
-      "name": "PawWork_ZhuaZhua",
-      "full_name": "Player-YN/PawWork_ZhuaZhua",
-      "url": "https://github.com/Player-YN/PawWork_ZhuaZhua",
-      "description": "Paw Work - selection-first web agent for Chrome: select on the live page, describe the outcome, take away an editable office file. BYOK, sandboxed, no server.",
-      "language": "JavaScript",
-      "license": "MIT",
-      "topics": [
-        "ai-agent",
-        "browser-agent",
-        "byok",
-        "chrome-extension",
-        "llm",
-        "pptx",
-        "tldraw",
-        "univer"
-      ],
-      "forks": 10,
-      "created_at": "2026-08-28T10:56:56Z",
-      "pushed_at": "2026-09-17T10:00:44Z",
-      "category": "Local AI & Inference",
-      "stars": 2768,
-      "stars_24h": 0,
-      "v24": 0,
-      "trending_score": 1.1869,
-      "hardware_req": "CPU / Minimal RAM",
-      "is_local_first": false,
-      "is_cuda_ready": false,
-      "authenticity_score": 70,
-      "star_history": [
-        {
-          "ts": 1789646427,
-          "stars": 2768
-        },
-        {
-          "ts": 1789647750,
-          "stars": 2768
-        },
-        {
-          "ts": 1789648014,
-          "stars": 2768
-        },
-        {
-          "ts": 1789651294,
-          "stars": 2768
-        },
-        {
-          "ts": 1789655818,
-          "stars": 2768
-        },
-        {
-          "ts": 1789663882,
-          "stars": 2768
-        },
-        {
-          "ts": 1789675654,
-          "stars": 2768
-        },
-        {
-          "ts": 1789687711,
-          "stars": 2768
-        }
-      ],
-      "image_url": null,
-      "quick_run": "git clone https://github.com/Player-YN/PawWork_ZhuaZhua.git"
     },
     {
       "id": 1344208527,
@@ -1686,14 +1766,14 @@
       "language": "TypeScript",
       "license": "Custom",
       "topics": [],
-      "forks": 3640,
+      "forks": 3642,
       "created_at": "2026-08-23T20:53:01Z",
       "pushed_at": "2026-08-23T20:53:35Z",
       "category": "Core Utilities",
       "stars": 3507,
       "stars_24h": 2,
       "v24": 2,
-      "trending_score": 1.1698,
+      "trending_score": 1.1584,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1730,6 +1810,10 @@
         {
           "ts": 1789687711,
           "stars": 3507
+        },
+        {
+          "ts": 1789704823,
+          "stars": 3507
         }
       ],
       "image_url": "https://raw.githubusercontent.com/b-nnett/grok-bot-0.18-reconstructed/main/docs/assets/router-settings.png",
@@ -1753,14 +1837,14 @@
         "fiction",
         "grok"
       ],
-      "forks": 174,
+      "forks": 175,
       "created_at": "2026-08-28T05:56:49Z",
       "pushed_at": "2026-09-17T18:26:36Z",
       "category": "Autonomous Agents",
-      "stars": 2669,
-      "stars_24h": 11,
-      "v24": 11,
-      "trending_score": 1.1302,
+      "stars": 2672,
+      "stars_24h": 15,
+      "v24": 15,
+      "trending_score": 1.1181,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1797,6 +1881,10 @@
         {
           "ts": 1789687711,
           "stars": 2669
+        },
+        {
+          "ts": 1789704823,
+          "stars": 2672
         }
       ],
       "image_url": null,
@@ -1820,14 +1908,14 @@
         "terminal-agent",
         "tui"
       ],
-      "forks": 199,
+      "forks": 201,
       "created_at": "2026-08-22T05:07:35Z",
-      "pushed_at": "2026-09-17T21:19:59Z",
+      "pushed_at": "2026-09-18T00:15:18Z",
       "category": "Autonomous Agents",
-      "stars": 3475,
-      "stars_24h": 34,
-      "v24": 34,
-      "trending_score": 1.0704,
+      "stars": 3509,
+      "stars_24h": 172,
+      "v24": 172,
+      "trending_score": 1.071,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1864,6 +1952,10 @@
         {
           "ts": 1789687711,
           "stars": 3475
+        },
+        {
+          "ts": 1789704823,
+          "stars": 3509
         }
       ],
       "image_url": "https://raw.githubusercontent.com/ApodexAI/FrontierAgent/main/assets/apodex_logo.jpeg",
@@ -1885,7 +1977,7 @@
       "stars": 1751,
       "stars_24h": 0,
       "v24": 0,
-      "trending_score": 1.037,
+      "trending_score": 1.0211,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1922,6 +2014,10 @@
         {
           "ts": 1789687711,
           "stars": 1751
+        },
+        {
+          "ts": 1789704823,
+          "stars": 1751
         }
       ],
       "image_url": "https://raw.githubusercontent.com/SonicloudTech/sonicloud_opensdk/main/pnote-web-win%26Mac-demo/%E5%BD%95%E9%9F%B3%E5%8D%A1%20ble%20%E6%8E%A7%E5%88%B6%E5%8F%B0.png",
@@ -1932,7 +2028,7 @@
       "name": "Concat",
       "full_name": "jub0t/Concat",
       "url": "https://github.com/jub0t/Concat",
-      "description": "Open-Source CapCut replacement.",
+      "description": "Open-Source CapCut replacement (MCP supported).",
       "language": "Rust",
       "license": "AGPL-3.0",
       "topics": [
@@ -1945,14 +2041,14 @@
         "cross-platform",
         "desktop-app"
       ],
-      "forks": 239,
+      "forks": 240,
       "created_at": "2026-08-25T18:34:47Z",
-      "pushed_at": "2026-09-17T15:42:10Z",
+      "pushed_at": "2026-09-18T03:49:01Z",
       "category": "Local-First & Sovereign Apps",
-      "stars": 2681,
-      "stars_24h": 58,
-      "v24": 58,
-      "trending_score": 0.9866,
+      "stars": 2703,
+      "stars_24h": 111,
+      "v24": 111,
+      "trending_score": 0.9842,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -1989,6 +2085,10 @@
         {
           "ts": 1789687711,
           "stars": 2681
+        },
+        {
+          "ts": 1789704823,
+          "stars": 2703
         }
       ],
       "image_url": "https://cdn.jsdelivr.net/gh/jub0t/Concat@main/assets/logo-dark.png",
@@ -2012,14 +2112,14 @@
         "macos",
         "mcp"
       ],
-      "forks": 422,
+      "forks": 426,
       "created_at": "2026-08-22T14:16:24Z",
       "pushed_at": "2026-09-17T17:31:05Z",
       "category": "Autonomous Agents",
-      "stars": 3136,
-      "stars_24h": 127,
-      "v24": 127,
-      "trending_score": 0.9834,
+      "stars": 3161,
+      "stars_24h": 126,
+      "v24": 126,
+      "trending_score": 0.9821,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": true,
       "is_cuda_ready": false,
@@ -2056,6 +2156,10 @@
         {
           "ts": 1789687711,
           "stars": 3136
+        },
+        {
+          "ts": 1789704823,
+          "stars": 3161
         }
       ],
       "image_url": "https://raw.githubusercontent.com/totec448-spec/chat-on-steroids/main/docs/images/workspace.png",
@@ -2074,10 +2178,10 @@
       "created_at": "2026-09-03T00:42:03Z",
       "pushed_at": "2026-09-15T21:31:25Z",
       "category": "Core Utilities",
-      "stars": 1432,
-      "stars_24h": 11,
-      "v24": 11,
-      "trending_score": 0.9107,
+      "stars": 1439,
+      "stars_24h": 35,
+      "v24": 35,
+      "trending_score": 0.9003,
       "hardware_req": "Moderate (8\u201316GB VRAM)",
       "is_local_first": false,
       "is_cuda_ready": true,
@@ -2102,266 +2206,14 @@
         {
           "ts": 1789687711,
           "stars": 1432
+        },
+        {
+          "ts": 1789704823,
+          "stars": 1439
         }
       ],
       "image_url": null,
       "quick_run": "git clone https://github.com/danielblnc/DLSS-NR-on-AMD.git"
-    },
-    {
-      "id": 1339161831,
-      "name": "mono-color-skill",
-      "full_name": "yanliudesign/mono-color-skill",
-      "url": "https://github.com/yanliudesign/mono-color-skill",
-      "description": "One-ink editorial print image skill \u2014 warm paper, halftone photography, active negative space, and restrained typography.",
-      "language": "Python",
-      "license": "MIT",
-      "topics": [
-        "agent-skill",
-        "ai-agent",
-        "claude-skill",
-        "editorial-design",
-        "generative-art",
-        "halftone",
-        "image-generation",
-        "monochrome"
-      ],
-      "forks": 85,
-      "created_at": "2026-08-19T06:07:45Z",
-      "pushed_at": "2026-09-02T18:49:42Z",
-      "category": "Autonomous Agents",
-      "stars": 3132,
-      "stars_24h": 11,
-      "v24": 11,
-      "trending_score": 0.8466,
-      "hardware_req": "CPU / Minimal RAM",
-      "is_local_first": false,
-      "is_cuda_ready": false,
-      "authenticity_score": 70,
-      "star_history": [
-        {
-          "ts": 1789646427,
-          "stars": 3121
-        },
-        {
-          "ts": 1789647750,
-          "stars": 3121
-        },
-        {
-          "ts": 1789648014,
-          "stars": 3121
-        },
-        {
-          "ts": 1789651294,
-          "stars": 3121
-        },
-        {
-          "ts": 1789655818,
-          "stars": 3123
-        },
-        {
-          "ts": 1789663882,
-          "stars": 3128
-        },
-        {
-          "ts": 1789675654,
-          "stars": 3131
-        },
-        {
-          "ts": 1789687711,
-          "stars": 3132
-        }
-      ],
-      "image_url": "https://raw.githubusercontent.com/yanliudesign/mono-color-skill/main/swatches/cobalt.svg",
-      "quick_run": "git clone https://github.com/yanliudesign/mono-color-skill.git"
-    },
-    {
-      "id": 1344273611,
-      "name": "walgit",
-      "full_name": "tobi/walgit",
-      "url": "https://github.com/tobi/walgit",
-      "description": "No description provided.",
-      "language": "Rust",
-      "license": "MIT",
-      "topics": [],
-      "forks": 150,
-      "created_at": "2026-08-23T22:28:01Z",
-      "pushed_at": "2026-09-13T02:39:31Z",
-      "category": "Core Utilities",
-      "stars": 2525,
-      "stars_24h": 3,
-      "v24": 3,
-      "trending_score": 0.845,
-      "hardware_req": "CPU / Minimal RAM",
-      "is_local_first": false,
-      "is_cuda_ready": false,
-      "authenticity_score": 99,
-      "star_history": [
-        {
-          "ts": 1789646427,
-          "stars": 2522
-        },
-        {
-          "ts": 1789647750,
-          "stars": 2522
-        },
-        {
-          "ts": 1789648014,
-          "stars": 2522
-        },
-        {
-          "ts": 1789651294,
-          "stars": 2523
-        },
-        {
-          "ts": 1789655818,
-          "stars": 2523
-        },
-        {
-          "ts": 1789663882,
-          "stars": 2524
-        },
-        {
-          "ts": 1789675654,
-          "stars": 2525
-        },
-        {
-          "ts": 1789687711,
-          "stars": 2525
-        }
-      ],
-      "image_url": null,
-      "quick_run": "git clone https://github.com/tobi/walgit.git"
-    },
-    {
-      "id": 1342930695,
-      "name": "scroll-craft",
-      "full_name": "nateherkai/scroll-craft",
-      "url": "https://github.com/nateherkai/scroll-craft",
-      "description": "An agent skill for building premium, immersive, scroll-driven websites. Works with Codex, Claude Code, and other coding agents. Also available as a Claude Code plugin.",
-      "language": "JavaScript",
-      "license": "MIT",
-      "topics": [
-        "accessibility",
-        "agent-skills",
-        "ai-web-design",
-        "anthropic",
-        "claude-code",
-        "claude-code-plugin",
-        "creative-coding",
-        "design-system"
-      ],
-      "forks": 376,
-      "created_at": "2026-08-22T15:25:08Z",
-      "pushed_at": "2026-09-04T23:33:30Z",
-      "category": "Autonomous Agents",
-      "stars": 2556,
-      "stars_24h": 17,
-      "v24": 17,
-      "trending_score": 0.8033,
-      "hardware_req": "CPU / Minimal RAM",
-      "is_local_first": false,
-      "is_cuda_ready": false,
-      "authenticity_score": 99,
-      "star_history": [
-        {
-          "ts": 1789646427,
-          "stars": 2539
-        },
-        {
-          "ts": 1789647750,
-          "stars": 2539
-        },
-        {
-          "ts": 1789648014,
-          "stars": 2539
-        },
-        {
-          "ts": 1789651294,
-          "stars": 2540
-        },
-        {
-          "ts": 1789655818,
-          "stars": 2544
-        },
-        {
-          "ts": 1789663882,
-          "stars": 2549
-        },
-        {
-          "ts": 1789675654,
-          "stars": 2554
-        },
-        {
-          "ts": 1789687711,
-          "stars": 2556
-        }
-      ],
-      "image_url": "https://raw.githubusercontent.com/nateherkai/scroll-craft/main/media/ais.webp",
-      "quick_run": "git clone https://github.com/nateherkai/scroll-craft.git"
-    },
-    {
-      "id": 1352104394,
-      "name": "cn",
-      "full_name": "shadcn-ui/cn",
-      "url": "https://github.com/shadcn-ui/cn",
-      "description": "cn is a new engine for Tailwind class merging and conflict resolution. It replaces tailwind-merge and clsx. Same APIs. Full parity. And it is 30\u00d7 faster.",
-      "language": "TypeScript",
-      "license": "MIT",
-      "topics": [
-        "clsx",
-        "cn",
-        "shadcn",
-        "tailwind-merge",
-        "tailwindcss"
-      ],
-      "forks": 16,
-      "created_at": "2026-08-31T07:04:03Z",
-      "pushed_at": "2026-09-12T11:09:59Z",
-      "category": "Core Utilities",
-      "stars": 1525,
-      "stars_24h": 4,
-      "v24": 4,
-      "trending_score": 0.787,
-      "hardware_req": "CPU / Minimal RAM",
-      "is_local_first": false,
-      "is_cuda_ready": false,
-      "authenticity_score": 70,
-      "star_history": [
-        {
-          "ts": 1789646427,
-          "stars": 1521
-        },
-        {
-          "ts": 1789647750,
-          "stars": 1521
-        },
-        {
-          "ts": 1789648014,
-          "stars": 1521
-        },
-        {
-          "ts": 1789651294,
-          "stars": 1521
-        },
-        {
-          "ts": 1789655818,
-          "stars": 1521
-        },
-        {
-          "ts": 1789663882,
-          "stars": 1521
-        },
-        {
-          "ts": 1789675654,
-          "stars": 1523
-        },
-        {
-          "ts": 1789687711,
-          "stars": 1525
-        }
-      ],
-      "image_url": null,
-      "quick_run": "npm i cn"
     },
     {
       "id": 1346970181,
@@ -2372,14 +2224,14 @@
       "language": "TypeScript",
       "license": "Custom",
       "topics": [],
-      "forks": 204,
+      "forks": 336,
       "created_at": "2026-08-26T06:09:58Z",
       "pushed_at": "2026-09-17T01:53:26Z",
       "category": "Core Utilities",
-      "stars": 2053,
-      "stars_24h": 390,
-      "v24": 390,
-      "trending_score": 0.7755,
+      "stars": 2369,
+      "stars_24h": 1595,
+      "v24": 1595,
+      "trending_score": 0.8853,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -2416,10 +2268,245 @@
         {
           "ts": 1789687711,
           "stars": 2053
+        },
+        {
+          "ts": 1789704823,
+          "stars": 2369
         }
       ],
       "image_url": null,
       "quick_run": "git clone https://github.com/wide-trace/open-higgsfield.git"
+    },
+    {
+      "id": 1344273611,
+      "name": "walgit",
+      "full_name": "tobi/walgit",
+      "url": "https://github.com/tobi/walgit",
+      "description": "No description provided.",
+      "language": "Rust",
+      "license": "MIT",
+      "topics": [],
+      "forks": 150,
+      "created_at": "2026-08-23T22:28:01Z",
+      "pushed_at": "2026-09-13T02:39:31Z",
+      "category": "Core Utilities",
+      "stars": 2525,
+      "stars_24h": 3,
+      "v24": 3,
+      "trending_score": 0.8367,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2522
+        },
+        {
+          "ts": 1789647750,
+          "stars": 2522
+        },
+        {
+          "ts": 1789648014,
+          "stars": 2522
+        },
+        {
+          "ts": 1789651294,
+          "stars": 2523
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2523
+        },
+        {
+          "ts": 1789663882,
+          "stars": 2524
+        },
+        {
+          "ts": 1789675654,
+          "stars": 2525
+        },
+        {
+          "ts": 1789687711,
+          "stars": 2525
+        },
+        {
+          "ts": 1789704823,
+          "stars": 2525
+        }
+      ],
+      "image_url": null,
+      "quick_run": "git clone https://github.com/tobi/walgit.git"
+    },
+    {
+      "id": 1342930695,
+      "name": "scroll-craft",
+      "full_name": "nateherkai/scroll-craft",
+      "url": "https://github.com/nateherkai/scroll-craft",
+      "description": "An agent skill for building premium, immersive, scroll-driven websites. Works with Codex, Claude Code, and other coding agents. Also available as a Claude Code plugin.",
+      "language": "JavaScript",
+      "license": "MIT",
+      "topics": [
+        "accessibility",
+        "agent-skills",
+        "ai-web-design",
+        "anthropic",
+        "claude-code",
+        "claude-code-plugin",
+        "creative-coding",
+        "design-system"
+      ],
+      "forks": 376,
+      "created_at": "2026-08-22T15:25:08Z",
+      "pushed_at": "2026-09-04T23:33:30Z",
+      "category": "Autonomous Agents",
+      "stars": 2560,
+      "stars_24h": 20,
+      "v24": 20,
+      "trending_score": 0.7971,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 2539
+        },
+        {
+          "ts": 1789647750,
+          "stars": 2539
+        },
+        {
+          "ts": 1789648014,
+          "stars": 2539
+        },
+        {
+          "ts": 1789651294,
+          "stars": 2540
+        },
+        {
+          "ts": 1789655818,
+          "stars": 2544
+        },
+        {
+          "ts": 1789663882,
+          "stars": 2549
+        },
+        {
+          "ts": 1789675654,
+          "stars": 2554
+        },
+        {
+          "ts": 1789687711,
+          "stars": 2556
+        },
+        {
+          "ts": 1789704823,
+          "stars": 2560
+        }
+      ],
+      "image_url": "https://raw.githubusercontent.com/nateherkai/scroll-craft/main/media/ais.webp",
+      "quick_run": "git clone https://github.com/nateherkai/scroll-craft.git"
+    },
+    {
+      "id": 1352104394,
+      "name": "cn",
+      "full_name": "shadcn-ui/cn",
+      "url": "https://github.com/shadcn-ui/cn",
+      "description": "cn is a new engine for Tailwind class merging and conflict resolution. It replaces tailwind-merge and clsx. Same APIs. Full parity. And it is 30\u00d7 faster.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "topics": [
+        "clsx",
+        "cn",
+        "shadcn",
+        "tailwind-merge",
+        "tailwindcss"
+      ],
+      "forks": 16,
+      "created_at": "2026-08-31T07:04:03Z",
+      "pushed_at": "2026-09-12T11:09:59Z",
+      "category": "Core Utilities",
+      "stars": 1527,
+      "stars_24h": 10,
+      "v24": 10,
+      "trending_score": 0.7772,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 70,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1521
+        },
+        {
+          "ts": 1789647750,
+          "stars": 1521
+        },
+        {
+          "ts": 1789648014,
+          "stars": 1521
+        },
+        {
+          "ts": 1789651294,
+          "stars": 1521
+        },
+        {
+          "ts": 1789655818,
+          "stars": 1521
+        },
+        {
+          "ts": 1789663882,
+          "stars": 1521
+        },
+        {
+          "ts": 1789675654,
+          "stars": 1523
+        },
+        {
+          "ts": 1789687711,
+          "stars": 1525
+        },
+        {
+          "ts": 1789704823,
+          "stars": 1527
+        }
+      ],
+      "image_url": null,
+      "quick_run": "npm i cn"
+    },
+    {
+      "id": 1352493419,
+      "name": "NoGraphicsAPI",
+      "full_name": "sebbbi/NoGraphicsAPI",
+      "url": "https://github.com/sebbbi/NoGraphicsAPI",
+      "description": "Minimal graphics API. Built on top of latest Vulkan extensions. As close as possibly to my \"No Graphics API\" blog post and the SIGGRAPH talk.",
+      "language": "C++",
+      "license": "MIT",
+      "topics": [],
+      "forks": 45,
+      "created_at": "2026-08-31T14:14:12Z",
+      "pushed_at": "2026-09-16T17:10:44Z",
+      "category": "Core Utilities",
+      "stars": 1425,
+      "stars_24h": 0,
+      "v24": 0,
+      "trending_score": 0.7407,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789704823,
+          "stars": 1425
+        }
+      ],
+      "image_url": null,
+      "quick_run": "git clone https://github.com/sebbbi/NoGraphicsAPI.git"
     },
     {
       "id": 1344939825,
@@ -2434,10 +2521,10 @@
       "created_at": "2026-08-24T12:36:59Z",
       "pushed_at": "2026-09-17T11:39:46Z",
       "category": "Autonomous Agents",
-      "stars": 2098,
-      "stars_24h": 6,
-      "v24": 6,
-      "trending_score": 0.7233,
+      "stars": 2099,
+      "stars_24h": 5,
+      "v24": 5,
+      "trending_score": 0.7164,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -2474,6 +2561,10 @@
         {
           "ts": 1789687711,
           "stars": 2098
+        },
+        {
+          "ts": 1789704823,
+          "stars": 2099
         }
       ],
       "image_url": "https://raw.githubusercontent.com/kacperkapusciak/goldie/main/assets/software-mansion-logo-positive-s-left-top@1x.png",
@@ -2488,14 +2579,14 @@
       "language": "TypeScript",
       "license": "Custom",
       "topics": [],
-      "forks": 207,
+      "forks": 208,
       "created_at": "2026-08-24T16:45:07Z",
       "pushed_at": "2026-08-25T21:49:59Z",
       "category": "Core Utilities",
-      "stars": 2060,
-      "stars_24h": 24,
-      "v24": 24,
-      "trending_score": 0.7164,
+      "stars": 2065,
+      "stars_24h": 25,
+      "v24": 25,
+      "trending_score": 0.7109,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -2532,6 +2623,10 @@
         {
           "ts": 1789687711,
           "stars": 2060
+        },
+        {
+          "ts": 1789704823,
+          "stars": 2065
         }
       ],
       "image_url": "https://raw.githubusercontent.com/amosblomqvist/learn/main/assets/thumbnail.png",
@@ -2559,10 +2654,10 @@
       "created_at": "2026-08-23T21:55:30Z",
       "pushed_at": "2026-09-15T21:12:30Z",
       "category": "Core Utilities",
-      "stars": 2126,
-      "stars_24h": 11,
-      "v24": 11,
-      "trending_score": 0.7107,
+      "stars": 2128,
+      "stars_24h": 10,
+      "v24": 10,
+      "trending_score": 0.7044,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -2599,6 +2694,10 @@
         {
           "ts": 1789687711,
           "stars": 2126
+        },
+        {
+          "ts": 1789704823,
+          "stars": 2128
         }
       ],
       "image_url": "https://raw.githubusercontent.com/omacom/try-omarchy/main/macos/OmarchyIcon.svg",
@@ -2626,10 +2725,10 @@
       "created_at": "2026-08-28T18:03:04Z",
       "pushed_at": "2026-09-17T19:13:19Z",
       "category": "Autonomous Agents",
-      "stars": 1605,
-      "stars_24h": 22,
-      "v24": 22,
-      "trending_score": 0.7008,
+      "stars": 1609,
+      "stars_24h": 20,
+      "v24": 20,
+      "trending_score": 0.6941,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -2666,6 +2765,10 @@
         {
           "ts": 1789687711,
           "stars": 1605
+        },
+        {
+          "ts": 1789704823,
+          "stars": 1609
         }
       ],
       "image_url": "https://raw.githubusercontent.com/cbrock84/headcount/main/docs/assets/org-chart-light.png",
@@ -2689,14 +2792,14 @@
         "malware-research",
         "malware-scanner"
       ],
-      "forks": 200,
+      "forks": 199,
       "created_at": "2026-08-22T14:28:41Z",
       "pushed_at": "2026-09-17T13:02:00Z",
       "category": "Autonomous Agents",
-      "stars": 1990,
-      "stars_24h": 9,
-      "v24": 9,
-      "trending_score": 0.6243,
+      "stars": 1992,
+      "stars_24h": 10,
+      "v24": 10,
+      "trending_score": 0.6191,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -2733,6 +2836,10 @@
         {
           "ts": 1789687711,
           "stars": 1990
+        },
+        {
+          "ts": 1789704823,
+          "stars": 1992
         }
       ],
       "image_url": "https://raw.githubusercontent.com/duty1g/x64dbg-mcp-server/main/logo.png",
@@ -2759,10 +2866,10 @@
       "created_at": "2026-08-27T04:55:36Z",
       "pushed_at": "2026-09-07T10:50:41Z",
       "category": "Autonomous Agents",
-      "stars": 1506,
-      "stars_24h": 13,
-      "v24": 13,
-      "trending_score": 0.5999,
+      "stars": 1507,
+      "stars_24h": 5,
+      "v24": 5,
+      "trending_score": 0.5936,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": true,
       "is_cuda_ready": false,
@@ -2799,6 +2906,10 @@
         {
           "ts": 1789687711,
           "stars": 1506
+        },
+        {
+          "ts": 1789704823,
+          "stars": 1507
         }
       ],
       "image_url": null,
@@ -2821,10 +2932,10 @@
       "created_at": "2026-08-25T02:46:10Z",
       "pushed_at": "2026-09-16T09:31:49Z",
       "category": "Local AI & Inference",
-      "stars": 1604,
-      "stars_24h": 1,
-      "v24": 1,
-      "trending_score": 0.57,
+      "stars": 1608,
+      "stars_24h": 20,
+      "v24": 20,
+      "trending_score": 0.5656,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -2861,68 +2972,14 @@
         {
           "ts": 1789687711,
           "stars": 1604
+        },
+        {
+          "ts": 1789704823,
+          "stars": 1608
         }
       ],
       "image_url": "https://raw.githubusercontent.com/Tencent/WeMM-Embedding/main/assets/performance-overview.png",
       "quick_run": "pip install -r requirements.txt"
-    },
-    {
-      "id": 1342432270,
-      "name": "anti-mage",
-      "full_name": "N4darae/anti-mage",
-      "url": "https://github.com/N4darae/anti-mage",
-      "description": "For detecting anti-detect browsers and spoofed profiles through runtime coherence analysis.",
-      "language": "Go",
-      "license": "MIT",
-      "topics": [],
-      "forks": 89,
-      "created_at": "2026-08-22T04:11:00Z",
-      "pushed_at": "2026-09-09T16:24:35Z",
-      "category": "Core Utilities",
-      "stars": 1663,
-      "stars_24h": 0,
-      "v24": 0,
-      "trending_score": 0.5113,
-      "hardware_req": "CPU / Minimal RAM",
-      "is_local_first": false,
-      "is_cuda_ready": false,
-      "authenticity_score": 99,
-      "star_history": [
-        {
-          "ts": 1789646427,
-          "stars": 1663
-        },
-        {
-          "ts": 1789647750,
-          "stars": 1663
-        },
-        {
-          "ts": 1789648014,
-          "stars": 1663
-        },
-        {
-          "ts": 1789651294,
-          "stars": 1663
-        },
-        {
-          "ts": 1789655818,
-          "stars": 1663
-        },
-        {
-          "ts": 1789663882,
-          "stars": 1663
-        },
-        {
-          "ts": 1789675654,
-          "stars": 1663
-        },
-        {
-          "ts": 1789687711,
-          "stars": 1663
-        }
-      ],
-      "image_url": null,
-      "quick_run": "git clone https://github.com/N4darae/anti-mage.git"
     },
     {
       "id": 1342737409,
@@ -2933,14 +2990,14 @@
       "language": "Python",
       "license": "Apache-2.0",
       "topics": [],
-      "forks": 16,
+      "forks": 17,
       "created_at": "2026-08-22T11:18:12Z",
       "pushed_at": "2026-09-08T03:50:39Z",
       "category": "Core Utilities",
-      "stars": 1638,
-      "stars_24h": 36,
-      "v24": 36,
-      "trending_score": 0.5107,
+      "stars": 1665,
+      "stars_24h": 136,
+      "v24": 136,
+      "trending_score": 0.5143,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -2977,10 +3034,76 @@
         {
           "ts": 1789687711,
           "stars": 1638
+        },
+        {
+          "ts": 1789704823,
+          "stars": 1665
         }
       ],
       "image_url": "https://raw.githubusercontent.com/FireRedTeam/FireRedAudio/main/assets/fireredaudio_logo.png",
       "quick_run": "git clone https://github.com/FireRedTeam/FireRedAudio.git"
+    },
+    {
+      "id": 1342432270,
+      "name": "anti-mage",
+      "full_name": "N4darae/anti-mage",
+      "url": "https://github.com/N4darae/anti-mage",
+      "description": "For detecting anti-detect browsers and spoofed profiles through runtime coherence analysis.",
+      "language": "Go",
+      "license": "MIT",
+      "topics": [],
+      "forks": 89,
+      "created_at": "2026-08-22T04:11:00Z",
+      "pushed_at": "2026-09-09T16:24:35Z",
+      "category": "Core Utilities",
+      "stars": 1663,
+      "stars_24h": 0,
+      "v24": 0,
+      "trending_score": 0.5067,
+      "hardware_req": "CPU / Minimal RAM",
+      "is_local_first": false,
+      "is_cuda_ready": false,
+      "authenticity_score": 99,
+      "star_history": [
+        {
+          "ts": 1789646427,
+          "stars": 1663
+        },
+        {
+          "ts": 1789647750,
+          "stars": 1663
+        },
+        {
+          "ts": 1789648014,
+          "stars": 1663
+        },
+        {
+          "ts": 1789651294,
+          "stars": 1663
+        },
+        {
+          "ts": 1789655818,
+          "stars": 1663
+        },
+        {
+          "ts": 1789663882,
+          "stars": 1663
+        },
+        {
+          "ts": 1789675654,
+          "stars": 1663
+        },
+        {
+          "ts": 1789687711,
+          "stars": 1663
+        },
+        {
+          "ts": 1789704823,
+          "stars": 1663
+        }
+      ],
+      "image_url": null,
+      "quick_run": "git clone https://github.com/N4darae/anti-mage.git"
     },
     {
       "id": 1340501779,
@@ -2995,10 +3118,10 @@
       "created_at": "2026-08-20T09:07:59Z",
       "pushed_at": "2026-08-24T06:57:13Z",
       "category": "Core Utilities",
-      "stars": 1738,
-      "stars_24h": 19,
-      "v24": 19,
-      "trending_score": 0.4929,
+      "stars": 1756,
+      "stars_24h": 91,
+      "v24": 91,
+      "trending_score": 0.4938,
       "hardware_req": "CPU / Minimal RAM",
       "is_local_first": false,
       "is_cuda_ready": false,
@@ -3035,6 +3158,10 @@
         {
           "ts": 1789687711,
           "stars": 1738
+        },
+        {
+          "ts": 1789704823,
+          "stars": 1756
         }
       ],
       "image_url": "https://raw.githubusercontent.com/larashero3-dotcom/lieflat-less-ai-tone/main/assets/less-ai-tone-hero-zh.png",
