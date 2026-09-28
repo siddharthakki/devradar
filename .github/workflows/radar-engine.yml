@@ -29,7 +29,9 @@ jobs:
         run: pip install -r engine/requirements.txt
 
       - name: Run Test Suite
-        run: pytest tests/ -v
+        run: python -m pytest tests/ -v
+        env:
+          PYTHONPATH: .
 
       - name: Ingest & Categorize Repos
         run: python engine/analyzer.py
