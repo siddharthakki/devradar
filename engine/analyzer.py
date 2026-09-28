@@ -1,4 +1,4 @@
-﻿import os
+import os
 import re
 import json
 import time
@@ -41,6 +41,44 @@ def normalize_history_entry(entry):
         except (ValueError, TypeError):
             return None
     return None
+
+def profile_specs(description="", topics=None):
+    topics = topics or []
+    text = f"{description} {' '.join(topics)}".lower()
+    is_local_first = any(k in text for k in ["local-first", "offline", "zero-cloud", "zero cloud", "on-device", "self-hosted"])
+    is_cuda_ready = any(k in text for k in ["cuda", "nvidia", "rtx", "vram", "tensorrt"])
+    cpu_friendly = any(k in text for k in ["cpu", "gguf", "llama.cpp", "onnx", "wasm", "apple silicon", "metal"])
+
+    if "3090" in text or "4090" in text or "24gb" in text:
+        hw = "24GB+ CUDA VRAM"
+    elif is_cuda_ready and not cpu_friendly:
+        hw = "16GB+ CUDA VRAM"
+    elif cpu_friendly:
+        hw = "8GB Unified / Metal"
+    else:
+        hw = "Minimal CPU"
+
+    return {
+        "is_local_first": is_local_first,
+        "is_cuda_ready": is_cuda_ready,
+        "cpu_supported": cpu_friendly or not is_cuda_ready,
+        "hardware_req": hw
+    }
+
+def classify(text="", topics=None):
+    topics = topics or []
+    full_text = f"{text} {' '.join(topics)}".lower()
+    categories = {
+        "Local LLM Engines": ["llm", "inference", "gguf", "vllm", "ollama", "transformers"],
+        "Multi-Agent Frameworks": ["agent", "agents", "autogen", "crewai", "langgraph"],
+        "RAG Engines": ["rag", "retrieval", "langchain", "llamaindex", "hybrid-search"],
+        "Vector Databases": ["vector-database", "vectordb", "chroma", "qdrant", "milvus"],
+        "CLI & TUI Tooling": ["cli", "tui", "terminal", "command-line"]
+    }
+    for cat, kws in categories.items():
+        if any(kw in full_text for kw in kws):
+            return cat
+    return "CLI & TUI Tooling"
 
 def extract_capabilities(repo, readme_text=""):
     text = f"{repo.get('name', '')} {repo.get('description', '')} {' '.join(repo.get('topics', []))} {readme_text}".lower()
@@ -99,10 +137,11 @@ def extract_capabilities(repo, readme_text=""):
     has_cuda = any(k in text for k in ["cuda", "nvidia", "rtx", "vram", "tensorrt"])
     cpu_friendly = any(k in text for k in ["cpu", "gguf", "llama.cpp", "onnx", "wasm", "apple silicon", "metal"])
     
+    specs = profile_specs(text, repo.get('topics', []))
     hardware = {
-        "is_cuda_ready": has_cuda,
-        "cpu_supported": cpu_friendly or not has_cuda,
-        "floor": "16GB+ CUDA VRAM" if (has_cuda and not cpu_friendly) else ("8GB Unified / Metal" if cpu_friendly else "Minimal CPU")
+        "is_cuda_ready": specs["is_cuda_ready"],
+        "cpu_supported": specs["cpu_supported"],
+        "floor": specs["hardware_req"]
     }
 
     return {

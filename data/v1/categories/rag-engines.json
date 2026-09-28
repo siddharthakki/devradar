@@ -1,0 +1,1050 @@
+{
+  "category": "RAG Engines",
+  "count": 12,
+  "updated_at": "2026-09-28T11:39:36.710259+00:00",
+  "repositories": [
+    {
+      "full_name": "antflydb/antfly",
+      "name": "antfly",
+      "url": "https://github.com/antflydb/antfly",
+      "description": null,
+      "language": "Zig",
+      "license": "NOASSERTION",
+      "stars": 434,
+      "stars_24h": 43,
+      "trending_score": 20,
+      "topics": [
+        "ai-agents",
+        "autoscaling",
+        "elasticsearch",
+        "information-retrieval",
+        "ml",
+        "multimodal",
+        "rag",
+        "semantic-search"
+      ],
+      "created_at": "2026-03-15T23:19:10Z",
+      "pushed_at": "2026-09-18T18:30:24Z",
+      "quick_run": "git clone https://github.com/antflydb/antfly",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 434
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 186,
+        "authenticity_score": 95,
+        "open_issues": 23,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to proprietary cloud tools \u2014 High-velocity open source software.",
+      "replaces": "proprietary cloud tools",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 37,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        28,
+        37,
+        44,
+        61,
+        72,
+        88,
+        100
+      ],
+      "pushed_human": "pushed 8h ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 8h ago)",
+      "category": "RAG Engines"
+    },
+    {
+      "full_name": "Anil-matcha/awesome-jev-by-typesafe",
+      "name": "awesome-jev-by-typesafe",
+      "url": "https://github.com/Anil-matcha/awesome-jev-by-typesafe",
+      "description": "Evidence-backed use cases, patterns, prompts, and starter code for TypeSafe Jev \u2014 a System One model for fast, typed, confidence-aware decisions in software.",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 501,
+      "stars_24h": 40,
+      "trending_score": 22,
+      "topics": [
+        "agent-workflows",
+        "ai-api",
+        "ai-automation",
+        "classification",
+        "confidence-aware-ai",
+        "decision-intelligence",
+        "function-calling",
+        "jev",
+        "llm-guardrails",
+        "llm-routing",
+        "machine-native-intelligence",
+        "python",
+        "rag",
+        "reranking",
+        "semantic-routing",
+        "semantic-search",
+        "structured-output",
+        "system-one-models",
+        "typesafe-ai",
+        "typescript"
+      ],
+      "created_at": "2023-05-17T18:38:27Z",
+      "pushed_at": "2026-09-18T18:29:43Z",
+      "quick_run": "pip install awesome-jev-by-typesafe",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 501
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 1219,
+        "authenticity_score": 95,
+        "open_issues": 0,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to proprietary cloud tools \u2014 awesome-jev-by-typesafe delivers high-performance Python execution with zero cloud lock-in.",
+      "replaces": "proprietary cloud tools",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "new",
+      "contributors_count": 40,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        22,
+        30,
+        39,
+        51,
+        65,
+        81,
+        100
+      ],
+      "pushed_human": "pushed 14h ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 14h ago)",
+      "category": "RAG Engines"
+    },
+    {
+      "full_name": "HKUDS/LightRAG",
+      "name": "LightRAG",
+      "url": "https://github.com/HKUDS/LightRAG",
+      "description": "[EMNLP2025] LightRAG: Simple and Fast Retrieval-Augmented Generation",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 39753,
+      "stars_24h": 580,
+      "trending_score": 199,
+      "topics": [
+        "docling",
+        "genai",
+        "gpt",
+        "graphrag",
+        "knowledge-graph",
+        "large-language-models",
+        "llm",
+        "mineru",
+        "rag",
+        "ragas",
+        "retrieval-augmented-generation"
+      ],
+      "created_at": "2024-10-02T11:57:54Z",
+      "pushed_at": "2026-09-18T18:30:41Z",
+      "quick_run": "pip install LightRAG",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 39753
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 716,
+        "authenticity_score": 95,
+        "open_issues": 251,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to GraphRAG \u2014 dual-level graph retrieval that is 10x faster and cheaper than standard GraphRAG.",
+      "replaces": "Microsoft GraphRAG",
+      "why_this_week": "EMNLP 2025 spotlight paper providing high-fidelity entity-relationship RAG without token explosion.",
+      "hardware_alert": "\ud83d\udcbb Runs on CPU + Local/Remote LLM",
+      "signal_badge": "spiking",
+      "contributors_count": 120,
+      "lock_in_risk": "None (Apache 2.0)",
+      "mcp_support": "Python Library",
+      "sparkline_data": [
+        15,
+        23,
+        33,
+        45,
+        55,
+        68,
+        82,
+        100
+      ],
+      "pushed_human": "pushed 8h ago",
+      "maturity_detail": "Production Ready (Active pushed 8h ago, 120+ contributors)",
+      "category": "RAG Engines"
+    },
+    {
+      "full_name": "onyx-dot-app/onyx",
+      "name": "onyx",
+      "url": "https://github.com/onyx-dot-app/onyx",
+      "description": "Open Source AI Platform - AI Chat with advanced features that works with every LLM",
+      "language": "Python",
+      "license": "NOASSERTION",
+      "stars": 32157,
+      "stars_24h": 410,
+      "trending_score": 179,
+      "topics": [
+        "ai",
+        "ai-chat",
+        "chatgpt",
+        "chatui",
+        "enterprise-search",
+        "gen-ai",
+        "information-retrieval",
+        "llm",
+        "llm-ui",
+        "nextjs",
+        "python",
+        "rag",
+        "self-hosted",
+        "vector-search"
+      ],
+      "created_at": "2023-04-27T06:04:01Z",
+      "pushed_at": "2026-09-18T18:31:21Z",
+      "quick_run": "pip install onyx",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 32157
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "self-hosted"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 1240,
+        "authenticity_score": 95,
+        "open_issues": 478,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Glean & Perplexity Enterprise \u2014 connect 30+ workplace apps to an open-source private chat UI.",
+      "replaces": "Glean & Microsoft Copilot",
+      "why_this_week": "Rebranded from Danswer; enterprise teams flocking to full self-hosted document security.",
+      "hardware_alert": "\u26a1 16GB+ RAM Server (Docker Compose)",
+      "signal_badge": "established",
+      "contributors_count": 260,
+      "lock_in_risk": "None (MIT / Docker)",
+      "mcp_support": "OpenAPI & Connectors",
+      "sparkline_data": [
+        15,
+        19,
+        33,
+        47,
+        62,
+        72,
+        82,
+        100
+      ],
+      "pushed_human": "pushed 3h ago",
+      "maturity_detail": "Production Ready (Active pushed 3h ago, 260+ contributors)",
+      "category": "RAG Engines"
+    },
+    {
+      "full_name": "lbedner/aegis-stack",
+      "name": "aegis-stack",
+      "url": "https://github.com/lbedner/aegis-stack",
+      "description": "A production-ready FastAPI platform with modular components and a built-in control plane.",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 141,
+      "stars_24h": 63,
+      "trending_score": 11,
+      "topics": [
+        "asyncio",
+        "boilerplate",
+        "cli",
+        "copier",
+        "copier-template",
+        "docker",
+        "fastapi",
+        "fastapi-starter",
+        "fastapi-template",
+        "langchain",
+        "llm",
+        "project-generator",
+        "project-template",
+        "pydantic-ai",
+        "python",
+        "rag",
+        "scaffolding",
+        "starter-kit",
+        "uv"
+      ],
+      "created_at": "2025-04-27T22:56:59Z",
+      "pushed_at": "2026-09-18T18:05:52Z",
+      "quick_run": "pip install aegis-stack",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": false,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 141
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli",
+          "service"
+        ],
+        "integrations": [
+          "orchestrators",
+          "crdt-sync"
+        ],
+        "deployment": [
+          "docker"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 508,
+        "authenticity_score": 95,
+        "open_issues": 56,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to proprietary cloud tools \u2014 A production-ready FastAPI platform with modular components and a built-in control plane.",
+      "replaces": "proprietary cloud tools",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 21,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        22,
+        30,
+        43,
+        57,
+        72,
+        84,
+        100
+      ],
+      "pushed_human": "pushed 2h ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 2h ago)",
+      "category": "RAG Engines"
+    },
+    {
+      "full_name": "samyama-ai/samyama-graph",
+      "name": "samyama-graph",
+      "url": "https://github.com/samyama-ai/samyama-graph",
+      "description": "Rust graph-vector database: OpenCypher (99.9% of evaluated TCK scenarios pass), vector search, graph algorithms, RESP + HTTP. LDBC SNB Interactive and BI complete; 1B edges on one machine.",
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "stars": 172,
+      "stars_24h": 69,
+      "trending_score": 13,
+      "topics": [
+        "cypher",
+        "embedded-database",
+        "graph-algorithms",
+        "graph-analytics",
+        "graph-database",
+        "graph-rag",
+        "hnsw",
+        "knowledge-graph",
+        "ldbc",
+        "mcp-server",
+        "opencypher",
+        "rust",
+        "vector-search"
+      ],
+      "created_at": "2026-01-19T10:51:28Z",
+      "pushed_at": "2026-09-18T18:28:59Z",
+      "quick_run": "cargo install samyama-graph",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 172
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "service"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 242,
+        "authenticity_score": 95,
+        "open_issues": 96,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Pinecone & LangChain \u2014 Rust graph-vector database: OpenCypher (99.",
+      "replaces": "Pinecone & LangChain",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 23,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        28,
+        37,
+        45,
+        59,
+        72,
+        88,
+        100
+      ],
+      "pushed_human": "pushed 2h ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 2h ago)",
+      "category": "RAG Engines"
+    },
+    {
+      "full_name": "weaviate/weaviate",
+      "name": "weaviate",
+      "url": "https://github.com/weaviate/weaviate",
+      "description": "Weaviate is an open-source vector database that stores both objects and vectors, allowing for the combination of vector search with structured filtering with the fault tolerance and scalability of a cloud-native database\u200b.",
+      "language": "Go",
+      "license": "NOASSERTION",
+      "stars": 16819,
+      "stars_24h": 175,
+      "trending_score": 129,
+      "topics": [
+        "approximate-nearest-neighbor-search",
+        "generative-search",
+        "grpc",
+        "hnsw",
+        "hybrid-search",
+        "image-search",
+        "information-retrieval",
+        "mlops",
+        "nearest-neighbor-search",
+        "neural-search",
+        "recommender-system",
+        "search-engine",
+        "semantic-search",
+        "semantic-search-engine",
+        "similarity-search",
+        "vector-database",
+        "vector-search",
+        "vector-search-engine",
+        "vectors",
+        "weaviate"
+      ],
+      "created_at": "2016-03-30T15:03:17Z",
+      "pushed_at": "2026-09-18T17:12:25Z",
+      "quick_run": "git clone https://github.com/weaviate/weaviate",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": false,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 16819
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "byok-cloud"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 3824,
+        "authenticity_score": 95,
+        "open_issues": 737,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Pinecone \u2014 cloud-native vector database combining schema-driven object storage with hybrid search.",
+      "replaces": "Pinecone & Chroma",
+      "why_this_week": "Extensively deployed for multi-tenant production RAG with automatic vectorization modules.",
+      "hardware_alert": "\u26a1 8GB+ RAM Server (Go)",
+      "signal_badge": "established",
+      "contributors_count": 260,
+      "lock_in_risk": "None (BSD 3-Clause)",
+      "mcp_support": "GraphQL & gRPC API",
+      "sparkline_data": [
+        15,
+        19,
+        36,
+        41,
+        55,
+        72,
+        95,
+        100
+      ],
+      "pushed_human": "pushed 8h ago",
+      "maturity_detail": "Production Ready (Active pushed 8h ago, 260+ contributors)",
+      "category": "RAG Engines"
+    },
+    {
+      "full_name": "HelixDB/helix-db",
+      "name": "helix-db",
+      "url": "https://github.com/HelixDB/helix-db",
+      "description": "HelixDB is an OLTP graph database with native vector and full-text search built in Rust on Object Storage.",
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "stars": 5929,
+      "stars_24h": 89,
+      "trending_score": 77,
+      "topics": [
+        "ai",
+        "cli",
+        "database",
+        "databases",
+        "graph-database",
+        "helix",
+        "helixdb",
+        "rag",
+        "rust",
+        "rust-crate",
+        "rust-lang",
+        "vector",
+        "vector-database",
+        "vector-db",
+        "vectorsearch"
+      ],
+      "created_at": "2024-11-23T11:02:14Z",
+      "pushed_at": "2026-09-18T12:25:05Z",
+      "quick_run": "cargo install helix-db",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 5929
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 664,
+        "authenticity_score": 95,
+        "open_issues": 33,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Pinecone & LangChain \u2014 helix-db delivers high-performance Rust execution with zero cloud lock-in.",
+      "replaces": "Pinecone & LangChain",
+      "why_this_week": "Steady developer migration driven by reliable Rust tooling and focused scope.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 138,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        25,
+        39,
+        47,
+        64,
+        73,
+        89,
+        100
+      ],
+      "pushed_human": "pushed 8h ago",
+      "maturity_detail": "Production Ready (Active pushed 8h ago, 138+ contributors)",
+      "category": "RAG Engines"
+    },
+    {
+      "full_name": "marcominerva/SqlDatabaseVectorSearch",
+      "name": "SqlDatabaseVectorSearch",
+      "url": "https://github.com/marcominerva/SqlDatabaseVectorSearch",
+      "description": "A Blazor Web App and Minimal API for performing RAG (Retrieval Augmented Generation) and vector search using the native VECTOR type in Azure SQL Database and Azure OpenAI.",
+      "language": "C#",
+      "license": "MIT",
+      "stars": 142,
+      "stars_24h": 34,
+      "trending_score": 11,
+      "topics": [
+        "azure-openai",
+        "azure-sql-database",
+        "c-sharp",
+        "chatgpt",
+        "dotnet",
+        "embeddings",
+        "openai",
+        "rag",
+        "retrieval-augmented-generation",
+        "semantic-kernel",
+        "sql-server",
+        "vector-database",
+        "visual-studio"
+      ],
+      "created_at": "2024-06-14T09:37:54Z",
+      "pushed_at": "2026-09-18T09:52:21Z",
+      "quick_run": "git clone https://github.com/marcominerva/SqlDatabaseVectorSearch",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 142
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "service"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 826,
+        "authenticity_score": 95,
+        "open_issues": 1,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Pinecone & LangChain \u2014 SqlDatabaseVectorSearch delivers high-performance C# execution with zero cloud lock-in.",
+      "replaces": "Pinecone & LangChain",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "new",
+      "contributors_count": 21,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        22,
+        29,
+        38,
+        50,
+        64,
+        80,
+        100
+      ],
+      "pushed_human": "pushed 8h ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 8h ago)",
+      "category": "RAG Engines"
+    },
+    {
+      "full_name": "oracle/ai-optimizer",
+      "name": "ai-optimizer",
+      "url": "https://github.com/oracle/ai-optimizer",
+      "description": "GenAI/RAG Optimizer and Toolkit for experimentation using Oracle Database AI Vector Search and NL2SQL",
+      "language": "Python",
+      "license": "UPL-1.0",
+      "stars": 101,
+      "stars_24h": 93,
+      "trending_score": 10,
+      "topics": [
+        "embedding-models",
+        "generative-ai",
+        "large-language-models",
+        "nl2sql",
+        "oracle-database",
+        "retrieval-augmented-generation",
+        "vector-database"
+      ],
+      "created_at": "2024-09-06T15:45:33Z",
+      "pushed_at": "2026-09-18T10:23:33Z",
+      "quick_run": "pip install ai-optimizer",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 101
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 742,
+        "authenticity_score": 95,
+        "open_issues": 30,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Pinecone & LangChain \u2014 ai-optimizer delivers high-performance Python execution with zero cloud lock-in.",
+      "replaces": "Pinecone & LangChain",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 18,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        24,
+        39,
+        51,
+        60,
+        69,
+        81,
+        100
+      ],
+      "pushed_human": "pushed 2h ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 2h ago)",
+      "category": "RAG Engines"
+    },
+    {
+      "full_name": "notoriouslab/vault-curate",
+      "name": "vault-curate",
+      "url": "https://github.com/notoriouslab/vault-curate",
+      "description": "Find, connect, rediscover your notes \u2014 a local-first second brain for Obsidian. Semantic search with strong Chinese/CJK, relation graphs and semantic paths for connections you never drew, Hot/Cold rediscovery of forgotten notes. Desktop builds the index; phones and tablets search it. No API keys.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 136,
+      "stars_24h": 27,
+      "trending_score": 11,
+      "topics": [
+        "bge",
+        "chinese-nlp",
+        "chinese-search",
+        "embeddings",
+        "hybrid-search",
+        "mobile",
+        "obsidian",
+        "obsidian-md",
+        "obsidian-plugin",
+        "ollama",
+        "pkm",
+        "rag",
+        "semantic-search",
+        "traditional-chinese",
+        "transformers-js",
+        "webgpu"
+      ],
+      "created_at": "2026-04-04T11:14:03Z",
+      "pushed_at": "2026-09-14T14:35:20Z",
+      "quick_run": "npm install vault-curate",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 136
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "desktop"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only",
+          "byok-cloud"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 4,
+        "age_days": 167,
+        "authenticity_score": 95,
+        "open_issues": 0,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Cloud Databases & Firebase \u2014 Find, connect, rediscover your notes \u2014 a local-first second brain for Obsidian.",
+      "replaces": "Cloud Databases & Firebase",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "new",
+      "contributors_count": 20,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        20,
+        29,
+        39,
+        50,
+        63,
+        79,
+        100
+      ],
+      "pushed_human": "pushed 4d ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 4d ago)",
+      "category": "RAG Engines"
+    },
+    {
+      "full_name": "gmickel/gno",
+      "name": "gno",
+      "url": "https://github.com/gmickel/gno",
+      "description": "Local AI-powered document search and editing with first-in-class hybrid retrieval, LLM answers, WebUI, REST API and MCP support for AI clients.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 111,
+      "stars_24h": 49,
+      "trending_score": 10,
+      "topics": [
+        "ai-assistant",
+        "bun",
+        "cli",
+        "code-search",
+        "document-search",
+        "embeddings",
+        "knowledge-base",
+        "llm",
+        "local-first",
+        "mcp",
+        "offline",
+        "pkm",
+        "rag",
+        "second-brain",
+        "semantic-search",
+        "typescript",
+        "vector-search"
+      ],
+      "created_at": "2025-12-16T15:58:15Z",
+      "pushed_at": "2026-09-12T16:15:34Z",
+      "quick_run": "npm install gno",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 111
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli",
+          "service"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 6,
+        "age_days": 276,
+        "authenticity_score": 95,
+        "open_issues": 6,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Ollama & Cloud LLMs \u2014 gno delivers high-performance TypeScript execution with zero cloud lock-in.",
+      "replaces": "Ollama & Cloud LLMs",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 18,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        23,
+        35,
+        46,
+        59,
+        73,
+        88,
+        100
+      ],
+      "pushed_human": "pushed 6d ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 6d ago)",
+      "category": "RAG Engines"
+    }
+  ]
+}

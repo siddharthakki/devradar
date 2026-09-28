@@ -1,9 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>How DevRadar Works — Methodology & Pipeline</title>
+  <title>Why We Rank This Way — StackFit Methodology</title>
+  <meta name="description" content="Why GitHub stars are a vanity metric, and how StackFit ranks open-source tools by what they replace, what they run on, and whether they are alive." />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -11,73 +12,148 @@
       theme: {
         extend: {
           colors: {
-            radarDark: '#080c14',
-            cardDark: '#0f172a',
-            borderDark: '#1e293b',
+            radarDark: '#0c0a09',
+            cardDark: '#1c1917',
+            borderDark: '#292524',
+            accentPrimary: '#f59e0b',
+            accentSecondary: '#fbbf24',
           }
         }
       }
     }
   </script>
 </head>
-<body class="bg-radarDark text-slate-200 min-h-screen font-sans selection:bg-cyan-500/20 antialiased p-6 sm:p-12">
+<body class="bg-[#0c0a09] text-stone-200 min-h-screen font-sans antialiased p-6 sm:p-12 selection:bg-amber-500/20">
   <div class="max-w-4xl mx-auto">
-    <div class="flex items-center justify-between pb-6 border-b border-borderDark mb-8">
-      <a href="index.html" class="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-mono text-sm transition">
-        &larr; Back to Dashboard
+    <!-- TOP NAVIGATION -->
+    <div class="flex items-center justify-between pb-6 border-b border-stone-800 mb-8">
+      <a href="index.html" class="flex items-center gap-2 text-amber-400 hover:text-amber-300 font-mono text-sm transition">
+        &larr; Back to StackFit Radar
       </a>
-      <span class="text-xs font-mono uppercase bg-slate-800 text-cyan-300 px-2.5 py-1 rounded border border-slate-700">Methodology v1.4</span>
+      <div class="flex items-center gap-3">
+        <span class="text-xs font-mono uppercase bg-stone-900 text-amber-400 px-2.5 py-1 rounded border border-stone-800">Methodology Manifesto v2.0</span>
+        <a href="data/feed.xml" class="text-xs font-mono text-stone-400 hover:text-amber-300 transition">📡 RSS Feed</a>
+      </div>
     </div>
 
-    <h1 class="text-3xl font-black text-white tracking-tight">How <span class="text-cyan-400">DevRadar</span> Works</h1>
-    <p class="mt-2 text-slate-400 leading-relaxed text-sm">An autonomous open-source intelligence pipeline separating genuine architectural momentum from bot-manipulated hype.</p>
+    <!-- HEADER -->
+    <div class="mb-10">
+      <span class="text-xs font-mono text-amber-500 font-semibold tracking-wider uppercase">Editorial & Engineering Principles</span>
+      <h1 class="text-3xl sm:text-4xl font-black text-stone-100 tracking-tight mt-1">Why We Rank By Real Health Metrics, <span class="text-amber-400">Not Raw Stars</span></h1>
+      <p class="mt-3 text-stone-400 leading-relaxed text-base">
+        Find the open-source tool you actually need — by what it replaces, what it runs on, and whether it's alive.
+      </p>
+    </div>
 
-    <div class="mt-10 space-y-8 text-sm">
-      <section class="bg-cardDark border border-borderDark rounded-xl p-6">
-        <h2 class="text-lg font-bold text-white flex items-center gap-2">
-          <span>🚀</span> Star Velocity & Momentum Decay
+    <!-- MANIFESTO QUOTE -->
+    <div class="bg-gradient-to-r from-amber-500/10 via-stone-900 to-stone-900 border-l-4 border-amber-500 p-5 rounded-r-xl my-8 text-stone-300 italic text-base leading-relaxed">
+      "GitHub stars are a cumulative vanity metric. An abandoned library from 2019 can sit on 85,000 legacy stars while a game-changing Rust inference engine released three weeks ago is invisible. StackFit exists to separate true architectural velocity from historical inertia and bot-boosted hype."
+    </div>
+
+    <div class="space-y-8 text-sm leading-relaxed">
+      <!-- 1. Star Velocity vs Cumulative Vanity -->
+      <section class="bg-[#1c1917] border border-stone-800 rounded-2xl p-6 sm:p-8 shadow-xl">
+        <h2 class="text-xl font-bold text-stone-100 flex items-center gap-2.5">
+          <span class="text-amber-400">01.</span> Velocity Decay & The 90-Day Trajectory
         </h2>
-        <p class="mt-2 text-slate-400 leading-relaxed">
-          Standard GitHub trending metrics favor established corporate behemoths with 60,000+ legacy stars. DevRadar isolates fast-rising breakout tools using a gravity-decay velocity model:
+        <p class="mt-3 text-stone-300 leading-relaxed">
+          Standard GitHub trending feeds reward sudden single-day star spikes that often vanish into dormancy. StackFit tracks ongoing daily delta <code class="text-amber-300 font-mono text-xs">+N / 24h</code> combined with a 90-day activity trajectory.
         </p>
-        <div class="my-4 p-3 bg-slate-900 rounded font-mono text-xs text-cyan-300 border border-slate-800">
-          Score = Stars / (Age_Hours + 2.0)^1.25
+        <div class="my-5 p-4 bg-stone-950 rounded-xl font-mono text-xs text-amber-300 border border-stone-800 flex flex-col gap-1.5">
+          <span class="text-stone-500">// Breakout Velocity Function</span>
+          <span>BreakoutScore = (Velocity24h * 3.5 + log10(Stars) * 2.5) * RecencyMultiplier * AuthenticityBonus</span>
         </div>
-        <p class="text-slate-400 leading-relaxed">
-          This prioritizes projects gaining rapid daily adoption within their first 7 to 30 days while dampening older repositories with dormant maintainer activity.
+        <p class="text-stone-400">
+          If a repository hasn't pushed a commit in 90 days, its score aggressively decays. If it pushed 3 hours ago with verified contributor velocity, it surfaces immediately to the top of your radar.
         </p>
       </section>
 
-      <section class="bg-cardDark border border-borderDark rounded-xl p-6">
-        <h2 class="text-lg font-bold text-white flex items-center gap-2">
-          <span>🛡️</span> Authenticity & Anti-Bot Index
+      <!-- 2. The Architectural Verdict -->
+      <section class="bg-[#1c1917] border border-stone-800 rounded-2xl p-6 sm:p-8 shadow-xl">
+        <h2 class="text-xl font-bold text-stone-100 flex items-center gap-2.5">
+          <span class="text-amber-400">02.</span> The Architectural Verdict: What Does It Replace?
         </h2>
-        <p class="mt-2 text-slate-400 leading-relaxed">
-          To combat coordinated star farms, DevRadar computes an authenticity ratio analyzing structural engagement indicators:
+        <p class="mt-3 text-stone-300 leading-relaxed">
+          Directories that scrape generic marketing blurbs fail engineers. When an engineer visits StackFit, they need an opinionated architectural verdict in under 3 seconds:
         </p>
-        <ul class="list-disc list-inside mt-3 space-y-1.5 text-slate-400">
-          <li><strong class="text-slate-200">Fork-to-Star Ratio:</strong> Real repositories typically display at least a 3–8% fork ratio. Extreme imbalances (<1.5% with high star bursts) are flagged.</li>
-          <li><strong class="text-slate-200">Velocity Deviation:</strong> Unnatural sudden spikes without organic issue or PR activity trigger score deductions.</li>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-5">
+          <div class="p-4 bg-stone-950 rounded-xl border border-stone-800">
+            <span class="text-xs font-mono text-stone-500 block uppercase">Generic Directory Scraping</span>
+            <p class="mt-1 text-xs text-red-400 font-mono">"Zero-cloud inference runner designed for private, offline execution."</p>
+            <span class="text-[11px] text-stone-500 mt-2 block">(Tells you nothing about why you should care or what it replaces.)</span>
+          </div>
+          <div class="p-4 bg-stone-950 rounded-xl border border-amber-500/30">
+            <span class="text-xs font-mono text-amber-400 block uppercase">StackFit Signature Verdict</span>
+            <p class="mt-1 text-xs text-emerald-400 font-mono">"⚡ Alt to vLLM — RadixAttention prefix caching delivers 3-5x higher throughput on complex prompts."</p>
+            <span class="text-[11px] text-stone-400 mt-2 block">(Actionable, technical, compares directly to incumbent.)</span>
+          </div>
+        </div>
+        <p class="text-stone-400">
+          Every single repository indexed on StackFit has a dedicated verdict written for software architects and senior developers.
+        </p>
+      </section>
+
+      <!-- 3. Hardware-First Viability -->
+      <section class="bg-[#1c1917] border border-stone-800 rounded-2xl p-6 sm:p-8 shadow-xl">
+        <h2 class="text-xl font-bold text-stone-100 flex items-center gap-2.5">
+          <span class="text-amber-400">03.</span> Hardware-First Viability
+        </h2>
+        <p class="mt-3 text-stone-300 leading-relaxed">
+          Open-source AI tools are useless if they crash on your target hardware. StackFit analyzes model weights, runtime bindings, and dependencies into verified hardware tiers:
+        </p>
+        <div class="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-mono">
+          <div class="p-3 bg-stone-950 border border-stone-800 rounded-xl">
+            <span class="text-emerald-400 font-bold block">💻 Mac M-Series</span>
+            <span class="text-stone-400 text-[11px] mt-1 block">Metal & Unified Memory (8GB–128GB)</span>
+          </div>
+          <div class="p-3 bg-stone-950 border border-stone-800 rounded-xl">
+            <span class="text-cyan-400 font-bold block">🧠 CPU Only</span>
+            <span class="text-stone-400 text-[11px] mt-1 block">Zero GPU needed, x86 / ARM commodity</span>
+          </div>
+          <div class="p-3 bg-stone-950 border border-stone-800 rounded-xl">
+            <span class="text-amber-400 font-bold block">🟩 8GB–12GB VRAM</span>
+            <span class="text-stone-400 text-[11px] mt-1 block">Consumer RTX 3060 / 4060 quantization</span>
+          </div>
+          <div class="p-3 bg-stone-950 border border-stone-800 rounded-xl">
+            <span class="text-purple-400 font-bold block">⚡ 24GB+ CUDA</span>
+            <span class="text-stone-400 text-[11px] mt-1 block">RTX 4090 / A100 / Multi-GPU sharding</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Anti-Bot Authenticity -->
+      <section class="bg-[#1c1917] border border-stone-800 rounded-2xl p-6 sm:p-8 shadow-xl">
+        <h2 class="text-xl font-bold text-stone-100 flex items-center gap-2.5">
+          <span class="text-amber-400">04.</span> Anti-Bot Authenticity Scoring
+        </h2>
+        <p class="mt-3 text-stone-300 leading-relaxed">
+          Coordinated star farms buy 5,000 GitHub stars in 48 hours for $50. StackFit combats synthetic manipulation through structural verification:
+        </p>
+        <ul class="list-disc list-inside mt-3 space-y-2 text-stone-400">
+          <li><strong class="text-stone-200">Fork-to-Star Ratio:</strong> Healthy engineering projects maintain a 3% to 8%+ fork ratio. Repositories with 6,000 stars and 12 forks are immediately penalized.</li>
+          <li><strong class="text-stone-200">Issue & PR Activity:</strong> Authentic software features continuous community dialogue, bug reports, and code contributions.</li>
+          <li><strong class="text-stone-200">Maintainer Cadence:</strong> Pushed timestamps are tracked down to the hour.</li>
         </ul>
       </section>
 
-      <section class="bg-cardDark border border-borderDark rounded-xl p-6">
-        <h2 class="text-lg font-bold text-white flex items-center gap-2">
-          <span>⚙️</span> Hardware & Local-First Profiling
+      <!-- 5. The Stack Advisor -->
+      <section class="bg-[#1c1917] border border-stone-800 rounded-2xl p-6 sm:p-8 shadow-xl">
+        <h2 class="text-xl font-bold text-stone-100 flex items-center gap-2.5">
+          <span class="text-amber-400">05.</span> Actionable Advice: The Stack Advisor
         </h2>
-        <p class="mt-2 text-slate-400 leading-relaxed">
-          Each repository is inspected for self-hosting and local hardware viability. Readme manifests, configs, and models are categorized into CPU/Minimal, Unified Apple Silicon, or Heavy CUDA (16–24GB+ VRAM) requirements before you clone.
+        <p class="mt-3 text-stone-300 leading-relaxed">
+          Discovery should lead directly to execution. StackFit's Hero CTA is the <strong>Stack Advisor</strong>: select your GPU floor and your engineering intent (e.g. "Self-Hosted RAG on Apple Silicon"), and get a complete, tested stack with an instant, copyable <code class="text-amber-400 font-mono text-xs">docker-compose.yml</code> file and Markdown stack sheet.
         </p>
       </section>
+    </div>
 
-      <section class="bg-cardDark border border-borderDark rounded-xl p-6">
-        <h2 class="text-lg font-bold text-white flex items-center gap-2">
-          <span>🔄</span> Autonomous Pipeline Architecture
-        </h2>
-        <p class="mt-2 text-slate-400 leading-relaxed">
-          DevRadar operates 100% serverlessly. A GitHub Action executes on an hourly cron schedule, running <code class="text-cyan-300">engine/analyzer.py</code> and updating atomic time-series history in <code class="text-cyan-300">data/repos.json</code> and <code class="text-cyan-300">data/history.json</code>.
-        </p>
-      </section>
+    <!-- FOOTER -->
+    <div class="mt-12 pt-6 border-t border-stone-800 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-stone-500">
+      <div>StackFit by Siddhartha &bull; Updated Daily 07:00 UTC</div>
+      <div class="flex items-center gap-4">
+        <a href="index.html" class="text-amber-400 hover:underline">Launch Dashboard</a>
+        <a href="data/feed.xml" class="text-stone-400 hover:text-amber-400">RSS 2.0</a>
+      </div>
     </div>
   </div>
 </body>

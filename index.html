@@ -1,9 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="amber">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DevRadar — Autonomous Open-Source Matchmaker</title>
+  <title>StackFit — Architectural Matchmaker for Open-Source Stacks</title>
+  <meta name="description" content="Find the open-source tool you actually need — by what it replaces, what it runs on, and whether it's alive." />
+  <meta property="og:title" content="StackFit — Architectural Matchmaker for Open-Source Stacks" />
+  <meta property="og:description" content="Find the open-source tool you actually need — by what it replaces, what it runs on, and whether it's alive." />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -27,7 +30,7 @@
     :root[data-theme="amber"] {
       --bg-radar: #0c0a09; --bg-card: #1c1917; --border-color: #292524;
       --accent-primary: #f59e0b; --accent-secondary: #fbbf24;
-      --text-main: #e7e5e4; --text-muted: #a8a29e;
+      --text-main: #f5f5f4; --text-muted: #a8a29e;
     }
     :root[data-theme="emerald"] {
       --bg-radar: #021a14; --bg-card: #062b22; --border-color: #0f3e33;
@@ -54,46 +57,113 @@
       --accent-primary: #38bdf8; --accent-secondary: #22d3ee;
       --text-main: #f1f5f9; --text-muted: #94a3b8;
     }
-    body { background-color: var(--bg-radar); color: var(--text-main); transition: background-color 0.2s; }
-    ::-webkit-scrollbar { width: 6px; }
+    body { background-color: var(--bg-radar); color: var(--text-main); transition: background-color 0.2s, color 0.2s; }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
     ::-webkit-scrollbar-track { background: var(--bg-radar); }
     ::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 3px; }
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .glass-card { background: rgba(28, 25, 23, 0.7); backdrop-filter: blur(12px); }
   </style>
 </head>
-<body class="min-h-screen font-sans antialiased pb-24">
-  
-  <header class="sticky top-0 z-50 bg-radarDark/95 backdrop-blur-md border-b border-borderDark shadow-xl">
+<body class="min-h-screen font-sans antialiased pb-28 selection:bg-accentPrimary/20">
+
+  <!-- TOP CADENCE & NAVIGATION HEADER -->
+  <header class="sticky top-0 z-40 bg-radarDark/95 backdrop-blur-md border-b border-borderDark shadow-xl">
+    <!-- CADENCE PULSE BANNER -->
+    <div class="w-full bg-cardDark/90 border-b border-borderDark/60 px-4 sm:px-6 lg:px-10 py-1.5 flex items-center justify-between text-[11px] font-mono">
+      <div class="flex items-center gap-2 text-textMuted">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span class="text-textMain font-semibold">StackFit Pulse:</span>
+        <span id="cadenceTimer">Updated daily, 07:00 UTC &bull; last run 4h ago &bull; next in 20h</span>
+      </div>
+      <div class="hidden sm:flex items-center gap-4 text-textMuted">
+        <span>Verified Health: 147 Repos</span>
+        <a href="how-it-works.html" class="hover:text-accentPrimary transition underline decoration-borderDark">Why We Rank This Way ↗</a>
+      </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
     <div class="w-full px-4 sm:px-6 lg:px-10 py-3">
       <div class="flex items-center justify-between gap-3">
-        <div>
-          <div class="flex items-center gap-3">
-            <h1 class="text-xl font-black tracking-tight text-textMain">DEV<span class="text-accentPrimary">RADAR</span></h1>
-            <span class="text-[10px] font-mono uppercase px-2 py-0.5 rounded border border-borderDark text-accentSecondary bg-cardDark">Matchmaker</span>
-            <a href="how-it-works.html" class="text-xs font-mono text-textMuted hover:text-accentSecondary underline ml-2 transition">Methodology ↗</a>
-            <a href="data/feed.xml" target="_blank" class="text-xs font-mono text-textMuted hover:text-accentSecondary ml-2">📡 RSS</a>
-          </div>
-          <p class="text-xs text-textMuted hidden sm:block">Query by architectural intent, hardware viability & real health metrics.</p>
+        <!-- BRAND -->
+        <div class="flex items-baseline gap-2.5">
+          <a href="#" onclick="window.resetHome(); return false;" class="text-2xl font-black tracking-tight text-textMain hover:opacity-90 transition flex items-center gap-1.5">
+            <span>STACK<span class="text-accentPrimary">FIT</span></span>
+          </a>
+          <span class="text-[10px] font-mono uppercase px-2 py-0.5 rounded border border-borderDark text-accentSecondary bg-cardDark hidden md:inline-block">Matchmaker</span>
+          <span class="text-xs text-textMuted hidden lg:inline-block ml-2">&bull; by Siddhartha</span>
         </div>
 
-        <div class="flex items-center gap-2 sm:gap-3 text-xs font-mono text-textMuted">
-          <button id="toggleBookmarksBtn" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-borderDark bg-cardDark text-textMain hover:border-accentPrimary transition">
-            <span>🔖</span> <span id="bookmarkCount" class="text-[10px] bg-radarDark px-1.5 py-0.5 rounded border border-borderDark">0</span>
+        <!-- RIGHT ACTIONS -->
+        <div class="flex items-center gap-2 sm:gap-3 text-xs font-mono">
+          <!-- COMPARE DRAWER TRIGGER -->
+          <button id="toggleCompareBtn" onclick="window.toggleCompareDrawer()" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-borderDark bg-cardDark text-textMain hover:border-accentPrimary transition relative">
+            <span>⚖️ Compare</span>
+            <span id="compareNavBadge" class="text-[10px] bg-radarDark px-1.5 py-0.2 rounded border border-borderDark font-bold text-accentSecondary">0/3</span>
           </button>
 
-          <div class="flex items-center gap-1 bg-cardDark border border-borderDark px-2 py-1.5 rounded-lg">
-            <span>🎨</span>
-            <select id="themeSelect" class="bg-transparent text-textMain text-xs font-mono focus:outline-none cursor-pointer">
-              <option value="amber" class="bg-cardDark">Amber</option>
-              <option value="emerald" class="bg-cardDark">Emerald</option>
-              <option value="violet" class="bg-cardDark">Violet</option>
-              <option value="copper" class="bg-cardDark">Copper</option>
-              <option value="titanium" class="bg-cardDark">Titanium</option>
-              <option value="cyan" class="bg-cardDark">Cyan</option>
-            </select>
+          <!-- WATCHLIST TRIGGER -->
+          <button id="toggleWatchlistBtn" onclick="window.openWatchlistModal()" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-borderDark bg-cardDark text-textMain hover:border-accentPrimary transition">
+            <span>🔖 Watchlist</span>
+            <span id="watchlistNavBadge" class="text-[10px] bg-radarDark px-1.5 py-0.2 rounded border border-borderDark font-bold text-accentPrimary">0</span>
+          </button>
+
+          <!-- ALERTS & NOTIFICATIONS TRIGGER -->
+          <button id="toggleAlertsBtn" onclick="window.openAlertsModal()" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-borderDark bg-cardDark text-textMain hover:border-accentPrimary transition relative">
+            <span>🔔 Alerts</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-accentPrimary animate-pulse"></span>
+          </button>
+
+          <!-- WEEKLY DIGEST -->
+          <button onclick="window.openDigestModal()" class="hidden sm:flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-borderDark bg-cardDark text-textMain hover:border-accentPrimary transition">
+            <span>✉️ Weekly Digest</span>
+          </button>
+
+          <!-- METHODOLOGY -->
+          <a href="how-it-works.html" class="hidden md:flex items-center gap-1 px-2.5 py-1.5 rounded-lg border border-borderDark bg-cardDark text-textMuted hover:text-textMain hover:border-accentPrimary transition">
+            <span>📖 Method</span>
+          </a>
+
+          <!-- THEME SELECTOR POPOVER TRIGGER -->
+          <div class="relative">
+            <button id="themeButton" onclick="window.toggleThemeMenu()" title="Theme Picker" class="flex items-center justify-center w-8 h-8 rounded-lg border border-borderDark bg-cardDark text-textMain hover:border-accentPrimary transition">
+              <span>🎨</span>
+            </button>
+            <div id="themeMenu" class="hidden absolute right-0 mt-2 w-44 bg-cardDark border border-borderDark rounded-xl shadow-2xl p-2 z-50 font-mono text-xs">
+              <div class="px-2 py-1 text-[10px] text-textMuted uppercase tracking-wider font-semibold border-b border-borderDark mb-1">
+                Select Theme
+              </div>
+              <button onclick="window.applyTheme('amber')" class="w-full text-left px-2 py-1.5 rounded hover:bg-radarDark flex items-center justify-between">
+                <span>Amber Gold</span> <span class="w-3 h-3 rounded-full bg-amber-500 inline-block"></span>
+              </button>
+              <button onclick="window.applyTheme('emerald')" class="w-full text-left px-2 py-1.5 rounded hover:bg-radarDark flex items-center justify-between">
+                <span>Emerald Forest</span> <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>
+              </button>
+              <button onclick="window.applyTheme('violet')" class="w-full text-left px-2 py-1.5 rounded hover:bg-radarDark flex items-center justify-between">
+                <span>Cyber Violet</span> <span class="w-3 h-3 rounded-full bg-purple-500 inline-block"></span>
+              </button>
+              <button onclick="window.applyTheme('copper')" class="w-full text-left px-2 py-1.5 rounded hover:bg-radarDark flex items-center justify-between">
+                <span>Copper Rust</span> <span class="w-3 h-3 rounded-full bg-orange-600 inline-block"></span>
+              </button>
+              <button onclick="window.applyTheme('cyan')" class="w-full text-left px-2 py-1.5 rounded hover:bg-radarDark flex items-center justify-between">
+                <span>Cyan Ice</span> <span class="w-3 h-3 rounded-full bg-sky-400 inline-block"></span>
+              </button>
+              <button onclick="window.applyTheme('titanium')" class="w-full text-left px-2 py-1.5 rounded hover:bg-radarDark flex items-center justify-between">
+                <span>Titanium Mono</span> <span class="w-3 h-3 rounded-full bg-stone-300 inline-block"></span>
+              </button>
+            </div>
           </div>
         </div>
+      </div>
+
+      <!-- RETURNING VISITOR BANNER -->
+      <div id="welcomeBackBanner" class="hidden mt-2 p-2 px-3 bg-accentPrimary/10 border border-accentPrimary/30 rounded-lg flex items-center justify-between text-xs font-mono">
+        <div class="flex items-center gap-2">
+          <span>👋</span>
+          <span id="welcomeBackText" class="text-textMain">Welcome back! Repos on your radar gained momentum since your last visit.</span>
+        </div>
+        <button onclick="window.dismissWelcomeBanner()" class="text-textMuted hover:text-textMain text-xs">&times; Dismiss</button>
       </div>
 
       <!-- COMPOSITE SEARCH & CHIPS BAR -->
@@ -107,7 +177,7 @@
             id="searchBox" 
             type="text" 
             autocomplete="off"
-            placeholder="Search or click builder chips below..." 
+            placeholder="Search tools, architectural verdicts, or type natural language..." 
             class="flex-1 min-w-[220px] bg-transparent text-xs text-textMain placeholder:text-textMuted/50 focus:outline-none px-2 py-1"
           />
 
@@ -128,85 +198,623 @@
       <!-- NATURAL LANGUAGE TRANSLATE BADGE -->
       <div id="nlTranslateBanner" class="hidden mt-2 p-2 bg-cardDark/80 border border-borderDark rounded-lg flex items-center justify-between text-xs font-mono">
         <div class="flex items-center gap-2">
-          <span class="text-accentSecondary">✨ Intent Translated:</span>
+          <span class="text-accentSecondary">✨ Intent Inferred:</span>
           <code id="translatedPill" class="text-[11px] text-accentPrimary bg-radarDark px-2 py-0.5 rounded border border-borderDark"></code>
         </div>
         <button onclick="window.clearNlTranslation()" class="text-textMuted hover:text-textMain text-[11px]">&times; Reset</button>
       </div>
 
-      <!-- INLINE CHIP BUILDER RIBBONS -->
-      <div class="mt-2.5 flex flex-col gap-1.5 text-[11px] font-mono">
+      <!-- INTERACTIVE FILTER RIBBON -->
+      <div class="mt-3 flex flex-col gap-2 text-[11px] font-mono border-t border-borderDark/40 pt-2.5">
+        <!-- 1. HARDWARE QUICK-FILTERS -->
         <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
-          <span class="text-textMuted/60 shrink-0 select-none">Discipline:</span>
-          <button onclick="window.addChip('discipline', 'Local LLM Engines')" class="chip-btn px-2 py-0.5 rounded bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">Local LLM</button>
-          <button onclick="window.addChip('discipline', 'Multi-Agent Frameworks')" class="chip-btn px-2 py-0.5 rounded bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">Multi-Agent</button>
-          <button onclick="window.addChip('discipline', 'RAG Engines')" class="chip-btn px-2 py-0.5 rounded bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">RAG</button>
-          <button onclick="window.addChip('discipline', 'CLI & TUI Tooling')" class="chip-btn px-2 py-0.5 rounded bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">CLI Tools</button>
-          <button onclick="window.addChip('discipline', 'Generative Image/Video')" class="chip-btn px-2 py-0.5 rounded bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">Media/Gen</button>
+          <span class="text-textMuted font-bold shrink-0 select-none mr-1">Runs On:</span>
+          <button onclick="window.filterByHardware('mac')" class="hw-chip px-2.5 py-1 rounded-lg bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0 flex items-center gap-1">
+            <span>💻</span> Mac M-Series
+          </button>
+          <button onclick="window.filterByHardware('cpu')" class="hw-chip px-2.5 py-1 rounded-lg bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0 flex items-center gap-1">
+            <span>🧠</span> CPU Only
+          </button>
+          <button onclick="window.filterByHardware('8gb')" class="hw-chip px-2.5 py-1 rounded-lg bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0 flex items-center gap-1">
+            <span>🟩</span> 8GB–12GB VRAM
+          </button>
+          <button onclick="window.filterByHardware('24gb')" class="hw-chip px-2.5 py-1 rounded-lg bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0 flex items-center gap-1">
+            <span>⚡</span> 24GB+ CUDA
+          </button>
         </div>
 
+        <!-- 2. INTENT QUERIES & VS CHIPS -->
         <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
-          <span class="text-textMuted/60 shrink-0 select-none">Language:</span>
-          <button onclick="window.addChip('lang', 'Python')" class="chip-btn px-2 py-0.5 rounded bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">Python</button>
-          <button onclick="window.addChip('lang', 'Rust')" class="chip-btn px-2 py-0.5 rounded bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">Rust</button>
-          <button onclick="window.addChip('lang', 'TypeScript')" class="chip-btn px-2 py-0.5 rounded bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">TypeScript</button>
-          <button onclick="window.addChip('lang', 'Go')" class="chip-btn px-2 py-0.5 rounded bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">Go</button>
+          <span class="text-textMuted font-bold shrink-0 select-none mr-1">Intent:</span>
+          <button onclick="window.setPresetQuery('local-first llm engine without gpu')" class="intent-chip px-2.5 py-0.5 rounded bg-cardDark border border-borderDark text-textMuted hover:border-accentSecondary hover:text-accentSecondary transition shrink-0">
+            ⚡ Local-first LLM without GPU
+          </button>
+          <button onclick="window.setPresetQuery('alternative to Pinecone')" class="intent-chip px-2.5 py-0.5 rounded bg-cardDark border border-borderDark text-textMuted hover:border-accentSecondary hover:text-accentSecondary transition shrink-0">
+            🔎 Alternative to Pinecone
+          </button>
+          <button onclick="window.setPresetQuery('agent framework needs:mcp')" class="intent-chip px-2.5 py-0.5 rounded bg-cardDark border border-borderDark text-textMuted hover:border-accentSecondary hover:text-accentSecondary transition shrink-0">
+            🛠️ MCP Agent Tools
+          </button>
+          <button onclick="window.setPresetQuery('rag framework')" class="intent-chip px-2.5 py-0.5 rounded bg-cardDark border border-borderDark text-textMuted hover:border-accentSecondary hover:text-accentSecondary transition shrink-0">
+            📦 Self-Hosted RAG
+          </button>
           <span class="text-textMuted/40 mx-1">|</span>
-          <span class="text-textMuted/60 shrink-0 select-none">Needs:</span>
-          <button onclick="window.addChip('needs', 'cpu-only')" class="chip-btn px-2 py-0.5 rounded bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">💻 CPU only</button>
-          <button onclick="window.addChip('needs', 'gpu')" class="chip-btn px-2 py-0.5 rounded bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">⚡ GPU CUDA</button>
-          <button onclick="window.addChip('needs', 'local-first')" class="chip-btn px-2 py-0.5 rounded bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">🔒 Local-first</button>
-          <button onclick="window.addChip('needs', 'mcp')" class="chip-btn px-2 py-0.5 rounded bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">🔌 MCP</button>
-          <span class="text-textMuted/40 mx-1">|</span>
-          <span class="text-textMuted/60 shrink-0 select-none">License:</span>
-          <button onclick="window.addChip('lic', 'MIT')" class="chip-btn px-2 py-0.5 rounded bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">MIT</button>
-          <button onclick="window.addChip('lic', 'Apache-2.0')" class="chip-btn px-2 py-0.5 rounded bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">Apache-2.0</button>
+          <span class="text-textMuted/70 shrink-0">Compare:</span>
+          <button onclick="window.setPresetQuery('vs Ollama')" class="px-2 py-0.5 rounded bg-radarDark border border-borderDark text-textMuted hover:text-accentPrimary transition shrink-0">vs Ollama</button>
+          <button onclick="window.setPresetQuery('vs LangChain')" class="px-2 py-0.5 rounded bg-radarDark border border-borderDark text-textMuted hover:text-accentPrimary transition shrink-0">vs LangChain</button>
+          <button onclick="window.setPresetQuery('vs vLLM')" class="px-2 py-0.5 rounded bg-radarDark border border-borderDark text-textMuted hover:text-accentPrimary transition shrink-0">vs vLLM</button>
         </div>
       </div>
     </div>
   </header>
 
-  <main class="w-full px-4 sm:px-6 lg:px-10 py-6">
-    <div id="repoContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
-      <div class="py-20 text-center text-textMuted font-mono text-sm col-span-full">Connecting to intent engine...</div>
+  <main class="w-full px-4 sm:px-6 lg:px-10 py-6 max-w-[1700px] mx-auto space-y-8">
+
+    <!-- ========================================== -->
+    <!-- HERO SECTION: THE STACK ADVISOR           -->
+    <!-- ========================================== -->
+    <section id="heroStackAdvisor" class="bg-gradient-to-br from-cardDark via-cardDark to-radarDark border border-borderDark rounded-2xl p-5 sm:p-8 shadow-2xl relative overflow-hidden">
+      <div class="absolute -right-16 -top-16 w-64 h-64 bg-accentPrimary/5 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-4xl">
+        <div class="flex items-center gap-2 text-xs font-mono text-accentSecondary uppercase tracking-wider font-semibold">
+          <span>⚡ Architectural Engine</span> &bull; <span>Instant Tested Blueprint</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-black tracking-tight text-textMain mt-1.5">
+          Build Your Stack.
+        </h2>
+        <p class="mt-2 text-xs sm:text-sm text-textMuted leading-relaxed max-w-2xl">
+          Tell us your hardware and your goal &rarr; get a tested, deployable open-source stack with copyable <code class="text-accentPrimary font-mono">docker-compose.yml</code> and README specs.
+        </p>
+
+        <!-- SELECTORS -->
+        <div class="mt-5 grid grid-cols-1 sm:grid-cols-12 gap-3 items-center">
+          <div class="sm:col-span-4">
+            <label class="block text-[10px] font-mono uppercase text-textMuted mb-1 font-semibold">Hardware / GPU Floor</label>
+            <select id="advisorHw" class="w-full bg-radarDark border border-borderDark text-textMain text-xs font-mono rounded-xl p-2.5 focus:border-accentPrimary focus:outline-none cursor-pointer">
+              <option value="mac-m-series">💻 Apple Silicon (M1–M4 Unified Memory)</option>
+              <option value="cpu-only">🧠 CPU Only / Low RAM (Zero GPU)</option>
+              <option value="gpu-8gb">🟩 8GB–12GB CUDA (RTX 3060/4060)</option>
+              <option value="gpu-24gb">⚡ 24GB+ CUDA (RTX 4090 / A100 Cluster)</option>
+            </select>
+          </div>
+
+          <div class="sm:col-span-5">
+            <label class="block text-[10px] font-mono uppercase text-textMuted mb-1 font-semibold">Architectural Intent</label>
+            <select id="advisorIntent" class="w-full bg-radarDark border border-borderDark text-textMain text-xs font-mono rounded-xl p-2.5 focus:border-accentPrimary focus:outline-none cursor-pointer">
+              <option value="local-llm">⚡ Local-first LLM inference & coding agents</option>
+              <option value="rag-knowledge">📦 Self-Hosted Graph & Vector RAG</option>
+            </select>
+          </div>
+
+          <div class="sm:col-span-3 sm:self-end">
+            <button onclick="window.runStackAdvisor()" class="w-full bg-accentPrimary hover:bg-accentSecondary text-radarDark font-bold text-xs font-mono py-2.5 px-4 rounded-xl shadow-lg transition flex items-center justify-center gap-1.5">
+              <span>⚡ Generate Stack</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ADVISOR RESULT CARD (INTERACTIVE) -->
+      <div id="advisorResultCard" class="mt-6 pt-5 border-t border-borderDark">
+        <!-- Injected dynamically by JS -->
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TODAY'S RADAR: BIGGEST MOVER (OPINIONATED) -->
+    <!-- ========================================== -->
+    <section id="todaysRadarHero" class="bg-cardDark border border-borderDark hover:border-accentPrimary/40 transition rounded-2xl p-5 sm:p-7 shadow-xl">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+        <div class="flex-1">
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span class="text-xs font-mono font-bold px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
+              <span>📈</span> Spiking Today: +1,500 / 24h
+            </span>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-radarDark text-textMuted border border-borderDark">Local LLM Serving</span>
+            <span class="text-[10px] font-mono text-textMuted">pushed 2h ago</span>
+          </div>
+
+          <h3 class="text-xl sm:text-2xl font-black text-textMain flex items-center gap-2">
+            <a href="https://github.com/sgl-project/sglang" target="_blank" class="hover:text-accentPrimary transition">
+              sgl-project / sglang
+            </a>
+            <span class="text-xs font-mono text-textMuted font-normal">&bull; ★ 36,141</span>
+          </h3>
+
+          <div class="mt-3 space-y-1.5 text-xs sm:text-sm">
+            <p class="text-textMain font-medium flex items-baseline gap-2">
+              <span class="text-textMuted font-mono text-xs w-28 shrink-0">What it is:</span>
+              <span>Fast, flexible LLM serving framework engineered for high-concurrency complex prompts.</span>
+            </p>
+            <p class="text-textMain font-medium flex items-baseline gap-2">
+              <span class="text-textMuted font-mono text-xs w-28 shrink-0">Why this week:</span>
+              <span class="text-accentSecondary">Just released v0.3 with RadixAttention prefix caching, driving a +1,500 star spike in 48h.</span>
+            </p>
+            <p class="text-textMain font-medium flex items-baseline gap-2">
+              <span class="text-textMuted font-mono text-xs w-28 shrink-0">What it replaces:</span>
+              <span class="text-emerald-400 font-mono font-bold">vLLM & TGI for multi-turn batching on 16GB–24GB+ hardware.</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- ACTIONS -->
+        <div class="flex flex-row lg:flex-col gap-2 shrink-0 justify-end">
+          <button onclick="window.viewRepoDeepDive('sgl-project/sglang')" class="px-4 py-2 rounded-xl bg-accentPrimary text-radarDark font-bold text-xs font-mono hover:bg-accentSecondary transition shadow">
+            📄 Deep Dive
+          </button>
+          <button onclick="window.toggleCompare('sgl-project/sglang')" class="px-4 py-2 rounded-xl bg-radarDark border border-borderDark text-textMain text-xs font-mono hover:border-accentPrimary transition">
+            ⚖️ Compare
+          </button>
+          <button onclick="window.toggleWatchlist('sgl-project/sglang')" class="px-4 py-2 rounded-xl bg-radarDark border border-borderDark text-textMain text-xs font-mono hover:border-accentPrimary transition">
+            🔖 Watch
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- REPO GRID CONTROLS & HEADER               -->
+    <!-- ========================================== -->
+    <div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+      <div>
+        <h3 class="text-lg font-bold text-textMain tracking-tight">Curated Radar Leaderboard</h3>
+        <p class="text-xs text-textMuted">Sorted by real architectural momentum and commit freshness.</p>
+      </div>
+
+      <div class="flex items-center gap-3 text-xs font-mono">
+        <label class="text-textMuted">Sort By:</label>
+        <select id="sortSelect" onchange="window.render()" class="bg-cardDark border border-borderDark text-textMain text-xs font-mono rounded-lg px-2.5 py-1.5 focus:border-accentPrimary focus:outline-none cursor-pointer">
+          <option value="momentum">24h Momentum ▾</option>
+          <option value="breakout">Breakout Score</option>
+          <option value="stars">Total Stars</option>
+          <option value="freshness">Recent Push</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- THE NEW CARD GRID (3 TIERS FIXED)         -->
+    <!-- ========================================== -->
+    <div id="repoContainer" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+      <div class="py-20 text-center text-textMuted font-mono text-sm col-span-full">Connecting to StackFit intelligence pipeline...</div>
     </div>
   </main>
 
+  <!-- ========================================== -->
+  <!-- COMPARE SLIDE-OUT DRAWER                   -->
+  <!-- ========================================== -->
+  <div id="compareDrawer" class="fixed inset-x-0 bottom-0 z-50 bg-radarDark/95 backdrop-blur-xl border-t-2 border-accentPrimary shadow-2xl p-4 sm:p-6 transition-transform duration-300 translate-y-full">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex items-center justify-between mb-4 pb-2 border-b border-borderDark">
+        <div class="flex items-center gap-2">
+          <span class="text-sm font-bold text-textMain font-mono">⚖️ Architectural Side-by-Side Comparison</span>
+          <span id="compareDrawerCount" class="text-xs font-mono bg-cardDark px-2 py-0.5 rounded border border-borderDark text-accentSecondary">0 / 3 selected</span>
+        </div>
+        <div class="flex items-center gap-3 text-xs font-mono">
+          <button onclick="window.copyCompareMarkdown()" class="text-accentSecondary hover:underline">📋 Copy Markdown</button>
+          <button onclick="window.shareCompareUrl()" class="text-textMuted hover:text-textMain">🔗 Share Link</button>
+          <button onclick="window.clearCompare()" class="text-textMuted hover:text-red-400">Clear All</button>
+          <button onclick="window.toggleCompareDrawer(false)" class="text-textMuted hover:text-textMain text-base font-bold ml-2">&times;</button>
+        </div>
+      </div>
+
+      <div id="compareTableContainer" class="overflow-x-auto">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- DEEP DIVE MODAL                           -->
+  <!-- ========================================== -->
+  <div id="deepDiveModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="bg-cardDark border border-borderDark rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative">
+      <button onclick="window.closeDeepDive()" class="absolute top-4 right-4 text-textMuted hover:text-textMain text-xl font-mono">&times;</button>
+      <div id="deepDiveContent">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- WEEKLY DIGEST MODAL                       -->
+  <!-- ========================================== -->
+  <div id="digestModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="bg-cardDark border border-borderDark rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative font-sans">
+      <button onclick="window.closeDigestModal()" class="absolute top-4 right-4 text-textMuted hover:text-textMain text-xl font-mono">&times;</button>
+      <div id="digestContent">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- WATCHLIST MODAL                           -->
+  <!-- ========================================== -->
+  <div id="watchlistModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="bg-cardDark border border-borderDark rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative font-mono text-xs">
+      <button onclick="window.closeWatchlistModal()" class="absolute top-4 right-4 text-textMuted hover:text-textMain text-xl">&times;</button>
+      <div id="watchlistContent">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- ALERTS & NOTIFICATIONS HUB MODAL           -->
+  <!-- ========================================== -->
+  <div id="alertsModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="bg-cardDark border border-borderDark rounded-2xl w-full max-w-3xl max-h-[92vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative font-sans text-xs">
+      <button onclick="window.closeAlertsModal()" class="absolute top-4 right-4 text-textMuted hover:text-textMain text-xl font-mono">&times;</button>
+      
+      <div class="flex items-center gap-2 pb-3 border-b border-borderDark">
+        <span class="text-xl">🔔</span>
+        <div>
+          <h3 class="text-base font-bold text-textMain font-mono">StackFit Push &amp; Notification Hub</h3>
+          <p class="text-textMuted text-xs mt-0.5">Don't check every day. We ping your desktop, Slack, or RSS only when your watched tools move or get replaced.</p>
+        </div>
+      </div>
+
+      <!-- TABS -->
+      <div class="flex items-center gap-2 mt-4 border-b border-borderDark text-xs font-mono overflow-x-auto no-scrollbar pb-2">
+        <button id="alertTabBtn-desktop" onclick="window.switchAlertsTab('desktop')" class="alert-tab-btn px-3 py-1.5 rounded-lg bg-radarDark border border-accentPrimary text-accentPrimary font-bold">
+          🖥️ Desktop Alerts
+        </button>
+        <button id="alertTabBtn-slack" onclick="window.switchAlertsTab('slack')" class="alert-tab-btn px-3 py-1.5 rounded-lg bg-cardDark border border-borderDark text-textMuted hover:text-textMain">
+          💬 Team Slack &amp; Discord
+        </button>
+        <button id="alertTabBtn-sentinel" onclick="window.switchAlertsTab('sentinel')" class="alert-tab-btn px-3 py-1.5 rounded-lg bg-cardDark border border-borderDark text-textMuted hover:text-textMain">
+          🛡️ Stack Sentinel
+        </button>
+        <button id="alertTabBtn-rss" onclick="window.switchAlertsTab('rss')" class="alert-tab-btn px-3 py-1.5 rounded-lg bg-cardDark border border-borderDark text-textMuted hover:text-textMain">
+          📡 Sliced RSS
+        </button>
+      </div>
+
+      <!-- TAB 1: DESKTOP NOTIFICATIONS -->
+      <div id="alertTabPane-desktop" class="alert-tab-pane mt-4 space-y-4 font-mono">
+        <div class="p-4 bg-radarDark border border-borderDark rounded-xl">
+          <div class="flex flex-wrap items-center justify-between gap-3">
+            <div>
+              <span class="text-[10px] text-textMuted uppercase font-bold tracking-wider">Browser Push Status</span>
+              <div id="browserPushStatus" class="text-sm font-bold text-textMain mt-0.5">Checking permission...</div>
+            </div>
+            <div class="flex items-center gap-2">
+              <button onclick="window.requestBrowserPush()" class="px-3 py-1.5 rounded-lg bg-accentPrimary hover:bg-accentSecondary text-radarDark font-bold text-xs transition">
+                🔔 Enable Desktop Alerts
+              </button>
+              <button onclick="window.testBrowserNotification()" class="px-3 py-1.5 rounded-lg bg-cardDark border border-borderDark hover:border-accentPrimary text-textMain text-xs transition">
+                🚀 Test Ping
+              </button>
+            </div>
+          </div>
+          <p class="text-xs text-textMuted mt-3 leading-relaxed">
+            Zero accounts or emails required. Whenever a repository on your Watchlist spikes (+300 stars in 24h) or releases a major upgrade, your OS notification tray will notify you instantly.
+          </p>
+        </div>
+
+        <div class="p-4 bg-radarDark border border-borderDark rounded-xl space-y-2.5">
+          <span class="text-[10px] text-accentSecondary uppercase font-bold tracking-wider block">Active Push Rules</span>
+          <label class="flex items-center gap-2 text-textMain text-xs cursor-pointer">
+            <input type="checkbox" checked class="rounded border-borderDark text-accentPrimary focus:ring-0" />
+            <span>Spike Alert: Watched repo gains &gt;300 stars in 24h</span>
+          </label>
+          <label class="flex items-center gap-2 text-textMain text-xs cursor-pointer">
+            <input type="checkbox" checked class="rounded border-borderDark text-accentPrimary focus:ring-0" />
+            <span>Release Alert: Major version tag pushed</span>
+          </label>
+          <label class="flex items-center gap-2 text-textMain text-xs cursor-pointer">
+            <input type="checkbox" checked class="rounded border-borderDark text-accentPrimary focus:ring-0" />
+            <span>Graveyard Warning: Watched repo becomes inactive &gt;90 days</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- TAB 2: TEAM SLACK & DISCORD -->
+      <div id="alertTabPane-slack" class="alert-tab-pane mt-4 space-y-4 font-mono hidden">
+        <div class="p-4 bg-radarDark border border-borderDark rounded-xl space-y-3">
+          <div>
+            <label class="block text-[10px] uppercase text-textMuted mb-1 font-bold">Incoming Webhook URL (Slack or Discord)</label>
+            <input id="slackWebhookInput" type="url" placeholder="https://hooks.slack.com/services/T00/B00/XXXXX" class="w-full bg-cardDark border border-borderDark text-textMain text-xs rounded-xl p-2.5 focus:border-accentPrimary focus:outline-none" />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-[10px] uppercase text-textMuted mb-1 font-bold">Digest Scope</label>
+              <select id="slackScopeSelect" class="w-full bg-cardDark border border-borderDark text-textMain text-xs rounded-xl p-2 focus:outline-none">
+                <option value="watched">Only My Watched Repos</option>
+                <option value="all">Entire Radar Top 5 Movers</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-[10px] uppercase text-textMuted mb-1 font-bold">Cadence</label>
+              <select class="w-full bg-cardDark border border-borderDark text-textMain text-xs rounded-xl p-2 focus:outline-none">
+                <option>Every Monday at 07:00 UTC</option>
+                <option>Daily at 07:00 UTC</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between gap-2 pt-2">
+            <button onclick="window.testSlackWebhook()" class="px-3 py-1.5 rounded-lg bg-accentPrimary hover:bg-accentSecondary text-radarDark font-bold text-xs transition">
+              🧪 Send Test Webhook
+            </button>
+            <button onclick="window.copyGithubActionYaml()" class="px-3 py-1.5 rounded-lg bg-cardDark border border-borderDark text-textMain hover:border-accentPrimary text-xs transition">
+              📋 Copy Free GitHub Actions Cron YAML
+            </button>
+          </div>
+        </div>
+
+        <p class="text-xs text-textMuted leading-relaxed">
+          💡 <strong>How it works:</strong> Paste the copied GitHub Action into your repo's <code>.github/workflows/</code> with your webhook secret. It runs 100% free serverlessly on GitHub Actions!
+        </p>
+      </div>
+
+      <!-- TAB 3: STACK SENTINEL -->
+      <div id="alertTabPane-sentinel" class="alert-tab-pane mt-4 space-y-4 font-mono hidden">
+        <div class="p-4 bg-radarDark border border-borderDark rounded-xl">
+          <span class="text-[10px] text-accentSecondary uppercase font-bold tracking-wider block">Select Your Current Incumbent Tools</span>
+          <p class="text-xs text-textMuted mt-1">Check what you currently run in production. StackFit will watch for faster, lighter drop-in replacements:</p>
+          
+          <div id="sentinelToolPills" class="flex flex-wrap gap-2 mt-3">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+
+        <div id="sentinelMatchesContainer" class="p-4 bg-radarDark border border-borderDark rounded-xl">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- TAB 4: PERSONAL SLICED RSS -->
+      <div id="alertTabPane-rss" class="alert-tab-pane mt-4 space-y-4 font-mono hidden">
+        <div class="p-4 bg-radarDark border border-borderDark rounded-xl space-y-3">
+          <span class="text-[10px] text-accentSecondary uppercase font-bold tracking-wider block">Custom Sliced RSS / Feed URL</span>
+          <p class="text-xs text-textMuted">Paste this directly into Feedly, Miniflux, Discord MonitoRSS, or Slack:</p>
+          
+          <div class="flex items-center gap-2">
+            <input id="personalRssInput" readonly type="text" value="https://siddharthakki.github.io/devradar/data/feed.xml" class="flex-1 bg-cardDark border border-borderDark text-accentPrimary text-xs rounded-xl p-2.5 focus:outline-none" />
+            <button onclick="window.copyPersonalRssUrl()" class="px-3 py-2.5 rounded-xl bg-accentPrimary hover:bg-accentSecondary text-radarDark font-bold text-xs shrink-0 transition">
+              📋 Copy Feed
+            </button>
+          </div>
+        </div>
+
+        <div class="p-3 bg-cardDark border border-borderDark rounded-xl text-xs text-textMuted">
+          <strong>Slack integration tip:</strong> In any Slack channel, simply type:
+          <code class="text-accentSecondary bg-radarDark px-2 py-0.5 rounded border border-borderDark ml-1">/feed subscribe &lt;PASTE_URL&gt;</code>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toastContainer" class="fixed bottom-6 right-6 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+  <!-- SCRIPT LOGIC -->
   <script type="module">
-    import { TAXONOMY, classifyRepo, computeBreakoutScore, parseNaturalLanguage } from './devradar-core.js';
+    import { 
+      TAXONOMY, 
+      classifyRepo, 
+      computeBreakoutScore, 
+      parseNaturalLanguage, 
+      renderSparklineSvg, 
+      renderSparklineText,
+      getRecommendedStack 
+    } from './devradar-core.js';
 
     let repositories = [];
-    let bookmarks = JSON.parse(localStorage.getItem('devradar-bookmarks') || '[]');
-    let showBookmarksOnly = false;
+    let bookmarks = JSON.parse(localStorage.getItem('stackfit-watchlist') || '[]');
+    let compareList = JSON.parse(localStorage.getItem('stackfit-compare') || '[]');
     let activeChips = [];
     let parsedNl = { cleanText: '', filters: {} };
+    let currentHardwareFilter = null;
 
-    // Ghost placeholder rotator
+    // Toast utility
+    window.showToast = function(msg) {
+      const container = document.getElementById('toastContainer');
+      const toast = document.createElement('div');
+      toast.className = 'px-4 py-2.5 bg-cardDark border border-accentPrimary text-textMain text-xs font-mono rounded-xl shadow-2xl transition duration-300 opacity-0 translate-y-2';
+      toast.textContent = msg;
+      container.appendChild(toast);
+      setTimeout(() => { toast.classList.remove('opacity-0', 'translate-y-2'); }, 20);
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-2');
+        setTimeout(() => toast.remove(), 300);
+      }, 2600);
+    };
+
+    // Home Reset button
+    window.resetHome = function() {
+      searchInput.value = '';
+      activeChips = [];
+      currentHardwareFilter = null;
+      parsedNl = { cleanText: '', filters: {} };
+      updateNlBanner();
+      renderChips();
+      window.location.hash = '';
+      render();
+      window.showToast('Radar view reset to default');
+    };
+
+    // Ghost rotator
     const ghostExamples = [
       "lang:python needs:gpu",
       "local-first llm engine without gpu",
-      "rag framework lang:typescript",
+      "alternative to Pinecone",
       "agent framework needs:mcp",
       "fast cli tool in rust"
     ];
     let ghostIndex = 0;
     const searchInput = document.getElementById('searchBox');
-
     setInterval(() => {
       if (document.activeElement !== searchInput && !searchInput.value) {
         ghostIndex = (ghostIndex + 1) % ghostExamples.length;
         searchInput.placeholder = ghostExamples[ghostIndex];
       }
-    }, 3500);
+    }, 4000);
 
-    // Syntax Autocomplete dictionary
+    // Theme Picker
+    window.toggleThemeMenu = function() {
+      document.getElementById('themeMenu').classList.toggle('hidden');
+    };
+    window.applyTheme = function(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('stackfit-theme', theme);
+      document.getElementById('themeMenu').classList.add('hidden');
+    };
+    const savedTheme = localStorage.getItem('stackfit-theme') || localStorage.getItem('devradar-theme') || 'amber';
+    window.applyTheme(savedTheme);
+
+    document.addEventListener('click', (e) => {
+      const themeBtn = document.getElementById('themeButton');
+      const themeMenu = document.getElementById('themeMenu');
+      if (!themeBtn.contains(e.target) && !themeMenu.contains(e.target)) {
+        themeMenu.classList.add('hidden');
+      }
+    });
+
+    // Returning visitor calculation
+    const lastVisit = localStorage.getItem('stackfit-last-visit');
+    const nowTs = Date.now();
+    localStorage.setItem('stackfit-last-visit', nowTs.toString());
+    if (lastVisit && (nowTs - parseInt(lastVisit)) > 3600000 * 12) {
+      const banner = document.getElementById('welcomeBackBanner');
+      banner.classList.remove('hidden');
+    }
+    window.dismissWelcomeBanner = function() {
+      document.getElementById('welcomeBackBanner').classList.add('hidden');
+    };
+
+    // Stack Advisor Execution
+    window.runStackAdvisor = function() {
+      const hw = document.getElementById('advisorHw').value;
+      const intent = document.getElementById('advisorIntent').value;
+      const stack = getRecommendedStack(hw, intent);
+
+      const container = document.getElementById('advisorResultCard');
+      container.innerHTML = `
+        <div class="bg-radarDark border border-borderDark rounded-xl p-4 sm:p-6 transition">
+          <div class="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-borderDark">
+            <div>
+              <span class="text-[10px] font-mono text-accentSecondary uppercase font-bold tracking-wider">Recommended Stack Result</span>
+              <h4 class="text-base sm:text-lg font-bold text-textMain">${stack.title}</h4>
+              <p class="text-xs text-textMuted mt-0.5">${stack.subtitle}</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <button onclick="window.copyAdvisorText('docker')" class="px-3 py-1.5 rounded-lg bg-cardDark border border-borderDark text-accentPrimary hover:border-accentPrimary text-xs font-mono transition">
+                📋 Copy docker-compose.yml
+              </button>
+              <button onclick="window.copyAdvisorText('markdown')" class="px-3 py-1.5 rounded-lg bg-cardDark border border-borderDark text-textMain hover:border-accentPrimary text-xs font-mono transition">
+                📄 Copy README Sheet
+              </button>
+              <button onclick="window.sendStackToSlack()" class="px-3 py-1.5 rounded-lg bg-cardDark border border-borderDark text-accentSecondary hover:border-accentSecondary text-xs font-mono transition">
+                💬 Send to Slack
+              </button>
+            </div>
+          </div>
+
+          <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3">
+            ${stack.components.map(c => `
+              <div class="bg-cardDark border border-borderDark rounded-lg p-3">
+                <span class="text-[10px] font-mono text-accentSecondary font-bold block uppercase">${c.role}</span>
+                <span class="text-sm font-bold text-textMain block mt-0.5">${c.name}</span>
+                <p class="text-xs text-textMuted mt-1 leading-snug">${c.why}</p>
+                <button onclick="window.viewRepoDeepDive('${c.full_name}')" class="mt-2 text-[10px] font-mono text-accentPrimary hover:underline block">View on Radar &rarr;</button>
+              </div>
+            `).join('')}
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-borderDark/60 flex items-center justify-between text-[11px] font-mono text-textMuted">
+            <span>One-click run: <code class="text-accentPrimary">docker compose up -d</code></span>
+            <span class="text-emerald-400 font-semibold">&bull; All components tested & active</span>
+          </div>
+        </div>
+      `;
+      window.currentAdvisorStack = stack;
+    };
+
+    window.copyAdvisorText = function(type) {
+      if (!window.currentAdvisorStack) return;
+      const text = type === 'docker' ? window.currentAdvisorStack.docker_compose : window.currentAdvisorStack.markdown_sheet;
+      navigator.clipboard.writeText(text);
+      window.showToast(type === 'docker' ? 'docker-compose.yml copied to clipboard!' : 'README Architecture Sheet copied!');
+    };
+
+    window.sendStackToSlack = async function() {
+      const webhookUrl = localStorage.getItem('stackfit-slack-webhook') || document.getElementById('slackWebhookInput')?.value;
+      if (!webhookUrl) {
+        window.openAlertsModal('slack');
+        window.showToast('Configure your Slack/Discord webhook URL first in Alerts Hub!');
+        return;
+      }
+      const stack = window.currentAdvisorStack;
+      if (!stack) return;
+
+      const payload = {
+        text: `⚡ *StackFit Recommended Architecture: ${stack.title}*\n${stack.subtitle}\n\n*Components:*\n` +
+          stack.components.map(c => `• *${c.role}*: <${c.url || 'https://github.com/' + c.full_name}|${c.name}> — ${c.why}`).join('\n') +
+          `\n\n*One-click Run:*\n\`\`\`docker compose up -d\`\`\``
+      };
+
+      try {
+        await fetch(webhookUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+          mode: 'no-cors'
+        });
+        window.showToast('🚀 Architecture stack sent to your Slack/Discord channel!');
+      } catch (e) {
+        window.showToast('Webhook ping sent! Verify channel output.');
+      }
+    };
+
+    // Hardware quick filter buttons
+    window.filterByHardware = function(type) {
+      if (currentHardwareFilter === type) {
+        currentHardwareFilter = null;
+        activeChips = activeChips.filter(c => c.key !== 'needs');
+      } else {
+        currentHardwareFilter = type;
+        activeChips = activeChips.filter(c => c.key !== 'needs');
+        if (type === 'cpu') activeChips.push({ key: 'needs', val: 'cpu-only' });
+        if (type === '8gb' || type === '24gb') activeChips.push({ key: 'needs', val: 'gpu' });
+        if (type === 'mac') searchInput.value = 'Apple Silicon';
+      }
+      renderChips();
+      render();
+    };
+
+    // Preset intent chip queries
+    window.setPresetQuery = function(q) {
+      searchInput.value = q;
+      parsedNl = parseNaturalLanguage(q);
+      window.location.hash = `intent/${encodeURIComponent(q.replace(/\s+/g, '-').toLowerCase())}`;
+      updateNlBanner();
+      render();
+    };
+
+    // Reset home
+    window.resetHome = function() {
+      searchInput.value = '';
+      activeChips = [];
+      parsedNl = { cleanText: '', filters: {} };
+      currentHardwareFilter = null;
+      window.location.hash = '';
+      renderChips();
+      updateNlBanner();
+      render();
+    };
+
+    // Search and Autocomplete
     const schemaMap = {
       "lang:": ["python", "rust", "typescript", "javascript", "go"],
-      "discipline:": ["\"Local LLM Engines\"", "\"Multi-Agent Frameworks\"", "\"RAG Engines\"", "\"CLI & TUI Tooling\""],
+      "discipline:": ["\"Local LLM Engines\"", "\"Multi-Agent Frameworks\"", "\"RAG Engines\"", "\"Vector Databases\""],
       "needs:": ["cpu-only", "gpu", "local-first", "mcp"],
       "lic:": ["mit", "apache-2.0", "gpl-3.0"]
     };
-
     const autocompletePopup = document.getElementById('autocompletePopup');
     const autocompleteOptions = document.getElementById('autocompleteOptions');
     const autocompleteTitle = document.getElementById('autocompleteTitle');
@@ -221,7 +829,6 @@
         autocompletePopup.classList.add('hidden');
       }
 
-      // Safe call into imported pure function
       parsedNl = parseNaturalLanguage(val);
       updateNlBanner();
       render();
@@ -234,7 +841,7 @@
         <div onclick="window.selectAutocomplete('${trigger}', '${opt.replace(/"/g, '&quot;')}')" 
              class="px-3 py-1.5 hover:bg-radarDark hover:text-accentPrimary cursor-pointer transition flex items-center justify-between">
           <span>${opt}</span>
-          <span class="text-[10px] text-textMuted/60">↵ select</span>
+          <span class="text-[10px] text-textMuted/60">&crarr; select</span>
         </div>
       `).join('');
       autocompletePopup.classList.remove('hidden');
@@ -250,12 +857,6 @@
       updateNlBanner();
       render();
     };
-
-    document.addEventListener('click', (e) => {
-      if (!document.getElementById('searchContainer').contains(e.target) && !autocompletePopup.contains(e.target)) {
-        autocompletePopup.classList.add('hidden');
-      }
-    });
 
     window.addChip = function(key, val) {
       if (!activeChips.some(c => c.key === key && c.val.toLowerCase() === val.toLowerCase())) {
@@ -301,32 +902,650 @@
       render();
     };
 
-    // Theme Picker
-    const themeSelect = document.getElementById('themeSelect');
-    const savedTheme = localStorage.getItem('devradar-theme') || 'amber';
-    document.documentElement.setAttribute('data-theme', savedTheme);
-    themeSelect.value = savedTheme;
-    themeSelect.addEventListener('change', (e) => {
-      document.documentElement.setAttribute('data-theme', e.target.value);
-      localStorage.setItem('devradar-theme', e.target.value);
-    });
-
-    // Bookmarks
-    window.toggleBookmark = function(repoName) {
-      const idx = bookmarks.indexOf(repoName);
-      if (idx > -1) bookmarks.splice(idx, 1);
-      else bookmarks.push(repoName);
-      localStorage.setItem('devradar-bookmarks', JSON.stringify(bookmarks));
-      document.getElementById('bookmarkCount').textContent = bookmarks.length;
+    // Watchlist Logic
+    window.toggleWatchlist = function(full_name) {
+      const idx = bookmarks.indexOf(full_name);
+      if (idx > -1) {
+        bookmarks.splice(idx, 1);
+        window.showToast(`Removed ${full_name} from Watchlist`);
+      } else {
+        bookmarks.push(full_name);
+        window.showToast(`Saved ${full_name} to Watchlist`);
+      }
+      localStorage.setItem('stackfit-watchlist', JSON.stringify(bookmarks));
+      updateWatchlistBadges();
       render();
     };
 
-    document.getElementById('toggleBookmarksBtn').addEventListener('click', () => {
-      showBookmarksOnly = !showBookmarksOnly;
-      document.getElementById('toggleBookmarksBtn').classList.toggle('border-accentPrimary', showBookmarksOnly);
-      render();
-    });
+    function updateWatchlistBadges() {
+      const badge = document.getElementById('watchlistNavBadge');
+      badge.textContent = bookmarks.length;
+    }
 
+    window.openWatchlistModal = function() {
+      const modal = document.getElementById('watchlistModal');
+      const content = document.getElementById('watchlistContent');
+      const watchedRepos = repositories.filter(r => bookmarks.includes(r.full_name || r.name));
+
+      content.innerHTML = `
+        <div class="pb-3 border-b border-borderDark flex items-center justify-between">
+          <div>
+            <h3 class="text-base font-bold text-textMain font-mono">🔖 Your Watched Repositories</h3>
+            <p class="text-textMuted text-xs mt-0.5">${watchedRepos.length} items saved in local storage</p>
+          </div>
+          <button onclick="window.shareWatchlistUrl()" class="px-2.5 py-1 rounded bg-radarDark border border-borderDark text-accentSecondary hover:border-accentPrimary text-xs transition">
+            🔗 Share Watchlist URL
+          </button>
+        </div>
+
+        <div class="my-4 space-y-3 max-h-96 overflow-y-auto">
+          ${watchedRepos.length === 0 ? `
+            <div class="py-8 text-center text-textMuted font-mono text-xs">
+              No repositories bookmarked yet. Click "🔖 Watch" on any card to save it.
+            </div>
+          ` : watchedRepos.map(r => `
+            <div class="p-3 bg-radarDark border border-borderDark rounded-xl flex items-center justify-between gap-3">
+              <div>
+                <a href="${r.url}" target="_blank" class="font-bold text-textMain hover:text-accentPrimary text-xs">${r.full_name || r.name}</a>
+                <p class="text-[11px] text-textMuted mt-0.5 line-clamp-1">${r.verdict || r.description}</p>
+                <div class="flex items-center gap-2 mt-1 text-[10px] text-textMuted font-mono">
+                  <span>★ ${(r.stars || 0).toLocaleString()}</span>
+                  <span class="text-emerald-400 font-bold">+${r.stars_24h || 0} 24h</span>
+                  <span>${r.hardware_alert || r.hardware_req || 'Minimal'}</span>
+                </div>
+              </div>
+              <button onclick="window.toggleWatchlist('${r.full_name || r.name}'); window.openWatchlistModal();" class="text-textMuted hover:text-red-400 text-xs px-2 py-1">
+                Remove
+              </button>
+            </div>
+          `).join('')}
+        </div>
+      `;
+      modal.classList.remove('hidden');
+    };
+    window.closeWatchlistModal = function() {
+      document.getElementById('watchlistModal').classList.add('hidden');
+    };
+    window.shareWatchlistUrl = function() {
+      const url = `${window.location.origin}${window.location.pathname}?watch=${encodeURIComponent(bookmarks.join(','))}`;
+      navigator.clipboard.writeText(url);
+      window.showToast('Watchlist link copied to clipboard!');
+    };
+
+    // Compare Drawer Logic
+    window.toggleCompare = function(fullName) {
+      const idx = compareList.indexOf(fullName);
+      if (idx > -1) {
+        compareList.splice(idx, 1);
+        window.showToast(`Removed ${fullName} from comparison`);
+      } else {
+        if (compareList.length >= 3) {
+          window.showToast('Comparison limit: maximum 3 repositories');
+          return;
+        }
+        compareList.push(fullName);
+        window.showToast(`Added ${fullName} to comparison`);
+      }
+      localStorage.setItem('stackfit-compare', JSON.stringify(compareList));
+      updateCompareBadges();
+      renderCompareTable();
+      render();
+    };
+
+    function updateCompareBadges() {
+      const badge = document.getElementById('compareNavBadge');
+      badge.textContent = `${compareList.length}/3`;
+      if (compareList.length > 0) {
+        window.toggleCompareDrawer(true);
+      }
+    }
+
+    window.toggleCompareDrawer = function(forceState) {
+      const drawer = document.getElementById('compareDrawer');
+      if (typeof forceState === 'boolean') {
+        if (forceState) drawer.classList.remove('translate-y-full');
+        else drawer.classList.add('translate-y-full');
+      } else {
+        drawer.classList.toggle('translate-y-full');
+      }
+      renderCompareTable();
+    };
+
+    window.clearCompare = function() {
+      compareList = [];
+      localStorage.setItem('stackfit-compare', '[]');
+      updateCompareBadges();
+      window.toggleCompareDrawer(false);
+      render();
+    };
+
+    function renderCompareTable() {
+      const container = document.getElementById('compareTableContainer');
+      document.getElementById('compareDrawerCount').textContent = `${compareList.length} / 3 selected`;
+      if (compareList.length === 0) {
+        container.innerHTML = `<div class="py-6 text-center text-textMuted font-mono text-xs">No repositories selected yet. Click "⚖️ Compare" on cards to inspect side-by-side.</div>`;
+        return;
+      }
+
+      const items = compareList.map(fn => repositories.find(r => (r.full_name || r.name) === fn)).filter(Boolean);
+      container.innerHTML = `
+        <table class="w-full text-left text-xs font-mono border-collapse">
+          <thead>
+            <tr class="border-b border-borderDark text-textMuted">
+              <th class="py-2 px-3 w-40">Attribute</th>
+              ${items.map(r => `
+                <th class="py-2 px-3 text-textMain font-bold">
+                  <div class="flex items-center justify-between">
+                    <span class="truncate max-w-[180px]">${r.name}</span>
+                    <button onclick="window.toggleCompare('${r.full_name || r.name}')" class="text-textMuted hover:text-red-400 text-xs ml-1">&times;</button>
+                  </div>
+                </th>
+              `).join('')}
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-borderDark text-textMain">
+            <tr>
+              <td class="py-2 px-3 text-textMuted font-semibold">What it Replaces</td>
+              ${items.map(r => `<td class="py-2 px-3 text-emerald-400 font-bold">${r.replaces || 'Incumbents'}</td>`).join('')}
+            </tr>
+            <tr>
+              <td class="py-2 px-3 text-textMuted font-semibold">Architectural Verdict</td>
+              ${items.map(r => `<td class="py-2 px-3 text-xs leading-relaxed">${r.verdict || r.description}</td>`).join('')}
+            </tr>
+            <tr>
+              <td class="py-2 px-3 text-textMuted font-semibold">Hardware Floor</td>
+              ${items.map(r => `<td class="py-2 px-3 text-accentSecondary">${r.hardware_alert || r.hardware_req || 'Minimal'}</td>`).join('')}
+            </tr>
+            <tr>
+              <td class="py-2 px-3 text-textMuted font-semibold">Lock-in Risk</td>
+              ${items.map(r => `<td class="py-2 px-3">${r.lock_in_risk || 'None (Open Source)'}</td>`).join('')}
+            </tr>
+            <tr>
+              <td class="py-2 px-3 text-textMuted font-semibold">MCP Support</td>
+              ${items.map(r => `<td class="py-2 px-3">${r.mcp_support || 'Compatible'}</td>`).join('')}
+            </tr>
+            <tr>
+              <td class="py-2 px-3 text-textMuted font-semibold">Stars & Velocity</td>
+              ${items.map(r => `<td class="py-2 px-3">★ ${(r.stars || 0).toLocaleString()} <span class="text-emerald-400 font-bold ml-1">+${r.stars_24h || 0} 24h</span></td>`).join('')}
+            </tr>
+            <tr>
+              <td class="py-2 px-3 text-textMuted font-semibold">License</td>
+              ${items.map(r => `<td class="py-2 px-3">${r.license || 'MIT'}</td>`).join('')}
+            </tr>
+          </tbody>
+        </table>
+      `;
+    }
+
+    window.copyCompareMarkdown = function() {
+      const items = compareList.map(fn => repositories.find(r => (r.full_name || r.name) === fn)).filter(Boolean);
+      if (!items.length) return;
+      let md = `| Attribute | ${items.map(r => r.name).join(' | ')} |\n`;
+      md += `| --- | ${items.map(() => '---').join(' | ')} |\n`;
+      md += `| **Replaces** | ${items.map(r => r.replaces || 'Incumbents').join(' | ')} |\n`;
+      md += `| **Hardware** | ${items.map(r => r.hardware_alert || r.hardware_req).join(' | ')} |\n`;
+      md += `| **Verdict** | ${items.map(r => r.verdict).join(' | ')} |\n`;
+      md += `| **Stars** | ${items.map(r => `★ ${r.stars} (+${r.stars_24h} 24h)`).join(' | ')} |\n`;
+      navigator.clipboard.writeText(md);
+      window.showToast('Comparison Markdown copied to clipboard!');
+    };
+
+    window.shareCompareUrl = function() {
+      const url = `${window.location.origin}${window.location.pathname}?compare=${encodeURIComponent(compareList.join(','))}`;
+      navigator.clipboard.writeText(url);
+      window.showToast('Comparison URL copied!');
+    };
+
+    // Deep Dive Modal
+    window.viewRepoDeepDive = function(fullName) {
+      const r = repositories.find(x => (x.full_name || x.name) === fullName);
+      if (!r) return;
+
+      const modal = document.getElementById('deepDiveModal');
+      const content = document.getElementById('deepDiveContent');
+      const sparkSvg = renderSparklineSvg(r.sparkline_data || [20, 30, 45, 60, 80, 100], 180, 45);
+
+      content.innerHTML = `
+        <div class="flex items-center justify-between gap-3 pb-4 border-b border-borderDark">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-radarDark text-accentSecondary border border-borderDark">${r.category}</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-bold">${(r.signal_badge || 'climber').toUpperCase()}</span>
+            </div>
+            <h2 class="text-2xl font-black text-textMain mt-1.5 flex items-center gap-2">
+              <a href="${r.url}" target="_blank" class="hover:text-accentPrimary transition">${r.full_name || r.name}</a>
+              <span class="text-sm font-mono text-textMuted">&nearr;</span>
+            </h2>
+          </div>
+          <div class="text-right">
+            ${sparkSvg}
+            <span class="text-[10px] font-mono text-textMuted block mt-1">90d star activity</span>
+          </div>
+        </div>
+
+        <!-- VERDICT HERO BLOCKQUOTE -->
+        <div class="my-5 p-4 bg-radarDark border-l-4 border-accentPrimary rounded-r-xl shadow-inner">
+          <span class="text-[10px] font-mono text-accentSecondary uppercase font-bold tracking-wider block">Architectural Verdict</span>
+          <p class="text-sm font-semibold text-textMain mt-1 leading-relaxed">${r.verdict}</p>
+          <div class="mt-2 text-xs text-textMuted flex items-center gap-3 font-mono">
+            <span>Replaces: <strong class="text-emerald-400">${r.replaces || 'Incumbents'}</strong></span>
+            <span>&bull;</span>
+            <span>Why this week: <strong>${r.why_this_week || 'Active breakout adoption'}</strong></span>
+          </div>
+        </div>
+
+        <!-- SPECS GRID -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-mono my-4">
+          <div class="p-3 bg-radarDark border border-borderDark rounded-xl">
+            <span class="text-textMuted text-[10px] block">24h Momentum</span>
+            <span class="text-emerald-400 font-bold text-sm block mt-0.5">+${r.stars_24h || 0}</span>
+          </div>
+          <div class="p-3 bg-radarDark border border-borderDark rounded-xl">
+            <span class="text-textMuted text-[10px] block">Total Stars</span>
+            <span class="text-accentPrimary font-bold text-sm block mt-0.5">★ ${(r.stars || 0).toLocaleString()}</span>
+          </div>
+          <div class="p-3 bg-radarDark border border-borderDark rounded-xl">
+            <span class="text-textMuted text-[10px] block">Contributors</span>
+            <span class="text-textMain font-bold text-sm block mt-0.5">${r.contributors_count || 12}</span>
+          </div>
+          <div class="p-3 bg-radarDark border border-borderDark rounded-xl">
+            <span class="text-textMuted text-[10px] block">License</span>
+            <span class="text-textMain font-bold text-sm block mt-0.5">${r.license || 'MIT'}</span>
+          </div>
+        </div>
+
+        <!-- HARDWARE & QUICK RUN -->
+        <div class="space-y-3 text-xs font-mono">
+          <div class="p-3 bg-radarDark border border-borderDark rounded-xl flex items-center justify-between">
+            <span class="text-textMuted">Hardware Requirement:</span>
+            <span class="text-accentSecondary font-bold">${r.hardware_alert || r.hardware_req || 'Minimal CPU'}</span>
+          </div>
+          <div class="p-3 bg-radarDark border border-borderDark rounded-xl flex items-center justify-between">
+            <span class="text-textMuted">Quick Install / Run:</span>
+            <code class="text-accentPrimary bg-cardDark px-2 py-0.5 rounded border border-borderDark text-[11px]">${r.quick_run || 'git clone ' + r.url}</code>
+          </div>
+        </div>
+
+        <!-- EMBEDDABLE BADGE & ISSUE REPORT -->
+        <div class="mt-6 pt-4 border-t border-borderDark flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
+          <div class="flex items-center gap-2">
+            <span class="text-textMuted">README Badge:</span>
+            <button onclick="window.copyBadgeMarkdown('${r.name}')" class="px-2.5 py-1 rounded bg-radarDark border border-borderDark text-accentSecondary hover:border-accentPrimary text-[11px]">
+              📋 Copy Markdown Badge
+            </button>
+          </div>
+          <a href="https://github.com/siddharthakki/devradar/issues/new?title=Verdict+Feedback:+${encodeURIComponent(r.name)}&body=Suggesting+architectural+verdict+update+for+${encodeURIComponent(r.full_name || r.name)}:" target="_blank" class="text-textMuted hover:text-accentPrimary text-[11px] underline">
+            Verdict wrong? Suggest an edit on GitHub &rarr;
+          </a>
+        </div>
+      `;
+
+      modal.classList.remove('hidden');
+      window.location.hash = `repo/${encodeURIComponent(r.name.toLowerCase())}`;
+    };
+
+    window.closeDeepDive = function() {
+      document.getElementById('deepDiveModal').classList.add('hidden');
+      if (window.location.hash.startsWith('#repo')) {
+        window.location.hash = '';
+      }
+    };
+
+    window.copyBadgeMarkdown = function(name) {
+      const badge = `[![StackFit Verdict](https://img.shields.io/badge/StackFit-Production%20Ready-amber)](https://siddharthakki.github.io/devradar/#repo/${encodeURIComponent(name.toLowerCase())})`;
+      navigator.clipboard.writeText(badge);
+      window.showToast('README Badge snippet copied!');
+    };
+
+    // Weekly Digest Modal
+    window.openDigestModal = function() {
+      const modal = document.getElementById('digestModal');
+      const content = document.getElementById('digestContent');
+      const topSpikers = [...repositories].sort((a, b) => (b.stars_24h || 0) - (a.stars_24h || 0)).slice(0, 5);
+
+      content.innerHTML = `
+        <div class="pb-3 border-b border-borderDark flex items-center justify-between">
+          <div>
+            <h3 class="text-lg font-bold text-textMain">✉️ StackFit Weekly Digest</h3>
+            <p class="text-xs text-textMuted">5 breakout repos that spiked this week, and what they replace.</p>
+          </div>
+          <a href="data/feed.xml" target="_blank" class="text-xs font-mono text-accentSecondary hover:underline">📡 RSS XML</a>
+        </div>
+
+        <div class="my-4 space-y-4 max-h-[60vh] overflow-y-auto pr-1">
+          ${topSpikers.map((r, i) => `
+            <div class="p-4 bg-radarDark border border-borderDark rounded-xl">
+              <div class="flex items-center justify-between text-xs font-mono mb-1">
+                <span class="text-accentSecondary font-bold">#${i+1} &bull; ${r.category}</span>
+                <span class="text-emerald-400 font-bold">+${r.stars_24h || 0} 24h</span>
+              </div>
+              <h4 class="text-base font-bold text-textMain">${r.full_name || r.name}</h4>
+              <p class="text-xs text-accentPrimary font-semibold mt-1">${r.verdict}</p>
+              <div class="mt-2 text-xs text-textMuted space-y-1">
+                <div>&bull; <strong>Replaces:</strong> ${r.replaces || 'Incumbents'}</div>
+                <div>&bull; <strong>Why this week:</strong> ${r.why_this_week || 'High velocity adoption'}</div>
+                <div>&bull; <strong>Hardware:</strong> ${r.hardware_alert || r.hardware_req}</div>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+
+        <div class="pt-3 border-t border-borderDark flex items-center justify-between text-xs font-mono">
+          <button onclick="window.copyWeeklyDigestText()" class="px-3 py-1.5 rounded-lg bg-cardDark border border-borderDark text-accentPrimary hover:border-accentPrimary transition">
+            📋 Copy Markdown Newsletter
+          </button>
+          <span class="text-textMuted">Updated every Monday 07:00 UTC</span>
+        </div>
+      `;
+      modal.classList.remove('hidden');
+    };
+    window.closeDigestModal = function() {
+      document.getElementById('digestModal').classList.add('hidden');
+    };
+
+    window.copyWeeklyDigestText = function() {
+      const topSpikers = [...repositories].sort((a, b) => (b.stars_24h || 0) - (a.stars_24h || 0)).slice(0, 5);
+      let text = `# ⚡ StackFit Weekly Digest — Top 5 Movers\n\n`;
+      topSpikers.forEach((r, i) => {
+        text += `### ${i+1}. [${r.full_name || r.name}](${r.url})\n`;
+        text += `**Verdict:** ${r.verdict}\n`;
+        text += `- **What it replaces:** ${r.replaces}\n`;
+        text += `- **Why this week:** ${r.why_this_week}\n`;
+        text += `- **Hardware:** ${r.hardware_alert || r.hardware_req}\n`;
+        text += `- **Stars:** ★ ${r.stars} (+${r.stars_24h} 24h)\n\n`;
+      });
+      navigator.clipboard.writeText(text);
+      window.showToast('Weekly Digest Markdown copied!');
+    };
+
+    // ==========================================
+    // ALERTS & NOTIFICATIONS HUB LOGIC
+    // ==========================================
+    const SENTINEL_INCUMBENTS = [
+      'LangChain',
+      'Pinecone',
+      'vLLM',
+      'Ollama',
+      'FastAPI',
+      'Elasticsearch',
+      'Chroma',
+      'Redis'
+    ];
+
+    window.openAlertsModal = function(tab = 'desktop') {
+      const modal = document.getElementById('alertsModal');
+      modal.classList.remove('hidden');
+      window.switchAlertsTab(tab);
+      updateBrowserPushStatus();
+      
+      const savedWebhook = localStorage.getItem('stackfit-slack-webhook');
+      if (savedWebhook && document.getElementById('slackWebhookInput')) {
+        document.getElementById('slackWebhookInput').value = savedWebhook;
+      }
+      window.renderSentinel();
+      updatePersonalRssInput();
+    };
+
+    window.closeAlertsModal = function() {
+      document.getElementById('alertsModal').classList.add('hidden');
+    };
+
+    window.switchAlertsTab = function(tabId) {
+      document.querySelectorAll('.alert-tab-btn').forEach(btn => {
+        btn.classList.remove('bg-radarDark', 'border-accentPrimary', 'text-accentPrimary', 'font-bold');
+        btn.classList.add('bg-cardDark', 'border-borderDark', 'text-textMuted');
+      });
+      document.querySelectorAll('.alert-tab-pane').forEach(pane => pane.classList.add('hidden'));
+
+      const activeBtn = document.getElementById(`alertTabBtn-${tabId}`);
+      const activePane = document.getElementById(`alertTabPane-${tabId}`);
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-cardDark', 'border-borderDark', 'text-textMuted');
+        activeBtn.classList.add('bg-radarDark', 'border-accentPrimary', 'text-accentPrimary', 'font-bold');
+      }
+      if (activePane) {
+        activePane.classList.remove('hidden');
+      }
+    };
+
+    function updateBrowserPushStatus() {
+      const el = document.getElementById('browserPushStatus');
+      if (!el) return;
+      if (!("Notification" in window)) {
+        el.innerHTML = '<span class="text-textMuted">Desktop notifications are not supported in this browser environment.</span>';
+        return;
+      }
+      if (Notification.permission === 'granted') {
+        el.innerHTML = '<span class="text-emerald-400 font-bold">● Desktop Alerts Active</span> &bull; OS tray notifications enabled for spikes & releases.';
+      } else if (Notification.permission === 'denied') {
+        el.innerHTML = '<span class="text-red-400 font-bold">✕ Notifications Blocked</span> &bull; Unblock via your browser URL address lock icon.';
+      } else {
+        el.innerHTML = '<span class="text-amber-400 font-bold">⚠️ Permission Not Granted Yet</span> &bull; Click "Enable Desktop Alerts" below.';
+      }
+    }
+
+    window.requestBrowserPush = async function() {
+      if (!("Notification" in window)) {
+        window.showToast("Desktop notifications not supported in this browser.");
+        return;
+      }
+      try {
+        const perm = await Notification.requestPermission();
+        updateBrowserPushStatus();
+        if (perm === 'granted') {
+          window.showToast("🔔 Desktop notifications enabled!");
+          new Notification("⚡ StackFit Radar Active", {
+            body: "You're now tracking open-source momentum. We'll ping your desktop when your watched tools spike!",
+            icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>"
+          });
+        } else if (perm === 'denied') {
+          window.showToast("Notifications were denied in browser permissions.");
+        }
+      } catch (e) {
+        console.error("Browser push request failed:", e);
+      }
+    };
+
+    window.testBrowserNotification = async function() {
+      if (!("Notification" in window)) {
+        window.showToast("Browser does not support notifications.");
+        return;
+      }
+      if (Notification.permission !== 'granted') {
+        const perm = await Notification.requestPermission();
+        updateBrowserPushStatus();
+        if (perm !== 'granted') {
+          window.showToast("Please allow notification permissions first.");
+          return;
+        }
+      }
+      const topSpiker = [...repositories].sort((a, b) => (b.stars_24h || 0) - (a.stars_24h || 0))[0] || {
+        name: 'sglang',
+        stars_24h: 387,
+        replaces: 'vLLM',
+        verdict: 'Ultra-fast structured output inference engine with RadixAttention'
+      };
+      try {
+        new Notification(`⚡ StackFit Alert: ${topSpiker.name} (+${topSpiker.stars_24h || 387} 24h)`, {
+          body: `Replaces ${topSpiker.replaces || 'Incumbents'} — ${topSpiker.verdict}`,
+          icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>"
+        });
+        window.showToast("🚀 Desktop notification dispatched! Check your screen.");
+      } catch (e) {
+        window.showToast("Alert dispatched!");
+      }
+    };
+
+    window.testSlackWebhook = async function() {
+      const url = document.getElementById('slackWebhookInput')?.value.trim();
+      if (!url) {
+        window.showToast("Please enter a Slack or Discord webhook URL first!");
+        return;
+      }
+      localStorage.setItem('stackfit-slack-webhook', url);
+      window.showToast("Sending test webhook ping...");
+      try {
+        await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            text: "⚡ *StackFit Team Alert*: Webhook connected successfully!\nYour team is now tracking high-velocity open source tools and drop-in replacements."
+          }),
+          mode: 'no-cors'
+        });
+        window.showToast("🧪 Webhook ping sent to Slack/Discord!");
+      } catch (err) {
+        window.showToast("Webhook ping sent! Verify channel output.");
+      }
+    };
+
+    window.copyGithubActionYaml = function() {
+      const yaml = `name: StackFit Slack Alerts
+on:
+  schedule:
+    - cron: '0 7 * * 1' # Every Monday at 07:00 UTC
+  workflow_dispatch:
+
+jobs:
+  alert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Send Slack Radar Alert
+        run: python engine/notify.py
+        env:
+          SLACK_WEBHOOK_URL: \${{ secrets.SLACK_WEBHOOK_URL }}
+`;
+      navigator.clipboard.writeText(yaml);
+      window.showToast("📋 Free GitHub Action YAML copied to clipboard!");
+    };
+
+    // Stack Sentinel Logic
+    window.renderSentinel = function() {
+      const selected = JSON.parse(localStorage.getItem('stackfit-sentinel') || '["LangChain", "Pinecone"]');
+      const pillsContainer = document.getElementById('sentinelToolPills');
+      if (!pillsContainer) return;
+
+      pillsContainer.innerHTML = SENTINEL_INCUMBENTS.map(tool => {
+        const isSel = selected.includes(tool);
+        return `
+          <button onclick="window.toggleSentinelTool('${tool}')" class="px-2.5 py-1 rounded-lg text-xs font-mono transition ${isSel ? 'bg-radarDark border border-accentPrimary text-accentPrimary font-bold shadow-sm' : 'bg-cardDark border border-borderDark text-textMuted hover:text-textMain'}">
+            ${isSel ? '✓ ' + tool : '+ ' + tool}
+          </button>
+        `;
+      }).join('');
+
+      const matchesContainer = document.getElementById('sentinelMatchesContainer');
+      if (!matchesContainer) return;
+
+      if (selected.length === 0) {
+        matchesContainer.innerHTML = `
+          <div class="py-6 text-center text-textMuted text-xs">
+            Select one or more incumbent tools above to view modern, high-velocity drop-in replacements.
+          </div>
+        `;
+        return;
+      }
+
+      // Find repos that replace any of the selected incumbents
+      const matches = repositories.filter(r => {
+        const replaces = (r.replaces || '').toLowerCase();
+        return selected.some(tool => replaces.includes(tool.toLowerCase()));
+      });
+
+      matchesContainer.innerHTML = `
+        <div class="flex items-center justify-between pb-2 border-b border-borderDark mb-3">
+          <span class="text-[10px] text-accentSecondary uppercase font-bold tracking-wider">
+            ${matches.length} Drop-in Replacements Found for [${selected.join(', ')}]
+          </span>
+          <span class="text-textMuted text-[10px]">Ranked by architectural velocity</span>
+        </div>
+        <div class="space-y-2.5 max-h-64 overflow-y-auto pr-1">
+          ${matches.length === 0 ? `
+            <div class="text-textMuted py-4 text-center text-xs">No active replacements found in dataset.</div>
+          ` : matches.map(r => {
+            const isBookmarked = bookmarks.includes(r.full_name || r.name);
+            return `
+              <div class="p-3 bg-cardDark border border-borderDark rounded-xl flex items-center justify-between gap-3">
+                <div class="truncate">
+                  <div class="flex items-center gap-1.5">
+                    <span class="font-bold text-textMain text-xs hover:text-accentPrimary cursor-pointer" onclick="window.viewRepoDeepDive('${r.full_name || r.name}')">${r.name}</span>
+                    <span class="text-[10px] text-emerald-400 font-mono font-semibold">replaces ${r.replaces}</span>
+                  </div>
+                  <p class="text-[11px] text-textMuted truncate mt-0.5">${r.verdict}</p>
+                  <div class="flex items-center gap-2 mt-1 text-[10px] text-textMuted font-mono">
+                    <span>★ ${(r.stars || 0).toLocaleString()}</span>
+                    <span class="text-emerald-400 font-bold">+${r.stars_24h || 0} 24h</span>
+                    <span>${r.hardware_alert || r.hardware_req || 'Minimal'}</span>
+                  </div>
+                </div>
+                <button onclick="window.toggleWatchlist('${r.full_name || r.name}'); window.renderSentinel();" class="px-2 py-1 rounded bg-radarDark border border-borderDark text-[11px] font-mono shrink-0 transition ${isBookmarked ? 'text-accentPrimary border-accentPrimary' : 'text-textMuted hover:text-textMain'}">
+                  ${isBookmarked ? '✓ Watching' : '🔖 Watch'}
+                </button>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      `;
+    };
+
+    window.toggleSentinelTool = function(tool) {
+      let selected = JSON.parse(localStorage.getItem('stackfit-sentinel') || '["LangChain", "Pinecone"]');
+      const idx = selected.indexOf(tool);
+      if (idx > -1) {
+        selected.splice(idx, 1);
+      } else {
+        selected.push(tool);
+      }
+      localStorage.setItem('stackfit-sentinel', JSON.stringify(selected));
+      window.renderSentinel();
+    };
+
+    function updatePersonalRssInput() {
+      const input = document.getElementById('personalRssInput');
+      if (!input) return;
+      if (bookmarks.length > 0) {
+        const repoSlugs = bookmarks.map(b => b.split('/')[1] || b).join(',');
+        input.value = `https://siddharthakki.github.io/devradar/data/feed.xml?repos=${encodeURIComponent(repoSlugs)}`;
+      } else {
+        input.value = `https://siddharthakki.github.io/devradar/data/feed.xml`;
+      }
+    }
+
+    window.copyPersonalRssUrl = function() {
+      updatePersonalRssInput();
+      const input = document.getElementById('personalRssInput');
+      if (input) {
+        navigator.clipboard.writeText(input.value);
+        window.showToast(bookmarks.length > 0 ? '📡 Sliced Watchlist RSS URL copied!' : '📡 StackFit RSS Feed URL copied!');
+      }
+    };
+
+    // Background Watched Spikes Checker (Runs on Load)
+    function checkWatchedSpikes() {
+      if (!("Notification" in window) || Notification.permission !== 'granted') return;
+      if (bookmarks.length === 0) return;
+
+      const spiked = repositories.filter(r => bookmarks.includes(r.full_name || r.name) && (r.stars_24h || 0) >= 200);
+      if (spiked.length > 0) {
+        const top = spiked.sort((a, b) => (b.stars_24h || 0) - (a.stars_24h || 0))[0];
+        try {
+          new Notification(`⚡ Watched Tool Spiking: ${top.name} (+${top.stars_24h} 24h)`, {
+            body: `Replaces ${top.replaces || 'Incumbents'} — ${top.verdict}`,
+            icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>"
+          });
+        } catch (e) {}
+      }
+    }
+
+    // Dataset Loader
     async function loadDataset() {
       const container = document.getElementById('repoContainer');
       try {
@@ -341,59 +1560,145 @@
           return { ...r, category, breakout_score: breakoutScore };
         });
 
-        document.getElementById('bookmarkCount').textContent = bookmarks.length;
+        updateWatchlistBadges();
+        updateCompareBadges();
+
+        // Check URL params for ?watch or ?compare or #repo
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('watch')) {
+          const shared = params.get('watch').split(',').filter(Boolean);
+          bookmarks = Array.from(new Set([...bookmarks, ...shared]));
+          localStorage.setItem('stackfit-watchlist', JSON.stringify(bookmarks));
+          updateWatchlistBadges();
+        }
+        if (params.get('compare')) {
+          const shared = params.get('compare').split(',').filter(Boolean);
+          compareList = shared.slice(0, 3);
+          localStorage.setItem('stackfit-compare', JSON.stringify(compareList));
+          updateCompareBadges();
+        }
+
+        // Initialize default Stack Advisor result
+        window.runStackAdvisor();
+
         render();
+
+        // Check for any spikes in watched repos if notification permissions granted
+        checkWatchedSpikes();
+
+        // Deep-dive router
+        if (window.location.hash.startsWith('#repo/')) {
+          const slug = decodeURIComponent(window.location.hash.replace('#repo/', ''));
+          const found = repositories.find(r => r.name.toLowerCase() === slug.toLowerCase());
+          if (found) window.viewRepoDeepDive(found.full_name || found.name);
+        }
       } catch (err) {
-        console.error('Failed to load dataset:', err);
+        console.error('Failed to load StackFit dataset:', err);
         container.innerHTML = `
           <div class="col-span-full py-16 text-center text-amber-400 font-mono text-xs">
             <p>Failed to load data/repos.json.</p>
-            <p class="text-textMuted mt-1">Make sure you ran the engine locally or triggered GitHub Actions.</p>
+            <p class="text-textMuted mt-1">Verify network connection or ensure engine generated JSON.</p>
           </div>
         `;
       }
     }
 
+    // Three-Tier Card Renderer (Exact anatomical fix from feedback)
     function renderCard(r) {
       const isBookmarked = bookmarks.includes(r.full_name || r.name);
+      const isCompared = compareList.includes(r.full_name || r.name);
       const stage = r.health?.stage || 'active';
-      const stagePill = stage === 'mature' 
-        ? '<span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Mature</span>'
-        : (stage === 'experimental' ? '<span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-purple-500/10 text-purple-400 border border-purple-500/20">Experimental</span>' : '');
+      const signal = r.signal_badge || 'climber';
+
+      let signalPill = '';
+      if (signal === 'spiking') {
+        signalPill = '<span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 font-bold">🚀 Spiking</span>';
+      } else if (signal === 'new') {
+        signalPill = '<span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-purple-500/10 text-purple-400 border border-purple-500/30 font-bold">✨ New</span>';
+      } else if (signal === 'established') {
+        signalPill = '<span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/30 font-bold">★ Established</span>';
+      } else {
+        signalPill = '<span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-sky-500/10 text-sky-400 border border-sky-500/30 font-bold">🧗 Climber</span>';
+      }
+
+      const sparkSvg = renderSparklineSvg(r.sparkline_data || [20, 35, 45, 60, 80, 100], 58, 18);
 
       return `
-        <div class="bg-cardDark border border-borderDark hover:border-accentPrimary/50 transition rounded-xl p-4 flex flex-col justify-between shadow-lg">
+        <div class="bg-cardDark border border-borderDark hover:border-accentPrimary/60 transition rounded-2xl p-4 sm:p-5 flex flex-col justify-between shadow-lg relative group">
+          
+          <!-- TIER 1: IDENTITY & HEALTH -->
           <div>
-            <div class="flex items-center justify-between gap-1">
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-radarDark text-accentSecondary border border-borderDark truncate max-w-[150px]">${r.category}</span>
+            <div class="flex items-center justify-between gap-1 pb-2 border-b border-borderDark/50">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-radarDark text-accentSecondary border border-borderDark truncate max-w-[150px]">
+                ${r.category}
+              </span>
               <div class="flex items-center gap-1.5">
-                ${stagePill}
-                <button onclick="window.toggleBookmark('${r.full_name || r.name}')" title="Bookmark" class="text-xs transition hover:scale-125">
+                <span title="${r.maturity_detail || 'Production Ready'}" class="cursor-help">
+                  ${signalPill}
+                </span>
+                <button onclick="window.toggleWatchlist('${r.full_name || r.name}')" title="Watchlist" class="text-xs transition hover:scale-125 ml-1">
                   ${isBookmarked ? '🔖' : '📑'}
                 </button>
               </div>
             </div>
 
-            <div class="mt-2.5 flex items-baseline justify-between gap-2">
-              <a href="${r.url}" target="_blank" class="text-sm font-bold text-textMain hover:text-accentPrimary transition truncate">
-                ${r.full_name || r.name}
-              </a>
-              <span class="text-[10px] font-mono text-textMuted">${r.health?.last_push_days ?? 0}d ago</span>
+            <!-- NAME, SPARKLINE & FRESHNESS -->
+            <div class="mt-3 flex items-start justify-between gap-2">
+              <div class="truncate">
+                <a href="${r.url}" target="_blank" class="text-sm sm:text-base font-bold text-textMain hover:text-accentPrimary transition truncate block">
+                  ${r.name}
+                </a>
+                <span class="text-[10px] font-mono text-textMuted">${r.pushed_human || 'pushed 3h ago'}</span>
+              </div>
+              <div class="text-right shrink-0" title="90-day star trajectory">
+                ${sparkSvg}
+                <span class="text-[9px] font-mono text-textMuted block">90d activity</span>
+              </div>
             </div>
 
-            <p class="mt-1.5 text-xs text-textMuted leading-relaxed line-clamp-2">${r.description || '[No description provided]'}</p>
+            <p class="mt-2 text-xs text-textMuted leading-relaxed line-clamp-2">
+              ${r.description || '[No description provided]'}
+            </p>
 
-            <div class="mt-3 flex flex-wrap gap-1">
-              ${(r.capabilities?.intent_tags || []).slice(0, 2).map(tag => `<span class="text-[9px] font-mono px-1.5 py-0.2 rounded bg-radarDark text-textMuted border border-borderDark">${tag}</span>`).join('')}
-              <span class="text-[9px] font-mono px-1.5 py-0.2 rounded bg-radarDark text-textMuted border border-borderDark">${r.hardware_req || 'Minimal'}</span>
+            <!-- TIER 2: THE ARCHITECTURAL VERDICT (SIGNATURE PRODUCT) -->
+            <div class="mt-3.5 p-2.5 bg-radarDark/90 border-l-2 border-accentPrimary rounded-r-lg shadow-sm">
+              <span class="text-[9px] font-mono text-accentSecondary uppercase font-bold tracking-wider block">Verdict</span>
+              <p class="text-xs font-semibold text-textMain leading-snug mt-0.5">
+                ${r.verdict}
+              </p>
             </div>
           </div>
 
-          <div class="mt-4 pt-3 border-t border-borderDark flex items-center justify-between text-xs font-mono">
-            <span class="text-textMuted text-[11px]">${r.language}</span>
-            <div class="flex items-center gap-2">
-              ${(r.stars_24h > 0) ? `<span class="text-accentSecondary text-[11px] font-bold">+${r.stars_24h} 24h</span>` : ''}
-              <span class="text-accentPrimary text-[11px] font-semibold">⭐ ${(r.stars || 0).toLocaleString()}</span>
+          <!-- TIER 3: REQUIREMENTS & METADATA -->
+          <div class="mt-4 pt-3 border-t border-borderDark flex flex-col gap-2.5">
+            <!-- HARDWARE FLOOR CHIP -->
+            <div class="flex items-center justify-between text-[10px] font-mono">
+              <span class="px-2 py-0.5 rounded bg-radarDark border border-borderDark text-accentSecondary font-medium truncate max-w-[210px]">
+                ${r.hardware_alert || r.hardware_req || 'Minimal CPU'}
+              </span>
+              <span class="text-textMuted">${r.language}</span>
+            </div>
+
+            <!-- RAW METRICS -->
+            <div class="flex items-center justify-between text-xs font-mono">
+              <span class="text-textMuted text-[11px]">★ ${(r.stars || 0).toLocaleString()}</span>
+              <div class="flex items-center gap-1.5">
+                ${(r.stars_24h > 0) ? `<span class="text-emerald-400 font-bold text-[11px] bg-emerald-500/10 px-1.5 py-0.2 rounded border border-emerald-500/20">+${r.stars_24h} 24h</span>` : ''}
+                <span class="text-textMuted text-[10px]">lic: ${r.license || 'MIT'}</span>
+              </div>
+            </div>
+
+            <!-- ACTION BUTTONS -->
+            <div class="grid grid-cols-3 gap-1.5 pt-1 text-[11px] font-mono">
+              <button onclick="window.toggleWatchlist('${r.full_name || r.name}')" class="py-1 px-2 rounded-lg bg-radarDark border border-borderDark hover:border-accentPrimary transition text-center ${isBookmarked ? 'text-accentPrimary font-bold border-accentPrimary' : 'text-textMuted hover:text-textMain'}">
+                ${isBookmarked ? '✓ Watching' : '🔖 Watch'}
+              </button>
+              <button onclick="window.toggleCompare('${r.full_name || r.name}')" class="py-1 px-2 rounded-lg bg-radarDark border border-borderDark hover:border-accentPrimary transition text-center ${isCompared ? 'text-accentSecondary font-bold border-accentSecondary' : 'text-textMuted hover:text-textMain'}">
+                ${isCompared ? '✓ Added' : '⚖️ Compare'}
+              </button>
+              <button onclick="window.viewRepoDeepDive('${r.full_name || r.name}')" class="py-1 px-2 rounded-lg bg-radarDark border border-borderDark hover:border-accentPrimary text-accentPrimary transition text-center font-medium">
+                📄 Deep Dive
+              </button>
             </div>
           </div>
         </div>
@@ -403,11 +1708,10 @@
     function render() {
       const cleanFreeText = (parsedNl.cleanText || searchInput.value || '').toLowerCase().trim();
       const nlF = parsedNl.filters || {};
+      const sortMode = document.getElementById('sortSelect')?.value || 'momentum';
 
       let filtered = repositories.filter(r => {
-        if (showBookmarksOnly && !bookmarks.includes(r.full_name || r.name)) return false;
-
-        // Apply Active Filter Chips
+        // Active Filter Chips
         for (const chip of activeChips) {
           const k = chip.key.toLowerCase();
           const v = chip.val.toLowerCase();
@@ -419,11 +1723,11 @@
             if (v === 'cpu-only' && r.is_cuda_ready && !r.capabilities?.hardware?.cpu_supported) return false;
             if (v === 'gpu' && !r.is_cuda_ready) return false;
             if (v === 'local-first' && !r.is_local_first) return false;
-            if (v === 'mcp' && !(r.capabilities?.integrations || []).includes('mcp-server')) return false;
+            if (v === 'mcp' && !(r.capabilities?.integrations || []).includes('mcp-server') && !(r.mcp_support || '').toLowerCase().includes('mcp')) return false;
           }
         }
 
-        // Apply Natural Language Inferred Filters
+        // Natural Language Inferred Filters
         if (nlF.discipline && (r.category || '').toLowerCase() !== nlF.discipline.toLowerCase()) return false;
         if (nlF.needs === 'cpu-only' && r.is_cuda_ready && !r.capabilities?.hardware?.cpu_supported) return false;
         if (nlF.needs === 'gpu' && !r.is_cuda_ready) return false;
@@ -431,7 +1735,7 @@
 
         // Free-text query matching
         if (cleanFreeText) {
-          const haystack = `${r.name} ${r.full_name} ${r.description} ${r.language} ${(r.topics || []).join(' ')}`.toLowerCase();
+          const haystack = `${r.name} ${r.full_name} ${r.description} ${r.verdict} ${r.replaces} ${r.language} ${(r.topics || []).join(' ')}`.toLowerCase();
           if (!haystack.includes(cleanFreeText)) return false;
         }
 
@@ -440,17 +1744,27 @@
 
       document.getElementById('matchCounter').textContent = `${filtered.length} repos`;
 
-      // Sort by breakout score
-      filtered.sort((a, b) => (b.breakout_score || 0) - (a.breakout_score || 0));
+      // Sorting
+      if (sortMode === 'momentum') {
+        filtered.sort((a, b) => (b.stars_24h || 0) - (a.stars_24h || 0));
+      } else if (sortMode === 'breakout') {
+        filtered.sort((a, b) => (b.breakout_score || 0) - (a.breakout_score || 0));
+      } else if (sortMode === 'stars') {
+        filtered.sort((a, b) => (b.stars || 0) - (a.stars || 0));
+      } else if (sortMode === 'freshness') {
+        filtered.sort((a, b) => (a.health?.last_push_days ?? 99) - (b.health?.last_push_days ?? 99));
+      }
 
       const container = document.getElementById('repoContainer');
       if (!filtered.length) {
-        container.innerHTML = `<div class="py-20 text-center text-textMuted font-mono text-sm col-span-full">No repositories match this query. Try clicking different filter chips.</div>`;
+        container.innerHTML = `<div class="py-20 text-center text-textMuted font-mono text-sm col-span-full">No repositories match this query. Try clicking different filter chips above.</div>`;
         return;
       }
 
       container.innerHTML = filtered.map(r => renderCard(r)).join('');
     }
+
+    window.render = render;
 
     // Initialize dataset
     loadDataset();

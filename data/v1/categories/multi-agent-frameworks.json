@@ -1,0 +1,2470 @@
+{
+  "category": "Multi-Agent Frameworks",
+  "count": 28,
+  "updated_at": "2026-09-28T11:39:36.710259+00:00",
+  "repositories": [
+    {
+      "full_name": "smithersai/smithers",
+      "name": "smithers",
+      "url": "https://github.com/smithersai/smithers",
+      "description": "Smithers is an agentic workflow framework for defining workflows in simple TypeScript configuration files and executing them quickly, durably, and reliably",
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 417,
+      "stars_24h": 78,
+      "trending_score": 20,
+      "topics": [
+        "agent-orchestration",
+        "ai-agents",
+        "background-agents",
+        "claude-code",
+        "codex",
+        "developer-tools",
+        "durable-execution",
+        "human-in-the-loop",
+        "llm",
+        "multi-agent",
+        "react",
+        "typescript",
+        "workflow-engine"
+      ],
+      "created_at": "2026-01-05T21:13:36Z",
+      "pushed_at": "2026-09-18T18:30:29Z",
+      "quick_run": "npm install smithers",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 417
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 255,
+        "authenticity_score": 95,
+        "open_issues": 14,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to LangGraph \u2014 lightweight typed workflow DAGs with durable state execution.",
+      "replaces": "LangGraph",
+      "why_this_week": "TypeScript developers praise its clean declarative config and zero-overhead execution.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "new",
+      "contributors_count": 11,
+      "lock_in_risk": "None (MIT TS)",
+      "mcp_support": "TS SDK",
+      "sparkline_data": [
+        15,
+        21,
+        28,
+        38,
+        48,
+        60,
+        78,
+        100
+      ],
+      "pushed_human": "pushed 8h ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 8h ago)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "receptron/mulmoterminal",
+      "name": "mulmoterminal",
+      "url": "https://github.com/receptron/mulmoterminal",
+      "description": "Run multiple Claude Code and Codex sessions in parallel \u2014 a browser terminal grid that shows which agent needs you. Local, tmux-backed, MIT.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 219,
+      "stars_24h": 165,
+      "trending_score": 14,
+      "topics": [
+        "agent-orchestration",
+        "agentic-coding",
+        "ai-agents",
+        "ai-coding",
+        "claude-code",
+        "codex",
+        "developer-tools",
+        "git-worktree",
+        "grok",
+        "local-first",
+        "multi-agent",
+        "parallel-agents",
+        "pty",
+        "self-hosted",
+        "terminal",
+        "tmux",
+        "typescript",
+        "vibe-coding",
+        "web-push",
+        "xterm-js"
+      ],
+      "created_at": "2026-06-14T12:39:37Z",
+      "pushed_at": "2026-09-18T18:30:00Z",
+      "quick_run": "npm install mulmoterminal",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 219
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "self-hosted"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 96,
+        "authenticity_score": 95,
+        "open_issues": 50,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to tmux & manual tabs \u2014 visual browser grid with focus routing for parallel coding agents.",
+      "replaces": "tmux & multiple terminal tabs",
+      "why_this_week": "Gained viral traction among engineers running 5+ concurrent Claude Code sessions.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "spiking",
+      "contributors_count": 8,
+      "lock_in_risk": "None (Local Browser App)",
+      "mcp_support": "Terminal / tmux",
+      "sparkline_data": [
+        15,
+        22,
+        30,
+        42,
+        55,
+        69,
+        84,
+        100
+      ],
+      "pushed_human": "pushed 3h ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 3h ago)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "sonichi/sutando",
+      "name": "sutando",
+      "url": "https://github.com/sonichi/sutando",
+      "description": "My AI Stand. Realtime by day, rewriting itself by night. Summon my AI superpower.",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 395,
+      "stars_24h": 95,
+      "trending_score": 19,
+      "topics": [
+        "ai-agent",
+        "automation",
+        "claude",
+        "gemini",
+        "macos",
+        "multi-agent",
+        "open-source",
+        "personal-ai",
+        "self-hosted",
+        "self-improving",
+        "voice-agent",
+        "voice-assistant"
+      ],
+      "created_at": "2026-03-28T14:46:44Z",
+      "pushed_at": "2026-09-18T18:30:00Z",
+      "quick_run": "pip install sutando",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 395
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "self-hosted"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 174,
+        "authenticity_score": 95,
+        "open_issues": 694,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to generic chatbots \u2014 self-rewriting autonomous assistant that runs local maintenance loops.",
+      "replaces": "Static Copilot Extensions",
+      "why_this_week": "Features autonomous nocturnal self-refactoring and local task dispatching.",
+      "hardware_alert": "\ud83d\udcbb Apple Silicon or 8GB GPU",
+      "signal_badge": "new",
+      "contributors_count": 7,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Custom Agents",
+      "sparkline_data": [
+        15,
+        21,
+        29,
+        38,
+        49,
+        63,
+        79,
+        100
+      ],
+      "pushed_human": "pushed 5h ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 5h ago)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "FuRongJun-1999/dsh-memory",
+      "name": "dsh-memory",
+      "url": "https://github.com/FuRongJun-1999/dsh-memory",
+      "description": "\u767d\u7bb1AGI\u67b6\u6784\u63a2\u7d22\uff1a\u5143\u8ba4\u77e5\uff08\u81ea\u6211\u8ba4\u77e5\u5faa\u73af\uff09\u3001\u6301\u7eed\u5b66\u4e60\uff08\u77e5\u8bc6\u98de\u8f6e\uff09\u3001\u4e16\u754c\u6a21\u578b\uff08\u6761\u4ef6\u7a7a\u95f4+\u8bed\u4e49\u65f6\u7a7a\u56fe\uff09\u3001\u81ea\u6211\u6539\u8fdb\uff08\u81ea\u4e3e\u7eaa\u5f8b\uff09\u3001\u96f6LLM\u767d\u7bb1\u7ba1\u7ebf\u4e0e\u53ef\u5ba1\u8ba1\u4fe1\u4efb\u62a4\u680f\u3002",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 221,
+      "stars_24h": 73,
+      "trending_score": 14,
+      "topics": [
+        "agent-safety",
+        "agentic-ai",
+        "agi",
+        "ai-agent-framework",
+        "deepseek",
+        "dsh-plugin",
+        "explainable-ai",
+        "guardrails",
+        "knowledge-graph",
+        "mcp",
+        "multi-agent",
+        "persistent-memory",
+        "rag",
+        "spatiotemporal-graph-neural-network"
+      ],
+      "created_at": "2026-08-14T13:28:26Z",
+      "pushed_at": "2026-09-18T18:31:24Z",
+      "quick_run": "pip install dsh-memory",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 221
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "experimental",
+        "last_push_days": 0,
+        "age_days": 35,
+        "authenticity_score": 95,
+        "open_issues": 1,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Ollama & Cloud LLMs \u2014 \u767d\u7bb1AGI\u67b6\u6784\u63a2\u7d22\uff1a\u5143\u8ba4\u77e5\uff08\u81ea\u6211\u8ba4\u77e5\u5faa\u73af\uff09\u3001\u6301\u7eed\u5b66\u4e60\uff08\u77e5\u8bc6\u98de\u8f6e\uff09\u3001\u4e16\u754c\u6a21\u578b\uff08\u6761\u4ef6\u7a7a\u95f4+\u8bed\u4e49\u65f6\u7a7a\u56fe\uff09\u3001\u81ea\u6211\u6539\u8fdb\uff08\u81ea\u4e3e\u7eaa\u5f8b\uff09\u3001\u96f6LLM\u767d\u7bb1\u7ba1\u7ebf\u4e0e\u53ef\u5ba1\u8ba1\u4fe1\u4efb\u62a4\u680f\u3002.",
+      "replaces": "Ollama & Cloud LLMs",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "new",
+      "contributors_count": 26,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        20,
+        28,
+        39,
+        51,
+        63,
+        80,
+        100
+      ],
+      "pushed_human": "pushed 2h ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 2h ago)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "preset-io/agor",
+      "name": "agor",
+      "url": "https://github.com/preset-io/agor",
+      "description": "Agor - team command center for all things agentic",
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "stars": 1404,
+      "stars_24h": 68,
+      "trending_score": 37,
+      "topics": [
+        "agent-orchestration",
+        "agentic",
+        "ai-agents",
+        "ai-coding",
+        "ai-pair-programming",
+        "canvas",
+        "claude-code",
+        "codex",
+        "coding-assistant",
+        "developer-tools",
+        "devtools",
+        "gemini-cli",
+        "git-worktree",
+        "mcp",
+        "multi-agent",
+        "multiplayer",
+        "orchestration",
+        "real-time-collaboration",
+        "typescript"
+      ],
+      "created_at": "2025-10-04T19:17:32Z",
+      "pushed_at": "2026-09-18T18:23:08Z",
+      "quick_run": "npm install agor",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 1404
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "real-time"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 348,
+        "authenticity_score": 95,
+        "open_issues": 221,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Commercial Coding Agents \u2014 Agor - team command center for all things agentic.",
+      "replaces": "Commercial Coding Agents",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 67,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        27,
+        38,
+        50,
+        60,
+        75,
+        86,
+        100
+      ],
+      "pushed_human": "pushed 8h ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 8h ago)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "mixpeek/amux",
+      "name": "amux",
+      "url": "https://github.com/mixpeek/amux",
+      "description": "Open-source control plane for AI coding agents. Run an AI engineering team: parallel Claude Code, Codex, and Gemini workers with a shared board, atomic tasks, schedules, loops, origin-stamped messaging, model switching, and self-healing recovery. One dashboard, or your phone. MIT, single Rust binary.",
+      "language": "Rust",
+      "license": "NOASSERTION",
+      "stars": 461,
+      "stars_24h": 64,
+      "trending_score": 21,
+      "topics": [
+        "agent-orchestration",
+        "agentic-ai",
+        "ai-agents",
+        "ai-coding-assistant",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "codex",
+        "coding-agent",
+        "control-plane",
+        "developer-tools",
+        "gemini",
+        "llm",
+        "mcp",
+        "multi-agent",
+        "orchestration",
+        "rust",
+        "self-healing",
+        "self-hosted",
+        "tmux"
+      ],
+      "created_at": "2026-02-18T14:30:56Z",
+      "pushed_at": "2026-09-18T18:32:10Z",
+      "quick_run": "cargo install amux",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 461
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "self-hosted"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 212,
+        "authenticity_score": 95,
+        "open_issues": 13,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Commercial Coding Agents \u2014 Open-source control plane for AI coding agents.",
+      "replaces": "Commercial Coding Agents",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "new",
+      "contributors_count": 38,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        21,
+        29,
+        39,
+        50,
+        63,
+        79,
+        100
+      ],
+      "pushed_human": "pushed 14h ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 14h ago)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "omnigent-ai/omnigent",
+      "name": "omnigent",
+      "url": "https://github.com/omnigent-ai/omnigent",
+      "description": "Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents \u2014 swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "stars": 10082,
+      "stars_24h": 175,
+      "trending_score": 100,
+      "topics": [
+        "agent-framework",
+        "agent-governance",
+        "agent-orchestration",
+        "agents",
+        "ai",
+        "ai-agent",
+        "ai-agents",
+        "claude-code",
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "llm",
+        "ml",
+        "multi-agent",
+        "python",
+        "sandbox"
+      ],
+      "created_at": "2026-06-11T12:18:13Z",
+      "pushed_at": "2026-09-18T18:20:17Z",
+      "quick_run": "pip install omnigent",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 10082
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 99,
+        "authenticity_score": 95,
+        "open_issues": 1385,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Commercial Coding Agents \u2014 omnigent delivers high-performance Python execution with zero cloud lock-in.",
+      "replaces": "Commercial Coding Agents",
+      "why_this_week": "Steady developer migration driven by reliable Python tooling and focused scope.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 180,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        24,
+        33,
+        43,
+        58,
+        67,
+        84,
+        100
+      ],
+      "pushed_human": "pushed 14h ago",
+      "maturity_detail": "Production Ready (Active pushed 14h ago, 180+ contributors)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "ling-kong-ran/pisper",
+      "name": "pisper",
+      "url": "https://github.com/ling-kong-ran/pisper",
+      "description": "Multi-agent app for parallel sessions, tools, memory, workflows, desktop, terminal, and mobile.",
+      "language": "JavaScript",
+      "license": "MIT",
+      "stars": 293,
+      "stars_24h": 80,
+      "trending_score": 17,
+      "topics": [
+        "ai-agents",
+        "developer-tools",
+        "mobile-app",
+        "pi",
+        "rust",
+        "tauri",
+        "terminal",
+        "typescript"
+      ],
+      "created_at": "2026-07-19T16:07:07Z",
+      "pushed_at": "2026-09-18T18:19:03Z",
+      "quick_run": "npm install pisper",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 293
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli",
+          "desktop"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 61,
+        "authenticity_score": 95,
+        "open_issues": 2,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Commercial Coding Agents \u2014 pisper delivers high-performance JavaScript execution with zero cloud lock-in.",
+      "replaces": "Commercial Coding Agents",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "new",
+      "contributors_count": 30,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        20,
+        29,
+        37,
+        50,
+        64,
+        79,
+        100
+      ],
+      "pushed_human": "pushed 2h ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 2h ago)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "Untrivial-ai/agent-orchestrator",
+      "name": "agent-orchestrator",
+      "url": "https://github.com/Untrivial-ai/agent-orchestrator",
+      "description": "Run and supervise teams of coding agents from planning to merge. Any harness (Claude code, codex, +25 more). Desktop, web, mobile, and cloud agents.",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "stars": 12170,
+      "stars_24h": 167,
+      "trending_score": 110,
+      "topics": [
+        "agent-fleet",
+        "agent-ide",
+        "agent-orchestration",
+        "agent-swarm",
+        "claude-code",
+        "codex-cli",
+        "git-worktrees",
+        "multi-agent",
+        "orchestration",
+        "orchestrator",
+        "parallel-agents",
+        "parallel-coding",
+        "skills"
+      ],
+      "created_at": "2026-02-13T09:52:36Z",
+      "pushed_at": "2026-09-18T18:18:13Z",
+      "quick_run": "git clone https://github.com/Untrivial-ai/agent-orchestrator",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": false,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 12170
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli",
+          "desktop"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "byok-cloud"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 217,
+        "authenticity_score": 95,
+        "open_issues": 739,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Commercial Coding Agents \u2014 Run and supervise teams of coding agents from planning to merge.",
+      "replaces": "Commercial Coding Agents",
+      "why_this_week": "Steady developer migration driven by reliable Go tooling and focused scope.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 198,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        27,
+        38,
+        51,
+        63,
+        78,
+        89,
+        100
+      ],
+      "pushed_human": "pushed 8h ago",
+      "maturity_detail": "Production Ready (Active pushed 8h ago, 198+ contributors)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "danny-avila/LibreChat",
+      "name": "LibreChat",
+      "url": "https://github.com/danny-avila/LibreChat",
+      "description": "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active",
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 44312,
+      "stars_24h": 315,
+      "trending_score": 210,
+      "topics": [
+        "ai",
+        "anthropic",
+        "artifacts",
+        "aws",
+        "azure",
+        "chatgpt",
+        "chatgpt-clone",
+        "claude",
+        "clone",
+        "deepseek",
+        "gemini",
+        "google",
+        "gpt-5",
+        "librechat",
+        "mcp",
+        "o1",
+        "openai",
+        "responses-api",
+        "vision",
+        "webui"
+      ],
+      "created_at": "2023-02-12T01:06:52Z",
+      "pushed_at": "2026-09-18T18:28:33Z",
+      "quick_run": "npm install LibreChat",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 44312
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "mcp-server",
+          "orchestrators"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "self-hosted"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 1314,
+        "authenticity_score": 95,
+        "open_issues": 783,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to OpenAI Team / Chatbot UI \u2014 multi-user enterprise chat UI with native MCP and model routing.",
+      "replaces": "OpenAI ChatGPT Plus & Chatbot UI",
+      "why_this_week": "Shipped comprehensive Model Context Protocol (MCP) server support and agent workspaces.",
+      "hardware_alert": "\u2705 Runs on CPU (Docker / Node.js)",
+      "signal_badge": "established",
+      "contributors_count": 390,
+      "lock_in_risk": "None (Self-Hosted)",
+      "mcp_support": "Native MCP Client",
+      "sparkline_data": [
+        15,
+        21,
+        35,
+        47,
+        53,
+        71,
+        90,
+        100
+      ],
+      "pushed_human": "pushed 3h ago",
+      "maturity_detail": "Production Ready (Active pushed 3h ago, 390+ contributors)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "Dicklesworthstone/agentic_coding_flywheel_setup",
+      "name": "agentic_coding_flywheel_setup",
+      "url": "https://github.com/Dicklesworthstone/agentic_coding_flywheel_setup",
+      "description": "Bootstraps a fresh Ubuntu VPS into a complete multi-agent AI development environment in 30 minutes: coding agents, session management, safety tools, and coordination infrastructure",
+      "language": "Shell",
+      "license": "NOASSERTION",
+      "stars": 1644,
+      "stars_24h": 51,
+      "trending_score": 40,
+      "topics": [
+        "agentic-ai",
+        "agentic-workflow",
+        "agentmail",
+        "beads",
+        "bv"
+      ],
+      "created_at": "2025-12-20T03:17:03Z",
+      "pushed_at": "2026-09-18T18:17:39Z",
+      "quick_run": "git clone https://github.com/Dicklesworthstone/agentic_coding_flywheel_setup",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 1644
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 272,
+        "authenticity_score": 95,
+        "open_issues": 5,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Commercial Coding Agents \u2014 agentic_coding_flywheel_setup delivers high-performance Shell execution with zero cloud lock-in.",
+      "replaces": "Commercial Coding Agents",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 72,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        31,
+        40,
+        48,
+        63,
+        74,
+        84,
+        100
+      ],
+      "pushed_human": "pushed 8h ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 8h ago)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "microsoft/agent-framework",
+      "name": "agent-framework",
+      "url": "https://github.com/microsoft/agent-framework",
+      "description": "A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET.",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 13582,
+      "stars_24h": 240,
+      "trending_score": 116,
+      "topics": [
+        "agent-framework",
+        "agentic-ai",
+        "agents",
+        "ai",
+        "dotnet",
+        "multi-agent",
+        "orchestration",
+        "python",
+        "sdk",
+        "workflows"
+      ],
+      "created_at": "2025-04-28T19:40:42Z",
+      "pushed_at": "2026-09-18T18:28:19Z",
+      "quick_run": "pip install agent-framework",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 13582
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 507,
+        "authenticity_score": 95,
+        "open_issues": 615,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to AutoGen & CrewAI \u2014 enterprise-grade Microsoft agent orchestration across Python and .NET.",
+      "replaces": "AutoGen & CrewAI",
+      "why_this_week": "Microsoft officially consolidated Semantic Kernel and AutoGen into this unified framework.",
+      "hardware_alert": "\u2705 Runs on CPU / Cloud Pods",
+      "signal_badge": "climber",
+      "contributors_count": 140,
+      "lock_in_risk": "Low (MIT)",
+      "mcp_support": "SDK Native",
+      "sparkline_data": [
+        15,
+        22,
+        30,
+        44,
+        53,
+        65,
+        80,
+        100
+      ],
+      "pushed_human": "pushed 5h ago",
+      "maturity_detail": "Production Ready (Active pushed 5h ago, 140+ contributors)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "EmpiricaAI/empirica",
+      "name": "empirica",
+      "url": "https://github.com/EmpiricaAI/empirica",
+      "description": "  Make AI agents and AI workflows measurably reliable. Epistemic measurement, Noetic RAG, Sentinel gating, and grounded calibration for Claude Code  and beyond",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 249,
+      "stars_24h": 82,
+      "trending_score": 15,
+      "topics": [
+        "ai-agents",
+        "ai-memory",
+        "ai-os",
+        "ai-workflows",
+        "anti-confabulation",
+        "epistemic-ai"
+      ],
+      "created_at": "2025-11-01T16:08:14Z",
+      "pushed_at": "2026-09-18T18:32:09Z",
+      "quick_run": "pip install empirica",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 249
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 321,
+        "authenticity_score": 95,
+        "open_issues": 0,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to raw prompt retries \u2014 epistemic measurement and calibration guards for agent workflows.",
+      "replaces": "Trial-and-error Agent Loops",
+      "why_this_week": "Introduced grounded verification filters preventing hallucinated tool actions in coding agents.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "new",
+      "contributors_count": 9,
+      "lock_in_risk": "None (Python Package)",
+      "mcp_support": "Agent Middleware",
+      "sparkline_data": [
+        15,
+        20,
+        27,
+        36,
+        47,
+        61,
+        78,
+        100
+      ],
+      "pushed_human": "pushed 5h ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 5h ago)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "moorcheh-ai/memanto",
+      "name": "memanto",
+      "url": "https://github.com/moorcheh-ai/memanto",
+      "description": "Memory that AI Agents Love!",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 2248,
+      "stars_24h": 36,
+      "trending_score": 47,
+      "topics": [
+        "agent-memory",
+        "ai-agents",
+        "crewai",
+        "langchain",
+        "llm-memory",
+        "long-term-memory",
+        "memanto",
+        "memory",
+        "moorcheh",
+        "rag",
+        "semantic-memory",
+        "stateful-ai"
+      ],
+      "created_at": "2026-03-23T23:08:38Z",
+      "pushed_at": "2026-09-18T18:25:11Z",
+      "quick_run": "pip install memanto",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 2248
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "orchestrators"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 178,
+        "authenticity_score": 95,
+        "open_issues": 127,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Commercial Coding Agents \u2014 Memory that AI Agents Love!.",
+      "replaces": "Commercial Coding Agents",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 85,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        27,
+        33,
+        48,
+        56,
+        70,
+        83,
+        100
+      ],
+      "pushed_human": "pushed 14h ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 14h ago)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "yonatangross/orchestkit",
+      "name": "orchestkit",
+      "url": "https://github.com/yonatangross/orchestkit",
+      "description": "The Complete AI Development Toolkit for Claude Code. 106 skills, 36 agents, 171 hooks. Install `ork` for stable (v9.x), or `ork-alpha` for the v10 line, which ships daily.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 278,
+      "stars_24h": 75,
+      "trending_score": 16,
+      "topics": [
+        "agent-orchestration",
+        "agents",
+        "ai-agents",
+        "ai-development",
+        "anthropic",
+        "claude-code",
+        "claude-code-plugin",
+        "claude-plugin",
+        "developer-tools",
+        "fastapi",
+        "langgraph",
+        "llm",
+        "mcp",
+        "rag",
+        "react",
+        "security",
+        "testing",
+        "typescript"
+      ],
+      "created_at": "2025-12-31T05:58:52Z",
+      "pushed_at": "2026-09-18T18:24:05Z",
+      "quick_run": "npm install orchestkit",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 278
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 261,
+        "authenticity_score": 95,
+        "open_issues": 88,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Commercial Coding Agents \u2014 The Complete AI Development Toolkit for Claude Code.",
+      "replaces": "Commercial Coding Agents",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "new",
+      "contributors_count": 30,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        21,
+        29,
+        38,
+        51,
+        65,
+        80,
+        100
+      ],
+      "pushed_human": "pushed 14h ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 14h ago)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "volcengine/OpenViking",
+      "name": "OpenViking",
+      "url": "https://github.com/volcengine/OpenViking",
+      "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "stars": 37997,
+      "stars_24h": 360,
+      "trending_score": 194,
+      "topics": [
+        "agent-memory",
+        "agent-plugins",
+        "agentic-rag",
+        "context-database",
+        "dsh-plugin",
+        "self-evolving"
+      ],
+      "created_at": "2026-01-05T07:11:17Z",
+      "pushed_at": "2026-09-18T18:20:43Z",
+      "quick_run": "pip install OpenViking",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 37997
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 256,
+        "authenticity_score": 95,
+        "open_issues": 697,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Mem0 \u2014 unified agent memory, knowledge graphs, and skill registries in one engine.",
+      "replaces": "Mem0 & Zep",
+      "why_this_week": "ByteDance-backed architecture unifying agent episodic memory and tool-calling skills.",
+      "hardware_alert": "\u26a1 8GB+ RAM / Docker Container",
+      "signal_badge": "climber",
+      "contributors_count": 90,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Context Protocol",
+      "sparkline_data": [
+        15,
+        21,
+        37,
+        47,
+        59,
+        72,
+        89,
+        100
+      ],
+      "pushed_human": "pushed 3h ago",
+      "maturity_detail": "Production Ready (Active pushed 3h ago, 90+ contributors)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "simstudioai/sim",
+      "name": "sim",
+      "url": "https://github.com/simstudioai/sim",
+      "description": "Sim is the collaborative workspace to build, deploy, and monitor AI agents and workflows. Used by 100,000+ builders.",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "stars": 29664,
+      "stars_24h": 270,
+      "trending_score": 172,
+      "topics": [
+        "agent-workflow",
+        "agentic-workflow",
+        "agents",
+        "ai",
+        "aiagents",
+        "anthropic",
+        "artificial-intelligence",
+        "automation",
+        "chatbot",
+        "deepseek",
+        "gemini",
+        "low-code",
+        "nextjs",
+        "no-code",
+        "openai",
+        "rag",
+        "react",
+        "typescript"
+      ],
+      "created_at": "2025-01-05T22:47:49Z",
+      "pushed_at": "2026-09-18T18:26:14Z",
+      "quick_run": "npm install sim",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 29664
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 620,
+        "authenticity_score": 95,
+        "open_issues": 339,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Zapier & Make \u2014 open canvas workflow builder with real-time agent observability.",
+      "replaces": "Zapier & n8n for Agents",
+      "why_this_week": "Passed 100k builder milestone with drag-and-drop MCP tool node connections.",
+      "hardware_alert": "\u2705 Runs on CPU / Web UI",
+      "signal_badge": "climber",
+      "contributors_count": 85,
+      "lock_in_risk": "Low (Self-Hosted Docker)",
+      "mcp_support": "Visual MCP Canvas",
+      "sparkline_data": [
+        15,
+        28,
+        35,
+        50,
+        61,
+        69,
+        86,
+        100
+      ],
+      "pushed_human": "pushed 8h ago",
+      "maturity_detail": "Production Ready (Active pushed 8h ago, 85+ contributors)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "langchain-ai/langchain",
+      "name": "langchain",
+      "url": "https://github.com/langchain-ai/langchain",
+      "description": "The agent engineering platform.",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 146601,
+      "stars_24h": 320,
+      "trending_score": 382,
+      "topics": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "anthropic",
+        "chatgpt",
+        "deepagents",
+        "enterprise",
+        "framework",
+        "gemini",
+        "generative-ai",
+        "langchain",
+        "langgraph",
+        "llm",
+        "multiagent",
+        "open-source",
+        "openai",
+        "pydantic",
+        "python",
+        "rag",
+        "typescript"
+      ],
+      "created_at": "2022-10-17T02:58:36Z",
+      "pushed_at": "2026-09-18T18:07:29Z",
+      "quick_run": "pip install langchain",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 146601
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "orchestrators"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 1432,
+        "authenticity_score": 95,
+        "open_issues": 531,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to raw LLM APIs \u2014 industry-standard orchestration pipeline with universal provider integrations.",
+      "replaces": "Custom Bespoke AI Plumbing",
+      "why_this_week": "Core ecosystem standard powering thousands of production retrieval and agent systems.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "established",
+      "contributors_count": 2400,
+      "lock_in_risk": "Low (MIT Library)",
+      "mcp_support": "MCP Integrations",
+      "sparkline_data": [
+        15,
+        27,
+        39,
+        47,
+        64,
+        83,
+        92,
+        100
+      ],
+      "pushed_human": "pushed 2h ago",
+      "maturity_detail": "Production Ready (Active pushed 2h ago, 2400+ contributors)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "melgarafael/DeskcommCRM",
+      "name": "DeskcommCRM",
+      "url": "https://github.com/melgarafael/DeskcommCRM",
+      "description": "Open-source AI sales OS \u2014 self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 3166,
+      "stars_24h": 53,
+      "trending_score": 56,
+      "topics": [
+        "ai",
+        "ai-agents",
+        "chatbot",
+        "crm",
+        "customer-support",
+        "ecommerce",
+        "lgpd",
+        "mcp",
+        "multi-tenant",
+        "nextjs",
+        "nuvemshop",
+        "open-source",
+        "rag",
+        "sales-automation",
+        "self-hosted",
+        "supabase",
+        "typescript",
+        "waha",
+        "whatsapp",
+        "whatsapp-api"
+      ],
+      "created_at": "2026-04-28T20:00:33Z",
+      "pushed_at": "2026-09-18T18:32:12Z",
+      "quick_run": "npm install DeskcommCRM",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 3166
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "drop-in-replacement",
+          "self-hosted"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 142,
+        "authenticity_score": 95,
+        "open_issues": 153,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Commercial Coding Agents \u2014 Open-source AI sales OS \u2014 self-hosted CRM with native AI agents + WhatsApp (WAHA).",
+      "replaces": "Commercial Coding Agents",
+      "why_this_week": "Steady developer migration driven by reliable TypeScript tooling and focused scope.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 101,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        29,
+        38,
+        50,
+        61,
+        77,
+        89,
+        100
+      ],
+      "pushed_human": "pushed 2h ago",
+      "maturity_detail": "Production Ready (Active pushed 2h ago, 101+ contributors)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "genkit-ai/genkit",
+      "name": "genkit",
+      "url": "https://github.com/genkit-ai/genkit",
+      "description": "Open-source framework for building agentic apps in JavaScript, Go, Dart, and Python, built and used in production by Google",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "stars": 6452,
+      "stars_24h": 106,
+      "trending_score": 80,
+      "topics": [
+        "agents",
+        "ai",
+        "embedders",
+        "genkit",
+        "llm",
+        "multimodal",
+        "rag",
+        "vector-database"
+      ],
+      "created_at": "2024-04-29T22:04:42Z",
+      "pushed_at": "2026-09-18T18:12:45Z",
+      "quick_run": "npm install genkit",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 6452
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 871,
+        "authenticity_score": 95,
+        "open_issues": 766,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Commercial Coding Agents \u2014 genkit delivers high-performance TypeScript execution with zero cloud lock-in.",
+      "replaces": "Commercial Coding Agents",
+      "why_this_week": "Steady developer migration driven by reliable TypeScript tooling and focused scope.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 144,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        21,
+        32,
+        44,
+        58,
+        72,
+        89,
+        100
+      ],
+      "pushed_human": "pushed 3h ago",
+      "maturity_detail": "Production Ready (Active pushed 3h ago, 144+ contributors)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "pingcap/tidb",
+      "name": "tidb",
+      "url": "https://github.com/pingcap/tidb",
+      "description": "TiDB is built for agentic workloads that grow unpredictably, with ACID guarantees and native support for transactions, analytics, and vector search. No data silos. No noisy neighbors. No infrastructure ceiling.",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "stars": 40549,
+      "stars_24h": 210,
+      "trending_score": 201,
+      "topics": [
+        "agent",
+        "agent-context",
+        "agent-memory",
+        "agentic",
+        "ai",
+        "cloud-native",
+        "database",
+        "distributed-database",
+        "distributed-transactions",
+        "go",
+        "hacktoberfest",
+        "htap",
+        "memory",
+        "mysql",
+        "mysql-compatibility",
+        "scale",
+        "serverless",
+        "sql",
+        "tidb"
+      ],
+      "created_at": "2015-09-06T04:01:52Z",
+      "pushed_at": "2026-09-18T17:28:43Z",
+      "quick_run": "git clone https://github.com/pingcap/tidb",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": false,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 40549
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "service"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "byok-cloud"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 4030,
+        "authenticity_score": 95,
+        "open_issues": 7091,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Aurora + Pinecone \u2014 distributed SQL database handling ACID transactions and vector search simultaneously.",
+      "replaces": "Aurora PostgreSQL + Pinecone",
+      "why_this_week": "Eliminates sync delays between transactional user data and AI agent embedding stores.",
+      "hardware_alert": "\u26a1 Multi-node Server Cluster",
+      "signal_badge": "established",
+      "contributors_count": 890,
+      "lock_in_risk": "None (Apache 2.0)",
+      "mcp_support": "MySQL Compatible",
+      "sparkline_data": [
+        15,
+        25,
+        45,
+        55,
+        63,
+        76,
+        91,
+        100
+      ],
+      "pushed_human": "pushed 14h ago",
+      "maturity_detail": "Production Ready (Active pushed 14h ago, 890+ contributors)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "apache/doris",
+      "name": "doris",
+      "url": "https://github.com/apache/doris",
+      "description": "Apache Doris is a real-time analytics and hybrid search database for AI agents.",
+      "language": "Java",
+      "license": "Apache-2.0",
+      "stars": 15960,
+      "stars_24h": 345,
+      "trending_score": 126,
+      "topics": [
+        "agent",
+        "ai",
+        "bigquery",
+        "database",
+        "delta-lake",
+        "hudi",
+        "iceberg",
+        "lakehouse",
+        "observability",
+        "olap",
+        "paimon",
+        "query-engine",
+        "real-time",
+        "redshift",
+        "search",
+        "snowflake",
+        "sql",
+        "vector"
+      ],
+      "created_at": "2017-08-10T12:13:30Z",
+      "pushed_at": "2026-09-18T12:31:16Z",
+      "quick_run": "git clone https://github.com/apache/doris",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 15960
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "real-time"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 3326,
+        "authenticity_score": 95,
+        "open_issues": 1354,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Commercial Coding Agents \u2014 Apache Doris is a real-time analytics and hybrid search database for AI agents.",
+      "replaces": "Commercial Coding Agents",
+      "why_this_week": "Sustained ecosystem adoption with 15,960 total GitHub stars and active release cadence.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "established",
+      "contributors_count": 227,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        27,
+        39,
+        55,
+        63,
+        81,
+        89,
+        100
+      ],
+      "pushed_human": "pushed 8h ago",
+      "maturity_detail": "Production Ready (Active pushed 8h ago, 227+ contributors)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "matrixorigin/matrixone",
+      "name": "matrixone",
+      "url": "https://github.com/matrixorigin/matrixone",
+      "description": "AI-native HTAP database with Git-for-Data and built-in vector search, serving as the data and memory backbone for intelligent agents and applications.",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "stars": 1889,
+      "stars_24h": 30,
+      "trending_score": 43,
+      "topics": [
+        "agents",
+        "ai-native",
+        "cloud-native",
+        "database",
+        "distributed-database",
+        "distributed-systems",
+        "fulltext-support",
+        "git-for-data",
+        "go",
+        "htap",
+        "hyperconverged",
+        "memory",
+        "mysql-compatible",
+        "olap",
+        "one-size-fits-all",
+        "sql",
+        "vector-database"
+      ],
+      "created_at": "2021-02-18T09:07:17Z",
+      "pushed_at": "2026-09-18T16:49:06Z",
+      "quick_run": "git clone https://github.com/matrixorigin/matrixone",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": false,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 1889
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "byok-cloud"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 2038,
+        "authenticity_score": 95,
+        "open_issues": 747,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Pinecone & LangChain \u2014 matrixone delivers high-performance Go execution with zero cloud lock-in.",
+      "replaces": "Pinecone & LangChain",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "new",
+      "contributors_count": 78,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        21,
+        28,
+        38,
+        48,
+        61,
+        78,
+        100
+      ],
+      "pushed_human": "pushed 5h ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 5h ago)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "guaardvark/guaardvark",
+      "name": "guaardvark",
+      "url": "https://github.com/guaardvark/guaardvark",
+      "description": "The self-hosted AI studio: local video, image, music, voice, LoRA training, coding swarms, RAG and screen agents on one GPU, driven from the Studio or by your coding agent (Claude Code, Cursor, Codex, OpenClaw) through MCP and skills.",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 223,
+      "stars_24h": 25,
+      "trending_score": 14,
+      "topics": [
+        "agent-skills",
+        "ai",
+        "ai-agents",
+        "ai-workstation",
+        "claude-code",
+        "claude-code-plugin",
+        "coding-agent",
+        "comfyui",
+        "llm",
+        "local-ai",
+        "mcp",
+        "mcp-server",
+        "multi-agent",
+        "ollama",
+        "python",
+        "rag",
+        "self-hosted",
+        "stable-diffusion",
+        "video-generation",
+        "voice-assistant"
+      ],
+      "created_at": "2026-03-11T04:47:45Z",
+      "pushed_at": "2026-09-18T14:38:00Z",
+      "quick_run": "pip install guaardvark",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 223
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "service"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "self-hosted"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 191,
+        "authenticity_score": 95,
+        "open_issues": 17,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Pinecone & LangChain \u2014 guaardvark delivers high-performance Python execution with zero cloud lock-in.",
+      "replaces": "Pinecone & LangChain",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "new",
+      "contributors_count": 26,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        22,
+        30,
+        39,
+        52,
+        64,
+        81,
+        100
+      ],
+      "pushed_human": "pushed 8h ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 8h ago)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "libnyx/LT2MD",
+      "name": "LT2MD",
+      "url": "https://github.com/libnyx/LT2MD",
+      "description": "AI-agent skill producing reusable Markdown from PDFs. It turns flowcharts, diagrams, and charts into text beside each caption instead of empty links. It checks an earlier conversion against the PDF and fixes misread or missing parts. Long PDFs run in small saved batches with an independent review pass, each paragraph tagged with its page.",
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "stars": 110,
+      "stars_24h": 36,
+      "trending_score": 10,
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "codex",
+        "codex-skill",
+        "document-conversion",
+        "llm",
+        "markdown",
+        "ocr",
+        "pdf",
+        "pdf-to-markdown",
+        "rag",
+        "scanned-documents",
+        "vlm"
+      ],
+      "created_at": "2026-08-14T18:08:20Z",
+      "pushed_at": "2026-08-23T16:55:14Z",
+      "quick_run": "pip install LT2MD",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 110
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "experimental",
+        "last_push_days": 26,
+        "age_days": 35,
+        "authenticity_score": 95,
+        "open_issues": 0,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Pinecone & LangChain \u2014 AI-agent skill producing reusable Markdown from PDFs.",
+      "replaces": "Pinecone & LangChain",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "new",
+      "contributors_count": 18,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        20,
+        28,
+        37,
+        49,
+        62,
+        80,
+        100
+      ],
+      "pushed_human": "pushed 3w ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 3w ago)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "Nebutra/MinerU-Skill",
+      "name": "MinerU-Skill",
+      "url": "https://github.com/Nebutra/MinerU-Skill",
+      "description": "AI-Native document parser: PDF, Office & images \u2192 clean Markdown with LaTeX, tables & OCR. Zero-dependency CLI & skill for Claude Code, Cursor & AI agents.",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 116,
+      "stars_24h": 70,
+      "trending_score": 10,
+      "topics": [
+        "ai-agents",
+        "ai-skill",
+        "claude-code",
+        "cursor",
+        "document-parser",
+        "document-processing",
+        "docx",
+        "latex",
+        "llm",
+        "markdown",
+        "markdown-converter",
+        "mineru",
+        "obsidian",
+        "ocr",
+        "pdf",
+        "pdf-parser",
+        "pdf-to-markdown",
+        "python",
+        "rag",
+        "vlm"
+      ],
+      "created_at": "2026-02-13T07:15:42Z",
+      "pushed_at": "2026-07-24T23:33:25Z",
+      "quick_run": "pip install MinerU-Skill",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 116
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 55,
+        "age_days": 217,
+        "authenticity_score": 95,
+        "open_issues": 4,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Commercial Coding Agents \u2014 AI-Native document parser: PDF, Office & images \u2192 clean Markdown with LaTeX, tables & OCR.",
+      "replaces": "Commercial Coding Agents",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 19,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        23,
+        35,
+        41,
+        57,
+        70,
+        82,
+        100
+      ],
+      "pushed_human": "pushed 55d ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 55d ago)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "swarmclawai/swarmvault",
+      "name": "swarmvault",
+      "url": "https://github.com/swarmclawai/swarmvault",
+      "description": "The local-first LLM Wiki: open-source knowledge graph builder, RAG knowledge base, and agent memory store. Built on Andrej Karpathy's pattern. An Obsidian alternative for personal knowledge management, AI second brain, and durable Claude Code / Codex / OpenClaw memory.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 691,
+      "stars_24h": 76,
+      "trending_score": 26,
+      "topics": [
+        "agent-memory",
+        "ai-agents",
+        "claude-code",
+        "claude-code-memory",
+        "codex",
+        "karpathy",
+        "knowledge-graph",
+        "llm",
+        "llm-wiki",
+        "local-first",
+        "mcp",
+        "mcp-server",
+        "obsidian",
+        "obsidian-alternative",
+        "openclaw",
+        "opencode",
+        "personal-knowledge-management",
+        "pkm",
+        "rag",
+        "wiki"
+      ],
+      "created_at": "2026-04-06T20:52:30Z",
+      "pushed_at": "2026-06-30T20:28:43Z",
+      "quick_run": "npm install swarmvault",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 691
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "service"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "drop-in-replacement"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 79,
+        "age_days": 164,
+        "authenticity_score": 95,
+        "open_issues": 8,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Ollama & Cloud LLMs \u2014 swarmvault delivers high-performance TypeScript execution with zero cloud lock-in.",
+      "replaces": "Ollama & Cloud LLMs",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 47,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        24,
+        36,
+        50,
+        58,
+        69,
+        84,
+        100
+      ],
+      "pushed_human": "pushed 79d ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 79d ago)",
+      "category": "Multi-Agent Frameworks"
+    },
+    {
+      "full_name": "vstorm-co/pydantic-deepagents",
+      "name": "pydantic-deepagents",
+      "url": "https://github.com/vstorm-co/pydantic-deepagents",
+      "description": "Open-source, self-hosted Claude Code - a terminal AI assistant and the Python framework behind it. Tool-calling, sandboxed execution, multi-agent teams, skills, checkpoints, unlimited context - on Pydantic AI, any model.",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 1067,
+      "stars_24h": 67,
+      "trending_score": 32,
+      "topics": [
+        "agent-framework",
+        "ai-agents",
+        "anthropic",
+        "claude-code",
+        "cli",
+        "coding-agent",
+        "deep-research",
+        "docker-sandbox",
+        "llms",
+        "mcp",
+        "playwright",
+        "pydantic",
+        "pydantic-ai",
+        "python",
+        "subagents",
+        "tui",
+        "vstorm"
+      ],
+      "created_at": "2025-11-29T14:36:36Z",
+      "pushed_at": "2026-09-15T18:11:17Z",
+      "quick_run": "pip install pydantic-deepagents",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": false,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 1067
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli",
+          "service"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "docker"
+        ],
+        "intent_tags": [
+          "self-hosted"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 3,
+        "age_days": 293,
+        "authenticity_score": 95,
+        "open_issues": 20,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Commercial Coding Agents \u2014 pydantic-deepagents delivers high-performance Python execution with zero cloud lock-in.",
+      "replaces": "Commercial Coding Agents",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 58,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        26,
+        37,
+        44,
+        59,
+        67,
+        83,
+        100
+      ],
+      "pushed_human": "pushed 3d ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 3d ago)",
+      "category": "Multi-Agent Frameworks"
+    }
+  ]
+}

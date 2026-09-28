@@ -1,4 +1,4 @@
-﻿/**
+/**
  * DevRadar Core Engine
  * 20-Category Taxonomy, Composite Breakout Ranking, Jaccard Similarity & NL Intent Parsing
  */
@@ -136,3 +136,363 @@ export function parseNaturalLanguage(raw) {
 
   return { cleanText: text, filters };
 }
+
+/**
+ * Render lightweight inline SVG sparkline path
+ */
+export function renderSparklineSvg(points = [], width = 56, height = 18, color = 'var(--accent-primary, #f59e0b)') {
+  if (!points || points.length === 0) points = [20, 30, 45, 60, 80, 95];
+  const min = Math.min(...points);
+  const max = Math.max(...points);
+  const range = Math.max(1, max - min);
+  const step = width / (points.length - 1);
+
+  const coords = points.map((p, i) => {
+    const x = (i * step).toFixed(1);
+    const y = (height - 2 - ((p - min) / range) * (height - 4)).toFixed(1);
+    return `${x},${y}`;
+  });
+
+  const pathD = `M ${coords.join(' L ')}`;
+  return `
+    <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" class="overflow-visible inline-block">
+      <path d="${pathD}" fill="none" stroke="${color}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+      <circle cx="${coords[coords.length - 1].split(',')[0]}" cy="${coords[coords.length - 1].split(',')[1]}" r="2" fill="${color}" />
+    </svg>
+  `;
+}
+
+/**
+ * Render unicode block sparkline
+ */
+export function renderSparklineText(points = []) {
+  if (!points || points.length === 0) points = [10, 25, 40, 60, 80, 95];
+  const blocks = [' ', '▂', '▃', '▄', '▅', '▆', '▇', '█'];
+  const min = Math.min(...points);
+  const max = Math.max(...points);
+  const range = Math.max(1, max - min);
+  return points.map(p => {
+    const idx = Math.min(blocks.length - 1, Math.floor(((p - min) / range) * (blocks.length - 1)));
+    return blocks[idx];
+  }).join('');
+}
+
+/**
+ * Curated Stack Advisor Knowledge Engine
+ * Maps (Hardware Floor, Architectural Intent) -> deployable stack, docker-compose.yml & markdown sheet
+ */
+export const STACK_RECOMMENDATIONS = {
+  "mac-m-series": {
+    "local-llm": {
+      title: "Apple Silicon Metal Acceleration Stack",
+      subtitle: "Sub-100ms TTFT local inference with unified memory and native MCP tool calling.",
+      components: [
+        { role: "Inference Engine", name: "Rapid-MLX", full_name: "raullenchai/Rapid-MLX", why: "4.2x faster TTFT than Ollama on Apple Silicon Metal with prompt cache." },
+        { role: "Multi-User WebUI", name: "LibreChat", full_name: "danny-avila/LibreChat", why: "Full multi-model UI with native MCP server integration." },
+        { role: "CLI Coding Agent", name: "Codewhale", full_name: "Hmbown/Codewhale", why: "Blazing fast Rust terminal coding assistant with AST refactoring." }
+      ],
+      docker_compose: `version: '3.8'
+services:
+  mlx-engine:
+    image: python:3.11-slim
+    container_name: stackfit-mlx-engine
+    restart: unless-stopped
+    command: sh -c "pip install rapid-mlx && rapid-mlx serve --port 8000"
+    ports:
+      - "8000:8000"
+    environment:
+      - MLX_CACHE_DIR=/models
+
+  librechat:
+    image: ghcr.io/danny-avila/librechat-dev:latest
+    container_name: stackfit-librechat
+    ports:
+      - "3080:3080"
+    environment:
+      - HOST=0.0.0.0
+      - OPENAI_REVERSE_PROXY=http://mlx-engine:8000/v1
+    depends_on:
+      - mlx-engine`,
+      markdown_sheet: `# StackFit Architecture Sheet: Apple Silicon Local Stack
+- **Hardware Profile:** Apple Silicon (M1/M2/M3/M4 - 16GB+ Unified Memory)
+- **Primary Goal:** Local-first LLM inference without cloud dependencies or per-token fees.
+
+### Recommended Components:
+1. **Rapid-MLX** (\`raullenchai/Rapid-MLX\`): 4.2x faster TTFT on Metal with native tool calling.
+2. **LibreChat** (\`danny-avila/LibreChat\`): Self-hosted UI with full MCP server connectivity.
+3. **Codewhale** (\`Hmbown/Codewhale\`): Terminal agent written in Rust.
+
+### Quick Start:
+\`\`\`bash
+# 1. Start local engine
+pip install rapid-mlx && rapid-mlx serve
+# 2. Point LibreChat or Claude Code to http://localhost:8000/v1
+\`\`\``
+    },
+    "rag-knowledge": {
+      title: "Apple Silicon Graph & Vector RAG Stack",
+      subtitle: "Dual-level entity retrieval with Qdrant vector storage running locally on Mac.",
+      components: [
+        { role: "Vector Database", name: "Qdrant", full_name: "qdrant/qdrant", why: "Fast Rust vector search with memory-efficient payload filtering." },
+        { role: "Graph RAG Engine", name: "LightRAG", full_name: "HKUDS/LightRAG", why: "Dual-level entity relationship retrieval 10x cheaper than GraphRAG." },
+        { role: "Knowledge Base", name: "claude-obsidian", full_name: "AgriciDaniel/claude-obsidian", why: "Self-organizing markdown second brain based on Karpathy's wiki." }
+      ],
+      docker_compose: `version: '3.8'
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: stackfit-qdrant
+    restart: unless-stopped
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - ./qdrant_storage:/qdrant/storage
+
+  lightrag-service:
+    image: python:3.11-slim
+    container_name: stackfit-lightrag
+    restart: unless-stopped
+    command: sh -c "pip install lightrag-hku && python -m lightrag.api"
+    ports:
+      - "8020:8020"
+    environment:
+      - VECTOR_DATABASE=qdrant
+      - QDRANT_URL=http://qdrant:6333
+    depends_on:
+      - qdrant`,
+      markdown_sheet: `# StackFit Architecture Sheet: Local Graph & Vector RAG
+- **Hardware Profile:** Mac M-Series (16GB+ Unified Memory)
+- **Primary Goal:** Self-hosted entity-relationship RAG without cloud lock-in.
+
+### Components:
+- **Qdrant**: High-performance Rust vector store.
+- **LightRAG**: Fast dual-level graph retrieval.
+- **claude-obsidian**: Markdown knowledge vault.`
+    }
+  },
+  "cpu-only": {
+    "local-llm": {
+      title: "Commodity CPU Zero-GPU Stack",
+      subtitle: "Pure C++ quantized GGUF execution with minimal memory footprint on x86/ARM.",
+      components: [
+        { role: "Inference Engine", name: "llama.cpp", full_name: "ggml-org/llama.cpp", why: "Raw C++ runtime with AVX2/NEON optimizations, zero server layer." },
+        { role: "Terminal Client", name: "mcp-client-for-ollama", full_name: "jonigl/mcp-client-for-ollama", why: "Terminal-native MCP harness running 100% locally." },
+        { role: "Code Agent", name: "Codewhale", full_name: "Hmbown/Codewhale", why: "Fast Rust agent operating smoothly on CPU-only machines." }
+      ],
+      docker_compose: `version: '3.8'
+services:
+  llamacpp-server:
+    image: ghcr.io/ggerganov/llama.cpp:server
+    container_name: stackfit-llamacpp
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    command: -m /models/qwen2.5-7b-instruct-q4_k_m.gguf -c 4096 --host 0.0.0.0 --port 8080
+    volumes:
+      - ./models:/models`,
+      markdown_sheet: `# StackFit Architecture Sheet: CPU-Only Inference Stack
+- **Hardware Profile:** CPU Only / Low RAM (x86_64 or ARM commodity)
+- **Primary Goal:** Run offline AI inference without requiring a dedicated GPU.
+
+### Components:
+- **llama.cpp**: Efficient CPU quantization (Q4_K_M GGUF).
+- **mcp-client**: TUI interface with Model Context Protocol support.
+
+### Run Command:
+\`\`\`bash
+docker compose up -d
+curl http://localhost:8080/v1/models
+\`\`\``
+    },
+    "rag-knowledge": {
+      title: "Lightweight CPU Vector Search & RAG Stack",
+      subtitle: "Rust-native vector indexing on CPU memory with ManticoreSearch hybrid retrieval.",
+      components: [
+        { role: "Search Database", name: "manticoresearch", full_name: "manticoresoftware/manticoresearch", why: "C++ real-time hybrid search with tiny RAM footprint." },
+        { role: "Embedding Engine", name: "Qdrant", full_name: "qdrant/qdrant", why: "Fast filtered vector search operating comfortably on 2GB RAM." },
+        { role: "Local Vault", name: "QOwnNotes", full_name: "pbek/QOwnNotes", why: "Pure markdown note-taking with Nextcloud synchronization." }
+      ],
+      docker_compose: `version: '3.8'
+services:
+  manticore:
+    image: manticoresearch/manticore:latest
+    container_name: stackfit-manticore
+    ports:
+      - "9306:9306"
+      - "9308:9308"
+    volumes:
+      - ./manticore_data:/var/lib/manticore
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: stackfit-qdrant-cpu
+    ports:
+      - "6333:6333"
+    volumes:
+      - ./qdrant_data:/qdrant/storage`,
+      markdown_sheet: `# StackFit Architecture Sheet: Lightweight CPU RAG
+- **Hardware Profile:** CPU Only / Low RAM
+- **Primary Goal:** Hybrid keyword + vector search with minimal memory consumption.`
+    }
+  },
+  "gpu-8gb": {
+    "local-llm": {
+      title: "Consumer GPU (8GB–12GB VRAM) Production Stack",
+      subtitle: "Quantized 7B/8B model serving with PagedAttention or SGLang prefix caching.",
+      components: [
+        { role: "Inference Engine", name: "sglang", full_name: "sgl-project/sglang", why: "RadixAttention prefix caching delivers 3-5x higher throughput on 8GB-12GB GPUs." },
+        { role: "Enterprise WebUI", name: "LibreChat", full_name: "danny-avila/LibreChat", why: "OpenAI-compatible client with tool calling and prompt presets." },
+        { role: "Speech Synthesis", name: "vui", full_name: "fluxions-ai/vui", why: "Lightweight 219M param conversational voice cloning running on CPU." }
+      ],
+      docker_compose: `version: '3.8'
+services:
+  sglang:
+    image: lmsysorg/sglang:latest
+    container_name: stackfit-sglang
+    restart: unless-stopped
+    runtime: nvidia
+    ports:
+      - "30000:30000"
+    command: python3 -m sglang.launch_server --model-path Qwen/Qwen2.5-7B-Instruct --port 30000 --host 0.0.0.0 --mem-fraction-static 0.8
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  librechat:
+    image: ghcr.io/danny-avila/librechat-dev:latest
+    container_name: stackfit-librechat
+    ports:
+      - "3080:3080"
+    environment:
+      - HOST=0.0.0.0
+      - OPENAI_REVERSE_PROXY=http://sglang:30000/v1
+    depends_on:
+      - sglang`,
+      markdown_sheet: `# StackFit Architecture Sheet: Consumer GPU Stack
+- **Hardware Profile:** 8GB–12GB CUDA VRAM (RTX 3060 / 4060 / 3070)
+- **Primary Goal:** Fast token generation with prefix caching and chat UI.
+
+### Quick Start:
+\`\`\`bash
+docker compose up -d
+# Access UI at http://localhost:3080
+\`\`\``
+    },
+    "rag-knowledge": {
+      title: "Enterprise Visual RAG & Agent Stack",
+      subtitle: "Visual workflow builder with Qdrant vector storage and MCP agent coordination.",
+      components: [
+        { role: "Orchestration & UI", name: "dify", full_name: "langgenius/dify", why: "Visual agentic workflow and RAG builder that exports clean standalone APIs." },
+        { role: "Vector Database", name: "Qdrant", full_name: "qdrant/qdrant", why: "Rust-native vector search with zero cloud lock-in." },
+        { role: "Agent Memory", name: "OpenViking", full_name: "volcengine/OpenViking", why: "Self-evolving context database unifying agent memory and knowledge." }
+      ],
+      docker_compose: `version: '3.8'
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: stackfit-qdrant
+    ports:
+      - "6333:6333"
+    volumes:
+      - ./qdrant_storage:/qdrant/storage
+
+  dify-api:
+    image: langgenius/dify-api:latest
+    container_name: stackfit-dify
+    ports:
+      - "5001:5001"
+    environment:
+      - VECTOR_STORE=qdrant
+      - QDRANT_URL=http://qdrant:6333
+    depends_on:
+      - qdrant`,
+      markdown_sheet: `# StackFit Architecture Sheet: Visual RAG & Agents
+- **Hardware Profile:** 8GB–12GB VRAM + Host System
+- **Components:** Dify visual builder + Qdrant vector store + OpenViking agent memory.`
+    }
+  },
+  "gpu-24gb": {
+    "local-llm": {
+      title: "Hyperscale High-Throughput Cluster Stack",
+      subtitle: "SGLang RadixAttention prefix caching paired with LMCache KV layers for massive concurrency.",
+      components: [
+        { role: "Serving Runtime", name: "sglang", full_name: "sgl-project/sglang", why: "State-of-the-art serving engine handling multi-turn batching on 24GB+ hardware." },
+        { role: "KV Cache Acceleration", name: "LMCache", full_name: "LMCache/LMCache", why: "Supercharges serving with fastest cross-GPU KV cache sharing, cutting TTFT 85%." },
+        { role: "Cluster Operator", name: "LLMKube", full_name: "defilantech/LLMKube", why: "Kubernetes operator sharding inference across heterogeneous GPU fleets." }
+      ],
+      docker_compose: `version: '3.8'
+services:
+  sglang-cluster:
+    image: lmsysorg/sglang:latest
+    container_name: stackfit-sglang-prod
+    runtime: nvidia
+    ports:
+      - "30000:30000"
+    command: python3 -m sglang.launch_server --model-path deepseek-ai/DeepSeek-V3 --tp 2 --port 30000
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+  lmcache:
+    image: lmcache/lmcache-server:latest
+    container_name: stackfit-lmcache
+    ports:
+      - "65432:65432"
+    environment:
+      - LMCACHE_CHUNK_SIZE=256
+      - LMCACHE_LOCAL_CPU=True`,
+      markdown_sheet: `# StackFit Architecture Sheet: 24GB+ Production Cluster
+- **Hardware Profile:** 24GB+ CUDA VRAM (RTX 4090 / A100 / H100)
+- **Primary Goal:** Maximum throughput for high-concurrency API serving and coding agents.`
+    },
+    "rag-knowledge": {
+      title: "Hyperscale Enterprise Vector & RAG Stack",
+      subtitle: "Multi-billion vector ANN indexing with Milvus and self-hosted Onyx workplace intelligence.",
+      components: [
+        { role: "Enterprise Search", name: "onyx", full_name: "onyx-dot-app/onyx", why: "Self-hosted alternative to Glean connecting 30+ workplace apps to private AI chat." },
+        { role: "Distributed Vector DB", name: "milvus", full_name: "milvus-io/milvus", why: "Massive-scale distributed vector indexing for multi-billion vector clusters." },
+        { role: "Context Engine", name: "OpenViking", full_name: "volcengine/OpenViking", why: "Unified context database for memory and knowledge RAG." }
+      ],
+      docker_compose: `version: '3.8'
+services:
+  milvus-standalone:
+    image: milvusdb/milvus:v2.4.0
+    container_name: stackfit-milvus
+    command: ["milvus", "run", "standalone"]
+    ports:
+      - "19530:19530"
+
+  onyx-service:
+    image: onyxdotapp/onyx-backend:latest
+    container_name: stackfit-onyx
+    ports:
+      - "8080:8080"
+    environment:
+      - VECTOR_DB_TYPE=milvus
+      - MILVUS_HOST=milvus-standalone
+    depends_on:
+      - milvus-standalone`,
+      markdown_sheet: `# StackFit Architecture Sheet: Enterprise Knowledge Hub
+- **Hardware Profile:** 24GB+ VRAM / Production Docker Host
+- **Components:** Onyx enterprise workplace search + Milvus vector database.`
+    }
+  }
+};
+
+/**
+ * Retrieve recommended stack or fallback gracefully
+ */
+export function getRecommendedStack(hw = "mac-m-series", intent = "local-llm") {
+  const hwGroup = STACK_RECOMMENDATIONS[hw] || STACK_RECOMMENDATIONS["mac-m-series"];
+  return hwGroup[intent] || hwGroup["local-llm"];
+}
+

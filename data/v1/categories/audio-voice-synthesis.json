@@ -1,0 +1,1276 @@
+{
+  "category": "Audio & Voice Synthesis",
+  "count": 15,
+  "updated_at": "2026-09-28T11:39:36.710259+00:00",
+  "repositories": [
+    {
+      "full_name": "rapidaai/voice-ai",
+      "name": "voice-ai",
+      "url": "https://github.com/rapidaai/voice-ai",
+      "description": "Rapida is an open-source, end-to-end voice AI orchestration platform for building real-time conversational voice agents with audio streaming, STT, TTS, VAD, multi-channel integration, agent state management, and observability.",
+      "language": "Go",
+      "license": "NOASSERTION",
+      "stars": 732,
+      "stars_24h": 220,
+      "trending_score": 27,
+      "topics": [
+        "agent-framework",
+        "ai-voice",
+        "ai-voice-agent",
+        "audio-streaming",
+        "golang",
+        "open-source",
+        "orchestration",
+        "realtime-audio",
+        "sip",
+        "speech-ai",
+        "speech-to-text",
+        "telephony",
+        "text-to-speech",
+        "voice-agents",
+        "voice-ai",
+        "voice-ai-agents",
+        "voice-ai-platform",
+        "voice-assistant-ai",
+        "voice-bot",
+        "voice-observability"
+      ],
+      "created_at": "2023-12-07T07:57:00Z",
+      "pushed_at": "2026-09-18T18:29:40Z",
+      "quick_run": "git clone https://github.com/rapidaai/voice-ai",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 732
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "real-time"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 1016,
+        "authenticity_score": 95,
+        "open_issues": 35,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Vapi & Retell \u2014 full self-hosted voice pipeline with sub-300ms WebRTC latency.",
+      "replaces": "Vapi & Retell AI (SaaS)",
+      "why_this_week": "Enterprise teams migrating away from expensive per-minute voice SaaS billing.",
+      "hardware_alert": "\u26a1 8GB+ GPU or High-Core CPU Server",
+      "signal_badge": "climber",
+      "contributors_count": 36,
+      "lock_in_risk": "None (Self-Hosted Go)",
+      "mcp_support": "WebRTC / SIP / REST",
+      "sparkline_data": [
+        15,
+        22,
+        31,
+        44,
+        53,
+        68,
+        88,
+        100
+      ],
+      "pushed_human": "pushed 2h ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 2h ago)",
+      "category": "Audio & Voice Synthesis"
+    },
+    {
+      "full_name": "mbailey/voicemode",
+      "name": "voicemode",
+      "url": "https://github.com/mbailey/voicemode",
+      "description": "Natural voice conversations with Claude Code",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 1370,
+      "stars_24h": 210,
+      "trending_score": 37,
+      "topics": [
+        "anthropic",
+        "asr",
+        "claude",
+        "claudecode",
+        "kokoro",
+        "livekit",
+        "mcp",
+        "mcp-server",
+        "tts",
+        "voice",
+        "voicemode",
+        "whisper"
+      ],
+      "created_at": "2025-06-08T16:16:19Z",
+      "pushed_at": "2026-09-15T03:41:01Z",
+      "quick_run": "pip install voicemode",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 1370
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "service"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 3,
+        "age_days": 467,
+        "authenticity_score": 95,
+        "open_issues": 47,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to typing terminal prompts \u2014 natural push-to-talk voice interface directly in your CLI coding loop.",
+      "replaces": "Manual CLI Typing",
+      "why_this_week": "Huge hit with developers pairing hands-free with Claude Code while reviewing diffs.",
+      "hardware_alert": "\u2705 Runs on CPU / Mic Audio",
+      "signal_badge": "spiking",
+      "contributors_count": 18,
+      "lock_in_risk": "None (Local CLI)",
+      "mcp_support": "CLI Bridge",
+      "sparkline_data": [
+        15,
+        22,
+        31,
+        41,
+        52,
+        64,
+        82,
+        100
+      ],
+      "pushed_human": "pushed 3d ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 3d ago)",
+      "category": "Audio & Voice Synthesis"
+    },
+    {
+      "full_name": "beiyege-01/dsh-voice-ai-girlfriend",
+      "name": "dsh-voice-ai-girlfriend",
+      "url": "https://github.com/beiyege-01/dsh-voice-ai-girlfriend",
+      "description": "\u8bed\u97f3 AI \u5973\u53cb\uff08Voice AI girlfriend for DeepSeek Harness\uff09\uff1aWhisper \u8bed\u97f3\u8f93\u5165 + Qwen3-TTS \u58f0\u97f3\u514b\u9686 + \u53e5\u5b50\u7ea7\u6d41\u5f0f\u6717\u8bfb + \u6570\u5b57\u4eba\u52a8\u753b\u7a97\u3002\u63d2\u8bdd/\u6392\u961f\u53cc\u6a21\u5f0f\uff0c\u8bf4\u8bdd\u5373\u6253\u65ad\u3002",
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "stars": 102,
+      "stars_24h": 56,
+      "trending_score": 10,
+      "topics": [
+        "ai-girlfriend",
+        "companion",
+        "deepseek-harness",
+        "digital-human",
+        "dsh",
+        "dsh-plugin",
+        "speech-to-speech",
+        "tts",
+        "voice-assistant",
+        "voice-clone",
+        "whisper"
+      ],
+      "created_at": "2026-08-15T15:16:37Z",
+      "pushed_at": "2026-09-13T16:36:44Z",
+      "quick_run": "npm install dsh-voice-ai-girlfriend",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 102
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "experimental",
+        "last_push_days": 5,
+        "age_days": 34,
+        "authenticity_score": 95,
+        "open_issues": 0,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to ElevenLabs & Whisper API \u2014 dsh-voice-ai-girlfriend delivers high-performance TypeScript execution with zero cloud lock-in.",
+      "replaces": "ElevenLabs & Whisper API",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 18,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        29,
+        44,
+        53,
+        61,
+        70,
+        88,
+        100
+      ],
+      "pushed_human": "pushed 5d ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 5d ago)",
+      "category": "Audio & Voice Synthesis"
+    },
+    {
+      "full_name": "fluxions-ai/vui",
+      "name": "vui",
+      "url": "https://github.com/fluxions-ai/vui",
+      "description": "Vui Nano \u2014 a small, context-aware text-to-speech model trained on real conversations. 219M active params (305M total), Apache 2.0, voice cloning, streaming, runs on CPU (dependency-free C build). Ships with a full real-time voice assistant: WebRTC, ASR, local LLM, OpenAI Realtime API compatible.",
+      "language": "Python",
+      "license": "NOASSERTION",
+      "stars": 765,
+      "stars_24h": 320,
+      "trending_score": 27,
+      "topics": [
+        "conversational-ai",
+        "conversational-speech",
+        "cpu-inference",
+        "edge-ai",
+        "lightweight",
+        "multi-speaker",
+        "on-device",
+        "openai-realtime",
+        "pytorch",
+        "realtime-api",
+        "realtime-tts",
+        "speech-synthesis",
+        "streaming",
+        "text-to-speech",
+        "tts",
+        "voice-ai",
+        "voice-assistant",
+        "voice-cloning",
+        "webrtc",
+        "whisper"
+      ],
+      "created_at": "2025-06-05T11:15:03Z",
+      "pushed_at": "2026-09-12T10:53:12Z",
+      "quick_run": "pip install vui",
+      "hardware_req": "8GB Unified / Metal",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 765
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "real-time",
+          "runs-on-cpu"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "8GB Unified / Metal"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 6,
+        "age_days": 470,
+        "authenticity_score": 95,
+        "open_issues": 3,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to ElevenLabs \u2014 219M param lightweight model running real-time voice cloning on pure CPU.",
+      "replaces": "ElevenLabs & Cartesia",
+      "why_this_week": "Zero-dependency C build delivers sub-100ms conversational speech directly on laptops.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM (Pure C)",
+      "signal_badge": "spiking",
+      "contributors_count": 16,
+      "lock_in_risk": "None (Apache 2.0)",
+      "mcp_support": "OpenAI Realtime API",
+      "sparkline_data": [
+        15,
+        22,
+        31,
+        39,
+        52,
+        67,
+        82,
+        100
+      ],
+      "pushed_human": "pushed 6d ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 6d ago)",
+      "category": "Audio & Voice Synthesis"
+    },
+    {
+      "full_name": "ddxfish/sapphire",
+      "name": "sapphire",
+      "url": "https://github.com/ddxfish/sapphire",
+      "description": "She's the AI agent you come home to.",
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "stars": 286,
+      "stars_24h": 81,
+      "trending_score": 16,
+      "topics": [
+        "agentic",
+        "ai",
+        "ai-assistant",
+        "ai-companion",
+        "assistant",
+        "chat-ui",
+        "chatbot",
+        "companion",
+        "kokoro",
+        "privacy",
+        "python",
+        "self-hosted",
+        "storytelling",
+        "stt",
+        "tool-calling",
+        "tts",
+        "voice",
+        "voice-assistant",
+        "whisper"
+      ],
+      "created_at": "2025-12-13T23:04:51Z",
+      "pushed_at": "2026-09-15T15:53:11Z",
+      "quick_run": "pip install sapphire",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 286
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "self-hosted"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 3,
+        "age_days": 278,
+        "authenticity_score": 95,
+        "open_issues": 6,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to Commercial Coding Agents \u2014 She's the AI agent you come home to.",
+      "replaces": "Commercial Coding Agents",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 30,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        26,
+        35,
+        46,
+        63,
+        75,
+        87,
+        100
+      ],
+      "pushed_human": "pushed 3d ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 3d ago)",
+      "category": "Audio & Voice Synthesis"
+    },
+    {
+      "full_name": "Ali-hey-0/audio-ai-field-guide",
+      "name": "audio-ai-field-guide",
+      "url": "https://github.com/Ali-hey-0/audio-ai-field-guide",
+      "description": "A mental-model-first field guide to Audio AI \u2014 from raw waveforms to production voice systems. Covers ASR, TTS, audio classification, Transformer architectures (CTC/Seq2Seq), fine-tuning, and real-world pipelines like voice assistants and meeting transcription. Bilingual (EN/FA).",
+      "language": "Code",
+      "license": "MIT",
+      "stars": 109,
+      "stars_24h": 78,
+      "trending_score": 10,
+      "topics": [
+        "asr",
+        "audio-classification",
+        "audio-processing",
+        "deep-learning",
+        "huggingface",
+        "learning-notes",
+        "meachine-learning",
+        "mental-models",
+        "nlp",
+        "persian",
+        "pytorch",
+        "speaker-diarization",
+        "speech-recognition",
+        "speech-to-text",
+        "text-to-speech",
+        "transformers",
+        "tts",
+        "voice-assistant",
+        "wav2vec2",
+        "whisper"
+      ],
+      "created_at": "2026-07-16T01:28:47Z",
+      "pushed_at": "2026-07-16T05:09:50Z",
+      "quick_run": "git clone https://github.com/Ali-hey-0/audio-ai-field-guide",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 80,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 109
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library",
+          "desktop"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "fine-tuning"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 64,
+        "age_days": 64,
+        "authenticity_score": 80,
+        "open_issues": 0,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to ElevenLabs & Whisper API \u2014 audio-ai-field-guide delivers high-performance Code execution with zero cloud lock-in.",
+      "replaces": "ElevenLabs & Whisper API",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "new",
+      "contributors_count": 18,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        22,
+        29,
+        39,
+        50,
+        63,
+        78,
+        100
+      ],
+      "pushed_human": "pushed 64d ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 64d ago)",
+      "category": "Audio & Voice Synthesis"
+    },
+    {
+      "full_name": "abus-aikorea/voice-pro",
+      "name": "voice-pro",
+      "url": "https://github.com/abus-aikorea/voice-pro",
+      "description": "Gradio WebUI for creators and developers, featuring key TTS (Edge-TTS, kokoro) and zero-shot Voice Cloning (E2 & F5-TTS, CosyVoice), with Whisper audio processing, YouTube download, Demucs vocal isolation, and multilingual translation.",
+      "language": "Python",
+      "license": "GPL-3.0",
+      "stars": 12844,
+      "stars_24h": 240,
+      "trending_score": 113,
+      "topics": [
+        "audiobook",
+        "faster-whisper",
+        "gradio",
+        "karaoke",
+        "podcasts",
+        "speech-recognition",
+        "speech-synthesis",
+        "speech-to-text",
+        "subtitles",
+        "text-to-speech",
+        "transcription",
+        "translator",
+        "tts",
+        "voice-cloning",
+        "voice-conversion",
+        "webui",
+        "whisper",
+        "whisperx",
+        "yt-dlp"
+      ],
+      "created_at": "2024-07-29T10:02:31Z",
+      "pushed_at": "2026-07-13T01:28:10Z",
+      "quick_run": "pip install voice-pro",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 12844
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 67,
+        "age_days": 781,
+        "authenticity_score": 95,
+        "open_issues": 60,
+        "is_stale": false
+      },
+      "verdict": "\u26a1 Alt to commercial TTS APIs \u2014 zero-shot voice cloning with F5-TTS, CosyVoice, and Kokoro in one UI.",
+      "replaces": "ElevenLabs & PlayHT",
+      "why_this_week": "Over 12k stars as open-source creators consolidate vocal isolation and multilingual dubbing.",
+      "hardware_alert": "\u26a1 8GB+ CUDA VRAM Recommended",
+      "signal_badge": "established",
+      "contributors_count": 65,
+      "lock_in_risk": "None (Gradio WebUI)",
+      "mcp_support": "WebUI / API",
+      "sparkline_data": [
+        15,
+        21,
+        29,
+        43,
+        58,
+        69,
+        85,
+        100
+      ],
+      "pushed_human": "pushed 67d ago",
+      "maturity_detail": "Production Ready (Active pushed 67d ago, 65+ contributors)",
+      "category": "Audio & Voice Synthesis"
+    },
+    {
+      "full_name": "FranckyB/Voice-Clone-Studio",
+      "name": "Voice-Clone-Studio",
+      "url": "https://github.com/FranckyB/Voice-Clone-Studio",
+      "description": "A Gradio-based web UI for voice cloning and voice design, powered by Qwen3-TTS & VibeVoice.  Can use Whisper or VibeVoice-ASR for automatic transcription.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "stars": 672,
+      "stars_24h": 47,
+      "trending_score": 25,
+      "topics": [],
+      "created_at": "2026-01-24T03:05:15Z",
+      "pushed_at": "2026-05-18T15:51:30Z",
+      "quick_run": "pip install Voice-Clone-Studio",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 672
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "maintenance",
+        "last_push_days": 123,
+        "age_days": 237,
+        "authenticity_score": 95,
+        "open_issues": 1,
+        "is_stale": true
+      },
+      "verdict": "\u26a1 Alt to ElevenLabs & Whisper API \u2014 A Gradio-based web UI for voice cloning and voice design, powered by Qwen3-TTS & VibeVoice.",
+      "replaces": "ElevenLabs & Whisper API",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "new",
+      "contributors_count": 46,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        20,
+        28,
+        37,
+        49,
+        62,
+        78,
+        100
+      ],
+      "pushed_human": "pushed 123d ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 123d ago)",
+      "category": "Audio & Voice Synthesis"
+    },
+    {
+      "full_name": "Purple-Horizons/openclaw-voice",
+      "name": "openclaw-voice",
+      "url": "https://github.com/Purple-Horizons/openclaw-voice",
+      "description": "\ud83e\udd9e Open-source browser-based voice chat for AI assistants. Self-hosted, private, free. Whisper STT + ElevenLabs TTS. Works with OpenAI, Claude, or custom agents.",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 126,
+      "stars_24h": 34,
+      "trending_score": 11,
+      "topics": [
+        "ai-assistant",
+        "claude",
+        "elevenlabs",
+        "fastapi",
+        "open-source",
+        "openai",
+        "python",
+        "self-hosted",
+        "speech-to-text",
+        "text-to-speech",
+        "voice-ai",
+        "voice-chat",
+        "websocket",
+        "whisper"
+      ],
+      "created_at": "2026-01-30T18:25:18Z",
+      "pushed_at": "2026-02-01T20:39:36Z",
+      "quick_run": "pip install openclaw-voice",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 126
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "self-hosted"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "maintenance",
+        "last_push_days": 228,
+        "age_days": 231,
+        "authenticity_score": 95,
+        "open_issues": 18,
+        "is_stale": true
+      },
+      "verdict": "\u26a1 Alt to Commercial Coding Agents \u2014 \ud83e\udd9e Open-source browser-based voice chat for AI assistants.",
+      "replaces": "Commercial Coding Agents",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 20,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        21,
+        27,
+        41,
+        56,
+        68,
+        81,
+        100
+      ],
+      "pushed_human": "pushed 228d ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 228d ago)",
+      "category": "Audio & Voice Synthesis"
+    },
+    {
+      "full_name": "activated-intelligence/voice-chat",
+      "name": "voice-chat",
+      "url": "https://github.com/activated-intelligence/voice-chat",
+      "description": "100% in-browser, hands-free AI voice chat using Whisper, WebLLM, and Supertonic TTS",
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 195,
+      "stars_24h": 42,
+      "trending_score": 13,
+      "topics": [],
+      "created_at": "2025-12-10T21:42:14Z",
+      "pushed_at": "2025-12-11T02:22:00Z",
+      "quick_run": "npm install voice-chat",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 195
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "maintenance",
+        "last_push_days": 281,
+        "age_days": 281,
+        "authenticity_score": 95,
+        "open_issues": 0,
+        "is_stale": true
+      },
+      "verdict": "\u26a1 Alt to Ollama & Cloud LLMs \u2014 100% in-browser, hands-free AI voice chat using Whisper, WebLLM, and Supertonic TTS.",
+      "replaces": "Ollama & Cloud LLMs",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "new",
+      "contributors_count": 25,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        20,
+        27,
+        37,
+        47,
+        62,
+        78,
+        100
+      ],
+      "pushed_human": "pushed 281d ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 281d ago)",
+      "category": "Audio & Voice Synthesis"
+    },
+    {
+      "full_name": "maudoin/ollama-voice",
+      "name": "ollama-voice",
+      "url": "https://github.com/maudoin/ollama-voice",
+      "description": "plug whisper audio transcription to a local ollama server and ouput tts audio responses",
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "stars": 378,
+      "stars_24h": 51,
+      "trending_score": 19,
+      "topics": [],
+      "created_at": "2023-11-12T01:12:33Z",
+      "pushed_at": "2025-10-17T20:09:34Z",
+      "quick_run": "pip install ollama-voice",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 378
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "service"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "maintenance",
+        "last_push_days": 335,
+        "age_days": 1041,
+        "authenticity_score": 95,
+        "open_issues": 5,
+        "is_stale": true
+      },
+      "verdict": "\u26a1 Alt to Ollama & Cloud LLMs \u2014 plug whisper audio transcription to a local ollama server and ouput tts audio responses.",
+      "replaces": "Ollama & Cloud LLMs",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 34,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        23,
+        31,
+        48,
+        62,
+        71,
+        84,
+        100
+      ],
+      "pushed_human": "pushed 335d ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 335d ago)",
+      "category": "Audio & Voice Synthesis"
+    },
+    {
+      "full_name": "Nikorasu/LiveWhisper",
+      "name": "LiveWhisper",
+      "url": "https://github.com/Nikorasu/LiveWhisper",
+      "description": "A nearly-live implementation of OpenAI's Whisper, using sounddevice. Requires existing Whisper install.",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 362,
+      "stars_24h": 58,
+      "trending_score": 19,
+      "topics": [
+        "ai",
+        "assistant",
+        "chatbot",
+        "dictation",
+        "numpy",
+        "openai",
+        "openai-whisper",
+        "python",
+        "sounddevice",
+        "speech-recognition",
+        "speech-to-text",
+        "terminal",
+        "text-to-speech",
+        "transcription",
+        "translation",
+        "tts",
+        "voice",
+        "voice-assistant",
+        "voice-recognition",
+        "whisper"
+      ],
+      "created_at": "2022-10-06T21:57:33Z",
+      "pushed_at": "2025-07-20T06:31:46Z",
+      "quick_run": "pip install LiveWhisper",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 362
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "maintenance",
+        "last_push_days": 425,
+        "age_days": 1442,
+        "authenticity_score": 95,
+        "open_issues": 7,
+        "is_stale": true
+      },
+      "verdict": "\u26a1 Alt to ElevenLabs & Whisper API \u2014 A nearly-live implementation of OpenAI's Whisper, using sounddevice.",
+      "replaces": "ElevenLabs & Whisper API",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "new",
+      "contributors_count": 34,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        20,
+        29,
+        38,
+        49,
+        61,
+        79,
+        100
+      ],
+      "pushed_human": "pushed 425d ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 425d ago)",
+      "category": "Audio & Voice Synthesis"
+    },
+    {
+      "full_name": "jakecyr/chatgpt-voice-assistant",
+      "name": "chatgpt-voice-assistant",
+      "url": "https://github.com/jakecyr/chatgpt-voice-assistant",
+      "description": "A chatbot that integrates OpenAI Whisper, Chat Completions and Voice Generation. Also provides the option to use free transcription / TTS options.",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 137,
+      "stars_24h": 50,
+      "trending_score": 11,
+      "topics": [
+        "artificial-intelligence",
+        "chatgpt",
+        "machine-learning",
+        "python",
+        "voice-assistant",
+        "voice-recognition"
+      ],
+      "created_at": "2022-12-14T04:43:05Z",
+      "pushed_at": "2025-02-04T01:27:18Z",
+      "quick_run": "pip install chatgpt-voice-assistant",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 137
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "maintenance",
+        "last_push_days": 591,
+        "age_days": 1374,
+        "authenticity_score": 95,
+        "open_issues": 3,
+        "is_stale": true
+      },
+      "verdict": "\u26a1 Alt to ElevenLabs & Whisper API \u2014 A chatbot that integrates OpenAI Whisper, Chat Completions and Voice Generation.",
+      "replaces": "ElevenLabs & Whisper API",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 21,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        26,
+        38,
+        49,
+        65,
+        74,
+        86,
+        100
+      ],
+      "pushed_human": "pushed 591d ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 591d ago)",
+      "category": "Audio & Voice Synthesis"
+    },
+    {
+      "full_name": "mezbaul-h/june",
+      "name": "june",
+      "url": "https://github.com/mezbaul-h/june",
+      "description": "Local voice chatbot for engaging conversations, powered by Ollama, Hugging Face Transformers, and  Coqui TTS Toolkit",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 789,
+      "stars_24h": 53,
+      "trending_score": 28,
+      "topics": [
+        "ai",
+        "assistant-chat-bots",
+        "chatbot",
+        "chatbots",
+        "cli-app",
+        "command-line-tool",
+        "coqui-tts",
+        "huggingface",
+        "large-language-models",
+        "llm",
+        "python",
+        "speech-recognition",
+        "speech-to-text",
+        "text-to-speech",
+        "whisper"
+      ],
+      "created_at": "2024-06-03T16:09:46Z",
+      "pushed_at": "2024-08-12T13:05:03Z",
+      "quick_run": "pip install june",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 789
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "maintenance",
+        "last_push_days": 767,
+        "age_days": 837,
+        "authenticity_score": 95,
+        "open_issues": 0,
+        "is_stale": true
+      },
+      "verdict": "\u26a1 Alt to Ollama & Cloud LLMs \u2014 june delivers high-performance Python execution with zero cloud lock-in.",
+      "replaces": "Ollama & Cloud LLMs",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "new",
+      "contributors_count": 50,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        21,
+        28,
+        39,
+        50,
+        64,
+        81,
+        100
+      ],
+      "pushed_human": "pushed 767d ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 767d ago)",
+      "category": "Audio & Voice Synthesis"
+    },
+    {
+      "full_name": "VideotronicMaker/LM-Studio-Voice-Conversation",
+      "name": "LM-Studio-Voice-Conversation",
+      "url": "https://github.com/VideotronicMaker/LM-Studio-Voice-Conversation",
+      "description": "Python app for LM Studio-enhanced voice conversations with local LLMs. Uses Whisper for speech-to-text and offers a privacy-focused, accessible interface.",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 145,
+      "stars_24h": 26,
+      "trending_score": 12,
+      "topics": [
+        "lmstudio",
+        "stt",
+        "tts",
+        "voice-conversation"
+      ],
+      "created_at": "2024-02-03T18:38:21Z",
+      "pushed_at": "2024-05-09T23:21:19Z",
+      "quick_run": "pip install LM-Studio-Voice-Conversation",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 145
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "maintenance",
+        "last_push_days": 861,
+        "age_days": 957,
+        "authenticity_score": 95,
+        "open_issues": 2,
+        "is_stale": true
+      },
+      "verdict": "\u26a1 Alt to Ollama & Cloud LLMs \u2014 Python app for LM Studio-enhanced voice conversations with local LLMs.",
+      "replaces": "Ollama & Cloud LLMs",
+      "why_this_week": "Emerging breakout project gaining traction in the open-source community this month.",
+      "hardware_alert": "\u2705 Runs on CPU / Low RAM",
+      "signal_badge": "climber",
+      "contributors_count": 21,
+      "lock_in_risk": "None (Open Source)",
+      "mcp_support": "Standalone",
+      "sparkline_data": [
+        15,
+        27,
+        37,
+        46,
+        58,
+        70,
+        83,
+        100
+      ],
+      "pushed_human": "pushed 861d ago",
+      "maturity_detail": "Fast Growing (Pushed pushed 861d ago)",
+      "category": "Audio & Voice Synthesis"
+    }
+  ]
+}

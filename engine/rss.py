@@ -1,4 +1,4 @@
-﻿"""
+"""
 DevRadar RSS & Static API Exporter
 Generates standard RSS 2.0 XML and split category API endpoints.
 """
@@ -27,9 +27,9 @@ def generate_rss_and_endpoints():
     rss = ET.Element("rss", version="2.0")
     channel = ET.SubElement(rss, "channel")
 
-    ET.SubElement(channel, "title").text = "DevRadar // Breakout Open Source Pulse"
+    ET.SubElement(channel, "title").text = "StackFit // Breakout Open Source Pulse"
     ET.SubElement(channel, "link").text = BASE_URL
-    ET.SubElement(channel, "description").text = "Hourly stream tracking high-velocity, authentic GitHub projects across 20 high-signal disciplines."
+    ET.SubElement(channel, "description").text = "Find the open-source tool you actually need — by what it replaces, what it runs on, and whether it's alive."
     ET.SubElement(channel, "language").text = "en-us"
     ET.SubElement(channel, "lastBuildDate").text = pub_date_str
 
@@ -45,11 +45,13 @@ def generate_rss_and_endpoints():
         ET.SubElement(item, "pubDate").text = pub_date_str
         
         desc = (
+            f"<p><b>Verdict:</b> {r.get('verdict', '')}</p>"
             f"<p>{r.get('description', '')}</p>"
             f"<ul>"
+            f"<li><b>Replaces:</b> {r.get('replaces', 'Incumbents')}</li>"
             f"<li><b>Stars:</b> ⭐ {r.get('stars', 0):,} (+{r.get('stars_24h', 0)} in 24h)</li>"
-            f"<li><b>Authenticity:</b> {r.get('authenticity_score', 95)}% Organic</li>"
-            f"<li><b>Hardware Viability:</b> {r.get('hardware_req', 'Minimal')}</li>"
+            f"<li><b>Signal:</b> {r.get('signal_badge', 'climber').upper()}</li>"
+            f"<li><b>Hardware Viability:</b> {r.get('hardware_alert', r.get('hardware_req', 'Minimal'))}</li>"
             f"<li><b>Quick Run:</b> <code>{r.get('quick_run', 'git clone ' + r.get('url', ''))}</code></li>"
             f"</ul>"
         )
