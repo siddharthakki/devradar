@@ -1,111 +1,32 @@
 {
   "category": "Local LLM Engines",
   "count": 23,
-  "updated_at": "2026-09-28T09:25:41.483670+00:00",
+  "updated_at": "2026-09-28T09:28:47.400490+00:00",
   "repositories": [
     {
-      "full_name": "raullenchai/Rapid-MLX",
-      "name": "Rapid-MLX",
-      "url": "https://github.com/raullenchai/Rapid-MLX",
-      "description": "The fastest local AI engine for Apple Silicon. 4.2x faster than Ollama, 0.08s cached TTFT, 100% tool calling. 17 tool parsers, prompt cache, reasoning separation, cloud routing. Drop-in OpenAI replacement. Works with Claude Code, Cursor, Aider.",
-      "language": "Python",
-      "license": "NOASSERTION",
-      "stars": 3783,
-      "stars_24h": 0,
-      "trending_score": 61,
-      "topics": [
-        "apple-silicon",
-        "claude-code",
-        "cursor",
-        "deepseek",
-        "fastapi",
-        "hacktoberfest",
-        "inference",
-        "llm",
-        "local-llm",
-        "m1",
-        "m2",
-        "m3",
-        "macos",
-        "mlx",
-        "ollama-alternative",
-        "openai-api",
-        "python",
-        "qwen",
-        "tool-calling"
-      ],
-      "created_at": "2026-02-25T00:41:44Z",
-      "pushed_at": "2026-09-18T18:27:42Z",
-      "quick_run": "pip install Rapid-MLX",
-      "hardware_req": "8GB Unified / Metal",
-      "is_cuda_ready": false,
-      "is_local_first": false,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 3783
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "byok-cloud"
-        ],
-        "intent_tags": [
-          "drop-in-replacement"
-        ],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "8GB Unified / Metal"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 205,
-        "authenticity_score": 95,
-        "open_issues": 54,
-        "is_stale": false
-      },
-      "category": "Local LLM Engines"
-    },
-    {
-      "full_name": "oumi-ai/oumi",
-      "name": "oumi",
-      "url": "https://github.com/oumi-ai/oumi",
-      "description": "Easily fine-tune, evaluate and deploy Qwen, Gemma, or any open weight LLM!",
+      "full_name": "Human-Agent-Society/reef",
+      "name": "reef",
+      "url": "https://github.com/Human-Agent-Society/reef",
+      "description": "Infrastructure for continually self\u2011improving agents",
+      "category": "Local LLM Engines",
       "language": "Python",
       "license": "Apache-2.0",
-      "stars": 9388,
-      "stars_24h": 0,
-      "trending_score": 96,
+      "stars": 6810,
+      "stars_24h": 3263,
+      "trending_score": 9871,
       "topics": [
-        "dpo",
-        "evaluation",
-        "fine-tuning",
-        "gpt-oss",
-        "gpt-oss-120b",
-        "gpt-oss-20b",
+        "agent-infrastructure",
+        "ai-agents",
+        "continual-learning",
         "inference",
-        "llama",
-        "llms",
-        "open-weight",
-        "open-weight-models",
-        "open-weights",
-        "sft",
-        "slms",
-        "vlms"
+        "llm",
+        "llm-training",
+        "reinforcement-learning",
+        "self-improving-agents"
       ],
-      "created_at": "2024-05-07T17:45:15Z",
-      "pushed_at": "2026-09-18T18:25:23Z",
-      "quick_run": "pip install oumi",
+      "created_at": "2026-08-31T01:39:18Z",
+      "pushed_at": "2026-09-28T09:28:27Z",
+      "quick_run": "git clone https://github.com/Human-Agent-Society/reef",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -113,62 +34,11 @@
       "star_history": [
         {
           "ts": 1789756348,
-          "stars": 9388
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [
-          "fine-tuning"
-        ],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 864,
-        "authenticity_score": 95,
-        "open_issues": 35,
-        "is_stale": false
-      },
-      "category": "Local LLM Engines"
-    },
-    {
-      "full_name": "ggml-org/llama.cpp",
-      "name": "llama.cpp",
-      "url": "https://github.com/ggml-org/llama.cpp",
-      "description": "LLM inference in C/C++",
-      "language": "C++",
-      "license": "MIT",
-      "stars": 128702,
-      "stars_24h": 0,
-      "trending_score": 358,
-      "topics": [
-        "ggml"
-      ],
-      "created_at": "2023-03-10T18:58:00Z",
-      "pushed_at": "2026-09-18T18:19:48Z",
-      "quick_run": "git clone https://github.com/ggml-org/llama.cpp",
-      "hardware_req": "8GB Unified / Metal",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
+          "stars": 3547
+        },
         {
-          "ts": 1789756348,
-          "stars": 128702
+          "ts": 1790587727,
+          "stars": 6810
         }
       ],
       "capabilities": {
@@ -185,129 +55,61 @@
         "hardware": {
           "is_cuda_ready": false,
           "cpu_supported": true,
-          "floor": "8GB Unified / Metal"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 1287,
-        "authenticity_score": 95,
-        "open_issues": 2497,
-        "is_stale": false
-      },
-      "category": "Local LLM Engines"
-    },
-    {
-      "full_name": "Blaizzy/mlx-vlm",
-      "name": "mlx-vlm",
-      "url": "https://github.com/Blaizzy/mlx-vlm",
-      "description": "MLX-VLM is a package for inference and fine-tuning of Vision Language Models (VLMs) on your Mac using MLX.",
-      "language": "Python",
-      "license": "MIT",
-      "stars": 5510,
-      "stars_24h": 0,
-      "trending_score": 74,
-      "topics": [
-        "apple-silicon",
-        "florence2",
-        "idefics",
-        "llava",
-        "llm",
-        "local-ai",
-        "mlx",
-        "molmo",
-        "paligemma",
-        "pixtral",
-        "vision-framework",
-        "vision-language-model",
-        "vision-transformer"
-      ],
-      "created_at": "2024-04-16T15:10:12Z",
-      "pushed_at": "2026-09-18T18:14:13Z",
-      "quick_run": "pip install mlx-vlm",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 5510
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [
-          "fine-tuning"
-        ],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
           "floor": "Minimal CPU"
         }
       },
       "health": {
         "stage": "mature",
         "last_push_days": 0,
-        "age_days": 885,
+        "age_days": 28,
         "authenticity_score": 95,
-        "open_issues": 168,
+        "open_issues": 100,
         "is_stale": false
-      },
-      "category": "Local LLM Engines"
+      }
     },
     {
-      "full_name": "defilantech/LLMKube",
-      "name": "LLMKube",
-      "url": "https://github.com/defilantech/LLMKube",
-      "description": "Kubernetes operator for self-hosted LLM inference across a heterogeneous GPU fleet: NVIDIA CUDA, AMD Vulkan, and Apple Silicon Metal. Runtimes: llama.cpp, vLLM, TGI, mlx-server. Multi-GPU sharding, model caching, OpenAI-compatible endpoints. Apache-2.0, run across homelab and on-prem fleets, actively developed.",
-      "language": "Go",
+      "full_name": "Luce-Org/lucebox",
+      "name": "lucebox",
+      "url": "https://github.com/Luce-Org/lucebox",
+      "description": "LLM speculative inference server for heterogeneous hardware & consumer GPUs",
+      "category": "Local LLM Engines",
+      "language": "C++",
       "license": "Apache-2.0",
-      "stars": 210,
+      "stars": 2885,
       "stars_24h": 0,
-      "trending_score": 14,
+      "trending_score": 53,
       "topics": [
-        "ai",
-        "apple-silicon",
-        "autoscaling",
-        "edge-computing",
-        "gguf",
-        "gpu",
-        "homelab",
-        "inference",
-        "kubernetes",
-        "kubernetes-operator",
+        "cuda",
+        "cuda-kernels",
+        "dflash",
+        "heterogeneous-computing",
+        "kernel",
         "llama-cpp",
-        "llm",
-        "local-llm",
-        "metal",
-        "mlx",
-        "multi-gpu",
-        "nvidia",
-        "self-hosted",
-        "tgi",
-        "vllm"
+        "local-ai",
+        "luce",
+        "megakernel",
+        "pflash",
+        "poolside",
+        "qwen",
+        "r9700",
+        "rocm",
+        "rtx3090",
+        "spark",
+        "speculative-decoding",
+        "speculative-prefill",
+        "strix-halo"
       ],
-      "created_at": "2025-11-12T22:53:23Z",
-      "pushed_at": "2026-09-18T18:14:03Z",
-      "quick_run": "git clone https://github.com/defilantech/LLMKube",
-      "hardware_req": "8GB Unified / Metal",
+      "created_at": "2026-04-03T17:46:29Z",
+      "pushed_at": "2026-09-28T09:26:26Z",
+      "quick_run": "git clone https://github.com/Luce-Org/lucebox",
+      "hardware_req": "24GB+ CUDA VRAM",
       "is_cuda_ready": true,
       "is_local_first": true,
       "authenticity_score": 95,
       "star_history": [
         {
-          "ts": 1789756348,
-          "stars": 210
+          "ts": 1790587727,
+          "stars": 2885
         }
       ],
       "capabilities": {
@@ -315,73 +117,61 @@
           "service"
         ],
         "integrations": [
-          "openai-api"
+          "standalone"
         ],
         "deployment": [
           "local-only"
         ],
-        "intent_tags": [
-          "self-hosted"
-        ],
+        "intent_tags": [],
         "hardware": {
           "is_cuda_ready": true,
-          "cpu_supported": true,
-          "floor": "8GB Unified / Metal"
+          "cpu_supported": false,
+          "floor": "24GB+ CUDA VRAM"
         }
       },
       "health": {
         "stage": "active",
         "last_push_days": 0,
-        "age_days": 309,
+        "age_days": 177,
         "authenticity_score": 95,
-        "open_issues": 98,
+        "open_issues": 102,
         "is_stale": false
-      },
-      "category": "Local LLM Engines"
+      }
     },
     {
-      "full_name": "lightseekorg/tokenspeed",
-      "name": "tokenspeed",
-      "url": "https://github.com/lightseekorg/tokenspeed",
-      "description": "TokenSpeed is a speed-of-light LLM inference engine.",
-      "language": "Python",
-      "license": "MIT",
-      "stars": 2147,
+      "full_name": "huggingface/optimum-intel",
+      "name": "optimum-intel",
+      "url": "https://github.com/huggingface/optimum-intel",
+      "description": "\ud83e\udd17 Optimum Intel: Accelerate inference with Intel optimization tools",
+      "category": "Local LLM Engines",
+      "language": "Jupyter Notebook",
+      "license": "Apache-2.0",
+      "stars": 623,
       "stars_24h": 0,
-      "trending_score": 46,
+      "trending_score": 24,
       "topics": [
-        "b200",
-        "b300",
-        "blackwell",
-        "deepseek",
-        "gb200",
-        "gb300",
-        "glm",
-        "gpt-oss",
-        "inkling",
-        "kimi",
-        "lightseek",
+        "asr",
+        "diffusers",
         "llm",
-        "mi355x",
-        "mi455x",
-        "minimax",
-        "qwen",
-        "rubin",
-        "speed-of-light",
-        "tokenspeed",
+        "omni",
+        "openvino",
+        "openvino-genai",
+        "optimization",
+        "transformers",
+        "tts",
         "vlm"
       ],
-      "created_at": "2026-05-06T13:13:21Z",
-      "pushed_at": "2026-09-18T18:09:43Z",
-      "quick_run": "pip install tokenspeed",
+      "created_at": "2022-05-25T10:56:08Z",
+      "pushed_at": "2026-09-28T09:24:00Z",
+      "quick_run": "git clone https://github.com/huggingface/optimum-intel",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
       "authenticity_score": 95,
       "star_history": [
         {
-          "ts": 1789756348,
-          "stars": 2147
+          "ts": 1790587727,
+          "stars": 623
         }
       ],
       "capabilities": {
@@ -404,165 +194,23 @@
       "health": {
         "stage": "active",
         "last_push_days": 0,
-        "age_days": 135,
+        "age_days": 1586,
         "authenticity_score": 95,
-        "open_issues": 43,
+        "open_issues": 204,
         "is_stale": false
-      },
-      "category": "Local LLM Engines"
-    },
-    {
-      "full_name": "sgl-project/sglang",
-      "name": "sglang",
-      "url": "https://github.com/sgl-project/sglang",
-      "description": "SGLang is a high-performance serving framework for large language models and multimodal models.",
-      "language": "Python",
-      "license": "Apache-2.0",
-      "stars": 36141,
-      "stars_24h": 0,
-      "trending_score": 190,
-      "topics": [
-        "attention",
-        "blackwell",
-        "cuda",
-        "deepseek",
-        "diffusion",
-        "glm",
-        "gpt-oss",
-        "inference",
-        "llama",
-        "llm",
-        "minimax",
-        "moe",
-        "qwen",
-        "qwen-image",
-        "reinforcement-learning",
-        "transformer",
-        "vlm",
-        "wan"
-      ],
-      "created_at": "2024-01-08T04:15:52Z",
-      "pushed_at": "2026-09-18T18:20:49Z",
-      "quick_run": "pip install sglang",
-      "hardware_req": "16GB+ CUDA VRAM",
-      "is_cuda_ready": true,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 36141
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": true,
-          "cpu_supported": false,
-          "floor": "16GB+ CUDA VRAM"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 984,
-        "authenticity_score": 95,
-        "open_issues": 5464,
-        "is_stale": false
-      },
-      "category": "Local LLM Engines"
-    },
-    {
-      "full_name": "pegainfer-project/pegainfer",
-      "name": "pegainfer",
-      "url": "https://github.com/pegainfer-project/pegainfer",
-      "description": "Pure Rust + CUDA LLM inference engine \u2014 no PyTorch, OpenAI-compatible, serves Qwen3 to Kimi-K2",
-      "language": "Rust",
-      "license": "Apache-2.0",
-      "stars": 705,
-      "stars_24h": 0,
-      "trending_score": 26,
-      "topics": [
-        "cuda",
-        "cuda-kernels",
-        "deepseek",
-        "gpu",
-        "inference",
-        "inference-engine",
-        "kimi",
-        "kimi-k2",
-        "kv-cache",
-        "llm",
-        "llm-inference",
-        "llm-serving",
-        "model-serving",
-        "moe",
-        "openai-api",
-        "paged-attention",
-        "qwen",
-        "qwen3",
-        "rust",
-        "vllm"
-      ],
-      "created_at": "2026-02-17T12:01:22Z",
-      "pushed_at": "2026-09-18T17:57:56Z",
-      "quick_run": "cargo install pegainfer",
-      "hardware_req": "16GB+ CUDA VRAM",
-      "is_cuda_ready": true,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 705
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "openai-api"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": true,
-          "cpu_supported": false,
-          "floor": "16GB+ CUDA VRAM"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 213,
-        "authenticity_score": 95,
-        "open_issues": 84,
-        "is_stale": false
-      },
-      "category": "Local LLM Engines"
+      }
     },
     {
       "full_name": "LMCache/LMCache",
       "name": "LMCache",
       "url": "https://github.com/LMCache/LMCache",
       "description": "LMCache: Supercharge Your LLM with the Fastest KV Cache Layer",
+      "category": "Local LLM Engines",
       "language": "Python",
       "license": "Apache-2.0",
-      "stars": 11862,
-      "stars_24h": 0,
-      "trending_score": 108,
+      "stars": 11930,
+      "stars_24h": 68,
+      "trending_score": 313,
       "topics": [
         "amd",
         "cuda",
@@ -576,8 +224,8 @@
         "vllm"
       ],
       "created_at": "2024-05-28T21:06:04Z",
-      "pushed_at": "2026-09-18T17:54:29Z",
-      "quick_run": "pip install LMCache",
+      "pushed_at": "2026-09-28T09:23:50Z",
+      "quick_run": "git clone https://github.com/LMCache/LMCache",
       "hardware_req": "16GB+ CUDA VRAM",
       "is_cuda_ready": true,
       "is_local_first": true,
@@ -586,6 +234,10 @@
         {
           "ts": 1789756348,
           "stars": 11862
+        },
+        {
+          "ts": 1790587727,
+          "stars": 11930
         }
       ],
       "capabilities": {
@@ -608,51 +260,106 @@
       "health": {
         "stage": "mature",
         "last_push_days": 0,
-        "age_days": 842,
+        "age_days": 852,
         "authenticity_score": 95,
-        "open_issues": 756,
+        "open_issues": 750,
         "is_stale": false
-      },
-      "category": "Local LLM Engines"
+      }
     },
     {
-      "full_name": "hybridgroup/yzma",
-      "name": "yzma",
-      "url": "https://github.com/hybridgroup/yzma",
-      "description": "Go with your own intelligence - Write Go applications that directly integrate llama.cpp for local inference using hardware acceleration on Linux, macOS, Windows, & WebAssembly.",
-      "language": "Go",
-      "license": "NOASSERTION",
-      "stars": 633,
+      "full_name": "vllm-project/vllm-ascend",
+      "name": "vllm-ascend",
+      "url": "https://github.com/vllm-project/vllm-ascend",
+      "description": "Community maintained hardware plugin for vLLM on Huawei Ascend",
+      "category": "Local LLM Engines",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "stars": 2898,
       "stars_24h": 0,
-      "trending_score": 25,
+      "trending_score": 53,
       "topics": [
-        "arduino-uno-q",
-        "cuda",
-        "gguf",
-        "golang",
-        "jetson-orin-nano",
-        "llama",
-        "llamacpp",
+        "ascend",
+        "inference",
         "llm",
-        "metal",
-        "purego",
-        "raspberry-pi",
-        "rocm",
-        "vlm",
-        "vulkan",
-        "wasm"
+        "llm-serving",
+        "llmops",
+        "mlops",
+        "model-serving",
+        "transformer",
+        "vllm"
       ],
-      "created_at": "2025-09-21T17:57:17Z",
-      "pushed_at": "2026-09-18T17:53:31Z",
-      "quick_run": "git clone https://github.com/hybridgroup/yzma",
-      "hardware_req": "8GB Unified / Metal",
+      "created_at": "2025-01-29T10:44:12Z",
+      "pushed_at": "2026-09-28T09:23:36Z",
+      "quick_run": "git clone https://github.com/vllm-project/vllm-ascend",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 2898
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 606,
+        "authenticity_score": 95,
+        "open_issues": 3664,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "NVIDIA/TensorRT-LLM",
+      "name": "TensorRT-LLM",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM",
+      "description": "TensorRT LLM provides users with an easy-to-use Python API to define Large Language Models (LLMs) and supports state-of-the-art optimizations to perform inference efficiently on NVIDIA GPUs. TensorRT LLM also contains components to create Python and C++ runtimes that orchestrate the inference execution in a performant way.",
+      "category": "Local LLM Engines",
+      "language": "Python",
+      "license": "NOASSERTION",
+      "stars": 14727,
+      "stars_24h": 74,
+      "trending_score": 343,
+      "topics": [
+        "blackwell",
+        "cuda",
+        "llm-serving",
+        "moe",
+        "pytorch"
+      ],
+      "created_at": "2023-08-16T17:14:27Z",
+      "pushed_at": "2026-09-28T09:22:43Z",
+      "quick_run": "git clone https://github.com/NVIDIA/TensorRT-LLM",
+      "hardware_req": "16GB+ CUDA VRAM",
       "is_cuda_ready": true,
       "is_local_first": true,
       "authenticity_score": 95,
       "star_history": [
         {
           "ts": 1789756348,
-          "stars": 633
+          "stars": 14653
+        },
+        {
+          "ts": 1790587727,
+          "stars": 14727
         }
       ],
       "capabilities": {
@@ -668,30 +375,273 @@
         "intent_tags": [],
         "hardware": {
           "is_cuda_ready": true,
-          "cpu_supported": true,
-          "floor": "8GB Unified / Metal"
+          "cpu_supported": false,
+          "floor": "16GB+ CUDA VRAM"
         }
       },
       "health": {
-        "stage": "active",
+        "stage": "mature",
         "last_push_days": 0,
-        "age_days": 362,
+        "age_days": 1138,
         "authenticity_score": 95,
-        "open_issues": 2,
+        "open_issues": 1505,
         "is_stale": false
+      }
+    },
+    {
+      "full_name": "gufo-org/gufo",
+      "name": "gufo",
+      "url": "https://github.com/gufo-org/gufo",
+      "description": "Strix Halo inference engine. Qwen Flash Next Q4_K_XL: 1,628.52pp, 59.41tg single user, 157.22 tok/s 8 users; Qwen27B Q4_K_XL: 656.33pp, 70.56tg tok/s single user with DFlash2",
+      "category": "Local LLM Engines",
+      "language": "C++",
+      "license": "MIT",
+      "stars": 321,
+      "stars_24h": 0,
+      "trending_score": 17,
+      "topics": [
+        "amd",
+        "llm",
+        "strix-halo"
+      ],
+      "created_at": "2026-08-11T17:49:45Z",
+      "pushed_at": "2026-09-28T09:21:47Z",
+      "quick_run": "git clone https://github.com/gufo-org/gufo",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 321
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
       },
-      "category": "Local LLM Engines"
+      "health": {
+        "stage": "experimental",
+        "last_push_days": 0,
+        "age_days": 47,
+        "authenticity_score": 95,
+        "open_issues": 35,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "vllm-project/semantic-router",
+      "name": "semantic-router",
+      "url": "https://github.com/vllm-project/semantic-router",
+      "description": "A programmable Mixture-of-Models router for heterogeneous LLM inference",
+      "category": "Local LLM Engines",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "stars": 5950,
+      "stars_24h": 0,
+      "trending_score": 77,
+      "topics": [
+        "ai-gateway",
+        "guardrails",
+        "inference",
+        "kubernetes",
+        "llm",
+        "llmrouter",
+        "mixture-of-models",
+        "pytorch",
+        "semantic-router",
+        "transformer",
+        "vllm"
+      ],
+      "created_at": "2025-08-26T21:49:50Z",
+      "pushed_at": "2026-09-28T09:27:36Z",
+      "quick_run": "git clone https://github.com/vllm-project/semantic-router",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 5950
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 397,
+        "authenticity_score": 95,
+        "open_issues": 554,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "kvcache-ai/Mooncake",
+      "name": "Mooncake",
+      "url": "https://github.com/kvcache-ai/Mooncake",
+      "description": "Mooncake is the serving platform for Kimi, a leading LLM service provided by Moonshot AI.",
+      "category": "Local LLM Engines",
+      "language": "C++",
+      "license": "Apache-2.0",
+      "stars": 6676,
+      "stars_24h": 0,
+      "trending_score": 81,
+      "topics": [
+        "disaggregation",
+        "inference",
+        "kvcache",
+        "llm",
+        "rdma",
+        "reinforcement-learning",
+        "sglang",
+        "tokenspeed",
+        "trt-llm",
+        "vllm"
+      ],
+      "created_at": "2024-06-25T05:21:05Z",
+      "pushed_at": "2026-09-28T09:20:15Z",
+      "quick_run": "git clone https://github.com/kvcache-ai/Mooncake",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 6676
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "service"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 825,
+        "authenticity_score": 95,
+        "open_issues": 631,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "containers/ramalama",
+      "name": "ramalama",
+      "url": "https://github.com/containers/ramalama",
+      "description": "RamaLama is an open-source developer tool that simplifies the local serving of AI models from any source and facilitates their use for inference in production, all through the familiar language of containers.",
+      "category": "Local LLM Engines",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 3061,
+      "stars_24h": 0,
+      "trending_score": 55,
+      "topics": [
+        "ai",
+        "containers",
+        "cuda",
+        "hacktoberfest",
+        "hip",
+        "inference-server",
+        "intel",
+        "llamacpp",
+        "llm",
+        "podman",
+        "vllm"
+      ],
+      "created_at": "2024-07-24T19:09:58Z",
+      "pushed_at": "2026-09-28T09:21:45Z",
+      "quick_run": "git clone https://github.com/containers/ramalama",
+      "hardware_req": "16GB+ CUDA VRAM",
+      "is_cuda_ready": true,
+      "is_local_first": false,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 3061
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "service"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "docker"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": true,
+          "cpu_supported": false,
+          "floor": "16GB+ CUDA VRAM"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 795,
+        "authenticity_score": 95,
+        "open_issues": 123,
+        "is_stale": false
+      }
     },
     {
       "full_name": "vllm-project/vllm",
       "name": "vllm",
       "url": "https://github.com/vllm-project/vllm",
       "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+      "category": "Local LLM Engines",
       "language": "Python",
       "license": "Apache-2.0",
-      "stars": 92110,
-      "stars_24h": 0,
-      "trending_score": 303,
+      "stars": 92849,
+      "stars_24h": 739,
+      "trending_score": 2521,
       "topics": [
         "amd",
         "blackwell",
@@ -715,8 +665,8 @@
         "transformer"
       ],
       "created_at": "2023-02-09T11:23:20Z",
-      "pushed_at": "2026-09-18T18:31:13Z",
-      "quick_run": "pip install vllm",
+      "pushed_at": "2026-09-28T09:26:28Z",
+      "quick_run": "git clone https://github.com/vllm-project/vllm",
       "hardware_req": "16GB+ CUDA VRAM",
       "is_cuda_ready": true,
       "is_local_first": true,
@@ -725,6 +675,10 @@
         {
           "ts": 1789756348,
           "stars": 92110
+        },
+        {
+          "ts": 1790587727,
+          "stars": 92849
         }
       ],
       "capabilities": {
@@ -747,93 +701,46 @@
       "health": {
         "stage": "mature",
         "last_push_days": 0,
-        "age_days": 1317,
+        "age_days": 1326,
         "authenticity_score": 95,
-        "open_issues": 8117,
+        "open_issues": 8337,
         "is_stale": false
-      },
-      "category": "Local LLM Engines"
+      }
     },
     {
-      "full_name": "Human-Agent-Society/reef",
-      "name": "reef",
-      "url": "https://github.com/Human-Agent-Society/reef",
-      "description": "Continual learning infra for self-improving agents",
+      "full_name": "sgl-project/sglang",
+      "name": "sglang",
+      "url": "https://github.com/sgl-project/sglang",
+      "description": "SGLang is a high-performance serving framework for large language models and multimodal models.",
+      "category": "Local LLM Engines",
       "language": "Python",
       "license": "Apache-2.0",
-      "stars": 3547,
-      "stars_24h": 0,
-      "trending_score": 59,
+      "stars": 36513,
+      "stars_24h": 372,
+      "trending_score": 1307,
       "topics": [
-        "agent-infrastructure",
-        "ai-agents",
-        "continual-learning",
-        "inference",
-        "llm",
-        "llm-training",
-        "reinforcement-learning",
-        "self-improving-agents"
-      ],
-      "created_at": "2026-08-31T01:39:18Z",
-      "pushed_at": "2026-09-18T17:50:05Z",
-      "quick_run": "pip install reef",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 3547
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 18,
-        "authenticity_score": 95,
-        "open_issues": 57,
-        "is_stale": false
-      },
-      "category": "Local LLM Engines"
-    },
-    {
-      "full_name": "NVIDIA/TensorRT-LLM",
-      "name": "TensorRT-LLM",
-      "url": "https://github.com/NVIDIA/TensorRT-LLM",
-      "description": "TensorRT LLM provides users with an easy-to-use Python API to define Large Language Models (LLMs) and supports state-of-the-art optimizations to perform inference efficiently on NVIDIA GPUs. TensorRT LLM also contains components to create Python and C++ runtimes that orchestrate the inference execution in a performant way.",
-      "language": "Python",
-      "license": "NOASSERTION",
-      "stars": 14653,
-      "stars_24h": 0,
-      "trending_score": 121,
-      "topics": [
+        "attention",
         "blackwell",
         "cuda",
-        "llm-serving",
+        "deepseek",
+        "diffusion",
+        "glm",
+        "gpt-oss",
+        "inference",
+        "llama",
+        "llm",
+        "minimax",
         "moe",
-        "pytorch"
+        "qwen",
+        "qwen-image",
+        "reinforcement-learning",
+        "transformer",
+        "vlm",
+        "wan"
       ],
-      "created_at": "2023-08-16T17:14:27Z",
-      "pushed_at": "2026-09-18T17:48:28Z",
-      "quick_run": "pip install TensorRT-LLM",
+      "created_at": "2024-01-08T04:15:52Z",
+      "pushed_at": "2026-09-28T09:07:36Z",
+      "quick_run": "git clone https://github.com/sgl-project/sglang",
       "hardware_req": "16GB+ CUDA VRAM",
       "is_cuda_ready": true,
       "is_local_first": true,
@@ -841,7 +748,11 @@
       "star_history": [
         {
           "ts": 1789756348,
-          "stars": 14653
+          "stars": 36141
+        },
+        {
+          "ts": 1790587727,
+          "stars": 36513
         }
       ],
       "capabilities": {
@@ -864,45 +775,54 @@
       "health": {
         "stage": "mature",
         "last_push_days": 0,
-        "age_days": 1129,
+        "age_days": 994,
         "authenticity_score": 95,
-        "open_issues": 1515,
+        "open_issues": 5357,
         "is_stale": false
-      },
-      "category": "Local LLM Engines"
+      }
     },
     {
-      "full_name": "warpfront/hipfire",
-      "name": "hipfire",
-      "url": "https://github.com/warpfront/hipfire",
-      "description": "RDNA-native LLM inference engine in Rust. ",
-      "language": "Rust",
-      "license": "NOASSERTION",
-      "stars": 630,
+      "full_name": "gpustack/gpustack",
+      "name": "gpustack",
+      "url": "https://github.com/gpustack/gpustack",
+      "description": "A GPU cluster manager for high-performance AI model serving (vLLM, SGLang) and on-demand SSH-accessible GPU instances.",
+      "category": "Local LLM Engines",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "stars": 5766,
       "stars_24h": 0,
-      "trending_score": 25,
+      "trending_score": 75,
       "topics": [
-        "amd-gpu",
-        "gpu-computing",
-        "hip",
+        "ascend",
+        "cuda",
+        "deepseek",
+        "distributed-inference",
+        "genai",
+        "high-performance-inference",
+        "inference",
+        "llama",
+        "llm",
         "llm-inference",
-        "machine-learning",
-        "quantization",
-        "rdna",
+        "llm-serving",
+        "maas",
+        "mindie",
+        "openai",
+        "qwen",
         "rocm",
-        "rust"
+        "sglang",
+        "vllm"
       ],
-      "created_at": "2026-03-21T02:59:11Z",
-      "pushed_at": "2026-09-18T17:36:18Z",
-      "quick_run": "cargo install hipfire",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
+      "created_at": "2024-05-11T03:41:58Z",
+      "pushed_at": "2026-09-28T09:06:43Z",
+      "quick_run": "git clone https://github.com/gpustack/gpustack",
+      "hardware_req": "16GB+ CUDA VRAM",
+      "is_cuda_ready": true,
       "is_local_first": true,
       "authenticity_score": 95,
       "star_history": [
         {
-          "ts": 1789756348,
-          "stars": 630
+          "ts": 1790587727,
+          "stars": 5766
         }
       ],
       "capabilities": {
@@ -917,143 +837,202 @@
         ],
         "intent_tags": [],
         "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
+          "is_cuda_ready": true,
+          "cpu_supported": false,
+          "floor": "16GB+ CUDA VRAM"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 870,
+        "authenticity_score": 95,
+        "open_issues": 710,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "dromara/Omega-AI",
+      "name": "Omega-AI",
+      "url": "https://github.com/dromara/Omega-AI",
+      "description": "Omega-AI is a Java-based deep learning framework that helps you quickly build neural networks for inference and training. Its engine supports automatic differentiation, multithreading, and GPU acceleration with CUDA and cuDNN.",
+      "category": "Local LLM Engines",
+      "language": "Java",
+      "license": "Apache-2.0",
+      "stars": 855,
+      "stars_24h": 0,
+      "trending_score": 29,
+      "topics": [
+        "ai",
+        "deeplearning",
+        "diffusion",
+        "llm",
+        "neural-network",
+        "yolo"
+      ],
+      "created_at": "2019-08-06T15:39:10Z",
+      "pushed_at": "2026-09-28T09:06:07Z",
+      "quick_run": "git clone https://github.com/dromara/Omega-AI",
+      "hardware_req": "16GB+ CUDA VRAM",
+      "is_cuda_ready": true,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 855
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": true,
+          "cpu_supported": false,
+          "floor": "16GB+ CUDA VRAM"
         }
       },
       "health": {
         "stage": "active",
         "last_push_days": 0,
-        "age_days": 181,
+        "age_days": 2609,
         "authenticity_score": 95,
-        "open_issues": 110,
+        "open_issues": 3,
         "is_stale": false
-      },
-      "category": "Local LLM Engines"
+      }
     },
     {
-      "full_name": "Osmantic/ODS",
-      "name": "ODS",
-      "url": "https://github.com/Osmantic/ODS",
-      "description": "Turn your PC, Mac, or Linux box into an AI server.  LLM inference, chat UI, voice, agents, workflows, RAG, and image generation.",
+      "full_name": "xorbitsai/inference",
+      "name": "inference",
+      "url": "https://github.com/xorbitsai/inference",
+      "description": "Swap GPT for any LLM by changing a single line of code. Xinference lets you run open-source, speech, and multimodal models on cloud, on-prem, or your laptop \u2014 all through one unified, production-ready inference API.",
+      "category": "Local LLM Engines",
       "language": "Python",
       "license": "Apache-2.0",
-      "stars": 6586,
+      "stars": 9595,
       "stars_24h": 0,
-      "trending_score": 81,
+      "trending_score": 97,
       "topics": [
-        "ai-agents",
-        "amd",
-        "comfyui",
-        "docker",
+        "artificial-intelligence",
+        "deployment",
+        "diffusers",
+        "gemma",
+        "glm",
+        "glm-5-3",
+        "inference",
+        "kimi",
+        "kimi-k3",
         "llama-cpp",
+        "llamacpp",
         "llm",
-        "local-ai",
-        "n8n",
-        "nvidia",
-        "open-webui",
-        "rag",
-        "self-hosted",
-        "speech-to-text",
-        "strix-halo",
-        "text-to-speech",
-        "workflow-automation"
+        "machine-learning",
+        "openai-api",
+        "pytorch",
+        "qwen",
+        "sglang",
+        "transformers",
+        "vllm",
+        "whisper"
       ],
-      "created_at": "2026-02-09T13:14:58Z",
-      "pushed_at": "2026-09-18T17:36:09Z",
-      "quick_run": "pip install ODS",
-      "hardware_req": "16GB+ CUDA VRAM",
-      "is_cuda_ready": true,
+      "created_at": "2023-06-14T07:05:04Z",
+      "pushed_at": "2026-09-28T09:03:56Z",
+      "quick_run": "git clone https://github.com/xorbitsai/inference",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
       "is_local_first": false,
       "authenticity_score": 95,
       "star_history": [
         {
-          "ts": 1789756348,
-          "stars": 6586
+          "ts": 1790587727,
+          "stars": 9595
         }
       ],
       "capabilities": {
         "interaction": [
-          "service"
+          "library"
         ],
         "integrations": [
           "standalone"
         ],
         "deployment": [
-          "docker"
+          "byok-cloud"
         ],
-        "intent_tags": [
-          "self-hosted"
-        ],
+        "intent_tags": [],
         "hardware": {
-          "is_cuda_ready": true,
-          "cpu_supported": false,
-          "floor": "16GB+ CUDA VRAM"
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
         }
       },
       "health": {
         "stage": "mature",
         "last_push_days": 0,
-        "age_days": 221,
+        "age_days": 1202,
         "authenticity_score": 95,
-        "open_issues": 3153,
+        "open_issues": 32,
         "is_stale": false
-      },
-      "category": "Local LLM Engines"
+      }
     },
     {
-      "full_name": "askalf/dario",
-      "name": "dario",
-      "url": "https://github.com/askalf/dario",
-      "description": "Use your Claude and ChatGPT subscriptions in Cursor, Cline, Aider, Claude Code and the Agent SDK \u2014 at subscription pricing, not per-token API bills. One local Anthropic + OpenAI-compatible endpoint: either plan answers either wire shape, auto-failover when one hits its limit, multi-seat pooling, live Claude Code drift tracking.",
-      "language": "JavaScript",
-      "license": "MIT",
-      "stars": 539,
+      "full_name": "langbot-app/LangBot",
+      "name": "LangBot",
+      "url": "https://github.com/langbot-app/LangBot",
+      "description": "Production-grade platform for building agentic IM bots - \u751f\u4ea7\u7ea7\u591a\u5e73\u53f0\u667a\u80fd\u673a\u5668\u4eba\u5f00\u53d1\u5e73\u53f0/ Agent\u3001\u77e5\u8bc6\u5e93\u7f16\u6392\u3001\u63d2\u4ef6\u7cfb\u7edf / Bots for Discord / Slack / LINE / Telegram / WeChat(\u4f01\u4e1a\u5fae\u4fe1, \u4f01\u5fae\u667a\u80fd\u673a\u5668\u4eba, \u516c\u4f17\u53f7) / \u98de\u4e66 / \u9489\u9489 / QQ / Matrix e.g. Integrated with ChatGPT(GPT), DeepSeek, Dify, n8n, Langflow, Coze, Claude, Gemini, GLM, Ollama, SiliconFlow, Moonshot, openclaw / hermes agent, deerflow",
+      "category": "Local LLM Engines",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "stars": 17972,
       "stars_24h": 0,
-      "trending_score": 23,
+      "trending_score": 134,
       "topics": [
-        "agent-sdk",
-        "ai-gateway",
-        "aider",
-        "anthropic",
-        "api-proxy",
-        "chatgpt",
-        "claude",
-        "claude-code",
-        "claude-code-proxy",
-        "claude-max",
-        "cline",
-        "codex",
-        "cursor",
-        "litellm",
-        "llm-proxy",
-        "llm-router",
+        "agent",
+        "coze",
+        "deepseek",
+        "dify",
+        "dingtalk",
+        "discord",
+        "feishu",
+        "kook",
+        "langbot",
+        "lark",
+        "line",
+        "llm",
+        "n8n",
         "ollama",
         "openai",
-        "openai-compat",
-        "openrouter"
+        "plugins",
+        "qq",
+        "rag",
+        "telegram",
+        "wechat"
       ],
-      "created_at": "2026-04-08T16:08:01Z",
-      "pushed_at": "2026-09-18T18:15:02Z",
-      "quick_run": "npm install dario",
+      "created_at": "2022-12-07T08:48:02Z",
+      "pushed_at": "2026-09-28T09:14:59Z",
+      "quick_run": "git clone https://github.com/langbot-app/LangBot",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
       "authenticity_score": 95,
       "star_history": [
         {
-          "ts": 1789756348,
-          "stars": 539
+          "ts": 1790587727,
+          "stars": 17972
         }
       ],
       "capabilities": {
         "interaction": [
-          "cli",
           "library"
         ],
         "integrations": [
-          "openai-api"
+          "standalone"
         ],
         "deployment": [
           "local-only"
@@ -1066,25 +1045,25 @@
         }
       },
       "health": {
-        "stage": "active",
+        "stage": "mature",
         "last_push_days": 0,
-        "age_days": 163,
+        "age_days": 1391,
         "authenticity_score": 95,
-        "open_issues": 7,
+        "open_issues": 122,
         "is_stale": false
-      },
-      "category": "Local LLM Engines"
+      }
     },
     {
       "full_name": "langgenius/dify",
       "name": "dify",
       "url": "https://github.com/langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
+      "category": "Local LLM Engines",
       "language": "TypeScript",
       "license": "NOASSERTION",
-      "stars": 156319,
-      "stars_24h": 0,
-      "trending_score": 395,
+      "stars": 157386,
+      "stars_24h": 1067,
+      "trending_score": 3597,
       "topics": [
         "agent",
         "agentic-ai",
@@ -1107,8 +1086,8 @@
         "workflow"
       ],
       "created_at": "2023-04-12T07:40:24Z",
-      "pushed_at": "2026-09-18T18:32:02Z",
-      "quick_run": "npm install dify",
+      "pushed_at": "2026-09-28T09:26:46Z",
+      "quick_run": "git clone https://github.com/langgenius/dify",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": false,
@@ -1117,6 +1096,10 @@
         {
           "ts": 1789756348,
           "stars": 156319
+        },
+        {
+          "ts": 1790587727,
+          "stars": 157386
         }
       ],
       "capabilities": {
@@ -1141,25 +1124,27 @@
       "health": {
         "stage": "mature",
         "last_push_days": 0,
-        "age_days": 1255,
+        "age_days": 1265,
         "authenticity_score": 95,
-        "open_issues": 1106,
+        "open_issues": 800,
         "is_stale": false
-      },
-      "category": "Local LLM Engines"
+      }
     },
     {
       "full_name": "lucasjinreal/Crane",
       "name": "Crane",
       "url": "https://github.com/lucasjinreal/Crane",
       "description": "A Pure Rust based LLM, VLM, VLA, TTS, OCR Inference Engine, powering by Candle & Rust. Alternate to your llama.cpp but much more simpler and cleaner..",
+      "category": "Local LLM Engines",
       "language": "Rust",
       "license": "MIT",
-      "stars": 474,
-      "stars_24h": 0,
-      "trending_score": 21,
+      "stars": 485,
+      "stars_24h": 11,
+      "trending_score": 55,
       "topics": [
         "audio8-tts",
+        "jev",
+        "jev-act",
         "kokoro-tts",
         "llama-cpp",
         "minicpm-o",
@@ -1176,8 +1161,8 @@
         "voxcpm2"
       ],
       "created_at": "2025-03-19T09:00:50Z",
-      "pushed_at": "2026-09-18T13:18:58Z",
-      "quick_run": "cargo install Crane",
+      "pushed_at": "2026-09-28T02:47:52Z",
+      "quick_run": "git clone https://github.com/lucasjinreal/Crane",
       "hardware_req": "8GB Unified / Metal",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -1186,6 +1171,10 @@
         {
           "ts": 1789756348,
           "stars": 474
+        },
+        {
+          "ts": 1790587727,
+          "stars": 485
         }
       ],
       "capabilities": {
@@ -1208,23 +1197,23 @@
       "health": {
         "stage": "active",
         "last_push_days": 0,
-        "age_days": 548,
+        "age_days": 558,
         "authenticity_score": 95,
-        "open_issues": 30,
+        "open_issues": 37,
         "is_stale": false
-      },
-      "category": "Local LLM Engines"
+      }
     },
     {
       "full_name": "software-mansion/react-native-executorch",
       "name": "react-native-executorch",
       "url": "https://github.com/software-mansion/react-native-executorch",
       "description": "High-performance, privacy-first on-device AI inference library for React Native, powered by PyTorch's ExecuTorch runtime",
+      "category": "Local LLM Engines",
       "language": "TypeScript",
       "license": "NOASSERTION",
-      "stars": 1741,
-      "stars_24h": 0,
-      "trending_score": 41,
+      "stars": 1748,
+      "stars_24h": 7,
+      "trending_score": 62,
       "topics": [
         "ai",
         "computer-vision",
@@ -1240,8 +1229,8 @@
         "vlm"
       ],
       "created_at": "2024-10-16T10:58:16Z",
-      "pushed_at": "2026-09-18T10:31:46Z",
-      "quick_run": "npm install react-native-executorch",
+      "pushed_at": "2026-09-25T20:21:30Z",
+      "quick_run": "git clone https://github.com/software-mansion/react-native-executorch",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -1250,6 +1239,10 @@
         {
           "ts": 1789756348,
           "stars": 1741
+        },
+        {
+          "ts": 1790587727,
+          "stars": 1748
         }
       ],
       "capabilities": {
@@ -1271,24 +1264,24 @@
       },
       "health": {
         "stage": "active",
-        "last_push_days": 0,
-        "age_days": 702,
+        "last_push_days": 2,
+        "age_days": 711,
         "authenticity_score": 95,
-        "open_issues": 59,
+        "open_issues": 45,
         "is_stale": false
-      },
-      "category": "Local LLM Engines"
+      }
     },
     {
       "full_name": "MigoXLab/LMeterX",
       "name": "LMeterX",
       "url": "https://github.com/MigoXLab/LMeterX",
       "description": "A general-purpose API load testing platform that supports LLM services\u3001A2A/MCP services and business HTTP interfaces, enabling one-click performance testing, result comparison, and AI-powered intelligent analysis and summarization. \u4e00\u7ad9\u5f0f\u901a\u7528 API \u538b\u6d4b\u5e73\u53f0\uff0c\u652f\u6301\u5927\u6a21\u578b\u63a8\u7406\u4e1a/\u52a1 HTTP \u63a5\u53e3\u3001A2A/MCP\u670d\u52a1\uff0c\u4e00\u952e\u5b8c\u6210\u6027\u80fd\u6d4b\u8bd5\u3001\u7ed3\u679c\u5bf9\u6bd4\u4e0e AI \u667a\u80fd\u5206\u6790\u603b\u7ed3",
+      "category": "Local LLM Engines",
       "language": "Python",
       "license": "Apache-2.0",
-      "stars": 209,
-      "stars_24h": 0,
-      "trending_score": 14,
+      "stars": 211,
+      "stars_24h": 2,
+      "trending_score": 20,
       "topics": [
         "a2a-mcp",
         "api-load-test",
@@ -1304,8 +1297,8 @@
         "vlm"
       ],
       "created_at": "2025-06-18T07:15:43Z",
-      "pushed_at": "2026-09-16T06:43:01Z",
-      "quick_run": "pip install LMeterX",
+      "pushed_at": "2026-09-22T10:58:15Z",
+      "quick_run": "git clone https://github.com/MigoXLab/LMeterX",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -1314,6 +1307,10 @@
         {
           "ts": 1789756348,
           "stars": 209
+        },
+        {
+          "ts": 1790587727,
+          "stars": 211
         }
       ],
       "capabilities": {
@@ -1336,24 +1333,24 @@
       },
       "health": {
         "stage": "active",
-        "last_push_days": 2,
-        "age_days": 457,
+        "last_push_days": 5,
+        "age_days": 467,
         "authenticity_score": 95,
-        "open_issues": 1,
+        "open_issues": 0,
         "is_stale": false
-      },
-      "category": "Local LLM Engines"
+      }
     },
     {
       "full_name": "madeye/ad-skipper",
       "name": "ad-skipper",
       "url": "https://github.com/madeye/ad-skipper",
       "description": "Local VLM-based Android splash-ad skipper: accessibility service + three-tier detection (node match -> OCR -> llama.cpp GGUF VLM grounding)",
+      "category": "Local LLM Engines",
       "language": "Kotlin",
       "license": "MIT",
-      "stars": 124,
-      "stars_24h": 0,
-      "trending_score": 11,
+      "stars": 129,
+      "stars_24h": 5,
+      "trending_score": 26,
       "topics": [],
       "created_at": "2026-08-07T00:50:39Z",
       "pushed_at": "2026-08-09T07:17:11Z",
@@ -1366,6 +1363,10 @@
         {
           "ts": 1789756348,
           "stars": 124
+        },
+        {
+          "ts": 1790587727,
+          "stars": 129
         }
       ],
       "capabilities": {
@@ -1387,24 +1388,24 @@
       },
       "health": {
         "stage": "experimental",
-        "last_push_days": 40,
-        "age_days": 42,
+        "last_push_days": 50,
+        "age_days": 52,
         "authenticity_score": 95,
         "open_issues": 6,
         "is_stale": false
-      },
-      "category": "Local LLM Engines"
+      }
     },
     {
       "full_name": "heshengtao/comfyui_LLM_party",
       "name": "comfyui_LLM_party",
       "url": "https://github.com/heshengtao/comfyui_LLM_party",
       "description": "LLM Agent Framework in ComfyUI includes MCP sever, Omost,GPT-sovits, ChatTTS,GOT-OCR2.0, and FLUX prompt nodes,access to Feishu,discord,and adapts to all llms with similar openai / aisuite interfaces, such as o1,ollama, gemini, grok, qwen, GLM, deepseek, kimi,doubao. Adapted to local llms, vlm, gguf such as llama-3.3 Janus-Pro, Linkage graphRAG",
+      "category": "Local LLM Engines",
       "language": "Python",
       "license": "AGPL-3.0",
-      "stars": 2363,
-      "stars_24h": 0,
-      "trending_score": 48,
+      "stars": 2370,
+      "stars_24h": 7,
+      "trending_score": 69,
       "topics": [
         "agent",
         "comfyui",
@@ -1428,7 +1429,7 @@
       ],
       "created_at": "2024-04-13T13:42:49Z",
       "pushed_at": "2026-07-29T18:05:53Z",
-      "quick_run": "pip install comfyui_LLM_party",
+      "quick_run": "git clone https://github.com/heshengtao/comfyui_LLM_party",
       "hardware_req": "8GB Unified / Metal",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -1437,6 +1438,10 @@
         {
           "ts": 1789756348,
           "stars": 2363
+        },
+        {
+          "ts": 1790587727,
+          "stars": 2370
         }
       ],
       "capabilities": {
@@ -1458,24 +1463,24 @@
       },
       "health": {
         "stage": "active",
-        "last_push_days": 51,
-        "age_days": 888,
+        "last_push_days": 60,
+        "age_days": 897,
         "authenticity_score": 95,
         "open_issues": 87,
         "is_stale": false
-      },
-      "category": "Local LLM Engines"
+      }
     },
     {
       "full_name": "LnYo-Cly/ai4j",
       "name": "ai4j",
       "url": "https://github.com/LnYo-Cly/ai4j",
       "description": "Java 8+ agentic SDK: unified LLM access (OpenAI/Anthropic/DashScope/Doubao/DeepSeek...), Tool Calling, MCP, RAG, Agent Runtime, and a built-in Coding Agent CLI/TUI/ACP.",
+      "category": "Local LLM Engines",
       "language": "HTML",
       "license": "Apache-2.0",
-      "stars": 429,
-      "stars_24h": 0,
-      "trending_score": 20,
+      "stars": 432,
+      "stars_24h": 3,
+      "trending_score": 29,
       "topics": [
         "agent",
         "anthropic",
@@ -1498,7 +1503,7 @@
         "vector-database"
       ],
       "created_at": "2024-08-17T08:59:56Z",
-      "pushed_at": "2026-09-18T14:22:35Z",
+      "pushed_at": "2026-09-26T02:54:40Z",
       "quick_run": "git clone https://github.com/LnYo-Cly/ai4j",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -1508,6 +1513,10 @@
         {
           "ts": 1789756348,
           "stars": 429
+        },
+        {
+          "ts": 1790587727,
+          "stars": 432
         }
       ],
       "capabilities": {
@@ -1530,13 +1539,12 @@
       },
       "health": {
         "stage": "active",
-        "last_push_days": 0,
-        "age_days": 762,
+        "last_push_days": 2,
+        "age_days": 772,
         "authenticity_score": 95,
-        "open_issues": 3,
+        "open_issues": 1,
         "is_stale": false
-      },
-      "category": "Local LLM Engines"
+      }
     }
   ]
 }

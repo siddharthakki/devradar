@@ -1,179 +1,123 @@
 {
   "category": "RAG Engines",
-  "count": 12,
-  "updated_at": "2026-09-28T09:25:41.483670+00:00",
+  "count": 10,
+  "updated_at": "2026-09-28T09:28:47.400490+00:00",
   "repositories": [
     {
-      "full_name": "antflydb/antfly",
-      "name": "antfly",
-      "url": "https://github.com/antflydb/antfly",
-      "description": null,
-      "language": "Zig",
-      "license": "NOASSERTION",
-      "stars": 434,
+      "full_name": "deepset-ai/haystack",
+      "name": "haystack",
+      "url": "https://github.com/deepset-ai/haystack",
+      "description": "Open-source AI orchestration framework for building context-engineered, production-ready LLM applications. Design modular pipelines and agent workflows with explicit control over retrieval, routing, memory, and generation. Built for scalable agents, RAG, multimodal applications, semantic search, and conversational systems.",
+      "category": "RAG Engines",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "stars": 26622,
       "stars_24h": 0,
-      "trending_score": 20,
+      "trending_score": 163,
       "topics": [
+        "agent-framework",
+        "agentic-ai",
+        "agentic-rag",
+        "agents",
+        "ai",
         "ai-agents",
-        "autoscaling",
-        "elasticsearch",
-        "information-retrieval",
-        "ml",
-        "multimodal",
-        "rag",
-        "semantic-search"
-      ],
-      "created_at": "2026-03-15T23:19:10Z",
-      "pushed_at": "2026-09-18T18:30:24Z",
-      "quick_run": "git clone https://github.com/antflydb/antfly",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 434
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 186,
-        "authenticity_score": 95,
-        "open_issues": 23,
-        "is_stale": false
-      },
-      "category": "RAG Engines"
-    },
-    {
-      "full_name": "Anil-matcha/awesome-jev-by-typesafe",
-      "name": "awesome-jev-by-typesafe",
-      "url": "https://github.com/Anil-matcha/awesome-jev-by-typesafe",
-      "description": "Evidence-backed use cases, patterns, prompts, and starter code for TypeSafe Jev \u2014 a System One model for fast, typed, confidence-aware decisions in software.",
-      "language": "Python",
-      "license": "MIT",
-      "stars": 501,
-      "stars_24h": 0,
-      "trending_score": 22,
-      "topics": [
-        "agent-workflows",
-        "ai-api",
-        "ai-automation",
-        "classification",
-        "confidence-aware-ai",
-        "decision-intelligence",
-        "function-calling",
-        "jev",
-        "llm-guardrails",
-        "llm-routing",
-        "machine-native-intelligence",
-        "python",
-        "rag",
-        "reranking",
-        "semantic-routing",
-        "semantic-search",
-        "structured-output",
-        "system-one-models",
-        "typesafe-ai",
-        "typescript"
-      ],
-      "created_at": "2023-05-17T18:38:27Z",
-      "pushed_at": "2026-09-18T18:29:43Z",
-      "quick_run": "pip install awesome-jev-by-typesafe",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 501
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 1219,
-        "authenticity_score": 95,
-        "open_issues": 0,
-        "is_stale": false
-      },
-      "category": "RAG Engines"
-    },
-    {
-      "full_name": "HKUDS/LightRAG",
-      "name": "LightRAG",
-      "url": "https://github.com/HKUDS/LightRAG",
-      "description": "[EMNLP2025] LightRAG: Simple and Fast Retrieval-Augmented Generation",
-      "language": "Python",
-      "license": "MIT",
-      "stars": 39753,
-      "stars_24h": 0,
-      "trending_score": 199,
-      "topics": [
-        "docling",
+        "context-engineering",
+        "framework",
         "genai",
-        "gpt",
-        "graphrag",
-        "knowledge-graph",
+        "generative-ai",
+        "information-retrieval",
         "large-language-models",
         "llm",
-        "mineru",
+        "mcp",
+        "multi-agent",
+        "orchestration",
+        "python",
         "rag",
-        "ragas",
-        "retrieval-augmented-generation"
+        "retrieval-augmented-generation",
+        "semantic-search"
       ],
-      "created_at": "2024-10-02T11:57:54Z",
-      "pushed_at": "2026-09-18T18:30:41Z",
-      "quick_run": "pip install LightRAG",
+      "created_at": "2019-11-14T09:05:28Z",
+      "pushed_at": "2026-09-28T09:26:42Z",
+      "quick_run": "git clone https://github.com/deepset-ai/haystack",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
       "authenticity_score": 95,
       "star_history": [
         {
-          "ts": 1789756348,
-          "stars": 39753
+          "ts": 1790587727,
+          "stars": 26622
         }
       ],
       "capabilities": {
         "interaction": [
-          "cli"
+          "library"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 2510,
+        "authenticity_score": 95,
+        "open_issues": 169,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "vespa-engine/vespa",
+      "name": "vespa",
+      "url": "https://github.com/vespa-engine/vespa",
+      "description": "The AI search platform",
+      "category": "RAG Engines",
+      "language": "Java",
+      "license": "Apache-2.0",
+      "stars": 7112,
+      "stars_24h": 0,
+      "trending_score": 84,
+      "topics": [
+        "ai",
+        "big-data",
+        "java",
+        "machine-learning",
+        "rag",
+        "search",
+        "search-engine",
+        "server",
+        "serving-recommendation",
+        "tensor",
+        "vector",
+        "vector-database",
+        "vector-search",
+        "vespa"
+      ],
+      "created_at": "2016-06-03T20:54:20Z",
+      "pushed_at": "2026-09-28T09:24:49Z",
+      "quick_run": "git clone https://github.com/vespa-engine/vespa",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 7112
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "service"
         ],
         "integrations": [
           "standalone"
@@ -191,55 +135,126 @@
       "health": {
         "stage": "mature",
         "last_push_days": 0,
-        "age_days": 716,
+        "age_days": 3768,
         "authenticity_score": 95,
-        "open_issues": 251,
+        "open_issues": 250,
         "is_stale": false
-      },
-      "category": "RAG Engines"
+      }
     },
     {
-      "full_name": "onyx-dot-app/onyx",
-      "name": "onyx",
-      "url": "https://github.com/onyx-dot-app/onyx",
-      "description": "Open Source AI Platform - AI Chat with advanced features that works with every LLM",
+      "full_name": "comet-ml/opik",
+      "name": "opik",
+      "url": "https://github.com/comet-ml/opik",
+      "description": "Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, automated evaluations, and production-ready dashboards.",
+      "category": "RAG Engines",
       "language": "Python",
-      "license": "NOASSERTION",
-      "stars": 32157,
+      "license": "Apache-2.0",
+      "stars": 22267,
       "stars_24h": 0,
-      "trending_score": 179,
+      "trending_score": 149,
       "topics": [
-        "ai",
-        "ai-chat",
-        "chatgpt",
-        "chatui",
-        "enterprise-search",
-        "gen-ai",
-        "information-retrieval",
+        "evaluation",
+        "hacktoberfest",
+        "hacktoberfest2025",
+        "langchain",
+        "llama-index",
         "llm",
-        "llm-ui",
-        "nextjs",
-        "python",
-        "rag",
-        "self-hosted",
-        "vector-search"
+        "llm-evaluation",
+        "llm-observability",
+        "llmops",
+        "open-source",
+        "openai",
+        "playground",
+        "prompt-engineering"
       ],
-      "created_at": "2023-04-27T06:04:01Z",
-      "pushed_at": "2026-09-18T18:31:21Z",
-      "quick_run": "pip install onyx",
+      "created_at": "2023-05-10T12:57:13Z",
+      "pushed_at": "2026-09-28T09:23:32Z",
+      "quick_run": "git clone https://github.com/comet-ml/opik",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
       "authenticity_score": 95,
       "star_history": [
         {
-          "ts": 1789756348,
-          "stars": 32157
+          "ts": 1790587727,
+          "stars": 22267
         }
       ],
       "capabilities": {
         "interaction": [
-          "cli"
+          "library"
+        ],
+        "integrations": [
+          "orchestrators"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 1236,
+        "authenticity_score": 95,
+        "open_issues": 227,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "EvotecIT/OfficeIMO",
+      "name": "OfficeIMO",
+      "url": "https://github.com/EvotecIT/OfficeIMO",
+      "description": "MIT-licensed, COM-free .NET libraries for creating, reading, editing, converting, rendering, and extracting Office, PDF, email, OneNote, and text formats.",
+      "category": "RAG Engines",
+      "language": "C#",
+      "license": "MIT",
+      "stars": 560,
+      "stars_24h": 0,
+      "trending_score": 23,
+      "topics": [
+        "aspose-alternative",
+        "c-sharp",
+        "document-automation",
+        "document-conversion",
+        "document-generation",
+        "docx",
+        "dotnet",
+        "email",
+        "hacktoberfest",
+        "office",
+        "onenote",
+        "openxml",
+        "openxml-sdk",
+        "ost",
+        "pdf",
+        "pptx",
+        "pst",
+        "rag",
+        "word",
+        "xlsx"
+      ],
+      "created_at": "2021-12-22T07:54:02Z",
+      "pushed_at": "2026-09-28T09:16:45Z",
+      "quick_run": "git clone https://github.com/EvotecIT/OfficeIMO",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 560
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
         ],
         "integrations": [
           "standalone"
@@ -248,81 +263,8 @@
           "local-only"
         ],
         "intent_tags": [
-          "self-hosted"
+          "drop-in-replacement"
         ],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 1240,
-        "authenticity_score": 95,
-        "open_issues": 478,
-        "is_stale": false
-      },
-      "category": "RAG Engines"
-    },
-    {
-      "full_name": "lbedner/aegis-stack",
-      "name": "aegis-stack",
-      "url": "https://github.com/lbedner/aegis-stack",
-      "description": "A production-ready FastAPI platform with modular components and a built-in control plane.",
-      "language": "Python",
-      "license": "MIT",
-      "stars": 141,
-      "stars_24h": 0,
-      "trending_score": 11,
-      "topics": [
-        "asyncio",
-        "boilerplate",
-        "cli",
-        "copier",
-        "copier-template",
-        "docker",
-        "fastapi",
-        "fastapi-starter",
-        "fastapi-template",
-        "langchain",
-        "llm",
-        "project-generator",
-        "project-template",
-        "pydantic-ai",
-        "python",
-        "rag",
-        "scaffolding",
-        "starter-kit",
-        "uv"
-      ],
-      "created_at": "2025-04-27T22:56:59Z",
-      "pushed_at": "2026-09-18T18:05:52Z",
-      "quick_run": "pip install aegis-stack",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": false,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 141
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "cli",
-          "service"
-        ],
-        "integrations": [
-          "orchestrators",
-          "crdt-sync"
-        ],
-        "deployment": [
-          "docker"
-        ],
-        "intent_tags": [],
         "hardware": {
           "is_cuda_ready": false,
           "cpu_supported": true,
@@ -332,49 +274,56 @@
       "health": {
         "stage": "active",
         "last_push_days": 0,
-        "age_days": 508,
+        "age_days": 1741,
         "authenticity_score": 95,
-        "open_issues": 56,
+        "open_issues": 25,
         "is_stale": false
-      },
-      "category": "RAG Engines"
+      }
     },
     {
-      "full_name": "samyama-ai/samyama-graph",
-      "name": "samyama-graph",
-      "url": "https://github.com/samyama-ai/samyama-graph",
-      "description": "Rust graph-vector database: OpenCypher (99.9% of evaluated TCK scenarios pass), vector search, graph algorithms, RESP + HTTP. LDBC SNB Interactive and BI complete; 1B edges on one machine.",
-      "language": "Rust",
-      "license": "Apache-2.0",
-      "stars": 172,
+      "full_name": "vitali87/code-graph-rag",
+      "name": "code-graph-rag",
+      "url": "https://github.com/vitali87/code-graph-rag",
+      "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
+      "category": "RAG Engines",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 5185,
       "stars_24h": 0,
-      "trending_score": 13,
+      "trending_score": 72,
       "topics": [
-        "cypher",
-        "embedded-database",
-        "graph-algorithms",
-        "graph-analytics",
+        "ai",
+        "ast",
+        "claude-code",
+        "code-analysis",
+        "code-understanding",
+        "codebase-search",
+        "developer-tools",
         "graph-database",
-        "graph-rag",
-        "hnsw",
         "knowledge-graph",
-        "ldbc",
+        "llm",
+        "mcp",
         "mcp-server",
-        "opencypher",
-        "rust",
-        "vector-search"
+        "memgraph",
+        "monorepo",
+        "multi-language",
+        "python",
+        "rag",
+        "retrieval-augmented-generation",
+        "semantic-search",
+        "tree-sitter"
       ],
-      "created_at": "2026-01-19T10:51:28Z",
-      "pushed_at": "2026-09-18T18:28:59Z",
-      "quick_run": "cargo install samyama-graph",
+      "created_at": "2025-06-16T14:31:57Z",
+      "pushed_at": "2026-09-28T09:14:25Z",
+      "quick_run": "git clone https://github.com/vitali87/code-graph-rag",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
       "authenticity_score": 95,
       "star_history": [
         {
-          "ts": 1789756348,
-          "stars": 172
+          "ts": 1790587727,
+          "stars": 5185
         }
       ],
       "capabilities": {
@@ -395,25 +344,96 @@
         }
       },
       "health": {
-        "stage": "active",
+        "stage": "mature",
         "last_push_days": 0,
-        "age_days": 242,
+        "age_days": 468,
         "authenticity_score": 95,
-        "open_issues": 96,
+        "open_issues": 111,
         "is_stale": false
+      }
+    },
+    {
+      "full_name": "HelixDB/helix-db",
+      "name": "helix-db",
+      "url": "https://github.com/HelixDB/helix-db",
+      "description": "HelixDB is an OLTP graph database with native vector and full-text search built in Rust on Object Storage.",
+      "category": "RAG Engines",
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "stars": 6102,
+      "stars_24h": 173,
+      "trending_score": 597,
+      "topics": [
+        "ai",
+        "cli",
+        "database",
+        "databases",
+        "graph-database",
+        "helix",
+        "helixdb",
+        "rag",
+        "rust",
+        "rust-crate",
+        "rust-lang",
+        "vector",
+        "vector-database",
+        "vector-db",
+        "vectorsearch"
+      ],
+      "created_at": "2024-11-23T11:02:14Z",
+      "pushed_at": "2026-09-28T09:24:45Z",
+      "quick_run": "git clone https://github.com/HelixDB/helix-db",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 5929
+        },
+        {
+          "ts": 1790587727,
+          "stars": 6102
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
       },
-      "category": "RAG Engines"
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 673,
+        "authenticity_score": 95,
+        "open_issues": 21,
+        "is_stale": false
+      }
     },
     {
       "full_name": "weaviate/weaviate",
       "name": "weaviate",
       "url": "https://github.com/weaviate/weaviate",
       "description": "Weaviate is an open-source vector database that stores both objects and vectors, allowing for the combination of vector search with structured filtering with the fault tolerance and scalability of a cloud-native database\u200b.",
+      "category": "RAG Engines",
       "language": "Go",
       "license": "NOASSERTION",
-      "stars": 16819,
-      "stars_24h": 0,
-      "trending_score": 129,
+      "stars": 16855,
+      "stars_24h": 36,
+      "trending_score": 237,
       "topics": [
         "approximate-nearest-neighbor-search",
         "generative-search",
@@ -437,7 +457,7 @@
         "weaviate"
       ],
       "created_at": "2016-03-30T15:03:17Z",
-      "pushed_at": "2026-09-18T17:12:25Z",
+      "pushed_at": "2026-09-28T09:24:22Z",
       "quick_run": "git clone https://github.com/weaviate/weaviate",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -447,6 +467,10 @@
         {
           "ts": 1789756348,
           "stars": 16819
+        },
+        {
+          "ts": 1790587727,
+          "stars": 16855
         }
       ],
       "capabilities": {
@@ -469,59 +493,58 @@
       "health": {
         "stage": "mature",
         "last_push_days": 0,
-        "age_days": 3824,
+        "age_days": 3833,
         "authenticity_score": 95,
-        "open_issues": 737,
+        "open_issues": 756,
         "is_stale": false
-      },
-      "category": "RAG Engines"
+      }
     },
     {
-      "full_name": "HelixDB/helix-db",
-      "name": "helix-db",
-      "url": "https://github.com/HelixDB/helix-db",
-      "description": "HelixDB is an OLTP graph database with native vector and full-text search built in Rust on Object Storage.",
-      "language": "Rust",
+      "full_name": "oceanbase/seekdb",
+      "name": "seekdb",
+      "url": "https://github.com/oceanbase/seekdb",
+      "description": "The AI-Native Search Database. Best for agent storage, it unifies vector, text, structured, and semi-structured data into a single engine. This all-in-one database makes agents smarter, easier to run, and more stable.",
+      "category": "RAG Engines",
+      "language": "C++",
       "license": "Apache-2.0",
-      "stars": 5929,
+      "stars": 3078,
       "stars_24h": 0,
-      "trending_score": 77,
+      "trending_score": 55,
       "topics": [
-        "ai",
-        "cli",
-        "database",
-        "databases",
-        "graph-database",
-        "helix",
-        "helixdb",
+        "ai-agents",
+        "copy-on-write",
+        "embedded-database",
+        "full-text-search",
+        "hnsw",
+        "hybrid-search",
+        "langchain",
+        "llamaindex",
+        "mysql",
+        "oceanbase",
+        "python",
         "rag",
-        "rust",
-        "rust-crate",
-        "rust-lang",
-        "vector",
-        "vector-database",
-        "vector-db",
-        "vectorsearch"
+        "sql",
+        "vector-databases"
       ],
-      "created_at": "2024-11-23T11:02:14Z",
-      "pushed_at": "2026-09-18T12:25:05Z",
-      "quick_run": "cargo install helix-db",
+      "created_at": "2025-10-21T11:31:11Z",
+      "pushed_at": "2026-09-28T09:18:59Z",
+      "quick_run": "git clone https://github.com/oceanbase/seekdb",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
       "authenticity_score": 95,
       "star_history": [
         {
-          "ts": 1789756348,
-          "stars": 5929
+          "ts": 1790587727,
+          "stars": 3078
         }
       ],
       "capabilities": {
         "interaction": [
-          "cli"
+          "library"
         ],
         "integrations": [
-          "standalone"
+          "orchestrators"
         ],
         "deployment": [
           "local-only"
@@ -536,216 +559,23 @@
       "health": {
         "stage": "mature",
         "last_push_days": 0,
-        "age_days": 664,
+        "age_days": 341,
         "authenticity_score": 95,
-        "open_issues": 33,
+        "open_issues": 379,
         "is_stale": false
-      },
-      "category": "RAG Engines"
-    },
-    {
-      "full_name": "marcominerva/SqlDatabaseVectorSearch",
-      "name": "SqlDatabaseVectorSearch",
-      "url": "https://github.com/marcominerva/SqlDatabaseVectorSearch",
-      "description": "A Blazor Web App and Minimal API for performing RAG (Retrieval Augmented Generation) and vector search using the native VECTOR type in Azure SQL Database and Azure OpenAI.",
-      "language": "C#",
-      "license": "MIT",
-      "stars": 142,
-      "stars_24h": 0,
-      "trending_score": 11,
-      "topics": [
-        "azure-openai",
-        "azure-sql-database",
-        "c-sharp",
-        "chatgpt",
-        "dotnet",
-        "embeddings",
-        "openai",
-        "rag",
-        "retrieval-augmented-generation",
-        "semantic-kernel",
-        "sql-server",
-        "vector-database",
-        "visual-studio"
-      ],
-      "created_at": "2024-06-14T09:37:54Z",
-      "pushed_at": "2026-09-18T09:52:21Z",
-      "quick_run": "git clone https://github.com/marcominerva/SqlDatabaseVectorSearch",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 142
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "service"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 826,
-        "authenticity_score": 95,
-        "open_issues": 1,
-        "is_stale": false
-      },
-      "category": "RAG Engines"
-    },
-    {
-      "full_name": "oracle/ai-optimizer",
-      "name": "ai-optimizer",
-      "url": "https://github.com/oracle/ai-optimizer",
-      "description": "GenAI/RAG Optimizer and Toolkit for experimentation using Oracle Database AI Vector Search and NL2SQL",
-      "language": "Python",
-      "license": "UPL-1.0",
-      "stars": 101,
-      "stars_24h": 0,
-      "trending_score": 10,
-      "topics": [
-        "embedding-models",
-        "generative-ai",
-        "large-language-models",
-        "nl2sql",
-        "oracle-database",
-        "retrieval-augmented-generation",
-        "vector-database"
-      ],
-      "created_at": "2024-09-06T15:45:33Z",
-      "pushed_at": "2026-09-18T10:23:33Z",
-      "quick_run": "pip install ai-optimizer",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 101
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 742,
-        "authenticity_score": 95,
-        "open_issues": 30,
-        "is_stale": false
-      },
-      "category": "RAG Engines"
-    },
-    {
-      "full_name": "notoriouslab/vault-curate",
-      "name": "vault-curate",
-      "url": "https://github.com/notoriouslab/vault-curate",
-      "description": "Find, connect, rediscover your notes \u2014 a local-first second brain for Obsidian. Semantic search with strong Chinese/CJK, relation graphs and semantic paths for connections you never drew, Hot/Cold rediscovery of forgotten notes. Desktop builds the index; phones and tablets search it. No API keys.",
-      "language": "TypeScript",
-      "license": "MIT",
-      "stars": 136,
-      "stars_24h": 0,
-      "trending_score": 11,
-      "topics": [
-        "bge",
-        "chinese-nlp",
-        "chinese-search",
-        "embeddings",
-        "hybrid-search",
-        "mobile",
-        "obsidian",
-        "obsidian-md",
-        "obsidian-plugin",
-        "ollama",
-        "pkm",
-        "rag",
-        "semantic-search",
-        "traditional-chinese",
-        "transformers-js",
-        "webgpu"
-      ],
-      "created_at": "2026-04-04T11:14:03Z",
-      "pushed_at": "2026-09-14T14:35:20Z",
-      "quick_run": "npm install vault-curate",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 136
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "desktop"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only",
-          "byok-cloud"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 4,
-        "age_days": 167,
-        "authenticity_score": 95,
-        "open_issues": 0,
-        "is_stale": false
-      },
-      "category": "RAG Engines"
+      }
     },
     {
       "full_name": "gmickel/gno",
       "name": "gno",
       "url": "https://github.com/gmickel/gno",
       "description": "Local AI-powered document search and editing with first-in-class hybrid retrieval, LLM answers, WebUI, REST API and MCP support for AI clients.",
+      "category": "RAG Engines",
       "language": "TypeScript",
       "license": "MIT",
-      "stars": 111,
-      "stars_24h": 0,
-      "trending_score": 10,
+      "stars": 115,
+      "stars_24h": 4,
+      "trending_score": 22,
       "topics": [
         "ai-assistant",
         "bun",
@@ -766,8 +596,8 @@
         "vector-search"
       ],
       "created_at": "2025-12-16T15:58:15Z",
-      "pushed_at": "2026-09-12T16:15:34Z",
-      "quick_run": "npm install gno",
+      "pushed_at": "2026-09-28T08:23:09Z",
+      "quick_run": "git clone https://github.com/gmickel/gno",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -776,6 +606,10 @@
         {
           "ts": 1789756348,
           "stars": 111
+        },
+        {
+          "ts": 1790587727,
+          "stars": 115
         }
       ],
       "capabilities": {
@@ -798,13 +632,85 @@
       },
       "health": {
         "stage": "active",
-        "last_push_days": 6,
-        "age_days": 276,
+        "last_push_days": 0,
+        "age_days": 285,
         "authenticity_score": 95,
-        "open_issues": 6,
+        "open_issues": 2,
         "is_stale": false
+      }
+    },
+    {
+      "full_name": "notoriouslab/vault-curate",
+      "name": "vault-curate",
+      "url": "https://github.com/notoriouslab/vault-curate",
+      "description": "Find, connect, rediscover your notes \u2014 a local-first second brain for Obsidian. Semantic search with strong Chinese/CJK, relation graphs and semantic paths for connections you never drew, Hot/Cold rediscovery of forgotten notes. Desktop builds the index; phones and tablets search it. No API keys.",
+      "category": "RAG Engines",
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 151,
+      "stars_24h": 15,
+      "trending_score": 57,
+      "topics": [
+        "bge",
+        "chinese-nlp",
+        "chinese-search",
+        "embeddings",
+        "hybrid-search",
+        "mobile",
+        "obsidian",
+        "obsidian-md",
+        "obsidian-plugin",
+        "ollama",
+        "pkm",
+        "rag",
+        "semantic-search",
+        "traditional-chinese",
+        "transformers-js",
+        "webgpu"
+      ],
+      "created_at": "2026-04-04T11:14:03Z",
+      "pushed_at": "2026-09-28T02:28:16Z",
+      "quick_run": "git clone https://github.com/notoriouslab/vault-curate",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 136
+        },
+        {
+          "ts": 1790587727,
+          "stars": 151
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "desktop"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only",
+          "byok-cloud"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
       },
-      "category": "RAG Engines"
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 176,
+        "authenticity_score": 95,
+        "open_issues": 0,
+        "is_stale": false
+      }
     }
   ]
 }

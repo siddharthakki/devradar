@@ -1,93 +1,51 @@
 {
   "category": "CLI & TUI Tooling",
   "count": 16,
-  "updated_at": "2026-09-28T09:25:41.483670+00:00",
+  "updated_at": "2026-09-28T09:28:47.400490+00:00",
   "repositories": [
     {
-      "full_name": "Hmbown/Codewhale",
-      "name": "Codewhale",
-      "url": "https://github.com/Hmbown/Codewhale",
-      "description": "Open-source coding agent for your terminal, built in Rust and on a journey of continuous community improvement. Issues and PRs welcome.",
-      "language": "Rust",
-      "license": "MIT",
-      "stars": 41005,
+      "full_name": "averemee-si/oracdc",
+      "name": "oracdc",
+      "url": "https://github.com/averemee-si/oracdc",
+      "description": "ORAcle database CDC (Change Data Capture)",
+      "category": "CLI & TUI Tooling",
+      "language": "Java",
+      "license": "NOASSERTION",
+      "stars": 129,
       "stars_24h": 0,
-      "trending_score": 202,
+      "trending_score": 11,
       "topics": [
-        "agent-orchestration",
-        "ai-agent",
-        "cli",
-        "coding-agent",
-        "local-first",
-        "mcp",
-        "multi-agent",
-        "multi-model",
-        "open-source",
-        "rust",
-        "tui"
+        "amazon",
+        "avro",
+        "aws-msk",
+        "cdc",
+        "confluent-platform",
+        "kafka",
+        "kafka-connect",
+        "oracle",
+        "oracle-data-guard",
+        "oracle-database",
+        "oracle-golden-gate",
+        "oracle-rac",
+        "oracle-rdbms",
+        "oracle-wallet",
+        "oraclegoldengate",
+        "parser",
+        "protobuf",
+        "redo",
+        "vector"
       ],
-      "created_at": "2026-01-19T18:21:01Z",
-      "pushed_at": "2026-09-18T18:28:29Z",
-      "quick_run": "cargo install Codewhale",
+      "created_at": "2019-09-26T21:17:08Z",
+      "pushed_at": "2026-09-28T09:26:29Z",
+      "quick_run": "git clone https://github.com/averemee-si/oracdc",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
       "authenticity_score": 95,
       "star_history": [
         {
-          "ts": 1789756348,
-          "stars": 41005
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "cli"
-        ],
-        "integrations": [
-          "mcp-server"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 242,
-        "authenticity_score": 95,
-        "open_issues": 127,
-        "is_stale": false
-      },
-      "category": "CLI & TUI Tooling"
-    },
-    {
-      "full_name": "microsoft/DiskANN",
-      "name": "DiskANN",
-      "url": "https://github.com/microsoft/DiskANN",
-      "description": "A vector indexing library to bring fast, fresh and filtered search to your database",
-      "language": "Rust",
-      "license": "MIT",
-      "stars": 1929,
-      "stars_24h": 0,
-      "trending_score": 43,
-      "topics": [],
-      "created_at": "2020-06-18T06:18:06Z",
-      "pushed_at": "2026-09-18T17:55:47Z",
-      "quick_run": "cargo install DiskANN",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 1929
+          "ts": 1790587727,
+          "stars": 129
         }
       ],
       "capabilities": {
@@ -110,23 +68,23 @@
       "health": {
         "stage": "active",
         "last_push_days": 0,
-        "age_days": 2283,
+        "age_days": 2558,
         "authenticity_score": 95,
-        "open_issues": 181,
+        "open_issues": 0,
         "is_stale": false
-      },
-      "category": "CLI & TUI Tooling"
+      }
     },
     {
       "full_name": "VoltiusApp/voltius",
       "name": "voltius",
       "url": "https://github.com/VoltiusApp/voltius",
       "description": "A lightning-fast, modern, local-first SSH/SFTP/Serial client. Real-time E2EE sync, Team vaults, live sharing, plugins and more. Open-source Termius alternative for Windows, Linux, macOS & Android. Built with Rust/Tauri.",
+      "category": "CLI & TUI Tooling",
       "language": "TypeScript",
       "license": "AGPL-3.0",
-      "stars": 580,
-      "stars_24h": 0,
-      "trending_score": 24,
+      "stars": 682,
+      "stars_24h": 102,
+      "trending_score": 332,
       "topics": [
         "crdt",
         "credential-manager",
@@ -150,8 +108,8 @@
         "zero-knowledge"
       ],
       "created_at": "2026-04-17T16:54:34Z",
-      "pushed_at": "2026-09-18T14:46:31Z",
-      "quick_run": "npm install voltius",
+      "pushed_at": "2026-09-28T09:02:31Z",
+      "quick_run": "git clone https://github.com/VoltiusApp/voltius",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -160,6 +118,10 @@
         {
           "ts": 1789756348,
           "stars": 580
+        },
+        {
+          "ts": 1790587727,
+          "stars": 682
         }
       ],
       "capabilities": {
@@ -187,82 +149,23 @@
       "health": {
         "stage": "active",
         "last_push_days": 0,
-        "age_days": 154,
+        "age_days": 163,
         "authenticity_score": 95,
-        "open_issues": 2,
+        "open_issues": 18,
         "is_stale": false
-      },
-      "category": "CLI & TUI Tooling"
-    },
-    {
-      "full_name": "modelcontextprotocol/inspector",
-      "name": "inspector",
-      "url": "https://github.com/modelcontextprotocol/inspector",
-      "description": "Visual testing tool for MCP servers",
-      "language": "TypeScript",
-      "license": "MIT",
-      "stars": 10908,
-      "stars_24h": 0,
-      "trending_score": 104,
-      "topics": [
-        "cli",
-        "debug",
-        "mcp",
-        "tool",
-        "tui",
-        "web"
-      ],
-      "created_at": "2024-10-03T21:47:42Z",
-      "pushed_at": "2026-09-18T13:05:22Z",
-      "quick_run": "npm install inspector",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 10908
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "cli",
-          "service"
-        ],
-        "integrations": [
-          "mcp-server"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 714,
-        "authenticity_score": 95,
-        "open_issues": 51,
-        "is_stale": false
-      },
-      "category": "CLI & TUI Tooling"
+      }
     },
     {
       "full_name": "hledgerorg/hledger",
       "name": "hledger",
       "url": "https://github.com/hledgerorg/hledger",
       "description": "Robust, fast, intuitive plain text accounting tool with CLI, TUI and web interfaces.",
+      "category": "CLI & TUI Tooling",
       "language": "Haskell",
       "license": "GPL-3.0",
-      "stars": 4710,
-      "stars_24h": 0,
-      "trending_score": 68,
+      "stars": 4732,
+      "stars_24h": 22,
+      "trending_score": 134,
       "topics": [
         "accounting",
         "command-line-tool",
@@ -278,7 +181,7 @@
         "web-application"
       ],
       "created_at": "2013-04-08T16:41:47Z",
-      "pushed_at": "2026-09-18T07:54:41Z",
+      "pushed_at": "2026-09-28T08:25:06Z",
       "quick_run": "git clone https://github.com/hledgerorg/hledger",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -288,6 +191,10 @@
         {
           "ts": 1789756348,
           "stars": 4710
+        },
+        {
+          "ts": 1790587727,
+          "stars": 4732
         }
       ],
       "capabilities": {
@@ -310,23 +217,23 @@
       "health": {
         "stage": "mature",
         "last_push_days": 0,
-        "age_days": 4911,
+        "age_days": 4920,
         "authenticity_score": 95,
-        "open_issues": 332,
+        "open_issues": 322,
         "is_stale": false
-      },
-      "category": "CLI & TUI Tooling"
+      }
     },
     {
       "full_name": "djunekz/termux-app-store",
       "name": "termux-app-store",
       "url": "https://github.com/djunekz/termux-app-store",
       "description": "TUI & CLI package manager for Termux on Android. Browse, build, and install community tools from source and binary source \u2014 offline, SHA256-verified, no root. Like AUR but for Termux.",
+      "category": "CLI & TUI Tooling",
       "language": "Python",
       "license": "MIT",
-      "stars": 108,
-      "stars_24h": 0,
-      "trending_score": 10,
+      "stars": 110,
+      "stars_24h": 2,
+      "trending_score": 16,
       "topics": [
         "android",
         "android-terminal",
@@ -350,8 +257,8 @@
         "tui"
       ],
       "created_at": "2026-02-02T03:10:28Z",
-      "pushed_at": "2026-09-18T03:49:59Z",
-      "quick_run": "pip install termux-app-store",
+      "pushed_at": "2026-09-28T04:24:00Z",
+      "quick_run": "git clone https://github.com/djunekz/termux-app-store",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -360,6 +267,10 @@
         {
           "ts": 1789756348,
           "stars": 108
+        },
+        {
+          "ts": 1790587727,
+          "stars": 110
         }
       ],
       "capabilities": {
@@ -382,23 +293,23 @@
       "health": {
         "stage": "active",
         "last_push_days": 0,
-        "age_days": 228,
+        "age_days": 238,
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      },
-      "category": "CLI & TUI Tooling"
+      }
     },
     {
       "full_name": "eugenioenko/ttt",
       "name": "ttt",
       "url": "https://github.com/eugenioenko/ttt",
       "description": "TTT Editor (Terminal Text Tool): A real alternative to VS Code, Zed, and Sublime that runs in your terminal. A TUI that feels like GUI. Single binary, zero config.",
+      "category": "CLI & TUI Tooling",
       "language": "Go",
       "license": "MIT",
-      "stars": 290,
-      "stars_24h": 0,
-      "trending_score": 17,
+      "stars": 340,
+      "stars_24h": 50,
+      "trending_score": 168,
       "topics": [
         "cli",
         "code-editor",
@@ -422,7 +333,7 @@
         "vscode-alternative"
       ],
       "created_at": "2026-01-16T06:21:11Z",
-      "pushed_at": "2026-09-18T02:53:01Z",
+      "pushed_at": "2026-09-27T15:48:41Z",
       "quick_run": "git clone https://github.com/eugenioenko/ttt",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -432,6 +343,10 @@
         {
           "ts": 1789756348,
           "stars": 290
+        },
+        {
+          "ts": 1790587727,
+          "stars": 340
         }
       ],
       "capabilities": {
@@ -457,111 +372,47 @@
       "health": {
         "stage": "active",
         "last_push_days": 0,
-        "age_days": 245,
+        "age_days": 255,
         "authenticity_score": 95,
-        "open_issues": 65,
+        "open_issues": 55,
         "is_stale": false
-      },
-      "category": "CLI & TUI Tooling"
+      }
     },
     {
-      "full_name": "abhixdd/ghgrab",
-      "name": "ghgrab",
-      "url": "https://github.com/abhixdd/ghgrab",
-      "description": "A simple, pretty terminal tool that lets you browse and download files from GitHub, GitLab, Codeberg, Gitea, and Forgejo without leaving your CLI.",
+      "full_name": "ad-si/Transity",
+      "name": "Transity",
+      "url": "https://github.com/ad-si/Transity",
+      "description": "Keep track of your \ud83d\udcb5, \ud83d\udd58, \ud83d\udc16, \ud83d\udc04, \ud83c\udf7b on your command line with the plain text accounting tool of the future! \ud83d\ude80",
+      "category": "CLI & TUI Tooling",
       "language": "Rust",
-      "license": "MIT",
-      "stars": 1476,
+      "license": "AGPL-3.0",
+      "stars": 654,
       "stars_24h": 0,
-      "trending_score": 38,
+      "trending_score": 25,
       "topics": [
+        "accounting",
         "cli",
-        "filedownloader",
-        "github",
-        "node",
-        "python",
-        "ratatui",
-        "rust",
-        "tui"
-      ],
-      "created_at": "2025-12-14T09:39:55Z",
-      "pushed_at": "2026-09-16T19:50:35Z",
-      "quick_run": "cargo install ghgrab",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 1476
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "cli"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 1,
-        "age_days": 278,
-        "authenticity_score": 95,
-        "open_issues": 2,
-        "is_stale": false
-      },
-      "category": "CLI & TUI Tooling"
-    },
-    {
-      "full_name": "kyu08/fzf-make",
-      "name": "fzf-make",
-      "url": "https://github.com/kyu08/fzf-make",
-      "description": "A command line tool that executes commands using fuzzy finder with preview window for make, npm, pnpm, yarn, just and task.",
-      "language": "Rust",
-      "license": "MIT",
-      "stars": 300,
-      "stars_24h": 0,
-      "trending_score": 17,
-      "topics": [
-        "cli",
-        "crates-io",
-        "fortheloveofcode",
-        "fuzzy-finder",
-        "fzf",
+        "command-line-tool",
+        "finance",
         "hacktoberfest",
-        "just",
-        "make",
-        "makefile",
-        "pnpm",
-        "ratatui",
-        "rust",
-        "task",
-        "terminal",
+        "ledger",
+        "money",
+        "plaintext-accounting",
+        "purescript",
+        "transity",
         "tui"
       ],
-      "created_at": "2023-03-08T17:26:51Z",
-      "pushed_at": "2026-09-16T16:08:49Z",
-      "quick_run": "cargo install fzf-make",
+      "created_at": "2017-03-31T18:55:14Z",
+      "pushed_at": "2026-09-27T14:52:19Z",
+      "quick_run": "git clone https://github.com/ad-si/Transity",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
-      "authenticity_score": 95,
+      "authenticity_score": 80,
       "star_history": [
         {
-          "ts": 1789756348,
-          "stars": 300
+          "ts": 1790587727,
+          "stars": 654
         }
       ],
       "capabilities": {
@@ -583,32 +434,108 @@
       },
       "health": {
         "stage": "active",
-        "last_push_days": 2,
-        "age_days": 1290,
-        "authenticity_score": 95,
-        "open_issues": 47,
+        "last_push_days": 0,
+        "age_days": 3467,
+        "authenticity_score": 80,
+        "open_issues": 9,
         "is_stale": false
-      },
-      "category": "CLI & TUI Tooling"
+      }
     },
     {
-      "full_name": "nostacks/ekphos",
-      "name": "ekphos",
-      "url": "https://github.com/nostacks/ekphos",
-      "description": "A lightweight, fast, terminal-based markdown research tool inspired by Obsidian",
-      "language": "Rust",
+      "full_name": "Tlaloc-Es/killpy",
+      "name": "killpy",
+      "url": "https://github.com/Tlaloc-Es/killpy",
+      "description": "\ud83d\udc0d CLI tool to find and delete unused Python virtual environments (.venv, poetry, conda, pipenv, uv). Reclaim disk space effortlessly \u2014 supports bulk delete, size reporting, and pycache cleanup.",
+      "category": "CLI & TUI Tooling",
+      "language": "Python",
       "license": "MIT",
-      "stars": 994,
+      "stars": 131,
       "stars_24h": 0,
-      "trending_score": 31,
+      "trending_score": 11,
+      "topics": [
+        "cleanup",
+        "command-line",
+        "conda",
+        "conda-environment",
+        "developer-tools",
+        "devtools",
+        "disk-space",
+        "environment-management",
+        "git-hooks",
+        "pipx",
+        "poetry",
+        "pre-commit",
+        "pycache",
+        "python",
+        "textual",
+        "tui",
+        "uv",
+        "venv",
+        "venv-python",
+        "virtual-environment"
+      ],
+      "created_at": "2025-01-02T11:25:42Z",
+      "pushed_at": "2026-09-27T12:35:51Z",
+      "quick_run": "git clone https://github.com/Tlaloc-Es/killpy",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 131
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli",
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 633,
+        "authenticity_score": 95,
+        "open_issues": 20,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "modelcontextprotocol/inspector",
+      "name": "inspector",
+      "url": "https://github.com/modelcontextprotocol/inspector",
+      "description": "Visual testing tool for MCP servers",
+      "category": "CLI & TUI Tooling",
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "stars": 10970,
+      "stars_24h": 62,
+      "trending_score": 290,
       "topics": [
         "cli",
-        "productivity",
-        "tui"
+        "debug",
+        "mcp",
+        "tool",
+        "tui",
+        "web"
       ],
-      "created_at": "2025-12-15T11:06:31Z",
-      "pushed_at": "2026-09-15T03:15:22Z",
-      "quick_run": "cargo install ekphos",
+      "created_at": "2024-10-03T21:47:42Z",
+      "pushed_at": "2026-09-27T05:42:05Z",
+      "quick_run": "git clone https://github.com/modelcontextprotocol/inspector",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -616,7 +543,84 @@
       "star_history": [
         {
           "ts": 1789756348,
-          "stars": 994
+          "stars": 10908
+        },
+        {
+          "ts": 1790587727,
+          "stars": 10970
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli",
+          "service"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 1,
+        "age_days": 724,
+        "authenticity_score": 95,
+        "open_issues": 43,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "r14dd/patent",
+      "name": "patent",
+      "url": "https://github.com/r14dd/patent",
+      "description": "A prior-art search for your code ideas \u2014 has this dev tool already been shipped?",
+      "category": "CLI & TUI Tooling",
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "stars": 530,
+      "stars_24h": 4,
+      "trending_score": 35,
+      "topics": [
+        "ai",
+        "cli",
+        "command-line-tool",
+        "developer-tools",
+        "embeddings",
+        "llm",
+        "npm",
+        "ollama",
+        "package-search",
+        "prior-art",
+        "pypi",
+        "ratatui",
+        "rust",
+        "search",
+        "semantic-search",
+        "tui"
+      ],
+      "created_at": "2026-05-30T11:12:04Z",
+      "pushed_at": "2026-09-28T07:55:22Z",
+      "quick_run": "git clone https://github.com/r14dd/patent",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 526
+        },
+        {
+          "ts": 1790587727,
+          "stars": 530
         }
       ],
       "capabilities": {
@@ -638,24 +642,24 @@
       },
       "health": {
         "stage": "active",
-        "last_push_days": 3,
-        "age_days": 277,
+        "last_push_days": 0,
+        "age_days": 120,
         "authenticity_score": 95,
-        "open_issues": 4,
+        "open_issues": 5,
         "is_stale": false
-      },
-      "category": "CLI & TUI Tooling"
+      }
     },
     {
       "full_name": "fujiapple852/trippy",
       "name": "trippy",
       "url": "https://github.com/fujiapple852/trippy",
       "description": "A network diagnostic tool ",
+      "category": "CLI & TUI Tooling",
       "language": "Rust",
       "license": "Apache-2.0",
-      "stars": 7938,
-      "stars_24h": 0,
-      "trending_score": 89,
+      "stars": 7965,
+      "stars_24h": 27,
+      "trending_score": 170,
       "topics": [
         "cli",
         "command-line-interface",
@@ -679,8 +683,8 @@
         "windows"
       ],
       "created_at": "2022-03-28T10:56:29Z",
-      "pushed_at": "2026-09-15T02:53:44Z",
-      "quick_run": "cargo install trippy",
+      "pushed_at": "2026-09-28T02:53:59Z",
+      "quick_run": "git clone https://github.com/fujiapple852/trippy",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -689,6 +693,10 @@
         {
           "ts": 1789756348,
           "stars": 7938
+        },
+        {
+          "ts": 1790587727,
+          "stars": 7965
         }
       ],
       "capabilities": {
@@ -710,24 +718,24 @@
       },
       "health": {
         "stage": "mature",
-        "last_push_days": 3,
-        "age_days": 1635,
+        "last_push_days": 0,
+        "age_days": 1644,
         "authenticity_score": 95,
         "open_issues": 85,
         "is_stale": false
-      },
-      "category": "CLI & TUI Tooling"
+      }
     },
     {
       "full_name": "alvarorichard/GoAnime",
       "name": "GoAnime",
       "url": "https://github.com/alvarorichard/GoAnime",
       "description": "A TUI tool to browse, stream, and download anime in PT-BR and EN",
+      "category": "CLI & TUI Tooling",
       "language": "Go",
       "license": "MIT",
-      "stars": 1106,
-      "stars_24h": 0,
-      "trending_score": 33,
+      "stars": 1112,
+      "stars_24h": 6,
+      "trending_score": 51,
       "topics": [
         "ani-cli",
         "ani-cli-br",
@@ -751,7 +759,7 @@
         "windows"
       ],
       "created_at": "2023-07-06T04:19:52Z",
-      "pushed_at": "2026-09-15T00:02:16Z",
+      "pushed_at": "2026-09-25T20:31:23Z",
       "quick_run": "git clone https://github.com/alvarorichard/GoAnime",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -761,6 +769,10 @@
         {
           "ts": 1789756348,
           "stars": 1106
+        },
+        {
+          "ts": 1790587727,
+          "stars": 1112
         }
       ],
       "capabilities": {
@@ -782,99 +794,24 @@
       },
       "health": {
         "stage": "active",
-        "last_push_days": 3,
-        "age_days": 1170,
+        "last_push_days": 2,
+        "age_days": 1180,
         "authenticity_score": 95,
-        "open_issues": 13,
+        "open_issues": 15,
         "is_stale": false
-      },
-      "category": "CLI & TUI Tooling"
-    },
-    {
-      "full_name": "jonigl/mcp-client-for-ollama",
-      "name": "mcp-client-for-ollama",
-      "url": "https://github.com/jonigl/mcp-client-for-ollama",
-      "description": "Harness the power of local LLMs with this TUI MCP Client for Ollama. Featuring all core MCP primitives (tools, prompts, resources), agent mode, multi-server, model switching, streaming responses, human-in-the-loop, thinking mode, model params config, system prompts, and saved preferences.",
-      "language": "Python",
-      "license": "MIT",
-      "stars": 823,
-      "stars_24h": 0,
-      "trending_score": 28,
-      "topics": [
-        "agentic-ai",
-        "ai",
-        "command-line-tool",
-        "harness",
-        "linux",
-        "local-llm",
-        "macos",
-        "mcp",
-        "mcp-client",
-        "mcp-prompts",
-        "mcp-resources",
-        "mcp-server",
-        "mcp-tools",
-        "model-context-protocol",
-        "ollama",
-        "open-source",
-        "sse",
-        "stdio",
-        "streamable-http",
-        "windows"
-      ],
-      "created_at": "2025-04-23T21:05:02Z",
-      "pushed_at": "2026-09-14T08:34:02Z",
-      "quick_run": "pip install mcp-client-for-ollama",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 823
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "cli",
-          "service"
-        ],
-        "integrations": [
-          "mcp-server"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [
-          "real-time"
-        ],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 4,
-        "age_days": 512,
-        "authenticity_score": 95,
-        "open_issues": 17,
-        "is_stale": false
-      },
-      "category": "CLI & TUI Tooling"
+      }
     },
     {
       "full_name": "unhappychoice/gitlogue",
       "name": "gitlogue",
       "url": "https://github.com/unhappychoice/gitlogue",
       "description": "A cinematic Git commit replay tool for the terminal, turning your Git history into a living, animated story.",
+      "category": "CLI & TUI Tooling",
       "language": "Rust",
       "license": "ISC",
-      "stars": 4983,
-      "stars_24h": 0,
-      "trending_score": 70,
+      "stars": 5008,
+      "stars_24h": 25,
+      "trending_score": 145,
       "topics": [
         "cli",
         "cli-tool",
@@ -898,8 +835,8 @@
         "visualization"
       ],
       "created_at": "2025-11-08T21:22:33Z",
-      "pushed_at": "2026-09-14T08:19:11Z",
-      "quick_run": "cargo install gitlogue",
+      "pushed_at": "2026-09-25T00:05:07Z",
+      "quick_run": "git clone https://github.com/unhappychoice/gitlogue",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -908,6 +845,10 @@
         {
           "ts": 1789756348,
           "stars": 4983
+        },
+        {
+          "ts": 1790587727,
+          "stars": 5008
         }
       ],
       "capabilities": {
@@ -929,95 +870,27 @@
       },
       "health": {
         "stage": "mature",
-        "last_push_days": 4,
-        "age_days": 313,
+        "last_push_days": 3,
+        "age_days": 323,
         "authenticity_score": 80,
         "open_issues": 12,
         "is_stale": false
-      },
-      "category": "CLI & TUI Tooling"
-    },
-    {
-      "full_name": "r14dd/patent",
-      "name": "patent",
-      "url": "https://github.com/r14dd/patent",
-      "description": "A prior-art search for your code ideas \u2014 has this dev tool already been shipped?",
-      "language": "Rust",
-      "license": "Apache-2.0",
-      "stars": 526,
-      "stars_24h": 0,
-      "trending_score": 22,
-      "topics": [
-        "ai",
-        "cli",
-        "command-line-tool",
-        "developer-tools",
-        "embeddings",
-        "llm",
-        "npm",
-        "ollama",
-        "package-search",
-        "prior-art",
-        "pypi",
-        "ratatui",
-        "rust",
-        "search",
-        "semantic-search",
-        "tui"
-      ],
-      "created_at": "2026-05-30T11:12:04Z",
-      "pushed_at": "2026-09-14T07:56:08Z",
-      "quick_run": "cargo install patent",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 526
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "cli"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 4,
-        "age_days": 111,
-        "authenticity_score": 95,
-        "open_issues": 5,
-        "is_stale": false
-      },
-      "category": "CLI & TUI Tooling"
+      }
     },
     {
       "full_name": "abod8639/anodemcu",
       "name": "anodemcu",
       "url": "https://github.com/abod8639/anodemcu",
       "description": "A cross-platform, interactive TUI tool to manage, compile, and flash microcontroller projects using arduino-cli, PlatformIO, and ESP-IDF.",
+      "category": "CLI & TUI Tooling",
       "language": "Shell",
       "license": "MIT",
-      "stars": 108,
-      "stars_24h": 0,
-      "trending_score": 10,
+      "stars": 110,
+      "stars_24h": 2,
+      "trending_score": 16,
       "topics": [],
       "created_at": "2025-07-11T15:43:14Z",
-      "pushed_at": "2026-09-13T21:29:52Z",
+      "pushed_at": "2026-09-24T12:06:56Z",
       "quick_run": "git clone https://github.com/abod8639/anodemcu",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -1027,6 +900,141 @@
         {
           "ts": 1789756348,
           "stars": 108
+        },
+        {
+          "ts": 1790587727,
+          "stars": 110
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 3,
+        "age_days": 443,
+        "authenticity_score": 95,
+        "open_issues": 0,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "fuxicodex/Fuxi",
+      "name": "Fuxi",
+      "url": "https://github.com/fuxicodex/Fuxi",
+      "description": "FuXi is a fast, self-contained AI coding agent that lives in your terminal \u2014 edit code, run commands, and drive tools, with cost-aware routing across LLM providers.",
+      "category": "CLI & TUI Tooling",
+      "language": "Python",
+      "license": "NOASSERTION",
+      "stars": 3363,
+      "stars_24h": 0,
+      "trending_score": 57,
+      "topics": [
+        "agent",
+        "ai",
+        "ai-agent",
+        "ai-coding",
+        "autonomous-agent",
+        "cli",
+        "code-assistant",
+        "coding-agent",
+        "coding-assistant",
+        "developer-tool",
+        "developer-tools",
+        "go",
+        "golang",
+        "llm",
+        "mcp",
+        "openai-compatible",
+        "productivity",
+        "terminal",
+        "terminal-app",
+        "tui"
+      ],
+      "created_at": "2026-08-04T07:32:11Z",
+      "pushed_at": "2026-09-24T07:16:30Z",
+      "quick_run": "git clone https://github.com/fuxicodex/Fuxi",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 3363
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "openai-api",
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 4,
+        "age_days": 55,
+        "authenticity_score": 95,
+        "open_issues": 0,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "msmps/create-tui",
+      "name": "create-tui",
+      "url": "https://github.com/msmps/create-tui",
+      "description": "The easiest way to get started with OpenTUI is by using create-tui. This CLI tool enables you to quickly start building a new OpenTUI application, with everything set up for you.",
+      "category": "CLI & TUI Tooling",
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 146,
+      "stars_24h": 0,
+      "trending_score": 12,
+      "topics": [
+        "anomaly",
+        "create-app",
+        "opentui",
+        "react",
+        "solidjs",
+        "terminal-user-interface"
+      ],
+      "created_at": "2025-08-27T19:36:07Z",
+      "pushed_at": "2026-09-24T06:37:15Z",
+      "quick_run": "git clone https://github.com/msmps/create-tui",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 146
         }
       ],
       "capabilities": {
@@ -1049,12 +1057,70 @@
       "health": {
         "stage": "active",
         "last_push_days": 4,
-        "age_days": 434,
+        "age_days": 396,
         "authenticity_score": 95,
-        "open_issues": 0,
+        "open_issues": 2,
         "is_stale": false
+      }
+    },
+    {
+      "full_name": "nostacks/ekphos",
+      "name": "ekphos",
+      "url": "https://github.com/nostacks/ekphos",
+      "description": "A lightweight, fast, terminal-based markdown research tool inspired by Obsidian",
+      "category": "CLI & TUI Tooling",
+      "language": "Rust",
+      "license": "MIT",
+      "stars": 1063,
+      "stars_24h": 69,
+      "trending_score": 239,
+      "topics": [
+        "cli",
+        "productivity",
+        "tui"
+      ],
+      "created_at": "2025-12-15T11:06:31Z",
+      "pushed_at": "2026-09-23T17:12:22Z",
+      "quick_run": "git clone https://github.com/nostacks/ekphos",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 994
+        },
+        {
+          "ts": 1790587727,
+          "stars": 1063
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
       },
-      "category": "CLI & TUI Tooling"
+      "health": {
+        "stage": "active",
+        "last_push_days": 4,
+        "age_days": 286,
+        "authenticity_score": 95,
+        "open_issues": 5,
+        "is_stale": false
+      }
     }
   ]
 }

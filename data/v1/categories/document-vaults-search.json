@@ -1,18 +1,19 @@
 {
   "category": "Document Vaults & Search",
   "count": 1,
-  "updated_at": "2026-09-28T09:25:41.483670+00:00",
+  "updated_at": "2026-09-28T09:28:47.400490+00:00",
   "repositories": [
     {
       "full_name": "manticoresoftware/manticoresearch",
       "name": "manticoresearch",
       "url": "https://github.com/manticoresoftware/manticoresearch",
       "description": "Open-source search database for full-text, vector, and hybrid search with real-time indexing and SQL.",
+      "category": "Document Vaults & Search",
       "language": "C++",
       "license": "GPL-3.0",
-      "stars": 12018,
-      "stars_24h": 0,
-      "trending_score": 109,
+      "stars": 12039,
+      "stars_24h": 21,
+      "trending_score": 172,
       "topics": [
         "api",
         "bm25",
@@ -31,7 +32,7 @@
         "stream-filtering"
       ],
       "created_at": "2017-06-28T01:15:30Z",
-      "pushed_at": "2026-09-18T17:00:46Z",
+      "pushed_at": "2026-09-28T07:30:52Z",
       "quick_run": "git clone https://github.com/manticoresoftware/manticoresearch",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -41,6 +42,10 @@
         {
           "ts": 1789756348,
           "stars": 12018
+        },
+        {
+          "ts": 1790587727,
+          "stars": 12039
         }
       ],
       "capabilities": {
@@ -65,12 +70,11 @@
       "health": {
         "stage": "mature",
         "last_push_days": 0,
-        "age_days": 3369,
+        "age_days": 3379,
         "authenticity_score": 95,
-        "open_issues": 653,
+        "open_issues": 643,
         "is_stale": false
-      },
-      "category": "Document Vaults & Search"
+      }
     }
   ]
 }

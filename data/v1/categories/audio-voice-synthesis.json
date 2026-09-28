@@ -1,43 +1,115 @@
 {
   "category": "Audio & Voice Synthesis",
   "count": 15,
-  "updated_at": "2026-09-28T09:25:41.483670+00:00",
+  "updated_at": "2026-09-28T09:28:47.400490+00:00",
   "repositories": [
     {
-      "full_name": "rapidaai/voice-ai",
-      "name": "voice-ai",
-      "url": "https://github.com/rapidaai/voice-ai",
-      "description": "Rapida is an open-source, end-to-end voice AI orchestration platform for building real-time conversational voice agents with audio streaming, STT, TTS, VAD, multi-channel integration, agent state management, and observability.",
-      "language": "Go",
-      "license": "NOASSERTION",
-      "stars": 732,
+      "full_name": "EveningStudy/asmr-dubber",
+      "name": "asmr-dubber",
+      "url": "https://github.com/EveningStudy/asmr-dubber",
+      "description": "\u65e5\u82f1\u97f3\u58f0\u4e2d\u6587\u5316\u5de5\u5177\uff1a\u8bc6\u522b\u3001\u7ffb\u8bd1\u3001\u97f3\u8272\u514b\u9686\u914d\u97f3\u3001\u6279\u91cf\u5904\u7406\u4e0e\u540c\u540d\u5b57\u5e55\u5bfc\u51fa\uff1b\u652f\u6301\u53cc\u8bed\u6df7\u97f3\u3001RTF \u7a7a\u95f4\u5904\u7406\u3001\u9010\u53e5\u97f3\u91cf\u63a7\u5236\u53ca\u4eba\u58f0\u5206\u79bb\u3002Japanese/English audio \u2192 Chinese dubbing & subtitles. Voice cloning, batch processing, subtitle-only export, bilingual mixing, RTF spatial processing, per-line gain/mute & vocal separation.",
+      "category": "Audio & Voice Synthesis",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 212,
       "stars_24h": 0,
-      "trending_score": 27,
+      "trending_score": 14,
       "topics": [
-        "agent-framework",
-        "ai-voice",
-        "ai-voice-agent",
-        "audio-streaming",
-        "golang",
-        "open-source",
-        "orchestration",
-        "realtime-audio",
-        "sip",
-        "speech-ai",
-        "speech-to-text",
-        "telephony",
+        "ai-dubbing",
+        "asmr",
+        "asr",
+        "audio-processing",
+        "autoflow",
+        "dlsite",
+        "dubbing",
+        "gradio",
+        "indextts2",
+        "linux",
+        "parakeet",
+        "speech-recognition",
+        "subtitles",
         "text-to-speech",
-        "voice-agents",
-        "voice-ai",
-        "voice-ai-agents",
-        "voice-ai-platform",
-        "voice-assistant-ai",
-        "voice-bot",
-        "voice-observability"
+        "translation",
+        "tts",
+        "video-translation",
+        "voice-cloning",
+        "whisper",
+        "windows"
       ],
-      "created_at": "2023-12-07T07:57:00Z",
-      "pushed_at": "2026-09-18T18:29:40Z",
-      "quick_run": "git clone https://github.com/rapidaai/voice-ai",
+      "created_at": "2026-07-23T18:16:47Z",
+      "pushed_at": "2026-09-27T16:46:16Z",
+      "quick_run": "git clone https://github.com/EveningStudy/asmr-dubber",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 212
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 66,
+        "authenticity_score": 95,
+        "open_issues": 10,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "ddxfish/sapphire",
+      "name": "sapphire",
+      "url": "https://github.com/ddxfish/sapphire",
+      "description": "She's the AI agent you come home to.",
+      "category": "Audio & Voice Synthesis",
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "stars": 288,
+      "stars_24h": 2,
+      "trending_score": 22,
+      "topics": [
+        "agentic",
+        "ai",
+        "ai-assistant",
+        "ai-companion",
+        "assistant",
+        "chat-ui",
+        "chatbot",
+        "companion",
+        "kokoro",
+        "privacy",
+        "python",
+        "self-hosted",
+        "storytelling",
+        "stt",
+        "tool-calling",
+        "tts",
+        "voice",
+        "voice-assistant",
+        "whisper"
+      ],
+      "created_at": "2025-12-13T23:04:51Z",
+      "pushed_at": "2026-09-27T01:07:29Z",
+      "quick_run": "git clone https://github.com/ddxfish/sapphire",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -45,7 +117,11 @@
       "star_history": [
         {
           "ts": 1789756348,
-          "stars": 732
+          "stars": 286
+        },
+        {
+          "ts": 1790587727,
+          "stars": 288
         }
       ],
       "capabilities": {
@@ -59,7 +135,7 @@
           "local-only"
         ],
         "intent_tags": [
-          "real-time"
+          "self-hosted"
         ],
         "hardware": {
           "is_cuda_ready": false,
@@ -69,24 +145,24 @@
       },
       "health": {
         "stage": "active",
-        "last_push_days": 0,
-        "age_days": 1016,
+        "last_push_days": 1,
+        "age_days": 288,
         "authenticity_score": 95,
-        "open_issues": 35,
+        "open_issues": 4,
         "is_stale": false
-      },
-      "category": "Audio & Voice Synthesis"
+      }
     },
     {
       "full_name": "mbailey/voicemode",
       "name": "voicemode",
       "url": "https://github.com/mbailey/voicemode",
       "description": "Natural voice conversations with Claude Code",
+      "category": "Audio & Voice Synthesis",
       "language": "Python",
       "license": "MIT",
-      "stars": 1370,
-      "stars_24h": 0,
-      "trending_score": 37,
+      "stars": 1380,
+      "stars_24h": 10,
+      "trending_score": 67,
       "topics": [
         "anthropic",
         "asr",
@@ -102,8 +178,8 @@
         "whisper"
       ],
       "created_at": "2025-06-08T16:16:19Z",
-      "pushed_at": "2026-09-15T03:41:01Z",
-      "quick_run": "pip install voicemode",
+      "pushed_at": "2026-09-21T13:15:05Z",
+      "quick_run": "git clone https://github.com/mbailey/voicemode",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -112,6 +188,10 @@
         {
           "ts": 1789756348,
           "stars": 1370
+        },
+        {
+          "ts": 1790587727,
+          "stars": 1380
         }
       ],
       "capabilities": {
@@ -133,24 +213,24 @@
       },
       "health": {
         "stage": "active",
-        "last_push_days": 3,
-        "age_days": 467,
+        "last_push_days": 6,
+        "age_days": 476,
         "authenticity_score": 95,
-        "open_issues": 47,
+        "open_issues": 50,
         "is_stale": false
-      },
-      "category": "Audio & Voice Synthesis"
+      }
     },
     {
       "full_name": "beiyege-01/dsh-voice-ai-girlfriend",
       "name": "dsh-voice-ai-girlfriend",
       "url": "https://github.com/beiyege-01/dsh-voice-ai-girlfriend",
       "description": "\u8bed\u97f3 AI \u5973\u53cb\uff08Voice AI girlfriend for DeepSeek Harness\uff09\uff1aWhisper \u8bed\u97f3\u8f93\u5165 + Qwen3-TTS \u58f0\u97f3\u514b\u9686 + \u53e5\u5b50\u7ea7\u6d41\u5f0f\u6717\u8bfb + \u6570\u5b57\u4eba\u52a8\u753b\u7a97\u3002\u63d2\u8bdd/\u6392\u961f\u53cc\u6a21\u5f0f\uff0c\u8bf4\u8bdd\u5373\u6253\u65ad\u3002",
+      "category": "Audio & Voice Synthesis",
       "language": "TypeScript",
       "license": "NOASSERTION",
-      "stars": 102,
-      "stars_24h": 0,
-      "trending_score": 10,
+      "stars": 128,
+      "stars_24h": 26,
+      "trending_score": 89,
       "topics": [
         "ai-girlfriend",
         "companion",
@@ -166,7 +246,7 @@
       ],
       "created_at": "2026-08-15T15:16:37Z",
       "pushed_at": "2026-09-13T16:36:44Z",
-      "quick_run": "npm install dsh-voice-ai-girlfriend",
+      "quick_run": "git clone https://github.com/beiyege-01/dsh-voice-ai-girlfriend",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -175,6 +255,10 @@
         {
           "ts": 1789756348,
           "stars": 102
+        },
+        {
+          "ts": 1790587727,
+          "stars": 128
         }
       ],
       "capabilities": {
@@ -196,24 +280,24 @@
       },
       "health": {
         "stage": "experimental",
-        "last_push_days": 5,
-        "age_days": 34,
+        "last_push_days": 14,
+        "age_days": 43,
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      },
-      "category": "Audio & Voice Synthesis"
+      }
     },
     {
       "full_name": "fluxions-ai/vui",
       "name": "vui",
       "url": "https://github.com/fluxions-ai/vui",
       "description": "Vui Nano \u2014 a small, context-aware text-to-speech model trained on real conversations. 219M active params (305M total), Apache 2.0, voice cloning, streaming, runs on CPU (dependency-free C build). Ships with a full real-time voice assistant: WebRTC, ASR, local LLM, OpenAI Realtime API compatible.",
+      "category": "Audio & Voice Synthesis",
       "language": "Python",
       "license": "NOASSERTION",
-      "stars": 765,
-      "stars_24h": 0,
-      "trending_score": 27,
+      "stars": 769,
+      "stars_24h": 4,
+      "trending_score": 39,
       "topics": [
         "conversational-ai",
         "conversational-speech",
@@ -238,7 +322,7 @@
       ],
       "created_at": "2025-06-05T11:15:03Z",
       "pushed_at": "2026-09-12T10:53:12Z",
-      "quick_run": "pip install vui",
+      "quick_run": "git clone https://github.com/fluxions-ai/vui",
       "hardware_req": "8GB Unified / Metal",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -247,6 +331,10 @@
         {
           "ts": 1789756348,
           "stars": 765
+        },
+        {
+          "ts": 1790587727,
+          "stars": 769
         }
       ],
       "capabilities": {
@@ -271,97 +359,24 @@
       },
       "health": {
         "stage": "active",
-        "last_push_days": 6,
-        "age_days": 470,
+        "last_push_days": 15,
+        "age_days": 479,
         "authenticity_score": 95,
-        "open_issues": 3,
+        "open_issues": 2,
         "is_stale": false
-      },
-      "category": "Audio & Voice Synthesis"
-    },
-    {
-      "full_name": "ddxfish/sapphire",
-      "name": "sapphire",
-      "url": "https://github.com/ddxfish/sapphire",
-      "description": "She's the AI agent you come home to.",
-      "language": "Python",
-      "license": "AGPL-3.0",
-      "stars": 286,
-      "stars_24h": 0,
-      "trending_score": 16,
-      "topics": [
-        "agentic",
-        "ai",
-        "ai-assistant",
-        "ai-companion",
-        "assistant",
-        "chat-ui",
-        "chatbot",
-        "companion",
-        "kokoro",
-        "privacy",
-        "python",
-        "self-hosted",
-        "storytelling",
-        "stt",
-        "tool-calling",
-        "tts",
-        "voice",
-        "voice-assistant",
-        "whisper"
-      ],
-      "created_at": "2025-12-13T23:04:51Z",
-      "pushed_at": "2026-09-15T15:53:11Z",
-      "quick_run": "pip install sapphire",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 286
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [
-          "self-hosted"
-        ],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 3,
-        "age_days": 278,
-        "authenticity_score": 95,
-        "open_issues": 6,
-        "is_stale": false
-      },
-      "category": "Audio & Voice Synthesis"
+      }
     },
     {
       "full_name": "Ali-hey-0/audio-ai-field-guide",
       "name": "audio-ai-field-guide",
       "url": "https://github.com/Ali-hey-0/audio-ai-field-guide",
       "description": "A mental-model-first field guide to Audio AI \u2014 from raw waveforms to production voice systems. Covers ASR, TTS, audio classification, Transformer architectures (CTC/Seq2Seq), fine-tuning, and real-world pipelines like voice assistants and meeting transcription. Bilingual (EN/FA).",
+      "category": "Audio & Voice Synthesis",
       "language": "Code",
       "license": "MIT",
-      "stars": 109,
-      "stars_24h": 0,
-      "trending_score": 10,
+      "stars": 111,
+      "stars_24h": 2,
+      "trending_score": 16,
       "topics": [
         "asr",
         "audio-classification",
@@ -395,6 +410,10 @@
         {
           "ts": 1789756348,
           "stars": 109
+        },
+        {
+          "ts": 1790587727,
+          "stars": 111
         }
       ],
       "capabilities": {
@@ -419,24 +438,24 @@
       },
       "health": {
         "stage": "active",
-        "last_push_days": 64,
-        "age_days": 64,
+        "last_push_days": 74,
+        "age_days": 74,
         "authenticity_score": 80,
         "open_issues": 0,
         "is_stale": false
-      },
-      "category": "Audio & Voice Synthesis"
+      }
     },
     {
       "full_name": "abus-aikorea/voice-pro",
       "name": "voice-pro",
       "url": "https://github.com/abus-aikorea/voice-pro",
       "description": "Gradio WebUI for creators and developers, featuring key TTS (Edge-TTS, kokoro) and zero-shot Voice Cloning (E2 & F5-TTS, CosyVoice), with Whisper audio processing, YouTube download, Demucs vocal isolation, and multilingual translation.",
+      "category": "Audio & Voice Synthesis",
       "language": "Python",
       "license": "GPL-3.0",
-      "stars": 12844,
-      "stars_24h": 0,
-      "trending_score": 113,
+      "stars": 12953,
+      "stars_24h": 109,
+      "trending_score": 440,
       "topics": [
         "audiobook",
         "faster-whisper",
@@ -460,7 +479,7 @@
       ],
       "created_at": "2024-07-29T10:02:31Z",
       "pushed_at": "2026-07-13T01:28:10Z",
-      "quick_run": "pip install voice-pro",
+      "quick_run": "git clone https://github.com/abus-aikorea/voice-pro",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -469,6 +488,10 @@
         {
           "ts": 1789756348,
           "stars": 12844
+        },
+        {
+          "ts": 1790587727,
+          "stars": 12953
         }
       ],
       "capabilities": {
@@ -490,28 +513,28 @@
       },
       "health": {
         "stage": "active",
-        "last_push_days": 67,
-        "age_days": 781,
+        "last_push_days": 77,
+        "age_days": 790,
         "authenticity_score": 95,
         "open_issues": 60,
         "is_stale": false
-      },
-      "category": "Audio & Voice Synthesis"
+      }
     },
     {
       "full_name": "FranckyB/Voice-Clone-Studio",
       "name": "Voice-Clone-Studio",
       "url": "https://github.com/FranckyB/Voice-Clone-Studio",
       "description": "A Gradio-based web UI for voice cloning and voice design, powered by Qwen3-TTS & VibeVoice.  Can use Whisper or VibeVoice-ASR for automatic transcription.",
+      "category": "Audio & Voice Synthesis",
       "language": "Python",
       "license": "Apache-2.0",
-      "stars": 672,
-      "stars_24h": 0,
-      "trending_score": 25,
+      "stars": 674,
+      "stars_24h": 2,
+      "trending_score": 31,
       "topics": [],
       "created_at": "2026-01-24T03:05:15Z",
       "pushed_at": "2026-05-18T15:51:30Z",
-      "quick_run": "pip install Voice-Clone-Studio",
+      "quick_run": "git clone https://github.com/FranckyB/Voice-Clone-Studio",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -520,6 +543,10 @@
         {
           "ts": 1789756348,
           "stars": 672
+        },
+        {
+          "ts": 1790587727,
+          "stars": 674
         }
       ],
       "capabilities": {
@@ -541,19 +568,19 @@
       },
       "health": {
         "stage": "maintenance",
-        "last_push_days": 123,
-        "age_days": 237,
+        "last_push_days": 132,
+        "age_days": 247,
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": true
-      },
-      "category": "Audio & Voice Synthesis"
+      }
     },
     {
       "full_name": "Purple-Horizons/openclaw-voice",
       "name": "openclaw-voice",
       "url": "https://github.com/Purple-Horizons/openclaw-voice",
       "description": "\ud83e\udd9e Open-source browser-based voice chat for AI assistants. Self-hosted, private, free. Whisper STT + ElevenLabs TTS. Works with OpenAI, Claude, or custom agents.",
+      "category": "Audio & Voice Synthesis",
       "language": "Python",
       "license": "MIT",
       "stars": 126,
@@ -577,7 +604,7 @@
       ],
       "created_at": "2026-01-30T18:25:18Z",
       "pushed_at": "2026-02-01T20:39:36Z",
-      "quick_run": "pip install openclaw-voice",
+      "quick_run": "git clone https://github.com/Purple-Horizons/openclaw-voice",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -585,6 +612,10 @@
       "star_history": [
         {
           "ts": 1789756348,
+          "stars": 126
+        },
+        {
+          "ts": 1790587727,
           "stars": 126
         }
       ],
@@ -609,28 +640,28 @@
       },
       "health": {
         "stage": "maintenance",
-        "last_push_days": 228,
-        "age_days": 231,
+        "last_push_days": 238,
+        "age_days": 240,
         "authenticity_score": 95,
         "open_issues": 18,
         "is_stale": true
-      },
-      "category": "Audio & Voice Synthesis"
+      }
     },
     {
       "full_name": "activated-intelligence/voice-chat",
       "name": "voice-chat",
       "url": "https://github.com/activated-intelligence/voice-chat",
       "description": "100% in-browser, hands-free AI voice chat using Whisper, WebLLM, and Supertonic TTS",
+      "category": "Audio & Voice Synthesis",
       "language": "TypeScript",
       "license": "MIT",
-      "stars": 195,
-      "stars_24h": 0,
-      "trending_score": 13,
+      "stars": 196,
+      "stars_24h": 1,
+      "trending_score": 17,
       "topics": [],
       "created_at": "2025-12-10T21:42:14Z",
       "pushed_at": "2025-12-11T02:22:00Z",
-      "quick_run": "npm install voice-chat",
+      "quick_run": "git clone https://github.com/activated-intelligence/voice-chat",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -639,6 +670,10 @@
         {
           "ts": 1789756348,
           "stars": 195
+        },
+        {
+          "ts": 1790587727,
+          "stars": 196
         }
       ],
       "capabilities": {
@@ -660,19 +695,19 @@
       },
       "health": {
         "stage": "maintenance",
-        "last_push_days": 281,
-        "age_days": 281,
+        "last_push_days": 291,
+        "age_days": 291,
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": true
-      },
-      "category": "Audio & Voice Synthesis"
+      }
     },
     {
       "full_name": "maudoin/ollama-voice",
       "name": "ollama-voice",
       "url": "https://github.com/maudoin/ollama-voice",
       "description": "plug whisper audio transcription to a local ollama server and ouput tts audio responses",
+      "category": "Audio & Voice Synthesis",
       "language": "Python",
       "license": "AGPL-3.0",
       "stars": 378,
@@ -681,7 +716,7 @@
       "topics": [],
       "created_at": "2023-11-12T01:12:33Z",
       "pushed_at": "2025-10-17T20:09:34Z",
-      "quick_run": "pip install ollama-voice",
+      "quick_run": "git clone https://github.com/maudoin/ollama-voice",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -689,6 +724,10 @@
       "star_history": [
         {
           "ts": 1789756348,
+          "stars": 378
+        },
+        {
+          "ts": 1790587727,
           "stars": 378
         }
       ],
@@ -711,19 +750,19 @@
       },
       "health": {
         "stage": "maintenance",
-        "last_push_days": 335,
-        "age_days": 1041,
+        "last_push_days": 345,
+        "age_days": 1051,
         "authenticity_score": 95,
         "open_issues": 5,
         "is_stale": true
-      },
-      "category": "Audio & Voice Synthesis"
+      }
     },
     {
       "full_name": "Nikorasu/LiveWhisper",
       "name": "LiveWhisper",
       "url": "https://github.com/Nikorasu/LiveWhisper",
       "description": "A nearly-live implementation of OpenAI's Whisper, using sounddevice. Requires existing Whisper install.",
+      "category": "Audio & Voice Synthesis",
       "language": "Python",
       "license": "MIT",
       "stars": 362,
@@ -753,7 +792,7 @@
       ],
       "created_at": "2022-10-06T21:57:33Z",
       "pushed_at": "2025-07-20T06:31:46Z",
-      "quick_run": "pip install LiveWhisper",
+      "quick_run": "git clone https://github.com/Nikorasu/LiveWhisper",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -761,6 +800,10 @@
       "star_history": [
         {
           "ts": 1789756348,
+          "stars": 362
+        },
+        {
+          "ts": 1790587727,
           "stars": 362
         }
       ],
@@ -783,19 +826,19 @@
       },
       "health": {
         "stage": "maintenance",
-        "last_push_days": 425,
-        "age_days": 1442,
+        "last_push_days": 435,
+        "age_days": 1452,
         "authenticity_score": 95,
         "open_issues": 7,
         "is_stale": true
-      },
-      "category": "Audio & Voice Synthesis"
+      }
     },
     {
       "full_name": "jakecyr/chatgpt-voice-assistant",
       "name": "chatgpt-voice-assistant",
       "url": "https://github.com/jakecyr/chatgpt-voice-assistant",
       "description": "A chatbot that integrates OpenAI Whisper, Chat Completions and Voice Generation. Also provides the option to use free transcription / TTS options.",
+      "category": "Audio & Voice Synthesis",
       "language": "Python",
       "license": "MIT",
       "stars": 137,
@@ -811,7 +854,7 @@
       ],
       "created_at": "2022-12-14T04:43:05Z",
       "pushed_at": "2025-02-04T01:27:18Z",
-      "quick_run": "pip install chatgpt-voice-assistant",
+      "quick_run": "git clone https://github.com/jakecyr/chatgpt-voice-assistant",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -819,6 +862,10 @@
       "star_history": [
         {
           "ts": 1789756348,
+          "stars": 137
+        },
+        {
+          "ts": 1790587727,
           "stars": 137
         }
       ],
@@ -841,22 +888,22 @@
       },
       "health": {
         "stage": "maintenance",
-        "last_push_days": 591,
-        "age_days": 1374,
+        "last_push_days": 601,
+        "age_days": 1384,
         "authenticity_score": 95,
         "open_issues": 3,
         "is_stale": true
-      },
-      "category": "Audio & Voice Synthesis"
+      }
     },
     {
       "full_name": "mezbaul-h/june",
       "name": "june",
       "url": "https://github.com/mezbaul-h/june",
       "description": "Local voice chatbot for engaging conversations, powered by Ollama, Hugging Face Transformers, and  Coqui TTS Toolkit",
+      "category": "Audio & Voice Synthesis",
       "language": "Python",
       "license": "MIT",
-      "stars": 789,
+      "stars": 787,
       "stars_24h": 0,
       "trending_score": 28,
       "topics": [
@@ -878,7 +925,7 @@
       ],
       "created_at": "2024-06-03T16:09:46Z",
       "pushed_at": "2024-08-12T13:05:03Z",
-      "quick_run": "pip install june",
+      "quick_run": "git clone https://github.com/mezbaul-h/june",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -887,6 +934,10 @@
         {
           "ts": 1789756348,
           "stars": 789
+        },
+        {
+          "ts": 1790587727,
+          "stars": 787
         }
       ],
       "capabilities": {
@@ -908,19 +959,19 @@
       },
       "health": {
         "stage": "maintenance",
-        "last_push_days": 767,
-        "age_days": 837,
+        "last_push_days": 776,
+        "age_days": 846,
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": true
-      },
-      "category": "Audio & Voice Synthesis"
+      }
     },
     {
       "full_name": "VideotronicMaker/LM-Studio-Voice-Conversation",
       "name": "LM-Studio-Voice-Conversation",
       "url": "https://github.com/VideotronicMaker/LM-Studio-Voice-Conversation",
       "description": "Python app for LM Studio-enhanced voice conversations with local LLMs. Uses Whisper for speech-to-text and offers a privacy-focused, accessible interface.",
+      "category": "Audio & Voice Synthesis",
       "language": "Python",
       "license": "MIT",
       "stars": 145,
@@ -934,7 +985,7 @@
       ],
       "created_at": "2024-02-03T18:38:21Z",
       "pushed_at": "2024-05-09T23:21:19Z",
-      "quick_run": "pip install LM-Studio-Voice-Conversation",
+      "quick_run": "git clone https://github.com/VideotronicMaker/LM-Studio-Voice-Conversation",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -942,6 +993,10 @@
       "star_history": [
         {
           "ts": 1789756348,
+          "stars": 145
+        },
+        {
+          "ts": 1790587727,
           "stars": 145
         }
       ],
@@ -964,13 +1019,12 @@
       },
       "health": {
         "stage": "maintenance",
-        "last_push_days": 861,
-        "age_days": 957,
+        "last_push_days": 871,
+        "age_days": 967,
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": true
-      },
-      "category": "Audio & Voice Synthesis"
+      }
     }
   ]
 }

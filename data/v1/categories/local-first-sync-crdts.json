@@ -1,94 +1,23 @@
 {
   "category": "Local-First Sync & CRDTs",
   "count": 14,
-  "updated_at": "2026-09-28T09:25:41.483670+00:00",
+  "updated_at": "2026-09-28T09:28:47.400490+00:00",
   "repositories": [
-    {
-      "full_name": "NodeDB-Lab/nodedb",
-      "name": "nodedb",
-      "url": "https://github.com/NodeDB-Lab/nodedb",
-      "description": "The memory & storage engine for AI agents. Multi-model, edge-to-cloud, PostgreSQL-compatible.",
-      "language": "Rust",
-      "license": "NOASSERTION",
-      "stars": 198,
-      "stars_24h": 0,
-      "trending_score": 14,
-      "topics": [
-        "agent-memory",
-        "ai-agents",
-        "columnar",
-        "crdt",
-        "database",
-        "distributed",
-        "edge",
-        "embedded",
-        "graph",
-        "kv-store",
-        "local",
-        "local-first",
-        "multi-model",
-        "nosql",
-        "offline-first",
-        "rag",
-        "sql",
-        "timeseries",
-        "vector"
-      ],
-      "created_at": "2026-03-16T19:32:29Z",
-      "pushed_at": "2026-09-18T11:54:16Z",
-      "quick_run": "cargo install nodedb",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 198
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "crdt-sync"
-        ],
-        "deployment": [
-          "local-only",
-          "byok-cloud"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 185,
-        "authenticity_score": 95,
-        "open_issues": 19,
-        "is_stale": false
-      },
-      "category": "Local-First Sync & CRDTs"
-    },
     {
       "full_name": "calimero-network/core",
       "name": "core",
       "url": "https://github.com/calimero-network/core",
       "description": "Calimero - Peer-to-peer application platform with local-first governance, CRDT state sync, and WASM execution.",
+      "category": "Local-First Sync & CRDTs",
       "language": "Rust",
       "license": "NOASSERTION",
-      "stars": 168,
-      "stars_24h": 0,
-      "trending_score": 12,
+      "stars": 171,
+      "stars_24h": 3,
+      "trending_score": 22,
       "topics": [],
       "created_at": "2024-01-22T13:55:34Z",
-      "pushed_at": "2026-09-18T16:09:03Z",
-      "quick_run": "cargo install core",
+      "pushed_at": "2026-09-28T09:27:38Z",
+      "quick_run": "git clone https://github.com/calimero-network/core",
       "hardware_req": "8GB Unified / Metal",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -97,6 +26,10 @@
         {
           "ts": 1789756348,
           "stars": 168
+        },
+        {
+          "ts": 1790587727,
+          "stars": 171
         }
       ],
       "capabilities": {
@@ -119,94 +52,35 @@
       "health": {
         "stage": "active",
         "last_push_days": 0,
-        "age_days": 970,
+        "age_days": 979,
         "authenticity_score": 95,
-        "open_issues": 141,
+        "open_issues": 153,
         "is_stale": false
-      },
-      "category": "Local-First Sync & CRDTs"
+      }
     },
     {
-      "full_name": "teamtype/teamtype",
-      "name": "teamtype",
-      "url": "https://github.com/teamtype/teamtype",
-      "description": "Peer-to-peer, editor-agnostic collaborative editing of local text files.",
+      "full_name": "inkandswitch/keyhive",
+      "name": "keyhive",
+      "url": "https://github.com/inkandswitch/keyhive",
+      "description": "\ud83d\udddd\ufe0f\ud83d\udc1d\u2728 Rust workspace for Keyhive and related crates",
+      "category": "Local-First Sync & CRDTs",
       "language": "Rust",
-      "license": "AGPL-3.0",
-      "stars": 1922,
-      "stars_24h": 0,
-      "trending_score": 43,
+      "license": "Apache-2.0",
+      "stars": 250,
+      "stars_24h": 2,
+      "trending_score": 21,
       "topics": [
-        "automerge",
-        "collaboration",
-        "collaborative-editing",
+        "authorization",
+        "capabilities",
         "crdt",
+        "e2ee",
+        "end-to-end-encryption",
         "local-first",
-        "peer-to-peer",
-        "plugin",
         "synchronization"
       ],
-      "created_at": "2024-01-18T14:06:09Z",
-      "pushed_at": "2026-09-18T18:05:26Z",
-      "quick_run": "cargo install teamtype",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 80,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 1922
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "crdt-sync"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 974,
-        "authenticity_score": 80,
-        "open_issues": 114,
-        "is_stale": false
-      },
-      "category": "Local-First Sync & CRDTs"
-    },
-    {
-      "full_name": "evoluhq/evolu",
-      "name": "evolu",
-      "url": "https://github.com/evoluhq/evolu",
-      "description": "TypeScript library and local-first platform",
-      "language": "TypeScript",
-      "license": "MIT",
-      "stars": 1893,
-      "stars_24h": 0,
-      "trending_score": 43,
-      "topics": [
-        "crdt",
-        "local-first",
-        "offline-first",
-        "react",
-        "react-native",
-        "sqlite3"
-      ],
-      "created_at": "2022-09-25T10:35:42Z",
-      "pushed_at": "2026-09-18T15:43:41Z",
-      "quick_run": "npm install evolu",
+      "created_at": "2024-08-13T17:25:22Z",
+      "pushed_at": "2026-09-28T09:03:52Z",
+      "quick_run": "git clone https://github.com/inkandswitch/keyhive",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -214,7 +88,11 @@
       "star_history": [
         {
           "ts": 1789756348,
-          "stars": 1893
+          "stars": 248
+        },
+        {
+          "ts": 1790587727,
+          "stars": 250
         }
       ],
       "capabilities": {
@@ -237,23 +115,23 @@
       "health": {
         "stage": "active",
         "last_push_days": 0,
-        "age_days": 1454,
+        "age_days": 775,
         "authenticity_score": 95,
-        "open_issues": 21,
+        "open_issues": 26,
         "is_stale": false
-      },
-      "category": "Local-First Sync & CRDTs"
+      }
     },
     {
       "full_name": "pubkey/rxdb",
       "name": "rxdb",
       "url": "https://github.com/pubkey/rxdb",
       "description": "The local-first database that runs on every JS runtime and replicates with your existing backend - no vendor, no lock-in - https://rxdb.info/",
+      "category": "Local-First Sync & CRDTs",
       "language": "TypeScript",
       "license": "Apache-2.0",
-      "stars": 23384,
-      "stars_24h": 0,
-      "trending_score": 152,
+      "stars": 23393,
+      "stars_24h": 9,
+      "trending_score": 179,
       "topics": [
         "angular",
         "browser-database",
@@ -277,8 +155,8 @@
         "sqlite"
       ],
       "created_at": "2016-12-02T19:34:42Z",
-      "pushed_at": "2026-09-18T09:37:52Z",
-      "quick_run": "npm install rxdb",
+      "pushed_at": "2026-09-28T06:09:22Z",
+      "quick_run": "git clone https://github.com/pubkey/rxdb",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -287,6 +165,10 @@
         {
           "ts": 1789756348,
           "stars": 23384
+        },
+        {
+          "ts": 1790587727,
+          "stars": 23393
         }
       ],
       "capabilities": {
@@ -309,82 +191,23 @@
       "health": {
         "stage": "mature",
         "last_push_days": 0,
-        "age_days": 3576,
+        "age_days": 3586,
         "authenticity_score": 95,
-        "open_issues": 17,
+        "open_issues": 19,
         "is_stale": false
-      },
-      "category": "Local-First Sync & CRDTs"
-    },
-    {
-      "full_name": "inkandswitch/keyhive",
-      "name": "keyhive",
-      "url": "https://github.com/inkandswitch/keyhive",
-      "description": "\ud83d\udddd\ufe0f\ud83d\udc1d\u2728 Rust workspace for Keyhive and related crates",
-      "language": "Rust",
-      "license": "Apache-2.0",
-      "stars": 248,
-      "stars_24h": 0,
-      "trending_score": 15,
-      "topics": [
-        "authorization",
-        "capabilities",
-        "crdt",
-        "e2ee",
-        "end-to-end-encryption",
-        "local-first",
-        "synchronization"
-      ],
-      "created_at": "2024-08-13T17:25:22Z",
-      "pushed_at": "2026-09-18T13:26:09Z",
-      "quick_run": "cargo install keyhive",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 248
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "crdt-sync"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 766,
-        "authenticity_score": 95,
-        "open_issues": 33,
-        "is_stale": false
-      },
-      "category": "Local-First Sync & CRDTs"
+      }
     },
     {
       "full_name": "Deln0r/ygo",
       "name": "ygo",
       "url": "https://github.com/Deln0r/ygo",
       "description": "Officially listed, pure-Go port of the Yjs CRDT, byte-for-byte V1/V2 wire-compatible with yjs@13.6.31 (cross-language fixtures, both directions). UndoManager, snapshots, subdocuments, cursors, GC. yserve: single-binary Hocuspocus-compatible server with SQLite persistence and document versioning. iOS/Android via gomobile. No CGO.",
+      "category": "Local-First Sync & CRDTs",
       "language": "Go",
       "license": "MIT",
-      "stars": 174,
-      "stars_24h": 0,
-      "trending_score": 13,
+      "stars": 177,
+      "stars_24h": 3,
+      "trending_score": 22,
       "topics": [
         "android",
         "collaborative-editing",
@@ -402,7 +225,7 @@
         "yjs"
       ],
       "created_at": "2026-05-15T08:53:03Z",
-      "pushed_at": "2026-09-17T09:09:04Z",
+      "pushed_at": "2026-09-28T04:15:05Z",
       "quick_run": "git clone https://github.com/Deln0r/ygo",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -412,6 +235,10 @@
         {
           "ts": 1789756348,
           "stars": 174
+        },
+        {
+          "ts": 1790587727,
+          "stars": 177
         }
       ],
       "capabilities": {
@@ -435,36 +262,48 @@
       },
       "health": {
         "stage": "active",
-        "last_push_days": 1,
-        "age_days": 126,
+        "last_push_days": 0,
+        "age_days": 136,
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      },
-      "category": "Local-First Sync & CRDTs"
+      }
     },
     {
-      "full_name": "p2panda/p2panda",
-      "name": "p2panda",
-      "url": "https://github.com/p2panda/p2panda",
-      "description": "All the things a panda needs",
+      "full_name": "NodeDB-Lab/nodedb",
+      "name": "nodedb",
+      "url": "https://github.com/NodeDB-Lab/nodedb",
+      "description": "The memory & storage engine for AI agents. Multi-model, edge-to-cloud, PostgreSQL-compatible.",
+      "category": "Local-First Sync & CRDTs",
       "language": "Rust",
-      "license": "MIT",
-      "stars": 567,
-      "stars_24h": 0,
+      "license": "NOASSERTION",
+      "stars": 201,
+      "stars_24h": 3,
       "trending_score": 23,
       "topics": [
-        "access-control",
+        "agent-memory",
+        "ai-agents",
+        "columnar",
         "crdt",
-        "group-encryption",
+        "database",
+        "distributed",
+        "edge",
+        "embedded",
+        "graph",
+        "kv-store",
+        "local",
         "local-first",
+        "multi-model",
+        "nosql",
         "offline-first",
-        "p2p",
-        "stream-processing"
+        "rag",
+        "sql",
+        "timeseries",
+        "vector"
       ],
-      "created_at": "2020-10-12T16:30:51Z",
-      "pushed_at": "2026-09-16T14:21:06Z",
-      "quick_run": "cargo install p2panda",
+      "created_at": "2026-03-16T19:32:29Z",
+      "pushed_at": "2026-09-28T04:05:10Z",
+      "quick_run": "git clone https://github.com/NodeDB-Lab/nodedb",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -472,7 +311,137 @@
       "star_history": [
         {
           "ts": 1789756348,
-          "stars": 567
+          "stars": 198
+        },
+        {
+          "ts": 1790587727,
+          "stars": 201
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "crdt-sync"
+        ],
+        "deployment": [
+          "local-only",
+          "byok-cloud"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 195,
+        "authenticity_score": 95,
+        "open_issues": 31,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "loro-dev/loro",
+      "name": "loro",
+      "url": "https://github.com/loro-dev/loro",
+      "description": "Make your JSON data collaborative and version-controlled with CRDTs",
+      "category": "Local-First Sync & CRDTs",
+      "language": "Rust",
+      "license": "MIT",
+      "stars": 6171,
+      "stars_24h": 24,
+      "trending_score": 150,
+      "topics": [
+        "collaborative-editing",
+        "crdt",
+        "local-first",
+        "offline-first",
+        "p2p",
+        "privacy-first",
+        "rich-text"
+      ],
+      "created_at": "2022-07-12T16:48:23Z",
+      "pushed_at": "2026-09-28T09:19:26Z",
+      "quick_run": "git clone https://github.com/loro-dev/loro",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 80,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 6147
+        },
+        {
+          "ts": 1790587727,
+          "stars": 6171
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "crdt-sync"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 1538,
+        "authenticity_score": 80,
+        "open_issues": 81,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "evoluhq/evolu",
+      "name": "evolu",
+      "url": "https://github.com/evoluhq/evolu",
+      "description": "TypeScript library and local-first platform",
+      "category": "Local-First Sync & CRDTs",
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 1899,
+      "stars_24h": 6,
+      "trending_score": 61,
+      "topics": [
+        "crdt",
+        "local-first",
+        "offline-first",
+        "react",
+        "react-native",
+        "sqlite3"
+      ],
+      "created_at": "2022-09-25T10:35:42Z",
+      "pushed_at": "2026-09-27T22:36:49Z",
+      "quick_run": "git clone https://github.com/evoluhq/evolu",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 1893
+        },
+        {
+          "ts": 1790587727,
+          "stars": 1899
         }
       ],
       "capabilities": {
@@ -494,24 +463,220 @@
       },
       "health": {
         "stage": "active",
-        "last_push_days": 2,
-        "age_days": 2167,
+        "last_push_days": 0,
+        "age_days": 1463,
         "authenticity_score": 95,
-        "open_issues": 166,
+        "open_issues": 22,
         "is_stale": false
+      }
+    },
+    {
+      "full_name": "teamtype/teamtype",
+      "name": "teamtype",
+      "url": "https://github.com/teamtype/teamtype",
+      "description": "Peer-to-peer, editor-agnostic collaborative editing of local text files.",
+      "category": "Local-First Sync & CRDTs",
+      "language": "Rust",
+      "license": "AGPL-3.0",
+      "stars": 1929,
+      "stars_24h": 7,
+      "trending_score": 64,
+      "topics": [
+        "automerge",
+        "collaboration",
+        "collaborative-editing",
+        "crdt",
+        "local-first",
+        "peer-to-peer",
+        "plugin",
+        "synchronization"
+      ],
+      "created_at": "2024-01-18T14:06:09Z",
+      "pushed_at": "2026-09-26T15:57:54Z",
+      "quick_run": "git clone https://github.com/teamtype/teamtype",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 80,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 1922
+        },
+        {
+          "ts": 1790587727,
+          "stars": 1929
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "crdt-sync"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
       },
-      "category": "Local-First Sync & CRDTs"
+      "health": {
+        "stage": "active",
+        "last_push_days": 1,
+        "age_days": 983,
+        "authenticity_score": 80,
+        "open_issues": 112,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "p2panda/p2panda",
+      "name": "p2panda",
+      "url": "https://github.com/p2panda/p2panda",
+      "description": "All the things a panda needs",
+      "category": "Local-First Sync & CRDTs",
+      "language": "Rust",
+      "license": "MIT",
+      "stars": 573,
+      "stars_24h": 6,
+      "trending_score": 41,
+      "topics": [
+        "access-control",
+        "crdt",
+        "group-encryption",
+        "local-first",
+        "offline-first",
+        "p2p",
+        "stream-processing"
+      ],
+      "created_at": "2020-10-12T16:30:51Z",
+      "pushed_at": "2026-09-26T12:51:07Z",
+      "quick_run": "git clone https://github.com/p2panda/p2panda",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 567
+        },
+        {
+          "ts": 1790587727,
+          "stars": 573
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "crdt-sync"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 1,
+        "age_days": 2176,
+        "authenticity_score": 95,
+        "open_issues": 179,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "tinyplex/tinybase",
+      "name": "tinybase",
+      "url": "https://github.com/tinyplex/tinybase",
+      "description": "A reactive data store & sync engine.",
+      "category": "Local-First Sync & CRDTs",
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 5179,
+      "stars_24h": 3,
+      "trending_score": 80,
+      "topics": [
+        "agent-skills",
+        "crdt",
+        "data",
+        "javascript",
+        "local-first",
+        "react",
+        "reactive",
+        "solid",
+        "state",
+        "svelte",
+        "sync-engine",
+        "tiny",
+        "typescript"
+      ],
+      "created_at": "2021-12-31T01:06:00Z",
+      "pushed_at": "2026-09-26T03:27:08Z",
+      "quick_run": "git clone https://github.com/tinyplex/tinybase",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 80,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 5176
+        },
+        {
+          "ts": 1790587727,
+          "stars": 5179
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "crdt-sync"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 2,
+        "age_days": 1732,
+        "authenticity_score": 80,
+        "open_issues": 14,
+        "is_stale": false
+      }
     },
     {
       "full_name": "toeverything/blocksuite",
       "name": "blocksuite",
       "url": "https://github.com/toeverything/blocksuite",
       "description": "\ud83e\udde9 Content editing tech stack for the web - BlockSuite is a toolkit for building editors and collaborative applications.",
+      "category": "Local-First Sync & CRDTs",
       "language": "TypeScript",
       "license": "MPL-2.0",
-      "stars": 6016,
-      "stars_24h": 0,
-      "trending_score": 77,
+      "stars": 6027,
+      "stars_24h": 11,
+      "trending_score": 110,
       "topics": [
         "block",
         "block-editor",
@@ -530,8 +695,8 @@
         "yjs"
       ],
       "created_at": "2022-09-10T19:51:14Z",
-      "pushed_at": "2026-09-15T19:03:52Z",
-      "quick_run": "npm install blocksuite",
+      "pushed_at": "2026-09-25T15:02:00Z",
+      "quick_run": "git clone https://github.com/toeverything/blocksuite",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -540,6 +705,10 @@
         {
           "ts": 1789756348,
           "stars": 6016
+        },
+        {
+          "ts": 1790587727,
+          "stars": 6027
         }
       ],
       "capabilities": {
@@ -562,88 +731,23 @@
       "health": {
         "stage": "mature",
         "last_push_days": 2,
-        "age_days": 1468,
+        "age_days": 1478,
         "authenticity_score": 95,
         "open_issues": 196,
         "is_stale": false
-      },
-      "category": "Local-First Sync & CRDTs"
-    },
-    {
-      "full_name": "tinyplex/tinybase",
-      "name": "tinybase",
-      "url": "https://github.com/tinyplex/tinybase",
-      "description": "A reactive data store & sync engine.",
-      "language": "TypeScript",
-      "license": "MIT",
-      "stars": 5176,
-      "stars_24h": 0,
-      "trending_score": 71,
-      "topics": [
-        "agent-skills",
-        "crdt",
-        "data",
-        "javascript",
-        "local-first",
-        "react",
-        "reactive",
-        "solid",
-        "state",
-        "svelte",
-        "sync-engine",
-        "tiny",
-        "typescript"
-      ],
-      "created_at": "2021-12-31T01:06:00Z",
-      "pushed_at": "2026-09-15T13:05:40Z",
-      "quick_run": "npm install tinybase",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 80,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 5176
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "crdt-sync"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 3,
-        "age_days": 1722,
-        "authenticity_score": 80,
-        "open_issues": 15,
-        "is_stale": false
-      },
-      "category": "Local-First Sync & CRDTs"
+      }
     },
     {
       "full_name": "GianIac/numax",
       "name": "numax",
       "url": "https://github.com/GianIac/numax",
       "description": "The beginning of a new runtime model",
+      "category": "Local-First Sync & CRDTs",
       "language": "Rust",
       "license": "Apache-2.0",
-      "stars": 116,
-      "stars_24h": 0,
-      "trending_score": 10,
+      "stars": 117,
+      "stars_24h": 1,
+      "trending_score": 13,
       "topics": [
         "crdt",
         "distributed-systems",
@@ -659,8 +763,8 @@
         "webassembly"
       ],
       "created_at": "2025-11-14T21:03:38Z",
-      "pushed_at": "2026-09-18T13:45:31Z",
-      "quick_run": "cargo install numax",
+      "pushed_at": "2026-09-22T14:45:31Z",
+      "quick_run": "git clone https://github.com/GianIac/numax",
       "hardware_req": "8GB Unified / Metal",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -669,6 +773,10 @@
         {
           "ts": 1789756348,
           "stars": 116
+        },
+        {
+          "ts": 1790587727,
+          "stars": 117
         }
       ],
       "capabilities": {
@@ -690,44 +798,51 @@
       },
       "health": {
         "stage": "active",
-        "last_push_days": 0,
-        "age_days": 307,
+        "last_push_days": 5,
+        "age_days": 317,
         "authenticity_score": 95,
-        "open_issues": 24,
+        "open_issues": 23,
         "is_stale": false
-      },
-      "category": "Local-First Sync & CRDTs"
+      }
     },
     {
-      "full_name": "loro-dev/loro",
-      "name": "loro",
-      "url": "https://github.com/loro-dev/loro",
-      "description": "Make your JSON data collaborative and version-controlled with CRDTs",
-      "language": "Rust",
+      "full_name": "Dancode-188/synckit",
+      "name": "synckit",
+      "url": "https://github.com/Dancode-188/synckit",
+      "description": " Local-first collaboration SDK for React, Vue, and Svelte. Batteries-included: Rich text, undo/redo, cursors, and presence.",
+      "category": "Local-First Sync & CRDTs",
+      "language": "TypeScript",
       "license": "MIT",
-      "stars": 6147,
+      "stars": 667,
       "stars_24h": 0,
-      "trending_score": 78,
+      "trending_score": 25,
       "topics": [
-        "collaborative-editing",
+        "collaboration",
         "crdt",
+        "data-sync",
+        "distributed-systems",
+        "javascript",
         "local-first",
         "offline-first",
-        "p2p",
-        "privacy-first",
-        "rich-text"
+        "react",
+        "real-time",
+        "rust",
+        "sdk",
+        "sync",
+        "typescript",
+        "wasm"
       ],
-      "created_at": "2022-07-12T16:48:23Z",
-      "pushed_at": "2026-09-10T05:41:26Z",
-      "quick_run": "cargo install loro",
-      "hardware_req": "Minimal CPU",
+      "created_at": "2025-11-21T21:22:57Z",
+      "pushed_at": "2026-09-27T04:30:36Z",
+      "quick_run": "git clone https://github.com/Dancode-188/synckit",
+      "hardware_req": "8GB Unified / Metal",
       "is_cuda_ready": false,
       "is_local_first": true,
-      "authenticity_score": 80,
+      "authenticity_score": 95,
       "star_history": [
         {
-          "ts": 1789756348,
-          "stars": 6147
+          "ts": 1790587727,
+          "stars": 667
         }
       ],
       "capabilities": {
@@ -740,33 +855,35 @@
         "deployment": [
           "local-only"
         ],
-        "intent_tags": [],
+        "intent_tags": [
+          "real-time"
+        ],
         "hardware": {
           "is_cuda_ready": false,
           "cpu_supported": true,
-          "floor": "Minimal CPU"
+          "floor": "8GB Unified / Metal"
         }
       },
       "health": {
-        "stage": "mature",
-        "last_push_days": 8,
-        "age_days": 1529,
-        "authenticity_score": 80,
-        "open_issues": 56,
+        "stage": "active",
+        "last_push_days": 1,
+        "age_days": 310,
+        "authenticity_score": 95,
+        "open_issues": 6,
         "is_stale": false
-      },
-      "category": "Local-First Sync & CRDTs"
+      }
     },
     {
       "full_name": "streamich/json-joy",
       "name": "json-joy",
       "url": "https://github.com/streamich/json-joy",
       "description": "json-joy is a library that implements cutting-edge real-time and collaborative editing algorithms and utilities for JSON data models, with a focus on developing the JSON CRDT (Conflict-free Replicated Data Type) specification and implementation.",
+      "category": "Local-First Sync & CRDTs",
       "language": "TypeScript",
       "license": "NOASSERTION",
-      "stars": 1092,
-      "stars_24h": 0,
-      "trending_score": 33,
+      "stars": 1093,
+      "stars_24h": 1,
+      "trending_score": 36,
       "topics": [
         "cbor",
         "collaboration",
@@ -791,7 +908,7 @@
       ],
       "created_at": "2020-09-02T18:05:03Z",
       "pushed_at": "2026-09-08T09:08:43Z",
-      "quick_run": "npm install json-joy",
+      "quick_run": "git clone https://github.com/streamich/json-joy",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -800,6 +917,10 @@
         {
           "ts": 1789756348,
           "stars": 1092
+        },
+        {
+          "ts": 1790587727,
+          "stars": 1093
         }
       ],
       "capabilities": {
@@ -823,77 +944,12 @@
       },
       "health": {
         "stage": "active",
-        "last_push_days": 10,
-        "age_days": 2207,
+        "last_push_days": 20,
+        "age_days": 2216,
         "authenticity_score": 80,
         "open_issues": 248,
         "is_stale": false
-      },
-      "category": "Local-First Sync & CRDTs"
-    },
-    {
-      "full_name": "garden-co/classic-jazz",
-      "name": "classic-jazz",
-      "url": "https://github.com/garden-co/classic-jazz",
-      "description": "A new kind of database that's distributed across your frontend, containers, serverless functions and its own storage cloud.",
-      "language": "TypeScript",
-      "license": "MIT",
-      "stars": 2532,
-      "stars_24h": 0,
-      "trending_score": 50,
-      "topics": [
-        "crdt",
-        "crdts",
-        "database",
-        "end-to-end-encryption",
-        "local-first",
-        "offline-first",
-        "react",
-        "reactive",
-        "state-management",
-        "sync"
-      ],
-      "created_at": "2023-08-15T17:04:27Z",
-      "pushed_at": "2026-09-07T14:47:33Z",
-      "quick_run": "npm install classic-jazz",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 2532
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "service"
-        ],
-        "integrations": [
-          "crdt-sync"
-        ],
-        "deployment": [
-          "local-only",
-          "docker",
-          "byok-cloud"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 11,
-        "age_days": 1130,
-        "authenticity_score": 95,
-        "open_issues": 244,
-        "is_stale": false
-      },
-      "category": "Local-First Sync & CRDTs"
+      }
     }
   ]
 }

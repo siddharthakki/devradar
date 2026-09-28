@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "generated_at": "2026-09-28T09:25:41.483670+00:00",
-  "total_repositories": 147,
+  "generated_at": "2026-09-28T09:28:47.400490+00:00",
+  "total_repositories": 145,
   "endpoints": {
     "all": "https://siddharthakki.github.io/devradar/data/repos.json",
     "rss": "https://siddharthakki.github.io/devradar/data/feed.xml",

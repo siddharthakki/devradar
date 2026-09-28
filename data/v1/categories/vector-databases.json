@@ -1,18 +1,19 @@
 {
   "category": "Vector Databases",
-  "count": 3,
-  "updated_at": "2026-09-28T09:25:41.483670+00:00",
+  "count": 5,
+  "updated_at": "2026-09-28T09:28:47.400490+00:00",
   "repositories": [
     {
       "full_name": "qdrant/qdrant",
       "name": "qdrant",
       "url": "https://github.com/qdrant/qdrant",
       "description": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/",
+      "category": "Vector Databases",
       "language": "Rust",
       "license": "Apache-2.0",
-      "stars": 34662,
-      "stars_24h": 0,
-      "trending_score": 186,
+      "stars": 34859,
+      "stars_24h": 197,
+      "trending_score": 777,
       "topics": [
         "ai-search",
         "ai-search-engine",
@@ -36,8 +37,8 @@
         "vector-search-engine"
       ],
       "created_at": "2020-05-30T21:37:01Z",
-      "pushed_at": "2026-09-18T17:55:23Z",
-      "quick_run": "cargo install qdrant",
+      "pushed_at": "2026-09-28T09:19:40Z",
+      "quick_run": "git clone https://github.com/qdrant/qdrant",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": false,
@@ -46,6 +47,10 @@
         {
           "ts": 1789756348,
           "stars": 34662
+        },
+        {
+          "ts": 1790587727,
+          "stars": 34859
         }
       ],
       "capabilities": {
@@ -68,23 +73,23 @@
       "health": {
         "stage": "mature",
         "last_push_days": 0,
-        "age_days": 2301,
+        "age_days": 2311,
         "authenticity_score": 95,
-        "open_issues": 736,
+        "open_issues": 765,
         "is_stale": false
-      },
-      "category": "Vector Databases"
+      }
     },
     {
       "full_name": "ArcadeData/arcadedb",
       "name": "arcadedb",
       "url": "https://github.com/ArcadeData/arcadedb",
       "description": "ArcadeDB Multi-Model Database, one DBMS that supports SQL, Cypher, Gremlin, HTTP/JSON, MongoDB and Redis. ArcadeDB is a conceptual fork of OrientDB, the first Multi-Model DBMS. ArcadeDB supports Vector Embeddings.",
+      "category": "Vector Databases",
       "language": "Java",
       "license": "Apache-2.0",
-      "stars": 1157,
-      "stars_24h": 0,
-      "trending_score": 34,
+      "stars": 1165,
+      "stars_24h": 8,
+      "trending_score": 58,
       "topics": [
         "arcadedb",
         "database",
@@ -106,8 +111,8 @@
         "vector-search"
       ],
       "created_at": "2021-08-16T16:01:29Z",
-      "pushed_at": "2026-09-18T18:23:26Z",
-      "quick_run": "docker run -d arcadedb",
+      "pushed_at": "2026-09-28T09:11:42Z",
+      "quick_run": "git clone https://github.com/ArcadeData/arcadedb",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": false,
@@ -116,6 +121,10 @@
         {
           "ts": 1789756348,
           "stars": 1157
+        },
+        {
+          "ts": 1790587727,
+          "stars": 1165
         }
       ],
       "capabilities": {
@@ -138,23 +147,23 @@
       "health": {
         "stage": "active",
         "last_push_days": 0,
-        "age_days": 1859,
+        "age_days": 1868,
         "authenticity_score": 95,
-        "open_issues": 195,
+        "open_issues": 171,
         "is_stale": false
-      },
-      "category": "Vector Databases"
+      }
     },
     {
       "full_name": "milvus-io/milvus",
       "name": "milvus",
       "url": "https://github.com/milvus-io/milvus",
       "description": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search",
+      "category": "Vector Databases",
       "language": "Go",
       "license": "Apache-2.0",
-      "stars": 46153,
-      "stars_24h": 0,
-      "trending_score": 214,
+      "stars": 46269,
+      "stars_24h": 116,
+      "trending_score": 563,
       "topics": [
         "anns",
         "cloud-native",
@@ -176,7 +185,7 @@
         "vector-store"
       ],
       "created_at": "2019-09-16T06:43:43Z",
-      "pushed_at": "2026-09-18T10:19:59Z",
+      "pushed_at": "2026-09-28T09:23:47Z",
       "quick_run": "git clone https://github.com/milvus-io/milvus",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -186,6 +195,10 @@
         {
           "ts": 1789756348,
           "stars": 46153
+        },
+        {
+          "ts": 1790587727,
+          "stars": 46269
         }
       ],
       "capabilities": {
@@ -208,12 +221,136 @@
       "health": {
         "stage": "mature",
         "last_push_days": 0,
-        "age_days": 2559,
+        "age_days": 2569,
         "authenticity_score": 95,
-        "open_issues": 1452,
+        "open_issues": 1423,
         "is_stale": false
+      }
+    },
+    {
+      "full_name": "orneryd/NornicDB",
+      "name": "NornicDB",
+      "url": "https://github.com/orneryd/NornicDB",
+      "description": "Nornicdb is a distributed low-latency, Graph+Vector, Temporal MVCC with all sub-ms HNSW search, graph traversal, and writes. Using Neo4j Bolt/Cypher and qdrant's gRPC means you can switch with no changes while adding intelligent features like schemas, managed embeddings, reranking+llm, GPU accel, Auto-TLP, Policy-based Memory Decay, and MCP server.",
+      "category": "Vector Databases",
+      "language": "Go",
+      "license": "MIT",
+      "stars": 887,
+      "stars_24h": 0,
+      "trending_score": 29,
+      "topics": [
+        "bolt",
+        "cypher",
+        "database",
+        "enterprise-solutions",
+        "golang",
+        "graph-rag",
+        "graphql",
+        "hnsw",
+        "local-llm",
+        "mcp-server",
+        "memoryos",
+        "mvcc",
+        "neo4j",
+        "openai-api",
+        "qdrant-vector-database",
+        "snapshot-isolation",
+        "tlp",
+        "vector-database",
+        "vector-search"
+      ],
+      "created_at": "2025-12-06T15:46:33Z",
+      "pushed_at": "2026-09-28T08:25:53Z",
+      "quick_run": "git clone https://github.com/orneryd/NornicDB",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 887
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "service"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
       },
-      "category": "Vector Databases"
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 295,
+        "authenticity_score": 95,
+        "open_issues": 23,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "milvus-io/milvus-docs",
+      "name": "milvus-docs",
+      "url": "https://github.com/milvus-io/milvus-docs",
+      "description": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search",
+      "category": "Vector Databases",
+      "language": "JavaScript",
+      "license": "Apache-2.0",
+      "stars": 101,
+      "stars_24h": 0,
+      "trending_score": 10,
+      "topics": [
+        "documentation",
+        "milvus"
+      ],
+      "created_at": "2020-05-27T09:12:23Z",
+      "pushed_at": "2026-09-28T07:11:08Z",
+      "quick_run": "git clone https://github.com/milvus-io/milvus-docs",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": false,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 101
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "byok-cloud"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 2315,
+        "authenticity_score": 95,
+        "open_issues": 192,
+        "is_stale": false
+      }
     }
   ]
 }
