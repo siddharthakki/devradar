@@ -1,4 +1,4 @@
-﻿name: DevRadar Engine Sync
+name: DevRadar Engine Sync
 
 on:
   schedule:
@@ -28,10 +28,16 @@ jobs:
       - name: Install Dependencies
         run: pip install -r engine/requirements.txt
 
+      - name: Run Test Suite
+        run: python -m pytest tests/ -v
+        env:
+          PYTHONPATH: .
+
       - name: Ingest & Categorize Repos
         run: python engine/analyzer.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       - name: Generate Feeds & Static API
         run: python engine/rss.py
@@ -40,12 +46,11 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git fetch origin main
-          git rebase origin/main
           git add data/
           if git diff --staged --quiet; then
             echo "No data changes detected this hour. Working tree clean."
           else
-            git commit -m "chore(data): sync radar & distribution endpoints [skip ci]"
+            git commit -m "chore(data): sync radar & distribution endpoints"
+            git pull --rebase origin main
             git push origin main
           fi

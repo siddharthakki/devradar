@@ -1,0 +1,88 @@
+{
+  "category": "Embedded & Edge AI",
+  "count": 1,
+  "updated_at": "2026-09-28T10:50:47.540139+00:00",
+  "repositories": [
+    {
+      "full_name": "Pometry/Raphtory",
+      "name": "Raphtory",
+      "url": "https://github.com/Pometry/Raphtory",
+      "description": "Scalable graph analytics database powered by a multithreaded, vectorized temporal engine, written in Rust",
+      "category": "Embedded & Edge AI",
+      "verdict": "High-velocity open-source project delivering focused capabilities for embedded & edge ai.",
+      "gotchas": "",
+      "comparison": "Alternative to JetPack & Cloud Edge APIs (Ultra-low footprint AI)",
+      "replaces": [
+        "jetpack",
+        "tensorrt"
+      ],
+      "language": "Rust",
+      "license": "GPL-3.0",
+      "stars": 644,
+      "stars_24h": 0,
+      "trending_score": 25,
+      "topics": [
+        "analytics",
+        "database",
+        "embedded-database",
+        "graph",
+        "graph-database",
+        "olap",
+        "python",
+        "rust",
+        "temporal",
+        "time-series"
+      ],
+      "created_at": "2017-05-30T13:15:18Z",
+      "pushed_at": "2026-09-28T09:03:21Z",
+      "quick_run": "git clone https://github.com/Pometry/Raphtory",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 644
+        },
+        {
+          "ts": 1790589197,
+          "stars": 644
+        },
+        {
+          "ts": 1790589549,
+          "stars": 644
+        },
+        {
+          "ts": 1790589783,
+          "stars": 644
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 3407,
+        "authenticity_score": 95,
+        "open_issues": 206,
+        "is_stale": false
+      }
+    }
+  ]
+}

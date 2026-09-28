@@ -1,0 +1,99 @@
+{
+  "category": "Document Vaults & Search",
+  "count": 1,
+  "updated_at": "2026-09-28T10:50:47.540139+00:00",
+  "repositories": [
+    {
+      "full_name": "manticoresoftware/manticoresearch",
+      "name": "manticoresearch",
+      "url": "https://github.com/manticoresoftware/manticoresearch",
+      "description": "Open-source search database for full-text, vector, and hybrid search with real-time indexing and SQL.",
+      "category": "Document Vaults & Search",
+      "verdict": "High-velocity open-source project delivering focused capabilities for document vaults & search.",
+      "gotchas": "",
+      "comparison": "Alternative to Elastic / Notion (Private self-hosted search engine)",
+      "replaces": [
+        "notion",
+        "elastic"
+      ],
+      "language": "C++",
+      "license": "GPL-3.0",
+      "stars": 12039,
+      "stars_24h": 21,
+      "trending_score": 172,
+      "topics": [
+        "api",
+        "bm25",
+        "cpp",
+        "database",
+        "full-text-search",
+        "hacktoberfest",
+        "json",
+        "mysql",
+        "search",
+        "search-api",
+        "search-engine",
+        "search-server",
+        "sphinxsearch",
+        "sql",
+        "stream-filtering"
+      ],
+      "created_at": "2017-06-28T01:15:30Z",
+      "pushed_at": "2026-09-28T09:47:41Z",
+      "quick_run": "git clone https://github.com/manticoresoftware/manticoresearch",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 12018
+        },
+        {
+          "ts": 1790587727,
+          "stars": 12039
+        },
+        {
+          "ts": 1790589197,
+          "stars": 12039
+        },
+        {
+          "ts": 1790589549,
+          "stars": 12039
+        },
+        {
+          "ts": 1790589783,
+          "stars": 12039
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "service"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "real-time"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 3379,
+        "authenticity_score": 95,
+        "open_issues": 642,
+        "is_stale": false
+      }
+    }
+  ]
+}
