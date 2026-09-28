@@ -1,7 +1,7 @@
 {
   "category": "CLI & TUI Tooling",
   "count": 16,
-  "updated_at": "2026-09-28T09:49:50.082731+00:00",
+  "updated_at": "2026-09-28T09:53:17.145984+00:00",
   "repositories": [
     {
       "full_name": "averemee-si/oracdc",
@@ -9,6 +9,8 @@
       "url": "https://github.com/averemee-si/oracdc",
       "description": "ORAcle database CDC (Change Data Capture)",
       "category": "CLI & TUI Tooling",
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Java",
       "license": "NOASSERTION",
       "stars": 129,
@@ -46,6 +48,10 @@
         {
           "ts": 1790587727,
           "stars": 129
+        },
+        {
+          "ts": 1790589197,
+          "stars": 129
         }
       ],
       "capabilities": {
@@ -72,9 +78,7 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      },
-      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "VoltiusApp/voltius",
@@ -82,6 +86,8 @@
       "url": "https://github.com/VoltiusApp/voltius",
       "description": "A lightning-fast, modern, local-first SSH/SFTP/Serial client. Real-time E2EE sync, Team vaults, live sharing, plugins and more. Open-source Termius alternative for Windows, Linux, macOS & Android. Built with Rust/Tauri.",
       "category": "CLI & TUI Tooling",
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "TypeScript",
       "license": "AGPL-3.0",
       "stars": 682,
@@ -110,7 +116,7 @@
         "zero-knowledge"
       ],
       "created_at": "2026-04-17T16:54:34Z",
-      "pushed_at": "2026-09-28T09:02:31Z",
+      "pushed_at": "2026-09-28T09:39:20Z",
       "quick_run": "git clone https://github.com/VoltiusApp/voltius",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -123,6 +129,10 @@
         },
         {
           "ts": 1790587727,
+          "stars": 682
+        },
+        {
+          "ts": 1790589197,
           "stars": 682
         }
       ],
@@ -153,11 +163,9 @@
         "last_push_days": 0,
         "age_days": 163,
         "authenticity_score": 95,
-        "open_issues": 18,
+        "open_issues": 20,
         "is_stale": false
-      },
-      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "hledgerorg/hledger",
@@ -165,6 +173,8 @@
       "url": "https://github.com/hledgerorg/hledger",
       "description": "Robust, fast, intuitive plain text accounting tool with CLI, TUI and web interfaces.",
       "category": "CLI & TUI Tooling",
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Haskell",
       "license": "GPL-3.0",
       "stars": 4732,
@@ -199,6 +209,10 @@
         {
           "ts": 1790587727,
           "stars": 4732
+        },
+        {
+          "ts": 1790589197,
+          "stars": 4732
         }
       ],
       "capabilities": {
@@ -225,9 +239,7 @@
         "authenticity_score": 95,
         "open_issues": 322,
         "is_stale": false
-      },
-      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "djunekz/termux-app-store",
@@ -235,6 +247,8 @@
       "url": "https://github.com/djunekz/termux-app-store",
       "description": "TUI & CLI package manager for Termux on Android. Browse, build, and install community tools from source and binary source \u2014 offline, SHA256-verified, no root. Like AUR but for Termux.",
       "category": "CLI & TUI Tooling",
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "MIT",
       "stars": 110,
@@ -277,6 +291,10 @@
         {
           "ts": 1790587727,
           "stars": 110
+        },
+        {
+          "ts": 1790589197,
+          "stars": 110
         }
       ],
       "capabilities": {
@@ -303,9 +321,7 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      },
-      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "eugenioenko/ttt",
@@ -313,6 +329,8 @@
       "url": "https://github.com/eugenioenko/ttt",
       "description": "TTT Editor (Terminal Text Tool): A real alternative to VS Code, Zed, and Sublime that runs in your terminal. A TUI that feels like GUI. Single binary, zero config.",
       "category": "CLI & TUI Tooling",
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Go",
       "license": "MIT",
       "stars": 340,
@@ -355,6 +373,10 @@
         {
           "ts": 1790587727,
           "stars": 340
+        },
+        {
+          "ts": 1790589197,
+          "stars": 340
         }
       ],
       "capabilities": {
@@ -384,9 +406,7 @@
         "authenticity_score": 95,
         "open_issues": 55,
         "is_stale": false
-      },
-      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "ad-si/Transity",
@@ -394,6 +414,8 @@
       "url": "https://github.com/ad-si/Transity",
       "description": "Keep track of your \ud83d\udcb5, \ud83d\udd58, \ud83d\udc16, \ud83d\udc04, \ud83c\udf7b on your command line with the plain text accounting tool of the future! \ud83d\ude80",
       "category": "CLI & TUI Tooling",
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Rust",
       "license": "AGPL-3.0",
       "stars": 654,
@@ -423,6 +445,10 @@
         {
           "ts": 1790587727,
           "stars": 654
+        },
+        {
+          "ts": 1790589197,
+          "stars": 654
         }
       ],
       "capabilities": {
@@ -449,9 +475,7 @@
         "authenticity_score": 80,
         "open_issues": 9,
         "is_stale": false
-      },
-      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "Tlaloc-Es/killpy",
@@ -459,6 +483,8 @@
       "url": "https://github.com/Tlaloc-Es/killpy",
       "description": "\ud83d\udc0d CLI tool to find and delete unused Python virtual environments (.venv, poetry, conda, pipenv, uv). Reclaim disk space effortlessly \u2014 supports bulk delete, size reporting, and pycache cleanup.",
       "category": "CLI & TUI Tooling",
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "MIT",
       "stars": 131,
@@ -497,6 +523,10 @@
         {
           "ts": 1790587727,
           "stars": 131
+        },
+        {
+          "ts": 1790589197,
+          "stars": 131
         }
       ],
       "capabilities": {
@@ -524,9 +554,7 @@
         "authenticity_score": 95,
         "open_issues": 20,
         "is_stale": false
-      },
-      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "modelcontextprotocol/inspector",
@@ -534,6 +562,8 @@
       "url": "https://github.com/modelcontextprotocol/inspector",
       "description": "Visual testing tool for MCP servers",
       "category": "CLI & TUI Tooling",
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "TypeScript",
       "license": "NOASSERTION",
       "stars": 10970,
@@ -562,6 +592,10 @@
         {
           "ts": 1790587727,
           "stars": 10970
+        },
+        {
+          "ts": 1790589197,
+          "stars": 10970
         }
       ],
       "capabilities": {
@@ -589,9 +623,7 @@
         "authenticity_score": 95,
         "open_issues": 43,
         "is_stale": false
-      },
-      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "r14dd/patent",
@@ -599,6 +631,8 @@
       "url": "https://github.com/r14dd/patent",
       "description": "A prior-art search for your code ideas \u2014 has this dev tool already been shipped?",
       "category": "CLI & TUI Tooling",
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Rust",
       "license": "Apache-2.0",
       "stars": 530,
@@ -637,6 +671,10 @@
         {
           "ts": 1790587727,
           "stars": 530
+        },
+        {
+          "ts": 1790589197,
+          "stars": 530
         }
       ],
       "capabilities": {
@@ -663,9 +701,7 @@
         "authenticity_score": 95,
         "open_issues": 5,
         "is_stale": false
-      },
-      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "fujiapple852/trippy",
@@ -673,6 +709,8 @@
       "url": "https://github.com/fujiapple852/trippy",
       "description": "A network diagnostic tool ",
       "category": "CLI & TUI Tooling",
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Rust",
       "license": "Apache-2.0",
       "stars": 7965,
@@ -715,6 +753,10 @@
         {
           "ts": 1790587727,
           "stars": 7965
+        },
+        {
+          "ts": 1790589197,
+          "stars": 7965
         }
       ],
       "capabilities": {
@@ -741,9 +783,7 @@
         "authenticity_score": 95,
         "open_issues": 85,
         "is_stale": false
-      },
-      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "alvarorichard/GoAnime",
@@ -751,6 +791,8 @@
       "url": "https://github.com/alvarorichard/GoAnime",
       "description": "A TUI tool to browse, stream, and download anime in PT-BR and EN",
       "category": "CLI & TUI Tooling",
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Go",
       "license": "MIT",
       "stars": 1112,
@@ -793,6 +835,10 @@
         {
           "ts": 1790587727,
           "stars": 1112
+        },
+        {
+          "ts": 1790589197,
+          "stars": 1112
         }
       ],
       "capabilities": {
@@ -819,9 +865,7 @@
         "authenticity_score": 95,
         "open_issues": 15,
         "is_stale": false
-      },
-      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "unhappychoice/gitlogue",
@@ -829,6 +873,8 @@
       "url": "https://github.com/unhappychoice/gitlogue",
       "description": "A cinematic Git commit replay tool for the terminal, turning your Git history into a living, animated story.",
       "category": "CLI & TUI Tooling",
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Rust",
       "license": "ISC",
       "stars": 5008,
@@ -871,6 +917,10 @@
         {
           "ts": 1790587727,
           "stars": 5008
+        },
+        {
+          "ts": 1790589197,
+          "stars": 5008
         }
       ],
       "capabilities": {
@@ -897,9 +947,7 @@
         "authenticity_score": 80,
         "open_issues": 12,
         "is_stale": false
-      },
-      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "abod8639/anodemcu",
@@ -907,6 +955,8 @@
       "url": "https://github.com/abod8639/anodemcu",
       "description": "A cross-platform, interactive TUI tool to manage, compile, and flash microcontroller projects using arduino-cli, PlatformIO, and ESP-IDF.",
       "category": "CLI & TUI Tooling",
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Shell",
       "license": "MIT",
       "stars": 110,
@@ -927,6 +977,10 @@
         },
         {
           "ts": 1790587727,
+          "stars": 110
+        },
+        {
+          "ts": 1790589197,
           "stars": 110
         }
       ],
@@ -954,9 +1008,7 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      },
-      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "fuxicodex/Fuxi",
@@ -964,6 +1016,8 @@
       "url": "https://github.com/fuxicodex/Fuxi",
       "description": "FuXi is a fast, self-contained AI coding agent that lives in your terminal \u2014 edit code, run commands, and drive tools, with cost-aware routing across LLM providers.",
       "category": "CLI & TUI Tooling",
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "NOASSERTION",
       "stars": 3363,
@@ -1002,6 +1056,10 @@
         {
           "ts": 1790587727,
           "stars": 3363
+        },
+        {
+          "ts": 1790589197,
+          "stars": 3363
         }
       ],
       "capabilities": {
@@ -1029,9 +1087,7 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      },
-      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "msmps/create-tui",
@@ -1039,6 +1095,8 @@
       "url": "https://github.com/msmps/create-tui",
       "description": "The easiest way to get started with OpenTUI is by using create-tui. This CLI tool enables you to quickly start building a new OpenTUI application, with everything set up for you.",
       "category": "CLI & TUI Tooling",
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "TypeScript",
       "license": "MIT",
       "stars": 146,
@@ -1062,6 +1120,10 @@
       "star_history": [
         {
           "ts": 1790587727,
+          "stars": 146
+        },
+        {
+          "ts": 1790589197,
           "stars": 146
         }
       ],
@@ -1089,9 +1151,7 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": false
-      },
-      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "nostacks/ekphos",
@@ -1099,6 +1159,8 @@
       "url": "https://github.com/nostacks/ekphos",
       "description": "A lightweight, fast, terminal-based markdown research tool inspired by Obsidian",
       "category": "CLI & TUI Tooling",
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Rust",
       "license": "MIT",
       "stars": 1063,
@@ -1123,6 +1185,10 @@
         },
         {
           "ts": 1790587727,
+          "stars": 1063
+        },
+        {
+          "ts": 1790589197,
           "stars": 1063
         }
       ],
@@ -1150,9 +1216,7 @@
         "authenticity_score": 95,
         "open_issues": 5,
         "is_stale": false
-      },
-      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     }
   ]
 }

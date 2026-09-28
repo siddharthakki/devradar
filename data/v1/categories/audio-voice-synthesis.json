@@ -1,7 +1,7 @@
 {
   "category": "Audio & Voice Synthesis",
   "count": 15,
-  "updated_at": "2026-09-28T09:49:50.082731+00:00",
+  "updated_at": "2026-09-28T09:53:17.145984+00:00",
   "repositories": [
     {
       "full_name": "EveningStudy/asmr-dubber",
@@ -9,6 +9,8 @@
       "url": "https://github.com/EveningStudy/asmr-dubber",
       "description": "\u65e5\u82f1\u97f3\u58f0\u4e2d\u6587\u5316\u5de5\u5177\uff1a\u8bc6\u522b\u3001\u7ffb\u8bd1\u3001\u97f3\u8272\u514b\u9686\u914d\u97f3\u3001\u6279\u91cf\u5904\u7406\u4e0e\u540c\u540d\u5b57\u5e55\u5bfc\u51fa\uff1b\u652f\u6301\u53cc\u8bed\u6df7\u97f3\u3001RTF \u7a7a\u95f4\u5904\u7406\u3001\u9010\u53e5\u97f3\u91cf\u63a7\u5236\u53ca\u4eba\u58f0\u5206\u79bb\u3002Japanese/English audio \u2192 Chinese dubbing & subtitles. Voice cloning, batch processing, subtitle-only export, bilingual mixing, RTF spatial processing, per-line gain/mute & vocal separation.",
       "category": "Audio & Voice Synthesis",
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "MIT",
       "stars": 212,
@@ -47,6 +49,10 @@
         {
           "ts": 1790587727,
           "stars": 212
+        },
+        {
+          "ts": 1790589197,
+          "stars": 212
         }
       ],
       "capabilities": {
@@ -73,9 +79,7 @@
         "authenticity_score": 95,
         "open_issues": 10,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "ddxfish/sapphire",
@@ -83,6 +87,8 @@
       "url": "https://github.com/ddxfish/sapphire",
       "description": "She's the AI agent you come home to.",
       "category": "Audio & Voice Synthesis",
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "AGPL-3.0",
       "stars": 288,
@@ -124,6 +130,10 @@
         {
           "ts": 1790587727,
           "stars": 288
+        },
+        {
+          "ts": 1790589197,
+          "stars": 288
         }
       ],
       "capabilities": {
@@ -152,9 +162,7 @@
         "authenticity_score": 95,
         "open_issues": 4,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "mbailey/voicemode",
@@ -162,6 +170,8 @@
       "url": "https://github.com/mbailey/voicemode",
       "description": "Natural voice conversations with Claude Code",
       "category": "Audio & Voice Synthesis",
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "MIT",
       "stars": 1380,
@@ -196,6 +206,10 @@
         {
           "ts": 1790587727,
           "stars": 1380
+        },
+        {
+          "ts": 1790589197,
+          "stars": 1380
         }
       ],
       "capabilities": {
@@ -222,9 +236,7 @@
         "authenticity_score": 95,
         "open_issues": 50,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "beiyege-01/dsh-voice-ai-girlfriend",
@@ -232,6 +244,8 @@
       "url": "https://github.com/beiyege-01/dsh-voice-ai-girlfriend",
       "description": "\u8bed\u97f3 AI \u5973\u53cb\uff08Voice AI girlfriend for DeepSeek Harness\uff09\uff1aWhisper \u8bed\u97f3\u8f93\u5165 + Qwen3-TTS \u58f0\u97f3\u514b\u9686 + \u53e5\u5b50\u7ea7\u6d41\u5f0f\u6717\u8bfb + \u6570\u5b57\u4eba\u52a8\u753b\u7a97\u3002\u63d2\u8bdd/\u6392\u961f\u53cc\u6a21\u5f0f\uff0c\u8bf4\u8bdd\u5373\u6253\u65ad\u3002",
       "category": "Audio & Voice Synthesis",
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts.",
       "language": "TypeScript",
       "license": "NOASSERTION",
       "stars": 128,
@@ -265,6 +279,10 @@
         {
           "ts": 1790587727,
           "stars": 128
+        },
+        {
+          "ts": 1790589197,
+          "stars": 128
         }
       ],
       "capabilities": {
@@ -291,9 +309,7 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts."
+      }
     },
     {
       "full_name": "fluxions-ai/vui",
@@ -301,6 +317,8 @@
       "url": "https://github.com/fluxions-ai/vui",
       "description": "Vui Nano \u2014 a small, context-aware text-to-speech model trained on real conversations. 219M active params (305M total), Apache 2.0, voice cloning, streaming, runs on CPU (dependency-free C build). Ships with a full real-time voice assistant: WebRTC, ASR, local LLM, OpenAI Realtime API compatible.",
       "category": "Audio & Voice Synthesis",
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "NOASSERTION",
       "stars": 769,
@@ -343,6 +361,10 @@
         {
           "ts": 1790587727,
           "stars": 769
+        },
+        {
+          "ts": 1790589197,
+          "stars": 769
         }
       ],
       "capabilities": {
@@ -372,9 +394,7 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": false
-      },
-      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "Ali-hey-0/audio-ai-field-guide",
@@ -382,6 +402,8 @@
       "url": "https://github.com/Ali-hey-0/audio-ai-field-guide",
       "description": "A mental-model-first field guide to Audio AI \u2014 from raw waveforms to production voice systems. Covers ASR, TTS, audio classification, Transformer architectures (CTC/Seq2Seq), fine-tuning, and real-world pipelines like voice assistants and meeting transcription. Bilingual (EN/FA).",
       "category": "Audio & Voice Synthesis",
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Code",
       "license": "MIT",
       "stars": 111,
@@ -424,6 +446,10 @@
         {
           "ts": 1790587727,
           "stars": 111
+        },
+        {
+          "ts": 1790589197,
+          "stars": 111
         }
       ],
       "capabilities": {
@@ -453,9 +479,7 @@
         "authenticity_score": 80,
         "open_issues": 0,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "abus-aikorea/voice-pro",
@@ -463,6 +487,8 @@
       "url": "https://github.com/abus-aikorea/voice-pro",
       "description": "Gradio WebUI for creators and developers, featuring key TTS (Edge-TTS, kokoro) and zero-shot Voice Cloning (E2 & F5-TTS, CosyVoice), with Whisper audio processing, YouTube download, Demucs vocal isolation, and multilingual translation.",
       "category": "Audio & Voice Synthesis",
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "GPL-3.0",
       "stars": 12953,
@@ -504,6 +530,10 @@
         {
           "ts": 1790587727,
           "stars": 12953
+        },
+        {
+          "ts": 1790589197,
+          "stars": 12953
         }
       ],
       "capabilities": {
@@ -530,9 +560,7 @@
         "authenticity_score": 95,
         "open_issues": 60,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "FranckyB/Voice-Clone-Studio",
@@ -540,6 +568,8 @@
       "url": "https://github.com/FranckyB/Voice-Clone-Studio",
       "description": "A Gradio-based web UI for voice cloning and voice design, powered by Qwen3-TTS & VibeVoice.  Can use Whisper or VibeVoice-ASR for automatic transcription.",
       "category": "Audio & Voice Synthesis",
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 674,
@@ -560,6 +590,10 @@
         },
         {
           "ts": 1790587727,
+          "stars": 674
+        },
+        {
+          "ts": 1790589197,
           "stars": 674
         }
       ],
@@ -587,9 +621,7 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": true
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
+      }
     },
     {
       "full_name": "Purple-Horizons/openclaw-voice",
@@ -597,6 +629,8 @@
       "url": "https://github.com/Purple-Horizons/openclaw-voice",
       "description": "\ud83e\udd9e Open-source browser-based voice chat for AI assistants. Self-hosted, private, free. Whisper STT + ElevenLabs TTS. Works with OpenAI, Claude, or custom agents.",
       "category": "Audio & Voice Synthesis",
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
       "language": "Python",
       "license": "MIT",
       "stars": 126,
@@ -633,6 +667,10 @@
         {
           "ts": 1790587727,
           "stars": 126
+        },
+        {
+          "ts": 1790589197,
+          "stars": 126
         }
       ],
       "capabilities": {
@@ -661,9 +699,7 @@
         "authenticity_score": 95,
         "open_issues": 18,
         "is_stale": true
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
+      }
     },
     {
       "full_name": "activated-intelligence/voice-chat",
@@ -671,6 +707,8 @@
       "url": "https://github.com/activated-intelligence/voice-chat",
       "description": "100% in-browser, hands-free AI voice chat using Whisper, WebLLM, and Supertonic TTS",
       "category": "Audio & Voice Synthesis",
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
       "language": "TypeScript",
       "license": "MIT",
       "stars": 196,
@@ -691,6 +729,10 @@
         },
         {
           "ts": 1790587727,
+          "stars": 196
+        },
+        {
+          "ts": 1790589197,
           "stars": 196
         }
       ],
@@ -718,9 +760,7 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": true
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
+      }
     },
     {
       "full_name": "maudoin/ollama-voice",
@@ -728,6 +768,8 @@
       "url": "https://github.com/maudoin/ollama-voice",
       "description": "plug whisper audio transcription to a local ollama server and ouput tts audio responses",
       "category": "Audio & Voice Synthesis",
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
       "language": "Python",
       "license": "AGPL-3.0",
       "stars": 378,
@@ -748,6 +790,10 @@
         },
         {
           "ts": 1790587727,
+          "stars": 378
+        },
+        {
+          "ts": 1790589197,
           "stars": 378
         }
       ],
@@ -775,9 +821,7 @@
         "authenticity_score": 95,
         "open_issues": 5,
         "is_stale": true
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
+      }
     },
     {
       "full_name": "Nikorasu/LiveWhisper",
@@ -785,6 +829,8 @@
       "url": "https://github.com/Nikorasu/LiveWhisper",
       "description": "A nearly-live implementation of OpenAI's Whisper, using sounddevice. Requires existing Whisper install.",
       "category": "Audio & Voice Synthesis",
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
       "language": "Python",
       "license": "MIT",
       "stars": 362,
@@ -827,6 +873,10 @@
         {
           "ts": 1790587727,
           "stars": 362
+        },
+        {
+          "ts": 1790589197,
+          "stars": 362
         }
       ],
       "capabilities": {
@@ -853,9 +903,7 @@
         "authenticity_score": 95,
         "open_issues": 7,
         "is_stale": true
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
+      }
     },
     {
       "full_name": "jakecyr/chatgpt-voice-assistant",
@@ -863,6 +911,8 @@
       "url": "https://github.com/jakecyr/chatgpt-voice-assistant",
       "description": "A chatbot that integrates OpenAI Whisper, Chat Completions and Voice Generation. Also provides the option to use free transcription / TTS options.",
       "category": "Audio & Voice Synthesis",
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
       "language": "Python",
       "license": "MIT",
       "stars": 137,
@@ -891,6 +941,10 @@
         {
           "ts": 1790587727,
           "stars": 137
+        },
+        {
+          "ts": 1790589197,
+          "stars": 137
         }
       ],
       "capabilities": {
@@ -917,9 +971,7 @@
         "authenticity_score": 95,
         "open_issues": 3,
         "is_stale": true
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
+      }
     },
     {
       "full_name": "mezbaul-h/june",
@@ -927,6 +979,8 @@
       "url": "https://github.com/mezbaul-h/june",
       "description": "Local voice chatbot for engaging conversations, powered by Ollama, Hugging Face Transformers, and  Coqui TTS Toolkit",
       "category": "Audio & Voice Synthesis",
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
       "language": "Python",
       "license": "MIT",
       "stars": 787,
@@ -964,6 +1018,10 @@
         {
           "ts": 1790587727,
           "stars": 787
+        },
+        {
+          "ts": 1790589197,
+          "stars": 787
         }
       ],
       "capabilities": {
@@ -990,9 +1048,7 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": true
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
+      }
     },
     {
       "full_name": "VideotronicMaker/LM-Studio-Voice-Conversation",
@@ -1000,6 +1056,8 @@
       "url": "https://github.com/VideotronicMaker/LM-Studio-Voice-Conversation",
       "description": "Python app for LM Studio-enhanced voice conversations with local LLMs. Uses Whisper for speech-to-text and offers a privacy-focused, accessible interface.",
       "category": "Audio & Voice Synthesis",
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
       "language": "Python",
       "license": "MIT",
       "stars": 145,
@@ -1025,6 +1083,10 @@
         },
         {
           "ts": 1790587727,
+          "stars": 145
+        },
+        {
+          "ts": 1790589197,
           "stars": 145
         }
       ],
@@ -1052,9 +1114,7 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": true
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
+      }
     }
   ]
 }

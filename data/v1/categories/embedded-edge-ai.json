@@ -1,7 +1,7 @@
 {
   "category": "Embedded & Edge AI",
   "count": 1,
-  "updated_at": "2026-09-28T09:49:50.082731+00:00",
+  "updated_at": "2026-09-28T09:53:17.145984+00:00",
   "repositories": [
     {
       "full_name": "Pometry/Raphtory",
@@ -9,6 +9,8 @@
       "url": "https://github.com/Pometry/Raphtory",
       "description": "Scalable graph analytics database powered by a multithreaded, vectorized temporal engine, written in Rust",
       "category": "Embedded & Edge AI",
+      "verdict": "High-velocity open-source project delivering focused capabilities for embedded & edge ai.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Rust",
       "license": "GPL-3.0",
       "stars": 644,
@@ -37,6 +39,10 @@
         {
           "ts": 1790587727,
           "stars": 644
+        },
+        {
+          "ts": 1790589197,
+          "stars": 644
         }
       ],
       "capabilities": {
@@ -63,9 +69,7 @@
         "authenticity_score": 95,
         "open_issues": 206,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for embedded & edge ai.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     }
   ]
 }

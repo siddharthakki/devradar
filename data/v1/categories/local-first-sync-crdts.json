@@ -1,7 +1,7 @@
 {
   "category": "Local-First Sync & CRDTs",
   "count": 14,
-  "updated_at": "2026-09-28T09:49:50.082731+00:00",
+  "updated_at": "2026-09-28T09:53:17.145984+00:00",
   "repositories": [
     {
       "full_name": "calimero-network/core",
@@ -9,6 +9,8 @@
       "url": "https://github.com/calimero-network/core",
       "description": "Calimero - Peer-to-peer application platform with local-first governance, CRDT state sync, and WASM execution.",
       "category": "Local-First Sync & CRDTs",
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Rust",
       "license": "NOASSERTION",
       "stars": 171,
@@ -16,7 +18,7 @@
       "trending_score": 22,
       "topics": [],
       "created_at": "2024-01-22T13:55:34Z",
-      "pushed_at": "2026-09-28T09:27:38Z",
+      "pushed_at": "2026-09-28T09:46:06Z",
       "quick_run": "git clone https://github.com/calimero-network/core",
       "hardware_req": "8GB Unified / Metal",
       "is_cuda_ready": false,
@@ -29,6 +31,10 @@
         },
         {
           "ts": 1790587727,
+          "stars": 171
+        },
+        {
+          "ts": 1790589197,
           "stars": 171
         }
       ],
@@ -54,11 +60,78 @@
         "last_push_days": 0,
         "age_days": 979,
         "authenticity_score": 95,
-        "open_issues": 153,
+        "open_issues": 155,
         "is_stale": false
+      }
+    },
+    {
+      "full_name": "loro-dev/loro",
+      "name": "loro",
+      "url": "https://github.com/loro-dev/loro",
+      "description": "Make your JSON data collaborative and version-controlled with CRDTs",
+      "category": "Local-First Sync & CRDTs",
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "language": "Rust",
+      "license": "MIT",
+      "stars": 6171,
+      "stars_24h": 24,
+      "trending_score": 150,
+      "topics": [
+        "collaborative-editing",
+        "crdt",
+        "local-first",
+        "offline-first",
+        "p2p",
+        "privacy-first",
+        "rich-text"
+      ],
+      "created_at": "2022-07-12T16:48:23Z",
+      "pushed_at": "2026-09-28T09:52:58Z",
+      "quick_run": "git clone https://github.com/loro-dev/loro",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 80,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 6147
+        },
+        {
+          "ts": 1790587727,
+          "stars": 6171
+        },
+        {
+          "ts": 1790589197,
+          "stars": 6171
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "crdt-sync"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
       },
-      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 1538,
+        "authenticity_score": 80,
+        "open_issues": 81,
+        "is_stale": false
+      }
     },
     {
       "full_name": "inkandswitch/keyhive",
@@ -66,6 +139,8 @@
       "url": "https://github.com/inkandswitch/keyhive",
       "description": "\ud83d\udddd\ufe0f\ud83d\udc1d\u2728 Rust workspace for Keyhive and related crates",
       "category": "Local-First Sync & CRDTs",
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Rust",
       "license": "Apache-2.0",
       "stars": 250,
@@ -95,6 +170,10 @@
         {
           "ts": 1790587727,
           "stars": 250
+        },
+        {
+          "ts": 1790589197,
+          "stars": 250
         }
       ],
       "capabilities": {
@@ -121,9 +200,7 @@
         "authenticity_score": 95,
         "open_issues": 26,
         "is_stale": false
-      },
-      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "pubkey/rxdb",
@@ -131,6 +208,8 @@
       "url": "https://github.com/pubkey/rxdb",
       "description": "The local-first database that runs on every JS runtime and replicates with your existing backend - no vendor, no lock-in - https://rxdb.info/",
       "category": "Local-First Sync & CRDTs",
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "TypeScript",
       "license": "Apache-2.0",
       "stars": 23393,
@@ -173,6 +252,10 @@
         {
           "ts": 1790587727,
           "stars": 23393
+        },
+        {
+          "ts": 1790589197,
+          "stars": 23393
         }
       ],
       "capabilities": {
@@ -199,9 +282,7 @@
         "authenticity_score": 95,
         "open_issues": 19,
         "is_stale": false
-      },
-      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "Deln0r/ygo",
@@ -209,6 +290,8 @@
       "url": "https://github.com/Deln0r/ygo",
       "description": "Officially listed, pure-Go port of the Yjs CRDT, byte-for-byte V1/V2 wire-compatible with yjs@13.6.31 (cross-language fixtures, both directions). UndoManager, snapshots, subdocuments, cursors, GC. yserve: single-binary Hocuspocus-compatible server with SQLite persistence and document versioning. iOS/Android via gomobile. No CGO.",
       "category": "Local-First Sync & CRDTs",
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Go",
       "license": "MIT",
       "stars": 177,
@@ -245,6 +328,10 @@
         {
           "ts": 1790587727,
           "stars": 177
+        },
+        {
+          "ts": 1790589197,
+          "stars": 177
         }
       ],
       "capabilities": {
@@ -273,9 +360,7 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      },
-      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "NodeDB-Lab/nodedb",
@@ -283,6 +368,8 @@
       "url": "https://github.com/NodeDB-Lab/nodedb",
       "description": "The memory & storage engine for AI agents. Multi-model, edge-to-cloud, PostgreSQL-compatible.",
       "category": "Local-First Sync & CRDTs",
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
       "language": "Rust",
       "license": "NOASSERTION",
       "stars": 201,
@@ -324,6 +411,10 @@
         {
           "ts": 1790587727,
           "stars": 201
+        },
+        {
+          "ts": 1790589197,
+          "stars": 201
         }
       ],
       "capabilities": {
@@ -351,74 +442,7 @@
         "authenticity_score": 95,
         "open_issues": 31,
         "is_stale": false
-      },
-      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
-    },
-    {
-      "full_name": "loro-dev/loro",
-      "name": "loro",
-      "url": "https://github.com/loro-dev/loro",
-      "description": "Make your JSON data collaborative and version-controlled with CRDTs",
-      "category": "Local-First Sync & CRDTs",
-      "language": "Rust",
-      "license": "MIT",
-      "stars": 6171,
-      "stars_24h": 24,
-      "trending_score": 150,
-      "topics": [
-        "collaborative-editing",
-        "crdt",
-        "local-first",
-        "offline-first",
-        "p2p",
-        "privacy-first",
-        "rich-text"
-      ],
-      "created_at": "2022-07-12T16:48:23Z",
-      "pushed_at": "2026-09-28T09:19:26Z",
-      "quick_run": "git clone https://github.com/loro-dev/loro",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 80,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 6147
-        },
-        {
-          "ts": 1790587727,
-          "stars": 6171
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "crdt-sync"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 1538,
-        "authenticity_score": 80,
-        "open_issues": 81,
-        "is_stale": false
-      },
-      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "evoluhq/evolu",
@@ -426,6 +450,8 @@
       "url": "https://github.com/evoluhq/evolu",
       "description": "TypeScript library and local-first platform",
       "category": "Local-First Sync & CRDTs",
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "TypeScript",
       "license": "MIT",
       "stars": 1899,
@@ -454,6 +480,10 @@
         {
           "ts": 1790587727,
           "stars": 1899
+        },
+        {
+          "ts": 1790589197,
+          "stars": 1899
         }
       ],
       "capabilities": {
@@ -480,9 +510,7 @@
         "authenticity_score": 95,
         "open_issues": 22,
         "is_stale": false
-      },
-      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "teamtype/teamtype",
@@ -490,6 +518,8 @@
       "url": "https://github.com/teamtype/teamtype",
       "description": "Peer-to-peer, editor-agnostic collaborative editing of local text files.",
       "category": "Local-First Sync & CRDTs",
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Rust",
       "license": "AGPL-3.0",
       "stars": 1929,
@@ -520,6 +550,10 @@
         {
           "ts": 1790587727,
           "stars": 1929
+        },
+        {
+          "ts": 1790589197,
+          "stars": 1929
         }
       ],
       "capabilities": {
@@ -546,9 +580,7 @@
         "authenticity_score": 80,
         "open_issues": 112,
         "is_stale": false
-      },
-      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "p2panda/p2panda",
@@ -556,6 +588,8 @@
       "url": "https://github.com/p2panda/p2panda",
       "description": "All the things a panda needs",
       "category": "Local-First Sync & CRDTs",
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Rust",
       "license": "MIT",
       "stars": 573,
@@ -585,6 +619,10 @@
         {
           "ts": 1790587727,
           "stars": 573
+        },
+        {
+          "ts": 1790589197,
+          "stars": 573
         }
       ],
       "capabilities": {
@@ -609,11 +647,9 @@
         "last_push_days": 1,
         "age_days": 2176,
         "authenticity_score": 95,
-        "open_issues": 179,
+        "open_issues": 180,
         "is_stale": false
-      },
-      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "tinyplex/tinybase",
@@ -621,6 +657,8 @@
       "url": "https://github.com/tinyplex/tinybase",
       "description": "A reactive data store & sync engine.",
       "category": "Local-First Sync & CRDTs",
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "TypeScript",
       "license": "MIT",
       "stars": 5179,
@@ -656,6 +694,10 @@
         {
           "ts": 1790587727,
           "stars": 5179
+        },
+        {
+          "ts": 1790589197,
+          "stars": 5179
         }
       ],
       "capabilities": {
@@ -682,9 +724,7 @@
         "authenticity_score": 80,
         "open_issues": 14,
         "is_stale": false
-      },
-      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "toeverything/blocksuite",
@@ -692,6 +732,8 @@
       "url": "https://github.com/toeverything/blocksuite",
       "description": "\ud83e\udde9 Content editing tech stack for the web - BlockSuite is a toolkit for building editors and collaborative applications.",
       "category": "Local-First Sync & CRDTs",
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "TypeScript",
       "license": "MPL-2.0",
       "stars": 6027,
@@ -729,6 +771,10 @@
         {
           "ts": 1790587727,
           "stars": 6027
+        },
+        {
+          "ts": 1790589197,
+          "stars": 6027
         }
       ],
       "capabilities": {
@@ -755,9 +801,7 @@
         "authenticity_score": 95,
         "open_issues": 196,
         "is_stale": false
-      },
-      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "GianIac/numax",
@@ -765,6 +809,8 @@
       "url": "https://github.com/GianIac/numax",
       "description": "The beginning of a new runtime model",
       "category": "Local-First Sync & CRDTs",
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Rust",
       "license": "Apache-2.0",
       "stars": 117,
@@ -799,6 +845,10 @@
         {
           "ts": 1790587727,
           "stars": 117
+        },
+        {
+          "ts": 1790589197,
+          "stars": 117
         }
       ],
       "capabilities": {
@@ -825,9 +875,7 @@
         "authenticity_score": 95,
         "open_issues": 23,
         "is_stale": false
-      },
-      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "Dancode-188/synckit",
@@ -835,6 +883,8 @@
       "url": "https://github.com/Dancode-188/synckit",
       "description": " Local-first collaboration SDK for React, Vue, and Svelte. Batteries-included: Rich text, undo/redo, cursors, and presence.",
       "category": "Local-First Sync & CRDTs",
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "TypeScript",
       "license": "MIT",
       "stars": 667,
@@ -867,6 +917,10 @@
         {
           "ts": 1790587727,
           "stars": 667
+        },
+        {
+          "ts": 1790589197,
+          "stars": 667
         }
       ],
       "capabilities": {
@@ -895,9 +949,7 @@
         "authenticity_score": 95,
         "open_issues": 6,
         "is_stale": false
-      },
-      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "streamich/json-joy",
@@ -905,6 +957,8 @@
       "url": "https://github.com/streamich/json-joy",
       "description": "json-joy is a library that implements cutting-edge real-time and collaborative editing algorithms and utilities for JSON data models, with a focus on developing the JSON CRDT (Conflict-free Replicated Data Type) specification and implementation.",
       "category": "Local-First Sync & CRDTs",
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "TypeScript",
       "license": "NOASSERTION",
       "stars": 1093,
@@ -947,6 +1001,10 @@
         {
           "ts": 1790587727,
           "stars": 1093
+        },
+        {
+          "ts": 1790589197,
+          "stars": 1093
         }
       ],
       "capabilities": {
@@ -975,9 +1033,7 @@
         "authenticity_score": 80,
         "open_issues": 248,
         "is_stale": false
-      },
-      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     }
   ]
 }

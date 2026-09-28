@@ -1,7 +1,7 @@
 {
   "category": "RAG Engines",
-  "count": 10,
-  "updated_at": "2026-09-28T09:49:50.082731+00:00",
+  "count": 9,
+  "updated_at": "2026-09-28T09:53:17.145984+00:00",
   "repositories": [
     {
       "full_name": "deepset-ai/haystack",
@@ -9,6 +9,8 @@
       "url": "https://github.com/deepset-ai/haystack",
       "description": "Open-source AI orchestration framework for building context-engineered, production-ready LLM applications. Design modular pipelines and agent workflows with explicit control over retrieval, routing, memory, and generation. Built for scalable agents, RAG, multimodal applications, semantic search, and conversational systems.",
       "category": "RAG Engines",
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 26622,
@@ -37,7 +39,7 @@
         "semantic-search"
       ],
       "created_at": "2019-11-14T09:05:28Z",
-      "pushed_at": "2026-09-28T09:26:42Z",
+      "pushed_at": "2026-09-28T09:50:31Z",
       "quick_run": "git clone https://github.com/deepset-ai/haystack",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -46,6 +48,10 @@
       "star_history": [
         {
           "ts": 1790587727,
+          "stars": 26622
+        },
+        {
+          "ts": 1790589197,
           "stars": 26622
         }
       ],
@@ -71,222 +77,9 @@
         "last_push_days": 0,
         "age_days": 2510,
         "authenticity_score": 95,
-        "open_issues": 169,
+        "open_issues": 167,
         "is_stale": false
-      },
-      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
-    },
-    {
-      "full_name": "vespa-engine/vespa",
-      "name": "vespa",
-      "url": "https://github.com/vespa-engine/vespa",
-      "description": "The AI search platform",
-      "category": "RAG Engines",
-      "language": "Java",
-      "license": "Apache-2.0",
-      "stars": 7112,
-      "stars_24h": 0,
-      "trending_score": 84,
-      "topics": [
-        "ai",
-        "big-data",
-        "java",
-        "machine-learning",
-        "rag",
-        "search",
-        "search-engine",
-        "server",
-        "serving-recommendation",
-        "tensor",
-        "vector",
-        "vector-database",
-        "vector-search",
-        "vespa"
-      ],
-      "created_at": "2016-06-03T20:54:20Z",
-      "pushed_at": "2026-09-28T09:24:49Z",
-      "quick_run": "git clone https://github.com/vespa-engine/vespa",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790587727,
-          "stars": 7112
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "service"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 3768,
-        "authenticity_score": 95,
-        "open_issues": 250,
-        "is_stale": false
-      },
-      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
-    },
-    {
-      "full_name": "comet-ml/opik",
-      "name": "opik",
-      "url": "https://github.com/comet-ml/opik",
-      "description": "Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, automated evaluations, and production-ready dashboards.",
-      "category": "RAG Engines",
-      "language": "Python",
-      "license": "Apache-2.0",
-      "stars": 22267,
-      "stars_24h": 0,
-      "trending_score": 149,
-      "topics": [
-        "evaluation",
-        "hacktoberfest",
-        "hacktoberfest2025",
-        "langchain",
-        "llama-index",
-        "llm",
-        "llm-evaluation",
-        "llm-observability",
-        "llmops",
-        "open-source",
-        "openai",
-        "playground",
-        "prompt-engineering"
-      ],
-      "created_at": "2023-05-10T12:57:13Z",
-      "pushed_at": "2026-09-28T09:23:32Z",
-      "quick_run": "git clone https://github.com/comet-ml/opik",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790587727,
-          "stars": 22267
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "orchestrators"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 1236,
-        "authenticity_score": 95,
-        "open_issues": 227,
-        "is_stale": false
-      },
-      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
-    },
-    {
-      "full_name": "EvotecIT/OfficeIMO",
-      "name": "OfficeIMO",
-      "url": "https://github.com/EvotecIT/OfficeIMO",
-      "description": "MIT-licensed, COM-free .NET libraries for creating, reading, editing, converting, rendering, and extracting Office, PDF, email, OneNote, and text formats.",
-      "category": "RAG Engines",
-      "language": "C#",
-      "license": "MIT",
-      "stars": 560,
-      "stars_24h": 0,
-      "trending_score": 23,
-      "topics": [
-        "aspose-alternative",
-        "c-sharp",
-        "document-automation",
-        "document-conversion",
-        "document-generation",
-        "docx",
-        "dotnet",
-        "email",
-        "hacktoberfest",
-        "office",
-        "onenote",
-        "openxml",
-        "openxml-sdk",
-        "ost",
-        "pdf",
-        "pptx",
-        "pst",
-        "rag",
-        "word",
-        "xlsx"
-      ],
-      "created_at": "2021-12-22T07:54:02Z",
-      "pushed_at": "2026-09-28T09:16:45Z",
-      "quick_run": "git clone https://github.com/EvotecIT/OfficeIMO",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790587727,
-          "stars": 560
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [
-          "drop-in-replacement"
-        ],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 1741,
-        "authenticity_score": 95,
-        "open_issues": 25,
-        "is_stale": false
-      },
-      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "vitali87/code-graph-rag",
@@ -294,6 +87,8 @@
       "url": "https://github.com/vitali87/code-graph-rag",
       "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
       "category": "RAG Engines",
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "MIT",
       "stars": 5185,
@@ -322,7 +117,7 @@
         "tree-sitter"
       ],
       "created_at": "2025-06-16T14:31:57Z",
-      "pushed_at": "2026-09-28T09:14:25Z",
+      "pushed_at": "2026-09-28T09:51:01Z",
       "quick_run": "git clone https://github.com/vitali87/code-graph-rag",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -331,6 +126,10 @@
       "star_history": [
         {
           "ts": 1790587727,
+          "stars": 5185
+        },
+        {
+          "ts": 1790589197,
           "stars": 5185
         }
       ],
@@ -356,11 +155,9 @@
         "last_push_days": 0,
         "age_days": 468,
         "authenticity_score": 95,
-        "open_issues": 111,
+        "open_issues": 110,
         "is_stale": false
-      },
-      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "HelixDB/helix-db",
@@ -368,6 +165,8 @@
       "url": "https://github.com/HelixDB/helix-db",
       "description": "HelixDB is an OLTP graph database with native vector and full-text search built in Rust on Object Storage.",
       "category": "RAG Engines",
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Rust",
       "license": "Apache-2.0",
       "stars": 6102,
@@ -391,7 +190,7 @@
         "vectorsearch"
       ],
       "created_at": "2024-11-23T11:02:14Z",
-      "pushed_at": "2026-09-28T09:24:45Z",
+      "pushed_at": "2026-09-28T09:45:44Z",
       "quick_run": "git clone https://github.com/HelixDB/helix-db",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -404,6 +203,10 @@
         },
         {
           "ts": 1790587727,
+          "stars": 6102
+        },
+        {
+          "ts": 1790589197,
           "stars": 6102
         }
       ],
@@ -429,11 +232,154 @@
         "last_push_days": 0,
         "age_days": 673,
         "authenticity_score": 95,
-        "open_issues": 21,
+        "open_issues": 20,
         "is_stale": false
-      },
+      }
+    },
+    {
+      "full_name": "comet-ml/opik",
+      "name": "opik",
+      "url": "https://github.com/comet-ml/opik",
+      "description": "Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, automated evaluations, and production-ready dashboards.",
+      "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "stars": 22270,
+      "stars_24h": 3,
+      "trending_score": 158,
+      "topics": [
+        "evaluation",
+        "hacktoberfest",
+        "hacktoberfest2025",
+        "langchain",
+        "llama-index",
+        "llm",
+        "llm-evaluation",
+        "llm-observability",
+        "llmops",
+        "open-source",
+        "openai",
+        "playground",
+        "prompt-engineering"
+      ],
+      "created_at": "2023-05-10T12:57:13Z",
+      "pushed_at": "2026-09-28T09:49:09Z",
+      "quick_run": "git clone https://github.com/comet-ml/opik",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 22267
+        },
+        {
+          "ts": 1790589197,
+          "stars": 22270
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "orchestrators"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 1236,
+        "authenticity_score": 95,
+        "open_issues": 230,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "onyx-dot-app/onyx",
+      "name": "onyx",
+      "url": "https://github.com/onyx-dot-app/onyx",
+      "description": "Open Source AI Platform - AI Chat with advanced features that works with every LLM",
+      "category": "RAG Engines",
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "language": "Python",
+      "license": "NOASSERTION",
+      "stars": 32264,
+      "stars_24h": 107,
+      "trending_score": 500,
+      "topics": [
+        "ai",
+        "ai-chat",
+        "chatgpt",
+        "chatui",
+        "enterprise-search",
+        "gen-ai",
+        "information-retrieval",
+        "llm",
+        "llm-ui",
+        "nextjs",
+        "python",
+        "rag",
+        "self-hosted",
+        "vector-search"
+      ],
+      "created_at": "2023-04-27T06:04:01Z",
+      "pushed_at": "2026-09-28T09:37:45Z",
+      "quick_run": "git clone https://github.com/onyx-dot-app/onyx",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 32157
+        },
+        {
+          "ts": 1790589197,
+          "stars": 32264
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "self-hosted"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 1250,
+        "authenticity_score": 95,
+        "open_issues": 501,
+        "is_stale": false
+      }
     },
     {
       "full_name": "weaviate/weaviate",
@@ -441,6 +387,8 @@
       "url": "https://github.com/weaviate/weaviate",
       "description": "Weaviate is an open-source vector database that stores both objects and vectors, allowing for the combination of vector search with structured filtering with the fault tolerance and scalability of a cloud-native database\u200b.",
       "category": "RAG Engines",
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
       "language": "Go",
       "license": "NOASSERTION",
       "stars": 16855,
@@ -469,7 +417,7 @@
         "weaviate"
       ],
       "created_at": "2016-03-30T15:03:17Z",
-      "pushed_at": "2026-09-28T09:24:22Z",
+      "pushed_at": "2026-09-28T09:51:23Z",
       "quick_run": "git clone https://github.com/weaviate/weaviate",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -482,6 +430,10 @@
         },
         {
           "ts": 1790587727,
+          "stars": 16855
+        },
+        {
+          "ts": 1790589197,
           "stars": 16855
         }
       ],
@@ -507,11 +459,9 @@
         "last_push_days": 0,
         "age_days": 3833,
         "authenticity_score": 95,
-        "open_issues": 756,
+        "open_issues": 755,
         "is_stale": false
-      },
-      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
+      }
     },
     {
       "full_name": "oceanbase/seekdb",
@@ -519,6 +469,8 @@
       "url": "https://github.com/oceanbase/seekdb",
       "description": "The AI-Native Search Database. Best for agent storage, it unifies vector, text, structured, and semi-structured data into a single engine. This all-in-one database makes agents smarter, easier to run, and more stable.",
       "category": "RAG Engines",
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "C++",
       "license": "Apache-2.0",
       "stars": 3078,
@@ -541,7 +493,7 @@
         "vector-databases"
       ],
       "created_at": "2025-10-21T11:31:11Z",
-      "pushed_at": "2026-09-28T09:18:59Z",
+      "pushed_at": "2026-09-28T09:50:08Z",
       "quick_run": "git clone https://github.com/oceanbase/seekdb",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -550,6 +502,10 @@
       "star_history": [
         {
           "ts": 1790587727,
+          "stars": 3078
+        },
+        {
+          "ts": 1790589197,
           "stars": 3078
         }
       ],
@@ -577,9 +533,7 @@
         "authenticity_score": 95,
         "open_issues": 379,
         "is_stale": false
-      },
-      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "gmickel/gno",
@@ -587,6 +541,8 @@
       "url": "https://github.com/gmickel/gno",
       "description": "Local AI-powered document search and editing with first-in-class hybrid retrieval, LLM answers, WebUI, REST API and MCP support for AI clients.",
       "category": "RAG Engines",
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "TypeScript",
       "license": "MIT",
       "stars": 115,
@@ -626,6 +582,10 @@
         {
           "ts": 1790587727,
           "stars": 115
+        },
+        {
+          "ts": 1790589197,
+          "stars": 115
         }
       ],
       "capabilities": {
@@ -653,9 +613,7 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": false
-      },
-      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "notoriouslab/vault-curate",
@@ -663,6 +621,8 @@
       "url": "https://github.com/notoriouslab/vault-curate",
       "description": "Find, connect, rediscover your notes \u2014 a local-first second brain for Obsidian. Semantic search with strong Chinese/CJK, relation graphs and semantic paths for connections you never drew, Hot/Cold rediscovery of forgotten notes. Desktop builds the index; phones and tablets search it. No API keys.",
       "category": "RAG Engines",
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
       "language": "TypeScript",
       "license": "MIT",
       "stars": 151,
@@ -701,6 +661,10 @@
         {
           "ts": 1790587727,
           "stars": 151
+        },
+        {
+          "ts": 1790589197,
+          "stars": 151
         }
       ],
       "capabilities": {
@@ -728,9 +692,7 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      },
-      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
+      }
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "category": "Document Vaults & Search",
   "count": 1,
-  "updated_at": "2026-09-28T09:49:50.082731+00:00",
+  "updated_at": "2026-09-28T09:53:17.145984+00:00",
   "repositories": [
     {
       "full_name": "manticoresoftware/manticoresearch",
@@ -9,6 +9,8 @@
       "url": "https://github.com/manticoresoftware/manticoresearch",
       "description": "Open-source search database for full-text, vector, and hybrid search with real-time indexing and SQL.",
       "category": "Document Vaults & Search",
+      "verdict": "High-velocity open-source project delivering focused capabilities for document vaults & search.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "C++",
       "license": "GPL-3.0",
       "stars": 12039,
@@ -32,7 +34,7 @@
         "stream-filtering"
       ],
       "created_at": "2017-06-28T01:15:30Z",
-      "pushed_at": "2026-09-28T07:30:52Z",
+      "pushed_at": "2026-09-28T09:47:41Z",
       "quick_run": "git clone https://github.com/manticoresoftware/manticoresearch",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -45,6 +47,10 @@
         },
         {
           "ts": 1790587727,
+          "stars": 12039
+        },
+        {
+          "ts": 1790589197,
           "stars": 12039
         }
       ],
@@ -72,11 +78,9 @@
         "last_push_days": 0,
         "age_days": 3379,
         "authenticity_score": 95,
-        "open_issues": 643,
+        "open_issues": 642,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for document vaults & search.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     }
   ]
 }

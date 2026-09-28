@@ -1,7 +1,7 @@
 {
   "category": "Databases & Storage",
   "count": 1,
-  "updated_at": "2026-09-28T09:49:50.082731+00:00",
+  "updated_at": "2026-09-28T09:53:17.145984+00:00",
   "repositories": [
     {
       "full_name": "redis/redis",
@@ -9,6 +9,8 @@
       "url": "https://github.com/redis/redis",
       "description": "For developers, who are building real-time data-driven applications, Redis is the preferred, fastest, and most feature-rich cache, data structure server, and document and vector query engine.",
       "category": "Databases & Storage",
+      "verdict": "High-velocity open-source project delivering focused capabilities for databases & storage.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "C",
       "license": "NOASSERTION",
       "stars": 76512,
@@ -47,6 +49,10 @@
         {
           "ts": 1790587727,
           "stars": 76512
+        },
+        {
+          "ts": 1790589197,
+          "stars": 76512
         }
       ],
       "capabilities": {
@@ -73,11 +79,9 @@
         "last_push_days": 0,
         "age_days": 6399,
         "authenticity_score": 95,
-        "open_issues": 2991,
+        "open_issues": 2992,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for databases & storage.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     }
   ]
 }

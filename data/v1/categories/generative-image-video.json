@@ -1,14 +1,91 @@
 {
   "category": "Generative Image/Video",
   "count": 14,
-  "updated_at": "2026-09-28T09:49:50.082731+00:00",
+  "updated_at": "2026-09-28T09:53:17.145984+00:00",
   "repositories": [
+    {
+      "full_name": "perfectgf/lora-dataset-studio",
+      "name": "lora-dataset-studio",
+      "url": "https://github.com/perfectgf/lora-dataset-studio",
+      "description": "Self-hosted, one-tab workbench for the whole training lifecycle: build Character/Concept/Style datasets (generate, scrape, or triage a big dump in the Image Bank), curate, caption, clean watermarks, then train LoRAs on five model families or a full Krea 2 model on a rented GPU, and rank checkpoints in a Test Studio. Free & local.",
+      "category": "Generative Image/Video",
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "language": "Python",
+      "license": "NOASSERTION",
+      "stars": 280,
+      "stars_24h": 9,
+      "trending_score": 43,
+      "topics": [
+        "ai-toolkit",
+        "comfyui",
+        "dataset",
+        "diffusion-models",
+        "fine-tuning",
+        "flask",
+        "full-model-training",
+        "lora",
+        "react",
+        "stable-diffusion"
+      ],
+      "created_at": "2026-07-05T13:43:17Z",
+      "pushed_at": "2026-09-28T09:47:09Z",
+      "quick_run": "git clone https://github.com/perfectgf/lora-dataset-studio",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 271
+        },
+        {
+          "ts": 1790587727,
+          "stars": 280
+        },
+        {
+          "ts": 1790589197,
+          "stars": 280
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "self-hosted",
+          "fine-tuning"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 84,
+        "authenticity_score": 95,
+        "open_issues": 7,
+        "is_stale": false
+      }
+    },
     {
       "full_name": "scraed/LanPaint",
       "name": "LanPaint",
       "url": "https://github.com/scraed/LanPaint",
       "description": "High quality training free inpaint for every stable diffusion model. Supports ComfyUI",
       "category": "Generative Image/Video",
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "GPL-3.0",
       "stars": 1410,
@@ -40,6 +117,10 @@
         {
           "ts": 1790587727,
           "stars": 1410
+        },
+        {
+          "ts": 1790589197,
+          "stars": 1410
         }
       ],
       "capabilities": {
@@ -66,9 +147,7 @@
         "authenticity_score": 95,
         "open_issues": 19,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "Comfy-Org/ComfyUI",
@@ -76,11 +155,13 @@
       "url": "https://github.com/Comfy-Org/ComfyUI",
       "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
       "category": "Generative Image/Video",
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "GPL-3.0",
-      "stars": 135288,
-      "stars_24h": 1506,
-      "trending_score": 4885,
+      "stars": 135295,
+      "stars_24h": 1513,
+      "trending_score": 4906,
       "topics": [
         "ai",
         "comfy",
@@ -104,6 +185,10 @@
         {
           "ts": 1790587727,
           "stars": 135288
+        },
+        {
+          "ts": 1790589197,
+          "stars": 135295
         }
       ],
       "capabilities": {
@@ -130,9 +215,7 @@
         "authenticity_score": 95,
         "open_issues": 4991,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "licyk/sd-webui-all-in-one",
@@ -140,6 +223,8 @@
       "url": "https://github.com/licyk/sd-webui-all-in-one",
       "description": "\u652f\u6301\u5b89\u88c5\u3001\u4e0b\u8f7d\u3001\u542f\u52a8\u548c\u7ba1\u7406\u591a\u79cd AI WebUI / \u8bad\u7ec3\u5de5\u5177\u7684\u4e00\u4f53\u5316\u9879\u76ee\uff0c\u63d0\u4f9b Installer\u3001\u6574\u5408\u5305\u4e0b\u8f7d\u5668\u3001Launcher\u3001CLI \u4e0e Colab / Kaggle Notebook\u3002",
       "category": "Generative Image/Video",
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "GPL-3.0",
       "stars": 257,
@@ -176,6 +261,10 @@
         {
           "ts": 1790587727,
           "stars": 257
+        },
+        {
+          "ts": 1790589197,
+          "stars": 257
         }
       ],
       "capabilities": {
@@ -202,9 +291,7 @@
         "authenticity_score": 95,
         "open_issues": 3,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "wiltodelta/remove-ai-watermarks",
@@ -212,6 +299,8 @@
       "url": "https://github.com/wiltodelta/remove-ai-watermarks",
       "description": "Remove visible and invisible AI watermarks and provenance metadata from images and video. Python library and CLI for SynthID, C2PA, EXIF, IPTC, XMP, and common generative-AI marks.",
       "category": "Generative Image/Video",
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 5694,
@@ -254,6 +343,10 @@
         {
           "ts": 1790587727,
           "stars": 5694
+        },
+        {
+          "ts": 1790589197,
+          "stars": 5694
         }
       ],
       "capabilities": {
@@ -281,9 +374,7 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "Mooshieblob1/MooshieUI",
@@ -291,6 +382,8 @@
       "url": "https://github.com/Mooshieblob1/MooshieUI",
       "description": "A front-end UI for ComfyUI made for beginner level users.",
       "category": "Generative Image/Video",
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "TypeScript",
       "license": "AGPL-3.0",
       "stars": 202,
@@ -325,6 +418,10 @@
         {
           "ts": 1790587727,
           "stars": 202
+        },
+        {
+          "ts": 1790589197,
+          "stars": 202
         }
       ],
       "capabilities": {
@@ -353,9 +450,7 @@
         "authenticity_score": 95,
         "open_issues": 15,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "LuqP2/Image-MetaHub",
@@ -363,6 +458,8 @@
       "url": "https://github.com/LuqP2/Image-MetaHub",
       "description": "Local-first AI image organizer and generative media library manager for ComfyUI, A1111, InvokeAI & more. Search huge output folders by prompt, model, LoRA, metadata or visual similarity.",
       "category": "Generative Image/Video",
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "TypeScript",
       "license": "MPL-2.0",
       "stars": 323,
@@ -401,6 +498,10 @@
         {
           "ts": 1790587727,
           "stars": 323
+        },
+        {
+          "ts": 1790589197,
+          "stars": 323
         }
       ],
       "capabilities": {
@@ -428,9 +529,7 @@
         "authenticity_score": 95,
         "open_issues": 33,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "utensils/comfyui-nix",
@@ -438,6 +537,8 @@
       "url": "https://github.com/utensils/comfyui-nix",
       "description": "A slightly opinionated Nix flake for ComfyUI with curated custom nodes. Supports macOS (Apple Silicon) and Linux with CUDA.",
       "category": "Generative Image/Video",
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Nix",
       "license": "MIT",
       "stars": 161,
@@ -467,6 +568,10 @@
         {
           "ts": 1790587727,
           "stars": 161
+        },
+        {
+          "ts": 1790589197,
+          "stars": 161
         }
       ],
       "capabilities": {
@@ -491,11 +596,9 @@
         "last_push_days": 0,
         "age_days": 529,
         "authenticity_score": 95,
-        "open_issues": 6,
+        "open_issues": 7,
         "is_stale": false
-      },
-      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "Comfy-Org/comfy-cli",
@@ -503,6 +606,8 @@
       "url": "https://github.com/Comfy-Org/comfy-cli",
       "description": "CLI for using ComfyUI",
       "category": "Generative Image/Video",
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "GPL-3.0",
       "stars": 990,
@@ -528,6 +633,10 @@
         },
         {
           "ts": 1790587727,
+          "stars": 990
+        },
+        {
+          "ts": 1790589197,
           "stars": 990
         }
       ],
@@ -555,80 +664,7 @@
         "authenticity_score": 95,
         "open_issues": 89,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
-    },
-    {
-      "full_name": "perfectgf/lora-dataset-studio",
-      "name": "lora-dataset-studio",
-      "url": "https://github.com/perfectgf/lora-dataset-studio",
-      "description": "Self-hosted, one-tab workbench for the whole training lifecycle: build Character/Concept/Style datasets (generate, scrape, or triage a big dump in the Image Bank), curate, caption, clean watermarks, then train LoRAs on five model families or a full Krea 2 model on a rented GPU, and rank checkpoints in a Test Studio. Free & local.",
-      "category": "Generative Image/Video",
-      "language": "Python",
-      "license": "NOASSERTION",
-      "stars": 280,
-      "stars_24h": 9,
-      "trending_score": 43,
-      "topics": [
-        "ai-toolkit",
-        "comfyui",
-        "dataset",
-        "diffusion-models",
-        "fine-tuning",
-        "flask",
-        "full-model-training",
-        "lora",
-        "react",
-        "stable-diffusion"
-      ],
-      "created_at": "2026-07-05T13:43:17Z",
-      "pushed_at": "2026-09-26T23:31:48Z",
-      "quick_run": "git clone https://github.com/perfectgf/lora-dataset-studio",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 271
-        },
-        {
-          "ts": 1790587727,
-          "stars": 280
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [
-          "self-hosted",
-          "fine-tuning"
-        ],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 1,
-        "age_days": 84,
-        "authenticity_score": 95,
-        "open_issues": 7,
-        "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "Acly/comfyui-tooling-nodes",
@@ -636,6 +672,8 @@
       "url": "https://github.com/Acly/comfyui-tooling-nodes",
       "description": "Nodes for using ComfyUI as a backend for external tools. Send and receive images directly without filesystem upload/download.",
       "category": "Generative Image/Video",
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "GPL-3.0",
       "stars": 674,
@@ -655,6 +693,10 @@
       "star_history": [
         {
           "ts": 1790587727,
+          "stars": 674
+        },
+        {
+          "ts": 1790589197,
           "stars": 674
         }
       ],
@@ -677,14 +719,12 @@
       },
       "health": {
         "stage": "active",
-        "last_push_days": 1,
+        "last_push_days": 2,
         "age_days": 1126,
         "authenticity_score": 95,
         "open_issues": 7,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "Acly/comfyui-inpaint-nodes",
@@ -692,6 +732,8 @@
       "url": "https://github.com/Acly/comfyui-inpaint-nodes",
       "description": "Nodes for better inpainting with ComfyUI: Fooocus inpaint model for SDXL, LaMa, MAT, and various other tools for pre-filling inpaint & outpaint areas.",
       "category": "Generative Image/Video",
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "GPL-3.0",
       "stars": 1245,
@@ -713,6 +755,10 @@
       "star_history": [
         {
           "ts": 1790587727,
+          "stars": 1245
+        },
+        {
+          "ts": 1790589197,
           "stars": 1245
         }
       ],
@@ -740,9 +786,7 @@
         "authenticity_score": 95,
         "open_issues": 11,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "rgthree/rgthree-comfy",
@@ -750,6 +794,8 @@
       "url": "https://github.com/rgthree/rgthree-comfy",
       "description": "Making ComfyUI more comfortable!",
       "category": "Generative Image/Video",
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "JavaScript",
       "license": "MIT",
       "stars": 3515,
@@ -770,6 +816,10 @@
       "star_history": [
         {
           "ts": 1790587727,
+          "stars": 3515
+        },
+        {
+          "ts": 1790589197,
           "stars": 3515
         }
       ],
@@ -797,9 +847,7 @@
         "authenticity_score": 95,
         "open_issues": 307,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "BlackMixture/Mix-Studio",
@@ -807,6 +855,8 @@
       "url": "https://github.com/BlackMixture/Mix-Studio",
       "description": "The cleanest, responsive AI workspace. Run highly tuned image and video workflows flawlessly from your desktop or your phone. Built on ComfyUI.",
       "category": "Generative Image/Video",
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "JavaScript",
       "license": "GPL-3.0",
       "stars": 290,
@@ -833,6 +883,10 @@
       "star_history": [
         {
           "ts": 1790587727,
+          "stars": 290
+        },
+        {
+          "ts": 1790589197,
           "stars": 290
         }
       ],
@@ -862,9 +916,7 @@
         "authenticity_score": 95,
         "open_issues": 11,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "mcmonkeyprojects/SwarmUI",
@@ -872,6 +924,8 @@
       "url": "https://github.com/mcmonkeyprojects/SwarmUI",
       "description": "SwarmUI (formerly StableSwarmUI), A Modular Stable Diffusion Web-User-Interface, with an emphasis on making powertools easily accessible, high performance, and extensibility.",
       "category": "Generative Image/Video",
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "C#",
       "license": "MIT",
       "stars": 4613,
@@ -903,6 +957,10 @@
         {
           "ts": 1790587727,
           "stars": 4613
+        },
+        {
+          "ts": 1790589197,
+          "stars": 4613
         }
       ],
       "capabilities": {
@@ -929,9 +987,7 @@
         "authenticity_score": 95,
         "open_issues": 151,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     }
   ]
 }

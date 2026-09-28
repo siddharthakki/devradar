@@ -1,14 +1,90 @@
 {
   "category": "Second Brain & PKM",
-  "count": 12,
-  "updated_at": "2026-09-28T09:49:50.082731+00:00",
+  "count": 13,
+  "updated_at": "2026-09-28T09:53:17.145984+00:00",
   "repositories": [
+    {
+      "full_name": "SamurAIGPT/llm-wiki-agent",
+      "name": "llm-wiki-agent",
+      "url": "https://github.com/SamurAIGPT/llm-wiki-agent",
+      "description": "A personal knowledge base that builds and maintains itself. Drop in sources \u2014 Claude (or Codex/Gemini) reads them, extracts knowledge, and maintains a persistent interlinked wiki. Works with Claude Code, Codex, OpenCode, Gemini CLI. No API key needed.",
+      "category": "Second Brain & PKM",
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 3583,
+      "stars_24h": 0,
+      "trending_score": 59,
+      "topics": [
+        "ai-agent",
+        "ai-tools",
+        "automation",
+        "claude-code",
+        "codex",
+        "gemini",
+        "generative-ai",
+        "knowledge-base",
+        "knowledge-graph",
+        "llm",
+        "markdown",
+        "muapi",
+        "note-taking",
+        "obsidian",
+        "open-source",
+        "personal-knowledge-management",
+        "rag",
+        "research",
+        "second-brain",
+        "wiki"
+      ],
+      "created_at": "2023-04-21T08:31:00Z",
+      "pushed_at": "2026-09-28T09:49:14Z",
+      "quick_run": "git clone https://github.com/SamurAIGPT/llm-wiki-agent",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": false,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589197,
+          "stars": 3583
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "byok-cloud"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 1256,
+        "authenticity_score": 95,
+        "open_issues": 11,
+        "is_stale": false
+      }
+    },
     {
       "full_name": "inkeep/open-knowledge",
       "name": "open-knowledge",
       "url": "https://github.com/inkeep/open-knowledge",
       "description": "Beautiful, AI-native markdown IDE and LLM wiki",
       "category": "Second Brain & PKM",
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "TypeScript",
       "license": "GPL-3.0",
       "stars": 4338,
@@ -51,6 +127,10 @@
         {
           "ts": 1790587727,
           "stars": 4338
+        },
+        {
+          "ts": 1790589197,
+          "stars": 4338
         }
       ],
       "capabilities": {
@@ -77,9 +157,7 @@
         "authenticity_score": 95,
         "open_issues": 53,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "eugeniughelbur/obsidian-second-brain",
@@ -87,6 +165,8 @@
       "url": "https://github.com/eugeniughelbur/obsidian-second-brain",
       "description": "Persistent memory for Claude Code and 6 other CLI agents, stored as plain markdown in your Obsidian vault. Stop re-explaining your projects, decisions and people every session. 45 commands: hybrid semantic search, self-rewriting notes, key-less web research, and scheduled agents that maintain the vault while you sleep.",
       "category": "Second Brain & PKM",
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "MIT",
       "stars": 4628,
@@ -129,6 +209,10 @@
         {
           "ts": 1790587727,
           "stars": 4628
+        },
+        {
+          "ts": 1790589197,
+          "stars": 4628
         }
       ],
       "capabilities": {
@@ -155,9 +239,7 @@
         "authenticity_score": 95,
         "open_issues": 3,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "pbek/QOwnNotes",
@@ -165,6 +247,8 @@
       "url": "https://github.com/pbek/QOwnNotes",
       "description": "QOwnNotes is a plain-text file notepad and todo-list manager with Markdown support and Nextcloud / ownCloud integration.",
       "category": "Second Brain & PKM",
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
       "language": "C++",
       "license": "GPL-2.0",
       "stars": 5890,
@@ -193,7 +277,7 @@
         "second-brain"
       ],
       "created_at": "2014-12-02T14:38:05Z",
-      "pushed_at": "2026-09-27T18:47:28Z",
+      "pushed_at": "2026-09-28T09:33:35Z",
       "quick_run": "git clone https://github.com/pbek/QOwnNotes",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -206,6 +290,10 @@
         },
         {
           "ts": 1790587727,
+          "stars": 5890
+        },
+        {
+          "ts": 1790589197,
           "stars": 5890
         }
       ],
@@ -234,9 +322,7 @@
         "authenticity_score": 95,
         "open_issues": 67,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
+      }
     },
     {
       "full_name": "oldwinter/knowledge-garden",
@@ -244,6 +330,8 @@
       "url": "https://github.com/oldwinter/knowledge-garden",
       "description": "\u6211\u7684\u7b2c\u4e8c\u5927\u8111 second brain\uff0c\u6211\u7684\u6570\u5b57\u82b1\u56ed digital garden\uff0c\u7528obsidian\u53cc\u94fe\u7b14\u8bb0\u8f6f\u4ef6\u5199\u4f5c\u800c\u6210",
       "category": "Second Brain & PKM",
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "TypeScript",
       "license": "MIT",
       "stars": 2465,
@@ -282,6 +370,10 @@
         {
           "ts": 1790587727,
           "stars": 2465
+        },
+        {
+          "ts": 1790589197,
+          "stars": 2465
         }
       ],
       "capabilities": {
@@ -308,9 +400,7 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "alfadur7/llm-wiki-newsroom",
@@ -318,6 +408,8 @@
       "url": "https://github.com/alfadur7/llm-wiki-newsroom",
       "description": "Harness engineering applied to knowledge production: a self-evolving multi-agent newsroom that turns your documents into a cross-linked markdown wiki. A \"reground\" loop pulls published pages back in before they go stale \u2014 writer \u2260 reviewer, local-first, a structured alternative to RAG.",
       "category": "Second Brain & PKM",
+      "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "MIT",
       "stars": 166,
@@ -360,6 +452,10 @@
         {
           "ts": 1790587727,
           "stars": 166
+        },
+        {
+          "ts": 1790589197,
+          "stars": 166
         }
       ],
       "capabilities": {
@@ -388,9 +484,7 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      },
-      "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "undefined-ui/second-brain-os",
@@ -398,11 +492,13 @@
       "url": "https://github.com/undefined-ui/second-brain-os",
       "description": "An AI second brain that maintains itself. Full guide, starter vault, agent skills and scripts for a self-organizing knowledge base in Claude Code and Obsidian.",
       "category": "Second Brain & PKM",
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "HTML",
       "license": "MIT",
-      "stars": 760,
-      "stars_24h": 0,
-      "trending_score": 27,
+      "stars": 762,
+      "stars_24h": 2,
+      "trending_score": 33,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -429,6 +525,10 @@
         {
           "ts": 1790587727,
           "stars": 760
+        },
+        {
+          "ts": 1790589197,
+          "stars": 762
         }
       ],
       "capabilities": {
@@ -455,9 +555,7 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "zosmaai/pi-llm-wiki",
@@ -465,6 +563,8 @@
       "url": "https://github.com/zosmaai/pi-llm-wiki",
       "description": "Self-maintaining, Obsidian-compatible knowledge base for pi \u2014 turn raw sources into an interlinked wiki that compounds. Native Open Knowledge Format (OKF) v0.2.",
       "category": "Second Brain & PKM",
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "TypeScript",
       "license": "MIT",
       "stars": 598,
@@ -505,6 +605,10 @@
         {
           "ts": 1790587727,
           "stars": 598
+        },
+        {
+          "ts": 1790589197,
+          "stars": 598
         }
       ],
       "capabilities": {
@@ -531,9 +635,7 @@
         "authenticity_score": 95,
         "open_issues": 6,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "AgriciDaniel/claude-obsidian",
@@ -541,6 +643,8 @@
       "url": "https://github.com/AgriciDaniel/claude-obsidian",
       "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
       "category": "Second Brain & PKM",
+      "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "MIT",
       "stars": 15270,
@@ -583,6 +687,10 @@
         {
           "ts": 1790587727,
           "stars": 15270
+        },
+        {
+          "ts": 1790589197,
+          "stars": 15270
         }
       ],
       "capabilities": {
@@ -611,9 +719,7 @@
         "authenticity_score": 95,
         "open_issues": 22,
         "is_stale": false
-      },
-      "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "wikibonsai/wikibonsai",
@@ -621,6 +727,8 @@
       "url": "https://github.com/wikibonsai/wikibonsai",
       "description": "A structured knowledge layer in plain text.",
       "category": "Second Brain & PKM",
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Svelte",
       "license": "GPL-3.0",
       "stars": 106,
@@ -662,6 +770,10 @@
         {
           "ts": 1790587727,
           "stars": 106
+        },
+        {
+          "ts": 1790589197,
+          "stars": 106
         }
       ],
       "capabilities": {
@@ -688,9 +800,7 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "kytmanov/synto",
@@ -698,6 +808,8 @@
       "url": "https://github.com/kytmanov/synto",
       "description": "More than just Karpathy\u2019s LLM Wiki, 100% local with Ollama. Drop Markdown notes \u2192 AI extracts concepts \u2192 your Obsidian wiki auto-links and grows. Zero sharing. Your notes stay yours.",
       "category": "Second Brain & PKM",
+      "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "MIT",
       "stars": 258,
@@ -740,6 +852,10 @@
         {
           "ts": 1790587727,
           "stars": 258
+        },
+        {
+          "ts": 1790589197,
+          "stars": 258
         }
       ],
       "capabilities": {
@@ -769,9 +885,7 @@
         "authenticity_score": 95,
         "open_issues": 10,
         "is_stale": false
-      },
-      "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "jaredrhod/ai-memory-vault",
@@ -779,6 +893,8 @@
       "url": "https://github.com/jaredrhod/ai-memory-vault",
       "description": "Give your AI a real, persistent memory. The open-source system plus templates that turn an Obsidian vault into your AI's working memory. No vector database, just markdown.",
       "category": "Second Brain & PKM",
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Code",
       "license": "CC-BY-SA-4.0",
       "stars": 675,
@@ -821,6 +937,10 @@
         {
           "ts": 1790587727,
           "stars": 675
+        },
+        {
+          "ts": 1790589197,
+          "stars": 675
         }
       ],
       "capabilities": {
@@ -847,9 +967,7 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     },
     {
       "full_name": "smixs/agent-second-brain",
@@ -857,6 +975,8 @@
       "url": "https://github.com/smixs/agent-second-brain",
       "description": "An always-on second brain you talk to. Voice notes in Telegram \u2192 typed, linked knowledge in your Obsidian vault. Runs 24/7 on the Claude subscription you already have.",
       "category": "Second Brain & PKM",
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
       "language": "Python",
       "license": "MIT",
       "stars": 388,
@@ -895,6 +1015,10 @@
         {
           "ts": 1790587727,
           "stars": 388
+        },
+        {
+          "ts": 1790589197,
+          "stars": 388
         }
       ],
       "capabilities": {
@@ -921,9 +1045,7 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": false
-      },
-      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
+      }
     }
   ]
 }
