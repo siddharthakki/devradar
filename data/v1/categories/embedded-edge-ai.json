@@ -1,7 +1,7 @@
 {
   "category": "Embedded & Edge AI",
   "count": 1,
-  "updated_at": "2026-09-28T10:03:03.917467+00:00",
+  "updated_at": "2026-09-28T10:50:47.540139+00:00",
   "repositories": [
     {
       "full_name": "Pometry/Raphtory",
@@ -10,7 +10,7 @@
       "description": "Scalable graph analytics database powered by a multithreaded, vectorized temporal engine, written in Rust",
       "category": "Embedded & Edge AI",
       "verdict": "High-velocity open-source project delivering focused capabilities for embedded & edge ai.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to JetPack & Cloud Edge APIs (Ultra-low footprint AI)",
       "replaces": [
         "jetpack",

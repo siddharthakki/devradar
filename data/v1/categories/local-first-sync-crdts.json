@@ -1,7 +1,7 @@
 {
   "category": "Local-First Sync & CRDTs",
   "count": 14,
-  "updated_at": "2026-09-28T10:03:03.917467+00:00",
+  "updated_at": "2026-09-28T10:50:47.540139+00:00",
   "repositories": [
     {
       "full_name": "calimero-network/core",
@@ -10,7 +10,7 @@
       "description": "Calimero - Peer-to-peer application platform with local-first governance, CRDT state sync, and WASM execution.",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -84,7 +84,7 @@
       "description": "Make your JSON data collaborative and version-controlled with CRDTs",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -166,7 +166,7 @@
       "description": "\ud83d\udddd\ufe0f\ud83d\udc1d\u2728 Rust workspace for Keyhive and related crates",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -248,7 +248,7 @@
       "description": "The local-first database that runs on every JS runtime and replicates with your existing backend - no vendor, no lock-in - https://rxdb.info/",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to PouchDB / CouchDB (Reactive local-first client database)",
       "replaces": [
         "pouchdb",
@@ -343,7 +343,7 @@
       "description": "Officially listed, pure-Go port of the Yjs CRDT, byte-for-byte V1/V2 wire-compatible with yjs@13.6.31 (cross-language fixtures, both directions). UndoManager, snapshots, subdocuments, cursors, GC. yserve: single-binary Hocuspocus-compatible server with SQLite persistence and document versioning. iOS/Android via gomobile. No CGO.",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -529,7 +529,7 @@
       "description": "TypeScript library and local-first platform",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -610,7 +610,7 @@
       "description": "Peer-to-peer, editor-agnostic collaborative editing of local text files.",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -693,7 +693,7 @@
       "description": "All the things a panda needs",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -775,7 +775,7 @@
       "description": "A reactive data store & sync engine.",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -863,7 +863,7 @@
       "description": "\ud83e\udde9 Content editing tech stack for the web - BlockSuite is a toolkit for building editors and collaborative applications.",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -953,7 +953,7 @@
       "description": "The beginning of a new runtime model",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -1040,7 +1040,7 @@
       "description": " Local-first collaboration SDK for React, Vue, and Svelte. Batteries-included: Rich text, undo/redo, cursors, and presence.",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -1127,7 +1127,7 @@
       "description": "json-joy is a library that implements cutting-edge real-time and collaborative editing algorithms and utilities for JSON data models, with a focus on developing the JSON CRDT (Conflict-free Replicated Data Type) specification and implementation.",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",

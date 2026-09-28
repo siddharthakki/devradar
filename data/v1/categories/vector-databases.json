@@ -1,7 +1,7 @@
 {
   "category": "Vector Databases",
   "count": 5,
-  "updated_at": "2026-09-28T10:03:03.917467+00:00",
+  "updated_at": "2026-09-28T10:50:47.540139+00:00",
   "repositories": [
     {
       "full_name": "milvus-io/milvus",
@@ -197,7 +197,7 @@
       "description": "ArcadeDB Multi-Model Database, one DBMS that supports SQL, Cypher, Gremlin, HTTP/JSON, MongoDB and Redis. ArcadeDB is a conceptual fork of OrientDB, the first Multi-Model DBMS. ArcadeDB supports Vector Embeddings.",
       "category": "Vector Databases",
       "verdict": "High-performance vector storage optimized for similarity search and embedding retrieval.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Pinecone (Self-hosted vector similarity search)",
       "replaces": [
         "pinecone",
@@ -290,7 +290,7 @@
       "description": "Nornicdb is a distributed low-latency, Graph+Vector, Temporal MVCC with all sub-ms HNSW search, graph traversal, and writes. Using Neo4j Bolt/Cypher and qdrant's gRPC means you can switch with no changes while adding intelligent features like schemas, managed embeddings, reranking+llm, GPU accel, Auto-TLP, Policy-based Memory Decay, and MCP server.",
       "category": "Vector Databases",
       "verdict": "High-performance vector storage optimized for similarity search and embedding retrieval.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Pinecone (Self-hosted vector similarity search)",
       "replaces": [
         "pinecone",

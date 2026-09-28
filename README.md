@@ -32,7 +32,8 @@ Standard open-source discovery is broken:
 ## ✨ Key Features
 
 * 🧠 **AI Stack Advisor (Powered by Puter.js):** Zero-friction, free client-side AI consultant directly inside the dashboard. Ask questions like *"I need a local offline agent with tool calling on an RTX 3060"* and receive structured architectural trade-offs and tool recommendations.
-* ⚖️ **Architectural Verdicts & Gotchas:** Every tool card features a concise 1-sentence engineering assessment and realistic gotchas (VRAM ceilings, API shifts, stability warnings).
+* ⚡ **"My Rig" Client-Side Hardware Profiler:** Detects your OS, processor core count, system RAM, and GPU accelerator (via WebGL unmasked renderer query). Toggle 1-click filtering to hide tools exceeding your local machine's inference floor. (100% private, client-side only).
+* ⚖️ **Architectural Verdicts & Gotchas:** Every tool card features a concise 1-sentence engineering assessment and realistic gotchas (VRAM ceilings, API shifts, stability warnings). Boilerplate is omitted so only genuine friction points are surfaced.
 * ⚡ **Direct Competitor & Replaces Index:** Instantly see which tool each repository challenges (e.g. *⚡ Alternative to Ollama (Rust-native, lower overhead)* or *⚡ Alternative to LangChain*). Filter directly with `vs:ollama`, `alt:langchain`, or interactive comparison chips.
 * 🖥️ **Hardware Floor Profiling:** Know before you clone whether a tool needs **Minimal CPU**, **8GB Unified Apple Silicon (Metal)**, or **16–24GB+ CUDA VRAM**.
 * 🛡️ **Anti-Hype Authenticity Index:** Flags abnormal star surges using fork-to-star balance ratios and momentum deviation to weed out star farms.

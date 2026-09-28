@@ -1,7 +1,7 @@
 {
   "category": "CLI & TUI Tooling",
   "count": 18,
-  "updated_at": "2026-09-28T10:03:03.917467+00:00",
+  "updated_at": "2026-09-28T10:50:47.540139+00:00",
   "repositories": [
     {
       "full_name": "minipuft/claude-prompts-mcp",
@@ -10,7 +10,7 @@
       "description": "MCP server for reusable prompt templates, multi-step workflow chains, and quality gates. Compose agentic workflows with an operator syntax; export as native skills to Claude Code, Cursor, OpenCode, and Gemini CLI.",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -89,7 +89,7 @@
       "description": "AI pair programming in your terminal \u2014 one static binary, sub-ms startup, any model",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -169,7 +169,7 @@
       "description": "ORAcle database CDC (Change Data Capture)",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -258,7 +258,7 @@
       "description": "A lightning-fast, modern, local-first SSH/SFTP/Serial client. Real-time E2EE sync, Team vaults, live sharing, plugins and more. Open-source Termius alternative for Windows, Linux, macOS & Android. Built with Rust/Tauri.",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -357,7 +357,7 @@
       "description": "Robust, fast, intuitive plain text accounting tool with CLI, TUI and web interfaces.",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -443,7 +443,7 @@
       "description": "TUI & CLI package manager for Termux on Android. Browse, build, and install community tools from source and binary source \u2014 offline, SHA256-verified, no root. Like AUR but for Termux.",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -537,7 +537,7 @@
       "description": "TTT Editor (Terminal Text Tool): A real alternative to VS Code, Zed, and Sublime that runs in your terminal. A TUI that feels like GUI. Single binary, zero config.",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -634,7 +634,7 @@
       "description": "Keep track of your \ud83d\udcb5, \ud83d\udd58, \ud83d\udc16, \ud83d\udc04, \ud83c\udf7b on your command line with the plain text accounting tool of the future! \ud83d\ude80",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -715,7 +715,7 @@
       "description": "\ud83d\udc0d CLI tool to find and delete unused Python virtual environments (.venv, poetry, conda, pipenv, uv). Reclaim disk space effortlessly \u2014 supports bulk delete, size reporting, and pycache cleanup.",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -806,7 +806,7 @@
       "description": "Visual testing tool for MCP servers",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -887,7 +887,7 @@
       "description": "A prior-art search for your code ideas \u2014 has this dev tool already been shipped?",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -977,7 +977,7 @@
       "description": "A network diagnostic tool ",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -1071,7 +1071,7 @@
       "description": "A TUI tool to browse, stream, and download anime in PT-BR and EN",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -1165,7 +1165,7 @@
       "description": "A cinematic Git commit replay tool for the terminal, turning your Git history into a living, animated story.",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -1259,7 +1259,7 @@
       "description": "A cross-platform, interactive TUI tool to manage, compile, and flash microcontroller projects using arduino-cli, PlatformIO, and ESP-IDF.",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -1332,7 +1332,7 @@
       "description": "FuXi is a fast, self-contained AI coding agent that lives in your terminal \u2014 edit code, run commands, and drive tools, with cost-aware routing across LLM providers.",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -1423,7 +1423,7 @@
       "description": "The easiest way to get started with OpenTUI is by using create-tui. This CLI tool enables you to quickly start building a new OpenTUI application, with everything set up for you.",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -1499,7 +1499,7 @@
       "description": "A lightweight, fast, terminal-based markdown research tool inspired by Obsidian",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"

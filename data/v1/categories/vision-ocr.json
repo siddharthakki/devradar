@@ -1,7 +1,7 @@
 {
   "category": "Vision & OCR",
   "count": 8,
-  "updated_at": "2026-09-28T10:03:03.917467+00:00",
+  "updated_at": "2026-09-28T10:50:47.540139+00:00",
   "repositories": [
     {
       "full_name": "Dicklesworthstone/franken_ocr",
@@ -10,7 +10,7 @@
       "description": "Pure-Rust, CPU-only OCR engine for Baidu Unlimited-OCR (a DeepSeek-OCR-derived 3B MoE VLM). Five-model zoo, custom int8 kernels, no ML framework, no Python, no GPU.",
       "category": "Vision & OCR",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
       "replaces": [
         "google-vision",
@@ -99,7 +99,7 @@
       "description": "HunyuanOCR-1.5: Making Lightweight OCR VLMs Faster and Better",
       "category": "Vision & OCR",
       "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
       "replaces": [
         "google-vision",
@@ -257,7 +257,7 @@
       "description": "Examples and guides for using the VLM Run API",
       "category": "Vision & OCR",
       "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
       "replaces": [
         "google-vision",

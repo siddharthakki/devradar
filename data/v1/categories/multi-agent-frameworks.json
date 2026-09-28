@@ -1,7 +1,7 @@
 {
   "category": "Multi-Agent Frameworks",
   "count": 27,
-  "updated_at": "2026-09-28T10:03:03.917467+00:00",
+  "updated_at": "2026-09-28T10:50:47.540139+00:00",
   "repositories": [
     {
       "full_name": "receptron/mulmoterminal",
@@ -10,7 +10,7 @@
       "description": "Run multiple Claude Code and Codex sessions in parallel \u2014 a browser terminal grid that shows which agent needs you. Local, tmux-backed, MIT.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -103,7 +103,7 @@
       "description": "Smithers is an agentic workflow framework for defining workflows in simple TypeScript configuration files and executing them quickly, durably, and reliably",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -187,7 +187,7 @@
       "description": "Self-hosted TypeScript agent runtime with durable approvals and verifiable run records. Own it, approve it, audit it.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -267,7 +267,7 @@
       "description": "Open Multi-Agent Interactive Classroom \u2014 Get an immersive, multi-agent learning experience in just one click",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -333,7 +333,7 @@
       "description": "The open-source, multi-agent alternative to Claude Tag.  @ any agent, wherever work happens, they work alongside your team, learning as they go.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -406,7 +406,7 @@
       "description": "The open standard for agent coordination",
       "category": "Multi-Agent Frameworks",
       "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -495,7 +495,7 @@
       "description": "Not\u00a0only\u00a0memory\u00a0but\u00a0a\u00a0full\u00a0story.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -715,7 +715,7 @@
       "description": "Where terminal agents work together. Claude Code, Codex, Copilot CLI and pi on the same task, in one mission, each keeping its own TUI in a real terminal.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -803,7 +803,7 @@
       "description": "Multi-agent AI pipeline that turns one line of text into a finished short-form drama: script, cinematic storyboards, character-consistent video. Provider-agnostic (OpenAI/Claude, MJ, Minimax, Veo/Sora, fal, ComfyUI). MIT.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -879,7 +879,7 @@
       "description": "Multi-agent harness that runs Claude Code and Codex together as one system",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -957,7 +957,7 @@
       "description": "Deterministic multi-agent workflow orchestration for Pi",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -1024,7 +1024,7 @@
       "description": "Cheapest Money-Saving Self-hosted AI agent workspace with tool calling, MCP, multi-model routing, sandboxed execution, multi-agent workflows, and LLM-authored 3D character animation rendered with Three.js.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -1182,7 +1182,7 @@
       "description": "AI-native IDE workspace for legal and document-heavy workflows: files, agents, plugins, built-in document editing with tracked changes, OCR, evidence chains. VS Code for lawyers.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -1271,7 +1271,7 @@
       "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Dify RAG (Deep document understanding retrieval engine)",
       "replaces": [
         "dify",
@@ -1357,7 +1357,7 @@
       "description": "Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for AI. Compare performance of GPT, Claude, Gemini, DeepSeek, and more. Simple declarative configs with command line and CI/CD integration.  Used by OpenAI and Anthropic.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -1438,7 +1438,7 @@
       "description": "Biologically-inspired memory for AI agents. Decay, retrieval strengthening, consolidation. Zero runtime deps, SQLite, MCP. Benchmarked retrieval with an opt-in hosted TypeSafe Jev reranker.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -1520,7 +1520,7 @@
       "description": "A free, open-source Obsidian plugin that makes your vault smarter: better search, an interactive knowledge graph, and an AI assistant that knows your notes.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -1595,7 +1595,7 @@
       "description": "Apache Doris is a real-time analytics and hybrid search database for AI agents.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -1876,7 +1876,7 @@
       "description": "The self-hosted AI studio: local video, image, music, voice, LoRA training, coding swarms, RAG and screen agents on one GPU, driven from the Studio or by your coding agent (Claude Code, Cursor, Codex, OpenClaw) through MCP and skills.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -1973,7 +1973,7 @@
       "description": "AI-Native document parser: PDF, Office & images \u2192 clean Markdown with LaTeX, tables & OCR. Zero-dependency CLI & skill for Claude Code, Cursor & AI agents.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -2156,7 +2156,7 @@
       "description": "The local-first LLM Wiki: open-source knowledge graph builder, RAG knowledge base, and agent memory store. Built on Andrej Karpathy's pattern. An Obsidian alternative for personal knowledge management, AI second brain, and durable Claude Code / Codex / OpenClaw memory.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",

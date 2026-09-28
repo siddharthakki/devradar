@@ -1,7 +1,7 @@
 {
   "category": "Local LLM Engines",
   "count": 24,
-  "updated_at": "2026-09-28T10:03:03.917467+00:00",
+  "updated_at": "2026-09-28T10:50:47.540139+00:00",
   "repositories": [
     {
       "full_name": "Helldez/BigMoeOnEdge",
@@ -10,7 +10,7 @@
       "description": "Run MoE models bigger than your RAM. Frontier-size MoE on a 12 GB phone, lossless, on stock llama.cpp",
       "category": "Local LLM Engines",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -90,7 +90,7 @@
       "description": "StatsPAI is the first Agent-native Python library for causal inference and applied econometrics \u2014 unified API, broad cross-method coverage, structured result objects, machine-readable schemas, Skills, an MCP server, and R/Stata parity validation.",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -356,7 +356,7 @@
       "description": "LLM KV cache compression made easy",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -432,7 +432,7 @@
       "description": "A programmable Mixture-of-Models router for heterogeneous LLM inference",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -514,7 +514,7 @@
       "description": "Community maintained hardware plugin for vLLM on Huawei Ascend",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to TGI (High-throughput PagedAttention server)",
       "replaces": [
         "tgi",
@@ -594,7 +594,7 @@
       "description": "LLM inference in C/C++",
       "category": "Local LLM Engines",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama (Raw C/C++ inference runtime)",
       "replaces": [
         "ollama",
@@ -666,7 +666,7 @@
       "description": "Mooncake is the serving platform for Kimi, a leading LLM service provided by Moonshot AI.",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -747,7 +747,7 @@
       "description": "Route, manage, and analyze your LLM requests across multiple providers with a unified API interface.",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -899,7 +899,7 @@
       "description": "Infrastructure for continually self\u2011improving agents",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -1167,7 +1167,7 @@
       "description": "\ud83e\udd17 Optimum Intel: Accelerate inference with Intel optimization tools",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -1248,7 +1248,7 @@
       "description": "A streamlined and customizable framework for efficient large model (LLM, VLM, AIGC) evaluation and performance benchmarking.",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -1312,7 +1312,7 @@
       "description": "An enterprise AI workspace for model routing, multimodal chat, files, tools, billing, identity, and operations.",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -1483,7 +1483,7 @@
       "description": "A Pure Rust based LLM, VLM, VLA, TTS, OCR Inference Engine, powering by Candle & Rust. Alternate to your llama.cpp but much more simpler and cleaner..",
       "category": "Local LLM Engines",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -1575,7 +1575,7 @@
       "description": "High-performance, privacy-first on-device AI inference library for React Native, powered by PyTorch's ExecuTorch runtime",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to pushing to GitHub (Run GitHub Actions locally in Docker)",
       "replaces": [
         "github-actions"
@@ -1661,7 +1661,7 @@
       "description": "A general-purpose API load testing platform that supports LLM services\u3001A2A/MCP services and business HTTP interfaces, enabling one-click performance testing, result comparison, and AI-powered intelligent analysis and summarization. \u4e00\u7ad9\u5f0f\u901a\u7528 API \u538b\u6d4b\u5e73\u53f0\uff0c\u652f\u6301\u5927\u6a21\u578b\u63a8\u7406\u4e1a/\u52a1 HTTP \u63a5\u53e3\u3001A2A/MCP\u670d\u52a1\uff0c\u4e00\u952e\u5b8c\u6210\u6027\u80fd\u6d4b\u8bd5\u3001\u7ed3\u679c\u5bf9\u6bd4\u4e0e AI \u667a\u80fd\u5206\u6790\u603b\u7ed3",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -1823,7 +1823,7 @@
       "description": "LLM Agent Framework in ComfyUI includes MCP sever, Omost,GPT-sovits, ChatTTS,GOT-OCR2.0, and FLUX prompt nodes,access to Feishu,discord,and adapts to all llms with similar openai / aisuite interfaces, such as o1,ollama, gemini, grok, qwen, GLM, deepseek, kimi,doubao. Adapted to local llms, vlm, gguf such as llama-3.3 Janus-Pro, Linkage graphRAG",
       "category": "Local LLM Engines",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
       "replaces": [
         "automatic1111"
@@ -1916,7 +1916,7 @@
       "description": "Java 8+ agentic SDK: unified LLM access (OpenAI/Anthropic/DashScope/Doubao/DeepSeek...), Tool Calling, MCP, RAG, Agent Runtime, and a built-in Coding Agent CLI/TUI/ACP.",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",

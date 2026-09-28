@@ -357,7 +357,7 @@ def generate_architectural_verdict(repo, category, capabilities, health):
     elif "byok-cloud" in capabilities["deployment"]:
         gotchas = "Cloud dependency or external API keys required; not fully self-contained offline."
     else:
-        gotchas = "Minimal hardware footprint; verify compatibility with your target language stack."
+        gotchas = ""
 
     # 3. Direct Competitor Comparison
     comparison = ""

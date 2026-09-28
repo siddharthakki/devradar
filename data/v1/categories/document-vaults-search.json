@@ -1,7 +1,7 @@
 {
   "category": "Document Vaults & Search",
   "count": 1,
-  "updated_at": "2026-09-28T10:03:03.917467+00:00",
+  "updated_at": "2026-09-28T10:50:47.540139+00:00",
   "repositories": [
     {
       "full_name": "manticoresoftware/manticoresearch",
@@ -10,7 +10,7 @@
       "description": "Open-source search database for full-text, vector, and hybrid search with real-time indexing and SQL.",
       "category": "Document Vaults & Search",
       "verdict": "High-velocity open-source project delivering focused capabilities for document vaults & search.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Elastic / Notion (Private self-hosted search engine)",
       "replaces": [
         "notion",

@@ -143,3 +143,108 @@ export function parseNaturalLanguage(raw) {
 
   return { cleanText: text, filters };
 }
+
+/**
+ * Client-Side Hardware Specs Sniffer
+ * Probes browser APIs (Navigator, WebGL, DeviceMemory) to detect local hardware tier.
+ */
+export function detectHardwareSpecs() {
+  const specs = {
+    platform: 'Unknown OS',
+    cores: (typeof navigator !== 'undefined' && navigator.hardwareConcurrency) || 4,
+    ramGB: (typeof navigator !== 'undefined' && navigator.deviceMemory) || 8,
+    gpu: 'Integrated Graphics',
+    isAppleSilicon: false,
+    isNvidia: false,
+    tier: 'Minimal CPU',
+    tierName: 'Minimal CPU',
+    label: 'Standard CPU'
+  };
+
+  if (typeof navigator === 'undefined') return specs;
+
+  // 1. Platform Detection
+  const ua = navigator.userAgent || '';
+  const plat = navigator.platform || '';
+  if (/Mac/i.test(plat) || /Macintosh/i.test(ua)) {
+    specs.platform = 'macOS';
+  } else if (/Win/i.test(plat) || /Windows/i.test(ua)) {
+    specs.platform = 'Windows';
+  } else if (/Linux/i.test(plat) || /Linux/i.test(ua)) {
+    specs.platform = 'Linux';
+  }
+
+  // 2. WebGL GPU Sniffing
+  if (typeof document !== 'undefined') {
+    try {
+      const canvas = document.createElement('canvas');
+      const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+      if (gl) {
+        const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+        if (debugInfo) {
+          specs.gpu = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL) || 'Integrated Graphics';
+        }
+      }
+    } catch (e) {
+      // WebGL blocked
+    }
+  }
+
+  // 3. Classify Acceleration Tier
+  const gpuLower = specs.gpu.toLowerCase();
+  if (gpuLower.includes('apple') || (specs.platform === 'macOS' && (gpuLower.includes('metal') || !gpuLower.includes('intel')))) {
+    specs.isAppleSilicon = true;
+    specs.tier = '8GB Unified / Metal';
+    specs.tierName = 'Apple Silicon (Metal)';
+    specs.label = 'Apple Silicon (Metal)';
+  } else if (gpuLower.includes('nvidia') || gpuLower.includes('geforce') || gpuLower.includes('rtx') || gpuLower.includes('quadro')) {
+    specs.isNvidia = true;
+    if (gpuLower.includes('3090') || gpuLower.includes('4090') || gpuLower.includes('a100') || gpuLower.includes('h100') || gpuLower.includes('a6000') || specs.ramGB >= 32) {
+      specs.tier = '24GB+ CUDA VRAM';
+      specs.tierName = 'Heavy CUDA (24GB+)';
+      specs.label = 'NVIDIA 24GB+ CUDA';
+    } else {
+      specs.tier = '16GB+ CUDA VRAM';
+      specs.tierName = 'CUDA (16GB)';
+      specs.label = 'NVIDIA CUDA';
+    }
+  } else if (gpuLower.includes('radeon') || gpuLower.includes('amd')) {
+    specs.tier = 'Minimal CPU';
+    specs.tierName = 'AMD Radeon';
+    specs.label = 'AMD GPU';
+  } else {
+    specs.tier = 'Minimal CPU';
+    specs.tierName = 'Minimal CPU';
+    specs.label = 'Minimal CPU';
+  }
+
+  return specs;
+}
+
+/**
+ * Checks whether a repository's hardware requirement runs on a given rig tier
+ */
+export function isRepoCompatibleWithRig(repoHardwareReq, rigTier) {
+  const req = (repoHardwareReq || '').toLowerCase();
+  const tier = (rigTier || '').toLowerCase();
+
+  // "Minimal CPU" runs on any machine
+  if (req.includes('minimal') || req.includes('cpu')) return true;
+
+  // "8GB Unified" requires Apple Silicon, high unified RAM, or CUDA
+  if (req.includes('unified') || req.includes('metal')) {
+    return tier.includes('metal') || tier.includes('unified') || tier.includes('cuda');
+  }
+
+  // "16GB+ CUDA" requires 16GB or 24GB CUDA
+  if (req.includes('16gb')) {
+    return tier.includes('16gb') || tier.includes('24gb');
+  }
+
+  // "24GB+ CUDA" requires 24GB CUDA
+  if (req.includes('24gb')) {
+    return tier.includes('24gb');
+  }
+
+  return true;
+}

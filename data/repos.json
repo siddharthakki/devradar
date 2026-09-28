@@ -9,7 +9,7 @@
       "description": "Run MoE models bigger than your RAM. Frontier-size MoE on a 12 GB phone, lossless, on stock llama.cpp",
       "category": "Local LLM Engines",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -89,7 +89,7 @@
       "description": "StatsPAI is the first Agent-native Python library for causal inference and applied econometrics \u2014 unified API, broad cross-method coverage, structured result objects, machine-readable schemas, Skills, an MCP server, and R/Stata parity validation.",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -355,7 +355,7 @@
       "description": "LLM KV cache compression made easy",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -431,7 +431,7 @@
       "description": "A programmable Mixture-of-Models router for heterogeneous LLM inference",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -513,7 +513,7 @@
       "description": "Community maintained hardware plugin for vLLM on Huawei Ascend",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to TGI (High-throughput PagedAttention server)",
       "replaces": [
         "tgi",
@@ -593,7 +593,7 @@
       "description": "LLM inference in C/C++",
       "category": "Local LLM Engines",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama (Raw C/C++ inference runtime)",
       "replaces": [
         "ollama",
@@ -665,7 +665,7 @@
       "description": "Mooncake is the serving platform for Kimi, a leading LLM service provided by Moonshot AI.",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -746,7 +746,7 @@
       "description": "Route, manage, and analyze your LLM requests across multiple providers with a unified API interface.",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -898,7 +898,7 @@
       "description": "Infrastructure for continually self\u2011improving agents",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -1166,7 +1166,7 @@
       "description": "\ud83e\udd17 Optimum Intel: Accelerate inference with Intel optimization tools",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -1247,7 +1247,7 @@
       "description": "Run multiple Claude Code and Codex sessions in parallel \u2014 a browser terminal grid that shows which agent needs you. Local, tmux-backed, MIT.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -1340,7 +1340,7 @@
       "description": "Smithers is an agentic workflow framework for defining workflows in simple TypeScript configuration files and executing them quickly, durably, and reliably",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -1424,7 +1424,7 @@
       "description": "Self-hosted TypeScript agent runtime with durable approvals and verifiable run records. Own it, approve it, audit it.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -1504,7 +1504,7 @@
       "description": "Open Multi-Agent Interactive Classroom \u2014 Get an immersive, multi-agent learning experience in just one click",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -1570,7 +1570,7 @@
       "description": "The open-source, multi-agent alternative to Claude Tag.  @ any agent, wherever work happens, they work alongside your team, learning as they go.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -1643,7 +1643,7 @@
       "description": "The open standard for agent coordination",
       "category": "Multi-Agent Frameworks",
       "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -1732,7 +1732,7 @@
       "description": "Not\u00a0only\u00a0memory\u00a0but\u00a0a\u00a0full\u00a0story.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -1952,7 +1952,7 @@
       "description": "Where terminal agents work together. Claude Code, Codex, Copilot CLI and pi on the same task, in one mission, each keeping its own TUI in a real terminal.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -2040,7 +2040,7 @@
       "description": "Multi-agent AI pipeline that turns one line of text into a finished short-form drama: script, cinematic storyboards, character-consistent video. Provider-agnostic (OpenAI/Claude, MJ, Minimax, Veo/Sora, fal, ComfyUI). MIT.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -2116,7 +2116,7 @@
       "description": "Multi-agent harness that runs Claude Code and Codex together as one system",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -2194,7 +2194,7 @@
       "description": "Deterministic multi-agent workflow orchestration for Pi",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -2261,7 +2261,7 @@
       "description": "MCP server for reusable prompt templates, multi-step workflow chains, and quality gates. Compose agentic workflows with an operator syntax; export as native skills to Claude Code, Cursor, OpenCode, and Gemini CLI.",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -2340,7 +2340,7 @@
       "description": "Cheapest Money-Saving Self-hosted AI agent workspace with tool calling, MCP, multi-model routing, sandboxed execution, multi-agent workflows, and LLM-authored 3D character animation rendered with Three.js.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -2498,7 +2498,7 @@
       "description": "AI-native IDE workspace for legal and document-heavy workflows: files, agents, plugins, built-in document editing with tracked changes, OCR, evidence chains. VS Code for lawyers.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -2587,7 +2587,7 @@
       "description": "A streamlined and customizable framework for efficient large model (LLM, VLM, AIGC) evaluation and performance benchmarking.",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -2651,7 +2651,7 @@
       "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Dify RAG (Deep document understanding retrieval engine)",
       "replaces": [
         "dify",
@@ -2737,7 +2737,7 @@
       "description": "Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for AI. Compare performance of GPT, Claude, Gemini, DeepSeek, and more. Simple declarative configs with command line and CI/CD integration.  Used by OpenAI and Anthropic.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -2818,7 +2818,7 @@
       "description": "AI pair programming in your terminal \u2014 one static binary, sub-ms startup, any model",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -2898,7 +2898,7 @@
       "description": "Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, automated evaluations, and production-ready dashboards.",
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
       "replaces": [
         "langchain",
@@ -2982,7 +2982,7 @@
       "description": "An open source, modular, lightweight, and extensible RAG application stack, designed for anyone and everyone.",
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
       "replaces": [
         "langchain",
@@ -3044,7 +3044,7 @@
       "description": "Biologically-inspired memory for AI agents. Decay, retrieval strengthening, consolidation. Zero runtime deps, SQLite, MCP. Benchmarked retrieval with an opt-in hosted TypeSafe Jev reranker.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -3126,7 +3126,7 @@
       "description": "An enterprise AI workspace for model routing, multimodal chat, files, tools, billing, identity, and operations.",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -3201,7 +3201,7 @@
       "description": "A free, open-source Obsidian plugin that makes your vault smarter: better search, an interactive knowledge graph, and an AI assistant that knows your notes.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -3276,7 +3276,7 @@
       "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
       "replaces": [
         "langchain",
@@ -3550,7 +3550,7 @@
       "description": "Apache Doris is a real-time analytics and hybrid search database for AI agents.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -3645,7 +3645,7 @@
       "description": "Open-source search database for full-text, vector, and hybrid search with real-time indexing and SQL.",
       "category": "Document Vaults & Search",
       "verdict": "High-velocity open-source project delivering focused capabilities for document vaults & search.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Elastic / Notion (Private self-hosted search engine)",
       "replaces": [
         "notion",
@@ -3737,7 +3737,7 @@
       "description": "HelixDB is an OLTP graph database with native vector and full-text search built in Rust on Object Storage.",
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
       "replaces": [
         "langchain",
@@ -3919,7 +3919,7 @@
       "description": "ORAcle database CDC (Change Data Capture)",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -4289,7 +4289,7 @@
       "description": "ArcadeDB Multi-Model Database, one DBMS that supports SQL, Cypher, Gremlin, HTTP/JSON, MongoDB and Redis. ArcadeDB is a conceptual fork of OrientDB, the first Multi-Model DBMS. ArcadeDB supports Vector Embeddings.",
       "category": "Vector Databases",
       "verdict": "High-performance vector storage optimized for similarity search and embedding retrieval.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Pinecone (Self-hosted vector similarity search)",
       "replaces": [
         "pinecone",
@@ -4382,7 +4382,7 @@
       "description": "Nornicdb is a distributed low-latency, Graph+Vector, Temporal MVCC with all sub-ms HNSW search, graph traversal, and writes. Using Neo4j Bolt/Cypher and qdrant's gRPC means you can switch with no changes while adding intelligent features like schemas, managed embeddings, reranking+llm, GPU accel, Auto-TLP, Policy-based Memory Decay, and MCP server.",
       "category": "Vector Databases",
       "verdict": "High-performance vector storage optimized for similarity search and embedding retrieval.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Pinecone (Self-hosted vector similarity search)",
       "replaces": [
         "pinecone",
@@ -4566,7 +4566,7 @@
       "description": "The AI-Native Search Database. Best for agent storage, it unifies vector, text, structured, and semi-structured data into a single engine. This all-in-one database makes agents smarter, easier to run, and more stable.",
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
       "replaces": [
         "langchain",
@@ -4651,7 +4651,7 @@
       "description": "Scalable graph analytics database powered by a multithreaded, vectorized temporal engine, written in Rust",
       "category": "Embedded & Edge AI",
       "verdict": "High-velocity open-source project delivering focused capabilities for embedded & edge ai.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to JetPack & Cloud Edge APIs (Ultra-low footprint AI)",
       "replaces": [
         "jetpack",
@@ -4732,7 +4732,7 @@
       "description": "For developers, who are building real-time data-driven applications, Redis is the preferred, fastest, and most feature-rich cache, data structure server, and document and vector query engine.",
       "category": "Databases & Storage",
       "verdict": "High-velocity open-source project delivering focused capabilities for databases & storage.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Cloud SQL (Embedded sovereign storage engine)",
       "replaces": [
         "cloudsql",
@@ -4897,7 +4897,7 @@
       "description": "Self-hosted, one-tab workbench for the whole training lifecycle: build Character/Concept/Style datasets (generate, scrape, or triage a big dump in the Image Bank), curate, caption, clean watermarks, then train LoRAs on five model families or a full Krea 2 model on a rented GPU, and rank checkpoints in a Test Studio. Free & local.",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
       "replaces": [
         "midjourney"
@@ -4984,7 +4984,7 @@
       "description": "High quality training free inpaint for every stable diffusion model. Supports ComfyUI",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
       "replaces": [
         "midjourney"
@@ -5067,7 +5067,7 @@
       "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
       "replaces": [
         "automatic1111"
@@ -5147,7 +5147,7 @@
       "description": "\u652f\u6301\u5b89\u88c5\u3001\u4e0b\u8f7d\u3001\u542f\u52a8\u548c\u7ba1\u7406\u591a\u79cd AI WebUI / \u8bad\u7ec3\u5de5\u5177\u7684\u4e00\u4f53\u5316\u9879\u76ee\uff0c\u63d0\u4f9b Installer\u3001\u6574\u5408\u5305\u4e0b\u8f7d\u5668\u3001Launcher\u3001CLI \u4e0e Colab / Kaggle Notebook\u3002",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
       "replaces": [
         "midjourney"
@@ -5235,7 +5235,7 @@
       "description": "Remove visible and invisible AI watermarks and provenance metadata from images and video. Python library and CLI for SynthID, C2PA, EXIF, IPTC, XMP, and common generative-AI marks.",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
       "replaces": [
         "midjourney"
@@ -5330,7 +5330,7 @@
       "description": "A front-end UI for ComfyUI made for beginner level users.",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
       "replaces": [
         "midjourney"
@@ -5418,7 +5418,7 @@
       "description": "Local-first AI image organizer and generative media library manager for ComfyUI, A1111, InvokeAI & more. Search huge output folders by prompt, model, LoRA, metadata or visual similarity.",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
       "replaces": [
         "midjourney"
@@ -5509,7 +5509,7 @@
       "description": "The self-hosted AI studio: local video, image, music, voice, LoRA training, coding swarms, RAG and screen agents on one GPU, driven from the Studio or by your coding agent (Claude Code, Cursor, Codex, OpenClaw) through MCP and skills.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -5606,7 +5606,7 @@
       "description": "A slightly opinionated Nix flake for ComfyUI with curated custom nodes. Supports macOS (Apple Silicon) and Linux with CUDA.",
       "category": "Generative Image/Video",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
       "replaces": [
         "automatic1111"
@@ -5687,7 +5687,7 @@
       "description": "CLI for using ComfyUI",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
       "replaces": [
         "midjourney"
@@ -5765,7 +5765,7 @@
       "description": "Nodes for using ComfyUI as a backend for external tools. Send and receive images directly without filesystem upload/download.",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
       "replaces": [
         "automatic1111"
@@ -5837,7 +5837,7 @@
       "description": "Nodes for better inpainting with ComfyUI: Fooocus inpaint model for SDXL, LaMa, MAT, and various other tools for pre-filling inpaint & outpaint areas.",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
       "replaces": [
         "automatic1111"
@@ -5911,7 +5911,7 @@
       "description": "Making ComfyUI more comfortable!",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
       "replaces": [
         "midjourney"
@@ -5984,7 +5984,7 @@
       "description": "The cleanest, responsive AI workspace. Run highly tuned image and video workflows flawlessly from your desktop or your phone. Built on ComfyUI.",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
       "replaces": [
         "midjourney"
@@ -6065,7 +6065,7 @@
       "description": "SwarmUI (formerly StableSwarmUI), A Modular Stable Diffusion Web-User-Interface, with an emphasis on making powertools easily accessible, high performance, and extensibility.",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
       "replaces": [
         "midjourney"
@@ -6148,7 +6148,7 @@
       "description": "\u65e5\u82f1\u97f3\u58f0\u4e2d\u6587\u5316\u5de5\u5177\uff1a\u8bc6\u522b\u3001\u7ffb\u8bd1\u3001\u97f3\u8272\u514b\u9686\u914d\u97f3\u3001\u6279\u91cf\u5904\u7406\u4e0e\u540c\u540d\u5b57\u5e55\u5bfc\u51fa\uff1b\u652f\u6301\u53cc\u8bed\u6df7\u97f3\u3001RTF \u7a7a\u95f4\u5904\u7406\u3001\u9010\u53e5\u97f3\u91cf\u63a7\u5236\u53ca\u4eba\u58f0\u5206\u79bb\u3002Japanese/English audio \u2192 Chinese dubbing & subtitles. Voice cloning, batch processing, subtitle-only export, bilingual mixing, RTF spatial processing, per-line gain/mute & vocal separation.",
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
       "replaces": [
         "elevenlabs",
@@ -6239,7 +6239,7 @@
       "description": "She's the AI agent you come home to.",
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
       "replaces": [
         "elevenlabs",
@@ -6335,7 +6335,7 @@
       "description": "Natural voice conversations with Claude Code",
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
       "replaces": [
         "elevenlabs",
@@ -6508,7 +6508,7 @@
       "description": "Vui Nano \u2014 a small, context-aware text-to-speech model trained on real conversations. 219M active params (305M total), Apache 2.0, voice cloning, streaming, runs on CPU (dependency-free C build). Ships with a full real-time voice assistant: WebRTC, ASR, local LLM, OpenAI Realtime API compatible.",
       "category": "Audio & Voice Synthesis",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
       "replaces": [
         "elevenlabs",
@@ -6606,7 +6606,7 @@
       "description": "A mental-model-first field guide to Audio AI \u2014 from raw waveforms to production voice systems. Covers ASR, TTS, audio classification, Transformer architectures (CTC/Seq2Seq), fine-tuning, and real-world pipelines like voice assistants and meeting transcription. Bilingual (EN/FA).",
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
       "replaces": [
         "elevenlabs",
@@ -6704,7 +6704,7 @@
       "description": "Gradio WebUI for creators and developers, featuring key TTS (Edge-TTS, kokoro) and zero-shot Voice Cloning (E2 & F5-TTS, CosyVoice), with Whisper audio processing, YouTube download, Demucs vocal isolation, and multilingual translation.",
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
       "replaces": [
         "elevenlabs",
@@ -7456,7 +7456,7 @@
       "description": "Pure-Rust, CPU-only OCR engine for Baidu Unlimited-OCR (a DeepSeek-OCR-derived 3B MoE VLM). Five-model zoo, custom int8 kernels, no ML framework, no Python, no GPU.",
       "category": "Vision & OCR",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
       "replaces": [
         "google-vision",
@@ -7545,7 +7545,7 @@
       "description": "A Pure Rust based LLM, VLM, VLA, TTS, OCR Inference Engine, powering by Candle & Rust. Alternate to your llama.cpp but much more simpler and cleaner..",
       "category": "Local LLM Engines",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -7637,7 +7637,7 @@
       "description": "High-performance, privacy-first on-device AI inference library for React Native, powered by PyTorch's ExecuTorch runtime",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to pushing to GitHub (Run GitHub Actions locally in Docker)",
       "replaces": [
         "github-actions"
@@ -7723,7 +7723,7 @@
       "description": "HunyuanOCR-1.5: Making Lightweight OCR VLMs Faster and Better",
       "category": "Vision & OCR",
       "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
       "replaces": [
         "google-vision",
@@ -7797,7 +7797,7 @@
       "description": "AI-Native document parser: PDF, Office & images \u2192 clean Markdown with LaTeX, tables & OCR. Zero-dependency CLI & skill for Claude Code, Cursor & AI agents.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -7892,7 +7892,7 @@
       "description": "A general-purpose API load testing platform that supports LLM services\u3001A2A/MCP services and business HTTP interfaces, enabling one-click performance testing, result comparison, and AI-powered intelligent analysis and summarization. \u4e00\u7ad9\u5f0f\u901a\u7528 API \u538b\u6d4b\u5e73\u53f0\uff0c\u652f\u6301\u5927\u6a21\u578b\u63a8\u7406\u4e1a/\u52a1 HTTP \u63a5\u53e3\u3001A2A/MCP\u670d\u52a1\uff0c\u4e00\u952e\u5b8c\u6210\u6027\u80fd\u6d4b\u8bd5\u3001\u7ed3\u679c\u5bf9\u6bd4\u4e0e AI \u667a\u80fd\u5206\u6790\u603b\u7ed3",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -8226,7 +8226,7 @@
       "description": "LLM Agent Framework in ComfyUI includes MCP sever, Omost,GPT-sovits, ChatTTS,GOT-OCR2.0, and FLUX prompt nodes,access to Feishu,discord,and adapts to all llms with similar openai / aisuite interfaces, such as o1,ollama, gemini, grok, qwen, GLM, deepseek, kimi,doubao. Adapted to local llms, vlm, gguf such as llama-3.3 Janus-Pro, Linkage graphRAG",
       "category": "Local LLM Engines",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
       "replaces": [
         "automatic1111"
@@ -8319,7 +8319,7 @@
       "description": "Examples and guides for using the VLM Run API",
       "category": "Vision & OCR",
       "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
       "replaces": [
         "google-vision",
@@ -8747,7 +8747,7 @@
       "description": "Beautiful, AI-native markdown IDE and LLM wiki",
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",
@@ -8842,7 +8842,7 @@
       "description": "Local AI-powered document search and editing with first-in-class hybrid retrieval, LLM answers, WebUI, REST API and MCP support for AI clients.",
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
       "replaces": [
         "langchain",
@@ -8935,7 +8935,7 @@
       "description": "Persistent memory for Claude Code and 6 other CLI agents, stored as plain markdown in your Obsidian vault. Stop re-explaining your projects, decisions and people every session. 45 commands: hybrid semantic search, self-rewriting notes, key-less web research, and scheduled agents that maintain the vault while you sleep.",
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",
@@ -9218,7 +9218,7 @@
       "description": "\u6211\u7684\u7b2c\u4e8c\u5927\u8111 second brain\uff0c\u6211\u7684\u6570\u5b57\u82b1\u56ed digital garden\uff0c\u7528obsidian\u53cc\u94fe\u7b14\u8bb0\u8f6f\u4ef6\u5199\u4f5c\u800c\u6210",
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",
@@ -9309,7 +9309,7 @@
       "description": "Harness engineering applied to knowledge production: a self-evolving multi-agent newsroom that turns your documents into a cross-linked markdown wiki. A \"reground\" loop pulls published pages back in before they go stale \u2014 writer \u2260 reviewer, local-first, a structured alternative to RAG.",
       "category": "Second Brain & PKM",
       "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",
@@ -9406,7 +9406,7 @@
       "description": "An AI second brain that maintains itself. Full guide, starter vault, agent skills and scripts for a self-organizing knowledge base in Claude Code and Obsidian.",
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",
@@ -9490,7 +9490,7 @@
       "description": "Self-maintaining, Obsidian-compatible knowledge base for pi \u2014 turn raw sources into an interlinked wiki that compounds. Native Open Knowledge Format (OKF) v0.2.",
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",
@@ -9583,7 +9583,7 @@
       "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
       "category": "Second Brain & PKM",
       "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",
@@ -9680,7 +9680,7 @@
       "description": "A structured knowledge layer in plain text.",
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",
@@ -9774,7 +9774,7 @@
       "description": "More than just Karpathy\u2019s LLM Wiki, 100% local with Ollama. Drop Markdown notes \u2192 AI extracts concepts \u2192 your Obsidian wiki auto-links and grows. Zero sharing. Your notes stay yours.",
       "category": "Second Brain & PKM",
       "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",
@@ -9872,7 +9872,7 @@
       "description": "Give your AI a real, persistent memory. The open-source system plus templates that turn an Obsidian vault into your AI's working memory. No vector database, just markdown.",
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",
@@ -9967,7 +9967,7 @@
       "description": "An always-on second brain you talk to. Voice notes in Telegram \u2192 typed, linked knowledge in your Obsidian vault. Runs 24/7 on the Claude subscription you already have.",
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",
@@ -10058,7 +10058,7 @@
       "description": "The local-first LLM Wiki: open-source knowledge graph builder, RAG knowledge base, and agent memory store. Built on Andrej Karpathy's pattern. An Obsidian alternative for personal knowledge management, AI second brain, and durable Claude Code / Codex / OpenClaw memory.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
@@ -10155,7 +10155,7 @@
       "description": "Calimero - Peer-to-peer application platform with local-first governance, CRDT state sync, and WASM execution.",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -10229,7 +10229,7 @@
       "description": "Make your JSON data collaborative and version-controlled with CRDTs",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -10311,7 +10311,7 @@
       "description": "\ud83d\udddd\ufe0f\ud83d\udc1d\u2728 Rust workspace for Keyhive and related crates",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -10393,7 +10393,7 @@
       "description": "The local-first database that runs on every JS runtime and replicates with your existing backend - no vendor, no lock-in - https://rxdb.info/",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to PouchDB / CouchDB (Reactive local-first client database)",
       "replaces": [
         "pouchdb",
@@ -10488,7 +10488,7 @@
       "description": "Officially listed, pure-Go port of the Yjs CRDT, byte-for-byte V1/V2 wire-compatible with yjs@13.6.31 (cross-language fixtures, both directions). UndoManager, snapshots, subdocuments, cursors, GC. yserve: single-binary Hocuspocus-compatible server with SQLite persistence and document versioning. iOS/Android via gomobile. No CGO.",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -10674,7 +10674,7 @@
       "description": "TypeScript library and local-first platform",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -10755,7 +10755,7 @@
       "description": "A lightning-fast, modern, local-first SSH/SFTP/Serial client. Real-time E2EE sync, Team vaults, live sharing, plugins and more. Open-source Termius alternative for Windows, Linux, macOS & Android. Built with Rust/Tauri.",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -10854,7 +10854,7 @@
       "description": "Peer-to-peer, editor-agnostic collaborative editing of local text files.",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -10937,7 +10937,7 @@
       "description": "All the things a panda needs",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -11019,7 +11019,7 @@
       "description": "A reactive data store & sync engine.",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -11107,7 +11107,7 @@
       "description": "\ud83e\udde9 Content editing tech stack for the web - BlockSuite is a toolkit for building editors and collaborative applications.",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -11197,7 +11197,7 @@
       "description": "The beginning of a new runtime model",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -11284,7 +11284,7 @@
       "description": " Local-first collaboration SDK for React, Vue, and Svelte. Batteries-included: Rich text, undo/redo, cursors, and presence.",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -11371,7 +11371,7 @@
       "description": "json-joy is a library that implements cutting-edge real-time and collaborative editing algorithms and utilities for JSON data models, with a focus on developing the JSON CRDT (Conflict-free Replicated Data Type) specification and implementation.",
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Firebase (Decentralized state synchronization)",
       "replaces": [
         "firebase",
@@ -11468,7 +11468,7 @@
       "description": "Robust, fast, intuitive plain text accounting tool with CLI, TUI and web interfaces.",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -11554,7 +11554,7 @@
       "description": "TUI & CLI package manager for Termux on Android. Browse, build, and install community tools from source and binary source \u2014 offline, SHA256-verified, no root. Like AUR but for Termux.",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -11648,7 +11648,7 @@
       "description": "TTT Editor (Terminal Text Tool): A real alternative to VS Code, Zed, and Sublime that runs in your terminal. A TUI that feels like GUI. Single binary, zero config.",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -11745,7 +11745,7 @@
       "description": "Keep track of your \ud83d\udcb5, \ud83d\udd58, \ud83d\udc16, \ud83d\udc04, \ud83c\udf7b on your command line with the plain text accounting tool of the future! \ud83d\ude80",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -11826,7 +11826,7 @@
       "description": "\ud83d\udc0d CLI tool to find and delete unused Python virtual environments (.venv, poetry, conda, pipenv, uv). Reclaim disk space effortlessly \u2014 supports bulk delete, size reporting, and pycache cleanup.",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -11917,7 +11917,7 @@
       "description": "Visual testing tool for MCP servers",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -11998,7 +11998,7 @@
       "description": "A prior-art search for your code ideas \u2014 has this dev tool already been shipped?",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -12088,7 +12088,7 @@
       "description": "A network diagnostic tool ",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -12182,7 +12182,7 @@
       "description": "Java 8+ agentic SDK: unified LLM access (OpenAI/Anthropic/DashScope/Doubao/DeepSeek...), Tool Calling, MCP, RAG, Agent Runtime, and a built-in Coding Agent CLI/TUI/ACP.",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
         "ollama",
@@ -12277,7 +12277,7 @@
       "description": "A TUI tool to browse, stream, and download anime in PT-BR and EN",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -12371,7 +12371,7 @@
       "description": "A cinematic Git commit replay tool for the terminal, turning your Git history into a living, animated story.",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -12465,7 +12465,7 @@
       "description": "A cross-platform, interactive TUI tool to manage, compile, and flash microcontroller projects using arduino-cli, PlatformIO, and ESP-IDF.",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -12538,7 +12538,7 @@
       "description": "FuXi is a fast, self-contained AI coding agent that lives in your terminal \u2014 edit code, run commands, and drive tools, with cost-aware routing across LLM providers.",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -12629,7 +12629,7 @@
       "description": "The easiest way to get started with OpenTUI is by using create-tui. This CLI tool enables you to quickly start building a new OpenTUI application, with everything set up for you.",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"
@@ -12705,7 +12705,7 @@
       "description": "A lightweight, fast, terminal-based markdown research tool inspired by Obsidian",
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
       "replaces": [
         "gui"

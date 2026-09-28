@@ -1,7 +1,7 @@
 {
   "category": "RAG Engines",
   "count": 8,
-  "updated_at": "2026-09-28T10:03:03.917467+00:00",
+  "updated_at": "2026-09-28T10:50:47.540139+00:00",
   "repositories": [
     {
       "full_name": "comet-ml/opik",
@@ -10,7 +10,7 @@
       "description": "Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, automated evaluations, and production-ready dashboards.",
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
       "replaces": [
         "langchain",
@@ -94,7 +94,7 @@
       "description": "An open source, modular, lightweight, and extensible RAG application stack, designed for anyone and everyone.",
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
       "replaces": [
         "langchain",
@@ -156,7 +156,7 @@
       "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
       "replaces": [
         "langchain",
@@ -247,7 +247,7 @@
       "description": "HelixDB is an OLTP graph database with native vector and full-text search built in Rust on Object Storage.",
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
       "replaces": [
         "langchain",
@@ -431,7 +431,7 @@
       "description": "The AI-Native Search Database. Best for agent storage, it unifies vector, text, structured, and semi-structured data into a single engine. This all-in-one database makes agents smarter, easier to run, and more stable.",
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
       "replaces": [
         "langchain",
@@ -516,7 +516,7 @@
       "description": "Local AI-powered document search and editing with first-in-class hybrid retrieval, LLM answers, WebUI, REST API and MCP support for AI clients.",
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
       "replaces": [
         "langchain",

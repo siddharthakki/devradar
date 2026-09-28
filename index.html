@@ -79,6 +79,10 @@
         </div>
 
         <div class="flex items-center gap-2 sm:gap-3 text-xs font-mono text-textMuted">
+          <button id="openRigModalBtn" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-borderDark bg-cardDark text-textMain hover:border-accentPrimary hover:text-accentSecondary transition text-xs font-mono" title="Auto-detect system specs and filter compatible tools">
+            <span>⚡</span> <span id="rigNavLabel">My Rig</span>
+          </button>
+
           <button id="openAdvisorBtn" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-accentPrimary/40 bg-accentPrimary/10 text-accentSecondary hover:bg-accentPrimary/20 hover:border-accentPrimary transition text-xs font-mono font-semibold shadow-sm">
             <span>✨</span> <span>Stack Advisor</span>
           </button>
@@ -187,6 +191,64 @@
     </div>
   </main>
 
+  <!-- MY RIG PROFILER MODAL -->
+  <div id="rigModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="bg-cardDark border border-borderDark rounded-2xl w-full max-w-lg overflow-hidden shadow-2xl flex flex-col">
+      <!-- Header -->
+      <div class="px-5 py-4 border-b border-borderDark flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <span class="text-xl">⚡</span>
+          <div>
+            <h2 class="text-sm font-bold text-textMain font-mono">My Rig Hardware Profiler</h2>
+            <p class="text-[11px] text-textMuted">Client-side browser telemetry & acceleration tier</p>
+          </div>
+        </div>
+        <button id="closeRigBtn" class="text-textMuted hover:text-textMain text-xl px-2 py-1 rounded transition">&times;</button>
+      </div>
+
+      <!-- Spec readout -->
+      <div class="p-5 space-y-4 font-mono text-xs">
+        <div class="grid grid-cols-2 gap-3">
+          <div class="p-3 rounded-xl bg-radarDark border border-borderDark space-y-1">
+            <span class="text-[10px] text-textMuted uppercase tracking-wider block">Operating System</span>
+            <span id="rigOsVal" class="text-textMain font-bold text-xs">Detecting...</span>
+          </div>
+          <div class="p-3 rounded-xl bg-radarDark border border-borderDark space-y-1">
+            <span class="text-[10px] text-textMuted uppercase tracking-wider block">Processor Cores</span>
+            <span id="rigCoresVal" class="text-textMain font-bold text-xs">Detecting...</span>
+          </div>
+          <div class="p-3 rounded-xl bg-radarDark border border-borderDark space-y-1">
+            <span class="text-[10px] text-textMuted uppercase tracking-wider block">Estimated Memory</span>
+            <span id="rigRamVal" class="text-textMain font-bold text-xs">Detecting...</span>
+          </div>
+          <div class="p-3 rounded-xl bg-radarDark border border-borderDark space-y-1">
+            <span class="text-[10px] text-textMuted uppercase tracking-wider block">Inference Ceiling</span>
+            <span id="rigTierVal" class="text-accentSecondary font-bold text-xs">Detecting...</span>
+          </div>
+        </div>
+
+        <div class="p-3 rounded-xl bg-radarDark border border-borderDark space-y-1">
+          <span class="text-[10px] text-textMuted uppercase tracking-wider block">Graphics Accelerator (WebGL Unmasked)</span>
+          <span id="rigGpuVal" class="text-textMain font-semibold text-[11px] block truncate">Detecting...</span>
+        </div>
+
+        <div class="pt-2 flex flex-col sm:flex-row gap-2">
+          <button id="toggleRigFilterBtn" class="flex-1 py-2 px-3 rounded-xl bg-accentPrimary text-radarDark font-bold hover:opacity-90 transition text-xs flex items-center justify-center gap-1.5 shadow">
+            <span id="rigFilterBtnIcon">⚡</span>
+            <span id="rigFilterBtnText">Filter to My Machine</span>
+          </button>
+          <button id="askAdvisorWithRigBtn" class="py-2 px-3 rounded-xl border border-borderDark bg-cardDark hover:border-accentPrimary text-textMain transition text-xs flex items-center justify-center gap-1.5">
+            <span>🧠</span> <span>Ask Stack Advisor</span>
+          </button>
+        </div>
+
+        <p class="text-[10px] text-textMuted/60 text-center leading-relaxed">
+          🔒 100% private. Hardware queries stay entirely in your browser memory and are never transmitted to external analytics.
+        </p>
+      </div>
+    </div>
+  </div>
+
   <!-- STACK ADVISOR MODAL (POWERED BY PUTER AI) -->
   <div id="advisorModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
     <div class="bg-cardDark border border-borderDark rounded-2xl w-full max-w-2xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
@@ -247,13 +309,21 @@
   </div>
 
   <script type="module">
-    import { TAXONOMY, classifyRepo, computeBreakoutScore, parseNaturalLanguage } from './devradar-core.js';
+    import { TAXONOMY, classifyRepo, computeBreakoutScore, parseNaturalLanguage, detectHardwareSpecs, isRepoCompatibleWithRig } from './devradar-core.js';
 
     let repositories = [];
     let bookmarks = JSON.parse(localStorage.getItem('devradar-bookmarks') || '[]');
     let showBookmarksOnly = false;
     let activeChips = [];
     let parsedNl = { cleanText: '', filters: {} };
+    let currentRig = detectHardwareSpecs();
+    let filterByRig = false;
+
+    // Update Nav Rig label on startup
+    if (currentRig && currentRig.label) {
+      const navLabel = document.getElementById('rigNavLabel');
+      if (navLabel) navLabel.textContent = currentRig.label;
+    }
 
     // Ghost placeholder rotator
     const ghostExamples = [
@@ -551,6 +621,11 @@
       let filtered = repositories.filter(r => {
         if (showBookmarksOnly && !bookmarks.includes(r.full_name || r.name)) return false;
 
+        // Apply Hardware Rig Compatibility Filter
+        if (filterByRig && !isRepoCompatibleWithRig(r.hardware_req, currentRig.tier)) {
+          return false;
+        }
+
         // Apply Active Filter Chips
         for (const chip of activeChips) {
           const k = chip.key.toLowerCase();
@@ -708,6 +783,78 @@ Task:
       parsedNl = parseNaturalLanguage(searchInput.value);
       updateNlBanner();
       render();
+    });
+
+    // Rig Profiler Modal Logic
+    const rigModal = document.getElementById('rigModal');
+    const openRigModalBtn = document.getElementById('openRigModalBtn');
+    const closeRigBtn = document.getElementById('closeRigBtn');
+    const toggleRigFilterBtn = document.getElementById('toggleRigFilterBtn');
+    const askAdvisorWithRigBtn = document.getElementById('askAdvisorWithRigBtn');
+
+    function populateRigModal() {
+      if (!currentRig) currentRig = detectHardwareSpecs();
+      const osEl = document.getElementById('rigOsVal');
+      const coresEl = document.getElementById('rigCoresVal');
+      const ramEl = document.getElementById('rigRamVal');
+      const tierEl = document.getElementById('rigTierVal');
+      const gpuEl = document.getElementById('rigGpuVal');
+
+      if (osEl) osEl.textContent = currentRig.platform;
+      if (coresEl) coresEl.textContent = `${currentRig.cores} Cores`;
+      if (ramEl) ramEl.textContent = `~${currentRig.ramGB} GB`;
+      if (tierEl) tierEl.textContent = currentRig.tier;
+      if (gpuEl) {
+        gpuEl.textContent = currentRig.gpu || 'Integrated';
+        gpuEl.title = currentRig.gpu || 'Integrated';
+      }
+      updateRigFilterBtn();
+    }
+
+    function updateRigFilterBtn() {
+      const filterBtn = document.getElementById('toggleRigFilterBtn');
+      const btnText = document.getElementById('rigFilterBtnText');
+      const btnIcon = document.getElementById('rigFilterBtnIcon');
+      const openRigBtn = document.getElementById('openRigModalBtn');
+      if (filterByRig) {
+        if (btnText) btnText.textContent = `Active: Filtered to ${currentRig.tier}`;
+        if (btnIcon) btnIcon.textContent = '✅';
+        if (filterBtn) filterBtn.className = 'flex-1 py-2 px-3 rounded-xl bg-emerald-500 text-radarDark font-bold hover:opacity-90 transition text-xs flex items-center justify-center gap-1.5 shadow';
+        if (openRigBtn) openRigBtn.classList.add('border-accentPrimary', 'text-accentSecondary', 'bg-accentPrimary/10');
+      } else {
+        if (btnText) btnText.textContent = `Filter to My Rig (${currentRig.tier})`;
+        if (btnIcon) btnIcon.textContent = '⚡';
+        if (filterBtn) filterBtn.className = 'flex-1 py-2 px-3 rounded-xl bg-accentPrimary text-radarDark font-bold hover:opacity-90 transition text-xs flex items-center justify-center gap-1.5 shadow';
+        if (openRigBtn) openRigBtn.classList.remove('border-accentPrimary', 'text-accentSecondary', 'bg-accentPrimary/10');
+      }
+    }
+
+    openRigModalBtn?.addEventListener('click', () => {
+      populateRigModal();
+      rigModal.classList.remove('hidden');
+    });
+
+    closeRigBtn?.addEventListener('click', () => {
+      rigModal.classList.add('hidden');
+    });
+
+    rigModal?.addEventListener('click', (e) => {
+      if (e.target === rigModal) rigModal.classList.add('hidden');
+    });
+
+    toggleRigFilterBtn?.addEventListener('click', () => {
+      filterByRig = !filterByRig;
+      updateRigFilterBtn();
+      rigModal.classList.add('hidden');
+      render();
+    });
+
+    askAdvisorWithRigBtn?.addEventListener('click', () => {
+      rigModal.classList.add('hidden');
+      advisorModal.classList.remove('hidden');
+      advisorInput.value = `Recommend local AI tools compatible with my ${currentRig.platform} machine (${currentRig.cores} cores, ${currentRig.ramGB}GB RAM, ${currentRig.tier})`;
+      advisorInput.focus();
+      submitAdvisorQuery();
     });
 
     // Initialize dataset

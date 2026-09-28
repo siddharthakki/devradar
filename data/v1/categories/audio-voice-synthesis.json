@@ -1,7 +1,7 @@
 {
   "category": "Audio & Voice Synthesis",
   "count": 15,
-  "updated_at": "2026-09-28T10:03:03.917467+00:00",
+  "updated_at": "2026-09-28T10:50:47.540139+00:00",
   "repositories": [
     {
       "full_name": "EveningStudy/asmr-dubber",
@@ -10,7 +10,7 @@
       "description": "\u65e5\u82f1\u97f3\u58f0\u4e2d\u6587\u5316\u5de5\u5177\uff1a\u8bc6\u522b\u3001\u7ffb\u8bd1\u3001\u97f3\u8272\u514b\u9686\u914d\u97f3\u3001\u6279\u91cf\u5904\u7406\u4e0e\u540c\u540d\u5b57\u5e55\u5bfc\u51fa\uff1b\u652f\u6301\u53cc\u8bed\u6df7\u97f3\u3001RTF \u7a7a\u95f4\u5904\u7406\u3001\u9010\u53e5\u97f3\u91cf\u63a7\u5236\u53ca\u4eba\u58f0\u5206\u79bb\u3002Japanese/English audio \u2192 Chinese dubbing & subtitles. Voice cloning, batch processing, subtitle-only export, bilingual mixing, RTF spatial processing, per-line gain/mute & vocal separation.",
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
       "replaces": [
         "elevenlabs",
@@ -101,7 +101,7 @@
       "description": "She's the AI agent you come home to.",
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
       "replaces": [
         "elevenlabs",
@@ -197,7 +197,7 @@
       "description": "Natural voice conversations with Claude Code",
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
       "replaces": [
         "elevenlabs",
@@ -370,7 +370,7 @@
       "description": "Vui Nano \u2014 a small, context-aware text-to-speech model trained on real conversations. 219M active params (305M total), Apache 2.0, voice cloning, streaming, runs on CPU (dependency-free C build). Ships with a full real-time voice assistant: WebRTC, ASR, local LLM, OpenAI Realtime API compatible.",
       "category": "Audio & Voice Synthesis",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
       "replaces": [
         "elevenlabs",
@@ -468,7 +468,7 @@
       "description": "A mental-model-first field guide to Audio AI \u2014 from raw waveforms to production voice systems. Covers ASR, TTS, audio classification, Transformer architectures (CTC/Seq2Seq), fine-tuning, and real-world pipelines like voice assistants and meeting transcription. Bilingual (EN/FA).",
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
       "replaces": [
         "elevenlabs",
@@ -566,7 +566,7 @@
       "description": "Gradio WebUI for creators and developers, featuring key TTS (Edge-TTS, kokoro) and zero-shot Voice Cloning (E2 & F5-TTS, CosyVoice), with Whisper audio processing, YouTube download, Demucs vocal isolation, and multilingual translation.",
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
       "replaces": [
         "elevenlabs",

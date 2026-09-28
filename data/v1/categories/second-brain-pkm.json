@@ -1,7 +1,7 @@
 {
   "category": "Second Brain & PKM",
   "count": 13,
-  "updated_at": "2026-09-28T10:03:03.917467+00:00",
+  "updated_at": "2026-09-28T10:50:47.540139+00:00",
   "repositories": [
     {
       "full_name": "SamurAIGPT/llm-wiki-agent",
@@ -97,7 +97,7 @@
       "description": "Beautiful, AI-native markdown IDE and LLM wiki",
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",
@@ -192,7 +192,7 @@
       "description": "Persistent memory for Claude Code and 6 other CLI agents, stored as plain markdown in your Obsidian vault. Stop re-explaining your projects, decisions and people every session. 45 commands: hybrid semantic search, self-rewriting notes, key-less web research, and scheduled agents that maintain the vault while you sleep.",
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",
@@ -383,7 +383,7 @@
       "description": "\u6211\u7684\u7b2c\u4e8c\u5927\u8111 second brain\uff0c\u6211\u7684\u6570\u5b57\u82b1\u56ed digital garden\uff0c\u7528obsidian\u53cc\u94fe\u7b14\u8bb0\u8f6f\u4ef6\u5199\u4f5c\u800c\u6210",
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",
@@ -474,7 +474,7 @@
       "description": "Harness engineering applied to knowledge production: a self-evolving multi-agent newsroom that turns your documents into a cross-linked markdown wiki. A \"reground\" loop pulls published pages back in before they go stale \u2014 writer \u2260 reviewer, local-first, a structured alternative to RAG.",
       "category": "Second Brain & PKM",
       "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",
@@ -571,7 +571,7 @@
       "description": "An AI second brain that maintains itself. Full guide, starter vault, agent skills and scripts for a self-organizing knowledge base in Claude Code and Obsidian.",
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",
@@ -655,7 +655,7 @@
       "description": "Self-maintaining, Obsidian-compatible knowledge base for pi \u2014 turn raw sources into an interlinked wiki that compounds. Native Open Knowledge Format (OKF) v0.2.",
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",
@@ -748,7 +748,7 @@
       "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
       "category": "Second Brain & PKM",
       "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",
@@ -845,7 +845,7 @@
       "description": "A structured knowledge layer in plain text.",
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",
@@ -939,7 +939,7 @@
       "description": "More than just Karpathy\u2019s LLM Wiki, 100% local with Ollama. Drop Markdown notes \u2192 AI extracts concepts \u2192 your Obsidian wiki auto-links and grows. Zero sharing. Your notes stay yours.",
       "category": "Second Brain & PKM",
       "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",
@@ -1037,7 +1037,7 @@
       "description": "Give your AI a real, persistent memory. The open-source system plus templates that turn an Obsidian vault into your AI's working memory. No vector database, just markdown.",
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",
@@ -1132,7 +1132,7 @@
       "description": "An always-on second brain you talk to. Voice notes in Telegram \u2192 typed, linked knowledge in your Obsidian vault. Runs 24/7 on the Claude subscription you already have.",
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
       "replaces": [
         "notion",

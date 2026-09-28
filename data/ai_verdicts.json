@@ -1,7 +1,7 @@
 {
   "brycewang-stanford/StatsPAI": {
     "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
     "replaces": [
       "ollama",
@@ -28,7 +28,7 @@
   },
   "NVIDIA/kvpress": {
     "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
     "replaces": [
       "ollama",
@@ -37,7 +37,7 @@
   },
   "vllm-project/semantic-router": {
     "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
     "replaces": [
       "ollama",
@@ -46,7 +46,7 @@
   },
   "Helldez/BigMoeOnEdge": {
     "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
     "replaces": [
       "ollama",
@@ -55,7 +55,7 @@
   },
   "vllm-project/vllm-ascend": {
     "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to TGI (High-throughput PagedAttention server)",
     "replaces": [
       "tgi",
@@ -64,7 +64,7 @@
   },
   "ggml-org/llama.cpp": {
     "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Ollama (Raw C/C++ inference runtime)",
     "replaces": [
       "ollama",
@@ -73,7 +73,7 @@
   },
   "kvcache-ai/Mooncake": {
     "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
     "replaces": [
       "ollama",
@@ -82,7 +82,7 @@
   },
   "theopenco/llmgateway": {
     "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
     "replaces": [
       "ollama",
@@ -100,7 +100,7 @@
   },
   "Human-Agent-Society/reef": {
     "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
     "replaces": [
       "ollama",
@@ -127,7 +127,7 @@
   },
   "huggingface/optimum-intel": {
     "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
     "replaces": [
       "ollama",
@@ -136,7 +136,7 @@
   },
   "smithersai/smithers": {
     "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -145,7 +145,7 @@
   },
   "oceanbase/powercontext": {
     "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -172,7 +172,7 @@
   },
   "yicheng47/runner": {
     "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -181,7 +181,7 @@
   },
   "ChrisChen667788/wind-comic": {
     "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -190,7 +190,7 @@
   },
   "mvschwarz/openrig": {
     "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -199,7 +199,7 @@
   },
   "THU-MAIC/OpenMAIC": {
     "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -208,7 +208,7 @@
   },
   "vekexasia/pi-extensible-workflows": {
     "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -217,7 +217,7 @@
   },
   "minipuft/claude-prompts-mcp": {
     "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
     "replaces": [
       "gui"
@@ -225,7 +225,7 @@
   },
   "xiayu1987/noobot": {
     "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -234,7 +234,7 @@
   },
   "receptron/mulmoterminal": {
     "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -243,7 +243,7 @@
   },
   "OpenPipe/ART": {
     "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -252,7 +252,7 @@
   },
   "Kohaku-Lab/KohakuTerrarium": {
     "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -261,7 +261,7 @@
   },
   "google-deepmind/meltingpot": {
     "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -270,7 +270,7 @@
   },
   "linagora/openrag": {
     "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
     "replaces": [
       "langchain",
@@ -279,7 +279,7 @@
   },
   "kitfunso/hippo-memory": {
     "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -288,7 +288,7 @@
   },
   "DEEIX-AI/DEEIX-Chat": {
     "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
     "replaces": [
       "ollama",
@@ -297,7 +297,7 @@
   },
   "s2b-dev/smart-second-brain": {
     "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -306,7 +306,7 @@
   },
   "infiniflow/ragflow": {
     "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Dify RAG (Deep document understanding retrieval engine)",
     "replaces": [
       "dify",
@@ -315,7 +315,7 @@
   },
   "vitali87/code-graph-rag": {
     "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
     "replaces": [
       "langchain",
@@ -333,7 +333,7 @@
   },
   "zeweihan/aiworkdeck": {
     "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -351,7 +351,7 @@
   },
   "deepset-ai/haystack": {
     "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
     "replaces": [
       "langchain",
@@ -360,7 +360,7 @@
   },
   "HelixDB/helix-db": {
     "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
     "replaces": [
       "langchain",
@@ -369,7 +369,7 @@
   },
   "ggozad/haiku.rag": {
     "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -378,7 +378,7 @@
   },
   "comet-ml/opik": {
     "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
     "replaces": [
       "langchain",
@@ -387,7 +387,7 @@
   },
   "cortexkit/aft": {
     "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -396,7 +396,7 @@
   },
   "manticoresoftware/manticoresearch": {
     "verdict": "High-velocity open-source project delivering focused capabilities for document vaults & search.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Elastic / Notion (Private self-hosted search engine)",
     "replaces": [
       "notion",
@@ -405,7 +405,7 @@
   },
   "apache/doris": {
     "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -423,7 +423,7 @@
   },
   "averemee-si/oracdc": {
     "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
     "replaces": [
       "gui"
@@ -457,7 +457,7 @@
   },
   "ArcadeData/arcadedb": {
     "verdict": "High-performance vector storage optimized for similarity search and embedding retrieval.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Pinecone (Self-hosted vector similarity search)",
     "replaces": [
       "pinecone",
@@ -466,7 +466,7 @@
   },
   "orneryd/NornicDB": {
     "verdict": "High-performance vector storage optimized for similarity search and embedding retrieval.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Pinecone (Self-hosted vector similarity search)",
     "replaces": [
       "pinecone",
@@ -483,7 +483,7 @@
   },
   "oceanbase/seekdb": {
     "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
     "replaces": [
       "langchain",
@@ -492,7 +492,7 @@
   },
   "Pometry/Raphtory": {
     "verdict": "High-velocity open-source project delivering focused capabilities for embedded & edge ai.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to JetPack & Cloud Edge APIs (Ultra-low footprint AI)",
     "replaces": [
       "jetpack",
@@ -501,7 +501,7 @@
   },
   "redis/redis": {
     "verdict": "High-velocity open-source project delivering focused capabilities for databases & storage.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Cloud SQL (Embedded sovereign storage engine)",
     "replaces": [
       "cloudsql",
@@ -518,7 +518,7 @@
   },
   "perfectgf/lora-dataset-studio": {
     "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
     "replaces": [
       "midjourney"
@@ -526,7 +526,7 @@
   },
   "scraed/LanPaint": {
     "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
     "replaces": [
       "midjourney"
@@ -534,7 +534,7 @@
   },
   "Comfy-Org/ComfyUI": {
     "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
     "replaces": [
       "automatic1111"
@@ -542,7 +542,7 @@
   },
   "licyk/sd-webui-all-in-one": {
     "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
     "replaces": [
       "midjourney"
@@ -550,7 +550,7 @@
   },
   "wiltodelta/remove-ai-watermarks": {
     "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
     "replaces": [
       "midjourney"
@@ -558,7 +558,7 @@
   },
   "Mooshieblob1/MooshieUI": {
     "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
     "replaces": [
       "midjourney"
@@ -566,7 +566,7 @@
   },
   "LuqP2/Image-MetaHub": {
     "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
     "replaces": [
       "midjourney"
@@ -574,7 +574,7 @@
   },
   "guaardvark/guaardvark": {
     "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -583,7 +583,7 @@
   },
   "utensils/comfyui-nix": {
     "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
     "replaces": [
       "automatic1111"
@@ -591,7 +591,7 @@
   },
   "Comfy-Org/comfy-cli": {
     "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
     "replaces": [
       "midjourney"
@@ -599,7 +599,7 @@
   },
   "Acly/comfyui-tooling-nodes": {
     "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
     "replaces": [
       "automatic1111"
@@ -607,7 +607,7 @@
   },
   "Acly/comfyui-inpaint-nodes": {
     "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
     "replaces": [
       "automatic1111"
@@ -615,7 +615,7 @@
   },
   "rgthree/rgthree-comfy": {
     "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
     "replaces": [
       "midjourney"
@@ -623,7 +623,7 @@
   },
   "BlackMixture/Mix-Studio": {
     "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
     "replaces": [
       "midjourney"
@@ -631,7 +631,7 @@
   },
   "mcmonkeyprojects/SwarmUI": {
     "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
     "replaces": [
       "midjourney"
@@ -639,7 +639,7 @@
   },
   "EveningStudy/asmr-dubber": {
     "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
     "replaces": [
       "elevenlabs",
@@ -648,7 +648,7 @@
   },
   "ddxfish/sapphire": {
     "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
     "replaces": [
       "elevenlabs",
@@ -657,7 +657,7 @@
   },
   "mbailey/voicemode": {
     "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
     "replaces": [
       "elevenlabs",
@@ -675,7 +675,7 @@
   },
   "fluxions-ai/vui": {
     "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
     "replaces": [
       "elevenlabs",
@@ -684,7 +684,7 @@
   },
   "Ali-hey-0/audio-ai-field-guide": {
     "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
     "replaces": [
       "elevenlabs",
@@ -693,7 +693,7 @@
   },
   "abus-aikorea/voice-pro": {
     "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
     "replaces": [
       "elevenlabs",
@@ -774,7 +774,7 @@
   },
   "Dicklesworthstone/franken_ocr": {
     "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
     "replaces": [
       "google-vision",
@@ -783,7 +783,7 @@
   },
   "lucasjinreal/Crane": {
     "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
     "replaces": [
       "ollama",
@@ -792,7 +792,7 @@
   },
   "software-mansion/react-native-executorch": {
     "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to pushing to GitHub (Run GitHub Actions locally in Docker)",
     "replaces": [
       "github-actions"
@@ -800,7 +800,7 @@
   },
   "Tencent-Hunyuan/HunyuanOCR": {
     "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
     "replaces": [
       "google-vision",
@@ -809,7 +809,7 @@
   },
   "Nebutra/MinerU-Skill": {
     "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -818,7 +818,7 @@
   },
   "MigoXLab/LMeterX": {
     "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
     "replaces": [
       "ollama",
@@ -854,7 +854,7 @@
   },
   "heshengtao/comfyui_LLM_party": {
     "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
     "replaces": [
       "automatic1111"
@@ -862,7 +862,7 @@
   },
   "vlm-run/vlmrun-cookbook": {
     "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
     "replaces": [
       "google-vision",
@@ -907,7 +907,7 @@
   },
   "inkeep/open-knowledge": {
     "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
     "replaces": [
       "notion",
@@ -916,7 +916,7 @@
   },
   "gmickel/gno": {
     "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
     "replaces": [
       "langchain",
@@ -925,7 +925,7 @@
   },
   "eugeniughelbur/obsidian-second-brain": {
     "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
     "replaces": [
       "notion",
@@ -952,7 +952,7 @@
   },
   "oldwinter/knowledge-garden": {
     "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
     "replaces": [
       "notion",
@@ -961,7 +961,7 @@
   },
   "alfadur7/llm-wiki-newsroom": {
     "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
     "replaces": [
       "notion",
@@ -970,7 +970,7 @@
   },
   "undefined-ui/second-brain-os": {
     "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
     "replaces": [
       "notion",
@@ -979,7 +979,7 @@
   },
   "zosmaai/pi-llm-wiki": {
     "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
     "replaces": [
       "notion",
@@ -988,7 +988,7 @@
   },
   "AgriciDaniel/claude-obsidian": {
     "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
     "replaces": [
       "notion",
@@ -997,7 +997,7 @@
   },
   "wikibonsai/wikibonsai": {
     "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
     "replaces": [
       "notion",
@@ -1006,7 +1006,7 @@
   },
   "kytmanov/synto": {
     "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
     "replaces": [
       "notion",
@@ -1015,7 +1015,7 @@
   },
   "jaredrhod/ai-memory-vault": {
     "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
     "replaces": [
       "notion",
@@ -1024,7 +1024,7 @@
   },
   "smixs/agent-second-brain": {
     "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
     "replaces": [
       "notion",
@@ -1033,7 +1033,7 @@
   },
   "swarmclawai/swarmvault": {
     "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -1042,7 +1042,7 @@
   },
   "calimero-network/core": {
     "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Firebase (Decentralized state synchronization)",
     "replaces": [
       "firebase",
@@ -1051,7 +1051,7 @@
   },
   "loro-dev/loro": {
     "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Firebase (Decentralized state synchronization)",
     "replaces": [
       "firebase",
@@ -1060,7 +1060,7 @@
   },
   "inkandswitch/keyhive": {
     "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Firebase (Decentralized state synchronization)",
     "replaces": [
       "firebase",
@@ -1069,7 +1069,7 @@
   },
   "pubkey/rxdb": {
     "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to PouchDB / CouchDB (Reactive local-first client database)",
     "replaces": [
       "pouchdb",
@@ -1078,7 +1078,7 @@
   },
   "Deln0r/ygo": {
     "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Firebase (Decentralized state synchronization)",
     "replaces": [
       "firebase",
@@ -1096,7 +1096,7 @@
   },
   "evoluhq/evolu": {
     "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Firebase (Decentralized state synchronization)",
     "replaces": [
       "firebase",
@@ -1105,7 +1105,7 @@
   },
   "VoltiusApp/voltius": {
     "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
     "replaces": [
       "gui"
@@ -1113,7 +1113,7 @@
   },
   "teamtype/teamtype": {
     "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Firebase (Decentralized state synchronization)",
     "replaces": [
       "firebase",
@@ -1122,7 +1122,7 @@
   },
   "p2panda/p2panda": {
     "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Firebase (Decentralized state synchronization)",
     "replaces": [
       "firebase",
@@ -1131,7 +1131,7 @@
   },
   "tinyplex/tinybase": {
     "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Firebase (Decentralized state synchronization)",
     "replaces": [
       "firebase",
@@ -1140,7 +1140,7 @@
   },
   "toeverything/blocksuite": {
     "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Firebase (Decentralized state synchronization)",
     "replaces": [
       "firebase",
@@ -1149,7 +1149,7 @@
   },
   "GianIac/numax": {
     "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Firebase (Decentralized state synchronization)",
     "replaces": [
       "firebase",
@@ -1158,7 +1158,7 @@
   },
   "Dancode-188/synckit": {
     "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Firebase (Decentralized state synchronization)",
     "replaces": [
       "firebase",
@@ -1167,7 +1167,7 @@
   },
   "streamich/json-joy": {
     "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Firebase (Decentralized state synchronization)",
     "replaces": [
       "firebase",
@@ -1176,7 +1176,7 @@
   },
   "hledgerorg/hledger": {
     "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
     "replaces": [
       "gui"
@@ -1184,7 +1184,7 @@
   },
   "djunekz/termux-app-store": {
     "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
     "replaces": [
       "gui"
@@ -1192,7 +1192,7 @@
   },
   "eugenioenko/ttt": {
     "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
     "replaces": [
       "gui"
@@ -1200,7 +1200,7 @@
   },
   "ad-si/Transity": {
     "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
     "replaces": [
       "gui"
@@ -1208,7 +1208,7 @@
   },
   "Tlaloc-Es/killpy": {
     "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
     "replaces": [
       "gui"
@@ -1216,7 +1216,7 @@
   },
   "modelcontextprotocol/inspector": {
     "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
     "replaces": [
       "gui"
@@ -1224,7 +1224,7 @@
   },
   "r14dd/patent": {
     "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
     "replaces": [
       "gui"
@@ -1232,7 +1232,7 @@
   },
   "fujiapple852/trippy": {
     "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
     "replaces": [
       "gui"
@@ -1240,7 +1240,7 @@
   },
   "LnYo-Cly/ai4j": {
     "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
     "replaces": [
       "ollama",
@@ -1249,7 +1249,7 @@
   },
   "alvarorichard/GoAnime": {
     "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
     "replaces": [
       "gui"
@@ -1257,7 +1257,7 @@
   },
   "unhappychoice/gitlogue": {
     "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
     "replaces": [
       "gui"
@@ -1265,7 +1265,7 @@
   },
   "abod8639/anodemcu": {
     "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
     "replaces": [
       "gui"
@@ -1273,7 +1273,7 @@
   },
   "fuxicodex/Fuxi": {
     "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
     "replaces": [
       "gui"
@@ -1281,7 +1281,7 @@
   },
   "msmps/create-tui": {
     "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
     "replaces": [
       "gui"
@@ -1289,7 +1289,7 @@
   },
   "nostacks/ekphos": {
     "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
     "replaces": [
       "gui"
@@ -1297,7 +1297,7 @@
   },
   "open-multi-agent/open-multi-agent": {
     "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -1306,7 +1306,7 @@
   },
   "agentconnect-md/agentconnect": {
     "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -1315,7 +1315,7 @@
   },
   "Cotal-AI/Cotal": {
     "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -1333,7 +1333,7 @@
   },
   "modelscope/evalscope": {
     "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
     "replaces": [
       "ollama",
@@ -1342,7 +1342,7 @@
   },
   "promptfoo/promptfoo": {
     "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
     "replaces": [
       "autogen",
@@ -1351,7 +1351,7 @@
   },
   "1ay1/agentty": {
     "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
-    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "gotchas": "",
     "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
     "replaces": [
       "gui"

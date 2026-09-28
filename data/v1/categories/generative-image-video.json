@@ -1,7 +1,7 @@
 {
   "category": "Generative Image/Video",
   "count": 14,
-  "updated_at": "2026-09-28T10:03:03.917467+00:00",
+  "updated_at": "2026-09-28T10:50:47.540139+00:00",
   "repositories": [
     {
       "full_name": "perfectgf/lora-dataset-studio",
@@ -10,7 +10,7 @@
       "description": "Self-hosted, one-tab workbench for the whole training lifecycle: build Character/Concept/Style datasets (generate, scrape, or triage a big dump in the Image Bank), curate, caption, clean watermarks, then train LoRAs on five model families or a full Krea 2 model on a rented GPU, and rank checkpoints in a Test Studio. Free & local.",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
       "replaces": [
         "midjourney"
@@ -97,7 +97,7 @@
       "description": "High quality training free inpaint for every stable diffusion model. Supports ComfyUI",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
       "replaces": [
         "midjourney"
@@ -180,7 +180,7 @@
       "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
       "replaces": [
         "automatic1111"
@@ -260,7 +260,7 @@
       "description": "\u652f\u6301\u5b89\u88c5\u3001\u4e0b\u8f7d\u3001\u542f\u52a8\u548c\u7ba1\u7406\u591a\u79cd AI WebUI / \u8bad\u7ec3\u5de5\u5177\u7684\u4e00\u4f53\u5316\u9879\u76ee\uff0c\u63d0\u4f9b Installer\u3001\u6574\u5408\u5305\u4e0b\u8f7d\u5668\u3001Launcher\u3001CLI \u4e0e Colab / Kaggle Notebook\u3002",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
       "replaces": [
         "midjourney"
@@ -348,7 +348,7 @@
       "description": "Remove visible and invisible AI watermarks and provenance metadata from images and video. Python library and CLI for SynthID, C2PA, EXIF, IPTC, XMP, and common generative-AI marks.",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
       "replaces": [
         "midjourney"
@@ -443,7 +443,7 @@
       "description": "A front-end UI for ComfyUI made for beginner level users.",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
       "replaces": [
         "midjourney"
@@ -531,7 +531,7 @@
       "description": "Local-first AI image organizer and generative media library manager for ComfyUI, A1111, InvokeAI & more. Search huge output folders by prompt, model, LoRA, metadata or visual similarity.",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
       "replaces": [
         "midjourney"
@@ -622,7 +622,7 @@
       "description": "A slightly opinionated Nix flake for ComfyUI with curated custom nodes. Supports macOS (Apple Silicon) and Linux with CUDA.",
       "category": "Generative Image/Video",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
       "replaces": [
         "automatic1111"
@@ -703,7 +703,7 @@
       "description": "CLI for using ComfyUI",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
       "replaces": [
         "midjourney"
@@ -781,7 +781,7 @@
       "description": "Nodes for using ComfyUI as a backend for external tools. Send and receive images directly without filesystem upload/download.",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
       "replaces": [
         "automatic1111"
@@ -853,7 +853,7 @@
       "description": "Nodes for better inpainting with ComfyUI: Fooocus inpaint model for SDXL, LaMa, MAT, and various other tools for pre-filling inpaint & outpaint areas.",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
       "replaces": [
         "automatic1111"
@@ -927,7 +927,7 @@
       "description": "Making ComfyUI more comfortable!",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
       "replaces": [
         "midjourney"
@@ -1000,7 +1000,7 @@
       "description": "The cleanest, responsive AI workspace. Run highly tuned image and video workflows flawlessly from your desktop or your phone. Built on ComfyUI.",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
       "replaces": [
         "midjourney"
@@ -1081,7 +1081,7 @@
       "description": "SwarmUI (formerly StableSwarmUI), A Modular Stable Diffusion Web-User-Interface, with an emphasis on making powertools easily accessible, high performance, and extensibility.",
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "gotchas": "",
       "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
       "replaces": [
         "midjourney"
