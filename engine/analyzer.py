@@ -1,4 +1,4 @@
-﻿import os
+import os
 import re
 import json
 import time
@@ -15,6 +15,61 @@ SEEDS = [
     "pkm second-brain", "local-first crdt", "cli tui tool"
 ]
 
+TAXONOMY = {
+    "Local LLM Engines": ["llm", "inference", "gguf", "vllm", "ollama", "transformers", "local-ai", "quantization", "llama.cpp", "exllamav2", "mistral"],
+    "Multi-Agent Frameworks": ["agent", "agents", "autogen", "crewai", "langgraph", "swarm", "pydantic-ai", "multi-agent", "smolagents"],
+    "RAG Engines": ["rag", "retrieval", "langchain", "llamaindex", "hybrid-search", "semantic-search", "haystack", "chunking"],
+    "Vector Databases": ["vector-database", "vectordb", "chroma", "qdrant", "milvus", "weaviate", "pinecone", "pgvector", "embeddings"],
+    "Generative Image/Video": ["stable-diffusion", "comfyui", "flux", "diffusion", "image-generation", "video-generation", "text-to-video", "sdxl"],
+    "Audio & Voice Synthesis": ["tts", "stt", "whisper", "speech-to-text", "text-to-speech", "voice-clone", "audio", "bark", "musicgen"],
+    "Vision & OCR": ["ocr", "vision-language", "vlm", "yolo", "segmentation", "paddleocr", "document-ai", "surya"],
+    "Creative Media & Design": ["canvas", "photo-editor", "video-editor", "canvas-ui", "3d-engine", "animation", "generative-art"],
+    "Second Brain & PKM": ["second-brain", "pkm", "obsidian", "note-taking", "knowledge-base", "logseq", "zettelkasten"],
+    "AI Writing & Synthesis": ["writing-assistant", "summarization", "copilot", "text-generation", "grammar", "autocomplete"],
+    "Document Vaults & Search": ["vault", "paperless", "pdf", "full-text-search", "document-management", "archive", "knowledge-graph"],
+    "Spreadsheets & Data Grid": ["spreadsheet", "data-grid", "excel", "sheets", "csv", "table", "data-table"],
+    "CLI & TUI Tooling": ["cli", "tui", "terminal", "command-line", "interactive-cli", "prompt", "repl"],
+    "Local-First Sync & CRDTs": ["local-first", "crdt", "offline-first", "peer-to-peer", "p2p", "automerge", "yjs", "sync-engine"],
+    "Container & MicroVMs": ["docker", "container", "microvm", "firecracker", "podman", "orchestration", "wasm"],
+    "Reverse Eng & Security": ["security", "reverse-engineering", "decompiler", "disassembler", "cve", "pentest", "vulnerability", "exploit"],
+    "Embedded & Edge AI": ["edge-ai", "embedded", "tinygrad", "microcontroller", "esp32", "robotics", "tensorrt-edge"],
+    "Desktop & Native Bridges": ["tauri", "electron", "flutter-desktop", "native-ui", "tray-app", "systray"],
+    "Databases & Storage": ["sqlite", "duckdb", "embedded-database", "storage-engine", "key-value", "cache", "rocksdb"],
+    "API & Gateway Proxies": ["api-gateway", "reverse-proxy", "mcp", "model-context-protocol", "rpc", "grpc", "proxy"]
+}
+
+def classify(desc="", topics=None, name=""):
+    """Classifies a repository into one of the 20 DevRadar categories."""
+    topics = topics or []
+    text = f"{name or ''} {desc or ''} {' '.join(topics)}".lower()
+    scores = {cat: sum(1 for kw in kws if kw in text) for cat, kws in TAXONOMY.items()}
+    best = max(scores, key=scores.get)
+    return best if scores[best] > 0 else "CLI & TUI Tooling"
+
+def profile_specs(desc="", topics=None):
+    """Profiles hardware viability and local-first status for tests and capabilities."""
+    topics = topics or []
+    text = f"{desc or ''} {' '.join(topics)}".lower()
+    has_cuda = any(k in text for k in ["cuda", "nvidia", "rtx", "vram", "tensorrt"])
+    cpu_friendly = any(k in text for k in ["cpu", "gguf", "llama.cpp", "onnx", "wasm", "apple silicon", "metal"])
+    heavy_cuda = any(k in text for k in ["24gb", "3090", "4090", "a100", "h100", "70b"])
+
+    if heavy_cuda or (has_cuda and any(k in text for k in ["3090", "4090", "24gb"])):
+        floor = "24GB+ CUDA VRAM"
+    elif has_cuda and not cpu_friendly:
+        floor = "16GB+ CUDA VRAM"
+    elif cpu_friendly:
+        floor = "8GB Unified / Metal"
+    else:
+        floor = "Minimal CPU"
+
+    is_local = any(k in text for k in ["local-first", "offline", "zero cloud", "on-device", "self-host", "sqlite", "private"])
+    return {
+        "hardware_req": floor,
+        "is_local_first": is_local,
+        "is_cuda_ready": has_cuda
+    }
+
 def fetch_json(url):
     req = urllib.request.Request(url)
     req.add_header("User-Agent", "DevRadar-Engine/2.0")
@@ -24,6 +79,14 @@ def fetch_json(url):
     try:
         with urllib.request.urlopen(req, timeout=15) as resp:
             return json.loads(resp.read().decode())
+    except urllib.error.HTTPError as e:
+        print(f"HTTP Error fetching {url}: {e.code} - {e.reason}")
+        if e.code in (403, 429):
+            reset_ts = e.headers.get("x-ratelimit-reset")
+            if reset_ts:
+                wait_time = max(0, int(reset_ts) - int(time.time())) + 2
+                print(f"GitHub rate limit reached. Reset in {wait_time}s.")
+        return None
     except Exception as e:
         print(f"Failed to fetch {url}: {e}")
         return None
@@ -95,14 +158,12 @@ def extract_capabilities(repo, readme_text=""):
     if "fine-tun" in text:
         intent_tags.append("fine-tuning")
 
-    # Hardware Floor
-    has_cuda = any(k in text for k in ["cuda", "nvidia", "rtx", "vram", "tensorrt"])
-    cpu_friendly = any(k in text for k in ["cpu", "gguf", "llama.cpp", "onnx", "wasm", "apple silicon", "metal"])
-    
+    # Hardware Specs
+    specs = profile_specs(f"{repo.get('name', '')} {repo.get('description', '')} {readme_text}", repo.get('topics', []))
     hardware = {
-        "is_cuda_ready": has_cuda,
-        "cpu_supported": cpu_friendly or not has_cuda,
-        "floor": "16GB+ CUDA VRAM" if (has_cuda and not cpu_friendly) else ("8GB Unified / Metal" if cpu_friendly else "Minimal CPU")
+        "is_cuda_ready": specs["is_cuda_ready"],
+        "cpu_supported": "Minimal CPU" in specs["hardware_req"] or "Unified" in specs["hardware_req"],
+        "floor": specs["hardware_req"]
     }
 
     return {
@@ -163,6 +224,14 @@ def analyze_health(repo):
         "is_stale": last_push_days > 90
     }
 
+def atomic_save_json(filepath, data):
+    """Atomically writes JSON using a temporary file to avoid corruption."""
+    os.makedirs(os.path.dirname(filepath) or ".", exist_ok=True)
+    tmp_path = f"{filepath}.tmp"
+    with open(tmp_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+    os.replace(tmp_path, filepath)
+
 def run_pipeline():
     os.makedirs("data", exist_ok=True)
     history_file = os.path.join("data", "history.json")
@@ -180,8 +249,6 @@ def run_pipeline():
         if isinstance(entries, list):
             valid = [normalize_history_entry(e) for e in entries]
             history[key] = [v for v in valid if v is not None]
-        else:
-            history[key] = []
 
     all_repos = {}
     print("Collecting high-signal open-source repositories...")
@@ -217,28 +284,23 @@ def run_pipeline():
                 v24 = max(0, stars - repo_history[0]["stars"])
 
         repo_history.append({"ts": now_ts, "stars": stars})
-        history[full_name] = repo_history[-14:]
+        # Retain up to 7 days (168 hourly snapshots) of history
+        history[full_name] = repo_history[-168:]
 
         capabilities = extract_capabilities(repo)
         health = analyze_health(repo)
+        category = classify(repo.get("description"), repo.get("topics", []), repo.get("name", ""))
 
-        lang = (repo.get("language") or "").lower()
-        if lang == "python":
-            quick_run = f"pip install {repo.get('name')}"
-        elif lang in ["typescript", "javascript"]:
-            quick_run = f"npm install {repo.get('name')}"
-        elif lang == "rust":
-            quick_run = f"cargo install {repo.get('name')}"
-        elif "docker" in capabilities["deployment"]:
-            quick_run = f"docker run -d {repo.get('name')}"
-        else:
-            quick_run = f"git clone {repo.get('html_url')}"
+        # Safe quick run default without supply-chain hallucination
+        html_url = repo.get("html_url") or f"https://github.com/{full_name}"
+        quick_run = f"git clone {html_url}"
 
         processed.append({
             "full_name": full_name,
             "name": repo.get("name"),
-            "url": repo.get("html_url"),
+            "url": html_url,
             "description": repo.get("description"),
+            "category": category,
             "language": repo.get("language") or "Code",
             "license": repo.get("license", {}).get("spdx_id") if repo.get("license") else "MIT",
             "stars": stars,
@@ -257,8 +319,15 @@ def run_pipeline():
             "health": health
         })
 
-    with open(history_file, "w", encoding="utf-8") as f:
-        json.dump(history, f, indent=2)
+    # Prune history keys that have been empty or unseen for 30 days
+    cutoff_ts = now_ts - (30 * 86400)
+    current_keys = set(all_repos.keys())
+    pruned_history = {}
+    for fn, entries in history.items():
+        if fn in current_keys or (entries and entries[-1]["ts"] >= cutoff_ts):
+            pruned_history[fn] = entries
+
+    atomic_save_json(history_file, pruned_history)
 
     payload = {
         "updated_at": datetime.now(timezone.utc).isoformat(),
@@ -266,9 +335,7 @@ def run_pipeline():
         "repositories": processed
     }
 
-    with open(os.path.join("data", "repos.json"), "w", encoding="utf-8") as f:
-        json.dump(payload, f, indent=2)
-
+    atomic_save_json(os.path.join("data", "repos.json"), payload)
     print(f"Saved {len(processed)} enriched repositories to data/repos.json")
 
 if __name__ == "__main__":

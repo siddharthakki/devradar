@@ -72,7 +72,8 @@
         "authenticity_score": 95,
         "open_issues": 54,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "oumi-ai/oumi",
@@ -140,7 +141,8 @@
         "authenticity_score": 95,
         "open_issues": 35,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "ggml-org/llama.cpp",
@@ -192,7 +194,8 @@
         "authenticity_score": 95,
         "open_issues": 2497,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "Blaizzy/mlx-vlm",
@@ -258,7 +261,8 @@
         "authenticity_score": 95,
         "open_issues": 168,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "defilantech/LLMKube",
@@ -331,7 +335,8 @@
         "authenticity_score": 95,
         "open_issues": 98,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "lightseekorg/tokenspeed",
@@ -402,7 +407,8 @@
         "authenticity_score": 95,
         "open_issues": 43,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "sgl-project/sglang",
@@ -471,7 +477,8 @@
         "authenticity_score": 95,
         "open_issues": 5464,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "pegainfer-project/pegainfer",
@@ -542,7 +549,8 @@
         "authenticity_score": 95,
         "open_issues": 84,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "LMCache/LMCache",
@@ -603,7 +611,8 @@
         "authenticity_score": 95,
         "open_issues": 756,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "hybridgroup/yzma",
@@ -669,7 +678,8 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "vllm-project/vllm",
@@ -740,7 +750,8 @@
         "authenticity_score": 95,
         "open_issues": 8117,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "Human-Agent-Society/reef",
@@ -799,7 +810,8 @@
         "authenticity_score": 95,
         "open_issues": 57,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "NVIDIA/TensorRT-LLM",
@@ -855,7 +867,8 @@
         "authenticity_score": 95,
         "open_issues": 1515,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "warpfront/hipfire",
@@ -915,7 +928,8 @@
         "authenticity_score": 95,
         "open_issues": 110,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "Osmantic/ODS",
@@ -984,7 +998,8 @@
         "authenticity_score": 95,
         "open_issues": 3153,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "smithersai/smithers",
@@ -1048,7 +1063,8 @@
         "authenticity_score": 95,
         "open_issues": 14,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "receptron/mulmoterminal",
@@ -1121,7 +1137,8 @@
         "authenticity_score": 95,
         "open_issues": 50,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "sonichi/sutando",
@@ -1186,7 +1203,8 @@
         "authenticity_score": 95,
         "open_issues": 694,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "rapidaai/voice-ai",
@@ -1259,7 +1277,8 @@
         "authenticity_score": 95,
         "open_issues": 35,
         "is_stale": false
-      }
+      },
+      "category": "Audio & Voice Synthesis"
     },
     {
       "full_name": "Hmbown/Codewhale",
@@ -1321,7 +1340,8 @@
         "authenticity_score": 95,
         "open_issues": 127,
         "is_stale": false
-      }
+      },
+      "category": "CLI & TUI Tooling"
     },
     {
       "full_name": "FuRongJun-1999/dsh-memory",
@@ -1386,7 +1406,8 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "preset-io/agor",
@@ -1458,7 +1479,8 @@
         "authenticity_score": 95,
         "open_issues": 221,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "mixpeek/amux",
@@ -1531,7 +1553,8 @@
         "authenticity_score": 95,
         "open_issues": 13,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "omnigent-ai/omnigent",
@@ -1598,7 +1621,8 @@
         "authenticity_score": 95,
         "open_issues": 1385,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "ling-kong-ran/pisper",
@@ -1658,7 +1682,8 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "Untrivial-ai/agent-orchestrator",
@@ -1723,7 +1748,8 @@
         "authenticity_score": 95,
         "open_issues": 739,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "danny-avila/LibreChat",
@@ -1797,7 +1823,8 @@
         "authenticity_score": 95,
         "open_issues": 783,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "Dicklesworthstone/agentic_coding_flywheel_setup",
@@ -1853,7 +1880,8 @@
         "authenticity_score": 95,
         "open_issues": 5,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "microsoft/agent-framework",
@@ -1914,7 +1942,8 @@
         "authenticity_score": 95,
         "open_issues": 615,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "askalf/dario",
@@ -1986,7 +2015,8 @@
         "authenticity_score": 95,
         "open_issues": 7,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "EmpiricaAI/empirica",
@@ -2043,7 +2073,8 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "antflydb/antfly",
@@ -2102,7 +2133,8 @@
         "authenticity_score": 95,
         "open_issues": 23,
         "is_stale": false
-      }
+      },
+      "category": "RAG Engines"
     },
     {
       "full_name": "Anil-matcha/awesome-jev-by-typesafe",
@@ -2173,7 +2205,8 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "category": "RAG Engines"
     },
     {
       "full_name": "moorcheh-ai/memanto",
@@ -2236,7 +2269,8 @@
         "authenticity_score": 95,
         "open_issues": 127,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "yonatangross/orchestkit",
@@ -2305,7 +2339,8 @@
         "authenticity_score": 95,
         "open_issues": 88,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "HKUDS/LightRAG",
@@ -2367,7 +2402,8 @@
         "authenticity_score": 95,
         "open_issues": 251,
         "is_stale": false
-      }
+      },
+      "category": "RAG Engines"
     },
     {
       "full_name": "volcengine/OpenViking",
@@ -2424,7 +2460,8 @@
         "authenticity_score": 95,
         "open_issues": 697,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "simstudioai/sim",
@@ -2493,7 +2530,8 @@
         "authenticity_score": 95,
         "open_issues": 339,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "onyx-dot-app/onyx",
@@ -2560,7 +2598,8 @@
         "authenticity_score": 95,
         "open_issues": 478,
         "is_stale": false
-      }
+      },
+      "category": "RAG Engines"
     },
     {
       "full_name": "langgenius/dify",
@@ -2632,7 +2671,8 @@
         "authenticity_score": 95,
         "open_issues": 1106,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "langchain-ai/langchain",
@@ -2703,7 +2743,8 @@
         "authenticity_score": 95,
         "open_issues": 531,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "melgarafael/DeskcommCRM",
@@ -2777,7 +2818,8 @@
         "authenticity_score": 95,
         "open_issues": 153,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "genkit-ai/genkit",
@@ -2836,7 +2878,8 @@
         "authenticity_score": 95,
         "open_issues": 766,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "lbedner/aegis-stack",
@@ -2908,7 +2951,8 @@
         "authenticity_score": 95,
         "open_issues": 56,
         "is_stale": false
-      }
+      },
+      "category": "RAG Engines"
     },
     {
       "full_name": "rocketride-org/rocketride-server",
@@ -2970,7 +3014,8 @@
         "authenticity_score": 95,
         "open_issues": 335,
         "is_stale": false
-      }
+      },
+      "category": "Container & MicroVMs"
     },
     {
       "full_name": "samyama-ai/samyama-graph",
@@ -3034,7 +3079,8 @@
         "authenticity_score": 95,
         "open_issues": 96,
         "is_stale": false
-      }
+      },
+      "category": "RAG Engines"
     },
     {
       "full_name": "qdrant/qdrant",
@@ -3105,7 +3151,8 @@
         "authenticity_score": 95,
         "open_issues": 736,
         "is_stale": false
-      }
+      },
+      "category": "Vector Databases"
     },
     {
       "full_name": "ArcadeData/arcadedb",
@@ -3174,7 +3221,8 @@
         "authenticity_score": 95,
         "open_issues": 195,
         "is_stale": false
-      }
+      },
+      "category": "Vector Databases"
     },
     {
       "full_name": "manticoresoftware/manticoresearch",
@@ -3242,7 +3290,8 @@
         "authenticity_score": 95,
         "open_issues": 653,
         "is_stale": false
-      }
+      },
+      "category": "Document Vaults & Search"
     },
     {
       "full_name": "microsoft/DiskANN",
@@ -3292,7 +3341,8 @@
         "authenticity_score": 95,
         "open_issues": 181,
         "is_stale": false
-      }
+      },
+      "category": "CLI & TUI Tooling"
     },
     {
       "full_name": "pingcap/tidb",
@@ -3362,7 +3412,8 @@
         "authenticity_score": 95,
         "open_issues": 7091,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "weaviate/weaviate",
@@ -3433,7 +3484,8 @@
         "authenticity_score": 95,
         "open_issues": 737,
         "is_stale": false
-      }
+      },
+      "category": "RAG Engines"
     },
     {
       "full_name": "apache/doris",
@@ -3504,7 +3556,8 @@
         "authenticity_score": 95,
         "open_issues": 1354,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "HelixDB/helix-db",
@@ -3570,7 +3623,8 @@
         "authenticity_score": 95,
         "open_issues": 33,
         "is_stale": false
-      }
+      },
+      "category": "RAG Engines"
     },
     {
       "full_name": "NodeDB-Lab/nodedb",
@@ -3641,7 +3695,8 @@
         "authenticity_score": 95,
         "open_issues": 19,
         "is_stale": false
-      }
+      },
+      "category": "Local-First Sync & CRDTs"
     },
     {
       "full_name": "milvus-io/milvus",
@@ -3710,7 +3765,8 @@
         "authenticity_score": 95,
         "open_issues": 1452,
         "is_stale": false
-      }
+      },
+      "category": "Vector Databases"
     },
     {
       "full_name": "marcominerva/SqlDatabaseVectorSearch",
@@ -3774,7 +3830,8 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": false
-      }
+      },
+      "category": "RAG Engines"
     },
     {
       "full_name": "oracle/ai-optimizer",
@@ -3832,7 +3889,8 @@
         "authenticity_score": 95,
         "open_issues": 30,
         "is_stale": false
-      }
+      },
+      "category": "RAG Engines"
     },
     {
       "full_name": "matrixorigin/matrixone",
@@ -3900,7 +3958,8 @@
         "authenticity_score": 95,
         "open_issues": 747,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "Comfy-Org/ComfyUI",
@@ -3957,7 +4016,8 @@
         "authenticity_score": 95,
         "open_issues": 4893,
         "is_stale": false
-      }
+      },
+      "category": "Generative Image/Video"
     },
     {
       "full_name": "guaardvark/guaardvark",
@@ -4030,7 +4090,8 @@
         "authenticity_score": 95,
         "open_issues": 17,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "Comfy-Org/comfy-cli",
@@ -4085,7 +4146,8 @@
         "authenticity_score": 95,
         "open_issues": 77,
         "is_stale": false
-      }
+      },
+      "category": "Generative Image/Video"
     },
     {
       "full_name": "LEv145/images-grid-comfy-plugin",
@@ -4143,7 +4205,8 @@
         "authenticity_score": 95,
         "open_issues": 4,
         "is_stale": false
-      }
+      },
+      "category": "Generative Image/Video"
     },
     {
       "full_name": "biagiomaf/smart-comfyui-gallery",
@@ -4204,7 +4267,8 @@
         "authenticity_score": 95,
         "open_issues": 5,
         "is_stale": false
-      }
+      },
+      "category": "Generative Image/Video"
     },
     {
       "full_name": "mcmonkeyprojects/SwarmUI",
@@ -4264,7 +4328,8 @@
         "authenticity_score": 95,
         "open_issues": 148,
         "is_stale": false
-      }
+      },
+      "category": "Generative Image/Video"
     },
     {
       "full_name": "licyk/sd-webui-all-in-one",
@@ -4329,7 +4394,8 @@
         "authenticity_score": 95,
         "open_issues": 3,
         "is_stale": false
-      }
+      },
+      "category": "Generative Image/Video"
     },
     {
       "full_name": "wiltodelta/remove-ai-watermarks",
@@ -4401,7 +4467,8 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "category": "Generative Image/Video"
     },
     {
       "full_name": "YanWenKun/ComfyUI-Docker",
@@ -4455,7 +4522,8 @@
         "authenticity_score": 95,
         "open_issues": 27,
         "is_stale": false
-      }
+      },
+      "category": "Generative Image/Video"
     },
     {
       "full_name": "LykosAI/StabilityMatrix",
@@ -4515,7 +4583,8 @@
         "authenticity_score": 95,
         "open_issues": 163,
         "is_stale": false
-      }
+      },
+      "category": "Generative Image/Video"
     },
     {
       "full_name": "Heroesjouney/AIMovieStudiov2",
@@ -4588,7 +4657,8 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "category": "Generative Image/Video"
     },
     {
       "full_name": "FurkanGozukara/Stable-Diffusion",
@@ -4659,7 +4729,8 @@
         "authenticity_score": 95,
         "open_issues": 19,
         "is_stale": false
-      }
+      },
+      "category": "Generative Image/Video"
     },
     {
       "full_name": "perfectgf/lora-dataset-studio",
@@ -4723,7 +4794,8 @@
         "authenticity_score": 95,
         "open_issues": 7,
         "is_stale": false
-      }
+      },
+      "category": "Generative Image/Video"
     },
     {
       "full_name": "PlagueKind/ComfyUI-PlagueKind-Nodes",
@@ -4783,7 +4855,8 @@
         "authenticity_score": 95,
         "open_issues": 6,
         "is_stale": false
-      }
+      },
+      "category": "Generative Image/Video"
     },
     {
       "full_name": "YanWenKun/ComfyUI-Windows-Portable",
@@ -4836,7 +4909,8 @@
         "authenticity_score": 95,
         "open_issues": 11,
         "is_stale": false
-      }
+      },
+      "category": "Generative Image/Video"
     },
     {
       "full_name": "mbailey/voicemode",
@@ -4899,7 +4973,8 @@
         "authenticity_score": 95,
         "open_issues": 47,
         "is_stale": false
-      }
+      },
+      "category": "Audio & Voice Synthesis"
     },
     {
       "full_name": "beiyege-01/dsh-voice-ai-girlfriend",
@@ -4961,7 +5036,8 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "category": "Audio & Voice Synthesis"
     },
     {
       "full_name": "fluxions-ai/vui",
@@ -5035,7 +5111,8 @@
         "authenticity_score": 95,
         "open_issues": 3,
         "is_stale": false
-      }
+      },
+      "category": "Audio & Voice Synthesis"
     },
     {
       "full_name": "ddxfish/sapphire",
@@ -5107,7 +5184,8 @@
         "authenticity_score": 95,
         "open_issues": 6,
         "is_stale": false
-      }
+      },
+      "category": "Audio & Voice Synthesis"
     },
     {
       "full_name": "Ali-hey-0/audio-ai-field-guide",
@@ -5181,7 +5259,8 @@
         "authenticity_score": 80,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "category": "Audio & Voice Synthesis"
     },
     {
       "full_name": "abus-aikorea/voice-pro",
@@ -5251,7 +5330,8 @@
         "authenticity_score": 95,
         "open_issues": 60,
         "is_stale": false
-      }
+      },
+      "category": "Audio & Voice Synthesis"
     },
     {
       "full_name": "FranckyB/Voice-Clone-Studio",
@@ -5301,7 +5381,8 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": true
-      }
+      },
+      "category": "Audio & Voice Synthesis"
     },
     {
       "full_name": "Purple-Horizons/openclaw-voice",
@@ -5368,7 +5449,8 @@
         "authenticity_score": 95,
         "open_issues": 18,
         "is_stale": true
-      }
+      },
+      "category": "Audio & Voice Synthesis"
     },
     {
       "full_name": "activated-intelligence/voice-chat",
@@ -5418,7 +5500,8 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": true
-      }
+      },
+      "category": "Audio & Voice Synthesis"
     },
     {
       "full_name": "maudoin/ollama-voice",
@@ -5468,7 +5551,8 @@
         "authenticity_score": 95,
         "open_issues": 5,
         "is_stale": true
-      }
+      },
+      "category": "Audio & Voice Synthesis"
     },
     {
       "full_name": "Nikorasu/LiveWhisper",
@@ -5539,7 +5623,8 @@
         "authenticity_score": 95,
         "open_issues": 7,
         "is_stale": true
-      }
+      },
+      "category": "Audio & Voice Synthesis"
     },
     {
       "full_name": "jakecyr/chatgpt-voice-assistant",
@@ -5596,7 +5681,8 @@
         "authenticity_score": 95,
         "open_issues": 3,
         "is_stale": true
-      }
+      },
+      "category": "Audio & Voice Synthesis"
     },
     {
       "full_name": "mezbaul-h/june",
@@ -5662,7 +5748,8 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": true
-      }
+      },
+      "category": "Audio & Voice Synthesis"
     },
     {
       "full_name": "VideotronicMaker/LM-Studio-Voice-Conversation",
@@ -5717,7 +5804,8 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": true
-      }
+      },
+      "category": "Audio & Voice Synthesis"
     },
     {
       "full_name": "lucasjinreal/Crane",
@@ -5783,7 +5871,8 @@
         "authenticity_score": 95,
         "open_issues": 30,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "software-mansion/react-native-executorch",
@@ -5846,7 +5935,8 @@
         "authenticity_score": 95,
         "open_issues": 59,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "Dicklesworthstone/franken_ocr",
@@ -5911,7 +6001,8 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "category": "Vision & OCR"
     },
     {
       "full_name": "Tencent-Hunyuan/HunyuanOCR",
@@ -5961,7 +6052,8 @@
         "authenticity_score": 95,
         "open_issues": 85,
         "is_stale": false
-      }
+      },
+      "category": "Vision & OCR"
     },
     {
       "full_name": "MigoXLab/LMeterX",
@@ -6025,7 +6117,8 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "drpwchen/lecture-to-notes",
@@ -6085,7 +6178,8 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": false
-      }
+      },
+      "category": "Vision & OCR"
     },
     {
       "full_name": "libnyx/LT2MD",
@@ -6149,7 +6243,8 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "madeye/ad-skipper",
@@ -6199,7 +6294,8 @@
         "authenticity_score": 95,
         "open_issues": 6,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "heshengtao/comfyui_LLM_party",
@@ -6269,7 +6365,8 @@
         "authenticity_score": 95,
         "open_issues": 87,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "Nebutra/MinerU-Skill",
@@ -6340,7 +6437,8 @@
         "authenticity_score": 95,
         "open_issues": 4,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "vlm-run/vlmrun-cookbook",
@@ -6396,7 +6494,8 @@
         "authenticity_score": 95,
         "open_issues": 16,
         "is_stale": false
-      }
+      },
+      "category": "Vision & OCR"
     },
     {
       "full_name": "Achno/gowall",
@@ -6461,7 +6560,8 @@
         "authenticity_score": 80,
         "open_issues": 12,
         "is_stale": true
-      }
+      },
+      "category": "Vision & OCR"
     },
     {
       "full_name": "Keyvanhardani/german-ocr",
@@ -6528,7 +6628,8 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": true
-      }
+      },
+      "category": "Vision & OCR"
     },
     {
       "full_name": "TimmyOVO/deepseek-ocr.rs",
@@ -6585,7 +6686,8 @@
         "authenticity_score": 95,
         "open_issues": 16,
         "is_stale": true
-      }
+      },
+      "category": "Vision & OCR"
     },
     {
       "full_name": "AdemBoukhris457/Doctra",
@@ -6648,7 +6750,8 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": true
-      }
+      },
+      "category": "Vision & OCR"
     },
     {
       "full_name": "inkeep/open-knowledge",
@@ -6719,7 +6822,8 @@
         "authenticity_score": 95,
         "open_issues": 43,
         "is_stale": false
-      }
+      },
+      "category": "Second Brain & PKM"
     },
     {
       "full_name": "pbek/QOwnNotes",
@@ -6791,7 +6895,8 @@
         "authenticity_score": 95,
         "open_issues": 63,
         "is_stale": false
-      }
+      },
+      "category": "Second Brain & PKM"
     },
     {
       "full_name": "eugeniughelbur/obsidian-second-brain",
@@ -6862,7 +6967,8 @@
         "authenticity_score": 95,
         "open_issues": 14,
         "is_stale": false
-      }
+      },
+      "category": "Second Brain & PKM"
     },
     {
       "full_name": "alfadur7/llm-wiki-newsroom",
@@ -6935,7 +7041,8 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "category": "Second Brain & PKM"
     },
     {
       "full_name": "zosmaai/pi-llm-wiki",
@@ -7004,7 +7111,8 @@
         "authenticity_score": 95,
         "open_issues": 17,
         "is_stale": false
-      }
+      },
+      "category": "Second Brain & PKM"
     },
     {
       "full_name": "notoriouslab/vault-curate",
@@ -7072,7 +7180,8 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "category": "RAG Engines"
     },
     {
       "full_name": "gmickel/gno",
@@ -7141,7 +7250,8 @@
         "authenticity_score": 95,
         "open_issues": 6,
         "is_stale": false
-      }
+      },
+      "category": "RAG Engines"
     },
     {
       "full_name": "AgriciDaniel/claude-obsidian",
@@ -7214,7 +7324,8 @@
         "authenticity_score": 95,
         "open_issues": 21,
         "is_stale": false
-      }
+      },
+      "category": "Second Brain & PKM"
     },
     {
       "full_name": "wikibonsai/wikibonsai",
@@ -7284,7 +7395,8 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "category": "Second Brain & PKM"
     },
     {
       "full_name": "kytmanov/synto",
@@ -7358,7 +7470,8 @@
         "authenticity_score": 95,
         "open_issues": 10,
         "is_stale": false
-      }
+      },
+      "category": "Second Brain & PKM"
     },
     {
       "full_name": "jaredrhod/ai-memory-vault",
@@ -7429,7 +7542,8 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": false
-      }
+      },
+      "category": "Second Brain & PKM"
     },
     {
       "full_name": "smixs/agent-second-brain",
@@ -7496,7 +7610,8 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": false
-      }
+      },
+      "category": "Second Brain & PKM"
     },
     {
       "full_name": "swarmclawai/swarmvault",
@@ -7569,7 +7684,8 @@
         "authenticity_score": 95,
         "open_issues": 8,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "SparkyWen/qcue",
@@ -7639,7 +7755,8 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": false
-      }
+      },
+      "category": "Second Brain & PKM"
     },
     {
       "full_name": "IssacW228/student-llm-wiki",
@@ -7704,7 +7821,8 @@
         "authenticity_score": 80,
         "open_issues": 0,
         "is_stale": true
-      }
+      },
+      "category": "Second Brain & PKM"
     },
     {
       "full_name": "calimero-network/core",
@@ -7754,7 +7872,8 @@
         "authenticity_score": 95,
         "open_issues": 141,
         "is_stale": false
-      }
+      },
+      "category": "Local-First Sync & CRDTs"
     },
     {
       "full_name": "teamtype/teamtype",
@@ -7813,7 +7932,8 @@
         "authenticity_score": 80,
         "open_issues": 114,
         "is_stale": false
-      }
+      },
+      "category": "Local-First Sync & CRDTs"
     },
     {
       "full_name": "evoluhq/evolu",
@@ -7870,7 +7990,8 @@
         "authenticity_score": 95,
         "open_issues": 21,
         "is_stale": false
-      }
+      },
+      "category": "Local-First Sync & CRDTs"
     },
     {
       "full_name": "VoltiusApp/voltius",
@@ -7946,7 +8067,8 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": false
-      }
+      },
+      "category": "CLI & TUI Tooling"
     },
     {
       "full_name": "pubkey/rxdb",
@@ -8017,7 +8139,8 @@
         "authenticity_score": 95,
         "open_issues": 17,
         "is_stale": false
-      }
+      },
+      "category": "Local-First Sync & CRDTs"
     },
     {
       "full_name": "inkandswitch/keyhive",
@@ -8075,7 +8198,8 @@
         "authenticity_score": 95,
         "open_issues": 33,
         "is_stale": false
-      }
+      },
+      "category": "Local-First Sync & CRDTs"
     },
     {
       "full_name": "Deln0r/ygo",
@@ -8142,7 +8266,8 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "category": "Local-First Sync & CRDTs"
     },
     {
       "full_name": "p2panda/p2panda",
@@ -8200,7 +8325,8 @@
         "authenticity_score": 95,
         "open_issues": 166,
         "is_stale": false
-      }
+      },
+      "category": "Local-First Sync & CRDTs"
     },
     {
       "full_name": "toeverything/blocksuite",
@@ -8266,7 +8392,8 @@
         "authenticity_score": 95,
         "open_issues": 196,
         "is_stale": false
-      }
+      },
+      "category": "Local-First Sync & CRDTs"
     },
     {
       "full_name": "tinyplex/tinybase",
@@ -8330,7 +8457,8 @@
         "authenticity_score": 80,
         "open_issues": 15,
         "is_stale": false
-      }
+      },
+      "category": "Local-First Sync & CRDTs"
     },
     {
       "full_name": "GianIac/numax",
@@ -8393,7 +8521,8 @@
         "authenticity_score": 95,
         "open_issues": 24,
         "is_stale": false
-      }
+      },
+      "category": "Local-First Sync & CRDTs"
     },
     {
       "full_name": "loro-dev/loro",
@@ -8451,7 +8580,8 @@
         "authenticity_score": 80,
         "open_issues": 56,
         "is_stale": false
-      }
+      },
+      "category": "Local-First Sync & CRDTs"
     },
     {
       "full_name": "streamich/json-joy",
@@ -8524,7 +8654,8 @@
         "authenticity_score": 80,
         "open_issues": 248,
         "is_stale": false
-      }
+      },
+      "category": "Local-First Sync & CRDTs"
     },
     {
       "full_name": "garden-co/classic-jazz",
@@ -8587,7 +8718,8 @@
         "authenticity_score": 95,
         "open_issues": 244,
         "is_stale": false
-      }
+      },
+      "category": "Local-First Sync & CRDTs"
     },
     {
       "full_name": "LnYo-Cly/ai4j",
@@ -8658,7 +8790,8 @@
         "authenticity_score": 95,
         "open_issues": 3,
         "is_stale": false
-      }
+      },
+      "category": "Local LLM Engines"
     },
     {
       "full_name": "modelcontextprotocol/inspector",
@@ -8716,7 +8849,8 @@
         "authenticity_score": 95,
         "open_issues": 51,
         "is_stale": false
-      }
+      },
+      "category": "CLI & TUI Tooling"
     },
     {
       "full_name": "hledgerorg/hledger",
@@ -8779,7 +8913,8 @@
         "authenticity_score": 95,
         "open_issues": 332,
         "is_stale": false
-      }
+      },
+      "category": "CLI & TUI Tooling"
     },
     {
       "full_name": "djunekz/termux-app-store",
@@ -8850,7 +8985,8 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "category": "CLI & TUI Tooling"
     },
     {
       "full_name": "eugenioenko/ttt",
@@ -8924,7 +9060,8 @@
         "authenticity_score": 95,
         "open_issues": 65,
         "is_stale": false
-      }
+      },
+      "category": "CLI & TUI Tooling"
     },
     {
       "full_name": "abhixdd/ghgrab",
@@ -8983,7 +9120,8 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": false
-      }
+      },
+      "category": "CLI & TUI Tooling"
     },
     {
       "full_name": "kyu08/fzf-make",
@@ -9049,7 +9187,8 @@
         "authenticity_score": 95,
         "open_issues": 47,
         "is_stale": false
-      }
+      },
+      "category": "CLI & TUI Tooling"
     },
     {
       "full_name": "vstorm-co/pydantic-deepagents",
@@ -9120,7 +9259,8 @@
         "authenticity_score": 95,
         "open_issues": 20,
         "is_stale": false
-      }
+      },
+      "category": "Multi-Agent Frameworks"
     },
     {
       "full_name": "nostacks/ekphos",
@@ -9174,7 +9314,8 @@
         "authenticity_score": 95,
         "open_issues": 4,
         "is_stale": false
-      }
+      },
+      "category": "CLI & TUI Tooling"
     },
     {
       "full_name": "fujiapple852/trippy",
@@ -9245,7 +9386,8 @@
         "authenticity_score": 95,
         "open_issues": 85,
         "is_stale": false
-      }
+      },
+      "category": "CLI & TUI Tooling"
     },
     {
       "full_name": "alvarorichard/GoAnime",
@@ -9316,7 +9458,8 @@
         "authenticity_score": 95,
         "open_issues": 13,
         "is_stale": false
-      }
+      },
+      "category": "CLI & TUI Tooling"
     },
     {
       "full_name": "jonigl/mcp-client-for-ollama",
@@ -9390,7 +9533,8 @@
         "authenticity_score": 95,
         "open_issues": 17,
         "is_stale": false
-      }
+      },
+      "category": "CLI & TUI Tooling"
     },
     {
       "full_name": "unhappychoice/gitlogue",
@@ -9461,7 +9605,8 @@
         "authenticity_score": 80,
         "open_issues": 12,
         "is_stale": false
-      }
+      },
+      "category": "CLI & TUI Tooling"
     },
     {
       "full_name": "r14dd/patent",
@@ -9528,7 +9673,8 @@
         "authenticity_score": 95,
         "open_issues": 5,
         "is_stale": false
-      }
+      },
+      "category": "CLI & TUI Tooling"
     },
     {
       "full_name": "abod8639/anodemcu",
@@ -9578,7 +9724,8 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "category": "CLI & TUI Tooling"
     }
   ]
 }

@@ -1,10 +1,17 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 DevRadar Terminal CLI
 Query live breakout open-source projects right from your shell.
 Usage: python cli.py [--top 10] [--category "Local LLM Engines"]
 """
-import argparse, json, urllib.request
+import argparse, json, os, sys, urllib.request
+
+# Ensure UTF-8 output on Windows consoles to prevent charmap UnicodeEncodeError
+if sys.stdout and hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
 
 DATA_URL = "https://raw.githubusercontent.com/siddharthakki/devradar/main/data/repos.json"
 
@@ -14,13 +21,25 @@ def main():
     parser.add_argument("--category", type=str, default=None, help="Filter by category")
     args = parser.parse_args()
 
-    try:
-        req = urllib.request.Request(DATA_URL, headers={"User-Agent": "devradar-cli"})
-        with urllib.request.urlopen(req) as resp:
-            data = json.loads(resp.read().decode())
-    except Exception as e:
-        print(f"Error fetching DevRadar data: {e}")
-        return
+    data = None
+    # 1. Try local data file first if running inside devradar repo
+    local_data = os.path.join(os.path.dirname(__file__), "data", "repos.json")
+    if os.path.exists(local_data):
+        try:
+            with open(local_data, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except Exception:
+            data = None
+
+    # 2. Fallback to remote CDN
+    if not data:
+        try:
+            req = urllib.request.Request(DATA_URL, headers={"User-Agent": "devradar-cli"})
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                data = json.loads(resp.read().decode())
+        except Exception as e:
+            print(f"Error fetching DevRadar data: {e}")
+            return
 
     repos = data.get("repositories", [])
     if args.category:

@@ -1,0 +1,498 @@
+{
+  "category": "Vision & OCR",
+  "count": 8,
+  "updated_at": "2026-09-28T09:25:41.483670+00:00",
+  "repositories": [
+    {
+      "full_name": "Dicklesworthstone/franken_ocr",
+      "name": "franken_ocr",
+      "url": "https://github.com/Dicklesworthstone/franken_ocr",
+      "description": "Pure-Rust, CPU-only OCR engine for Baidu Unlimited-OCR (a DeepSeek-OCR-derived 3B MoE VLM). Five-model zoo, custom int8 kernels, no ML framework, no Python, no GPU.",
+      "language": "Rust",
+      "license": "NOASSERTION",
+      "stars": 326,
+      "stars_24h": 0,
+      "trending_score": 18,
+      "topics": [
+        "avx512",
+        "cpu-inference",
+        "deepseek-ocr",
+        "int4",
+        "int8",
+        "moe",
+        "neon",
+        "ocr",
+        "quantization",
+        "rust",
+        "simd",
+        "vision-language-model"
+      ],
+      "created_at": "2026-06-25T01:38:58Z",
+      "pushed_at": "2026-09-15T17:14:09Z",
+      "quick_run": "cargo install franken_ocr",
+      "hardware_req": "8GB Unified / Metal",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 326
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "runs-on-cpu"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "8GB Unified / Metal"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 3,
+        "age_days": 85,
+        "authenticity_score": 95,
+        "open_issues": 0,
+        "is_stale": false
+      },
+      "category": "Vision & OCR"
+    },
+    {
+      "full_name": "Tencent-Hunyuan/HunyuanOCR",
+      "name": "HunyuanOCR",
+      "url": "https://github.com/Tencent-Hunyuan/HunyuanOCR",
+      "description": "HunyuanOCR-1.5: Making Lightweight OCR VLMs Faster and Better",
+      "language": "Python",
+      "license": "NOASSERTION",
+      "stars": 2007,
+      "stars_24h": 0,
+      "trending_score": 44,
+      "topics": [],
+      "created_at": "2025-11-18T04:06:24Z",
+      "pushed_at": "2026-09-13T21:38:39Z",
+      "quick_run": "pip install HunyuanOCR",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 2007
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 4,
+        "age_days": 304,
+        "authenticity_score": 95,
+        "open_issues": 85,
+        "is_stale": false
+      },
+      "category": "Vision & OCR"
+    },
+    {
+      "full_name": "drpwchen/lecture-to-notes",
+      "name": "lecture-to-notes",
+      "url": "https://github.com/drpwchen/lecture-to-notes",
+      "description": "Lecture recordings \u2192 structured grounded notes + a synced HTML viewer: video, timestamped transcript and curated summary on one page. Local GPU pipeline (Whisper ASR \u00b7 slide extraction \u00b7 OCR \u00b7 VLM signals \u00b7 capture-time alignment). Claude Code skill + plain CLI.",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 104,
+      "stars_24h": 0,
+      "trending_score": 10,
+      "topics": [
+        "claude-code",
+        "faster-whisper",
+        "lecture-notes",
+        "note-taking",
+        "obsidian",
+        "ocr",
+        "transcription",
+        "whisper"
+      ],
+      "created_at": "2026-08-02T14:38:46Z",
+      "pushed_at": "2026-09-01T12:23:31Z",
+      "quick_run": "pip install lecture-to-notes",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 104
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli",
+          "library"
+        ],
+        "integrations": [
+          "crdt-sync"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "experimental",
+        "last_push_days": 17,
+        "age_days": 47,
+        "authenticity_score": 95,
+        "open_issues": 1,
+        "is_stale": false
+      },
+      "category": "Vision & OCR"
+    },
+    {
+      "full_name": "vlm-run/vlmrun-cookbook",
+      "name": "vlmrun-cookbook",
+      "url": "https://github.com/vlm-run/vlmrun-cookbook",
+      "description": "Examples and guides for using the VLM Run API",
+      "language": "Jupyter Notebook",
+      "license": "MIT",
+      "stars": 313,
+      "stars_24h": 0,
+      "trending_score": 17,
+      "topics": [
+        "cookbook",
+        "etl",
+        "llm",
+        "ocr",
+        "vlm"
+      ],
+      "created_at": "2024-03-27T17:21:49Z",
+      "pushed_at": "2026-07-22T22:23:28Z",
+      "quick_run": "git clone https://github.com/vlm-run/vlmrun-cookbook",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 313
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "desktop"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 57,
+        "age_days": 905,
+        "authenticity_score": 95,
+        "open_issues": 16,
+        "is_stale": false
+      },
+      "category": "Vision & OCR"
+    },
+    {
+      "full_name": "Achno/gowall",
+      "name": "gowall",
+      "url": "https://github.com/Achno/gowall",
+      "description": "A tool to convert a Wallpaper's color scheme / palette, OCR with VLM's Traditional & Hybrid, Image Compression ,color palette extraction,  image upsacling with Adversarial Networks  and more image processing features.",
+      "language": "Go",
+      "license": "MIT",
+      "stars": 2309,
+      "stars_24h": 0,
+      "trending_score": 48,
+      "topics": [
+        "background-removal",
+        "cli",
+        "color-extractor",
+        "color-palette",
+        "color-scheme",
+        "compression",
+        "go",
+        "image",
+        "image-converter",
+        "image-processing",
+        "ocr",
+        "pixel-art",
+        "theme-switcher",
+        "upscale"
+      ],
+      "created_at": "2024-07-22T14:43:58Z",
+      "pushed_at": "2026-06-10T09:11:07Z",
+      "quick_run": "git clone https://github.com/Achno/gowall",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 80,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 2309
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "maintenance",
+        "last_push_days": 100,
+        "age_days": 788,
+        "authenticity_score": 80,
+        "open_issues": 12,
+        "is_stale": true
+      },
+      "category": "Vision & OCR"
+    },
+    {
+      "full_name": "Keyvanhardani/german-ocr",
+      "name": "german-ocr",
+      "url": "https://github.com/Keyvanhardani/german-ocr",
+      "description": "German-OCR is specifically trained to extract text from German documents including invoices, receipts, forms, and other business documents.",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "stars": 114,
+      "stars_24h": 0,
+      "trending_score": 10,
+      "topics": [
+        "apache-2",
+        "document-ai",
+        "fine-tuning",
+        "german-ai",
+        "german-ocr",
+        "gguf",
+        "invoice-extraction",
+        "llm",
+        "lora",
+        "ocr",
+        "ollama",
+        "qwen3",
+        "vision-language-model",
+        "vlm"
+      ],
+      "created_at": "2025-12-03T10:33:41Z",
+      "pushed_at": "2026-05-06T10:11:38Z",
+      "quick_run": "pip install german-ocr",
+      "hardware_req": "8GB Unified / Metal",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 114
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "fine-tuning"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "8GB Unified / Metal"
+        }
+      },
+      "health": {
+        "stage": "maintenance",
+        "last_push_days": 135,
+        "age_days": 289,
+        "authenticity_score": 95,
+        "open_issues": 0,
+        "is_stale": true
+      },
+      "category": "Vision & OCR"
+    },
+    {
+      "full_name": "TimmyOVO/deepseek-ocr.rs",
+      "name": "deepseek-ocr.rs",
+      "url": "https://github.com/TimmyOVO/deepseek-ocr.rs",
+      "description": "Rust multi\u2011backend OCR/VLM engine (DeepSeek\u2011OCR-1/2, PaddleOCR\u2011VL, DotsOCR) with DSQ quantization and an OpenAI\u2011compatible server & CLI \u2013 run locally without Python.",
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "stars": 2189,
+      "stars_24h": 0,
+      "trending_score": 46,
+      "topics": [
+        "candle",
+        "ocr",
+        "ocr-recognition",
+        "openai",
+        "rust"
+      ],
+      "created_at": "2025-10-25T13:42:10Z",
+      "pushed_at": "2026-02-21T12:21:10Z",
+      "quick_run": "cargo install deepseek-ocr.rs",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 2189
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli",
+          "service"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "maintenance",
+        "last_push_days": 209,
+        "age_days": 328,
+        "authenticity_score": 95,
+        "open_issues": 16,
+        "is_stale": true
+      },
+      "category": "Vision & OCR"
+    },
+    {
+      "full_name": "AdemBoukhris457/Doctra",
+      "name": "Doctra",
+      "url": "https://github.com/AdemBoukhris457/Doctra",
+      "description": "\ud83d\udcc4\ud83d\udd0d Parse, extract, and analyze documents with ease \ud83d\udcc4\ud83d\udd0d",
+      "language": "Jupyter Notebook",
+      "license": "Apache-2.0",
+      "stars": 215,
+      "stars_24h": 0,
+      "trending_score": 14,
+      "topics": [
+        "ai",
+        "document-analysis",
+        "documentparsing",
+        "extract-data",
+        "gemini",
+        "image-restoration",
+        "ocr",
+        "openai",
+        "pdf-parser",
+        "pdf2markdown",
+        "python",
+        "vlm"
+      ],
+      "created_at": "2025-08-13T18:07:39Z",
+      "pushed_at": "2025-11-29T12:14:42Z",
+      "quick_run": "git clone https://github.com/AdemBoukhris457/Doctra",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 215
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "maintenance",
+        "last_push_days": 293,
+        "age_days": 401,
+        "authenticity_score": 95,
+        "open_issues": 0,
+        "is_stale": true
+      },
+      "category": "Vision & OCR"
+    }
+  ]
+}

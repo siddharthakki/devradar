@@ -1,0 +1,76 @@
+{
+  "category": "Document Vaults & Search",
+  "count": 1,
+  "updated_at": "2026-09-28T09:25:41.483670+00:00",
+  "repositories": [
+    {
+      "full_name": "manticoresoftware/manticoresearch",
+      "name": "manticoresearch",
+      "url": "https://github.com/manticoresoftware/manticoresearch",
+      "description": "Open-source search database for full-text, vector, and hybrid search with real-time indexing and SQL.",
+      "language": "C++",
+      "license": "GPL-3.0",
+      "stars": 12018,
+      "stars_24h": 0,
+      "trending_score": 109,
+      "topics": [
+        "api",
+        "bm25",
+        "cpp",
+        "database",
+        "full-text-search",
+        "hacktoberfest",
+        "json",
+        "mysql",
+        "search",
+        "search-api",
+        "search-engine",
+        "search-server",
+        "sphinxsearch",
+        "sql",
+        "stream-filtering"
+      ],
+      "created_at": "2017-06-28T01:15:30Z",
+      "pushed_at": "2026-09-18T17:00:46Z",
+      "quick_run": "git clone https://github.com/manticoresoftware/manticoresearch",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 12018
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "service"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "real-time"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 3369,
+        "authenticity_score": 95,
+        "open_issues": 653,
+        "is_stale": false
+      },
+      "category": "Document Vaults & Search"
+    }
+  ]
+}

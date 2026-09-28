@@ -1,4 +1,4 @@
-﻿"""DevRadar store — history, velocity state, snapshots.
+"""DevRadar store — history, velocity state, snapshots.
 Owns: data/history.json (90d star time-series) + data/snapshots/prev.json (last run).
 Stdlib only. Atomic writes so Pages never serves a half-written file.
 """
@@ -31,13 +31,14 @@ def load_prev():
     return _read(PREV, {})
 
 
-def velocity(full_name, stars, prev, min_h=4, max_h=48):
+def velocity(full_name, stars, prev, min_h=4, max_h=48, now_ts=None):
     """24h velocity vs previous snapshot. 0 if no valid 4–48h-old reference."""
     ref = prev.get(full_name)
     if not ref:
         return 0
     ts, pstars = ref
-    hours = (time.time() - ts) / 3600
+    current = now_ts if now_ts is not None else time.time()
+    hours = (current - ts) / 3600
     if not (min_h <= hours <= max_h):
         return 0
     return round(max(0, stars - pstars) * 24 / hours)

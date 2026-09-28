@@ -1,4 +1,4 @@
-﻿"""
+"""
 DevRadar Weekly Digest Generator
 Compiles the top breakout repositories into a shareable Markdown digest.
 """
@@ -20,12 +20,15 @@ def generate_digest():
     ]
 
     for idx, r in enumerate(repos, 1):
-        lines.append(f"### {idx}. [{r['full_name']}]({r['url']})")
-        lines.append(f"- **Category:** `{r['category']}` | **License:** `{r.get('license', 'MIT')}`")
-        lines.append(f"- **Stars:** ⭐ {r['stars']:,} (`+{r.get('stars_24h', 0)}` in 24h) | **Authenticity:** `{r.get('authenticity_score', 95)}% Organic`")
+        name = r.get('full_name') or r.get('name') or 'Unknown'
+        url = r.get('url') or '#'
+        category = r.get('category') or 'Core Utilities'
+        lines.append(f"### {idx}. [{name}]({url})")
+        lines.append(f"- **Category:** `{category}` | **License:** `{r.get('license', 'MIT')}`")
+        lines.append(f"- **Stars:** ⭐ {r.get('stars', 0):,} (`+{r.get('stars_24h', 0)}` in 24h) | **Authenticity:** `{r.get('authenticity_score', 95)}% Organic`")
         lines.append(f"- **Hardware Viability:** `{r.get('hardware_req', 'Minimal RAM')}`")
         lines.append(f"- **Description:** {r.get('description', 'No description.')}")
-        lines.append(f"- **Quick Run:** `{r.get('quick_run', 'git clone ' + r['url'])}`")
+        lines.append(f"- **Quick Run:** `{r.get('quick_run', 'git clone ' + url)}`")
         lines.append("")
 
     lines.append("---")

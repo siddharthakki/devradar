@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="amber">
 <head>
   <meta charset="UTF-8" />
@@ -354,43 +354,64 @@
       }
     }
 
+    function escapeHtml(str) {
+      if (str === null || str === undefined) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
     function renderCard(r) {
-      const isBookmarked = bookmarks.includes(r.full_name || r.name);
+      const rawName = r.full_name || r.name || 'Unknown';
+      const safeName = escapeHtml(rawName);
+      const safeDesc = escapeHtml(r.description || '[No description provided]');
+      const safeUrl = encodeURI(r.url || '#');
+      const safeCat = escapeHtml(r.category || 'Tooling');
+      const safeLang = escapeHtml(r.language || 'Code');
+      const safeHw = escapeHtml(r.hardware_req || 'Minimal');
+      const isBookmarked = bookmarks.includes(rawName);
       const stage = r.health?.stage || 'active';
       const stagePill = stage === 'mature' 
         ? '<span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Mature</span>'
         : (stage === 'experimental' ? '<span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-purple-500/10 text-purple-400 border border-purple-500/20">Experimental</span>' : '');
 
+      const tags = (r.capabilities?.intent_tags || []).slice(0, 2).map(tag => 
+        `<span class="text-[9px] font-mono px-1.5 py-0.2 rounded bg-radarDark text-textMuted border border-borderDark">${escapeHtml(tag)}</span>`
+      ).join('');
+
       return `
         <div class="bg-cardDark border border-borderDark hover:border-accentPrimary/50 transition rounded-xl p-4 flex flex-col justify-between shadow-lg">
           <div>
             <div class="flex items-center justify-between gap-1">
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-radarDark text-accentSecondary border border-borderDark truncate max-w-[150px]">${r.category}</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-radarDark text-accentSecondary border border-borderDark truncate max-w-[150px]">${safeCat}</span>
               <div class="flex items-center gap-1.5">
                 ${stagePill}
-                <button onclick="window.toggleBookmark('${r.full_name || r.name}')" title="Bookmark" class="text-xs transition hover:scale-125">
+                <button data-repo="${safeName}" title="Bookmark" class="bookmark-btn text-xs transition hover:scale-125">
                   ${isBookmarked ? '🔖' : '📑'}
                 </button>
               </div>
             </div>
 
             <div class="mt-2.5 flex items-baseline justify-between gap-2">
-              <a href="${r.url}" target="_blank" class="text-sm font-bold text-textMain hover:text-accentPrimary transition truncate">
-                ${r.full_name || r.name}
+              <a href="${safeUrl}" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-textMain hover:text-accentPrimary transition truncate">
+                ${safeName}
               </a>
               <span class="text-[10px] font-mono text-textMuted">${r.health?.last_push_days ?? 0}d ago</span>
             </div>
 
-            <p class="mt-1.5 text-xs text-textMuted leading-relaxed line-clamp-2">${r.description || '[No description provided]'}</p>
+            <p class="mt-1.5 text-xs text-textMuted leading-relaxed line-clamp-2">${safeDesc}</p>
 
             <div class="mt-3 flex flex-wrap gap-1">
-              ${(r.capabilities?.intent_tags || []).slice(0, 2).map(tag => `<span class="text-[9px] font-mono px-1.5 py-0.2 rounded bg-radarDark text-textMuted border border-borderDark">${tag}</span>`).join('')}
-              <span class="text-[9px] font-mono px-1.5 py-0.2 rounded bg-radarDark text-textMuted border border-borderDark">${r.hardware_req || 'Minimal'}</span>
+              ${tags}
+              <span class="text-[9px] font-mono px-1.5 py-0.2 rounded bg-radarDark text-textMuted border border-borderDark">${safeHw}</span>
             </div>
           </div>
 
           <div class="mt-4 pt-3 border-t border-borderDark flex items-center justify-between text-xs font-mono">
-            <span class="text-textMuted text-[11px]">${r.language}</span>
+            <span class="text-textMuted text-[11px]">${safeLang}</span>
             <div class="flex items-center gap-2">
               ${(r.stars_24h > 0) ? `<span class="text-accentSecondary text-[11px] font-bold">+${r.stars_24h} 24h</span>` : ''}
               <span class="text-accentPrimary text-[11px] font-semibold">⭐ ${(r.stars || 0).toLocaleString()}</span>
@@ -399,6 +420,13 @@
         </div>
       `;
     }
+
+    document.getElementById('repoContainer').addEventListener('click', (e) => {
+      const btn = e.target.closest('.bookmark-btn');
+      if (btn && btn.dataset.repo) {
+        window.toggleBookmark(btn.dataset.repo);
+      }
+    });
 
     function render() {
       const cleanFreeText = (parsedNl.cleanText || searchInput.value || '').toLowerCase().trim();

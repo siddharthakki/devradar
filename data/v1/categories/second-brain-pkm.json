@@ -1,0 +1,865 @@
+{
+  "category": "Second Brain & PKM",
+  "count": 12,
+  "updated_at": "2026-09-28T09:25:41.483670+00:00",
+  "repositories": [
+    {
+      "full_name": "inkeep/open-knowledge",
+      "name": "open-knowledge",
+      "url": "https://github.com/inkeep/open-knowledge",
+      "description": "Beautiful, AI-native markdown IDE and LLM wiki",
+      "language": "TypeScript",
+      "license": "GPL-3.0",
+      "stars": 4252,
+      "stars_24h": 0,
+      "trending_score": 65,
+      "topics": [
+        "2nd-brain",
+        "agent-skills",
+        "claude",
+        "codex",
+        "company-brain",
+        "docs",
+        "knowledge-",
+        "knowledge-base",
+        "knowledge-management",
+        "llm",
+        "llm-wiki",
+        "llm-wiki-karpathy",
+        "markdown",
+        "markdown-editor",
+        "md",
+        "mdx",
+        "notes",
+        "pkm",
+        "second-brain",
+        "skills"
+      ],
+      "created_at": "2026-06-03T11:12:40Z",
+      "pushed_at": "2026-09-18T13:25:15Z",
+      "quick_run": "npm install open-knowledge",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 4252
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 107,
+        "authenticity_score": 95,
+        "open_issues": 43,
+        "is_stale": false
+      },
+      "category": "Second Brain & PKM"
+    },
+    {
+      "full_name": "pbek/QOwnNotes",
+      "name": "QOwnNotes",
+      "url": "https://github.com/pbek/QOwnNotes",
+      "description": "QOwnNotes is a plain-text file notepad and todo-list manager with Markdown support and Nextcloud / ownCloud integration.",
+      "language": "C++",
+      "license": "GPL-2.0",
+      "stars": 5882,
+      "stars_24h": 0,
+      "trending_score": 76,
+      "topics": [
+        "bookmark",
+        "c-plus-plus",
+        "caldav",
+        "chrome-extension",
+        "dropbox",
+        "firefox-extension",
+        "llm",
+        "local-first",
+        "markdown",
+        "nextcloud",
+        "nextcloud-notes",
+        "note-taking",
+        "notebook",
+        "notes",
+        "owncloud",
+        "pim",
+        "pkm",
+        "qownnotes",
+        "qt",
+        "second-brain"
+      ],
+      "created_at": "2014-12-02T14:38:05Z",
+      "pushed_at": "2026-09-18T08:46:09Z",
+      "quick_run": "git clone https://github.com/pbek/QOwnNotes",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 5882
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only",
+          "byok-cloud"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 4308,
+        "authenticity_score": 95,
+        "open_issues": 63,
+        "is_stale": false
+      },
+      "category": "Second Brain & PKM"
+    },
+    {
+      "full_name": "eugeniughelbur/obsidian-second-brain",
+      "name": "obsidian-second-brain",
+      "url": "https://github.com/eugeniughelbur/obsidian-second-brain",
+      "description": "Persistent memory for Claude Code and 6 other CLI agents, stored as plain markdown in your Obsidian vault. Stop re-explaining your projects, decisions and people every session. 45 commands: hybrid semantic search, self-rewriting notes, key-less web research, and scheduled agents that maintain the vault while you sleep.",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 4499,
+      "stars_24h": 0,
+      "trending_score": 67,
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "ai-note-taking",
+        "ai-second-brain",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "claude-code-skill",
+        "claude-memory",
+        "claude-plugin",
+        "claude-skill",
+        "karpathy-llm-wiki",
+        "knowledge-graph",
+        "knowledge-management",
+        "note-taking",
+        "obsidian",
+        "obsidian-md",
+        "personal-knowledge-management",
+        "pkm",
+        "second-brain"
+      ],
+      "created_at": "2026-03-24T11:58:12Z",
+      "pushed_at": "2026-09-18T06:48:19Z",
+      "quick_run": "pip install obsidian-second-brain",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 4499
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 178,
+        "authenticity_score": 95,
+        "open_issues": 14,
+        "is_stale": false
+      },
+      "category": "Second Brain & PKM"
+    },
+    {
+      "full_name": "alfadur7/llm-wiki-newsroom",
+      "name": "llm-wiki-newsroom",
+      "url": "https://github.com/alfadur7/llm-wiki-newsroom",
+      "description": "Harness engineering applied to knowledge production: a self-evolving multi-agent newsroom that turns your documents into a cross-linked markdown wiki. A \"reground\" loop pulls published pages back in before they go stale \u2014 writer \u2260 reviewer, local-first, a structured alternative to RAG.",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 164,
+      "stars_24h": 0,
+      "trending_score": 12,
+      "topics": [
+        "agentic-ai",
+        "ai-agents",
+        "claude",
+        "claude-code",
+        "claude-skills",
+        "digital-garden",
+        "harness-engineering",
+        "knowledge-base",
+        "knowledge-graph",
+        "llm",
+        "llm-wiki",
+        "local-first",
+        "memex",
+        "multi-agent",
+        "obsidian",
+        "personal-knowledge-management",
+        "pkm",
+        "rag",
+        "second-brain",
+        "wiki"
+      ],
+      "created_at": "2026-06-26T06:54:41Z",
+      "pushed_at": "2026-09-18T04:03:34Z",
+      "quick_run": "pip install llm-wiki-newsroom",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 164
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "drop-in-replacement"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 84,
+        "authenticity_score": 95,
+        "open_issues": 0,
+        "is_stale": false
+      },
+      "category": "Second Brain & PKM"
+    },
+    {
+      "full_name": "zosmaai/pi-llm-wiki",
+      "name": "pi-llm-wiki",
+      "url": "https://github.com/zosmaai/pi-llm-wiki",
+      "description": "Self-maintaining, Obsidian-compatible knowledge base for pi \u2014 turn raw sources into an interlinked wiki that compounds. Native Open Knowledge Format (OKF) v0.2.",
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 590,
+      "stars_24h": 0,
+      "trending_score": 24,
+      "topics": [
+        "ai-memory",
+        "interoperability",
+        "karpathy",
+        "knowledge-base",
+        "knowledge-management",
+        "llm-wiki",
+        "markdown",
+        "mcp",
+        "memory",
+        "obsidian",
+        "okf",
+        "okf-v0-2",
+        "open-knowledge-format",
+        "pi",
+        "pkm",
+        "portable-knowledge",
+        "second-brain",
+        "wiki"
+      ],
+      "created_at": "2026-04-27T15:00:34Z",
+      "pushed_at": "2026-09-15T23:07:29Z",
+      "quick_run": "npm install pi-llm-wiki",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 590
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 2,
+        "age_days": 144,
+        "authenticity_score": 95,
+        "open_issues": 17,
+        "is_stale": false
+      },
+      "category": "Second Brain & PKM"
+    },
+    {
+      "full_name": "AgriciDaniel/claude-obsidian",
+      "name": "claude-obsidian",
+      "url": "https://github.com/AgriciDaniel/claude-obsidian",
+      "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 15069,
+      "stars_24h": 0,
+      "trending_score": 122,
+      "topics": [
+        "agent-skills",
+        "ai-note-taking",
+        "ai-second-brain",
+        "claude-code",
+        "claude-code-skill",
+        "claude-memory",
+        "claude-plugin",
+        "karpathy-llm-wiki",
+        "knowledge-graph",
+        "knowledge-management",
+        "note-taking",
+        "notion-alternative",
+        "obsidian",
+        "obsidian-ai",
+        "obsidian-plugin",
+        "obsidian-second-brain",
+        "open-source",
+        "personal-knowledge-management",
+        "pkm",
+        "second-brain"
+      ],
+      "created_at": "2026-04-07T08:59:37Z",
+      "pushed_at": "2026-09-10T17:44:23Z",
+      "quick_run": "pip install claude-obsidian",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 15069
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "drop-in-replacement"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 8,
+        "age_days": 164,
+        "authenticity_score": 95,
+        "open_issues": 21,
+        "is_stale": false
+      },
+      "category": "Second Brain & PKM"
+    },
+    {
+      "full_name": "wikibonsai/wikibonsai",
+      "name": "wikibonsai",
+      "url": "https://github.com/wikibonsai/wikibonsai",
+      "description": "A structured knowledge layer in plain text.",
+      "language": "Svelte",
+      "license": "GPL-3.0",
+      "stars": 106,
+      "stars_24h": 0,
+      "trending_score": 10,
+      "topics": [
+        "bidirectional-link",
+        "digital-garden",
+        "exocortex",
+        "graph",
+        "hierarchy",
+        "knowledge-base",
+        "markdown",
+        "note-taking",
+        "ontology",
+        "personal-knowledge-management",
+        "personal-wiki",
+        "pkm",
+        "second-brain",
+        "semantic-tree",
+        "taxonomy",
+        "wikibonsai",
+        "wikilink",
+        "wikilinks",
+        "zettelkasten"
+      ],
+      "created_at": "2023-03-01T22:53:04Z",
+      "pushed_at": "2026-09-04T00:54:03Z",
+      "quick_run": "git clone https://github.com/wikibonsai/wikibonsai",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 106
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 14,
+        "age_days": 1296,
+        "authenticity_score": 95,
+        "open_issues": 0,
+        "is_stale": false
+      },
+      "category": "Second Brain & PKM"
+    },
+    {
+      "full_name": "kytmanov/synto",
+      "name": "synto",
+      "url": "https://github.com/kytmanov/synto",
+      "description": "More than just Karpathy\u2019s LLM Wiki, 100% local with Ollama. Drop Markdown notes \u2192 AI extracts concepts \u2192 your Obsidian wiki auto-links and grows. Zero sharing. Your notes stay yours.",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 255,
+      "stars_24h": 0,
+      "trending_score": 15,
+      "topics": [
+        "git-based-wiki",
+        "karpathy",
+        "knowledge-base",
+        "llm-knowledge-base",
+        "llm-pipeline",
+        "llm-tools",
+        "llm-wiki",
+        "local-first-ai",
+        "local-llm",
+        "markdown-wiki",
+        "obsidian",
+        "obsidian-llm",
+        "obsidian-wiki",
+        "ollama",
+        "personal-knowledge-management",
+        "pkm",
+        "rag-alternative",
+        "rag-local",
+        "second-brain",
+        "self-hosted-wiki"
+      ],
+      "created_at": "2026-05-15T02:40:05Z",
+      "pushed_at": "2026-09-02T23:28:17Z",
+      "quick_run": "pip install synto",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 255
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "drop-in-replacement",
+          "self-hosted"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 15,
+        "age_days": 126,
+        "authenticity_score": 95,
+        "open_issues": 10,
+        "is_stale": false
+      },
+      "category": "Second Brain & PKM"
+    },
+    {
+      "full_name": "jaredrhod/ai-memory-vault",
+      "name": "ai-memory-vault",
+      "url": "https://github.com/jaredrhod/ai-memory-vault",
+      "description": "Give your AI a real, persistent memory. The open-source system plus templates that turn an Obsidian vault into your AI's working memory. No vector database, just markdown.",
+      "language": "Code",
+      "license": "CC-BY-SA-4.0",
+      "stars": 660,
+      "stars_24h": 0,
+      "trending_score": 25,
+      "topics": [
+        "agent-memory",
+        "ai",
+        "ai-agents",
+        "ai-memory",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "claude-skills",
+        "knowledge-management",
+        "llm",
+        "local-first",
+        "markdown",
+        "mcp",
+        "memory",
+        "note-taking",
+        "obsidian",
+        "obsidian-md",
+        "obsidian-vault",
+        "pkm",
+        "second-brain"
+      ],
+      "created_at": "2026-06-18T01:17:27Z",
+      "pushed_at": "2026-08-31T01:56:56Z",
+      "quick_run": "git clone https://github.com/jaredrhod/ai-memory-vault",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 660
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 18,
+        "age_days": 92,
+        "authenticity_score": 95,
+        "open_issues": 1,
+        "is_stale": false
+      },
+      "category": "Second Brain & PKM"
+    },
+    {
+      "full_name": "smixs/agent-second-brain",
+      "name": "agent-second-brain",
+      "url": "https://github.com/smixs/agent-second-brain",
+      "description": "An always-on second brain you talk to. Voice notes in Telegram \u2192 typed, linked knowledge in your Obsidian vault. Runs 24/7 on the Claude subscription you already have.",
+      "language": "Python",
+      "license": "MIT",
+      "stars": 369,
+      "stars_24h": 0,
+      "trending_score": 19,
+      "topics": [
+        "ai-agents",
+        "ai-automation",
+        "claude",
+        "claude-code",
+        "ebbinghaus",
+        "knowledge-graph",
+        "llm",
+        "memory-system",
+        "obsidian",
+        "personal-assistant",
+        "pkm",
+        "productivity",
+        "python",
+        "second-brain",
+        "telegram-bot",
+        "voice-assistant"
+      ],
+      "created_at": "2025-12-26T11:54:29Z",
+      "pushed_at": "2026-08-05T22:31:57Z",
+      "quick_run": "pip install agent-second-brain",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 369
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 43,
+        "age_days": 266,
+        "authenticity_score": 95,
+        "open_issues": 2,
+        "is_stale": false
+      },
+      "category": "Second Brain & PKM"
+    },
+    {
+      "full_name": "SparkyWen/qcue",
+      "name": "qcue",
+      "url": "https://github.com/SparkyWen/qcue",
+      "description": "Your second brain - capture your mind",
+      "language": "Rust",
+      "license": "AGPL-3.0",
+      "stars": 131,
+      "stars_24h": 0,
+      "trending_score": 11,
+      "topics": [
+        "agpl",
+        "ai",
+        "axum",
+        "byok",
+        "flutter",
+        "knowledge-management",
+        "llm",
+        "note-taking",
+        "offline-first",
+        "personal-knowledge-management",
+        "pkm",
+        "postgresql",
+        "redis",
+        "rust",
+        "second-brain",
+        "self-hosted"
+      ],
+      "created_at": "2026-06-26T06:58:01Z",
+      "pushed_at": "2026-06-30T07:45:53Z",
+      "quick_run": "cargo install qcue",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 131
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only",
+          "byok-cloud"
+        ],
+        "intent_tags": [
+          "self-hosted"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 80,
+        "age_days": 84,
+        "authenticity_score": 95,
+        "open_issues": 2,
+        "is_stale": false
+      },
+      "category": "Second Brain & PKM"
+    },
+    {
+      "full_name": "IssacW228/student-llm-wiki",
+      "name": "student-llm-wiki",
+      "url": "https://github.com/IssacW228/student-llm-wiki",
+      "description": "\ud83d\udcda Student LLM Wiki \u2014 AI-compiled knowledge base for university students. Drop course slides, get a persistent interlinked wiki. Feynman review, exam prep, confidence decay, cross-course connections. Based on Karpathy's LLM Wiki pattern. Works with Claude Cowork / Claude Code / Claudian + Obsidian.\u5b66\u751f\u5927\u8bed\u8a00\u6a21\u578b\u7ef4\u57fa\u767e\u79d1\u2014\u2014\u4e13\u4e3a\u5927\u5b66\u751f\u6253\u9020\u7684AI\u7f16\u8bd1\u77e5\u8bc6\u5e93\u3002",
+      "language": "Code",
+      "license": "MIT",
+      "stars": 175,
+      "stars_24h": 0,
+      "trending_score": 13,
+      "topics": [
+        "ai-tools",
+        "claude-code",
+        "claude-cowork",
+        "feynman-technique",
+        "karpathy",
+        "knowledge-base",
+        "llm-wiki",
+        "note-taking",
+        "obsidian",
+        "personal-knowledge-management",
+        "pkm",
+        "second-brain",
+        "student-tools",
+        "study-tools"
+      ],
+      "created_at": "2026-06-01T13:49:05Z",
+      "pushed_at": "2026-06-16T09:28:10Z",
+      "quick_run": "git clone https://github.com/IssacW228/student-llm-wiki",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 80,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 175
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "maintenance",
+        "last_push_days": 94,
+        "age_days": 109,
+        "authenticity_score": 80,
+        "open_issues": 0,
+        "is_stale": true
+      },
+      "category": "Second Brain & PKM"
+    }
+  ]
+}

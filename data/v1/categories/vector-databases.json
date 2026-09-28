@@ -1,0 +1,219 @@
+{
+  "category": "Vector Databases",
+  "count": 3,
+  "updated_at": "2026-09-28T09:25:41.483670+00:00",
+  "repositories": [
+    {
+      "full_name": "qdrant/qdrant",
+      "name": "qdrant",
+      "url": "https://github.com/qdrant/qdrant",
+      "description": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/",
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "stars": 34662,
+      "stars_24h": 0,
+      "trending_score": 186,
+      "topics": [
+        "ai-search",
+        "ai-search-engine",
+        "embeddings-similarity",
+        "hnsw",
+        "hybrid-search",
+        "image-search",
+        "knn-algorithm",
+        "machine-learning",
+        "mlops",
+        "nearest-neighbor-search",
+        "neural-network",
+        "neural-search",
+        "recommender-system",
+        "search",
+        "search-engine",
+        "search-engines",
+        "similarity-search",
+        "vector-database",
+        "vector-search",
+        "vector-search-engine"
+      ],
+      "created_at": "2020-05-30T21:37:01Z",
+      "pushed_at": "2026-09-18T17:55:23Z",
+      "quick_run": "cargo install qdrant",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": false,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 34662
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "byok-cloud"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 2301,
+        "authenticity_score": 95,
+        "open_issues": 736,
+        "is_stale": false
+      },
+      "category": "Vector Databases"
+    },
+    {
+      "full_name": "ArcadeData/arcadedb",
+      "name": "arcadedb",
+      "url": "https://github.com/ArcadeData/arcadedb",
+      "description": "ArcadeDB Multi-Model Database, one DBMS that supports SQL, Cypher, Gremlin, HTTP/JSON, MongoDB and Redis. ArcadeDB is a conceptual fork of OrientDB, the first Multi-Model DBMS. ArcadeDB supports Vector Embeddings.",
+      "language": "Java",
+      "license": "Apache-2.0",
+      "stars": 1157,
+      "stars_24h": 0,
+      "trending_score": 34,
+      "topics": [
+        "arcadedb",
+        "database",
+        "dbms",
+        "distributed",
+        "docker",
+        "document",
+        "embedded",
+        "graph",
+        "k8s",
+        "key-value",
+        "kubernetes",
+        "multi-model",
+        "orientdb",
+        "search-engine",
+        "similarity-search",
+        "time-series",
+        "vector-database",
+        "vector-search"
+      ],
+      "created_at": "2021-08-16T16:01:29Z",
+      "pushed_at": "2026-09-18T18:23:26Z",
+      "quick_run": "docker run -d arcadedb",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": false,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 1157
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "service"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "docker"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 1859,
+        "authenticity_score": 95,
+        "open_issues": 195,
+        "is_stale": false
+      },
+      "category": "Vector Databases"
+    },
+    {
+      "full_name": "milvus-io/milvus",
+      "name": "milvus",
+      "url": "https://github.com/milvus-io/milvus",
+      "description": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "stars": 46153,
+      "stars_24h": 0,
+      "trending_score": 214,
+      "topics": [
+        "anns",
+        "cloud-native",
+        "diskann",
+        "distributed",
+        "embedding-database",
+        "embedding-similarity",
+        "embedding-store",
+        "faiss",
+        "golang",
+        "hnsw",
+        "image-search",
+        "llm",
+        "nearest-neighbor-search",
+        "rag",
+        "vector-database",
+        "vector-search",
+        "vector-similarity",
+        "vector-store"
+      ],
+      "created_at": "2019-09-16T06:43:43Z",
+      "pushed_at": "2026-09-18T10:19:59Z",
+      "quick_run": "git clone https://github.com/milvus-io/milvus",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": false,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 46153
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "byok-cloud"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 2559,
+        "authenticity_score": 95,
+        "open_issues": 1452,
+        "is_stale": false
+      },
+      "category": "Vector Databases"
+    }
+  ]
+}
