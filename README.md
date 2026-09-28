@@ -33,12 +33,13 @@ Standard open-source discovery is broken:
 
 * 🧠 **AI Stack Advisor (Powered by Puter.js):** Zero-friction, free client-side AI consultant directly inside the dashboard. Ask questions like *"I need a local offline agent with tool calling on an RTX 3060"* and receive structured architectural trade-offs and tool recommendations.
 * ⚖️ **Architectural Verdicts & Gotchas:** Every tool card features a concise 1-sentence engineering assessment and realistic gotchas (VRAM ceilings, API shifts, stability warnings).
+* ⚡ **Direct Competitor & Replaces Index:** Instantly see which tool each repository challenges (e.g. *⚡ Alternative to Ollama (Rust-native, lower overhead)* or *⚡ Alternative to LangChain*). Filter directly with `vs:ollama`, `alt:langchain`, or interactive comparison chips.
 * 🖥️ **Hardware Floor Profiling:** Know before you clone whether a tool needs **Minimal CPU**, **8GB Unified Apple Silicon (Metal)**, or **16–24GB+ CUDA VRAM**.
 * 🛡️ **Anti-Hype Authenticity Index:** Flags abnormal star surges using fork-to-star balance ratios and momentum deviation to weed out star farms.
 * 🚀 **Gravity-Decay Momentum Scoring:** Prioritizes repositories displaying rapid adoption over their first 7 to 30 days while dampening dormant behemoths:
   $$\text{Score} = \frac{\text{Stars}}{(\text{Age\_Hours} + 2.0)^{1.25}}$$
 * 🧩 **20 High-Signal Disciplines:** Categorizes projects across Local LLM Engines, Multi-Agent Frameworks, RAG, CRDTs, TUI Tools, Embedded AI, Vector Databases, and more.
-* 💬 **Natural Language Querying:** Query directly using phrases like *"local-first llm engine without gpu in rust"* or use instant filter chips (`lang:python`, `needs:gpu`, `needs:mcp`).
+* 💬 **Natural Language Querying:** Query directly using phrases like *"local-first llm engine without gpu in rust"* or use instant filter chips (`lang:python`, `needs:gpu`, `needs:mcp`, `vs:ollama`).
 * 📡 **Static API Slices & RSS 2.0:** All data is published hourly to flat JSON endpoints and an RSS 2.0 feed for seamless ingestion into Feedly, Miniflux, or custom bots.
 * 💻 **Terminal CLI:** Query the live leaderboard directly from your command line without opening a browser.
 
@@ -81,7 +82,10 @@ python cli.py --top 10
 
 # Filter by specific category
 python cli.py --top 5 --category "Local LLM Engines"
-python cli.py --top 5 --category "Multi-Agent Frameworks"
+
+# Filter by competitor / incumbent alternative
+python cli.py --top 5 --vs ollama
+python cli.py --top 5 --vs langchain
 ```
 
 ### Sample Output:
@@ -90,11 +94,12 @@ python cli.py --top 5 --category "Multi-Agent Frameworks"
 
 Stars      24h Velocity   Authenticity   Repository                          Specs
 ------------------------------------------------------------------------------------------
-⭐ 3,783    +45 24h        🛡️ 95%         raullenchai/Rapid-MLX               8GB Unified / Metal
+⭐ 36,517   +376 24h       🛡️ 95%         sgl-project/sglang                  16GB+ CUDA VRAM
+  ⚡ Alternative to vLLM (Fast structured decoding and spec decoding engine)
+  ↳ Verdict: Zero-cloud inference runner designed for private, offline execution.
 ⭐ 128,702  +210 24h       🛡️ 95%         ggml-org/llama.cpp                  8GB Unified / Metal
-⭐ 9,388    +12 24h        🛡️ 95%         oumi-ai/oumi                        Minimal CPU
-⭐ 5,510    +18 24h        🛡️ 95%         Blaizzy/mlx-vlm                     Minimal CPU
-⭐ 210      +8 24h         🛡️ 95%         defilantech/LLMKube                 8GB Unified / Metal
+  ⚡ Alternative to Ollama (Raw C/C++ inference runtime)
+  ↳ Verdict: Zero-cloud inference runner designed for private, offline execution.
 
 Explore full visual dashboard: https://siddharthakki.github.io/devradar/
 ```

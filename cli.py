@@ -19,6 +19,7 @@ def main():
     parser = argparse.ArgumentParser(description="DevRadar Terminal Client")
     parser.add_argument("--top", type=int, default=10, help="Number of repositories to display")
     parser.add_argument("--category", type=str, default=None, help="Filter by category")
+    parser.add_argument("--vs", type=str, default=None, help="Filter by competitor / incumbent alternative (e.g. ollama, langchain, pinecone)")
     args = parser.parse_args()
 
     data = None
@@ -44,6 +45,12 @@ def main():
     repos = data.get("repositories", [])
     if args.category:
         repos = [r for r in repos if args.category.lower() in r.get("category", "").lower()]
+    if args.vs:
+        vs_query = args.vs.lower()
+        repos = [
+            r for r in repos 
+            if any(vs_query in rep.lower() for rep in r.get("replaces", [])) or vs_query in r.get("comparison", "").lower()
+        ]
 
     print("\n\033[1;36m🛰️  DEVRADAR — BREAKOUT OPEN-SOURCE LEADERBOARD\033[0m\n")
     print(f"{'Stars':<10} {'24h Velocity':<14} {'Authenticity':<14} {'Repository':<35} {'Specs'}")
@@ -56,6 +63,10 @@ def main():
         name = r.get("full_name", r.get("name", "Unknown"))[:34]
         hw = r.get("hardware_req", "Minimal")
         print(f"{stars:<10} {v24:<14} {auth:<14} {name:<35} {hw}")
+        if r.get("comparison"):
+            print(f"  \033[33m⚡ {r.get('comparison')}\033[0m")
+        if r.get("verdict"):
+            print(f"  \033[90m↳ Verdict: {r.get('verdict')}\033[0m")
 
     print("\nExplore full visual dashboard: https://siddharthakki.github.io/devradar/\n")
 

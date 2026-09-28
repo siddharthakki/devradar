@@ -1,7 +1,87 @@
 {
-  "updated_at": "2026-09-28T09:53:17.073888+00:00",
+  "updated_at": "2026-09-28T09:59:09.812663+00:00",
   "total_repositories": 148,
   "repositories": [
+    {
+      "full_name": "brycewang-stanford/StatsPAI",
+      "name": "StatsPAI",
+      "url": "https://github.com/brycewang-stanford/StatsPAI",
+      "description": "StatsPAI is the first Agent-native Python library for causal inference and applied econometrics \u2014 unified API, broad cross-method coverage, structured result objects, machine-readable schemas, Skills, an MCP server, and R/Stata parity validation.",
+      "category": "Local LLM Engines",
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
+      "language": "Python",
+      "license": "MIT",
+      "stars": 326,
+      "stars_24h": 0,
+      "trending_score": 18,
+      "topics": [
+        "agent-native",
+        "ai-agents",
+        "causal-discovery",
+        "causal-inference",
+        "data-science",
+        "difference-in-differences",
+        "double-machine-learning",
+        "econometrics",
+        "instrumental-variables",
+        "llm",
+        "mcp",
+        "panel-data",
+        "policy-evaluation",
+        "python",
+        "regression-discontinuity",
+        "rstats",
+        "stata",
+        "statistics",
+        "synthetic-control",
+        "treatment-effects"
+      ],
+      "created_at": "2025-07-26T09:53:30Z",
+      "pushed_at": "2026-09-28T09:55:49Z",
+      "quick_run": "git clone https://github.com/brycewang-stanford/StatsPAI",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589549,
+          "stars": 326
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library",
+          "service"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 429,
+        "authenticity_score": 95,
+        "open_issues": 0,
+        "is_stale": false
+      }
+    },
     {
       "full_name": "sgl-project/sglang",
       "name": "sglang",
@@ -10,11 +90,16 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution.",
+      "comparison": "Alternative to vLLM (Fast structured decoding and spec decoding engine)",
+      "replaces": [
+        "vllm",
+        "tgi"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
-      "stars": 36516,
-      "stars_24h": 375,
-      "trending_score": 1316,
+      "stars": 36517,
+      "stars_24h": 376,
+      "trending_score": 1319,
       "topics": [
         "attention",
         "blackwell",
@@ -54,6 +139,10 @@
         {
           "ts": 1790589197,
           "stars": 36516
+        },
+        {
+          "ts": 1790589549,
+          "stars": 36517
         }
       ],
       "capabilities": {
@@ -90,6 +179,11 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 5766,
@@ -130,6 +224,10 @@
         {
           "ts": 1790589197,
           "stars": 5766
+        },
+        {
+          "ts": 1790589549,
+          "stars": 5766
         }
       ],
       "capabilities": {
@@ -166,6 +264,11 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 1220,
@@ -193,6 +296,10 @@
         {
           "ts": 1790589197,
           "stars": 1220
+        },
+        {
+          "ts": 1790589549,
+          "stars": 1220
         }
       ],
       "capabilities": {
@@ -217,7 +324,7 @@
         "last_push_days": 0,
         "age_days": 690,
         "authenticity_score": 95,
-        "open_issues": 7,
+        "open_issues": 6,
         "is_stale": false
       }
     },
@@ -229,6 +336,11 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "Go",
       "license": "Apache-2.0",
       "stars": 5952,
@@ -248,7 +360,7 @@
         "vllm"
       ],
       "created_at": "2025-08-26T21:49:50Z",
-      "pushed_at": "2026-09-28T09:52:13Z",
+      "pushed_at": "2026-09-28T09:55:32Z",
       "quick_run": "git clone https://github.com/vllm-project/semantic-router",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -261,6 +373,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 5952
+        },
+        {
+          "ts": 1790589549,
           "stars": 5952
         }
       ],
@@ -298,6 +414,11 @@
       "category": "Local LLM Engines",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "C++",
       "license": "Apache-2.0",
       "stars": 595,
@@ -319,7 +440,7 @@
         "qwen"
       ],
       "created_at": "2026-07-10T16:19:44Z",
-      "pushed_at": "2026-09-28T09:38:28Z",
+      "pushed_at": "2026-09-28T09:53:50Z",
       "quick_run": "git clone https://github.com/Helldez/BigMoeOnEdge",
       "hardware_req": "8GB Unified / Metal",
       "is_cuda_ready": false,
@@ -328,6 +449,10 @@
       "star_history": [
         {
           "ts": 1790589197,
+          "stars": 595
+        },
+        {
+          "ts": 1790589549,
           "stars": 595
         }
       ],
@@ -365,6 +490,11 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to TGI (High-throughput PagedAttention server)",
+      "replaces": [
+        "tgi",
+        "tensorrt-llm"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 2899,
@@ -396,6 +526,10 @@
         {
           "ts": 1790589197,
           "stars": 2899
+        },
+        {
+          "ts": 1790589549,
+          "stars": 2899
         }
       ],
       "capabilities": {
@@ -420,7 +554,75 @@
         "last_push_days": 0,
         "age_days": 606,
         "authenticity_score": 95,
-        "open_issues": 3665,
+        "open_issues": 3666,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "ggml-org/llama.cpp",
+      "name": "llama.cpp",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "description": "LLM inference in C/C++",
+      "category": "Local LLM Engines",
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama (Raw C/C++ inference runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
+      "language": "C++",
+      "license": "MIT",
+      "stars": 129751,
+      "stars_24h": 1049,
+      "trending_score": 3507,
+      "topics": [
+        "ggml"
+      ],
+      "created_at": "2023-03-10T18:58:00Z",
+      "pushed_at": "2026-09-28T09:34:44Z",
+      "quick_run": "git clone https://github.com/ggml-org/llama.cpp",
+      "hardware_req": "8GB Unified / Metal",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 128702
+        },
+        {
+          "ts": 1790589197,
+          "stars": 129750
+        },
+        {
+          "ts": 1790589549,
+          "stars": 129751
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "8GB Unified / Metal"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 1297,
+        "authenticity_score": 95,
+        "open_issues": 2555,
         "is_stale": false
       }
     },
@@ -432,6 +634,11 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "C++",
       "license": "Apache-2.0",
       "stars": 6676,
@@ -464,6 +671,10 @@
         {
           "ts": 1790589197,
           "stars": 6676
+        },
+        {
+          "ts": 1790589549,
+          "stars": 6676
         }
       ],
       "capabilities": {
@@ -488,7 +699,7 @@
         "last_push_days": 0,
         "age_days": 825,
         "authenticity_score": 95,
-        "open_issues": 632,
+        "open_issues": 634,
         "is_stale": false
       }
     },
@@ -500,6 +711,11 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "TypeScript",
       "license": "NOASSERTION",
       "stars": 1663,
@@ -537,6 +753,10 @@
         {
           "ts": 1790589197,
           "stars": 1663
+        },
+        {
+          "ts": 1790589549,
+          "stars": 1663
         }
       ],
       "capabilities": {
@@ -573,11 +793,16 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
-      "stars": 4980,
-      "stars_24h": 0,
-      "trending_score": 70,
+      "stars": 4981,
+      "stars_24h": 1,
+      "trending_score": 73,
       "topics": [],
       "created_at": "2024-04-23T19:00:54Z",
       "pushed_at": "2026-09-28T09:30:16Z",
@@ -590,6 +815,10 @@
         {
           "ts": 1790589197,
           "stars": 4980
+        },
+        {
+          "ts": 1790589549,
+          "stars": 4981
         }
       ],
       "capabilities": {
@@ -619,65 +848,6 @@
       }
     },
     {
-      "full_name": "ggml-org/llama.cpp",
-      "name": "llama.cpp",
-      "url": "https://github.com/ggml-org/llama.cpp",
-      "description": "LLM inference in C/C++",
-      "category": "Local LLM Engines",
-      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "language": "C++",
-      "license": "MIT",
-      "stars": 129750,
-      "stars_24h": 1048,
-      "trending_score": 3504,
-      "topics": [
-        "ggml"
-      ],
-      "created_at": "2023-03-10T18:58:00Z",
-      "pushed_at": "2026-09-28T09:34:44Z",
-      "quick_run": "git clone https://github.com/ggml-org/llama.cpp",
-      "hardware_req": "8GB Unified / Metal",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 128702
-        },
-        {
-          "ts": 1790589197,
-          "stars": 129750
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "8GB Unified / Metal"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 1297,
-        "authenticity_score": 95,
-        "open_issues": 2555,
-        "is_stale": false
-      }
-    },
-    {
       "full_name": "Human-Agent-Society/reef",
       "name": "reef",
       "url": "https://github.com/Human-Agent-Society/reef",
@@ -685,11 +855,16 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
-      "stars": 6826,
-      "stars_24h": 3279,
-      "trending_score": 9919,
+      "stars": 6829,
+      "stars_24h": 3282,
+      "trending_score": 9928,
       "topics": [
         "agent-infrastructure",
         "ai-agents",
@@ -719,6 +894,10 @@
         {
           "ts": 1790589197,
           "stars": 6826
+        },
+        {
+          "ts": 1790589549,
+          "stars": 6829
         }
       ],
       "capabilities": {
@@ -755,11 +934,16 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution.",
+      "comparison": "Alternative to TGI (High-throughput PagedAttention server)",
+      "replaces": [
+        "tgi",
+        "tensorrt-llm"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
-      "stars": 92850,
-      "stars_24h": 740,
-      "trending_score": 2524,
+      "stars": 92851,
+      "stars_24h": 741,
+      "trending_score": 2527,
       "topics": [
         "amd",
         "blackwell",
@@ -801,6 +985,10 @@
         {
           "ts": 1790589197,
           "stars": 92850
+        },
+        {
+          "ts": 1790589549,
+          "stars": 92851
         }
       ],
       "capabilities": {
@@ -837,6 +1025,11 @@
       "category": "Local LLM Engines",
       "verdict": "Heavyweight architecture engineered for large parameter weights with dedicated CUDA hardware.",
       "gotchas": "High VRAM requirement (24GB+ CUDA); cannot run on standard consumer laptops.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "C++",
       "license": "Apache-2.0",
       "stars": 2885,
@@ -878,6 +1071,10 @@
         {
           "ts": 1790589197,
           "stars": 2885
+        },
+        {
+          "ts": 1790589549,
+          "stars": 2885
         }
       ],
       "capabilities": {
@@ -914,6 +1111,11 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "Jupyter Notebook",
       "license": "Apache-2.0",
       "stars": 623,
@@ -932,7 +1134,7 @@
         "vlm"
       ],
       "created_at": "2022-05-25T10:56:08Z",
-      "pushed_at": "2026-09-28T09:24:00Z",
+      "pushed_at": "2026-09-28T09:57:06Z",
       "quick_run": "git clone https://github.com/huggingface/optimum-intel",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -945,6 +1147,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 623
+        },
+        {
+          "ts": 1790589549,
           "stars": 623
         }
       ],
@@ -975,49 +1181,57 @@
       }
     },
     {
-      "full_name": "LMCache/LMCache",
-      "name": "LMCache",
-      "url": "https://github.com/LMCache/LMCache",
-      "description": "LMCache: Supercharge Your LLM with the Fastest KV Cache Layer",
-      "category": "Local LLM Engines",
-      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution.",
-      "language": "Python",
-      "license": "Apache-2.0",
-      "stars": 11930,
-      "stars_24h": 68,
-      "trending_score": 313,
-      "topics": [
-        "amd",
-        "cuda",
-        "fast",
-        "inference",
-        "kv-cache",
-        "llm",
-        "pytorch",
-        "rocm",
-        "speed",
-        "vllm"
+      "full_name": "smithersai/smithers",
+      "name": "smithers",
+      "url": "https://github.com/smithersai/smithers",
+      "description": "Smithers is an agentic workflow framework for defining workflows in simple TypeScript configuration files and executing them quickly, durably, and reliably",
+      "category": "Multi-Agent Frameworks",
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
       ],
-      "created_at": "2024-05-28T21:06:04Z",
-      "pushed_at": "2026-09-28T09:48:15Z",
-      "quick_run": "git clone https://github.com/LMCache/LMCache",
-      "hardware_req": "16GB+ CUDA VRAM",
-      "is_cuda_ready": true,
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 422,
+      "stars_24h": 5,
+      "trending_score": 35,
+      "topics": [
+        "agent-orchestration",
+        "ai-agents",
+        "background-agents",
+        "claude-code",
+        "codex",
+        "developer-tools",
+        "durable-execution",
+        "human-in-the-loop",
+        "llm",
+        "multi-agent",
+        "react",
+        "typescript",
+        "workflow-engine"
+      ],
+      "created_at": "2026-01-05T21:13:36Z",
+      "pushed_at": "2026-09-28T09:58:42Z",
+      "quick_run": "git clone https://github.com/smithersai/smithers",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
       "is_local_first": true,
       "authenticity_score": 95,
       "star_history": [
         {
           "ts": 1789756348,
-          "stars": 11862
+          "stars": 417
         },
         {
           "ts": 1790587727,
-          "stars": 11930
+          "stars": 422
         },
         {
-          "ts": 1790589197,
-          "stars": 11930
+          "ts": 1790589549,
+          "stars": 422
         }
       ],
       "capabilities": {
@@ -1032,17 +1246,736 @@
         ],
         "intent_tags": [],
         "hardware": {
-          "is_cuda_ready": true,
-          "cpu_supported": false,
-          "floor": "16GB+ CUDA VRAM"
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 265,
+        "authenticity_score": 95,
+        "open_issues": 572,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "oceanbase/powercontext",
+      "name": "powercontext",
+      "url": "https://github.com/oceanbase/powercontext",
+      "description": "Not\u00a0only\u00a0memory\u00a0but\u00a0a\u00a0full\u00a0story.",
+      "category": "Multi-Agent Frameworks",
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
+      "language": "Python",
+      "license": "Apache-2.0",
+      "stars": 1166,
+      "stars_24h": 0,
+      "trending_score": 34,
+      "topics": [
+        "agentic",
+        "ai-agents",
+        "context",
+        "context-aware",
+        "context-compression",
+        "context-engineering",
+        "databases",
+        "handoff",
+        "jev-ai",
+        "long-term-memory",
+        "memory",
+        "multi-agent"
+      ],
+      "created_at": "2025-11-10T02:46:06Z",
+      "pushed_at": "2026-09-28T09:57:50Z",
+      "quick_run": "git clone https://github.com/oceanbase/powercontext",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589549,
+          "stars": 1166
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 322,
+        "authenticity_score": 95,
+        "open_issues": 102,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "Aas-ee/open-webSearch",
+      "name": "open-webSearch",
+      "url": "https://github.com/Aas-ee/open-webSearch",
+      "description": "Multi-engine MCP server, CLI, and local daemon for agent web search and content retrieval \u2014 skill-guided workflows, no API keys.",
+      "category": "Multi-Agent Frameworks",
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "stars": 1826,
+      "stars_24h": 0,
+      "trending_score": 42,
+      "topics": [],
+      "created_at": "2025-06-20T12:09:49Z",
+      "pushed_at": "2026-09-28T09:57:32Z",
+      "quick_run": "git clone https://github.com/Aas-ee/open-webSearch",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": false,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589549,
+          "stars": 1826
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli",
+          "service",
+          "desktop"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "byok-cloud"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 464,
+        "authenticity_score": 95,
+        "open_issues": 12,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "FuRongJun-1999/dsh-memory",
+      "name": "dsh-memory",
+      "url": "https://github.com/FuRongJun-1999/dsh-memory",
+      "description": "\u767d\u7bb1AGI\u67b6\u6784\u63a2\u7d22\uff1a\u5143\u8ba4\u77e5\uff08\u81ea\u6211\u8ba4\u77e5\u5faa\u73af\uff09\u3001\u6301\u7eed\u5b66\u4e60\uff08\u77e5\u8bc6\u98de\u8f6e\uff09\u3001\u4e16\u754c\u6a21\u578b\uff08\u6761\u4ef6\u7a7a\u95f4+\u8bed\u4e49\u65f6\u7a7a\u56fe\uff09\u3001\u81ea\u6211\u6539\u8fdb\uff08\u81ea\u4e3e\u7eaa\u5f8b\uff09\u3001\u96f6LLM\u767d\u7bb1\u7ba1\u7ebf\u4e0e\u53ef\u5ba1\u8ba1\u4fe1\u4efb\u62a4\u680f\u3002",
+      "category": "Multi-Agent Frameworks",
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
+      "language": "Python",
+      "license": "MIT",
+      "stars": 274,
+      "stars_24h": 53,
+      "trending_score": 175,
+      "topics": [
+        "agent-safety",
+        "agentic-ai",
+        "agi",
+        "ai-agent-framework",
+        "deepseek",
+        "dsh-plugin",
+        "explainable-ai",
+        "guardrails",
+        "knowledge-graph",
+        "mcp",
+        "multi-agent",
+        "persistent-memory",
+        "rag",
+        "spatiotemporal-graph-neural-network"
+      ],
+      "created_at": "2026-08-14T13:28:26Z",
+      "pushed_at": "2026-09-28T09:56:54Z",
+      "quick_run": "git clone https://github.com/FuRongJun-1999/dsh-memory",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 221
+        },
+        {
+          "ts": 1790589549,
+          "stars": 274
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "experimental",
+        "last_push_days": 0,
+        "age_days": 44,
+        "authenticity_score": 95,
+        "open_issues": 7,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "yicheng47/runner",
+      "name": "runner",
+      "url": "https://github.com/yicheng47/runner",
+      "description": "Where terminal agents work together. Claude Code, Codex, Copilot CLI and pi on the same task, in one mission, each keeping its own TUI in a real terminal.",
+      "category": "Multi-Agent Frameworks",
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
+      "language": "Rust",
+      "license": "MIT",
+      "stars": 179,
+      "stars_24h": 0,
+      "trending_score": 13,
+      "topics": [
+        "agent-orchestration",
+        "agentic-coding",
+        "ai-agents",
+        "claude-code",
+        "cli",
+        "codex",
+        "coding-agents",
+        "desktop-app",
+        "developer-tools",
+        "github-copilot",
+        "gpui",
+        "llm",
+        "macos",
+        "mcp",
+        "multi-agent",
+        "pi",
+        "pty",
+        "rust",
+        "terminal",
+        "windows"
+      ],
+      "created_at": "2026-04-21T05:06:16Z",
+      "pushed_at": "2026-09-28T09:57:12Z",
+      "quick_run": "git clone https://github.com/yicheng47/runner",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589197,
+          "stars": 179
+        },
+        {
+          "ts": 1790589549,
+          "stars": 179
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli",
+          "desktop"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 160,
+        "authenticity_score": 95,
+        "open_issues": 23,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "ChrisChen667788/wind-comic",
+      "name": "wind-comic",
+      "url": "https://github.com/ChrisChen667788/wind-comic",
+      "description": "Multi-agent AI pipeline that turns one line of text into a finished short-form drama: script, cinematic storyboards, character-consistent video. Provider-agnostic (OpenAI/Claude, MJ, Minimax, Veo/Sora, fal, ComfyUI). MIT.",
+      "category": "Multi-Agent Frameworks",
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 586,
+      "stars_24h": 0,
+      "trending_score": 24,
+      "topics": [
+        "agents",
+        "ai",
+        "claude",
+        "comic",
+        "midjourney",
+        "minimax",
+        "nextjs",
+        "openai",
+        "screenwriter",
+        "sora",
+        "storyboard",
+        "typescript",
+        "video-generation"
+      ],
+      "created_at": "2026-04-26T00:20:42Z",
+      "pushed_at": "2026-09-28T09:55:05Z",
+      "quick_run": "git clone https://github.com/ChrisChen667788/wind-comic",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589549,
+          "stars": 586
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 155,
+        "authenticity_score": 95,
+        "open_issues": 1,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "mvschwarz/openrig",
+      "name": "openrig",
+      "url": "https://github.com/mvschwarz/openrig",
+      "description": "Multi-agent harness that runs Claude Code and Codex together as one system",
+      "category": "Multi-Agent Frameworks",
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "stars": 1286,
+      "stars_24h": 4,
+      "trending_score": 47,
+      "topics": [
+        "agent-harness",
+        "agent-orchestration",
+        "agent-skills",
+        "ai-coding",
+        "claude-code",
+        "cli",
+        "codex-cli",
+        "multi-agent",
+        "multi-agent-systems",
+        "tmux",
+        "typescript"
+      ],
+      "created_at": "2026-04-01T06:22:40Z",
+      "pushed_at": "2026-09-28T09:55:01Z",
+      "quick_run": "git clone https://github.com/mvschwarz/openrig",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589197,
+          "stars": 1282
+        },
+        {
+          "ts": 1790589549,
+          "stars": 1286
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 180,
+        "authenticity_score": 95,
+        "open_issues": 50,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "THU-MAIC/OpenMAIC",
+      "name": "OpenMAIC",
+      "url": "https://github.com/THU-MAIC/OpenMAIC",
+      "description": "Open Multi-Agent Interactive Classroom \u2014 Get an immersive, multi-agent learning experience in just one click",
+      "category": "Multi-Agent Frameworks",
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 39345,
+      "stars_24h": 3,
+      "trending_score": 207,
+      "topics": [],
+      "created_at": "2026-03-11T10:13:16Z",
+      "pushed_at": "2026-09-28T09:54:38Z",
+      "quick_run": "git clone https://github.com/THU-MAIC/OpenMAIC",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 39342
+        },
+        {
+          "ts": 1790589549,
+          "stars": 39345
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
         }
       },
       "health": {
         "stage": "mature",
         "last_push_days": 0,
-        "age_days": 852,
+        "age_days": 200,
         "authenticity_score": 95,
-        "open_issues": 750,
+        "open_issues": 167,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "vekexasia/pi-extensible-workflows",
+      "name": "pi-extensible-workflows",
+      "url": "https://github.com/vekexasia/pi-extensible-workflows",
+      "description": "Deterministic multi-agent workflow orchestration for Pi",
+      "category": "Multi-Agent Frameworks",
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 236,
+      "stars_24h": 0,
+      "trending_score": 15,
+      "topics": [
+        "herdr-plugin",
+        "pi",
+        "workflow",
+        "workflows"
+      ],
+      "created_at": "2026-07-12T20:45:52Z",
+      "pushed_at": "2026-09-28T09:54:34Z",
+      "quick_run": "git clone https://github.com/vekexasia/pi-extensible-workflows",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589549,
+          "stars": 236
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 77,
+        "authenticity_score": 95,
+        "open_issues": 11,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "minipuft/claude-prompts-mcp",
+      "name": "claude-prompts-mcp",
+      "url": "https://github.com/minipuft/claude-prompts-mcp",
+      "description": "MCP server for reusable prompt templates, multi-step workflow chains, and quality gates. Compose agentic workflows with an operator syntax; export as native skills to Claude Code, Cursor, OpenCode, and Gemini CLI.",
+      "category": "CLI & TUI Tooling",
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 187,
+      "stars_24h": 0,
+      "trending_score": 13,
+      "topics": [
+        "agentic-workflows",
+        "ai-automation",
+        "ai-development",
+        "ai-workflows",
+        "claude",
+        "claude-code",
+        "llm",
+        "llm-tools",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "nodejs",
+        "prompt-engineering",
+        "prompt-management",
+        "prompt-templates",
+        "typescript"
+      ],
+      "created_at": "2025-03-02T19:36:08Z",
+      "pushed_at": "2026-09-28T09:56:56Z",
+      "quick_run": "git clone https://github.com/minipuft/claude-prompts-mcp",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589549,
+          "stars": 187
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli",
+          "service"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 574,
+        "authenticity_score": 95,
+        "open_issues": 8,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "xiayu1987/noobot",
+      "name": "noobot",
+      "url": "https://github.com/xiayu1987/noobot",
+      "description": "Cheapest Money-Saving Self-hosted AI agent workspace with tool calling, MCP, multi-model routing, sandboxed execution, multi-agent workflows, and LLM-authored 3D character animation rendered with Three.js.",
+      "category": "Multi-Agent Frameworks",
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
+      "language": "JavaScript",
+      "license": "MIT",
+      "stars": 194,
+      "stars_24h": 0,
+      "trending_score": 13,
+      "topics": [
+        "3d",
+        "ai-agent",
+        "ai3d",
+        "animation",
+        "character-animation",
+        "cheapest",
+        "glb",
+        "llm",
+        "mcp",
+        "model-routing",
+        "money-saving",
+        "multi-agent",
+        "multimodal",
+        "noobot",
+        "sandbox",
+        "self-hosted",
+        "threejs",
+        "tool-calling",
+        "webgl",
+        "workflow-automation"
+      ],
+      "created_at": "2026-04-17T16:34:22Z",
+      "pushed_at": "2026-09-28T09:53:18Z",
+      "quick_run": "git clone https://github.com/xiayu1987/noobot",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589549,
+          "stars": 194
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "self-hosted"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 163,
+        "authenticity_score": 95,
+        "open_issues": 2,
         "is_stale": false
       }
     },
@@ -1054,6 +1987,11 @@
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
       "language": "TypeScript",
       "license": "MIT",
       "stars": 226,
@@ -1082,7 +2020,7 @@
         "xterm-js"
       ],
       "created_at": "2026-06-14T12:39:37Z",
-      "pushed_at": "2026-09-28T09:52:54Z",
+      "pushed_at": "2026-09-28T09:54:25Z",
       "quick_run": "git clone https://github.com/receptron/mulmoterminal",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -1095,6 +2033,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 226
+        },
+        {
+          "ts": 1790589549,
           "stars": 226
         }
       ],
@@ -1122,7 +2064,7 @@
         "last_push_days": 0,
         "age_days": 105,
         "authenticity_score": 95,
-        "open_issues": 62,
+        "open_issues": 63,
         "is_stale": false
       }
     },
@@ -1134,6 +2076,11 @@
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 10782,
@@ -1151,7 +2098,7 @@
         "rl"
       ],
       "created_at": "2025-03-10T18:25:47Z",
-      "pushed_at": "2026-09-28T09:50:59Z",
+      "pushed_at": "2026-09-28T09:55:11Z",
       "quick_run": "git clone https://github.com/OpenPipe/ART",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -1160,6 +2107,10 @@
       "star_history": [
         {
           "ts": 1790589197,
+          "stars": 10782
+        },
+        {
+          "ts": 1790589549,
           "stars": 10782
         }
       ],
@@ -1197,6 +2148,11 @@
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
       "language": "Python",
       "license": "NOASSERTION",
       "stars": 508,
@@ -1217,6 +2173,10 @@
       "star_history": [
         {
           "ts": 1790589197,
+          "stars": 508
+        },
+        {
+          "ts": 1790589549,
           "stars": 508
         }
       ],
@@ -1254,6 +2214,11 @@
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 878,
@@ -1272,6 +2237,10 @@
       "star_history": [
         {
           "ts": 1790589197,
+          "stars": 878
+        },
+        {
+          "ts": 1790589549,
           "stars": 878
         }
       ],
@@ -1302,789 +2271,35 @@
       }
     },
     {
-      "full_name": "Cotal-AI/Cotal",
-      "name": "Cotal",
-      "url": "https://github.com/Cotal-AI/Cotal",
-      "description": "The open standard for agent coordination",
-      "category": "Multi-Agent Frameworks",
-      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "language": "TypeScript",
-      "license": "Apache-2.0",
-      "stars": 302,
-      "stars_24h": 0,
-      "trending_score": 17,
-      "topics": [
-        "a2a",
-        "agent-communication",
-        "agent-mesh",
-        "agent-orchestration",
-        "agent-skills",
-        "ai",
-        "ai-agents",
-        "claude-code",
-        "distributed-systems",
-        "infrastructure",
-        "jetstream",
-        "mcp",
-        "model-context-protocol",
-        "multi-agent",
-        "nats",
-        "protocol",
-        "pubsub",
-        "self-hosted",
-        "swarm",
-        "typescript"
-      ],
-      "created_at": "2026-06-02T02:52:25Z",
-      "pushed_at": "2026-09-28T09:51:20Z",
-      "quick_run": "git clone https://github.com/Cotal-AI/Cotal",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790587727,
-          "stars": 302
-        },
-        {
-          "ts": 1790589197,
-          "stars": 302
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "mcp-server"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [
-          "self-hosted"
-        ],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 118,
-        "authenticity_score": 95,
-        "open_issues": 247,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "kryptobaseddev/cleo",
-      "name": "cleo",
-      "url": "https://github.com/kryptobaseddev/cleo",
-      "description": "Agent-first task orchestration. Persistent memory. Multi-provider coordination.",
-      "category": "Multi-Agent Frameworks",
-      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "language": "TypeScript",
-      "license": "MIT",
-      "stars": 160,
-      "stars_24h": 0,
-      "trending_score": 12,
-      "topics": [],
-      "created_at": "2025-12-06T18:15:36Z",
-      "pushed_at": "2026-09-28T09:48:22Z",
-      "quick_run": "git clone https://github.com/kryptobaseddev/cleo",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790589197,
-          "stars": 160
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 295,
-        "authenticity_score": 95,
-        "open_issues": 125,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "deepset-ai/haystack",
-      "name": "haystack",
-      "url": "https://github.com/deepset-ai/haystack",
-      "description": "Open-source AI orchestration framework for building context-engineered, production-ready LLM applications. Design modular pipelines and agent workflows with explicit control over retrieval, routing, memory, and generation. Built for scalable agents, RAG, multimodal applications, semantic search, and conversational systems.",
+      "full_name": "linagora/openrag",
+      "name": "openrag",
+      "url": "https://github.com/linagora/openrag",
+      "description": "An open source, modular, lightweight, and extensible RAG application stack, designed for anyone and everyone.",
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
+      "replaces": [
+        "langchain",
+        "llamaindex"
+      ],
       "language": "Python",
-      "license": "Apache-2.0",
-      "stars": 26622,
+      "license": "AGPL-3.0",
+      "stars": 248,
       "stars_24h": 0,
-      "trending_score": 163,
-      "topics": [
-        "agent-framework",
-        "agentic-ai",
-        "agentic-rag",
-        "agents",
-        "ai",
-        "ai-agents",
-        "context-engineering",
-        "framework",
-        "genai",
-        "generative-ai",
-        "information-retrieval",
-        "large-language-models",
-        "llm",
-        "mcp",
-        "multi-agent",
-        "orchestration",
-        "python",
-        "rag",
-        "retrieval-augmented-generation",
-        "semantic-search"
-      ],
-      "created_at": "2019-11-14T09:05:28Z",
-      "pushed_at": "2026-09-28T09:50:31Z",
-      "quick_run": "git clone https://github.com/deepset-ai/haystack",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790587727,
-          "stars": 26622
-        },
-        {
-          "ts": 1790589197,
-          "stars": 26622
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "mcp-server"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 2510,
-        "authenticity_score": 95,
-        "open_issues": 167,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "mvschwarz/openrig",
-      "name": "openrig",
-      "url": "https://github.com/mvschwarz/openrig",
-      "description": "Multi-agent harness that runs Claude Code and Codex together as one system",
-      "category": "Multi-Agent Frameworks",
-      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "language": "TypeScript",
-      "license": "Apache-2.0",
-      "stars": 1282,
-      "stars_24h": 0,
-      "trending_score": 35,
-      "topics": [
-        "agent-harness",
-        "agent-orchestration",
-        "agent-skills",
-        "ai-coding",
-        "claude-code",
-        "cli",
-        "codex-cli",
-        "multi-agent",
-        "multi-agent-systems",
-        "tmux",
-        "typescript"
-      ],
-      "created_at": "2026-04-01T06:22:40Z",
-      "pushed_at": "2026-09-28T09:48:06Z",
-      "quick_run": "git clone https://github.com/mvschwarz/openrig",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790589197,
-          "stars": 1282
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "cli"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 180,
-        "authenticity_score": 95,
-        "open_issues": 52,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "microsoft/agent-framework",
-      "name": "agent-framework",
-      "url": "https://github.com/microsoft/agent-framework",
-      "description": "A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET.",
-      "category": "Multi-Agent Frameworks",
-      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "language": "Python",
-      "license": "MIT",
-      "stars": 13835,
-      "stars_24h": 253,
-      "trending_score": 876,
-      "topics": [
-        "agent-framework",
-        "agentic-ai",
-        "agents",
-        "ai",
-        "dotnet",
-        "multi-agent",
-        "orchestration",
-        "python",
-        "sdk",
-        "workflows"
-      ],
-      "created_at": "2025-04-28T19:40:42Z",
-      "pushed_at": "2026-09-28T09:47:54Z",
-      "quick_run": "git clone https://github.com/microsoft/agent-framework",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 13582
-        },
-        {
-          "ts": 1790589197,
-          "stars": 13835
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 517,
-        "authenticity_score": 95,
-        "open_issues": 679,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "OnyxAxisOwO/ObsidianArc",
-      "name": "ObsidianArc",
-      "url": "https://github.com/OnyxAxisOwO/ObsidianArc",
-      "description": "A self-hosted AI platform with a Go server, multi-provider routing, usage tracking and an admin console, with chat and agentic work modes.",
-      "category": "Multi-Agent Frameworks",
-      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts.",
-      "language": "Go",
-      "license": "MIT",
-      "stars": 123,
-      "stars_24h": 0,
-      "trending_score": 11,
+      "trending_score": 15,
       "topics": [],
-      "created_at": "2026-08-30T05:19:03Z",
-      "pushed_at": "2026-09-28T09:46:42Z",
-      "quick_run": "git clone https://github.com/OnyxAxisOwO/ObsidianArc",
+      "created_at": "2025-07-02T15:43:16Z",
+      "pushed_at": "2026-09-28T09:56:40Z",
+      "quick_run": "git clone https://github.com/linagora/openrag",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
       "authenticity_score": 95,
       "star_history": [
         {
-          "ts": 1790589197,
-          "stars": 123
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "service"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [
-          "self-hosted"
-        ],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "experimental",
-        "last_push_days": 0,
-        "age_days": 29,
-        "authenticity_score": 95,
-        "open_issues": 6,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "openwong2kim/wmux",
-      "name": "wmux",
-      "url": "https://github.com/openwong2kim/wmux",
-      "description": "Run Claude Code, Codex & Gemini in parallel on Windows & macOS \u2014 git worktree fan-out with atomic hunk adoption, approval gates, reboot-surviving sessions",
-      "category": "Multi-Agent Frameworks",
-      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "language": "TypeScript",
-      "license": "MIT",
-      "stars": 400,
-      "stars_24h": 0,
-      "trending_score": 20,
-      "topics": [
-        "agentic-ai",
-        "ai-agent",
-        "ai-agents",
-        "ai-coding",
-        "browser-automation",
-        "claude",
-        "claude-code",
-        "coding-agent",
-        "developer-tools",
-        "electron",
-        "gemini",
-        "mcp-server",
-        "multi-agent",
-        "powershell",
-        "terminal-multiplexer",
-        "tmux",
-        "windows",
-        "workspace-multiplexer"
-      ],
-      "created_at": "2026-03-20T02:54:57Z",
-      "pushed_at": "2026-09-28T09:52:01Z",
-      "quick_run": "git clone https://github.com/openwong2kim/wmux",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790589197,
-          "stars": 400
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "cli",
-          "service",
-          "desktop"
-        ],
-        "integrations": [
-          "mcp-server"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 192,
-        "authenticity_score": 95,
-        "open_issues": 18,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "agntcy/identity",
-      "name": "identity",
-      "url": "https://github.com/agntcy/identity",
-      "description": "AGNTCY Identity allows to onboard, create and verify identities for Agents, Model Context Protocol (MCP) Servers and Multi-Agent Systems (MASs).",
-      "category": "Multi-Agent Frameworks",
-      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "language": "Go",
-      "license": "Apache-2.0",
-      "stars": 103,
-      "stars_24h": 0,
-      "trending_score": 10,
-      "topics": [
-        "agntcy",
-        "identity"
-      ],
-      "created_at": "2025-05-27T15:53:36Z",
-      "pushed_at": "2026-09-28T09:46:21Z",
-      "quick_run": "git clone https://github.com/agntcy/identity",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790587727,
-          "stars": 103
-        },
-        {
-          "ts": 1790589197,
-          "stars": 103
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "service"
-        ],
-        "integrations": [
-          "mcp-server"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 488,
-        "authenticity_score": 95,
-        "open_issues": 18,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "totec448-spec/chat-on-steroids",
-      "name": "chat-on-steroids",
-      "url": "https://github.com/totec448-spec/chat-on-steroids",
-      "description": "Cross-platform local MCP capabilities for ChatGPT with Chrome integration, Goal, Compact & Resume, and durable multi-agent workflows.",
-      "category": "Multi-Agent Frameworks",
-      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "language": "TypeScript",
-      "license": "MIT",
-      "stars": 4068,
-      "stars_24h": 0,
-      "trending_score": 63,
-      "topics": [
-        "automation",
-        "chatgpt",
-        "chrome-extension",
-        "electron",
-        "linux",
-        "local-first",
-        "macos",
-        "mcp",
-        "multi-agent",
-        "windows"
-      ],
-      "created_at": "2026-08-22T14:16:24Z",
-      "pushed_at": "2026-09-28T09:44:03Z",
-      "quick_run": "git clone https://github.com/totec448-spec/chat-on-steroids",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790589197,
-          "stars": 4068
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "desktop"
-        ],
-        "integrations": [
-          "mcp-server"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 36,
-        "authenticity_score": 95,
-        "open_issues": 8,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "yicheng47/runner",
-      "name": "runner",
-      "url": "https://github.com/yicheng47/runner",
-      "description": "Where terminal agents work together. Claude Code, Codex, Copilot CLI and pi on the same task, in one mission, each keeping its own TUI in a real terminal.",
-      "category": "Multi-Agent Frameworks",
-      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "language": "Rust",
-      "license": "MIT",
-      "stars": 179,
-      "stars_24h": 0,
-      "trending_score": 13,
-      "topics": [
-        "agent-orchestration",
-        "agentic-coding",
-        "ai-agents",
-        "claude-code",
-        "cli",
-        "codex",
-        "coding-agents",
-        "desktop-app",
-        "developer-tools",
-        "github-copilot",
-        "gpui",
-        "llm",
-        "macos",
-        "mcp",
-        "multi-agent",
-        "pi",
-        "pty",
-        "rust",
-        "terminal",
-        "windows"
-      ],
-      "created_at": "2026-04-21T05:06:16Z",
-      "pushed_at": "2026-09-28T09:42:55Z",
-      "quick_run": "git clone https://github.com/yicheng47/runner",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790589197,
-          "stars": 179
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "cli",
-          "desktop"
-        ],
-        "integrations": [
-          "mcp-server"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 160,
-        "authenticity_score": 95,
-        "open_issues": 23,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "coddy-project/coddy-agent",
-      "name": "coddy-agent",
-      "url": "https://github.com/coddy-project/coddy-agent",
-      "description": "General-purpose agent in one static Go binary: console TUI, ACP server for editors, OpenAI-compatible API with embedded web UI, Telegram gateway, cron scheduler, swarm relay, remote mode. Rules, skills, subagents, hooks, MCP, background tasks, long-term memory, context compaction. Any OpenAI-compatible provider, distroless-ready.",
-      "category": "Multi-Agent Frameworks",
-      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "language": "Go",
-      "license": "MIT",
-      "stars": 156,
-      "stars_24h": 0,
-      "trending_score": 12,
-      "topics": [
-        "acp",
-        "agent-client-protocol",
-        "ai-agent",
-        "anthropic",
-        "autonomous-agents",
-        "cli",
-        "coding-agent",
-        "distroless",
-        "go",
-        "golang",
-        "llm",
-        "mcp",
-        "multi-agent",
-        "ollama",
-        "openai",
-        "self-hosted",
-        "skills",
-        "swarm",
-        "telegram-bot",
-        "tui"
-      ],
-      "created_at": "2026-03-23T06:37:12Z",
-      "pushed_at": "2026-09-28T09:49:44Z",
-      "quick_run": "git clone https://github.com/coddy-project/coddy-agent",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790589197,
-          "stars": 156
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "cli",
-          "service"
-        ],
-        "integrations": [
-          "openai-api",
-          "mcp-server"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [
-          "self-hosted"
-        ],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 189,
-        "authenticity_score": 95,
-        "open_issues": 34,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "s2b-dev/smart-second-brain",
-      "name": "smart-second-brain",
-      "url": "https://github.com/s2b-dev/smart-second-brain",
-      "description": "A free, open-source Obsidian plugin that makes your vault smarter: better search, an interactive knowledge graph, and an AI assistant that knows your notes.",
-      "category": "Multi-Agent Frameworks",
-      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "language": "TypeScript",
-      "license": "MIT",
-      "stars": 1298,
-      "stars_24h": 0,
-      "trending_score": 36,
-      "topics": [
-        "ai",
-        "ai-agents",
-        "local-first",
-        "obsidian",
-        "obsidian-md",
-        "obsidian-plugin",
-        "rag",
-        "semantic-search"
-      ],
-      "created_at": "2023-10-02T12:57:54Z",
-      "pushed_at": "2026-09-28T09:52:54Z",
-      "quick_run": "git clone https://github.com/s2b-dev/smart-second-brain",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790589197,
-          "stars": 1298
+          "ts": 1790589549,
+          "stars": 248
         }
       ],
       "capabilities": {
@@ -2107,9 +2322,9 @@
       "health": {
         "stage": "active",
         "last_push_days": 0,
-        "age_days": 1091,
+        "age_days": 452,
         "authenticity_score": 95,
-        "open_issues": 30,
+        "open_issues": 191,
         "is_stale": false
       }
     },
@@ -2121,6 +2336,11 @@
       "category": "Multi-Agent Frameworks",
       "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
       "language": "TypeScript",
       "license": "MIT",
       "stars": 764,
@@ -2144,7 +2364,7 @@
         "typescript"
       ],
       "created_at": "2026-03-15T10:40:26Z",
-      "pushed_at": "2026-09-28T09:51:34Z",
+      "pushed_at": "2026-09-28T09:58:01Z",
       "quick_run": "git clone https://github.com/kitfunso/hippo-memory",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -2153,6 +2373,10 @@
       "star_history": [
         {
           "ts": 1790589197,
+          "stars": 764
+        },
+        {
+          "ts": 1790589549,
           "stars": 764
         }
       ],
@@ -2183,6 +2407,148 @@
       }
     },
     {
+      "full_name": "DEEIX-AI/DEEIX-Chat",
+      "name": "DEEIX-Chat",
+      "url": "https://github.com/DEEIX-AI/DEEIX-Chat",
+      "description": "An enterprise AI workspace for model routing, multimodal chat, files, tools, billing, identity, and operations.",
+      "category": "Local LLM Engines",
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
+      "language": "Go",
+      "license": "Apache-2.0",
+      "stars": 1509,
+      "stars_24h": 0,
+      "trending_score": 38,
+      "topics": [
+        "ai",
+        "ai-chatbots",
+        "llm",
+        "mcp",
+        "open-source",
+        "rag",
+        "self-hosted",
+        "ui",
+        "webchat",
+        "webui"
+      ],
+      "created_at": "2026-05-21T08:57:01Z",
+      "pushed_at": "2026-09-28T09:53:38Z",
+      "quick_run": "git clone https://github.com/DEEIX-AI/DEEIX-Chat",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589549,
+          "stars": 1509
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "self-hosted"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 130,
+        "authenticity_score": 95,
+        "open_issues": 5,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "s2b-dev/smart-second-brain",
+      "name": "smart-second-brain",
+      "url": "https://github.com/s2b-dev/smart-second-brain",
+      "description": "A free, open-source Obsidian plugin that makes your vault smarter: better search, an interactive knowledge graph, and an AI assistant that knows your notes.",
+      "category": "Multi-Agent Frameworks",
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 1298,
+      "stars_24h": 0,
+      "trending_score": 36,
+      "topics": [
+        "ai",
+        "ai-agents",
+        "local-first",
+        "obsidian",
+        "obsidian-md",
+        "obsidian-plugin",
+        "rag",
+        "semantic-search"
+      ],
+      "created_at": "2023-10-02T12:57:54Z",
+      "pushed_at": "2026-09-28T09:54:27Z",
+      "quick_run": "git clone https://github.com/s2b-dev/smart-second-brain",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589197,
+          "stars": 1298
+        },
+        {
+          "ts": 1790589549,
+          "stars": 1298
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 1091,
+        "authenticity_score": 95,
+        "open_issues": 30,
+        "is_stale": false
+      }
+    },
+    {
       "full_name": "infiniflow/ragflow",
       "name": "ragflow",
       "url": "https://github.com/infiniflow/ragflow",
@@ -2190,6 +2556,11 @@
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Dify RAG (Deep document understanding retrieval engine)",
+      "replaces": [
+        "dify",
+        "langchain"
+      ],
       "language": "Go",
       "license": "Apache-2.0",
       "stars": 91420,
@@ -2227,6 +2598,10 @@
         {
           "ts": 1790589197,
           "stars": 91420
+        },
+        {
+          "ts": 1790589549,
+          "stars": 91420
         }
       ],
       "capabilities": {
@@ -2251,7 +2626,7 @@
         "last_push_days": 0,
         "age_days": 1021,
         "authenticity_score": 95,
-        "open_issues": 1536,
+        "open_issues": 1537,
         "is_stale": false
       }
     },
@@ -2263,6 +2638,11 @@
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
+      "replaces": [
+        "langchain",
+        "llamaindex"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 5185,
@@ -2291,7 +2671,7 @@
         "tree-sitter"
       ],
       "created_at": "2025-06-16T14:31:57Z",
-      "pushed_at": "2026-09-28T09:51:01Z",
+      "pushed_at": "2026-09-28T09:58:22Z",
       "quick_run": "git clone https://github.com/vitali87/code-graph-rag",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -2304,6 +2684,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 5185
+        },
+        {
+          "ts": 1790589549,
           "stars": 5185
         }
       ],
@@ -2329,7 +2713,7 @@
         "last_push_days": 0,
         "age_days": 468,
         "authenticity_score": 95,
-        "open_issues": 110,
+        "open_issues": 111,
         "is_stale": false
       }
     },
@@ -2341,6 +2725,11 @@
       "category": "Local LLM Engines",
       "verdict": "High-velocity open-source project delivering focused capabilities for local llm engines.",
       "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
+      "comparison": "Alternative to Flowise / Langflow (Production LLM app development platform)",
+      "replaces": [
+        "flowise",
+        "langflow"
+      ],
       "language": "TypeScript",
       "license": "NOASSERTION",
       "stars": 157389,
@@ -2386,6 +2775,10 @@
         {
           "ts": 1790589197,
           "stars": 157389
+        },
+        {
+          "ts": 1790589549,
+          "stars": 157389
         }
       ],
       "capabilities": {
@@ -2424,6 +2817,11 @@
       "category": "Multi-Agent Frameworks",
       "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
       "language": "Java",
       "license": "AGPL-3.0",
       "stars": 150,
@@ -2452,7 +2850,7 @@
         "workspace"
       ],
       "created_at": "2026-01-21T11:27:27Z",
-      "pushed_at": "2026-09-28T09:50:34Z",
+      "pushed_at": "2026-09-28T09:55:13Z",
       "quick_run": "git clone https://github.com/zeweihan/aiworkdeck",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -2461,6 +2859,10 @@
       "star_history": [
         {
           "ts": 1790589197,
+          "stars": 150
+        },
+        {
+          "ts": 1790589549,
           "stars": 150
         }
       ],
@@ -2488,7 +2890,7 @@
         "last_push_days": 0,
         "age_days": 249,
         "authenticity_score": 95,
-        "open_issues": 15,
+        "open_issues": 17,
         "is_stale": false
       }
     },
@@ -2500,6 +2902,11 @@
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
       "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 3583,
@@ -2538,6 +2945,10 @@
         {
           "ts": 1790589197,
           "stars": 3583
+        },
+        {
+          "ts": 1790589549,
+          "stars": 3583
         }
       ],
       "capabilities": {
@@ -2567,6 +2978,93 @@
       }
     },
     {
+      "full_name": "deepset-ai/haystack",
+      "name": "haystack",
+      "url": "https://github.com/deepset-ai/haystack",
+      "description": "Open-source AI orchestration framework for building context-engineered, production-ready LLM applications. Design modular pipelines and agent workflows with explicit control over retrieval, routing, memory, and generation. Built for scalable agents, RAG, multimodal applications, semantic search, and conversational systems.",
+      "category": "RAG Engines",
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
+      "replaces": [
+        "langchain",
+        "llamaindex"
+      ],
+      "language": "Python",
+      "license": "Apache-2.0",
+      "stars": 26622,
+      "stars_24h": 0,
+      "trending_score": 163,
+      "topics": [
+        "agent-framework",
+        "agentic-ai",
+        "agentic-rag",
+        "agents",
+        "ai",
+        "ai-agents",
+        "context-engineering",
+        "framework",
+        "genai",
+        "generative-ai",
+        "information-retrieval",
+        "large-language-models",
+        "llm",
+        "mcp",
+        "multi-agent",
+        "orchestration",
+        "python",
+        "rag",
+        "retrieval-augmented-generation",
+        "semantic-search"
+      ],
+      "created_at": "2019-11-14T09:05:28Z",
+      "pushed_at": "2026-09-28T09:50:31Z",
+      "quick_run": "git clone https://github.com/deepset-ai/haystack",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 26622
+        },
+        {
+          "ts": 1790589197,
+          "stars": 26622
+        },
+        {
+          "ts": 1790589549,
+          "stars": 26622
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 2510,
+        "authenticity_score": 95,
+        "open_issues": 167,
+        "is_stale": false
+      }
+    },
+    {
       "full_name": "HelixDB/helix-db",
       "name": "helix-db",
       "url": "https://github.com/HelixDB/helix-db",
@@ -2574,6 +3072,11 @@
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
+      "replaces": [
+        "langchain",
+        "llamaindex"
+      ],
       "language": "Rust",
       "license": "Apache-2.0",
       "stars": 6102,
@@ -2597,7 +3100,7 @@
         "vectorsearch"
       ],
       "created_at": "2024-11-23T11:02:14Z",
-      "pushed_at": "2026-09-28T09:45:44Z",
+      "pushed_at": "2026-09-28T09:56:38Z",
       "quick_run": "git clone https://github.com/HelixDB/helix-db",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -2614,6 +3117,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 6102
+        },
+        {
+          "ts": 1790589549,
           "stars": 6102
         }
       ],
@@ -2651,6 +3158,11 @@
       "category": "Multi-Agent Frameworks",
       "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 611,
@@ -2678,7 +3190,7 @@
         "reranking"
       ],
       "created_at": "2024-10-13T15:12:23Z",
-      "pushed_at": "2026-09-28T09:45:14Z",
+      "pushed_at": "2026-09-28T09:58:06Z",
       "quick_run": "git clone https://github.com/ggozad/haiku.rag",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -2691,6 +3203,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 611
+        },
+        {
+          "ts": 1790589549,
           "stars": 611
         }
       ],
@@ -2719,7 +3235,7 @@
         "last_push_days": 0,
         "age_days": 714,
         "authenticity_score": 95,
-        "open_issues": 5,
+        "open_issues": 6,
         "is_stale": false
       }
     },
@@ -2731,6 +3247,11 @@
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
+      "replaces": [
+        "langchain",
+        "llamaindex"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 22270,
@@ -2752,7 +3273,7 @@
         "prompt-engineering"
       ],
       "created_at": "2023-05-10T12:57:13Z",
-      "pushed_at": "2026-09-28T09:49:09Z",
+      "pushed_at": "2026-09-28T09:58:53Z",
       "quick_run": "git clone https://github.com/comet-ml/opik",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -2765,6 +3286,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 22270
+        },
+        {
+          "ts": 1790589549,
           "stars": 22270
         }
       ],
@@ -2790,7 +3315,7 @@
         "last_push_days": 0,
         "age_days": 1236,
         "authenticity_score": 95,
-        "open_issues": 230,
+        "open_issues": 231,
         "is_stale": false
       }
     },
@@ -2802,6 +3327,11 @@
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
       "language": "Rust",
       "license": "MIT",
       "stars": 314,
@@ -2828,6 +3358,10 @@
       "star_history": [
         {
           "ts": 1790589197,
+          "stars": 314
+        },
+        {
+          "ts": 1790589549,
           "stars": 314
         }
       ],
@@ -2858,227 +3392,6 @@
       }
     },
     {
-      "full_name": "Lyellr88/marm-memory",
-      "name": "marm-memory",
-      "url": "https://github.com/Lyellr88/marm-memory",
-      "description": "Local-first 3-in-1 AI memory layer & MCP server for Claude Code, Codex, Grok, Gemini, VS Code and Cursor. Fuses session history, codebase indexing & concept graphs in SQLite. Enables zero-cloud, privacy-first context & instant recall, supports multi-agent swarms.",
-      "category": "Multi-Agent Frameworks",
-      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
-      "language": "Python",
-      "license": "Apache-2.0",
-      "stars": 406,
-      "stars_24h": 0,
-      "trending_score": 20,
-      "topics": [
-        "agent-memory",
-        "ai-agents",
-        "ai-memory",
-        "claude-code",
-        "codex-cli",
-        "developer-tools",
-        "embeddings",
-        "indexing-engine",
-        "knowledge-graph",
-        "llm",
-        "local-first",
-        "long-term-memory",
-        "mcp",
-        "mcp-servers",
-        "model-context-protocol",
-        "persistent-memory",
-        "rag",
-        "self-hosted",
-        "sematic-search",
-        "sqlite"
-      ],
-      "created_at": "2025-06-10T06:36:49Z",
-      "pushed_at": "2026-09-28T09:38:27Z",
-      "quick_run": "git clone https://github.com/Lyellr88/marm-memory",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790589197,
-          "stars": 406
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "cli",
-          "service"
-        ],
-        "integrations": [
-          "mcp-server"
-        ],
-        "deployment": [
-          "local-only",
-          "byok-cloud"
-        ],
-        "intent_tags": [
-          "self-hosted"
-        ],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 475,
-        "authenticity_score": 95,
-        "open_issues": 24,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "onyx-dot-app/onyx",
-      "name": "onyx",
-      "url": "https://github.com/onyx-dot-app/onyx",
-      "description": "Open Source AI Platform - AI Chat with advanced features that works with every LLM",
-      "category": "RAG Engines",
-      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "language": "Python",
-      "license": "NOASSERTION",
-      "stars": 32264,
-      "stars_24h": 107,
-      "trending_score": 500,
-      "topics": [
-        "ai",
-        "ai-chat",
-        "chatgpt",
-        "chatui",
-        "enterprise-search",
-        "gen-ai",
-        "information-retrieval",
-        "llm",
-        "llm-ui",
-        "nextjs",
-        "python",
-        "rag",
-        "self-hosted",
-        "vector-search"
-      ],
-      "created_at": "2023-04-27T06:04:01Z",
-      "pushed_at": "2026-09-28T09:37:45Z",
-      "quick_run": "git clone https://github.com/onyx-dot-app/onyx",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 32157
-        },
-        {
-          "ts": 1790589197,
-          "stars": 32264
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "cli"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [
-          "self-hosted"
-        ],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 1250,
-        "authenticity_score": 95,
-        "open_issues": 501,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "elizaOS/eliza",
-      "name": "eliza",
-      "url": "https://github.com/elizaOS/eliza",
-      "description": "Open source agentic operating system",
-      "category": "Multi-Agent Frameworks",
-      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "language": "TypeScript",
-      "license": "MIT",
-      "stars": 19512,
-      "stars_24h": 0,
-      "trending_score": 139,
-      "topics": [
-        "agent",
-        "agentic",
-        "ai",
-        "autonomous",
-        "chatbot",
-        "crypto",
-        "discord",
-        "eliza",
-        "elizaos",
-        "framework",
-        "plugins",
-        "rag",
-        "slack",
-        "swarm",
-        "telegram"
-      ],
-      "created_at": "2024-07-09T07:55:40Z",
-      "pushed_at": "2026-09-28T09:37:29Z",
-      "quick_run": "git clone https://github.com/elizaOS/eliza",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790589197,
-          "stars": 19512
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 811,
-        "authenticity_score": 95,
-        "open_issues": 36,
-        "is_stale": false
-      }
-    },
-    {
       "full_name": "manticoresoftware/manticoresearch",
       "name": "manticoresearch",
       "url": "https://github.com/manticoresoftware/manticoresearch",
@@ -3086,6 +3399,11 @@
       "category": "Document Vaults & Search",
       "verdict": "High-velocity open-source project delivering focused capabilities for document vaults & search.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Elastic / Notion (Private self-hosted search engine)",
+      "replaces": [
+        "notion",
+        "elastic"
+      ],
       "language": "C++",
       "license": "GPL-3.0",
       "stars": 12039,
@@ -3127,6 +3445,10 @@
         {
           "ts": 1790589197,
           "stars": 12039
+        },
+        {
+          "ts": 1790589549,
+          "stars": 12039
         }
       ],
       "capabilities": {
@@ -3165,6 +3487,11 @@
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
       "language": "Java",
       "license": "Apache-2.0",
       "stars": 16006,
@@ -3209,6 +3536,10 @@
         {
           "ts": 1790589197,
           "stars": 16006
+        },
+        {
+          "ts": 1790589549,
+          "stars": 16006
         }
       ],
       "capabilities": {
@@ -3235,7 +3566,7 @@
         "last_push_days": 0,
         "age_days": 3335,
         "authenticity_score": 95,
-        "open_issues": 1353,
+        "open_issues": 1354,
         "is_stale": false
       }
     },
@@ -3247,6 +3578,11 @@
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
       "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
       "language": "Go",
       "license": "Apache-2.0",
       "stars": 2020,
@@ -3290,6 +3626,10 @@
         {
           "ts": 1790589197,
           "stars": 2020
+        },
+        {
+          "ts": 1790589549,
+          "stars": 2020
         }
       ],
       "capabilities": {
@@ -3314,7 +3654,7 @@
         "last_push_days": 0,
         "age_days": 2048,
         "authenticity_score": 95,
-        "open_issues": 750,
+        "open_issues": 751,
         "is_stale": false
       }
     },
@@ -3326,6 +3666,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Java",
       "license": "NOASSERTION",
       "stars": 129,
@@ -3367,6 +3711,10 @@
         {
           "ts": 1790589197,
           "stars": 129
+        },
+        {
+          "ts": 1790589549,
+          "stars": 129
         }
       ],
       "capabilities": {
@@ -3403,6 +3751,10 @@
       "category": "Vector Databases",
       "verdict": "High-performance vector storage optimized for similarity search and embedding retrieval.",
       "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
+      "comparison": "Alternative to Pinecone (Cloud-native distributed vector database)",
+      "replaces": [
+        "pinecone"
+      ],
       "language": "Go",
       "license": "Apache-2.0",
       "stars": 46270,
@@ -3447,6 +3799,10 @@
         {
           "ts": 1790589197,
           "stars": 46270
+        },
+        {
+          "ts": 1790589549,
+          "stars": 46270
         }
       ],
       "capabilities": {
@@ -3483,6 +3839,11 @@
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
       "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
       "language": "Go",
       "license": "Apache-2.0",
       "stars": 40597,
@@ -3528,6 +3889,10 @@
         {
           "ts": 1790589197,
           "stars": 40597
+        },
+        {
+          "ts": 1790589549,
+          "stars": 40597
         }
       ],
       "capabilities": {
@@ -3564,6 +3929,11 @@
       "category": "Vector Databases",
       "verdict": "High-performance vector storage optimized for similarity search and embedding retrieval.",
       "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
+      "comparison": "Alternative to Milvus & Pinecone (Rust-based production vector search)",
+      "replaces": [
+        "pinecone",
+        "milvus"
+      ],
       "language": "Rust",
       "license": "Apache-2.0",
       "stars": 34859,
@@ -3592,7 +3962,7 @@
         "vector-search-engine"
       ],
       "created_at": "2020-05-30T21:37:01Z",
-      "pushed_at": "2026-09-28T09:35:26Z",
+      "pushed_at": "2026-09-28T09:58:57Z",
       "quick_run": "git clone https://github.com/qdrant/qdrant",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -3609,6 +3979,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 34859
+        },
+        {
+          "ts": 1790589549,
           "stars": 34859
         }
       ],
@@ -3646,6 +4020,11 @@
       "category": "Vector Databases",
       "verdict": "High-performance vector storage optimized for similarity search and embedding retrieval.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Pinecone (Self-hosted vector similarity search)",
+      "replaces": [
+        "pinecone",
+        "milvus"
+      ],
       "language": "Java",
       "license": "Apache-2.0",
       "stars": 1165,
@@ -3690,6 +4069,10 @@
         {
           "ts": 1790589197,
           "stars": 1165
+        },
+        {
+          "ts": 1790589549,
+          "stars": 1165
         }
       ],
       "capabilities": {
@@ -3714,7 +4097,7 @@
         "last_push_days": 0,
         "age_days": 1868,
         "authenticity_score": 95,
-        "open_issues": 171,
+        "open_issues": 186,
         "is_stale": false
       }
     },
@@ -3726,6 +4109,11 @@
       "category": "Vector Databases",
       "verdict": "High-performance vector storage optimized for similarity search and embedding retrieval.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Pinecone (Self-hosted vector similarity search)",
+      "replaces": [
+        "pinecone",
+        "milvus"
+      ],
       "language": "Go",
       "license": "MIT",
       "stars": 887,
@@ -3767,6 +4155,10 @@
         {
           "ts": 1790589197,
           "stars": 887
+        },
+        {
+          "ts": 1790589549,
+          "stars": 887
         }
       ],
       "capabilities": {
@@ -3803,6 +4195,10 @@
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
       "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
+      "comparison": "Alternative to Pinecone (Modular GraphQL/REST vector database)",
+      "replaces": [
+        "pinecone"
+      ],
       "language": "Go",
       "license": "NOASSERTION",
       "stars": 16855,
@@ -3849,6 +4245,10 @@
         {
           "ts": 1790589197,
           "stars": 16855
+        },
+        {
+          "ts": 1790589549,
+          "stars": 16855
         }
       ],
       "capabilities": {
@@ -3885,6 +4285,11 @@
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
+      "replaces": [
+        "langchain",
+        "llamaindex"
+      ],
       "language": "C++",
       "license": "Apache-2.0",
       "stars": 3078,
@@ -3907,7 +4312,7 @@
         "vector-databases"
       ],
       "created_at": "2025-10-21T11:31:11Z",
-      "pushed_at": "2026-09-28T09:50:08Z",
+      "pushed_at": "2026-09-28T09:56:39Z",
       "quick_run": "git clone https://github.com/oceanbase/seekdb",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -3920,6 +4325,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 3078
+        },
+        {
+          "ts": 1790589549,
           "stars": 3078
         }
       ],
@@ -3957,6 +4366,11 @@
       "category": "Embedded & Edge AI",
       "verdict": "High-velocity open-source project delivering focused capabilities for embedded & edge ai.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to JetPack & Cloud Edge APIs (Ultra-low footprint AI)",
+      "replaces": [
+        "jetpack",
+        "tensorrt"
+      ],
       "language": "Rust",
       "license": "GPL-3.0",
       "stars": 644,
@@ -3988,6 +4402,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 644
+        },
+        {
+          "ts": 1790589549,
           "stars": 644
         }
       ],
@@ -4025,6 +4443,11 @@
       "category": "Databases & Storage",
       "verdict": "High-velocity open-source project delivering focused capabilities for databases & storage.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Cloud SQL (Embedded sovereign storage engine)",
+      "replaces": [
+        "cloudsql",
+        "sqlite"
+      ],
       "language": "C",
       "license": "NOASSERTION",
       "stars": 76512,
@@ -4067,6 +4490,10 @@
         {
           "ts": 1790589197,
           "stars": 76512
+        },
+        {
+          "ts": 1790589549,
+          "stars": 76512
         }
       ],
       "capabilities": {
@@ -4105,6 +4532,10 @@
       "category": "Vector Databases",
       "verdict": "High-performance vector storage optimized for similarity search and embedding retrieval.",
       "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
+      "comparison": "Alternative to Pinecone (Cloud-native distributed vector database)",
+      "replaces": [
+        "pinecone"
+      ],
       "language": "JavaScript",
       "license": "Apache-2.0",
       "stars": 101,
@@ -4128,6 +4559,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 101
+        },
+        {
+          "ts": 1790589549,
           "stars": 101
         }
       ],
@@ -4165,6 +4600,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
+      "replaces": [
+        "midjourney"
+      ],
       "language": "Python",
       "license": "NOASSERTION",
       "stars": 280,
@@ -4183,7 +4622,7 @@
         "stable-diffusion"
       ],
       "created_at": "2026-07-05T13:43:17Z",
-      "pushed_at": "2026-09-28T09:47:09Z",
+      "pushed_at": "2026-09-28T09:55:36Z",
       "quick_run": "git clone https://github.com/perfectgf/lora-dataset-studio",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -4200,6 +4639,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 280
+        },
+        {
+          "ts": 1790589549,
           "stars": 280
         }
       ],
@@ -4240,6 +4683,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
+      "replaces": [
+        "midjourney"
+      ],
       "language": "Python",
       "license": "GPL-3.0",
       "stars": 1410,
@@ -4274,6 +4721,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 1410
+        },
+        {
+          "ts": 1790589549,
           "stars": 1410
         }
       ],
@@ -4311,6 +4762,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
+      "replaces": [
+        "automatic1111"
+      ],
       "language": "Python",
       "license": "GPL-3.0",
       "stars": 135295,
@@ -4342,6 +4797,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 135295
+        },
+        {
+          "ts": 1790589549,
           "stars": 135295
         }
       ],
@@ -4379,6 +4838,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
+      "replaces": [
+        "midjourney"
+      ],
       "language": "Python",
       "license": "GPL-3.0",
       "stars": 257,
@@ -4419,6 +4882,10 @@
         {
           "ts": 1790589197,
           "stars": 257
+        },
+        {
+          "ts": 1790589549,
+          "stars": 257
         }
       ],
       "capabilities": {
@@ -4455,6 +4922,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
+      "replaces": [
+        "midjourney"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 5694,
@@ -4501,6 +4972,10 @@
         {
           "ts": 1790589197,
           "stars": 5694
+        },
+        {
+          "ts": 1790589549,
+          "stars": 5694
         }
       ],
       "capabilities": {
@@ -4538,6 +5013,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
+      "replaces": [
+        "midjourney"
+      ],
       "language": "TypeScript",
       "license": "AGPL-3.0",
       "stars": 202,
@@ -4575,6 +5054,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 202
+        },
+        {
+          "ts": 1790589549,
           "stars": 202
         }
       ],
@@ -4614,6 +5097,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
+      "replaces": [
+        "midjourney"
+      ],
       "language": "TypeScript",
       "license": "MPL-2.0",
       "stars": 323,
@@ -4656,6 +5143,10 @@
         {
           "ts": 1790589197,
           "stars": 323
+        },
+        {
+          "ts": 1790589549,
+          "stars": 323
         }
       ],
       "capabilities": {
@@ -4693,6 +5184,11 @@
       "category": "Multi-Agent Frameworks",
       "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 237,
@@ -4739,6 +5235,10 @@
         {
           "ts": 1790589197,
           "stars": 237
+        },
+        {
+          "ts": 1790589549,
+          "stars": 237
         }
       ],
       "capabilities": {
@@ -4777,6 +5277,10 @@
       "category": "Generative Image/Video",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
+      "replaces": [
+        "automatic1111"
+      ],
       "language": "Nix",
       "license": "MIT",
       "stars": 161,
@@ -4809,6 +5313,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 161
+        },
+        {
+          "ts": 1790589549,
           "stars": 161
         }
       ],
@@ -4846,6 +5354,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
+      "replaces": [
+        "midjourney"
+      ],
       "language": "Python",
       "license": "GPL-3.0",
       "stars": 990,
@@ -4875,6 +5387,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 990
+        },
+        {
+          "ts": 1790589549,
           "stars": 990
         }
       ],
@@ -4912,6 +5428,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
+      "replaces": [
+        "automatic1111"
+      ],
       "language": "Python",
       "license": "GPL-3.0",
       "stars": 674,
@@ -4935,6 +5455,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 674
+        },
+        {
+          "ts": 1790589549,
           "stars": 674
         }
       ],
@@ -4972,6 +5496,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
+      "replaces": [
+        "automatic1111"
+      ],
       "language": "Python",
       "license": "GPL-3.0",
       "stars": 1245,
@@ -4997,6 +5525,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 1245
+        },
+        {
+          "ts": 1790589549,
           "stars": 1245
         }
       ],
@@ -5034,6 +5566,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
+      "replaces": [
+        "midjourney"
+      ],
       "language": "JavaScript",
       "license": "MIT",
       "stars": 3515,
@@ -5058,6 +5594,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 3515
+        },
+        {
+          "ts": 1790589549,
           "stars": 3515
         }
       ],
@@ -5095,6 +5635,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
+      "replaces": [
+        "midjourney"
+      ],
       "language": "JavaScript",
       "license": "GPL-3.0",
       "stars": 290,
@@ -5125,6 +5669,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 290
+        },
+        {
+          "ts": 1790589549,
           "stars": 290
         }
       ],
@@ -5164,6 +5712,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
+      "replaces": [
+        "midjourney"
+      ],
       "language": "C#",
       "license": "MIT",
       "stars": 4613,
@@ -5198,6 +5750,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 4613
+        },
+        {
+          "ts": 1790589549,
           "stars": 4613
         }
       ],
@@ -5235,6 +5791,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 212,
@@ -5277,6 +5838,10 @@
         {
           "ts": 1790589197,
           "stars": 212
+        },
+        {
+          "ts": 1790589549,
+          "stars": 212
         }
       ],
       "capabilities": {
@@ -5313,6 +5878,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "AGPL-3.0",
       "stars": 288,
@@ -5358,6 +5928,10 @@
         {
           "ts": 1790589197,
           "stars": 288
+        },
+        {
+          "ts": 1790589549,
+          "stars": 288
         }
       ],
       "capabilities": {
@@ -5396,6 +5970,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 1380,
@@ -5434,6 +6013,10 @@
         {
           "ts": 1790589197,
           "stars": 1380
+        },
+        {
+          "ts": 1790589549,
+          "stars": 1380
         }
       ],
       "capabilities": {
@@ -5470,6 +6053,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "TypeScript",
       "license": "NOASSERTION",
       "stars": 128,
@@ -5507,6 +6095,10 @@
         {
           "ts": 1790589197,
           "stars": 128
+        },
+        {
+          "ts": 1790589549,
+          "stars": 128
         }
       ],
       "capabilities": {
@@ -5543,6 +6135,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "NOASSERTION",
       "stars": 769,
@@ -5589,6 +6186,10 @@
         {
           "ts": 1790589197,
           "stars": 769
+        },
+        {
+          "ts": 1790589549,
+          "stars": 769
         }
       ],
       "capabilities": {
@@ -5628,6 +6229,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Code",
       "license": "MIT",
       "stars": 111,
@@ -5674,6 +6280,10 @@
         {
           "ts": 1790589197,
           "stars": 111
+        },
+        {
+          "ts": 1790589549,
+          "stars": 111
         }
       ],
       "capabilities": {
@@ -5713,6 +6323,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "GPL-3.0",
       "stars": 12953,
@@ -5758,6 +6373,10 @@
         {
           "ts": 1790589197,
           "stars": 12953
+        },
+        {
+          "ts": 1790589549,
+          "stars": 12953
         }
       ],
       "capabilities": {
@@ -5794,6 +6413,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 674,
@@ -5818,6 +6442,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 674
+        },
+        {
+          "ts": 1790589549,
           "stars": 674
         }
       ],
@@ -5855,6 +6483,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 126,
@@ -5895,6 +6528,10 @@
         {
           "ts": 1790589197,
           "stars": 126
+        },
+        {
+          "ts": 1790589549,
+          "stars": 126
         }
       ],
       "capabilities": {
@@ -5933,6 +6570,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "TypeScript",
       "license": "MIT",
       "stars": 196,
@@ -5957,6 +6599,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 196
+        },
+        {
+          "ts": 1790589549,
           "stars": 196
         }
       ],
@@ -5994,6 +6640,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to LocalAI & LM Studio (CLI and REST inference engine)",
+      "replaces": [
+        "localai",
+        "lmstudio"
+      ],
       "language": "Python",
       "license": "AGPL-3.0",
       "stars": 378,
@@ -6018,6 +6669,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 378
+        },
+        {
+          "ts": 1790589549,
           "stars": 378
         }
       ],
@@ -6055,6 +6710,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 362,
@@ -6101,6 +6761,10 @@
         {
           "ts": 1790589197,
           "stars": 362
+        },
+        {
+          "ts": 1790589549,
+          "stars": 362
         }
       ],
       "capabilities": {
@@ -6137,6 +6801,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 137,
@@ -6168,6 +6837,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 137
+        },
+        {
+          "ts": 1790589549,
           "stars": 137
         }
       ],
@@ -6205,6 +6878,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 787,
@@ -6246,6 +6924,10 @@
         {
           "ts": 1790589197,
           "stars": 787
+        },
+        {
+          "ts": 1790589549,
+          "stars": 787
         }
       ],
       "capabilities": {
@@ -6282,6 +6964,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 145,
@@ -6311,6 +6998,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 145
+        },
+        {
+          "ts": 1790589549,
           "stars": 145
         }
       ],
@@ -6348,6 +7039,11 @@
       "category": "Vision & OCR",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
+      "replaces": [
+        "google-vision",
+        "aws-textract"
+      ],
       "language": "Rust",
       "license": "NOASSERTION",
       "stars": 331,
@@ -6385,6 +7081,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 331
+        },
+        {
+          "ts": 1790589549,
           "stars": 331
         }
       ],
@@ -6424,6 +7124,11 @@
       "category": "Local LLM Engines",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "Rust",
       "license": "MIT",
       "stars": 485,
@@ -6467,6 +7172,10 @@
         {
           "ts": 1790589197,
           "stars": 485
+        },
+        {
+          "ts": 1790589549,
+          "stars": 485
         }
       ],
       "capabilities": {
@@ -6503,6 +7212,10 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to pushing to GitHub (Run GitHub Actions locally in Docker)",
+      "replaces": [
+        "github-actions"
+      ],
       "language": "TypeScript",
       "license": "NOASSERTION",
       "stars": 1748,
@@ -6541,6 +7254,10 @@
         {
           "ts": 1790589197,
           "stars": 1748
+        },
+        {
+          "ts": 1790589549,
+          "stars": 1748
         }
       ],
       "capabilities": {
@@ -6577,6 +7294,11 @@
       "category": "Vision & OCR",
       "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
+      "replaces": [
+        "google-vision",
+        "aws-textract"
+      ],
       "language": "Python",
       "license": "NOASSERTION",
       "stars": 2021,
@@ -6601,6 +7323,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 2021
+        },
+        {
+          "ts": 1790589549,
           "stars": 2021
         }
       ],
@@ -6638,6 +7364,11 @@
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 119,
@@ -6684,6 +7415,10 @@
         {
           "ts": 1790589197,
           "stars": 119
+        },
+        {
+          "ts": 1790589549,
+          "stars": 119
         }
       ],
       "capabilities": {
@@ -6720,6 +7455,11 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 211,
@@ -6758,6 +7498,10 @@
         {
           "ts": 1790589197,
           "stars": 211
+        },
+        {
+          "ts": 1790589549,
+          "stars": 211
         }
       ],
       "capabilities": {
@@ -6795,6 +7539,11 @@
       "category": "Vision & OCR",
       "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
       "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts.",
+      "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
+      "replaces": [
+        "google-vision",
+        "aws-textract"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 105,
@@ -6828,6 +7577,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 105
+        },
+        {
+          "ts": 1790589549,
           "stars": 105
         }
       ],
@@ -6866,6 +7619,11 @@
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
       "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
       "language": "Python",
       "license": "AGPL-3.0",
       "stars": 109,
@@ -6905,6 +7663,10 @@
         {
           "ts": 1790589197,
           "stars": 109
+        },
+        {
+          "ts": 1790589549,
+          "stars": 109
         }
       ],
       "capabilities": {
@@ -6941,6 +7703,11 @@
       "category": "Local LLM Engines",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "Kotlin",
       "license": "MIT",
       "stars": 129,
@@ -6965,6 +7732,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 129
+        },
+        {
+          "ts": 1790589549,
           "stars": 129
         }
       ],
@@ -7002,6 +7773,10 @@
       "category": "Local LLM Engines",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
+      "replaces": [
+        "automatic1111"
+      ],
       "language": "Python",
       "license": "AGPL-3.0",
       "stars": 2370,
@@ -7047,6 +7822,10 @@
         {
           "ts": 1790589197,
           "stars": 2370
+        },
+        {
+          "ts": 1790589549,
+          "stars": 2370
         }
       ],
       "capabilities": {
@@ -7083,6 +7862,11 @@
       "category": "Vision & OCR",
       "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
+      "replaces": [
+        "google-vision",
+        "aws-textract"
+      ],
       "language": "Jupyter Notebook",
       "license": "MIT",
       "stars": 313,
@@ -7113,6 +7897,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 313
+        },
+        {
+          "ts": 1790589549,
           "stars": 313
         }
       ],
@@ -7150,6 +7938,11 @@
       "category": "Vision & OCR",
       "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
+      "replaces": [
+        "google-vision",
+        "aws-textract"
+      ],
       "language": "Go",
       "license": "MIT",
       "stars": 2313,
@@ -7190,6 +7983,10 @@
         {
           "ts": 1790589197,
           "stars": 2313
+        },
+        {
+          "ts": 1790589549,
+          "stars": 2313
         }
       ],
       "capabilities": {
@@ -7226,6 +8023,11 @@
       "category": "Vision & OCR",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
+      "replaces": [
+        "google-vision",
+        "aws-textract"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 114,
@@ -7266,6 +8068,10 @@
         {
           "ts": 1790589197,
           "stars": 114
+        },
+        {
+          "ts": 1790589549,
+          "stars": 114
         }
       ],
       "capabilities": {
@@ -7304,6 +8110,11 @@
       "category": "Vision & OCR",
       "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
+      "replaces": [
+        "google-vision",
+        "aws-textract"
+      ],
       "language": "Rust",
       "license": "Apache-2.0",
       "stars": 2189,
@@ -7334,6 +8145,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 2189
+        },
+        {
+          "ts": 1790589549,
           "stars": 2189
         }
       ],
@@ -7372,6 +8187,11 @@
       "category": "Vision & OCR",
       "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
+      "replaces": [
+        "google-vision",
+        "aws-textract"
+      ],
       "language": "Jupyter Notebook",
       "license": "Apache-2.0",
       "stars": 215,
@@ -7410,6 +8230,10 @@
         {
           "ts": 1790589197,
           "stars": 215
+        },
+        {
+          "ts": 1790589549,
+          "stars": 215
         }
       ],
       "capabilities": {
@@ -7446,6 +8270,11 @@
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "TypeScript",
       "license": "GPL-3.0",
       "stars": 4338,
@@ -7474,7 +8303,7 @@
         "skills"
       ],
       "created_at": "2026-06-03T11:12:40Z",
-      "pushed_at": "2026-09-28T08:45:14Z",
+      "pushed_at": "2026-09-28T09:58:47Z",
       "quick_run": "git clone https://github.com/inkeep/open-knowledge",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -7491,6 +8320,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 4338
+        },
+        {
+          "ts": 1790589549,
           "stars": 4338
         }
       ],
@@ -7528,6 +8361,11 @@
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
+      "replaces": [
+        "langchain",
+        "llamaindex"
+      ],
       "language": "TypeScript",
       "license": "MIT",
       "stars": 115,
@@ -7571,6 +8409,10 @@
         {
           "ts": 1790589197,
           "stars": 115
+        },
+        {
+          "ts": 1790589549,
+          "stars": 115
         }
       ],
       "capabilities": {
@@ -7608,6 +8450,11 @@
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 4628,
@@ -7654,6 +8501,10 @@
         {
           "ts": 1790589197,
           "stars": 4628
+        },
+        {
+          "ts": 1790589549,
+          "stars": 4628
         }
       ],
       "capabilities": {
@@ -7690,6 +8541,11 @@
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
       "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
+      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
+      "replaces": [
+        "langchain",
+        "llamaindex"
+      ],
       "language": "TypeScript",
       "license": "MIT",
       "stars": 151,
@@ -7732,6 +8588,10 @@
         {
           "ts": 1790589197,
           "stars": 151
+        },
+        {
+          "ts": 1790589549,
+          "stars": 151
         }
       ],
       "capabilities": {
@@ -7769,6 +8629,11 @@
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
       "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "C++",
       "license": "GPL-2.0",
       "stars": 5890,
@@ -7815,6 +8680,10 @@
         {
           "ts": 1790589197,
           "stars": 5890
+        },
+        {
+          "ts": 1790589549,
+          "stars": 5890
         }
       ],
       "capabilities": {
@@ -7852,6 +8721,11 @@
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "TypeScript",
       "license": "MIT",
       "stars": 2465,
@@ -7894,6 +8768,10 @@
         {
           "ts": 1790589197,
           "stars": 2465
+        },
+        {
+          "ts": 1790589549,
+          "stars": 2465
         }
       ],
       "capabilities": {
@@ -7930,6 +8808,11 @@
       "category": "Second Brain & PKM",
       "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 166,
@@ -7976,6 +8859,10 @@
         {
           "ts": 1790589197,
           "stars": 166
+        },
+        {
+          "ts": 1790589549,
+          "stars": 166
         }
       ],
       "capabilities": {
@@ -8014,6 +8901,11 @@
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "HTML",
       "license": "MIT",
       "stars": 762,
@@ -8048,6 +8940,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 762
+        },
+        {
+          "ts": 1790589549,
           "stars": 762
         }
       ],
@@ -8085,6 +8981,11 @@
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "TypeScript",
       "license": "MIT",
       "stars": 598,
@@ -8129,6 +9030,10 @@
         {
           "ts": 1790589197,
           "stars": 598
+        },
+        {
+          "ts": 1790589549,
+          "stars": 598
         }
       ],
       "capabilities": {
@@ -8165,6 +9070,11 @@
       "category": "Second Brain & PKM",
       "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 15270,
@@ -8211,6 +9121,10 @@
         {
           "ts": 1790589197,
           "stars": 15270
+        },
+        {
+          "ts": 1790589549,
+          "stars": 15270
         }
       ],
       "capabilities": {
@@ -8249,6 +9163,11 @@
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "Svelte",
       "license": "GPL-3.0",
       "stars": 106,
@@ -8294,6 +9213,10 @@
         {
           "ts": 1790589197,
           "stars": 106
+        },
+        {
+          "ts": 1790589549,
+          "stars": 106
         }
       ],
       "capabilities": {
@@ -8330,6 +9253,11 @@
       "category": "Second Brain & PKM",
       "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 258,
@@ -8376,6 +9304,10 @@
         {
           "ts": 1790589197,
           "stars": 258
+        },
+        {
+          "ts": 1790589549,
+          "stars": 258
         }
       ],
       "capabilities": {
@@ -8415,6 +9347,11 @@
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "Code",
       "license": "CC-BY-SA-4.0",
       "stars": 675,
@@ -8461,6 +9398,10 @@
         {
           "ts": 1790589197,
           "stars": 675
+        },
+        {
+          "ts": 1790589549,
+          "stars": 675
         }
       ],
       "capabilities": {
@@ -8497,6 +9438,11 @@
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 388,
@@ -8539,6 +9485,10 @@
         {
           "ts": 1790589197,
           "stars": 388
+        },
+        {
+          "ts": 1790589549,
+          "stars": 388
         }
       ],
       "capabilities": {
@@ -8575,6 +9525,11 @@
       "category": "Multi-Agent Frameworks",
       "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
       "language": "TypeScript",
       "license": "MIT",
       "stars": 704,
@@ -8621,6 +9576,10 @@
         {
           "ts": 1790589197,
           "stars": 704
+        },
+        {
+          "ts": 1790589549,
+          "stars": 704
         }
       ],
       "capabilities": {
@@ -8659,6 +9618,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "Rust",
       "license": "NOASSERTION",
       "stars": 171,
@@ -8683,6 +9647,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 171
+        },
+        {
+          "ts": 1790589549,
           "stars": 171
         }
       ],
@@ -8720,6 +9688,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "Rust",
       "license": "MIT",
       "stars": 6171,
@@ -8735,7 +9708,7 @@
         "rich-text"
       ],
       "created_at": "2022-07-12T16:48:23Z",
-      "pushed_at": "2026-09-28T09:52:58Z",
+      "pushed_at": "2026-09-28T09:53:39Z",
       "quick_run": "git clone https://github.com/loro-dev/loro",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -8752,6 +9725,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 6171
+        },
+        {
+          "ts": 1790589549,
           "stars": 6171
         }
       ],
@@ -8789,6 +9766,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "Rust",
       "license": "Apache-2.0",
       "stars": 250,
@@ -8821,6 +9803,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 250
+        },
+        {
+          "ts": 1790589549,
           "stars": 250
         }
       ],
@@ -8858,6 +9844,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to PouchDB / CouchDB (Reactive local-first client database)",
+      "replaces": [
+        "pouchdb",
+        "firebase"
+      ],
       "language": "TypeScript",
       "license": "Apache-2.0",
       "stars": 23393,
@@ -8904,6 +9895,10 @@
         {
           "ts": 1790589197,
           "stars": 23393
+        },
+        {
+          "ts": 1790589549,
+          "stars": 23393
         }
       ],
       "capabilities": {
@@ -8940,6 +9935,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "Go",
       "license": "MIT",
       "stars": 177,
@@ -8980,6 +9980,10 @@
         {
           "ts": 1790589197,
           "stars": 177
+        },
+        {
+          "ts": 1790589549,
+          "stars": 177
         }
       ],
       "capabilities": {
@@ -9018,6 +10022,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "Rust",
       "license": "NOASSERTION",
       "stars": 201,
@@ -9063,6 +10072,10 @@
         {
           "ts": 1790589197,
           "stars": 201
+        },
+        {
+          "ts": 1790589549,
+          "stars": 201
         }
       ],
       "capabilities": {
@@ -9100,6 +10113,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "TypeScript",
       "license": "MIT",
       "stars": 1899,
@@ -9131,6 +10149,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 1899
+        },
+        {
+          "ts": 1790589549,
           "stars": 1899
         }
       ],
@@ -9168,6 +10190,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "TypeScript",
       "license": "AGPL-3.0",
       "stars": 682,
@@ -9214,6 +10240,10 @@
         {
           "ts": 1790589197,
           "stars": 682
+        },
+        {
+          "ts": 1790589549,
+          "stars": 682
         }
       ],
       "capabilities": {
@@ -9255,6 +10285,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "Rust",
       "license": "AGPL-3.0",
       "stars": 1929,
@@ -9288,6 +10323,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 1929
+        },
+        {
+          "ts": 1790589549,
           "stars": 1929
         }
       ],
@@ -9325,6 +10364,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "Rust",
       "license": "MIT",
       "stars": 573,
@@ -9357,6 +10401,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 573
+        },
+        {
+          "ts": 1790589549,
           "stars": 573
         }
       ],
@@ -9394,6 +10442,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "TypeScript",
       "license": "MIT",
       "stars": 5179,
@@ -9433,6 +10486,10 @@
         {
           "ts": 1790589197,
           "stars": 5179
+        },
+        {
+          "ts": 1790589549,
+          "stars": 5179
         }
       ],
       "capabilities": {
@@ -9469,6 +10526,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "TypeScript",
       "license": "MPL-2.0",
       "stars": 6027,
@@ -9510,6 +10572,10 @@
         {
           "ts": 1790589197,
           "stars": 6027
+        },
+        {
+          "ts": 1790589549,
+          "stars": 6027
         }
       ],
       "capabilities": {
@@ -9546,6 +10612,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "Rust",
       "license": "Apache-2.0",
       "stars": 117,
@@ -9584,6 +10655,10 @@
         {
           "ts": 1790589197,
           "stars": 117
+        },
+        {
+          "ts": 1790589549,
+          "stars": 117
         }
       ],
       "capabilities": {
@@ -9620,6 +10695,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "TypeScript",
       "license": "MIT",
       "stars": 667,
@@ -9655,6 +10735,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 667
+        },
+        {
+          "ts": 1790589549,
           "stars": 667
         }
       ],
@@ -9694,6 +10778,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "TypeScript",
       "license": "NOASSERTION",
       "stars": 1093,
@@ -9740,6 +10829,10 @@
         {
           "ts": 1790589197,
           "stars": 1093
+        },
+        {
+          "ts": 1790589549,
+          "stars": 1093
         }
       ],
       "capabilities": {
@@ -9778,6 +10871,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Haskell",
       "license": "GPL-3.0",
       "stars": 4732,
@@ -9816,6 +10913,10 @@
         {
           "ts": 1790589197,
           "stars": 4732
+        },
+        {
+          "ts": 1790589549,
+          "stars": 4732
         }
       ],
       "capabilities": {
@@ -9852,6 +10953,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 110,
@@ -9898,6 +11003,10 @@
         {
           "ts": 1790589197,
           "stars": 110
+        },
+        {
+          "ts": 1790589549,
+          "stars": 110
         }
       ],
       "capabilities": {
@@ -9934,6 +11043,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Go",
       "license": "MIT",
       "stars": 340,
@@ -9980,6 +11093,10 @@
         {
           "ts": 1790589197,
           "stars": 340
+        },
+        {
+          "ts": 1790589549,
+          "stars": 340
         }
       ],
       "capabilities": {
@@ -10019,6 +11136,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Rust",
       "license": "AGPL-3.0",
       "stars": 654,
@@ -10051,6 +11172,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 654
+        },
+        {
+          "ts": 1790589549,
           "stars": 654
         }
       ],
@@ -10088,6 +11213,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 131,
@@ -10130,6 +11259,10 @@
         {
           "ts": 1790589197,
           "stars": 131
+        },
+        {
+          "ts": 1790589549,
+          "stars": 131
         }
       ],
       "capabilities": {
@@ -10167,6 +11300,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "TypeScript",
       "license": "NOASSERTION",
       "stars": 10970,
@@ -10198,6 +11335,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 10970
+        },
+        {
+          "ts": 1790589549,
           "stars": 10970
         }
       ],
@@ -10236,6 +11377,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Rust",
       "license": "Apache-2.0",
       "stars": 530,
@@ -10278,6 +11423,10 @@
         {
           "ts": 1790589197,
           "stars": 530
+        },
+        {
+          "ts": 1790589549,
+          "stars": 530
         }
       ],
       "capabilities": {
@@ -10314,6 +11463,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Rust",
       "license": "Apache-2.0",
       "stars": 7965,
@@ -10360,6 +11513,10 @@
         {
           "ts": 1790589197,
           "stars": 7965
+        },
+        {
+          "ts": 1790589549,
+          "stars": 7965
         }
       ],
       "capabilities": {
@@ -10396,6 +11553,11 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "HTML",
       "license": "Apache-2.0",
       "stars": 432,
@@ -10441,6 +11603,10 @@
         {
           "ts": 1790589197,
           "stars": 432
+        },
+        {
+          "ts": 1790589549,
+          "stars": 432
         }
       ],
       "capabilities": {
@@ -10478,6 +11644,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Go",
       "license": "MIT",
       "stars": 1112,
@@ -10524,6 +11694,10 @@
         {
           "ts": 1790589197,
           "stars": 1112
+        },
+        {
+          "ts": 1790589549,
+          "stars": 1112
         }
       ],
       "capabilities": {
@@ -10560,11 +11734,15 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Rust",
       "license": "ISC",
-      "stars": 5008,
-      "stars_24h": 25,
-      "trending_score": 145,
+      "stars": 5009,
+      "stars_24h": 26,
+      "trending_score": 148,
       "topics": [
         "cli",
         "cli-tool",
@@ -10606,6 +11784,10 @@
         {
           "ts": 1790589197,
           "stars": 5008
+        },
+        {
+          "ts": 1790589549,
+          "stars": 5009
         }
       ],
       "capabilities": {
@@ -10642,6 +11824,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Shell",
       "license": "MIT",
       "stars": 110,
@@ -10666,6 +11852,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 110
+        },
+        {
+          "ts": 1790589549,
           "stars": 110
         }
       ],
@@ -10703,6 +11893,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Python",
       "license": "NOASSERTION",
       "stars": 3363,
@@ -10745,6 +11939,10 @@
         {
           "ts": 1790589197,
           "stars": 3363
+        },
+        {
+          "ts": 1790589549,
+          "stars": 3363
         }
       ],
       "capabilities": {
@@ -10782,6 +11980,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "TypeScript",
       "license": "MIT",
       "stars": 146,
@@ -10809,6 +12011,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 146
+        },
+        {
+          "ts": 1790589549,
           "stars": 146
         }
       ],
@@ -10846,6 +12052,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Rust",
       "license": "MIT",
       "stars": 1063,
@@ -10874,6 +12084,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 1063
+        },
+        {
+          "ts": 1790589549,
           "stars": 1063
         }
       ],

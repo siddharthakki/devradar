@@ -33,7 +33,10 @@ def test_generate_architectural_verdict():
         "intent_tags": ["gguf"]
     }
     health = {"stage": "experimental", "authenticity_score": 90}
-    verdict, gotchas = generate_architectural_verdict(repo, category, capabilities, health)
+    verdict, gotchas, comparison, replaces = generate_architectural_verdict(repo, category, capabilities, health)
     assert "Heavyweight architecture" in verdict
     assert "24GB+" in gotchas
+    assert "Alternative to" in comparison
+    assert isinstance(replaces, list)
+    assert len(replaces) > 0
 

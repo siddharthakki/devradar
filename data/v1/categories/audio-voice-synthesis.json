@@ -1,7 +1,7 @@
 {
   "category": "Audio & Voice Synthesis",
   "count": 15,
-  "updated_at": "2026-09-28T09:53:17.145984+00:00",
+  "updated_at": "2026-09-28T09:59:30.001055+00:00",
   "repositories": [
     {
       "full_name": "EveningStudy/asmr-dubber",
@@ -11,6 +11,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 212,
@@ -53,6 +58,10 @@
         {
           "ts": 1790589197,
           "stars": 212
+        },
+        {
+          "ts": 1790589549,
+          "stars": 212
         }
       ],
       "capabilities": {
@@ -89,6 +98,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "AGPL-3.0",
       "stars": 288,
@@ -134,6 +148,10 @@
         {
           "ts": 1790589197,
           "stars": 288
+        },
+        {
+          "ts": 1790589549,
+          "stars": 288
         }
       ],
       "capabilities": {
@@ -172,6 +190,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 1380,
@@ -210,6 +233,10 @@
         {
           "ts": 1790589197,
           "stars": 1380
+        },
+        {
+          "ts": 1790589549,
+          "stars": 1380
         }
       ],
       "capabilities": {
@@ -246,6 +273,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "TypeScript",
       "license": "NOASSERTION",
       "stars": 128,
@@ -283,6 +315,10 @@
         {
           "ts": 1790589197,
           "stars": 128
+        },
+        {
+          "ts": 1790589549,
+          "stars": 128
         }
       ],
       "capabilities": {
@@ -319,6 +355,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "NOASSERTION",
       "stars": 769,
@@ -365,6 +406,10 @@
         {
           "ts": 1790589197,
           "stars": 769
+        },
+        {
+          "ts": 1790589549,
+          "stars": 769
         }
       ],
       "capabilities": {
@@ -404,6 +449,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Code",
       "license": "MIT",
       "stars": 111,
@@ -450,6 +500,10 @@
         {
           "ts": 1790589197,
           "stars": 111
+        },
+        {
+          "ts": 1790589549,
+          "stars": 111
         }
       ],
       "capabilities": {
@@ -489,6 +543,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "GPL-3.0",
       "stars": 12953,
@@ -534,6 +593,10 @@
         {
           "ts": 1790589197,
           "stars": 12953
+        },
+        {
+          "ts": 1790589549,
+          "stars": 12953
         }
       ],
       "capabilities": {
@@ -570,6 +633,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 674,
@@ -594,6 +662,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 674
+        },
+        {
+          "ts": 1790589549,
           "stars": 674
         }
       ],
@@ -631,6 +703,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 126,
@@ -671,6 +748,10 @@
         {
           "ts": 1790589197,
           "stars": 126
+        },
+        {
+          "ts": 1790589549,
+          "stars": 126
         }
       ],
       "capabilities": {
@@ -709,6 +790,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "TypeScript",
       "license": "MIT",
       "stars": 196,
@@ -733,6 +819,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 196
+        },
+        {
+          "ts": 1790589549,
           "stars": 196
         }
       ],
@@ -770,6 +860,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to LocalAI & LM Studio (CLI and REST inference engine)",
+      "replaces": [
+        "localai",
+        "lmstudio"
+      ],
       "language": "Python",
       "license": "AGPL-3.0",
       "stars": 378,
@@ -794,6 +889,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 378
+        },
+        {
+          "ts": 1790589549,
           "stars": 378
         }
       ],
@@ -831,6 +930,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 362,
@@ -877,6 +981,10 @@
         {
           "ts": 1790589197,
           "stars": 362
+        },
+        {
+          "ts": 1790589549,
+          "stars": 362
         }
       ],
       "capabilities": {
@@ -913,6 +1021,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 137,
@@ -944,6 +1057,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 137
+        },
+        {
+          "ts": 1790589549,
           "stars": 137
         }
       ],
@@ -981,6 +1098,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 787,
@@ -1022,6 +1144,10 @@
         {
           "ts": 1790589197,
           "stars": 787
+        },
+        {
+          "ts": 1790589549,
+          "stars": 787
         }
       ],
       "capabilities": {
@@ -1058,6 +1184,11 @@
       "category": "Audio & Voice Synthesis",
       "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to ElevenLabs & Whisper API (On-device audio pipeline)",
+      "replaces": [
+        "elevenlabs",
+        "whisper"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 145,
@@ -1087,6 +1218,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 145
+        },
+        {
+          "ts": 1790589549,
           "stars": 145
         }
       ],

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -67,6 +67,23 @@
         </h2>
         <p class="mt-2 text-slate-400 leading-relaxed">
           Each repository is inspected for self-hosting and local hardware viability. Readme manifests, configs, and models are categorized into CPU/Minimal, Unified Apple Silicon, or Heavy CUDA (16–24GB+ VRAM) requirements before you clone.
+        </p>
+      </section>
+
+      <section class="bg-cardDark border border-borderDark rounded-xl p-6">
+        <h2 class="text-lg font-bold text-white flex items-center gap-2">
+          <span>🧠</span> Architectural Verdicts & Competitor Positioning (The 10x AI Approach)
+        </h2>
+        <p class="mt-2 text-slate-400 leading-relaxed">
+          Rather than degrading developer search speeds with sluggish 4,000ms LLM calls or third-party auth popups, DevRadar moves AI into the hourly ingestion pipeline:
+        </p>
+        <ul class="list-disc list-inside mt-3 space-y-1.5 text-slate-400">
+          <li><strong class="text-slate-200">Architectural Verdict:</strong> A blunt 1-sentence engineering assessment explaining what the project is best for.</li>
+          <li><strong class="text-slate-200">Gotchas & Ceilings:</strong> Clear warnings on VRAM requirements, build dependencies, API volatility, or maintenance status.</li>
+          <li><strong class="text-slate-200">Direct Competitor Positioning:</strong> Instantly shows which established tool or service this project challenges or replaces (e.g., <em>"Alternative to Ollama (Rust-native, lower overhead)"</em>).</li>
+        </ul>
+        <p class="mt-3 text-slate-400 leading-relaxed">
+          All verdicts are pre-computed and baked directly into static JSON slices at build time—delivering zero client-side latency and full offline compatibility.
         </p>
       </section>
 

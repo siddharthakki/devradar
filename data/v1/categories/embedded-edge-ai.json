@@ -1,7 +1,7 @@
 {
   "category": "Embedded & Edge AI",
   "count": 1,
-  "updated_at": "2026-09-28T09:53:17.145984+00:00",
+  "updated_at": "2026-09-28T09:59:30.001055+00:00",
   "repositories": [
     {
       "full_name": "Pometry/Raphtory",
@@ -11,6 +11,11 @@
       "category": "Embedded & Edge AI",
       "verdict": "High-velocity open-source project delivering focused capabilities for embedded & edge ai.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to JetPack & Cloud Edge APIs (Ultra-low footprint AI)",
+      "replaces": [
+        "jetpack",
+        "tensorrt"
+      ],
       "language": "Rust",
       "license": "GPL-3.0",
       "stars": 644,
@@ -42,6 +47,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 644
+        },
+        {
+          "ts": 1790589549,
           "stars": 644
         }
       ],

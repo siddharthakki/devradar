@@ -224,13 +224,100 @@ def analyze_health(repo):
         "is_stale": last_push_days > 90
     }
 
+KNOWN_COMPETITORS = {
+    # Local LLMs & Inference
+    "llama.cpp": ("Alternative to Ollama (Raw C/C++ inference runtime)", ["ollama", "vllm"]),
+    "ollama": ("Alternative to LocalAI & LM Studio (CLI and REST inference engine)", ["localai", "lmstudio"]),
+    "vllm": ("Alternative to TGI (High-throughput PagedAttention server)", ["tgi", "tensorrt-llm"]),
+    "sglang": ("Alternative to vLLM (Fast structured decoding and spec decoding engine)", ["vllm", "tgi"]),
+    "tgi": ("Alternative to vLLM (Hugging Face production LLM server)", ["vllm"]),
+    "exllamav2": ("Alternative to llama.cpp (Ultra-fast EXL2 quantization for NVIDIA GPUs)", ["llama.cpp"]),
+    "aphrodite-engine": ("Alternative to vLLM (Multi-backend sampling & inference engine)", ["vllm"]),
+    "open-webui": ("Alternative to ChatGPT Web UI (Private interface for Ollama/vLLM)", ["chatgpt", "librechat"]),
+    "librechat": ("Alternative to ChatGPT Plus (Multi-model enterprise AI web UI)", ["chatgpt"]),
+    "tabby": ("Alternative to GitHub Copilot (Self-hosted AI coding assistant)", ["copilot"]),
+    "continue": ("Alternative to GitHub Copilot (Open-source IDE copilot extension)", ["copilot"]),
+    "jan": ("Alternative to proprietary desktop AI chat apps", ["chatgpt", "lmstudio"]),
+    "localai": ("Alternative to OpenAI API (Drop-in REST API for local models)", ["openai"]),
+    "litellm": ("Alternative to LangChain Model I/O (Unified 100+ LLM API proxy)", ["langchain", "openai"]),
+
+    # Multi-Agent Frameworks
+    "crewai": ("Alternative to AutoGen (Role-playing multi-agent orchestrator)", ["autogen", "langchain"]),
+    "autogen": ("Alternative to LangGraph (Conversational multi-agent framework)", ["langgraph", "crewai"]),
+    "langgraph": ("Alternative to CrewAI (Graph-based cyclical agent workflows)", ["crewai", "langchain"]),
+    "dify": ("Alternative to Flowise / Langflow (Production LLM app development platform)", ["flowise", "langflow"]),
+    "langflow": ("Alternative to Dify (Drag-and-drop visual agent builder)", ["dify"]),
+    "flowise": ("Alternative to Dify (Drag-and-drop visual LLM workflows)", ["dify"]),
+    "chatdev": ("Alternative to AutoGen (Virtual software development studio)", ["autogen"]),
+    "openhands": ("Alternative to Devin (Autonomous software engineering agent)", ["devin"]),
+    "swe-agent": ("Alternative to Devin (Autonomous benchmark-solving agent)", ["devin"]),
+    "browser-use": ("Alternative to Selenium / Puppeteer (Autonomous AI web navigation)", ["selenium", "puppeteer"]),
+
+    # Vector Databases & Search
+    "chroma": ("Alternative to Pinecone & Weaviate (Embedded open-source vector store)", ["pinecone", "weaviate"]),
+    "qdrant": ("Alternative to Milvus & Pinecone (Rust-based production vector search)", ["pinecone", "milvus"]),
+    "milvus": ("Alternative to Pinecone (Cloud-native distributed vector database)", ["pinecone"]),
+    "weaviate": ("Alternative to Pinecone (Modular GraphQL/REST vector database)", ["pinecone"]),
+    "sqlite-vec": ("Alternative to pgvector (Zero-dependency embedded vector search)", ["pgvector", "chroma"]),
+    "pgvector": ("Alternative to standalone vector DBs (PostgreSQL native vector search)", ["pinecone", "chroma"]),
+    "ragflow": ("Alternative to Dify RAG (Deep document understanding retrieval engine)", ["dify", "langchain"]),
+
+    # Local-First & Sync
+    "electric": ("Alternative to Firebase & Supabase Realtime (SQLite sync layer)", ["firebase", "supabase"]),
+    "powersync": ("Alternative to Firebase Realtime (PostgreSQL to SQLite offline sync)", ["firebase"]),
+    "automerge": ("Alternative to Yjs (Binary CRDT library for collaborative apps)", ["yjs"]),
+    "yjs": ("Alternative to Automerge (High-performance shared types CRDT framework)", ["automerge"]),
+    "rxdb": ("Alternative to PouchDB / CouchDB (Reactive local-first client database)", ["pouchdb", "firebase"]),
+
+    # Developer Tooling & CLI
+    "ripgrep": ("Alternative to grep (High-velocity Rust recursive regex search)", ["grep"]),
+    "fd": ("Alternative to find (Fast, user-friendly directory traverser in Rust)", ["find"]),
+    "bat": ("Alternative to cat (Syntax-highlighted terminal pager)", ["cat"]),
+    "lazygit": ("Alternative to GitKraken (Keyboard-driven terminal Git GUI)", ["gitkraken"]),
+    "bruno": ("Alternative to Postman & Insomnia (Lightweight, local-only API client)", ["postman", "insomnia"]),
+    "yaak": ("Alternative to Postman (Fast desktop REST/GraphQL client in Rust)", ["postman", "insomnia"]),
+    "act": ("Alternative to pushing to GitHub (Run GitHub Actions locally in Docker)", ["github-actions"]),
+
+    # Audio & Voice
+    "whisper.cpp": ("Alternative to OpenAI Whisper API (Zero-cloud C++ speech transcription)", ["whisper", "openai"]),
+    "piper": ("Alternative to ElevenLabs (Fast, local neural text-to-speech)", ["elevenlabs"]),
+    "coqui-tts": ("Alternative to ElevenLabs (Self-hosted voice cloning & TTS)", ["elevenlabs"]),
+
+    # Image & Video
+    "comfyui": ("Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)", ["automatic1111"]),
+    "fooocus": ("Alternative to Midjourney (One-click local image generation)", ["midjourney"])
+}
+
+CATEGORY_COMPETITORS = {
+    "Local LLM Engines": ("Alternative to Ollama & vLLM (Self-hosted LLM runtime)", ["ollama", "vllm"]),
+    "Multi-Agent Frameworks": ("Alternative to AutoGen & LangChain (Specialized agent coordinator)", ["autogen", "langchain"]),
+    "RAG Engines": ("Alternative to LangChain RAG (Focused retrieval pipeline)", ["langchain", "llamaindex"]),
+    "Vector Databases": ("Alternative to Pinecone (Self-hosted vector similarity search)", ["pinecone", "milvus"]),
+    "Local-First Sync & CRDTs": ("Alternative to Firebase (Decentralized state synchronization)", ["firebase", "replicache"]),
+    "Audio & Voice Synthesis": ("Alternative to ElevenLabs & Whisper API (On-device audio pipeline)", ["elevenlabs", "whisper"]),
+    "Vision & OCR": ("Alternative to Cloud Vision APIs (Local neural OCR model)", ["google-vision", "aws-textract"]),
+    "Document Vaults & Search": ("Alternative to Elastic / Notion (Private self-hosted search engine)", ["notion", "elastic"]),
+    "CLI & TUI Tooling": ("Alternative to GUI Utilities (Keyboard-driven terminal tool)", ["gui"]),
+    "Container & MicroVMs": ("Alternative to Docker Desktop (Lightweight isolation environment)", ["docker"]),
+    "Second Brain & PKM": ("Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)", ["notion", "obsidian"]),
+    "Databases & Storage": ("Alternative to Cloud SQL (Embedded sovereign storage engine)", ["cloudsql", "sqlite"]),
+    "Generative Image/Video": ("Alternative to Midjourney & proprietary diffusion APIs", ["midjourney"]),
+    "AI Writing & Synthesis": ("Alternative to Notion AI & Copilot (Sovereign writing assistant)", ["copilot", "notion-ai"]),
+    "Spreadsheets & Data Grid": ("Alternative to Google Sheets & Airtable (Local data grid)", ["airtable", "sheets"]),
+    "Reverse Eng & Security": ("Alternative to IDA Pro & Burp Suite (Open security tooling)", ["burp-suite", "ida-pro"]),
+    "Embedded & Edge AI": ("Alternative to JetPack & Cloud Edge APIs (Ultra-low footprint AI)", ["jetpack", "tensorrt"]),
+    "Desktop & Native Bridges": ("Alternative to Electron (Lightweight native desktop runtime)", ["electron"]),
+    "API & Gateway Proxies": ("Alternative to Kong & Cloudflare Workers (Private edge API proxy)", ["kong", "cloudflare"])
+}
+
 def generate_architectural_verdict(repo, category, capabilities, health):
-    """Synthesizes a 1-sentence engineering verdict and realistic gotchas."""
+    """Synthesizes a 1-sentence engineering verdict, gotchas, and competitor positioning."""
     hw = capabilities["hardware"]["floor"]
     stage = health["stage"]
     is_local = "local-only" in capabilities["deployment"]
     has_mcp = "mcp-server" in capabilities["integrations"]
     tags = capabilities["intent_tags"]
+    name = (repo.get("name") or "").lower()
 
     # 1. Verdict
     if "24GB" in hw:
@@ -272,7 +359,82 @@ def generate_architectural_verdict(repo, category, capabilities, health):
     else:
         gotchas = "Minimal hardware footprint; verify compatibility with your target language stack."
 
-    return verdict, gotchas
+    # 3. Direct Competitor Comparison
+    comparison = ""
+    replaces = []
+    for k, (comp_text, repl_list) in KNOWN_COMPETITORS.items():
+        if k in name or name in k:
+            comparison = comp_text
+            replaces = repl_list
+            break
+
+    if not comparison:
+        if category in CATEGORY_COMPETITORS:
+            comparison, replaces = CATEGORY_COMPETITORS[category]
+        else:
+            comparison = "Alternative to Proprietary Cloud SaaS (Open-source sovereign tooling)"
+            replaces = ["cloud-saas"]
+
+    return verdict, gotchas, comparison, replaces
+
+def enrich_with_ai(repo, category, capabilities, health, cache):
+    """Enriches repo with Principal Engineer verdict, gotchas, and competitor comparison with persistent caching."""
+    full_name = repo.get("full_name") or repo.get("name", "")
+
+    # 1. Check persistent cache
+    if full_name in cache and isinstance(cache[full_name], dict):
+        cached = cache[full_name]
+        if "verdict" in cached and "gotchas" in cached and "comparison" in cached and "replaces" in cached:
+            return cached["verdict"], cached["gotchas"], cached["comparison"], cached["replaces"]
+
+    # 2. Expert rule-based baseline
+    verdict, gotchas, comparison, replaces = generate_architectural_verdict(repo, category, capabilities, health)
+
+    # 3. If GEMINI_API_KEY or AI_API_KEY is available in environment, enrich via LLM
+    gemini_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("AI_API_KEY")
+    if gemini_key:
+        try:
+            url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={gemini_key}"
+            prompt = (
+                f"You are a Principal Software Engineer and System Architect. Analyze this GitHub repository:\n"
+                f"Name: {full_name}\n"
+                f"Category: {category}\n"
+                f"Description: {repo.get('description', '')}\n"
+                f"Hardware floor: {capabilities.get('hardware', {}).get('floor', '')}\n"
+                f"Tags: {capabilities.get('intent_tags', [])}\n"
+                f"Deployment: {capabilities.get('deployment', [])}\n\n"
+                f"Return ONLY valid JSON matching this schema:\n"
+                f'{{"verdict": "blunt 1-sentence engineering assessment", '
+                f'"gotchas": "realistic trade-off/hardware ceiling", '
+                f'"comparison": "Alternative to [Incumbent] ([reason])", '
+                f'"replaces": ["tool1", "tool2"]}}'
+            )
+            payload = {
+                "contents": [{"parts": [{"text": prompt}]}],
+                "generationConfig": {"responseMimeType": "application/json"}
+            }
+            res = requests.post(url, json=payload, timeout=5)
+            if res.status_code == 200:
+                res_data = res.json()
+                text = res_data["candidates"][0]["content"]["parts"][0]["text"]
+                parsed = json.loads(text)
+                if parsed.get("verdict") and parsed.get("comparison"):
+                    verdict = parsed["verdict"]
+                    gotchas = parsed.get("gotchas", gotchas)
+                    comparison = parsed["comparison"]
+                    if isinstance(parsed.get("replaces"), list):
+                        replaces = [str(x).lower() for x in parsed["replaces"]]
+        except Exception:
+            pass
+
+    # Save to persistent cache
+    cache[full_name] = {
+        "verdict": verdict,
+        "gotchas": gotchas,
+        "comparison": comparison,
+        "replaces": replaces
+    }
+    return verdict, gotchas, comparison, replaces
 
 def atomic_save_json(filepath, data):
     """Atomically writes JSON using a temporary file to avoid corruption."""
@@ -318,9 +480,17 @@ def run_pipeline():
 
     print(f"Aggregated {len(all_repos)} unique candidate repositories. Analyzing intents and health...")
 
+    ai_cache_file = os.path.join("data", "ai_verdicts.json")
+    ai_cache = {}
+    if os.path.exists(ai_cache_file):
+        try:
+            with open(ai_cache_file, "r", encoding="utf-8") as f:
+                ai_cache = json.load(f)
+        except Exception:
+            ai_cache = {}
+
     processed = []
     now_ts = int(time.time())
-
     for full_name, repo in all_repos.items():
         stars = repo.get("stargazers_count", 0)
         repo_history = history.get(full_name, [])
@@ -340,7 +510,7 @@ def run_pipeline():
         capabilities = extract_capabilities(repo)
         health = analyze_health(repo)
         category = classify(repo.get("description"), repo.get("topics", []), repo.get("name", ""))
-        verdict, gotchas = generate_architectural_verdict(repo, category, capabilities, health)
+        verdict, gotchas, comparison, replaces = enrich_with_ai(repo, category, capabilities, health, ai_cache)
 
         # Safe quick run default without supply-chain hallucination
         html_url = repo.get("html_url") or f"https://github.com/{full_name}"
@@ -354,6 +524,8 @@ def run_pipeline():
             "category": category,
             "verdict": verdict,
             "gotchas": gotchas,
+            "comparison": comparison,
+            "replaces": replaces,
             "language": repo.get("language") or "Code",
             "license": repo.get("license", {}).get("spdx_id") if repo.get("license") else "MIT",
             "stars": stars,
@@ -381,6 +553,7 @@ def run_pipeline():
             pruned_history[fn] = entries
 
     atomic_save_json(history_file, pruned_history)
+    atomic_save_json(ai_cache_file, ai_cache)
 
     payload = {
         "updated_at": datetime.now(timezone.utc).isoformat(),
@@ -389,7 +562,7 @@ def run_pipeline():
     }
 
     atomic_save_json(os.path.join("data", "repos.json"), payload)
-    print(f"Saved {len(processed)} enriched repositories to data/repos.json")
+    print(f"Saved {len(processed)} enriched repositories with AI verdicts to data/repos.json")
 
 if __name__ == "__main__":
     run_pipeline()

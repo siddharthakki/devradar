@@ -1,7 +1,7 @@
 {
   "category": "Vision & OCR",
   "count": 8,
-  "updated_at": "2026-09-28T09:53:17.145984+00:00",
+  "updated_at": "2026-09-28T09:59:30.001055+00:00",
   "repositories": [
     {
       "full_name": "Dicklesworthstone/franken_ocr",
@@ -11,6 +11,11 @@
       "category": "Vision & OCR",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
+      "replaces": [
+        "google-vision",
+        "aws-textract"
+      ],
       "language": "Rust",
       "license": "NOASSERTION",
       "stars": 331,
@@ -48,6 +53,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 331
+        },
+        {
+          "ts": 1790589549,
           "stars": 331
         }
       ],
@@ -87,6 +96,11 @@
       "category": "Vision & OCR",
       "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
+      "replaces": [
+        "google-vision",
+        "aws-textract"
+      ],
       "language": "Python",
       "license": "NOASSERTION",
       "stars": 2021,
@@ -111,6 +125,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 2021
+        },
+        {
+          "ts": 1790589549,
           "stars": 2021
         }
       ],
@@ -148,6 +166,11 @@
       "category": "Vision & OCR",
       "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
       "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts.",
+      "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
+      "replaces": [
+        "google-vision",
+        "aws-textract"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 105,
@@ -181,6 +204,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 105
+        },
+        {
+          "ts": 1790589549,
           "stars": 105
         }
       ],
@@ -219,6 +246,11 @@
       "category": "Vision & OCR",
       "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
+      "replaces": [
+        "google-vision",
+        "aws-textract"
+      ],
       "language": "Jupyter Notebook",
       "license": "MIT",
       "stars": 313,
@@ -249,6 +281,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 313
+        },
+        {
+          "ts": 1790589549,
           "stars": 313
         }
       ],
@@ -286,6 +322,11 @@
       "category": "Vision & OCR",
       "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
+      "replaces": [
+        "google-vision",
+        "aws-textract"
+      ],
       "language": "Go",
       "license": "MIT",
       "stars": 2313,
@@ -326,6 +367,10 @@
         {
           "ts": 1790589197,
           "stars": 2313
+        },
+        {
+          "ts": 1790589549,
+          "stars": 2313
         }
       ],
       "capabilities": {
@@ -362,6 +407,11 @@
       "category": "Vision & OCR",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
+      "replaces": [
+        "google-vision",
+        "aws-textract"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 114,
@@ -402,6 +452,10 @@
         {
           "ts": 1790589197,
           "stars": 114
+        },
+        {
+          "ts": 1790589549,
+          "stars": 114
         }
       ],
       "capabilities": {
@@ -440,6 +494,11 @@
       "category": "Vision & OCR",
       "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
+      "replaces": [
+        "google-vision",
+        "aws-textract"
+      ],
       "language": "Rust",
       "license": "Apache-2.0",
       "stars": 2189,
@@ -470,6 +529,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 2189
+        },
+        {
+          "ts": 1790589549,
           "stars": 2189
         }
       ],
@@ -508,6 +571,11 @@
       "category": "Vision & OCR",
       "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
       "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting.",
+      "comparison": "Alternative to Cloud Vision APIs (Local neural OCR model)",
+      "replaces": [
+        "google-vision",
+        "aws-textract"
+      ],
       "language": "Jupyter Notebook",
       "license": "Apache-2.0",
       "stars": 215,
@@ -545,6 +613,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 215
+        },
+        {
+          "ts": 1790589549,
           "stars": 215
         }
       ],

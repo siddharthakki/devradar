@@ -1,7 +1,7 @@
 {
   "category": "Generative Image/Video",
   "count": 14,
-  "updated_at": "2026-09-28T09:53:17.145984+00:00",
+  "updated_at": "2026-09-28T09:59:30.001055+00:00",
   "repositories": [
     {
       "full_name": "perfectgf/lora-dataset-studio",
@@ -11,6 +11,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
+      "replaces": [
+        "midjourney"
+      ],
       "language": "Python",
       "license": "NOASSERTION",
       "stars": 280,
@@ -29,7 +33,7 @@
         "stable-diffusion"
       ],
       "created_at": "2026-07-05T13:43:17Z",
-      "pushed_at": "2026-09-28T09:47:09Z",
+      "pushed_at": "2026-09-28T09:55:36Z",
       "quick_run": "git clone https://github.com/perfectgf/lora-dataset-studio",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -46,6 +50,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 280
+        },
+        {
+          "ts": 1790589549,
           "stars": 280
         }
       ],
@@ -86,6 +94,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
+      "replaces": [
+        "midjourney"
+      ],
       "language": "Python",
       "license": "GPL-3.0",
       "stars": 1410,
@@ -120,6 +132,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 1410
+        },
+        {
+          "ts": 1790589549,
           "stars": 1410
         }
       ],
@@ -157,6 +173,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
+      "replaces": [
+        "automatic1111"
+      ],
       "language": "Python",
       "license": "GPL-3.0",
       "stars": 135295,
@@ -188,6 +208,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 135295
+        },
+        {
+          "ts": 1790589549,
           "stars": 135295
         }
       ],
@@ -225,6 +249,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
+      "replaces": [
+        "midjourney"
+      ],
       "language": "Python",
       "license": "GPL-3.0",
       "stars": 257,
@@ -265,6 +293,10 @@
         {
           "ts": 1790589197,
           "stars": 257
+        },
+        {
+          "ts": 1790589549,
+          "stars": 257
         }
       ],
       "capabilities": {
@@ -301,6 +333,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
+      "replaces": [
+        "midjourney"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 5694,
@@ -347,6 +383,10 @@
         {
           "ts": 1790589197,
           "stars": 5694
+        },
+        {
+          "ts": 1790589549,
+          "stars": 5694
         }
       ],
       "capabilities": {
@@ -384,6 +424,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
+      "replaces": [
+        "midjourney"
+      ],
       "language": "TypeScript",
       "license": "AGPL-3.0",
       "stars": 202,
@@ -421,6 +465,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 202
+        },
+        {
+          "ts": 1790589549,
           "stars": 202
         }
       ],
@@ -460,6 +508,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
+      "replaces": [
+        "midjourney"
+      ],
       "language": "TypeScript",
       "license": "MPL-2.0",
       "stars": 323,
@@ -502,6 +554,10 @@
         {
           "ts": 1790589197,
           "stars": 323
+        },
+        {
+          "ts": 1790589549,
+          "stars": 323
         }
       ],
       "capabilities": {
@@ -539,6 +595,10 @@
       "category": "Generative Image/Video",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
+      "replaces": [
+        "automatic1111"
+      ],
       "language": "Nix",
       "license": "MIT",
       "stars": 161,
@@ -571,6 +631,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 161
+        },
+        {
+          "ts": 1790589549,
           "stars": 161
         }
       ],
@@ -608,6 +672,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
+      "replaces": [
+        "midjourney"
+      ],
       "language": "Python",
       "license": "GPL-3.0",
       "stars": 990,
@@ -637,6 +705,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 990
+        },
+        {
+          "ts": 1790589549,
           "stars": 990
         }
       ],
@@ -674,6 +746,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
+      "replaces": [
+        "automatic1111"
+      ],
       "language": "Python",
       "license": "GPL-3.0",
       "stars": 674,
@@ -697,6 +773,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 674
+        },
+        {
+          "ts": 1790589549,
           "stars": 674
         }
       ],
@@ -734,6 +814,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
+      "replaces": [
+        "automatic1111"
+      ],
       "language": "Python",
       "license": "GPL-3.0",
       "stars": 1245,
@@ -759,6 +843,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 1245
+        },
+        {
+          "ts": 1790589549,
           "stars": 1245
         }
       ],
@@ -796,6 +884,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
+      "replaces": [
+        "midjourney"
+      ],
       "language": "JavaScript",
       "license": "MIT",
       "stars": 3515,
@@ -820,6 +912,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 3515
+        },
+        {
+          "ts": 1790589549,
           "stars": 3515
         }
       ],
@@ -857,6 +953,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
+      "replaces": [
+        "midjourney"
+      ],
       "language": "JavaScript",
       "license": "GPL-3.0",
       "stars": 290,
@@ -887,6 +987,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 290
+        },
+        {
+          "ts": 1790589549,
           "stars": 290
         }
       ],
@@ -926,6 +1030,10 @@
       "category": "Generative Image/Video",
       "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Midjourney & proprietary diffusion APIs",
+      "replaces": [
+        "midjourney"
+      ],
       "language": "C#",
       "license": "MIT",
       "stars": 4613,
@@ -960,6 +1068,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 4613
+        },
+        {
+          "ts": 1790589549,
           "stars": 4613
         }
       ],

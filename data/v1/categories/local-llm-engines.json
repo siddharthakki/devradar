@@ -1,8 +1,88 @@
 {
   "category": "Local LLM Engines",
-  "count": 22,
-  "updated_at": "2026-09-28T09:53:17.145984+00:00",
+  "count": 23,
+  "updated_at": "2026-09-28T09:59:30.001055+00:00",
   "repositories": [
+    {
+      "full_name": "brycewang-stanford/StatsPAI",
+      "name": "StatsPAI",
+      "url": "https://github.com/brycewang-stanford/StatsPAI",
+      "description": "StatsPAI is the first Agent-native Python library for causal inference and applied econometrics \u2014 unified API, broad cross-method coverage, structured result objects, machine-readable schemas, Skills, an MCP server, and R/Stata parity validation.",
+      "category": "Local LLM Engines",
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
+      "language": "Python",
+      "license": "MIT",
+      "stars": 326,
+      "stars_24h": 0,
+      "trending_score": 18,
+      "topics": [
+        "agent-native",
+        "ai-agents",
+        "causal-discovery",
+        "causal-inference",
+        "data-science",
+        "difference-in-differences",
+        "double-machine-learning",
+        "econometrics",
+        "instrumental-variables",
+        "llm",
+        "mcp",
+        "panel-data",
+        "policy-evaluation",
+        "python",
+        "regression-discontinuity",
+        "rstats",
+        "stata",
+        "statistics",
+        "synthetic-control",
+        "treatment-effects"
+      ],
+      "created_at": "2025-07-26T09:53:30Z",
+      "pushed_at": "2026-09-28T09:55:49Z",
+      "quick_run": "git clone https://github.com/brycewang-stanford/StatsPAI",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589549,
+          "stars": 326
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library",
+          "service"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 429,
+        "authenticity_score": 95,
+        "open_issues": 0,
+        "is_stale": false
+      }
+    },
     {
       "full_name": "sgl-project/sglang",
       "name": "sglang",
@@ -11,11 +91,16 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution.",
+      "comparison": "Alternative to vLLM (Fast structured decoding and spec decoding engine)",
+      "replaces": [
+        "vllm",
+        "tgi"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
-      "stars": 36516,
-      "stars_24h": 375,
-      "trending_score": 1316,
+      "stars": 36517,
+      "stars_24h": 376,
+      "trending_score": 1319,
       "topics": [
         "attention",
         "blackwell",
@@ -55,6 +140,10 @@
         {
           "ts": 1790589197,
           "stars": 36516
+        },
+        {
+          "ts": 1790589549,
+          "stars": 36517
         }
       ],
       "capabilities": {
@@ -91,6 +180,11 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 5766,
@@ -131,6 +225,10 @@
         {
           "ts": 1790589197,
           "stars": 5766
+        },
+        {
+          "ts": 1790589549,
+          "stars": 5766
         }
       ],
       "capabilities": {
@@ -167,6 +265,11 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 1220,
@@ -194,6 +297,10 @@
         {
           "ts": 1790589197,
           "stars": 1220
+        },
+        {
+          "ts": 1790589549,
+          "stars": 1220
         }
       ],
       "capabilities": {
@@ -218,7 +325,7 @@
         "last_push_days": 0,
         "age_days": 690,
         "authenticity_score": 95,
-        "open_issues": 7,
+        "open_issues": 6,
         "is_stale": false
       }
     },
@@ -230,6 +337,11 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "Go",
       "license": "Apache-2.0",
       "stars": 5952,
@@ -249,7 +361,7 @@
         "vllm"
       ],
       "created_at": "2025-08-26T21:49:50Z",
-      "pushed_at": "2026-09-28T09:52:13Z",
+      "pushed_at": "2026-09-28T09:55:32Z",
       "quick_run": "git clone https://github.com/vllm-project/semantic-router",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -262,6 +374,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 5952
+        },
+        {
+          "ts": 1790589549,
           "stars": 5952
         }
       ],
@@ -299,6 +415,11 @@
       "category": "Local LLM Engines",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "C++",
       "license": "Apache-2.0",
       "stars": 595,
@@ -320,7 +441,7 @@
         "qwen"
       ],
       "created_at": "2026-07-10T16:19:44Z",
-      "pushed_at": "2026-09-28T09:38:28Z",
+      "pushed_at": "2026-09-28T09:53:50Z",
       "quick_run": "git clone https://github.com/Helldez/BigMoeOnEdge",
       "hardware_req": "8GB Unified / Metal",
       "is_cuda_ready": false,
@@ -329,6 +450,10 @@
       "star_history": [
         {
           "ts": 1790589197,
+          "stars": 595
+        },
+        {
+          "ts": 1790589549,
           "stars": 595
         }
       ],
@@ -366,6 +491,11 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to TGI (High-throughput PagedAttention server)",
+      "replaces": [
+        "tgi",
+        "tensorrt-llm"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 2899,
@@ -397,6 +527,10 @@
         {
           "ts": 1790589197,
           "stars": 2899
+        },
+        {
+          "ts": 1790589549,
+          "stars": 2899
         }
       ],
       "capabilities": {
@@ -421,7 +555,75 @@
         "last_push_days": 0,
         "age_days": 606,
         "authenticity_score": 95,
-        "open_issues": 3665,
+        "open_issues": 3666,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "ggml-org/llama.cpp",
+      "name": "llama.cpp",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "description": "LLM inference in C/C++",
+      "category": "Local LLM Engines",
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama (Raw C/C++ inference runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
+      "language": "C++",
+      "license": "MIT",
+      "stars": 129751,
+      "stars_24h": 1049,
+      "trending_score": 3507,
+      "topics": [
+        "ggml"
+      ],
+      "created_at": "2023-03-10T18:58:00Z",
+      "pushed_at": "2026-09-28T09:34:44Z",
+      "quick_run": "git clone https://github.com/ggml-org/llama.cpp",
+      "hardware_req": "8GB Unified / Metal",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 128702
+        },
+        {
+          "ts": 1790589197,
+          "stars": 129750
+        },
+        {
+          "ts": 1790589549,
+          "stars": 129751
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "8GB Unified / Metal"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 1297,
+        "authenticity_score": 95,
+        "open_issues": 2555,
         "is_stale": false
       }
     },
@@ -433,6 +635,11 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "C++",
       "license": "Apache-2.0",
       "stars": 6676,
@@ -465,6 +672,10 @@
         {
           "ts": 1790589197,
           "stars": 6676
+        },
+        {
+          "ts": 1790589549,
+          "stars": 6676
         }
       ],
       "capabilities": {
@@ -489,7 +700,7 @@
         "last_push_days": 0,
         "age_days": 825,
         "authenticity_score": 95,
-        "open_issues": 632,
+        "open_issues": 634,
         "is_stale": false
       }
     },
@@ -501,6 +712,11 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "TypeScript",
       "license": "NOASSERTION",
       "stars": 1663,
@@ -538,6 +754,10 @@
         {
           "ts": 1790589197,
           "stars": 1663
+        },
+        {
+          "ts": 1790589549,
+          "stars": 1663
         }
       ],
       "capabilities": {
@@ -574,11 +794,16 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
-      "stars": 4980,
-      "stars_24h": 0,
-      "trending_score": 70,
+      "stars": 4981,
+      "stars_24h": 1,
+      "trending_score": 73,
       "topics": [],
       "created_at": "2024-04-23T19:00:54Z",
       "pushed_at": "2026-09-28T09:30:16Z",
@@ -591,6 +816,10 @@
         {
           "ts": 1790589197,
           "stars": 4980
+        },
+        {
+          "ts": 1790589549,
+          "stars": 4981
         }
       ],
       "capabilities": {
@@ -620,65 +849,6 @@
       }
     },
     {
-      "full_name": "ggml-org/llama.cpp",
-      "name": "llama.cpp",
-      "url": "https://github.com/ggml-org/llama.cpp",
-      "description": "LLM inference in C/C++",
-      "category": "Local LLM Engines",
-      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "language": "C++",
-      "license": "MIT",
-      "stars": 129750,
-      "stars_24h": 1048,
-      "trending_score": 3504,
-      "topics": [
-        "ggml"
-      ],
-      "created_at": "2023-03-10T18:58:00Z",
-      "pushed_at": "2026-09-28T09:34:44Z",
-      "quick_run": "git clone https://github.com/ggml-org/llama.cpp",
-      "hardware_req": "8GB Unified / Metal",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 128702
-        },
-        {
-          "ts": 1790589197,
-          "stars": 129750
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "8GB Unified / Metal"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 1297,
-        "authenticity_score": 95,
-        "open_issues": 2555,
-        "is_stale": false
-      }
-    },
-    {
       "full_name": "Human-Agent-Society/reef",
       "name": "reef",
       "url": "https://github.com/Human-Agent-Society/reef",
@@ -686,11 +856,16 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
-      "stars": 6826,
-      "stars_24h": 3279,
-      "trending_score": 9919,
+      "stars": 6829,
+      "stars_24h": 3282,
+      "trending_score": 9928,
       "topics": [
         "agent-infrastructure",
         "ai-agents",
@@ -720,6 +895,10 @@
         {
           "ts": 1790589197,
           "stars": 6826
+        },
+        {
+          "ts": 1790589549,
+          "stars": 6829
         }
       ],
       "capabilities": {
@@ -756,11 +935,16 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution.",
+      "comparison": "Alternative to TGI (High-throughput PagedAttention server)",
+      "replaces": [
+        "tgi",
+        "tensorrt-llm"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
-      "stars": 92850,
-      "stars_24h": 740,
-      "trending_score": 2524,
+      "stars": 92851,
+      "stars_24h": 741,
+      "trending_score": 2527,
       "topics": [
         "amd",
         "blackwell",
@@ -802,6 +986,10 @@
         {
           "ts": 1790589197,
           "stars": 92850
+        },
+        {
+          "ts": 1790589549,
+          "stars": 92851
         }
       ],
       "capabilities": {
@@ -838,6 +1026,11 @@
       "category": "Local LLM Engines",
       "verdict": "Heavyweight architecture engineered for large parameter weights with dedicated CUDA hardware.",
       "gotchas": "High VRAM requirement (24GB+ CUDA); cannot run on standard consumer laptops.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "C++",
       "license": "Apache-2.0",
       "stars": 2885,
@@ -879,6 +1072,10 @@
         {
           "ts": 1790589197,
           "stars": 2885
+        },
+        {
+          "ts": 1790589549,
+          "stars": 2885
         }
       ],
       "capabilities": {
@@ -915,6 +1112,11 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "Jupyter Notebook",
       "license": "Apache-2.0",
       "stars": 623,
@@ -933,7 +1135,7 @@
         "vlm"
       ],
       "created_at": "2022-05-25T10:56:08Z",
-      "pushed_at": "2026-09-28T09:24:00Z",
+      "pushed_at": "2026-09-28T09:57:06Z",
       "quick_run": "git clone https://github.com/huggingface/optimum-intel",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -946,6 +1148,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 623
+        },
+        {
+          "ts": 1790589549,
           "stars": 623
         }
       ],
@@ -976,49 +1182,46 @@
       }
     },
     {
-      "full_name": "LMCache/LMCache",
-      "name": "LMCache",
-      "url": "https://github.com/LMCache/LMCache",
-      "description": "LMCache: Supercharge Your LLM with the Fastest KV Cache Layer",
+      "full_name": "DEEIX-AI/DEEIX-Chat",
+      "name": "DEEIX-Chat",
+      "url": "https://github.com/DEEIX-AI/DEEIX-Chat",
+      "description": "An enterprise AI workspace for model routing, multimodal chat, files, tools, billing, identity, and operations.",
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
-      "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution.",
-      "language": "Python",
-      "license": "Apache-2.0",
-      "stars": 11930,
-      "stars_24h": 68,
-      "trending_score": 313,
-      "topics": [
-        "amd",
-        "cuda",
-        "fast",
-        "inference",
-        "kv-cache",
-        "llm",
-        "pytorch",
-        "rocm",
-        "speed",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
         "vllm"
       ],
-      "created_at": "2024-05-28T21:06:04Z",
-      "pushed_at": "2026-09-28T09:48:15Z",
-      "quick_run": "git clone https://github.com/LMCache/LMCache",
-      "hardware_req": "16GB+ CUDA VRAM",
-      "is_cuda_ready": true,
+      "language": "Go",
+      "license": "Apache-2.0",
+      "stars": 1509,
+      "stars_24h": 0,
+      "trending_score": 38,
+      "topics": [
+        "ai",
+        "ai-chatbots",
+        "llm",
+        "mcp",
+        "open-source",
+        "rag",
+        "self-hosted",
+        "ui",
+        "webchat",
+        "webui"
+      ],
+      "created_at": "2026-05-21T08:57:01Z",
+      "pushed_at": "2026-09-28T09:53:38Z",
+      "quick_run": "git clone https://github.com/DEEIX-AI/DEEIX-Chat",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
       "is_local_first": true,
       "authenticity_score": 95,
       "star_history": [
         {
-          "ts": 1789756348,
-          "stars": 11862
-        },
-        {
-          "ts": 1790587727,
-          "stars": 11930
-        },
-        {
-          "ts": 1790589197,
-          "stars": 11930
+          "ts": 1790589549,
+          "stars": 1509
         }
       ],
       "capabilities": {
@@ -1026,24 +1229,26 @@
           "library"
         ],
         "integrations": [
-          "standalone"
+          "mcp-server"
         ],
         "deployment": [
           "local-only"
         ],
-        "intent_tags": [],
+        "intent_tags": [
+          "self-hosted"
+        ],
         "hardware": {
-          "is_cuda_ready": true,
-          "cpu_supported": false,
-          "floor": "16GB+ CUDA VRAM"
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
         }
       },
       "health": {
-        "stage": "mature",
+        "stage": "active",
         "last_push_days": 0,
-        "age_days": 852,
+        "age_days": 130,
         "authenticity_score": 95,
-        "open_issues": 750,
+        "open_issues": 5,
         "is_stale": false
       }
     },
@@ -1055,6 +1260,11 @@
       "category": "Local LLM Engines",
       "verdict": "High-velocity open-source project delivering focused capabilities for local llm engines.",
       "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
+      "comparison": "Alternative to Flowise / Langflow (Production LLM app development platform)",
+      "replaces": [
+        "flowise",
+        "langflow"
+      ],
       "language": "TypeScript",
       "license": "NOASSERTION",
       "stars": 157389,
@@ -1100,6 +1310,10 @@
         {
           "ts": 1790589197,
           "stars": 157389
+        },
+        {
+          "ts": 1790589549,
+          "stars": 157389
         }
       ],
       "capabilities": {
@@ -1138,6 +1352,11 @@
       "category": "Local LLM Engines",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "Rust",
       "license": "MIT",
       "stars": 485,
@@ -1181,6 +1400,10 @@
         {
           "ts": 1790589197,
           "stars": 485
+        },
+        {
+          "ts": 1790589549,
+          "stars": 485
         }
       ],
       "capabilities": {
@@ -1217,6 +1440,10 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to pushing to GitHub (Run GitHub Actions locally in Docker)",
+      "replaces": [
+        "github-actions"
+      ],
       "language": "TypeScript",
       "license": "NOASSERTION",
       "stars": 1748,
@@ -1255,6 +1482,10 @@
         {
           "ts": 1790589197,
           "stars": 1748
+        },
+        {
+          "ts": 1790589549,
+          "stars": 1748
         }
       ],
       "capabilities": {
@@ -1291,6 +1522,11 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 211,
@@ -1329,6 +1565,10 @@
         {
           "ts": 1790589197,
           "stars": 211
+        },
+        {
+          "ts": 1790589549,
+          "stars": 211
         }
       ],
       "capabilities": {
@@ -1366,6 +1606,11 @@
       "category": "Local LLM Engines",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "Kotlin",
       "license": "MIT",
       "stars": 129,
@@ -1390,6 +1635,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 129
+        },
+        {
+          "ts": 1790589549,
           "stars": 129
         }
       ],
@@ -1427,6 +1676,10 @@
       "category": "Local LLM Engines",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Automatic1111 (Node-based modular Stable Diffusion workflow)",
+      "replaces": [
+        "automatic1111"
+      ],
       "language": "Python",
       "license": "AGPL-3.0",
       "stars": 2370,
@@ -1472,6 +1725,10 @@
         {
           "ts": 1790589197,
           "stars": 2370
+        },
+        {
+          "ts": 1790589549,
+          "stars": 2370
         }
       ],
       "capabilities": {
@@ -1508,6 +1765,11 @@
       "category": "Local LLM Engines",
       "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
       "language": "HTML",
       "license": "Apache-2.0",
       "stars": 432,
@@ -1552,6 +1814,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 432
+        },
+        {
+          "ts": 1790589549,
           "stars": 432
         }
       ],

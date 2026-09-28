@@ -1,7 +1,7 @@
 {
   "category": "Local-First Sync & CRDTs",
   "count": 14,
-  "updated_at": "2026-09-28T09:53:17.145984+00:00",
+  "updated_at": "2026-09-28T09:59:30.001055+00:00",
   "repositories": [
     {
       "full_name": "calimero-network/core",
@@ -11,6 +11,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "Rust",
       "license": "NOASSERTION",
       "stars": 171,
@@ -35,6 +40,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 171
+        },
+        {
+          "ts": 1790589549,
           "stars": 171
         }
       ],
@@ -72,6 +81,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "Rust",
       "license": "MIT",
       "stars": 6171,
@@ -87,7 +101,7 @@
         "rich-text"
       ],
       "created_at": "2022-07-12T16:48:23Z",
-      "pushed_at": "2026-09-28T09:52:58Z",
+      "pushed_at": "2026-09-28T09:53:39Z",
       "quick_run": "git clone https://github.com/loro-dev/loro",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -104,6 +118,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 6171
+        },
+        {
+          "ts": 1790589549,
           "stars": 6171
         }
       ],
@@ -141,6 +159,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "Rust",
       "license": "Apache-2.0",
       "stars": 250,
@@ -173,6 +196,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 250
+        },
+        {
+          "ts": 1790589549,
           "stars": 250
         }
       ],
@@ -210,6 +237,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to PouchDB / CouchDB (Reactive local-first client database)",
+      "replaces": [
+        "pouchdb",
+        "firebase"
+      ],
       "language": "TypeScript",
       "license": "Apache-2.0",
       "stars": 23393,
@@ -256,6 +288,10 @@
         {
           "ts": 1790589197,
           "stars": 23393
+        },
+        {
+          "ts": 1790589549,
+          "stars": 23393
         }
       ],
       "capabilities": {
@@ -292,6 +328,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "Go",
       "license": "MIT",
       "stars": 177,
@@ -332,6 +373,10 @@
         {
           "ts": 1790589197,
           "stars": 177
+        },
+        {
+          "ts": 1790589549,
+          "stars": 177
         }
       ],
       "capabilities": {
@@ -370,6 +415,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "Rust",
       "license": "NOASSERTION",
       "stars": 201,
@@ -415,6 +465,10 @@
         {
           "ts": 1790589197,
           "stars": 201
+        },
+        {
+          "ts": 1790589549,
+          "stars": 201
         }
       ],
       "capabilities": {
@@ -452,6 +506,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "TypeScript",
       "license": "MIT",
       "stars": 1899,
@@ -483,6 +542,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 1899
+        },
+        {
+          "ts": 1790589549,
           "stars": 1899
         }
       ],
@@ -520,6 +583,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "Rust",
       "license": "AGPL-3.0",
       "stars": 1929,
@@ -553,6 +621,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 1929
+        },
+        {
+          "ts": 1790589549,
           "stars": 1929
         }
       ],
@@ -590,6 +662,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "Rust",
       "license": "MIT",
       "stars": 573,
@@ -622,6 +699,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 573
+        },
+        {
+          "ts": 1790589549,
           "stars": 573
         }
       ],
@@ -659,6 +740,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "TypeScript",
       "license": "MIT",
       "stars": 5179,
@@ -698,6 +784,10 @@
         {
           "ts": 1790589197,
           "stars": 5179
+        },
+        {
+          "ts": 1790589549,
+          "stars": 5179
         }
       ],
       "capabilities": {
@@ -734,6 +824,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "TypeScript",
       "license": "MPL-2.0",
       "stars": 6027,
@@ -775,6 +870,10 @@
         {
           "ts": 1790589197,
           "stars": 6027
+        },
+        {
+          "ts": 1790589549,
+          "stars": 6027
         }
       ],
       "capabilities": {
@@ -811,6 +910,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "Rust",
       "license": "Apache-2.0",
       "stars": 117,
@@ -849,6 +953,10 @@
         {
           "ts": 1790589197,
           "stars": 117
+        },
+        {
+          "ts": 1790589549,
+          "stars": 117
         }
       ],
       "capabilities": {
@@ -885,6 +993,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "TypeScript",
       "license": "MIT",
       "stars": 667,
@@ -920,6 +1033,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 667
+        },
+        {
+          "ts": 1790589549,
           "stars": 667
         }
       ],
@@ -959,6 +1076,11 @@
       "category": "Local-First Sync & CRDTs",
       "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Firebase (Decentralized state synchronization)",
+      "replaces": [
+        "firebase",
+        "replicache"
+      ],
       "language": "TypeScript",
       "license": "NOASSERTION",
       "stars": 1093,
@@ -1004,6 +1126,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 1093
+        },
+        {
+          "ts": 1790589549,
           "stars": 1093
         }
       ],

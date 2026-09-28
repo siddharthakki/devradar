@@ -37,6 +37,7 @@ jobs:
         run: python engine/analyzer.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       - name: Generate Feeds & Static API
         run: python engine/rss.py

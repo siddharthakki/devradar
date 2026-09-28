@@ -1,8 +1,153 @@
 {
   "category": "RAG Engines",
   "count": 9,
-  "updated_at": "2026-09-28T09:53:17.145984+00:00",
+  "updated_at": "2026-09-28T09:59:30.001055+00:00",
   "repositories": [
+    {
+      "full_name": "linagora/openrag",
+      "name": "openrag",
+      "url": "https://github.com/linagora/openrag",
+      "description": "An open source, modular, lightweight, and extensible RAG application stack, designed for anyone and everyone.",
+      "category": "RAG Engines",
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
+      "replaces": [
+        "langchain",
+        "llamaindex"
+      ],
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "stars": 248,
+      "stars_24h": 0,
+      "trending_score": 15,
+      "topics": [],
+      "created_at": "2025-07-02T15:43:16Z",
+      "pushed_at": "2026-09-28T09:56:40Z",
+      "quick_run": "git clone https://github.com/linagora/openrag",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589549,
+          "stars": 248
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 452,
+        "authenticity_score": 95,
+        "open_issues": 191,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "vitali87/code-graph-rag",
+      "name": "code-graph-rag",
+      "url": "https://github.com/vitali87/code-graph-rag",
+      "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
+      "category": "RAG Engines",
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
+      "replaces": [
+        "langchain",
+        "llamaindex"
+      ],
+      "language": "Python",
+      "license": "MIT",
+      "stars": 5185,
+      "stars_24h": 0,
+      "trending_score": 72,
+      "topics": [
+        "ai",
+        "ast",
+        "claude-code",
+        "code-analysis",
+        "code-understanding",
+        "codebase-search",
+        "developer-tools",
+        "graph-database",
+        "knowledge-graph",
+        "llm",
+        "mcp",
+        "mcp-server",
+        "memgraph",
+        "monorepo",
+        "multi-language",
+        "python",
+        "rag",
+        "retrieval-augmented-generation",
+        "semantic-search",
+        "tree-sitter"
+      ],
+      "created_at": "2025-06-16T14:31:57Z",
+      "pushed_at": "2026-09-28T09:58:22Z",
+      "quick_run": "git clone https://github.com/vitali87/code-graph-rag",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 5185
+        },
+        {
+          "ts": 1790589197,
+          "stars": 5185
+        },
+        {
+          "ts": 1790589549,
+          "stars": 5185
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "service"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 468,
+        "authenticity_score": 95,
+        "open_issues": 111,
+        "is_stale": false
+      }
+    },
     {
       "full_name": "deepset-ai/haystack",
       "name": "haystack",
@@ -11,6 +156,11 @@
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
+      "replaces": [
+        "langchain",
+        "llamaindex"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 26622,
@@ -53,6 +203,10 @@
         {
           "ts": 1790589197,
           "stars": 26622
+        },
+        {
+          "ts": 1790589549,
+          "stars": 26622
         }
       ],
       "capabilities": {
@@ -82,84 +236,6 @@
       }
     },
     {
-      "full_name": "vitali87/code-graph-rag",
-      "name": "code-graph-rag",
-      "url": "https://github.com/vitali87/code-graph-rag",
-      "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
-      "category": "RAG Engines",
-      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "language": "Python",
-      "license": "MIT",
-      "stars": 5185,
-      "stars_24h": 0,
-      "trending_score": 72,
-      "topics": [
-        "ai",
-        "ast",
-        "claude-code",
-        "code-analysis",
-        "code-understanding",
-        "codebase-search",
-        "developer-tools",
-        "graph-database",
-        "knowledge-graph",
-        "llm",
-        "mcp",
-        "mcp-server",
-        "memgraph",
-        "monorepo",
-        "multi-language",
-        "python",
-        "rag",
-        "retrieval-augmented-generation",
-        "semantic-search",
-        "tree-sitter"
-      ],
-      "created_at": "2025-06-16T14:31:57Z",
-      "pushed_at": "2026-09-28T09:51:01Z",
-      "quick_run": "git clone https://github.com/vitali87/code-graph-rag",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790587727,
-          "stars": 5185
-        },
-        {
-          "ts": 1790589197,
-          "stars": 5185
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "service"
-        ],
-        "integrations": [
-          "mcp-server"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 468,
-        "authenticity_score": 95,
-        "open_issues": 110,
-        "is_stale": false
-      }
-    },
-    {
       "full_name": "HelixDB/helix-db",
       "name": "helix-db",
       "url": "https://github.com/HelixDB/helix-db",
@@ -167,6 +243,11 @@
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
+      "replaces": [
+        "langchain",
+        "llamaindex"
+      ],
       "language": "Rust",
       "license": "Apache-2.0",
       "stars": 6102,
@@ -190,7 +271,7 @@
         "vectorsearch"
       ],
       "created_at": "2024-11-23T11:02:14Z",
-      "pushed_at": "2026-09-28T09:45:44Z",
+      "pushed_at": "2026-09-28T09:56:38Z",
       "quick_run": "git clone https://github.com/HelixDB/helix-db",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -207,6 +288,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 6102
+        },
+        {
+          "ts": 1790589549,
           "stars": 6102
         }
       ],
@@ -244,6 +329,11 @@
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
+      "replaces": [
+        "langchain",
+        "llamaindex"
+      ],
       "language": "Python",
       "license": "Apache-2.0",
       "stars": 22270,
@@ -265,7 +355,7 @@
         "prompt-engineering"
       ],
       "created_at": "2023-05-10T12:57:13Z",
-      "pushed_at": "2026-09-28T09:49:09Z",
+      "pushed_at": "2026-09-28T09:58:53Z",
       "quick_run": "git clone https://github.com/comet-ml/opik",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -278,6 +368,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 22270
+        },
+        {
+          "ts": 1790589549,
           "stars": 22270
         }
       ],
@@ -303,81 +397,7 @@
         "last_push_days": 0,
         "age_days": 1236,
         "authenticity_score": 95,
-        "open_issues": 230,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "onyx-dot-app/onyx",
-      "name": "onyx",
-      "url": "https://github.com/onyx-dot-app/onyx",
-      "description": "Open Source AI Platform - AI Chat with advanced features that works with every LLM",
-      "category": "RAG Engines",
-      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "language": "Python",
-      "license": "NOASSERTION",
-      "stars": 32264,
-      "stars_24h": 107,
-      "trending_score": 500,
-      "topics": [
-        "ai",
-        "ai-chat",
-        "chatgpt",
-        "chatui",
-        "enterprise-search",
-        "gen-ai",
-        "information-retrieval",
-        "llm",
-        "llm-ui",
-        "nextjs",
-        "python",
-        "rag",
-        "self-hosted",
-        "vector-search"
-      ],
-      "created_at": "2023-04-27T06:04:01Z",
-      "pushed_at": "2026-09-28T09:37:45Z",
-      "quick_run": "git clone https://github.com/onyx-dot-app/onyx",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 32157
-        },
-        {
-          "ts": 1790589197,
-          "stars": 32264
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "cli"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [
-          "self-hosted"
-        ],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 1250,
-        "authenticity_score": 95,
-        "open_issues": 501,
+        "open_issues": 231,
         "is_stale": false
       }
     },
@@ -389,6 +409,10 @@
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
       "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
+      "comparison": "Alternative to Pinecone (Modular GraphQL/REST vector database)",
+      "replaces": [
+        "pinecone"
+      ],
       "language": "Go",
       "license": "NOASSERTION",
       "stars": 16855,
@@ -435,6 +459,10 @@
         {
           "ts": 1790589197,
           "stars": 16855
+        },
+        {
+          "ts": 1790589549,
+          "stars": 16855
         }
       ],
       "capabilities": {
@@ -471,6 +499,11 @@
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
+      "replaces": [
+        "langchain",
+        "llamaindex"
+      ],
       "language": "C++",
       "license": "Apache-2.0",
       "stars": 3078,
@@ -493,7 +526,7 @@
         "vector-databases"
       ],
       "created_at": "2025-10-21T11:31:11Z",
-      "pushed_at": "2026-09-28T09:50:08Z",
+      "pushed_at": "2026-09-28T09:56:39Z",
       "quick_run": "git clone https://github.com/oceanbase/seekdb",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -506,6 +539,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 3078
+        },
+        {
+          "ts": 1790589549,
           "stars": 3078
         }
       ],
@@ -543,6 +580,11 @@
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
+      "replaces": [
+        "langchain",
+        "llamaindex"
+      ],
       "language": "TypeScript",
       "license": "MIT",
       "stars": 115,
@@ -586,6 +628,10 @@
         {
           "ts": 1790589197,
           "stars": 115
+        },
+        {
+          "ts": 1790589549,
+          "stars": 115
         }
       ],
       "capabilities": {
@@ -623,6 +669,11 @@
       "category": "RAG Engines",
       "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
       "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
+      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
+      "replaces": [
+        "langchain",
+        "llamaindex"
+      ],
       "language": "TypeScript",
       "license": "MIT",
       "stars": 151,
@@ -664,6 +715,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 151
+        },
+        {
+          "ts": 1790589549,
           "stars": 151
         }
       ],

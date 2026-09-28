@@ -1,4 +1,4 @@
-﻿/**
+/**
  * DevRadar Core Engine
  * 20-Category Taxonomy, Composite Breakout Ranking, Jaccard Similarity & NL Intent Parsing
  */
@@ -131,7 +131,14 @@ export function parseNaturalLanguage(raw) {
     text = text.replace(langMatch[0], "");
   }
 
-  // 4. Strip conversational noise
+  // 4. Competitor & Alternative Intent (e.g., "vs ollama", "alt:langchain", "alternative to pinecone", "replaces docker")
+  const vsMatch = text.match(/\b(?:vs|versus|alt|alternative to|replaces?)\s*[:=]?\s*([a-z0-9_.-]+)\b/i);
+  if (vsMatch) {
+    filters.competitor = vsMatch[1].toLowerCase();
+    text = text.replace(vsMatch[0], "");
+  }
+
+  // 5. Strip conversational noise
   text = text.replace(/\b(show me|find me|give me|i need|looking for|that|which|are|is|a|an|the|tools?|repos?|software)\b/gi, "").trim();
 
   return { cleanText: text, filters };

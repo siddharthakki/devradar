@@ -167,6 +167,16 @@
           <button onclick="window.addChip('lic', 'MIT')" class="chip-btn px-2 py-0.5 rounded bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">MIT</button>
           <button onclick="window.addChip('lic', 'Apache-2.0')" class="chip-btn px-2 py-0.5 rounded bg-cardDark border border-borderDark text-textMuted hover:border-accentPrimary hover:text-textMain transition shrink-0">Apache-2.0</button>
         </div>
+
+        <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
+          <span class="text-amber-400/80 shrink-0 select-none flex items-center gap-1 font-semibold text-[10px]"><span>⚡</span> Compare:</span>
+          <button type="button" class="competitor-chip px-2 py-0.5 rounded bg-cardDark border border-borderDark hover:border-amber-500/50 text-amber-300/80 hover:text-amber-300 transition text-[10px] shrink-0" data-vs="ollama">vs Ollama</button>
+          <button type="button" class="competitor-chip px-2 py-0.5 rounded bg-cardDark border border-borderDark hover:border-amber-500/50 text-amber-300/80 hover:text-amber-300 transition text-[10px] shrink-0" data-vs="langchain">vs LangChain</button>
+          <button type="button" class="competitor-chip px-2 py-0.5 rounded bg-cardDark border border-borderDark hover:border-amber-500/50 text-amber-300/80 hover:text-amber-300 transition text-[10px] shrink-0" data-vs="pinecone">vs Pinecone</button>
+          <button type="button" class="competitor-chip px-2 py-0.5 rounded bg-cardDark border border-borderDark hover:border-amber-500/50 text-amber-300/80 hover:text-amber-300 transition text-[10px] shrink-0" data-vs="docker">vs Docker</button>
+          <button type="button" class="competitor-chip px-2 py-0.5 rounded bg-cardDark border border-borderDark hover:border-amber-500/50 text-amber-300/80 hover:text-amber-300 transition text-[10px] shrink-0" data-vs="firebase">vs Firebase</button>
+          <button type="button" class="competitor-chip px-2 py-0.5 rounded bg-cardDark border border-borderDark hover:border-amber-500/50 text-amber-300/80 hover:text-amber-300 transition text-[10px] shrink-0" data-vs="postman">vs Postman</button>
+        </div>
       </div>
     </div>
   </header>
@@ -444,15 +454,26 @@
 
       const safeVerdict = escapeHtml(r.verdict || '');
       const safeGotchas = escapeHtml(r.gotchas || '');
+      const safeComparison = escapeHtml(r.comparison || '');
+      const primaryReplaces = (r.replaces && r.replaces.length > 0) ? escapeHtml(r.replaces[0]) : '';
 
       const tags = (r.capabilities?.intent_tags || []).slice(0, 2).map(tag => 
         `<span class="text-[9px] font-mono px-1.5 py-0.2 rounded bg-radarDark text-textMuted border border-borderDark">${escapeHtml(tag)}</span>`
       ).join('');
 
-      const verdictBlock = safeVerdict ? `
-        <div class="mt-2.5 p-2 rounded-lg bg-radarDark/70 border border-borderDark text-[11px] leading-snug">
-          <span class="text-accentSecondary font-semibold font-mono text-[10px] uppercase">Verdict:</span>
-          <p class="text-textMain/90 mt-0.5">${safeVerdict}</p>
+      const compBadge = safeComparison ? `
+        <button type="button" class="competitor-filter-btn inline-flex items-center gap-1 text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/30 transition text-left" data-competitor="${primaryReplaces}" title="Filter alternatives to ${primaryReplaces}">
+          <span class="text-amber-400 font-bold">⚡</span> ${safeComparison}
+        </button>
+      ` : '';
+
+      const verdictBlock = (safeVerdict || safeComparison) ? `
+        <div class="mt-2.5 p-2 rounded-lg bg-radarDark/70 border border-borderDark text-[11px] leading-snug space-y-1">
+          <div class="flex items-center justify-between gap-1 flex-wrap mb-0.5">
+            <span class="text-accentSecondary font-semibold font-mono text-[10px] uppercase tracking-wider">Architectural Verdict:</span>
+            ${compBadge}
+          </div>
+          <p class="text-textMain/90 text-xs">${safeVerdict}</p>
           ${safeGotchas ? `<p class="mt-1 text-[10px] text-amber-300/80 font-mono"><span class="font-bold">⚠️ Gotcha:</span> ${safeGotchas}</p>` : ''}
         </div>
       ` : '';
@@ -503,6 +524,24 @@
       if (btn && btn.dataset.repo) {
         window.toggleBookmark(btn.dataset.repo);
       }
+      const compBtn = e.target.closest('.competitor-filter-btn');
+      if (compBtn && compBtn.dataset.competitor) {
+        searchInput.value = 'vs: ' + compBtn.dataset.competitor;
+        parsedNl = parseNaturalLanguage(searchInput.value);
+        updateNlBanner();
+        render();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+
+    document.querySelectorAll('.competitor-chip').forEach(btn => {
+      btn.addEventListener('click', () => {
+        searchInput.value = 'vs: ' + btn.dataset.vs;
+        parsedNl = parseNaturalLanguage(searchInput.value);
+        updateNlBanner();
+        render();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
     });
 
     function render() {
@@ -533,6 +572,16 @@
         if (nlF.needs === 'cpu-only' && r.is_cuda_ready && !r.capabilities?.hardware?.cpu_supported) return false;
         if (nlF.needs === 'gpu' && !r.is_cuda_ready) return false;
         if (nlF.lang && !(r.language || '').toLowerCase().includes(nlF.lang.toLowerCase())) return false;
+
+        // Apply Competitor Filter (e.g. vs:ollama, alt:langchain)
+        if (nlF.competitor) {
+          const compQuery = nlF.competitor.toLowerCase();
+          const replaces = (r.replaces || []).map(x => (x || '').toLowerCase());
+          const comp = (r.comparison || '').toLowerCase();
+          if (!replaces.some(x => x.includes(compQuery)) && !comp.includes(compQuery)) {
+            return false;
+          }
+        }
 
         // Free-text query matching
         if (cleanFreeText) {

@@ -1,8 +1,83 @@
 {
   "category": "CLI & TUI Tooling",
-  "count": 16,
-  "updated_at": "2026-09-28T09:53:17.145984+00:00",
+  "count": 17,
+  "updated_at": "2026-09-28T09:59:30.001055+00:00",
   "repositories": [
+    {
+      "full_name": "minipuft/claude-prompts-mcp",
+      "name": "claude-prompts-mcp",
+      "url": "https://github.com/minipuft/claude-prompts-mcp",
+      "description": "MCP server for reusable prompt templates, multi-step workflow chains, and quality gates. Compose agentic workflows with an operator syntax; export as native skills to Claude Code, Cursor, OpenCode, and Gemini CLI.",
+      "category": "CLI & TUI Tooling",
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 187,
+      "stars_24h": 0,
+      "trending_score": 13,
+      "topics": [
+        "agentic-workflows",
+        "ai-automation",
+        "ai-development",
+        "ai-workflows",
+        "claude",
+        "claude-code",
+        "llm",
+        "llm-tools",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "nodejs",
+        "prompt-engineering",
+        "prompt-management",
+        "prompt-templates",
+        "typescript"
+      ],
+      "created_at": "2025-03-02T19:36:08Z",
+      "pushed_at": "2026-09-28T09:56:56Z",
+      "quick_run": "git clone https://github.com/minipuft/claude-prompts-mcp",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589549,
+          "stars": 187
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli",
+          "service"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 574,
+        "authenticity_score": 95,
+        "open_issues": 8,
+        "is_stale": false
+      }
+    },
     {
       "full_name": "averemee-si/oracdc",
       "name": "oracdc",
@@ -11,6 +86,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Java",
       "license": "NOASSERTION",
       "stars": 129,
@@ -52,6 +131,10 @@
         {
           "ts": 1790589197,
           "stars": 129
+        },
+        {
+          "ts": 1790589549,
+          "stars": 129
         }
       ],
       "capabilities": {
@@ -88,6 +171,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "TypeScript",
       "license": "AGPL-3.0",
       "stars": 682,
@@ -134,6 +221,10 @@
         {
           "ts": 1790589197,
           "stars": 682
+        },
+        {
+          "ts": 1790589549,
+          "stars": 682
         }
       ],
       "capabilities": {
@@ -175,6 +266,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Haskell",
       "license": "GPL-3.0",
       "stars": 4732,
@@ -213,6 +308,10 @@
         {
           "ts": 1790589197,
           "stars": 4732
+        },
+        {
+          "ts": 1790589549,
+          "stars": 4732
         }
       ],
       "capabilities": {
@@ -249,6 +348,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 110,
@@ -295,6 +398,10 @@
         {
           "ts": 1790589197,
           "stars": 110
+        },
+        {
+          "ts": 1790589549,
+          "stars": 110
         }
       ],
       "capabilities": {
@@ -331,6 +438,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Go",
       "license": "MIT",
       "stars": 340,
@@ -377,6 +488,10 @@
         {
           "ts": 1790589197,
           "stars": 340
+        },
+        {
+          "ts": 1790589549,
+          "stars": 340
         }
       ],
       "capabilities": {
@@ -416,6 +531,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Rust",
       "license": "AGPL-3.0",
       "stars": 654,
@@ -448,6 +567,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 654
+        },
+        {
+          "ts": 1790589549,
           "stars": 654
         }
       ],
@@ -485,6 +608,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 131,
@@ -527,6 +654,10 @@
         {
           "ts": 1790589197,
           "stars": 131
+        },
+        {
+          "ts": 1790589549,
+          "stars": 131
         }
       ],
       "capabilities": {
@@ -564,6 +695,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "TypeScript",
       "license": "NOASSERTION",
       "stars": 10970,
@@ -595,6 +730,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 10970
+        },
+        {
+          "ts": 1790589549,
           "stars": 10970
         }
       ],
@@ -633,6 +772,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Rust",
       "license": "Apache-2.0",
       "stars": 530,
@@ -675,6 +818,10 @@
         {
           "ts": 1790589197,
           "stars": 530
+        },
+        {
+          "ts": 1790589549,
+          "stars": 530
         }
       ],
       "capabilities": {
@@ -711,6 +858,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Rust",
       "license": "Apache-2.0",
       "stars": 7965,
@@ -757,6 +908,10 @@
         {
           "ts": 1790589197,
           "stars": 7965
+        },
+        {
+          "ts": 1790589549,
+          "stars": 7965
         }
       ],
       "capabilities": {
@@ -793,6 +948,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Go",
       "license": "MIT",
       "stars": 1112,
@@ -839,6 +998,10 @@
         {
           "ts": 1790589197,
           "stars": 1112
+        },
+        {
+          "ts": 1790589549,
+          "stars": 1112
         }
       ],
       "capabilities": {
@@ -875,11 +1038,15 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Rust",
       "license": "ISC",
-      "stars": 5008,
-      "stars_24h": 25,
-      "trending_score": 145,
+      "stars": 5009,
+      "stars_24h": 26,
+      "trending_score": 148,
       "topics": [
         "cli",
         "cli-tool",
@@ -921,6 +1088,10 @@
         {
           "ts": 1790589197,
           "stars": 5008
+        },
+        {
+          "ts": 1790589549,
+          "stars": 5009
         }
       ],
       "capabilities": {
@@ -957,6 +1128,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Shell",
       "license": "MIT",
       "stars": 110,
@@ -981,6 +1156,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 110
+        },
+        {
+          "ts": 1790589549,
           "stars": 110
         }
       ],
@@ -1018,6 +1197,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Python",
       "license": "NOASSERTION",
       "stars": 3363,
@@ -1060,6 +1243,10 @@
         {
           "ts": 1790589197,
           "stars": 3363
+        },
+        {
+          "ts": 1790589549,
+          "stars": 3363
         }
       ],
       "capabilities": {
@@ -1097,6 +1284,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "TypeScript",
       "license": "MIT",
       "stars": 146,
@@ -1124,6 +1315,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 146
+        },
+        {
+          "ts": 1790589549,
           "stars": 146
         }
       ],
@@ -1161,6 +1356,10 @@
       "category": "CLI & TUI Tooling",
       "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
       "language": "Rust",
       "license": "MIT",
       "stars": 1063,
@@ -1189,6 +1388,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 1063
+        },
+        {
+          "ts": 1790589549,
           "stars": 1063
         }
       ],

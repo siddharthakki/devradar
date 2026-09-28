@@ -1,7 +1,7 @@
 {
   "category": "Databases & Storage",
   "count": 1,
-  "updated_at": "2026-09-28T09:53:17.145984+00:00",
+  "updated_at": "2026-09-28T09:59:30.001055+00:00",
   "repositories": [
     {
       "full_name": "redis/redis",
@@ -11,6 +11,11 @@
       "category": "Databases & Storage",
       "verdict": "High-velocity open-source project delivering focused capabilities for databases & storage.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Cloud SQL (Embedded sovereign storage engine)",
+      "replaces": [
+        "cloudsql",
+        "sqlite"
+      ],
       "language": "C",
       "license": "NOASSERTION",
       "stars": 76512,
@@ -52,6 +57,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 76512
+        },
+        {
+          "ts": 1790589549,
           "stars": 76512
         }
       ],

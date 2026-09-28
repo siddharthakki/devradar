@@ -1,7 +1,7 @@
 {
   "category": "Second Brain & PKM",
   "count": 13,
-  "updated_at": "2026-09-28T09:53:17.145984+00:00",
+  "updated_at": "2026-09-28T09:59:30.001055+00:00",
   "repositories": [
     {
       "full_name": "SamurAIGPT/llm-wiki-agent",
@@ -11,6 +11,11 @@
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
       "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 3583,
@@ -49,6 +54,10 @@
         {
           "ts": 1790589197,
           "stars": 3583
+        },
+        {
+          "ts": 1790589549,
+          "stars": 3583
         }
       ],
       "capabilities": {
@@ -85,6 +94,11 @@
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "TypeScript",
       "license": "GPL-3.0",
       "stars": 4338,
@@ -113,7 +127,7 @@
         "skills"
       ],
       "created_at": "2026-06-03T11:12:40Z",
-      "pushed_at": "2026-09-28T08:45:14Z",
+      "pushed_at": "2026-09-28T09:58:47Z",
       "quick_run": "git clone https://github.com/inkeep/open-knowledge",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -130,6 +144,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 4338
+        },
+        {
+          "ts": 1790589549,
           "stars": 4338
         }
       ],
@@ -167,6 +185,11 @@
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 4628,
@@ -213,6 +236,10 @@
         {
           "ts": 1790589197,
           "stars": 4628
+        },
+        {
+          "ts": 1790589549,
+          "stars": 4628
         }
       ],
       "capabilities": {
@@ -249,6 +276,11 @@
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
       "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "C++",
       "license": "GPL-2.0",
       "stars": 5890,
@@ -295,6 +327,10 @@
         {
           "ts": 1790589197,
           "stars": 5890
+        },
+        {
+          "ts": 1790589549,
+          "stars": 5890
         }
       ],
       "capabilities": {
@@ -332,6 +368,11 @@
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "TypeScript",
       "license": "MIT",
       "stars": 2465,
@@ -374,6 +415,10 @@
         {
           "ts": 1790589197,
           "stars": 2465
+        },
+        {
+          "ts": 1790589549,
+          "stars": 2465
         }
       ],
       "capabilities": {
@@ -410,6 +455,11 @@
       "category": "Second Brain & PKM",
       "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 166,
@@ -456,6 +506,10 @@
         {
           "ts": 1790589197,
           "stars": 166
+        },
+        {
+          "ts": 1790589549,
+          "stars": 166
         }
       ],
       "capabilities": {
@@ -494,6 +548,11 @@
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "HTML",
       "license": "MIT",
       "stars": 762,
@@ -528,6 +587,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 762
+        },
+        {
+          "ts": 1790589549,
           "stars": 762
         }
       ],
@@ -565,6 +628,11 @@
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "TypeScript",
       "license": "MIT",
       "stars": 598,
@@ -609,6 +677,10 @@
         {
           "ts": 1790589197,
           "stars": 598
+        },
+        {
+          "ts": 1790589549,
+          "stars": 598
         }
       ],
       "capabilities": {
@@ -645,6 +717,11 @@
       "category": "Second Brain & PKM",
       "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 15270,
@@ -691,6 +768,10 @@
         {
           "ts": 1790589197,
           "stars": 15270
+        },
+        {
+          "ts": 1790589549,
+          "stars": 15270
         }
       ],
       "capabilities": {
@@ -729,6 +810,11 @@
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "Svelte",
       "license": "GPL-3.0",
       "stars": 106,
@@ -774,6 +860,10 @@
         {
           "ts": 1790589197,
           "stars": 106
+        },
+        {
+          "ts": 1790589549,
+          "stars": 106
         }
       ],
       "capabilities": {
@@ -810,6 +900,11 @@
       "category": "Second Brain & PKM",
       "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 258,
@@ -856,6 +951,10 @@
         {
           "ts": 1790589197,
           "stars": 258
+        },
+        {
+          "ts": 1790589549,
+          "stars": 258
         }
       ],
       "capabilities": {
@@ -895,6 +994,11 @@
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "Code",
       "license": "CC-BY-SA-4.0",
       "stars": 675,
@@ -941,6 +1045,10 @@
         {
           "ts": 1790589197,
           "stars": 675
+        },
+        {
+          "ts": 1790589549,
+          "stars": 675
         }
       ],
       "capabilities": {
@@ -977,6 +1085,11 @@
       "category": "Second Brain & PKM",
       "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Notion & Obsidian Sync (Local markdown knowledge vault)",
+      "replaces": [
+        "notion",
+        "obsidian"
+      ],
       "language": "Python",
       "license": "MIT",
       "stars": 388,
@@ -1018,6 +1131,10 @@
         },
         {
           "ts": 1790589197,
+          "stars": 388
+        },
+        {
+          "ts": 1790589549,
           "stars": 388
         }
       ],
