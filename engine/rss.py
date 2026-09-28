@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from email.utils import format_datetime
 
-BASE_URL = "https://siddharthakki.github.io/devradar"
+BASE_URL = "https://siddharthakki.github.io/stackfit"
 
 def generate_rss_and_endpoints():
     data_path = os.path.join("data", "repos.json")

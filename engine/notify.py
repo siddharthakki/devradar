@@ -34,13 +34,13 @@ def build_slack_payload(top_mover, watched=None):
     stars = top_mover.get("stars", 0)
     v24 = top_mover.get("stars_24h", 0)
     hw = top_mover.get("hardware_alert") or top_mover.get("hardware_req", "Minimal CPU")
-    url = top_mover.get("url", "https://siddharthakki.github.io/devradar/")
+    url = top_mover.get("url", "https://siddharthakki.github.io/stackfit/")
 
     text = f"⚡ *StackFit Architectural Alert: Spiking Today (+{v24} 24h)*\n"
     text += f"*<{url}|{name}>* &bull; ★ {stars:,}\n"
     text += f"> {verdict}\n"
     text += f"*Replaces:* `{replaces}` | *Hardware:* `{hw}`\n"
-    text += f"Explore live interactive stack: <https://siddharthakki.github.io/devradar/|StackFit Matchmaker>"
+    text += f"Explore live interactive stack: <https://siddharthakki.github.io/stackfit/|StackFit Matchmaker>"
 
     return {"text": text}
 

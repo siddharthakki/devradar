@@ -63,7 +63,7 @@ def main():
                 print(f"  • \033[0;90mAlso trending:\033[0m {', '.join(others)}")
             print()
 
-        print("Explore live interactive stacks: https://siddharthakki.github.io/devradar/\n")
+        print("Explore live interactive stacks: https://siddharthakki.github.io/stackfit/\n")
         return
 
     if args.category:
@@ -83,7 +83,7 @@ def main():
         hw = (r.get("hardware_alert") or r.get("hardware_req") or "Minimal")[:22]
         print(f"{stars:<9} {v24:<12} {sig:<11} {name:<26} {rep:<20} {hw}")
 
-    print("\nExplore live interactive stack builder: https://siddharthakki.github.io/devradar/\n")
+    print("\nExplore live interactive stack builder: https://siddharthakki.github.io/stackfit/\n")
 
 if __name__ == "__main__":
     main()

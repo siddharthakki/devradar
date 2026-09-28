@@ -60,4 +60,4 @@ make run
 
 ## 📖 Methodology
 
-Read our complete ranking methodology, anti-bot scoring, and velocity decay models at [`how-it-works.html`](https://siddharthakki.github.io/devradar/how-it-works.html).
+Read our complete ranking methodology, anti-bot scoring, and velocity decay models at [`how-it-works.html`](https://siddharthakki.github.io/stackfit/how-it-works.html).

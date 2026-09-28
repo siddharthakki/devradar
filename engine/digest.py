@@ -31,7 +31,7 @@ def generate_digest():
         lines.append("")
 
     lines.append("---")
-    lines.append("Explore live interactive stacks & recommendations at [siddharthakki.github.io/devradar](https://siddharthakki.github.io/devradar/).")
+    lines.append("Explore live interactive stacks & recommendations at [siddharthakki.github.io/stackfit](https://siddharthakki.github.io/stackfit/).")
 
     os.makedirs("digests", exist_ok=True)
     digest_path = f"digests/digest_{datetime.now(timezone.utc).strftime('%Y_%m_%d')}.md"
