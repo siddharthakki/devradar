@@ -220,3 +220,71 @@ Every repository indexed on StackFit has an embeddable markdown badge:
 
 Find 10 fast-rising repositories featured in Today's Radar (e.g., `sglang`, `dify`, `LibreChat`, `Codewhale`, `LightRAG`) and tweet / open a polite discussion:
 > *"Hey team! We analyzed @[Repo] on StackFit and awarded it the [🚀 Spiking] badge with an architectural verdict over [Incumbent]. If you'd like to show your verified status, feel free to drop this badge in your README!"*
+
+---
+
+## 🤖 7. Autonomous Social Media Posting Engine
+
+StackFit includes an automated multi-platform broadcast engine in `engine/social_poster.py` that formats and publishes breakout tools and stacks.
+
+### Dry-Run Preview (Test locally anytime):
+```bash
+# Preview today's #1 breakout spiker post:
+python engine/social_poster.py --topic spiker --dry-run
+
+# Preview today's recommended deployable stack post:
+python engine/social_poster.py --topic stack --dry-run
+```
+
+### Supported Platforms & Setup:
+| Network | Env Var / Secret | Notes |
+| :--- | :--- | :--- |
+| **Discord** | `DISCORD_WEBHOOK_URL` | Posts formatted rich embed cards with hardware floor & 24h momentum |
+| **Slack** | `SLACK_WEBHOOK_URL` | Instant team updates via incoming webhook |
+| **Bluesky** | `BLUESKY_HANDLE`, `BLUESKY_APP_PASSWORD` | AT Protocol REST API (100% free, high developer engagement) |
+| **Twitter / 𝕏** | `TWITTER_API_KEY`, `TWITTER_API_SECRET`, `TWITTER_ACCESS_TOKEN`, `TWITTER_ACCESS_TOKEN_SECRET` | OAuth 1.0a / v2 automated tweets |
+
+### Automatic Scheduled Posting via GitHub Actions:
+The workflow `.github/workflows/social-broadcast.yml` runs **automatically every day at 07:30 UTC** (right after radar data syncs).
+- Add any of the above secrets to your GitHub repository at: `Settings -> Secrets and variables -> Actions`.
+- You can also trigger an immediate post at any time from GitHub: `Actions -> StackFit Social Broadcast -> Run workflow`.
+
+---
+
+## 🎬 8. 30-Second Viral Video Assets & YouTube Shorts Kit
+
+We generated a studio-quality 30-second promo video in two resolutions with Kokoro neural voice narration and a driving 120BPM tech backing pulse:
+
+1. **Landscape 16:9 (`assets/stackfit_promo_16x9.mp4`):**
+   - **Resolution:** 1920x1080 Full HD
+   - **Ideal for:** YouTube Video, Twitter/𝕏 desktop feed, LinkedIn, Product Hunt media gallery.
+2. **Vertical 9:16 (`assets/stackfit_promo_vertical.mp4`):**
+   - **Resolution:** 1080x1920 Full HD
+   - **Ideal for:** YouTube Shorts, TikTok, Instagram Reels, Twitter/𝕏 Mobile.
+
+### Voiceover Script Breakdown:
+- **0:00 - 0:06 (The Hook):** *"GitHub stars are broken. Bot farms and VC hype have turned repo discovery into a vanity contest."*
+- **0:06 - 0:13 (The Hardware Trap):** *"You clone a repo, only to find it needs four A100 GPUs and 48 gigabytes of VRAM just to boot."*
+- **0:13 - 0:22 (The Solution):** *"Meet StackFit: the open-source matchmaker that indexes 147 tools by what they replace, what they run on, and whether they are alive."*
+- **0:22 - 0:27 (Hero Stack Advisor):** *"Pick your laptop specs and get tested, one-click docker-compose stacks in seconds."*
+- **0:27 - 0:33 (Call to Action):** *"Stop guessing. Start building. Explore StackFit at siddharthakki.github.io/stackfit."*
+
+### YouTube Shorts & TikTok Posting Metadata:
+* **Video Title:** `Why GitHub stars are lying to you (and what to use instead) ⚡`
+* **Alternative Title:** `Can your laptop actually run that AI repo? 💻 #Shorts`
+* **Description:**
+```text
+Stop trusting cumulative GitHub stars. Abandoned repos sit on 90k stars while high-velocity tools get buried.
+
+StackFit indexes 147+ verified open-source tools by:
+⚡ What they replace (Dify vs LangChain, SGLang vs vLLM)
+💻 Hardware floor (Mac M-Series, 16GB, 24GB+ CUDA)
+📈 24-hour momentum (not vanity stars)
+🛠️ 1-click docker-compose generation
+
+👉 Explore for free: https://siddharthakki.github.io/stackfit/
+⭐ GitHub: https://github.com/siddharthakki/stackfit
+
+#OpenSource #Coding #SoftwareEngineering #AI #LocalAI #DevTools #Programming #Tech
+```
+
