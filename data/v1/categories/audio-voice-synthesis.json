@@ -1,7 +1,7 @@
 {
   "category": "Audio & Voice Synthesis",
   "count": 15,
-  "updated_at": "2026-09-28T09:28:47.400490+00:00",
+  "updated_at": "2026-09-28T09:49:50.082731+00:00",
   "repositories": [
     {
       "full_name": "EveningStudy/asmr-dubber",
@@ -73,7 +73,9 @@
         "authenticity_score": 95,
         "open_issues": 10,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "ddxfish/sapphire",
@@ -150,7 +152,9 @@
         "authenticity_score": 95,
         "open_issues": 4,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "mbailey/voicemode",
@@ -218,7 +222,9 @@
         "authenticity_score": 95,
         "open_issues": 50,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "beiyege-01/dsh-voice-ai-girlfriend",
@@ -285,7 +291,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts."
     },
     {
       "full_name": "fluxions-ai/vui",
@@ -364,7 +372,9 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": false
-      }
+      },
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Ali-hey-0/audio-ai-field-guide",
@@ -443,7 +453,9 @@
         "authenticity_score": 80,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "abus-aikorea/voice-pro",
@@ -518,7 +530,9 @@
         "authenticity_score": 95,
         "open_issues": 60,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "FranckyB/Voice-Clone-Studio",
@@ -573,7 +587,9 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "Purple-Horizons/openclaw-voice",
@@ -645,7 +661,9 @@
         "authenticity_score": 95,
         "open_issues": 18,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "activated-intelligence/voice-chat",
@@ -700,7 +718,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "maudoin/ollama-voice",
@@ -755,7 +775,9 @@
         "authenticity_score": 95,
         "open_issues": 5,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "Nikorasu/LiveWhisper",
@@ -831,7 +853,9 @@
         "authenticity_score": 95,
         "open_issues": 7,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "jakecyr/chatgpt-voice-assistant",
@@ -893,7 +917,9 @@
         "authenticity_score": 95,
         "open_issues": 3,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "mezbaul-h/june",
@@ -964,7 +990,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "VideotronicMaker/LM-Studio-Voice-Conversation",
@@ -1024,7 +1052,9 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     }
   ]
 }

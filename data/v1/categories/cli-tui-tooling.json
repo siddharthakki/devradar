@@ -1,7 +1,7 @@
 {
   "category": "CLI & TUI Tooling",
   "count": 16,
-  "updated_at": "2026-09-28T09:28:47.400490+00:00",
+  "updated_at": "2026-09-28T09:49:50.082731+00:00",
   "repositories": [
     {
       "full_name": "averemee-si/oracdc",
@@ -72,7 +72,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "VoltiusApp/voltius",
@@ -153,7 +155,9 @@
         "authenticity_score": 95,
         "open_issues": 18,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "hledgerorg/hledger",
@@ -221,7 +225,9 @@
         "authenticity_score": 95,
         "open_issues": 322,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "djunekz/termux-app-store",
@@ -297,7 +303,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "eugenioenko/ttt",
@@ -376,7 +384,9 @@
         "authenticity_score": 95,
         "open_issues": 55,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "ad-si/Transity",
@@ -439,7 +449,9 @@
         "authenticity_score": 80,
         "open_issues": 9,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Tlaloc-Es/killpy",
@@ -512,7 +524,9 @@
         "authenticity_score": 95,
         "open_issues": 20,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "modelcontextprotocol/inspector",
@@ -575,7 +589,9 @@
         "authenticity_score": 95,
         "open_issues": 43,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "r14dd/patent",
@@ -647,7 +663,9 @@
         "authenticity_score": 95,
         "open_issues": 5,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "fujiapple852/trippy",
@@ -723,7 +741,9 @@
         "authenticity_score": 95,
         "open_issues": 85,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "alvarorichard/GoAnime",
@@ -799,7 +819,9 @@
         "authenticity_score": 95,
         "open_issues": 15,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "unhappychoice/gitlogue",
@@ -875,7 +897,9 @@
         "authenticity_score": 80,
         "open_issues": 12,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "abod8639/anodemcu",
@@ -930,7 +954,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "fuxicodex/Fuxi",
@@ -1003,7 +1029,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "msmps/create-tui",
@@ -1061,7 +1089,9 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "nostacks/ekphos",
@@ -1120,7 +1150,9 @@
         "authenticity_score": 95,
         "open_issues": 5,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     }
   ]
 }

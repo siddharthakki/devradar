@@ -1,7 +1,7 @@
 {
   "category": "Document Vaults & Search",
   "count": 1,
-  "updated_at": "2026-09-28T09:28:47.400490+00:00",
+  "updated_at": "2026-09-28T09:49:50.082731+00:00",
   "repositories": [
     {
       "full_name": "manticoresoftware/manticoresearch",
@@ -74,7 +74,9 @@
         "authenticity_score": 95,
         "open_issues": 643,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for document vaults & search.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     }
   ]
 }

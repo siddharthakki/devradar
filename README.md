@@ -31,6 +31,8 @@ Standard open-source discovery is broken:
 
 ## ✨ Key Features
 
+* 🧠 **AI Stack Advisor (Powered by Puter.js):** Zero-friction, free client-side AI consultant directly inside the dashboard. Ask questions like *"I need a local offline agent with tool calling on an RTX 3060"* and receive structured architectural trade-offs and tool recommendations.
+* ⚖️ **Architectural Verdicts & Gotchas:** Every tool card features a concise 1-sentence engineering assessment and realistic gotchas (VRAM ceilings, API shifts, stability warnings).
 * 🖥️ **Hardware Floor Profiling:** Know before you clone whether a tool needs **Minimal CPU**, **8GB Unified Apple Silicon (Metal)**, or **16–24GB+ CUDA VRAM**.
 * 🛡️ **Anti-Hype Authenticity Index:** Flags abnormal star surges using fork-to-star balance ratios and momentum deviation to weed out star farms.
 * 🚀 **Gravity-Decay Momentum Scoring:** Prioritizes repositories displaying rapid adoption over their first 7 to 30 days while dampening dormant behemoths:

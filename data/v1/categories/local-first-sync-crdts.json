@@ -1,7 +1,7 @@
 {
   "category": "Local-First Sync & CRDTs",
   "count": 14,
-  "updated_at": "2026-09-28T09:28:47.400490+00:00",
+  "updated_at": "2026-09-28T09:49:50.082731+00:00",
   "repositories": [
     {
       "full_name": "calimero-network/core",
@@ -56,7 +56,9 @@
         "authenticity_score": 95,
         "open_issues": 153,
         "is_stale": false
-      }
+      },
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "inkandswitch/keyhive",
@@ -119,7 +121,9 @@
         "authenticity_score": 95,
         "open_issues": 26,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "pubkey/rxdb",
@@ -195,7 +199,9 @@
         "authenticity_score": 95,
         "open_issues": 19,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Deln0r/ygo",
@@ -267,7 +273,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "NodeDB-Lab/nodedb",
@@ -343,7 +351,9 @@
         "authenticity_score": 95,
         "open_issues": 31,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
     },
     {
       "full_name": "loro-dev/loro",
@@ -406,7 +416,9 @@
         "authenticity_score": 80,
         "open_issues": 81,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "evoluhq/evolu",
@@ -468,7 +480,9 @@
         "authenticity_score": 95,
         "open_issues": 22,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "teamtype/teamtype",
@@ -532,7 +546,9 @@
         "authenticity_score": 80,
         "open_issues": 112,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "p2panda/p2panda",
@@ -595,7 +611,9 @@
         "authenticity_score": 95,
         "open_issues": 179,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "tinyplex/tinybase",
@@ -664,7 +682,9 @@
         "authenticity_score": 80,
         "open_issues": 14,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "toeverything/blocksuite",
@@ -735,7 +755,9 @@
         "authenticity_score": 95,
         "open_issues": 196,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "GianIac/numax",
@@ -803,7 +825,9 @@
         "authenticity_score": 95,
         "open_issues": 23,
         "is_stale": false
-      }
+      },
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Dancode-188/synckit",
@@ -871,7 +895,9 @@
         "authenticity_score": 95,
         "open_issues": 6,
         "is_stale": false
-      }
+      },
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "streamich/json-joy",
@@ -949,7 +975,9 @@
         "authenticity_score": 80,
         "open_issues": 248,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     }
   ]
 }

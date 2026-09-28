@@ -64,7 +64,9 @@
         "authenticity_score": 95,
         "open_issues": 100,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Luce-Org/lucebox",
@@ -135,7 +137,9 @@
         "authenticity_score": 95,
         "open_issues": 102,
         "is_stale": false
-      }
+      },
+      "verdict": "Heavyweight architecture engineered for large parameter weights with dedicated CUDA hardware.",
+      "gotchas": "High VRAM requirement (24GB+ CUDA); cannot run on standard consumer laptops."
     },
     {
       "full_name": "huggingface/optimum-intel",
@@ -197,7 +201,9 @@
         "authenticity_score": 95,
         "open_issues": 204,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "LMCache/LMCache",
@@ -263,7 +269,9 @@
         "authenticity_score": 95,
         "open_issues": 750,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution."
     },
     {
       "full_name": "vllm-project/vllm-ascend",
@@ -324,7 +332,9 @@
         "authenticity_score": 95,
         "open_issues": 3664,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "NVIDIA/TensorRT-LLM",
@@ -385,7 +395,9 @@
         "authenticity_score": 95,
         "open_issues": 1505,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution."
     },
     {
       "full_name": "gufo-org/gufo",
@@ -440,7 +452,9 @@
         "authenticity_score": 95,
         "open_issues": 35,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts."
     },
     {
       "full_name": "vllm-project/semantic-router",
@@ -503,7 +517,9 @@
         "authenticity_score": 95,
         "open_issues": 554,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "kvcache-ai/Mooncake",
@@ -565,7 +581,9 @@
         "authenticity_score": 95,
         "open_issues": 631,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "containers/ramalama",
@@ -628,7 +646,9 @@
         "authenticity_score": 95,
         "open_issues": 123,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for local llm engines.",
+      "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution."
     },
     {
       "full_name": "vllm-project/vllm",
@@ -704,7 +724,9 @@
         "authenticity_score": 95,
         "open_issues": 8337,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution."
     },
     {
       "full_name": "sgl-project/sglang",
@@ -778,7 +800,9 @@
         "authenticity_score": 95,
         "open_issues": 5357,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution."
     },
     {
       "full_name": "gpustack/gpustack",
@@ -848,7 +872,9 @@
         "authenticity_score": 95,
         "open_issues": 710,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution."
     },
     {
       "full_name": "dromara/Omega-AI",
@@ -906,7 +932,9 @@
         "authenticity_score": 95,
         "open_issues": 3,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution."
     },
     {
       "full_name": "xorbitsai/inference",
@@ -978,7 +1006,9 @@
         "authenticity_score": 95,
         "open_issues": 32,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for local llm engines.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
     },
     {
       "full_name": "xuiltul/animaworks",
@@ -1044,7 +1074,9 @@
         "authenticity_score": 95,
         "open_issues": 12,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "tubecreate/tubecli",
@@ -1106,7 +1138,9 @@
         "authenticity_score": 80,
         "open_issues": 3,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "jcarlosrodicio/opencode-agent-orchestration-kit",
@@ -1174,7 +1208,9 @@
         "authenticity_score": 95,
         "open_issues": 4,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "deepset-ai/haystack",
@@ -1246,7 +1282,9 @@
         "authenticity_score": 95,
         "open_issues": 169,
         "is_stale": false
-      }
+      },
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "smithersai/smithers",
@@ -1315,7 +1353,9 @@
         "authenticity_score": 95,
         "open_issues": 560,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "THU-MAIC/OpenMAIC",
@@ -1366,7 +1406,9 @@
         "authenticity_score": 95,
         "open_issues": 167,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "tinyhumansai/opencompany",
@@ -1427,7 +1469,9 @@
         "authenticity_score": 95,
         "open_issues": 109,
         "is_stale": false
-      }
+      },
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Cotal-AI/Cotal",
@@ -1501,7 +1545,9 @@
         "authenticity_score": 95,
         "open_issues": 250,
         "is_stale": false
-      }
+      },
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "kdlbs/kandev",
@@ -1575,7 +1621,9 @@
         "authenticity_score": 95,
         "open_issues": 147,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "labsai/EDDI",
@@ -1647,7 +1695,9 @@
         "authenticity_score": 95,
         "open_issues": 82,
         "is_stale": false
-      }
+      },
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "doobidoo/mcp-memory-service",
@@ -1720,7 +1770,9 @@
         "authenticity_score": 95,
         "open_issues": 26,
         "is_stale": false
-      }
+      },
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "omnigent-ai/omnigent",
@@ -1792,7 +1844,9 @@
         "authenticity_score": 95,
         "open_issues": 1542,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "xerrors/Yuxi",
@@ -1867,7 +1921,9 @@
         "authenticity_score": 95,
         "open_issues": 83,
         "is_stale": false
-      }
+      },
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
     },
     {
       "full_name": "agntcy/identity",
@@ -1921,7 +1977,9 @@
         "authenticity_score": 95,
         "open_issues": 18,
         "is_stale": false
-      }
+      },
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "CodeAlive-AI/ai-driven-development",
@@ -1993,7 +2051,9 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": false
-      }
+      },
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "infiniflow/ragflow",
@@ -2060,7 +2120,9 @@
         "authenticity_score": 95,
         "open_issues": 1535,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "vespa-engine/vespa",
@@ -2126,7 +2188,9 @@
         "authenticity_score": 95,
         "open_issues": 250,
         "is_stale": false
-      }
+      },
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "potpie-ai/potpie",
@@ -2188,7 +2252,9 @@
         "authenticity_score": 95,
         "open_issues": 114,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "promptfoo/promptfoo",
@@ -2258,7 +2324,9 @@
         "authenticity_score": 95,
         "open_issues": 753,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "comet-ml/opik",
@@ -2323,7 +2391,9 @@
         "authenticity_score": 95,
         "open_issues": 227,
         "is_stale": false
-      }
+      },
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "EvotecIT/OfficeIMO",
@@ -2397,7 +2467,9 @@
         "authenticity_score": 95,
         "open_issues": 25,
         "is_stale": false
-      }
+      },
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "ggozad/haiku.rag",
@@ -2471,7 +2543,9 @@
         "authenticity_score": 95,
         "open_issues": 5,
         "is_stale": false
-      }
+      },
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "langbot-app/LangBot",
@@ -2543,7 +2617,9 @@
         "authenticity_score": 95,
         "open_issues": 122,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "langgenius/dify",
@@ -2620,7 +2696,9 @@
         "authenticity_score": 95,
         "open_issues": 800,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for local llm engines.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
     },
     {
       "full_name": "vitali87/code-graph-rag",
@@ -2692,7 +2770,9 @@
         "authenticity_score": 95,
         "open_issues": 111,
         "is_stale": false
-      }
+      },
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "matrixorigin/matrixone",
@@ -2765,7 +2845,9 @@
         "authenticity_score": 95,
         "open_issues": 753,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
     },
     {
       "full_name": "averemee-si/oracdc",
@@ -2836,7 +2918,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "pingcap/tidb",
@@ -2911,7 +2995,9 @@
         "authenticity_score": 95,
         "open_issues": 7165,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
     },
     {
       "full_name": "apache/doris",
@@ -2987,7 +3073,9 @@
         "authenticity_score": 95,
         "open_issues": 1353,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "qdrant/qdrant",
@@ -3063,7 +3151,9 @@
         "authenticity_score": 95,
         "open_issues": 765,
         "is_stale": false
-      }
+      },
+      "verdict": "High-performance vector storage optimized for similarity search and embedding retrieval.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
     },
     {
       "full_name": "ArcadeData/arcadedb",
@@ -3137,7 +3227,9 @@
         "authenticity_score": 95,
         "open_issues": 171,
         "is_stale": false
-      }
+      },
+      "verdict": "High-performance vector storage optimized for similarity search and embedding retrieval.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "milvus-io/milvus",
@@ -3211,7 +3303,9 @@
         "authenticity_score": 95,
         "open_issues": 1423,
         "is_stale": false
-      }
+      },
+      "verdict": "High-performance vector storage optimized for similarity search and embedding retrieval.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
     },
     {
       "full_name": "HelixDB/helix-db",
@@ -3282,7 +3376,9 @@
         "authenticity_score": 95,
         "open_issues": 21,
         "is_stale": false
-      }
+      },
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "orneryd/NornicDB",
@@ -3353,7 +3449,9 @@
         "authenticity_score": 95,
         "open_issues": 23,
         "is_stale": false
-      }
+      },
+      "verdict": "High-performance vector storage optimized for similarity search and embedding retrieval.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "weaviate/weaviate",
@@ -3429,7 +3527,9 @@
         "authenticity_score": 95,
         "open_issues": 756,
         "is_stale": false
-      }
+      },
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
     },
     {
       "full_name": "oceanbase/seekdb",
@@ -3495,7 +3595,9 @@
         "authenticity_score": 95,
         "open_issues": 379,
         "is_stale": false
-      }
+      },
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Pometry/Raphtory",
@@ -3557,7 +3659,9 @@
         "authenticity_score": 95,
         "open_issues": 206,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for embedded & edge ai.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "redis/redis",
@@ -3631,7 +3735,9 @@
         "authenticity_score": 95,
         "open_issues": 2991,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for databases & storage.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "milvus-io/milvus-docs",
@@ -3685,7 +3791,9 @@
         "authenticity_score": 95,
         "open_issues": 192,
         "is_stale": false
-      }
+      },
+      "verdict": "High-performance vector storage optimized for similarity search and embedding retrieval.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
     },
     {
       "full_name": "manticoresoftware/manticoresearch",
@@ -3758,7 +3866,9 @@
         "authenticity_score": 95,
         "open_issues": 643,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for document vaults & search.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "scraed/LanPaint",
@@ -3823,7 +3933,9 @@
         "authenticity_score": 95,
         "open_issues": 19,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Comfy-Org/ComfyUI",
@@ -3885,7 +3997,9 @@
         "authenticity_score": 95,
         "open_issues": 4991,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "licyk/sd-webui-all-in-one",
@@ -3955,7 +4069,9 @@
         "authenticity_score": 95,
         "open_issues": 3,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "wiltodelta/remove-ai-watermarks",
@@ -4032,7 +4148,9 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Mooshieblob1/MooshieUI",
@@ -4102,7 +4220,9 @@
         "authenticity_score": 95,
         "open_issues": 15,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "LuqP2/Image-MetaHub",
@@ -4175,7 +4295,9 @@
         "authenticity_score": 95,
         "open_issues": 33,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "guaardvark/guaardvark",
@@ -4253,7 +4375,9 @@
         "authenticity_score": 95,
         "open_issues": 19,
         "is_stale": false
-      }
+      },
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "utensils/comfyui-nix",
@@ -4316,7 +4440,9 @@
         "authenticity_score": 95,
         "open_issues": 6,
         "is_stale": false
-      }
+      },
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Comfy-Org/comfy-cli",
@@ -4376,7 +4502,9 @@
         "authenticity_score": 95,
         "open_issues": 89,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "perfectgf/lora-dataset-studio",
@@ -4445,7 +4573,9 @@
         "authenticity_score": 95,
         "open_issues": 7,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Acly/comfyui-tooling-nodes",
@@ -4499,7 +4629,9 @@
         "authenticity_score": 95,
         "open_issues": 7,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Acly/comfyui-inpaint-nodes",
@@ -4555,7 +4687,9 @@
         "authenticity_score": 95,
         "open_issues": 11,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "rgthree/rgthree-comfy",
@@ -4610,7 +4744,9 @@
         "authenticity_score": 95,
         "open_issues": 307,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "BlackMixture/Mix-Studio",
@@ -4673,7 +4809,9 @@
         "authenticity_score": 95,
         "open_issues": 11,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "mcmonkeyprojects/SwarmUI",
@@ -4738,7 +4876,9 @@
         "authenticity_score": 95,
         "open_issues": 151,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "EveningStudy/asmr-dubber",
@@ -4810,7 +4950,9 @@
         "authenticity_score": 95,
         "open_issues": 10,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "ddxfish/sapphire",
@@ -4887,7 +5029,9 @@
         "authenticity_score": 95,
         "open_issues": 4,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "mbailey/voicemode",
@@ -4955,7 +5099,9 @@
         "authenticity_score": 95,
         "open_issues": 50,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "beiyege-01/dsh-voice-ai-girlfriend",
@@ -5022,7 +5168,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts."
     },
     {
       "full_name": "fluxions-ai/vui",
@@ -5101,7 +5249,9 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": false
-      }
+      },
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Ali-hey-0/audio-ai-field-guide",
@@ -5180,7 +5330,9 @@
         "authenticity_score": 80,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "abus-aikorea/voice-pro",
@@ -5255,7 +5407,9 @@
         "authenticity_score": 95,
         "open_issues": 60,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "FranckyB/Voice-Clone-Studio",
@@ -5310,7 +5464,9 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "Purple-Horizons/openclaw-voice",
@@ -5382,7 +5538,9 @@
         "authenticity_score": 95,
         "open_issues": 18,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "activated-intelligence/voice-chat",
@@ -5437,7 +5595,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "maudoin/ollama-voice",
@@ -5492,7 +5652,9 @@
         "authenticity_score": 95,
         "open_issues": 5,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "Nikorasu/LiveWhisper",
@@ -5568,7 +5730,9 @@
         "authenticity_score": 95,
         "open_issues": 7,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "jakecyr/chatgpt-voice-assistant",
@@ -5630,7 +5794,9 @@
         "authenticity_score": 95,
         "open_issues": 3,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "mezbaul-h/june",
@@ -5701,7 +5867,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "VideotronicMaker/LM-Studio-Voice-Conversation",
@@ -5761,7 +5929,9 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for audio & voice synthesis.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "Dicklesworthstone/franken_ocr",
@@ -5831,7 +6001,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "lucasjinreal/Crane",
@@ -5904,7 +6076,9 @@
         "authenticity_score": 95,
         "open_issues": 37,
         "is_stale": false
-      }
+      },
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "software-mansion/react-native-executorch",
@@ -5972,7 +6146,9 @@
         "authenticity_score": 95,
         "open_issues": 45,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Tencent-Hunyuan/HunyuanOCR",
@@ -6027,7 +6203,9 @@
         "authenticity_score": 95,
         "open_issues": 86,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Nebutra/MinerU-Skill",
@@ -6103,7 +6281,9 @@
         "authenticity_score": 95,
         "open_issues": 3,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "MigoXLab/LMeterX",
@@ -6172,7 +6352,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "drpwchen/lecture-to-notes",
@@ -6237,7 +6419,9 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
+      "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts."
     },
     {
       "full_name": "libnyx/LT2MD",
@@ -6306,7 +6490,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts."
     },
     {
       "full_name": "madeye/ad-skipper",
@@ -6361,7 +6547,9 @@
         "authenticity_score": 95,
         "open_issues": 6,
         "is_stale": false
-      }
+      },
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts."
     },
     {
       "full_name": "heshengtao/comfyui_LLM_party",
@@ -6436,7 +6624,9 @@
         "authenticity_score": 95,
         "open_issues": 87,
         "is_stale": false
-      }
+      },
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "vlm-run/vlmrun-cookbook",
@@ -6497,7 +6687,9 @@
         "authenticity_score": 95,
         "open_issues": 16,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Achno/gowall",
@@ -6567,7 +6759,9 @@
         "authenticity_score": 80,
         "open_issues": 12,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "Keyvanhardani/german-ocr",
@@ -6639,7 +6833,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": true
-      }
+      },
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "TimmyOVO/deepseek-ocr.rs",
@@ -6701,7 +6897,9 @@
         "authenticity_score": 95,
         "open_issues": 16,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "AdemBoukhris457/Doctra",
@@ -6769,7 +6967,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "inkeep/open-knowledge",
@@ -6845,7 +7045,9 @@
         "authenticity_score": 95,
         "open_issues": 53,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "gmickel/gno",
@@ -6919,7 +7121,9 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": false
-      }
+      },
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "eugeniughelbur/obsidian-second-brain",
@@ -6995,7 +7199,9 @@
         "authenticity_score": 95,
         "open_issues": 3,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "notoriouslab/vault-curate",
@@ -7068,7 +7274,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
     },
     {
       "full_name": "pbek/QOwnNotes",
@@ -7145,7 +7353,9 @@
         "authenticity_score": 95,
         "open_issues": 67,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
     },
     {
       "full_name": "oldwinter/knowledge-garden",
@@ -7217,7 +7427,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "alfadur7/llm-wiki-newsroom",
@@ -7295,7 +7507,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "undefined-ui/second-brain-os",
@@ -7360,7 +7574,9 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "zosmaai/pi-llm-wiki",
@@ -7434,7 +7650,9 @@
         "authenticity_score": 95,
         "open_issues": 6,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "AgriciDaniel/claude-obsidian",
@@ -7512,7 +7730,9 @@
         "authenticity_score": 95,
         "open_issues": 22,
         "is_stale": false
-      }
+      },
+      "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "wikibonsai/wikibonsai",
@@ -7587,7 +7807,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "kytmanov/synto",
@@ -7666,7 +7888,9 @@
         "authenticity_score": 95,
         "open_issues": 10,
         "is_stale": false
-      }
+      },
+      "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "jaredrhod/ai-memory-vault",
@@ -7742,7 +7966,9 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "smixs/agent-second-brain",
@@ -7814,7 +8040,9 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "swarmclawai/swarmvault",
@@ -7892,7 +8120,9 @@
         "authenticity_score": 95,
         "open_issues": 9,
         "is_stale": false
-      }
+      },
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "calimero-network/core",
@@ -7947,7 +8177,9 @@
         "authenticity_score": 95,
         "open_issues": 153,
         "is_stale": false
-      }
+      },
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "inkandswitch/keyhive",
@@ -8010,7 +8242,9 @@
         "authenticity_score": 95,
         "open_issues": 26,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "pubkey/rxdb",
@@ -8086,7 +8320,9 @@
         "authenticity_score": 95,
         "open_issues": 19,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Deln0r/ygo",
@@ -8158,7 +8394,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "NodeDB-Lab/nodedb",
@@ -8234,7 +8472,9 @@
         "authenticity_score": 95,
         "open_issues": 31,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
     },
     {
       "full_name": "loro-dev/loro",
@@ -8297,7 +8537,9 @@
         "authenticity_score": 80,
         "open_issues": 81,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "evoluhq/evolu",
@@ -8359,7 +8601,9 @@
         "authenticity_score": 95,
         "open_issues": 22,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "VoltiusApp/voltius",
@@ -8440,7 +8684,9 @@
         "authenticity_score": 95,
         "open_issues": 18,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "teamtype/teamtype",
@@ -8504,7 +8750,9 @@
         "authenticity_score": 80,
         "open_issues": 112,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "p2panda/p2panda",
@@ -8567,7 +8815,9 @@
         "authenticity_score": 95,
         "open_issues": 179,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "tinyplex/tinybase",
@@ -8636,7 +8886,9 @@
         "authenticity_score": 80,
         "open_issues": 14,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "toeverything/blocksuite",
@@ -8707,7 +8959,9 @@
         "authenticity_score": 95,
         "open_issues": 196,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "GianIac/numax",
@@ -8775,7 +9029,9 @@
         "authenticity_score": 95,
         "open_issues": 23,
         "is_stale": false
-      }
+      },
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Dancode-188/synckit",
@@ -8843,7 +9099,9 @@
         "authenticity_score": 95,
         "open_issues": 6,
         "is_stale": false
-      }
+      },
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "streamich/json-joy",
@@ -8921,7 +9179,9 @@
         "authenticity_score": 80,
         "open_issues": 248,
         "is_stale": false
-      }
+      },
+      "verdict": "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "hledgerorg/hledger",
@@ -8989,7 +9249,9 @@
         "authenticity_score": 95,
         "open_issues": 322,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "djunekz/termux-app-store",
@@ -9065,7 +9327,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "eugenioenko/ttt",
@@ -9144,7 +9408,9 @@
         "authenticity_score": 95,
         "open_issues": 55,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "ad-si/Transity",
@@ -9207,7 +9473,9 @@
         "authenticity_score": 80,
         "open_issues": 9,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Tlaloc-Es/killpy",
@@ -9280,7 +9548,9 @@
         "authenticity_score": 95,
         "open_issues": 20,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "modelcontextprotocol/inspector",
@@ -9343,7 +9613,9 @@
         "authenticity_score": 95,
         "open_issues": 43,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "r14dd/patent",
@@ -9415,7 +9687,9 @@
         "authenticity_score": 95,
         "open_issues": 5,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "fujiapple852/trippy",
@@ -9491,7 +9765,9 @@
         "authenticity_score": 95,
         "open_issues": 85,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "LnYo-Cly/ai4j",
@@ -9567,7 +9843,9 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "alvarorichard/GoAnime",
@@ -9643,7 +9921,9 @@
         "authenticity_score": 95,
         "open_issues": 15,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "unhappychoice/gitlogue",
@@ -9719,7 +9999,9 @@
         "authenticity_score": 80,
         "open_issues": 12,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "abod8639/anodemcu",
@@ -9774,7 +10056,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "fuxicodex/Fuxi",
@@ -9847,7 +10131,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "msmps/create-tui",
@@ -9905,7 +10191,9 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "nostacks/ekphos",
@@ -9964,7 +10252,9 @@
         "authenticity_score": 95,
         "open_issues": 5,
         "is_stale": false
-      }
+      },
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     }
   ]
 }

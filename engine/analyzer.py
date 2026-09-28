@@ -224,6 +224,56 @@ def analyze_health(repo):
         "is_stale": last_push_days > 90
     }
 
+def generate_architectural_verdict(repo, category, capabilities, health):
+    """Synthesizes a 1-sentence engineering verdict and realistic gotchas."""
+    hw = capabilities["hardware"]["floor"]
+    stage = health["stage"]
+    is_local = "local-only" in capabilities["deployment"]
+    has_mcp = "mcp-server" in capabilities["integrations"]
+    tags = capabilities["intent_tags"]
+
+    # 1. Verdict
+    if "24GB" in hw:
+        verdict = "Heavyweight architecture engineered for large parameter weights with dedicated CUDA hardware."
+    elif "Unified" in hw:
+        verdict = "Optimized for Apple Silicon unified memory; ideal for local on-device inference."
+    elif is_local and category == "Local LLM Engines":
+        verdict = "Zero-cloud inference runner designed for private, offline execution."
+    elif category == "Multi-Agent Frameworks" and has_mcp:
+        verdict = "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration."
+    elif category == "Multi-Agent Frameworks":
+        verdict = "Orchestration engine for multi-agent workflows and autonomous tool coordination."
+    elif category == "RAG Engines":
+        verdict = "Retrieval pipeline built for hybrid search and context-augmented generation."
+    elif category == "Vector Databases":
+        verdict = "High-performance vector storage optimized for similarity search and embedding retrieval."
+    elif category == "Local-First Sync & CRDTs":
+        verdict = "Decentralized state engine leveraging CRDT primitives for conflict-free peer synchronization."
+    elif category == "CLI & TUI Tooling":
+        verdict = "Keyboard-driven terminal utility built for fast, scriptable developer workflows."
+    elif "drop-in-replacement" in tags:
+        verdict = "Drop-in alternative providing compatible API surfaces with lower overhead."
+    else:
+        verdict = f"High-velocity open-source project delivering focused capabilities for {category.lower()}."
+
+    # 2. Gotchas
+    if "24GB" in hw:
+        gotchas = "High VRAM requirement (24GB+ CUDA); cannot run on standard consumer laptops."
+    elif "16GB" in hw:
+        gotchas = "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution."
+    elif stage == "experimental":
+        gotchas = "Fast-evolving experimental codebase (<60 days old); expect API surface shifts."
+    elif stage == "maintenance":
+        gotchas = "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
+    elif health["authenticity_score"] < 75:
+        gotchas = "Unusual fork/star ratio anomaly detected; inspect commit log for organic activity."
+    elif "byok-cloud" in capabilities["deployment"]:
+        gotchas = "Cloud dependency or external API keys required; not fully self-contained offline."
+    else:
+        gotchas = "Minimal hardware footprint; verify compatibility with your target language stack."
+
+    return verdict, gotchas
+
 def atomic_save_json(filepath, data):
     """Atomically writes JSON using a temporary file to avoid corruption."""
     os.makedirs(os.path.dirname(filepath) or ".", exist_ok=True)
@@ -290,6 +340,7 @@ def run_pipeline():
         capabilities = extract_capabilities(repo)
         health = analyze_health(repo)
         category = classify(repo.get("description"), repo.get("topics", []), repo.get("name", ""))
+        verdict, gotchas = generate_architectural_verdict(repo, category, capabilities, health)
 
         # Safe quick run default without supply-chain hallucination
         html_url = repo.get("html_url") or f"https://github.com/{full_name}"
@@ -301,6 +352,8 @@ def run_pipeline():
             "url": html_url,
             "description": repo.get("description"),
             "category": category,
+            "verdict": verdict,
+            "gotchas": gotchas,
             "language": repo.get("language") or "Code",
             "license": repo.get("license", {}).get("spdx_id") if repo.get("license") else "MIT",
             "stars": stars,

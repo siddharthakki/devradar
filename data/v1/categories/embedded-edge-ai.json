@@ -1,7 +1,7 @@
 {
   "category": "Embedded & Edge AI",
   "count": 1,
-  "updated_at": "2026-09-28T09:28:47.400490+00:00",
+  "updated_at": "2026-09-28T09:49:50.082731+00:00",
   "repositories": [
     {
       "full_name": "Pometry/Raphtory",
@@ -63,7 +63,9 @@
         "authenticity_score": 95,
         "open_issues": 206,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for embedded & edge ai.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     }
   ]
 }

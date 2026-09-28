@@ -1,7 +1,7 @@
 {
   "category": "Multi-Agent Frameworks",
   "count": 25,
-  "updated_at": "2026-09-28T09:28:47.400490+00:00",
+  "updated_at": "2026-09-28T09:49:50.082731+00:00",
   "repositories": [
     {
       "full_name": "xuiltul/animaworks",
@@ -67,7 +67,9 @@
         "authenticity_score": 95,
         "open_issues": 12,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "tubecreate/tubecli",
@@ -129,7 +131,9 @@
         "authenticity_score": 80,
         "open_issues": 3,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "jcarlosrodicio/opencode-agent-orchestration-kit",
@@ -197,7 +201,9 @@
         "authenticity_score": 95,
         "open_issues": 4,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "smithersai/smithers",
@@ -266,7 +272,9 @@
         "authenticity_score": 95,
         "open_issues": 560,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "THU-MAIC/OpenMAIC",
@@ -317,7 +325,9 @@
         "authenticity_score": 95,
         "open_issues": 167,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "tinyhumansai/opencompany",
@@ -378,7 +388,9 @@
         "authenticity_score": 95,
         "open_issues": 109,
         "is_stale": false
-      }
+      },
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Cotal-AI/Cotal",
@@ -452,7 +464,9 @@
         "authenticity_score": 95,
         "open_issues": 250,
         "is_stale": false
-      }
+      },
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "kdlbs/kandev",
@@ -526,7 +540,9 @@
         "authenticity_score": 95,
         "open_issues": 147,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "labsai/EDDI",
@@ -598,7 +614,9 @@
         "authenticity_score": 95,
         "open_issues": 82,
         "is_stale": false
-      }
+      },
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "doobidoo/mcp-memory-service",
@@ -671,7 +689,9 @@
         "authenticity_score": 95,
         "open_issues": 26,
         "is_stale": false
-      }
+      },
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "omnigent-ai/omnigent",
@@ -743,7 +763,9 @@
         "authenticity_score": 95,
         "open_issues": 1542,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "xerrors/Yuxi",
@@ -818,7 +840,9 @@
         "authenticity_score": 95,
         "open_issues": 83,
         "is_stale": false
-      }
+      },
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
     },
     {
       "full_name": "agntcy/identity",
@@ -872,7 +896,9 @@
         "authenticity_score": 95,
         "open_issues": 18,
         "is_stale": false
-      }
+      },
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "CodeAlive-AI/ai-driven-development",
@@ -944,7 +970,9 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": false
-      }
+      },
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "infiniflow/ragflow",
@@ -1011,7 +1039,9 @@
         "authenticity_score": 95,
         "open_issues": 1535,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "potpie-ai/potpie",
@@ -1073,7 +1103,9 @@
         "authenticity_score": 95,
         "open_issues": 114,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "promptfoo/promptfoo",
@@ -1143,7 +1175,9 @@
         "authenticity_score": 95,
         "open_issues": 753,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "ggozad/haiku.rag",
@@ -1217,7 +1251,9 @@
         "authenticity_score": 95,
         "open_issues": 5,
         "is_stale": false
-      }
+      },
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "matrixorigin/matrixone",
@@ -1290,7 +1326,9 @@
         "authenticity_score": 95,
         "open_issues": 753,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
     },
     {
       "full_name": "pingcap/tidb",
@@ -1365,7 +1403,9 @@
         "authenticity_score": 95,
         "open_issues": 7165,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
     },
     {
       "full_name": "apache/doris",
@@ -1441,7 +1481,9 @@
         "authenticity_score": 95,
         "open_issues": 1353,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "guaardvark/guaardvark",
@@ -1519,7 +1561,9 @@
         "authenticity_score": 95,
         "open_issues": 19,
         "is_stale": false
-      }
+      },
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Nebutra/MinerU-Skill",
@@ -1595,7 +1639,9 @@
         "authenticity_score": 95,
         "open_issues": 3,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "libnyx/LT2MD",
@@ -1664,7 +1710,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts."
     },
     {
       "full_name": "swarmclawai/swarmvault",
@@ -1742,7 +1790,9 @@
         "authenticity_score": 95,
         "open_issues": 9,
         "is_stale": false
-      }
+      },
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     }
   ]
 }

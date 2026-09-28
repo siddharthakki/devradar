@@ -1,7 +1,7 @@
 {
   "category": "Vision & OCR",
   "count": 8,
-  "updated_at": "2026-09-28T09:28:47.400490+00:00",
+  "updated_at": "2026-09-28T09:49:50.082731+00:00",
   "repositories": [
     {
       "full_name": "Dicklesworthstone/franken_ocr",
@@ -71,7 +71,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Tencent-Hunyuan/HunyuanOCR",
@@ -126,7 +128,9 @@
         "authenticity_score": 95,
         "open_issues": 86,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "drpwchen/lecture-to-notes",
@@ -191,7 +195,9 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
+      "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts."
     },
     {
       "full_name": "vlm-run/vlmrun-cookbook",
@@ -252,7 +258,9 @@
         "authenticity_score": 95,
         "open_issues": 16,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Achno/gowall",
@@ -322,7 +330,9 @@
         "authenticity_score": 80,
         "open_issues": 12,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "Keyvanhardani/german-ocr",
@@ -394,7 +404,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": true
-      }
+      },
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "TimmyOVO/deepseek-ocr.rs",
@@ -456,7 +468,9 @@
         "authenticity_score": 95,
         "open_issues": 16,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     },
     {
       "full_name": "AdemBoukhris457/Doctra",
@@ -524,7 +538,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": true
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for vision & ocr.",
+      "gotchas": "Maintenance mode (no commits in 90+ days); verify issue tracker before adopting."
     }
   ]
 }

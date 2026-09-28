@@ -1,7 +1,7 @@
 {
   "category": "Local LLM Engines",
   "count": 23,
-  "updated_at": "2026-09-28T09:28:47.400490+00:00",
+  "updated_at": "2026-09-28T09:49:50.082731+00:00",
   "repositories": [
     {
       "full_name": "Human-Agent-Society/reef",
@@ -65,7 +65,9 @@
         "authenticity_score": 95,
         "open_issues": 100,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Luce-Org/lucebox",
@@ -136,7 +138,9 @@
         "authenticity_score": 95,
         "open_issues": 102,
         "is_stale": false
-      }
+      },
+      "verdict": "Heavyweight architecture engineered for large parameter weights with dedicated CUDA hardware.",
+      "gotchas": "High VRAM requirement (24GB+ CUDA); cannot run on standard consumer laptops."
     },
     {
       "full_name": "huggingface/optimum-intel",
@@ -198,7 +202,9 @@
         "authenticity_score": 95,
         "open_issues": 204,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "LMCache/LMCache",
@@ -264,7 +270,9 @@
         "authenticity_score": 95,
         "open_issues": 750,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution."
     },
     {
       "full_name": "vllm-project/vllm-ascend",
@@ -325,7 +333,9 @@
         "authenticity_score": 95,
         "open_issues": 3664,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "NVIDIA/TensorRT-LLM",
@@ -386,7 +396,9 @@
         "authenticity_score": 95,
         "open_issues": 1505,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution."
     },
     {
       "full_name": "gufo-org/gufo",
@@ -441,7 +453,9 @@
         "authenticity_score": 95,
         "open_issues": 35,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts."
     },
     {
       "full_name": "vllm-project/semantic-router",
@@ -504,7 +518,9 @@
         "authenticity_score": 95,
         "open_issues": 554,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "kvcache-ai/Mooncake",
@@ -566,7 +582,9 @@
         "authenticity_score": 95,
         "open_issues": 631,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "containers/ramalama",
@@ -629,7 +647,9 @@
         "authenticity_score": 95,
         "open_issues": 123,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for local llm engines.",
+      "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution."
     },
     {
       "full_name": "vllm-project/vllm",
@@ -705,7 +725,9 @@
         "authenticity_score": 95,
         "open_issues": 8337,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution."
     },
     {
       "full_name": "sgl-project/sglang",
@@ -779,7 +801,9 @@
         "authenticity_score": 95,
         "open_issues": 5357,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution."
     },
     {
       "full_name": "gpustack/gpustack",
@@ -849,7 +873,9 @@
         "authenticity_score": 95,
         "open_issues": 710,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution."
     },
     {
       "full_name": "dromara/Omega-AI",
@@ -907,7 +933,9 @@
         "authenticity_score": 95,
         "open_issues": 3,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Requires dedicated NVIDIA GPU with 16GB+ VRAM for quantized execution."
     },
     {
       "full_name": "xorbitsai/inference",
@@ -979,7 +1007,9 @@
         "authenticity_score": 95,
         "open_issues": 32,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for local llm engines.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
     },
     {
       "full_name": "langbot-app/LangBot",
@@ -1051,7 +1081,9 @@
         "authenticity_score": 95,
         "open_issues": 122,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "langgenius/dify",
@@ -1128,7 +1160,9 @@
         "authenticity_score": 95,
         "open_issues": 800,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for local llm engines.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
     },
     {
       "full_name": "lucasjinreal/Crane",
@@ -1201,7 +1235,9 @@
         "authenticity_score": 95,
         "open_issues": 37,
         "is_stale": false
-      }
+      },
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "software-mansion/react-native-executorch",
@@ -1269,7 +1305,9 @@
         "authenticity_score": 95,
         "open_issues": 45,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "MigoXLab/LMeterX",
@@ -1338,7 +1376,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "madeye/ad-skipper",
@@ -1393,7 +1433,9 @@
         "authenticity_score": 95,
         "open_issues": 6,
         "is_stale": false
-      }
+      },
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts."
     },
     {
       "full_name": "heshengtao/comfyui_LLM_party",
@@ -1468,7 +1510,9 @@
         "authenticity_score": 95,
         "open_issues": 87,
         "is_stale": false
-      }
+      },
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "LnYo-Cly/ai4j",
@@ -1544,7 +1588,9 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": false
-      }
+      },
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     }
   ]
 }

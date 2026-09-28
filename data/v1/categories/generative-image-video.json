@@ -1,7 +1,7 @@
 {
   "category": "Generative Image/Video",
   "count": 14,
-  "updated_at": "2026-09-28T09:28:47.400490+00:00",
+  "updated_at": "2026-09-28T09:49:50.082731+00:00",
   "repositories": [
     {
       "full_name": "scraed/LanPaint",
@@ -66,7 +66,9 @@
         "authenticity_score": 95,
         "open_issues": 19,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Comfy-Org/ComfyUI",
@@ -128,7 +130,9 @@
         "authenticity_score": 95,
         "open_issues": 4991,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "licyk/sd-webui-all-in-one",
@@ -198,7 +202,9 @@
         "authenticity_score": 95,
         "open_issues": 3,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "wiltodelta/remove-ai-watermarks",
@@ -275,7 +281,9 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Mooshieblob1/MooshieUI",
@@ -345,7 +353,9 @@
         "authenticity_score": 95,
         "open_issues": 15,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "LuqP2/Image-MetaHub",
@@ -418,7 +428,9 @@
         "authenticity_score": 95,
         "open_issues": 33,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "utensils/comfyui-nix",
@@ -481,7 +493,9 @@
         "authenticity_score": 95,
         "open_issues": 6,
         "is_stale": false
-      }
+      },
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Comfy-Org/comfy-cli",
@@ -541,7 +555,9 @@
         "authenticity_score": 95,
         "open_issues": 89,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "perfectgf/lora-dataset-studio",
@@ -610,7 +626,9 @@
         "authenticity_score": 95,
         "open_issues": 7,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Acly/comfyui-tooling-nodes",
@@ -664,7 +682,9 @@
         "authenticity_score": 95,
         "open_issues": 7,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "Acly/comfyui-inpaint-nodes",
@@ -720,7 +740,9 @@
         "authenticity_score": 95,
         "open_issues": 11,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "rgthree/rgthree-comfy",
@@ -775,7 +797,9 @@
         "authenticity_score": 95,
         "open_issues": 307,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "BlackMixture/Mix-Studio",
@@ -838,7 +862,9 @@
         "authenticity_score": 95,
         "open_issues": 11,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "mcmonkeyprojects/SwarmUI",
@@ -903,7 +929,9 @@
         "authenticity_score": 95,
         "open_issues": 151,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for generative image/video.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "category": "Second Brain & PKM",
   "count": 12,
-  "updated_at": "2026-09-28T09:28:47.400490+00:00",
+  "updated_at": "2026-09-28T09:49:50.082731+00:00",
   "repositories": [
     {
       "full_name": "inkeep/open-knowledge",
@@ -77,7 +77,9 @@
         "authenticity_score": 95,
         "open_issues": 53,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "eugeniughelbur/obsidian-second-brain",
@@ -153,7 +155,9 @@
         "authenticity_score": 95,
         "open_issues": 3,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "pbek/QOwnNotes",
@@ -230,7 +234,9 @@
         "authenticity_score": 95,
         "open_issues": 67,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
     },
     {
       "full_name": "oldwinter/knowledge-garden",
@@ -302,7 +308,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "alfadur7/llm-wiki-newsroom",
@@ -380,7 +388,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "undefined-ui/second-brain-os",
@@ -445,7 +455,9 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "zosmaai/pi-llm-wiki",
@@ -519,7 +531,9 @@
         "authenticity_score": 95,
         "open_issues": 6,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "AgriciDaniel/claude-obsidian",
@@ -597,7 +611,9 @@
         "authenticity_score": 95,
         "open_issues": 22,
         "is_stale": false
-      }
+      },
+      "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "wikibonsai/wikibonsai",
@@ -672,7 +688,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "kytmanov/synto",
@@ -751,7 +769,9 @@
         "authenticity_score": 95,
         "open_issues": 10,
         "is_stale": false
-      }
+      },
+      "verdict": "Drop-in alternative providing compatible API surfaces with lower overhead.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "jaredrhod/ai-memory-vault",
@@ -827,7 +847,9 @@
         "authenticity_score": 95,
         "open_issues": 1,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "smixs/agent-second-brain",
@@ -899,7 +921,9 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": false
-      }
+      },
+      "verdict": "High-velocity open-source project delivering focused capabilities for second brain & pkm.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     }
   ]
 }

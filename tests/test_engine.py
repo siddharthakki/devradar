@@ -17,7 +17,23 @@ def test_profile_specs():
     assert specs["is_cuda_ready"] is True
     assert "24GB" in specs["hardware_req"]
 
+from engine.analyzer import classify, profile_specs, generate_architectural_verdict
+
 def test_classify():
     cat = classify("Fast LLM inference runner with GGUF quantization", ["llm", "gguf"])
     assert cat == "Local LLM Engines"
+
+def test_generate_architectural_verdict():
+    repo = {"name": "test-llm", "description": "Local LLM engine"}
+    category = "Local LLM Engines"
+    capabilities = {
+        "hardware": {"floor": "24GB VRAM (CUDA)"},
+        "deployment": ["local-only"],
+        "integrations": ["mcp-server"],
+        "intent_tags": ["gguf"]
+    }
+    health = {"stage": "experimental", "authenticity_score": 90}
+    verdict, gotchas = generate_architectural_verdict(repo, category, capabilities, health)
+    assert "Heavyweight architecture" in verdict
+    assert "24GB+" in gotchas
 

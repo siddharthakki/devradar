@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DevRadar — Autonomous Open-Source Matchmaker</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://js.puter.com/v2/"></script>
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -78,6 +79,10 @@
         </div>
 
         <div class="flex items-center gap-2 sm:gap-3 text-xs font-mono text-textMuted">
+          <button id="openAdvisorBtn" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-accentPrimary/40 bg-accentPrimary/10 text-accentSecondary hover:bg-accentPrimary/20 hover:border-accentPrimary transition text-xs font-mono font-semibold shadow-sm">
+            <span>✨</span> <span>Stack Advisor</span>
+          </button>
+
           <button id="toggleBookmarksBtn" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-borderDark bg-cardDark text-textMain hover:border-accentPrimary transition">
             <span>🔖</span> <span id="bookmarkCount" class="text-[10px] bg-radarDark px-1.5 py-0.5 rounded border border-borderDark">0</span>
           </button>
@@ -171,6 +176,65 @@
       <div class="py-20 text-center text-textMuted font-mono text-sm col-span-full">Connecting to intent engine...</div>
     </div>
   </main>
+
+  <!-- STACK ADVISOR MODAL (POWERED BY PUTER AI) -->
+  <div id="advisorModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="bg-cardDark border border-borderDark rounded-2xl w-full max-w-2xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
+      <!-- Header -->
+      <div class="px-5 py-4 border-b border-borderDark flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <span class="text-xl">✨</span>
+          <div>
+            <h2 class="text-sm font-bold text-textMain font-mono">DevRadar Stack Advisor</h2>
+            <p class="text-[11px] text-textMuted">AI architectural recommendations powered by Puter frontier models</p>
+          </div>
+        </div>
+        <button id="closeAdvisorBtn" class="text-textMuted hover:text-textMain text-xl px-2 py-1 rounded transition">&times;</button>
+      </div>
+
+      <!-- Content -->
+      <div class="p-5 overflow-y-auto space-y-4">
+        <div>
+          <label class="text-[11px] font-mono text-textMuted uppercase tracking-wider font-semibold">Your Architecture or Hardware Constraint</label>
+          <div class="mt-1.5 flex gap-2">
+            <input 
+              id="advisorInput" 
+              type="text" 
+              placeholder="e.g. Build an offline local agent on Apple Silicon with 16GB RAM..." 
+              class="flex-1 bg-radarDark border border-borderDark focus:border-accentPrimary rounded-xl px-3 py-2 text-xs text-textMain placeholder:text-textMuted/40 focus:outline-none font-mono"
+            />
+            <button id="submitAdvisorBtn" class="px-4 py-2 bg-accentPrimary text-radarDark font-bold rounded-xl hover:opacity-90 transition text-xs font-mono flex items-center gap-1.5 shrink-0">
+              <span id="advisorBtnText">Consult</span>
+              <span id="advisorBtnSpinner" class="hidden animate-spin">⏳</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick Idea Chips -->
+        <div class="flex flex-wrap gap-1.5 items-center">
+          <span class="text-[10px] font-mono text-textMuted/60">Quick Ideas:</span>
+          <button type="button" class="quick-advisor-prompt px-2 py-0.5 rounded bg-radarDark border border-borderDark hover:border-accentPrimary text-textMuted hover:text-textMain transition text-[10px] font-mono">🍎 Mac M2 16GB Agent</button>
+          <button type="button" class="quick-advisor-prompt px-2 py-0.5 rounded bg-radarDark border border-borderDark hover:border-accentPrimary text-textMuted hover:text-textMain transition text-[10px] font-mono">⚡ Rust Local RAG</button>
+          <button type="button" class="quick-advisor-prompt px-2 py-0.5 rounded bg-radarDark border border-borderDark hover:border-accentPrimary text-textMuted hover:text-textMain transition text-[10px] font-mono">🎙️ Offline Voice Pipeline</button>
+          <button type="button" class="quick-advisor-prompt px-2 py-0.5 rounded bg-radarDark border border-borderDark hover:border-accentPrimary text-textMuted hover:text-textMain transition text-[10px] font-mono">🔒 Local-First SQLite Sync</button>
+        </div>
+
+        <!-- Results Window -->
+        <div id="advisorOutput" class="hidden p-4 rounded-xl bg-radarDark border border-borderDark text-textMain space-y-3 leading-relaxed text-xs">
+          <div class="flex items-center justify-between pb-2 border-b border-borderDark/60 font-mono text-[11px]">
+            <span class="text-accentSecondary font-semibold">Architectural Recommendation:</span>
+            <span class="text-[10px] text-textMuted font-mono">Puter AI</span>
+          </div>
+          <div id="advisorOutputText" class="whitespace-pre-line font-sans text-xs text-textMain leading-relaxed"></div>
+          <div class="pt-2 flex justify-end">
+            <button id="applyAdvisorFilterBtn" class="px-3 py-1.5 rounded-lg border border-accentPrimary text-accentSecondary hover:bg-accentPrimary hover:text-radarDark transition text-[11px] font-mono font-semibold">
+              Filter Dashboard to Recommendations &rarr;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script type="module">
     import { TAXONOMY, classifyRepo, computeBreakoutScore, parseNaturalLanguage } from './devradar-core.js';
@@ -378,9 +442,20 @@
         ? '<span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Mature</span>'
         : (stage === 'experimental' ? '<span class="text-[9px] font-mono px-1.5 py-0.5 rounded bg-purple-500/10 text-purple-400 border border-purple-500/20">Experimental</span>' : '');
 
+      const safeVerdict = escapeHtml(r.verdict || '');
+      const safeGotchas = escapeHtml(r.gotchas || '');
+
       const tags = (r.capabilities?.intent_tags || []).slice(0, 2).map(tag => 
         `<span class="text-[9px] font-mono px-1.5 py-0.2 rounded bg-radarDark text-textMuted border border-borderDark">${escapeHtml(tag)}</span>`
       ).join('');
+
+      const verdictBlock = safeVerdict ? `
+        <div class="mt-2.5 p-2 rounded-lg bg-radarDark/70 border border-borderDark text-[11px] leading-snug">
+          <span class="text-accentSecondary font-semibold font-mono text-[10px] uppercase">Verdict:</span>
+          <p class="text-textMain/90 mt-0.5">${safeVerdict}</p>
+          ${safeGotchas ? `<p class="mt-1 text-[10px] text-amber-300/80 font-mono"><span class="font-bold">⚠️ Gotcha:</span> ${safeGotchas}</p>` : ''}
+        </div>
+      ` : '';
 
       return `
         <div class="bg-cardDark border border-borderDark hover:border-accentPrimary/50 transition rounded-xl p-4 flex flex-col justify-between shadow-lg">
@@ -408,6 +483,8 @@
               ${tags}
               <span class="text-[9px] font-mono px-1.5 py-0.2 rounded bg-radarDark text-textMuted border border-borderDark">${safeHw}</span>
             </div>
+
+            ${verdictBlock}
           </div>
 
           <div class="mt-4 pt-3 border-t border-borderDark flex items-center justify-between text-xs font-mono">
@@ -479,6 +556,110 @@
 
       container.innerHTML = filtered.map(r => renderCard(r)).join('');
     }
+
+    // Stack Advisor Modal Logic
+    const advisorModal = document.getElementById('advisorModal');
+    const openAdvisorBtn = document.getElementById('openAdvisorBtn');
+    const closeAdvisorBtn = document.getElementById('closeAdvisorBtn');
+    const advisorInput = document.getElementById('advisorInput');
+    const submitAdvisorBtn = document.getElementById('submitAdvisorBtn');
+    const advisorBtnText = document.getElementById('advisorBtnText');
+    const advisorBtnSpinner = document.getElementById('advisorBtnSpinner');
+    const advisorOutput = document.getElementById('advisorOutput');
+    const advisorOutputText = document.getElementById('advisorOutputText');
+    const applyAdvisorFilterBtn = document.getElementById('applyAdvisorFilterBtn');
+
+    openAdvisorBtn?.addEventListener('click', () => {
+      advisorModal.classList.remove('hidden');
+      advisorInput.focus();
+    });
+
+    closeAdvisorBtn?.addEventListener('click', () => {
+      advisorModal.classList.add('hidden');
+    });
+
+    advisorModal?.addEventListener('click', (e) => {
+      if (e.target === advisorModal) advisorModal.classList.add('hidden');
+    });
+
+    document.querySelectorAll('.quick-advisor-prompt').forEach(btn => {
+      btn.addEventListener('click', () => {
+        advisorInput.value = btn.textContent.replace(/^[^\w]+/, '').trim();
+        submitAdvisorQuery();
+      });
+    });
+
+    submitAdvisorBtn?.addEventListener('click', submitAdvisorQuery);
+    advisorInput?.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') submitAdvisorQuery();
+    });
+
+    async function submitAdvisorQuery() {
+      const query = advisorInput.value.trim();
+      if (!query) return;
+
+      advisorBtnText.textContent = 'Thinking...';
+      advisorBtnSpinner.classList.remove('hidden');
+      submitAdvisorBtn.disabled = true;
+      advisorOutput.classList.remove('hidden');
+      advisorOutputText.innerHTML = '<span class="text-textMuted font-mono animate-pulse">Consulting architecture models...</span>';
+
+      const catalogSummary = repositories.slice(0, 35).map(r => ({
+        name: r.full_name,
+        category: r.category,
+        hardware: r.hardware_req,
+        verdict: r.verdict,
+        desc: r.description
+      }));
+
+      const prompt = `You are the DevRadar Stack Advisor. A developer has this question or constraint:
+"${query}"
+
+Here is a curated catalog of breakout open-source tools:
+${JSON.stringify(catalogSummary)}
+
+Task:
+1. Recommend 2 to 3 repositories from the catalog that best satisfy their requirements (especially hardware/local-first specs).
+2. For each, give a concise 1-2 bullet point rationale highlighting technical trade-offs.
+3. Suggest 1 or 2 search keywords to filter the dashboard cards.`;
+
+      let answer = '';
+      try {
+        if (window.puter && window.puter.ai && typeof window.puter.ai.chat === 'function') {
+          const resp = await window.puter.ai.chat(prompt, { model: 'deepseek/deepseek-chat' });
+          answer = typeof resp === 'string' ? resp : (resp?.message?.content || JSON.stringify(resp));
+        } else {
+          throw new Error('Puter AI not ready');
+        }
+      } catch (err) {
+        console.warn('Puter AI unavailable, falling back to local advisor:', err);
+        const matching = repositories.filter(r => {
+          const text = `${r.name} ${r.full_name} ${r.description} ${r.verdict || ''} ${r.category}`.toLowerCase();
+          return query.toLowerCase().split(' ').some(w => w.length > 2 && text.includes(w));
+        }).slice(0, 3);
+
+        if (matching.length > 0) {
+          answer = `Top recommendations for "${query}":\n\n` +
+            matching.map(r => `• **${r.full_name}** (${r.category} | ${r.hardware_req})\n  ${r.verdict || r.description}`).join('\n\n') +
+            `\n\nRecommended Dashboard Filter: ${matching[0].category}`;
+        } else {
+          answer = `Found active matches across our catalog for "${query}". You can filter by category or hardware floor in the dashboard below!`;
+        }
+      }
+
+      advisorOutputText.textContent = answer;
+      advisorBtnText.textContent = 'Consult';
+      advisorBtnSpinner.classList.add('hidden');
+      submitAdvisorBtn.disabled = false;
+    }
+
+    applyAdvisorFilterBtn?.addEventListener('click', () => {
+      advisorModal.classList.add('hidden');
+      searchInput.value = advisorInput.value;
+      parsedNl = parseNaturalLanguage(searchInput.value);
+      updateNlBanner();
+      render();
+    });
 
     // Initialize dataset
     loadDataset();

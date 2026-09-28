@@ -1,7 +1,7 @@
 {
   "category": "RAG Engines",
   "count": 10,
-  "updated_at": "2026-09-28T09:28:47.400490+00:00",
+  "updated_at": "2026-09-28T09:49:50.082731+00:00",
   "repositories": [
     {
       "full_name": "deepset-ai/haystack",
@@ -73,7 +73,9 @@
         "authenticity_score": 95,
         "open_issues": 169,
         "is_stale": false
-      }
+      },
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "vespa-engine/vespa",
@@ -139,7 +141,9 @@
         "authenticity_score": 95,
         "open_issues": 250,
         "is_stale": false
-      }
+      },
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "comet-ml/opik",
@@ -204,7 +208,9 @@
         "authenticity_score": 95,
         "open_issues": 227,
         "is_stale": false
-      }
+      },
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "EvotecIT/OfficeIMO",
@@ -278,7 +284,9 @@
         "authenticity_score": 95,
         "open_issues": 25,
         "is_stale": false
-      }
+      },
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "vitali87/code-graph-rag",
@@ -350,7 +358,9 @@
         "authenticity_score": 95,
         "open_issues": 111,
         "is_stale": false
-      }
+      },
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "HelixDB/helix-db",
@@ -421,7 +431,9 @@
         "authenticity_score": 95,
         "open_issues": 21,
         "is_stale": false
-      }
+      },
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "weaviate/weaviate",
@@ -497,7 +509,9 @@
         "authenticity_score": 95,
         "open_issues": 756,
         "is_stale": false
-      }
+      },
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
     },
     {
       "full_name": "oceanbase/seekdb",
@@ -563,7 +577,9 @@
         "authenticity_score": 95,
         "open_issues": 379,
         "is_stale": false
-      }
+      },
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "gmickel/gno",
@@ -637,7 +653,9 @@
         "authenticity_score": 95,
         "open_issues": 2,
         "is_stale": false
-      }
+      },
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack."
     },
     {
       "full_name": "notoriouslab/vault-curate",
@@ -710,7 +728,9 @@
         "authenticity_score": 95,
         "open_issues": 0,
         "is_stale": false
-      }
+      },
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Cloud dependency or external API keys required; not fully self-contained offline."
     }
   ]
 }
