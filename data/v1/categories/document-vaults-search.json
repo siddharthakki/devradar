@@ -1,7 +1,7 @@
 {
   "category": "Document Vaults & Search",
   "count": 1,
-  "updated_at": "2026-09-28T09:59:30.001055+00:00",
+  "updated_at": "2026-09-28T10:03:03.917467+00:00",
   "repositories": [
     {
       "full_name": "manticoresoftware/manticoresearch",
@@ -60,6 +60,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 12039
+        },
+        {
+          "ts": 1790589783,
           "stars": 12039
         }
       ],

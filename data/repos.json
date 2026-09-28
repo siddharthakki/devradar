@@ -1,7 +1,87 @@
 {
-  "updated_at": "2026-09-28T09:59:09.812663+00:00",
-  "total_repositories": 148,
+  "updated_at": "2026-09-28T10:03:03.842033+00:00",
+  "total_repositories": 149,
   "repositories": [
+    {
+      "full_name": "Helldez/BigMoeOnEdge",
+      "name": "BigMoeOnEdge",
+      "url": "https://github.com/Helldez/BigMoeOnEdge",
+      "description": "Run MoE models bigger than your RAM. Frontier-size MoE on a 12 GB phone, lossless, on stock llama.cpp",
+      "category": "Local LLM Engines",
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
+      "language": "C++",
+      "license": "Apache-2.0",
+      "stars": 595,
+      "stars_24h": 0,
+      "trending_score": 24,
+      "topics": [
+        "android",
+        "cpp",
+        "edge-ai",
+        "gemma",
+        "gguf",
+        "gpt-oss",
+        "inference",
+        "llama-cpp",
+        "llm",
+        "mixture-of-experts",
+        "moe",
+        "on-device-ai",
+        "qwen"
+      ],
+      "created_at": "2026-07-10T16:19:44Z",
+      "pushed_at": "2026-09-28T10:02:16Z",
+      "quick_run": "git clone https://github.com/Helldez/BigMoeOnEdge",
+      "hardware_req": "8GB Unified / Metal",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589197,
+          "stars": 595
+        },
+        {
+          "ts": 1790589549,
+          "stars": 595
+        },
+        {
+          "ts": 1790589783,
+          "stars": 595
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "8GB Unified / Metal"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 79,
+        "authenticity_score": 95,
+        "open_issues": 28,
+        "is_stale": false
+      }
+    },
     {
       "full_name": "brycewang-stanford/StatsPAI",
       "name": "StatsPAI",
@@ -52,6 +132,10 @@
       "star_history": [
         {
           "ts": 1790589549,
+          "stars": 326
+        },
+        {
+          "ts": 1790589783,
           "stars": 326
         }
       ],
@@ -143,6 +227,10 @@
         {
           "ts": 1790589549,
           "stars": 36517
+        },
+        {
+          "ts": 1790589783,
+          "stars": 36517
         }
       ],
       "capabilities": {
@@ -228,6 +316,10 @@
         {
           "ts": 1790589549,
           "stars": 5766
+        },
+        {
+          "ts": 1790589783,
+          "stars": 5766
         }
       ],
       "capabilities": {
@@ -299,6 +391,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 1220
+        },
+        {
+          "ts": 1790589783,
           "stars": 1220
         }
       ],
@@ -378,6 +474,10 @@
         {
           "ts": 1790589549,
           "stars": 5952
+        },
+        {
+          "ts": 1790589783,
+          "stars": 5952
         }
       ],
       "capabilities": {
@@ -403,82 +503,6 @@
         "age_days": 397,
         "authenticity_score": 95,
         "open_issues": 556,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "Helldez/BigMoeOnEdge",
-      "name": "BigMoeOnEdge",
-      "url": "https://github.com/Helldez/BigMoeOnEdge",
-      "description": "Run MoE models bigger than your RAM. Frontier-size MoE on a 12 GB phone, lossless, on stock llama.cpp",
-      "category": "Local LLM Engines",
-      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
-      "replaces": [
-        "ollama",
-        "vllm"
-      ],
-      "language": "C++",
-      "license": "Apache-2.0",
-      "stars": 595,
-      "stars_24h": 0,
-      "trending_score": 24,
-      "topics": [
-        "android",
-        "cpp",
-        "edge-ai",
-        "gemma",
-        "gguf",
-        "gpt-oss",
-        "inference",
-        "llama-cpp",
-        "llm",
-        "mixture-of-experts",
-        "moe",
-        "on-device-ai",
-        "qwen"
-      ],
-      "created_at": "2026-07-10T16:19:44Z",
-      "pushed_at": "2026-09-28T09:53:50Z",
-      "quick_run": "git clone https://github.com/Helldez/BigMoeOnEdge",
-      "hardware_req": "8GB Unified / Metal",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790589197,
-          "stars": 595
-        },
-        {
-          "ts": 1790589549,
-          "stars": 595
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "8GB Unified / Metal"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 79,
-        "authenticity_score": 95,
-        "open_issues": 29,
         "is_stale": false
       }
     },
@@ -530,6 +554,10 @@
         {
           "ts": 1790589549,
           "stars": 2899
+        },
+        {
+          "ts": 1790589783,
+          "stars": 2899
         }
       ],
       "capabilities": {
@@ -573,9 +601,9 @@
       ],
       "language": "C++",
       "license": "MIT",
-      "stars": 129751,
-      "stars_24h": 1049,
-      "trending_score": 3507,
+      "stars": 129753,
+      "stars_24h": 1051,
+      "trending_score": 3513,
       "topics": [
         "ggml"
       ],
@@ -598,6 +626,10 @@
         {
           "ts": 1790589549,
           "stars": 129751
+        },
+        {
+          "ts": 1790589783,
+          "stars": 129753
         }
       ],
       "capabilities": {
@@ -674,6 +706,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 6676
+        },
+        {
+          "ts": 1790589783,
           "stars": 6676
         }
       ],
@@ -757,6 +793,10 @@
         {
           "ts": 1790589549,
           "stars": 1663
+        },
+        {
+          "ts": 1790589783,
+          "stars": 1663
         }
       ],
       "capabilities": {
@@ -819,6 +859,10 @@
         {
           "ts": 1790589549,
           "stars": 4981
+        },
+        {
+          "ts": 1790589783,
+          "stars": 4981
         }
       ],
       "capabilities": {
@@ -862,9 +906,9 @@
       ],
       "language": "Python",
       "license": "Apache-2.0",
-      "stars": 6829,
-      "stars_24h": 3282,
-      "trending_score": 9928,
+      "stars": 6834,
+      "stars_24h": 3287,
+      "trending_score": 9943,
       "topics": [
         "agent-infrastructure",
         "ai-agents",
@@ -898,6 +942,10 @@
         {
           "ts": 1790589549,
           "stars": 6829
+        },
+        {
+          "ts": 1790589783,
+          "stars": 6834
         }
       ],
       "capabilities": {
@@ -989,6 +1037,10 @@
         {
           "ts": 1790589549,
           "stars": 92851
+        },
+        {
+          "ts": 1790589783,
+          "stars": 92851
         }
       ],
       "capabilities": {
@@ -1013,7 +1065,7 @@
         "last_push_days": 0,
         "age_days": 1326,
         "authenticity_score": 95,
-        "open_issues": 8338,
+        "open_issues": 8335,
         "is_stale": false
       }
     },
@@ -1074,6 +1126,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 2885
+        },
+        {
+          "ts": 1790589783,
           "stars": 2885
         }
       ],
@@ -1152,6 +1208,10 @@
         {
           "ts": 1790589549,
           "stars": 623
+        },
+        {
+          "ts": 1790589783,
+          "stars": 623
         }
       ],
       "capabilities": {
@@ -1177,6 +1237,99 @@
         "age_days": 1586,
         "authenticity_score": 95,
         "open_issues": 204,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "receptron/mulmoterminal",
+      "name": "mulmoterminal",
+      "url": "https://github.com/receptron/mulmoterminal",
+      "description": "Run multiple Claude Code and Codex sessions in parallel \u2014 a browser terminal grid that shows which agent needs you. Local, tmux-backed, MIT.",
+      "category": "Multi-Agent Frameworks",
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 226,
+      "stars_24h": 7,
+      "trending_score": 36,
+      "topics": [
+        "agent-orchestration",
+        "agentic-coding",
+        "ai-agents",
+        "ai-coding",
+        "claude-code",
+        "codex",
+        "developer-tools",
+        "git-worktree",
+        "grok",
+        "local-first",
+        "multi-agent",
+        "parallel-agents",
+        "pty",
+        "self-hosted",
+        "terminal",
+        "tmux",
+        "typescript",
+        "vibe-coding",
+        "web-push",
+        "xterm-js"
+      ],
+      "created_at": "2026-06-14T12:39:37Z",
+      "pushed_at": "2026-09-28T10:02:22Z",
+      "quick_run": "git clone https://github.com/receptron/mulmoterminal",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1789756348,
+          "stars": 219
+        },
+        {
+          "ts": 1790589197,
+          "stars": 226
+        },
+        {
+          "ts": 1790589549,
+          "stars": 226
+        },
+        {
+          "ts": 1790589783,
+          "stars": 226
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "self-hosted"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 105,
+        "authenticity_score": 95,
+        "open_issues": 61,
         "is_stale": false
       }
     },
@@ -1214,7 +1367,7 @@
         "workflow-engine"
       ],
       "created_at": "2026-01-05T21:13:36Z",
-      "pushed_at": "2026-09-28T09:58:42Z",
+      "pushed_at": "2026-09-28T10:02:16Z",
       "quick_run": "git clone https://github.com/smithersai/smithers",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -1231,6 +1384,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 422
+        },
+        {
+          "ts": 1790589783,
           "stars": 422
         }
       ],
@@ -1257,6 +1414,314 @@
         "age_days": 265,
         "authenticity_score": 95,
         "open_issues": 572,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "open-multi-agent/open-multi-agent",
+      "name": "open-multi-agent",
+      "url": "https://github.com/open-multi-agent/open-multi-agent",
+      "description": "Self-hosted TypeScript agent runtime with durable approvals and verifiable run records. Own it, approve it, audit it.",
+      "category": "Multi-Agent Frameworks",
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 6961,
+      "stars_24h": 0,
+      "trending_score": 83,
+      "topics": [
+        "agent-framework",
+        "agent-orchestration",
+        "agentic-ai",
+        "ai-agents",
+        "ai-governance",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "deepseek",
+        "gemini",
+        "llm",
+        "local-llm",
+        "mcp",
+        "multi-agent",
+        "observability",
+        "ollama",
+        "openai",
+        "self-hosted",
+        "typescript"
+      ],
+      "created_at": "2026-03-31T19:07:34Z",
+      "pushed_at": "2026-09-28T10:02:15Z",
+      "quick_run": "git clone https://github.com/open-multi-agent/open-multi-agent",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589783,
+          "stars": 6961
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "self-hosted"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 180,
+        "authenticity_score": 95,
+        "open_issues": 5,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "THU-MAIC/OpenMAIC",
+      "name": "OpenMAIC",
+      "url": "https://github.com/THU-MAIC/OpenMAIC",
+      "description": "Open Multi-Agent Interactive Classroom \u2014 Get an immersive, multi-agent learning experience in just one click",
+      "category": "Multi-Agent Frameworks",
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 39347,
+      "stars_24h": 5,
+      "trending_score": 213,
+      "topics": [],
+      "created_at": "2026-03-11T10:13:16Z",
+      "pushed_at": "2026-09-28T10:01:23Z",
+      "quick_run": "git clone https://github.com/THU-MAIC/OpenMAIC",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 39342
+        },
+        {
+          "ts": 1790589549,
+          "stars": 39345
+        },
+        {
+          "ts": 1790589783,
+          "stars": 39347
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 200,
+        "authenticity_score": 95,
+        "open_issues": 166,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "agentconnect-md/agentconnect",
+      "name": "agentconnect",
+      "url": "https://github.com/agentconnect-md/agentconnect",
+      "description": "The open-source, multi-agent alternative to Claude Tag.  @ any agent, wherever work happens, they work alongside your team, learning as they go.",
+      "category": "Multi-Agent Frameworks",
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "stars": 1437,
+      "stars_24h": 0,
+      "trending_score": 37,
+      "topics": [
+        "agent-client-protocol",
+        "agent-sandbox",
+        "ai-agent",
+        "claude-tag-alternative",
+        "codereview",
+        "developer-tools",
+        "github",
+        "jev",
+        "kubernetes",
+        "multi-agent",
+        "slack",
+        "typescript"
+      ],
+      "created_at": "2026-07-24T02:17:34Z",
+      "pushed_at": "2026-09-28T10:00:30Z",
+      "quick_run": "git clone https://github.com/agentconnect-md/agentconnect",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589783,
+          "stars": 1437
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "drop-in-replacement"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 66,
+        "authenticity_score": 95,
+        "open_issues": 35,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "Cotal-AI/Cotal",
+      "name": "Cotal",
+      "url": "https://github.com/Cotal-AI/Cotal",
+      "description": "The open standard for agent coordination",
+      "category": "Multi-Agent Frameworks",
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "stars": 302,
+      "stars_24h": 0,
+      "trending_score": 17,
+      "topics": [
+        "a2a",
+        "agent-communication",
+        "agent-mesh",
+        "agent-orchestration",
+        "agent-skills",
+        "ai",
+        "ai-agents",
+        "claude-code",
+        "distributed-systems",
+        "infrastructure",
+        "jetstream",
+        "mcp",
+        "model-context-protocol",
+        "multi-agent",
+        "nats",
+        "protocol",
+        "pubsub",
+        "self-hosted",
+        "swarm",
+        "typescript"
+      ],
+      "created_at": "2026-06-02T02:52:25Z",
+      "pushed_at": "2026-09-28T09:59:23Z",
+      "quick_run": "git clone https://github.com/Cotal-AI/Cotal",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 302
+        },
+        {
+          "ts": 1790589197,
+          "stars": 302
+        },
+        {
+          "ts": 1790589783,
+          "stars": 302
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "self-hosted"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 118,
+        "authenticity_score": 95,
+        "open_issues": 246,
         "is_stale": false
       }
     },
@@ -1302,6 +1767,10 @@
       "star_history": [
         {
           "ts": 1790589549,
+          "stars": 1166
+        },
+        {
+          "ts": 1790589783,
           "stars": 1166
         }
       ],
@@ -1360,6 +1829,10 @@
       "star_history": [
         {
           "ts": 1790589549,
+          "stars": 1826
+        },
+        {
+          "ts": 1790589783,
           "stars": 1826
         }
       ],
@@ -1439,6 +1912,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 274
+        },
+        {
+          "ts": 1790589783,
           "stars": 274
         }
       ],
@@ -1523,6 +2000,10 @@
         {
           "ts": 1790589549,
           "stars": 179
+        },
+        {
+          "ts": 1790589783,
+          "stars": 179
         }
       ],
       "capabilities": {
@@ -1596,6 +2077,10 @@
         {
           "ts": 1790589549,
           "stars": 586
+        },
+        {
+          "ts": 1790589783,
+          "stars": 586
         }
       ],
       "capabilities": {
@@ -1639,9 +2124,9 @@
       ],
       "language": "TypeScript",
       "license": "Apache-2.0",
-      "stars": 1286,
-      "stars_24h": 4,
-      "trending_score": 47,
+      "stars": 1289,
+      "stars_24h": 7,
+      "trending_score": 56,
       "topics": [
         "agent-harness",
         "agent-orchestration",
@@ -1670,6 +2155,10 @@
         {
           "ts": 1790589549,
           "stars": 1286
+        },
+        {
+          "ts": 1790589783,
+          "stars": 1289
         }
       ],
       "capabilities": {
@@ -1695,68 +2184,6 @@
         "age_days": 180,
         "authenticity_score": 95,
         "open_issues": 50,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "THU-MAIC/OpenMAIC",
-      "name": "OpenMAIC",
-      "url": "https://github.com/THU-MAIC/OpenMAIC",
-      "description": "Open Multi-Agent Interactive Classroom \u2014 Get an immersive, multi-agent learning experience in just one click",
-      "category": "Multi-Agent Frameworks",
-      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
-      "replaces": [
-        "autogen",
-        "langchain"
-      ],
-      "language": "TypeScript",
-      "license": "MIT",
-      "stars": 39345,
-      "stars_24h": 3,
-      "trending_score": 207,
-      "topics": [],
-      "created_at": "2026-03-11T10:13:16Z",
-      "pushed_at": "2026-09-28T09:54:38Z",
-      "quick_run": "git clone https://github.com/THU-MAIC/OpenMAIC",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790587727,
-          "stars": 39342
-        },
-        {
-          "ts": 1790589549,
-          "stars": 39345
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "cli"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 200,
-        "authenticity_score": 95,
-        "open_issues": 167,
         "is_stale": false
       }
     },
@@ -1794,6 +2221,10 @@
       "star_history": [
         {
           "ts": 1790589549,
+          "stars": 236
+        },
+        {
+          "ts": 1790589783,
           "stars": 236
         }
       ],
@@ -1868,6 +2299,10 @@
       "star_history": [
         {
           "ts": 1790589549,
+          "stars": 187
+        },
+        {
+          "ts": 1790589783,
           "stars": 187
         }
       ],
@@ -1949,6 +2384,10 @@
         {
           "ts": 1790589549,
           "stars": 194
+        },
+        {
+          "ts": 1790589783,
+          "stars": 194
         }
       ],
       "capabilities": {
@@ -1980,72 +2419,145 @@
       }
     },
     {
-      "full_name": "receptron/mulmoterminal",
-      "name": "mulmoterminal",
-      "url": "https://github.com/receptron/mulmoterminal",
-      "description": "Run multiple Claude Code and Codex sessions in parallel \u2014 a browser terminal grid that shows which agent needs you. Local, tmux-backed, MIT.",
+      "full_name": "himovo/movo",
+      "name": "movo",
+      "url": "https://github.com/himovo/movo",
+      "description": "Turn DeepSeek Harness into a self-hosted enterprise Agent platform with knowledge, deep research, content generation, vibe coding, browser automation, governance, and admin controls.",
       "category": "Multi-Agent Frameworks",
-      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts.",
       "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
       "replaces": [
         "autogen",
         "langchain"
       ],
-      "language": "TypeScript",
-      "license": "MIT",
-      "stars": 226,
-      "stars_24h": 7,
-      "trending_score": 36,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "stars": 172,
+      "stars_24h": 0,
+      "trending_score": 13,
       "topics": [
-        "agent-orchestration",
-        "agentic-coding",
+        "agent",
         "ai-agents",
-        "ai-coding",
-        "claude-code",
-        "codex",
-        "developer-tools",
-        "git-worktree",
-        "grok",
-        "local-first",
-        "multi-agent",
-        "parallel-agents",
-        "pty",
-        "self-hosted",
-        "terminal",
-        "tmux",
-        "typescript",
+        "brower-automation",
+        "dsh-plugin",
+        "enterprise-agents",
+        "mcp",
+        "movo",
+        "rag",
+        "skills",
         "vibe-coding",
-        "web-push",
-        "xterm-js"
+        "workflow",
+        "workflow-automation"
       ],
-      "created_at": "2026-06-14T12:39:37Z",
-      "pushed_at": "2026-09-28T09:54:25Z",
-      "quick_run": "git clone https://github.com/receptron/mulmoterminal",
+      "created_at": "2026-09-01T08:46:57Z",
+      "pushed_at": "2026-09-28T10:02:29Z",
+      "quick_run": "git clone https://github.com/himovo/movo",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
       "authenticity_score": 95,
       "star_history": [
         {
-          "ts": 1789756348,
-          "stars": 219
-        },
-        {
-          "ts": 1790589197,
-          "stars": 226
-        },
-        {
-          "ts": 1790589549,
-          "stars": 226
+          "ts": 1790589783,
+          "stars": 172
         }
       ],
       "capabilities": {
         "interaction": [
-          "cli"
+          "library"
         ],
         "integrations": [
-          "standalone"
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "self-hosted"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "experimental",
+        "last_push_days": 0,
+        "age_days": 27,
+        "authenticity_score": 95,
+        "open_issues": 42,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "zeweihan/aiworkdeck",
+      "name": "aiworkdeck",
+      "url": "https://github.com/zeweihan/aiworkdeck",
+      "description": "AI-native IDE workspace for legal and document-heavy workflows: files, agents, plugins, built-in document editing with tracked changes, OCR, evidence chains. VS Code for lawyers.",
+      "category": "Multi-Agent Frameworks",
+      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
+      "language": "Java",
+      "license": "AGPL-3.0",
+      "stars": 150,
+      "stars_24h": 0,
+      "trending_score": 12,
+      "topics": [
+        "ai-agents",
+        "ai-workspace",
+        "compliance",
+        "document-ai",
+        "document-management",
+        "due-diligence",
+        "electron",
+        "ide",
+        "legal-ai",
+        "legaltech",
+        "libreoffice",
+        "mcp",
+        "ocr",
+        "open-source",
+        "productivity",
+        "rag",
+        "self-hosted",
+        "spring-boot",
+        "vue",
+        "workspace"
+      ],
+      "created_at": "2026-01-21T11:27:27Z",
+      "pushed_at": "2026-09-28T10:01:59Z",
+      "quick_run": "git clone https://github.com/zeweihan/aiworkdeck",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589197,
+          "stars": 150
+        },
+        {
+          "ts": 1790589549,
+          "stars": 150
+        },
+        {
+          "ts": 1790589783,
+          "stars": 150
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "desktop"
+        ],
+        "integrations": [
+          "mcp-server"
         ],
         "deployment": [
           "local-only"
@@ -2062,56 +2574,48 @@
       "health": {
         "stage": "active",
         "last_push_days": 0,
-        "age_days": 105,
+        "age_days": 249,
         "authenticity_score": 95,
-        "open_issues": 63,
+        "open_issues": 15,
         "is_stale": false
       }
     },
     {
-      "full_name": "OpenPipe/ART",
-      "name": "ART",
-      "url": "https://github.com/OpenPipe/ART",
-      "description": "Agent Reinforcement Trainer: train multi-step agents for real-world tasks using GRPO. Give your agents on-the-job training. Reinforcement learning for Qwen3.6, GPT-OSS, Llama, and more!",
-      "category": "Multi-Agent Frameworks",
-      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "full_name": "modelscope/evalscope",
+      "name": "evalscope",
+      "url": "https://github.com/modelscope/evalscope",
+      "description": "A streamlined and customizable framework for efficient large model (LLM, VLM, AIGC) evaluation and performance benchmarking.",
+      "category": "Local LLM Engines",
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
       "replaces": [
-        "autogen",
-        "langchain"
+        "ollama",
+        "vllm"
       ],
       "language": "Python",
       "license": "Apache-2.0",
-      "stars": 10782,
+      "stars": 3475,
       "stars_24h": 0,
-      "trending_score": 103,
+      "trending_score": 58,
       "topics": [
-        "agent",
-        "agentic-ai",
-        "grpo",
-        "llms",
-        "lora",
-        "qwen",
-        "qwen3",
-        "reinforcement-learning",
-        "rl"
+        "evaluation",
+        "llm",
+        "performance",
+        "rag",
+        "vlm"
       ],
-      "created_at": "2025-03-10T18:25:47Z",
-      "pushed_at": "2026-09-28T09:55:11Z",
-      "quick_run": "git clone https://github.com/OpenPipe/ART",
+      "created_at": "2023-12-07T06:10:49Z",
+      "pushed_at": "2026-09-28T10:01:42Z",
+      "quick_run": "git clone https://github.com/modelscope/evalscope",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
       "authenticity_score": 95,
       "star_history": [
         {
-          "ts": 1790589197,
-          "stars": 10782
-        },
-        {
-          "ts": 1790589549,
-          "stars": 10782
+          "ts": 1790589783,
+          "stars": 3475
         }
       ],
       "capabilities": {
@@ -2134,114 +2638,70 @@
       "health": {
         "stage": "mature",
         "last_push_days": 0,
-        "age_days": 566,
+        "age_days": 1026,
         "authenticity_score": 95,
-        "open_issues": 175,
+        "open_issues": 48,
         "is_stale": false
       }
     },
     {
-      "full_name": "Kohaku-Lab/KohakuTerrarium",
-      "name": "KohakuTerrarium",
-      "url": "https://github.com/Kohaku-Lab/KohakuTerrarium",
-      "description": "KohakuTerrarium is a general-purpose AI agent framework and batteries-included app for building, running, and composing self-contained agents and multi-agent teams, with built-in tools, sub-agents, persistent sessions, TUI, and web UI.",
+      "full_name": "infiniflow/ragflow",
+      "name": "ragflow",
+      "url": "https://github.com/infiniflow/ragflow",
+      "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "comparison": "Alternative to Dify RAG (Deep document understanding retrieval engine)",
       "replaces": [
-        "autogen",
+        "dify",
         "langchain"
       ],
-      "language": "Python",
-      "license": "NOASSERTION",
-      "stars": 508,
-      "stars_24h": 0,
-      "trending_score": 22,
-      "topics": [
-        "agent",
-        "agentic-framework",
-        "llm"
-      ],
-      "created_at": "2026-01-10T17:18:16Z",
-      "pushed_at": "2026-09-28T09:50:51Z",
-      "quick_run": "git clone https://github.com/Kohaku-Lab/KohakuTerrarium",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790589197,
-          "stars": 508
-        },
-        {
-          "ts": 1790589549,
-          "stars": 508
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "cli"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 260,
-        "authenticity_score": 95,
-        "open_issues": 5,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "google-deepmind/meltingpot",
-      "name": "meltingpot",
-      "url": "https://github.com/google-deepmind/meltingpot",
-      "description": "A suite of test scenarios for multi-agent reinforcement learning.",
-      "category": "Multi-Agent Frameworks",
-      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
-      "replaces": [
-        "autogen",
-        "langchain"
-      ],
-      "language": "Python",
+      "language": "Go",
       "license": "Apache-2.0",
-      "stars": 878,
+      "stars": 91420,
       "stars_24h": 0,
-      "trending_score": 29,
+      "trending_score": 302,
       "topics": [
-        "multiagent-reinforcement-learning"
+        "agent-harness",
+        "agentic-ai",
+        "agentic-nagive",
+        "agentic-retrieval",
+        "agentic-search",
+        "ai",
+        "ai-agents",
+        "context-engine",
+        "context-engineering",
+        "context-management",
+        "harness-engineering",
+        "knowledge-compilation",
+        "rag",
+        "retrieval-augmented-generation",
+        "search-harness"
       ],
-      "created_at": "2021-07-16T09:12:01Z",
-      "pushed_at": "2026-09-28T09:50:24Z",
-      "quick_run": "git clone https://github.com/google-deepmind/meltingpot",
+      "created_at": "2023-12-12T06:13:13Z",
+      "pushed_at": "2026-09-28T10:01:18Z",
+      "quick_run": "git clone https://github.com/infiniflow/ragflow",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
       "authenticity_score": 95,
       "star_history": [
         {
+          "ts": 1790587727,
+          "stars": 91420
+        },
+        {
           "ts": 1790589197,
-          "stars": 878
+          "stars": 91420
         },
         {
           "ts": 1790589549,
-          "stars": 878
+          "stars": 91420
+        },
+        {
+          "ts": 1790589783,
+          "stars": 91420
         }
       ],
       "capabilities": {
@@ -2262,11 +2722,256 @@
         }
       },
       "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 1021,
+        "authenticity_score": 95,
+        "open_issues": 1536,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "promptfoo/promptfoo",
+      "name": "promptfoo",
+      "url": "https://github.com/promptfoo/promptfoo",
+      "description": "Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for AI. Compare performance of GPT, Claude, Gemini, DeepSeek, and more. Simple declarative configs with command line and CI/CD integration.  Used by OpenAI and Anthropic.",
+      "category": "Multi-Agent Frameworks",
+      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "replaces": [
+        "autogen",
+        "langchain"
+      ],
+      "language": "TypeScript",
+      "license": "MIT",
+      "stars": 25522,
+      "stars_24h": 2,
+      "trending_score": 165,
+      "topics": [
+        "ci",
+        "ci-cd",
+        "cicd",
+        "evaluation",
+        "evaluation-framework",
+        "llm",
+        "llm-eval",
+        "llm-evaluation",
+        "llm-evaluation-framework",
+        "llmops",
+        "pentesting",
+        "prompt-engineering",
+        "prompt-testing",
+        "prompts",
+        "rag",
+        "red-teaming",
+        "testing",
+        "vulnerability-scanners"
+      ],
+      "created_at": "2023-04-28T15:48:49Z",
+      "pushed_at": "2026-09-28T10:02:03Z",
+      "quick_run": "git clone https://github.com/promptfoo/promptfoo",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 25520
+        },
+        {
+          "ts": 1790589783,
+          "stars": 25522
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 1248,
+        "authenticity_score": 95,
+        "open_issues": 750,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "1ay1/agentty",
+      "name": "agentty",
+      "url": "https://github.com/1ay1/agentty",
+      "description": "AI pair programming in your terminal \u2014 one static binary, sub-ms startup, any model",
+      "category": "CLI & TUI Tooling",
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
+      "language": "C++",
+      "license": "MIT",
+      "stars": 614,
+      "stars_24h": 0,
+      "trending_score": 24,
+      "topics": [
+        "agentic-coding",
+        "ai-agent",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "claude-code-alternative",
+        "cli",
+        "coding-agent",
+        "cpp",
+        "developer-tools",
+        "llm",
+        "mcp",
+        "ollama",
+        "openai",
+        "rag",
+        "retrieval-augmented-generation",
+        "sandbox",
+        "static-binary",
+        "terminal",
+        "tui"
+      ],
+      "created_at": "2026-04-17T12:44:40Z",
+      "pushed_at": "2026-09-28T09:59:45Z",
+      "quick_run": "git clone https://github.com/1ay1/agentty",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589783,
+          "stars": 614
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "drop-in-replacement"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
         "stage": "active",
         "last_push_days": 0,
-        "age_days": 1900,
+        "age_days": 163,
         "authenticity_score": 95,
-        "open_issues": 50,
+        "open_issues": 0,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "comet-ml/opik",
+      "name": "opik",
+      "url": "https://github.com/comet-ml/opik",
+      "description": "Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, automated evaluations, and production-ready dashboards.",
+      "category": "RAG Engines",
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
+      "replaces": [
+        "langchain",
+        "llamaindex"
+      ],
+      "language": "Python",
+      "license": "Apache-2.0",
+      "stars": 22271,
+      "stars_24h": 4,
+      "trending_score": 161,
+      "topics": [
+        "evaluation",
+        "hacktoberfest",
+        "hacktoberfest2025",
+        "langchain",
+        "llama-index",
+        "llm",
+        "llm-evaluation",
+        "llm-observability",
+        "llmops",
+        "open-source",
+        "openai",
+        "playground",
+        "prompt-engineering"
+      ],
+      "created_at": "2023-05-10T12:57:13Z",
+      "pushed_at": "2026-09-28T09:58:53Z",
+      "quick_run": "git clone https://github.com/comet-ml/opik",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 22267
+        },
+        {
+          "ts": 1790589197,
+          "stars": 22270
+        },
+        {
+          "ts": 1790589549,
+          "stars": 22270
+        },
+        {
+          "ts": 1790589783,
+          "stars": 22271
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "orchestrators"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 1236,
+        "authenticity_score": 95,
+        "open_issues": 231,
         "is_stale": false
       }
     },
@@ -2299,6 +3004,10 @@
       "star_history": [
         {
           "ts": 1790589549,
+          "stars": 248
+        },
+        {
+          "ts": 1790589783,
           "stars": 248
         }
       ],
@@ -2364,7 +3073,7 @@
         "typescript"
       ],
       "created_at": "2026-03-15T10:40:26Z",
-      "pushed_at": "2026-09-28T09:58:01Z",
+      "pushed_at": "2026-09-28T09:59:17Z",
       "quick_run": "git clone https://github.com/kitfunso/hippo-memory",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -2377,6 +3086,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 764
+        },
+        {
+          "ts": 1790589783,
           "stars": 764
         }
       ],
@@ -2402,7 +3115,7 @@
         "last_push_days": 0,
         "age_days": 196,
         "authenticity_score": 95,
-        "open_issues": 4,
+        "open_issues": 5,
         "is_stale": false
       }
     },
@@ -2446,6 +3159,10 @@
       "star_history": [
         {
           "ts": 1790589549,
+          "stars": 1509
+        },
+        {
+          "ts": 1790589783,
           "stars": 1509
         }
       ],
@@ -2520,6 +3237,10 @@
         {
           "ts": 1790589549,
           "stars": 1298
+        },
+        {
+          "ts": 1790589783,
+          "stars": 1298
         }
       ],
       "capabilities": {
@@ -2545,88 +3266,6 @@
         "age_days": 1091,
         "authenticity_score": 95,
         "open_issues": 30,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "infiniflow/ragflow",
-      "name": "ragflow",
-      "url": "https://github.com/infiniflow/ragflow",
-      "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
-      "category": "Multi-Agent Frameworks",
-      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "comparison": "Alternative to Dify RAG (Deep document understanding retrieval engine)",
-      "replaces": [
-        "dify",
-        "langchain"
-      ],
-      "language": "Go",
-      "license": "Apache-2.0",
-      "stars": 91420,
-      "stars_24h": 0,
-      "trending_score": 302,
-      "topics": [
-        "agent-harness",
-        "agentic-ai",
-        "agentic-nagive",
-        "agentic-retrieval",
-        "agentic-search",
-        "ai",
-        "ai-agents",
-        "context-engine",
-        "context-engineering",
-        "context-management",
-        "harness-engineering",
-        "knowledge-compilation",
-        "rag",
-        "retrieval-augmented-generation",
-        "search-harness"
-      ],
-      "created_at": "2023-12-12T06:13:13Z",
-      "pushed_at": "2026-09-28T09:51:03Z",
-      "quick_run": "git clone https://github.com/infiniflow/ragflow",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790587727,
-          "stars": 91420
-        },
-        {
-          "ts": 1790589197,
-          "stars": 91420
-        },
-        {
-          "ts": 1790589549,
-          "stars": 91420
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 1021,
-        "authenticity_score": 95,
-        "open_issues": 1537,
         "is_stale": false
       }
     },
@@ -2688,6 +3327,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 5185
+        },
+        {
+          "ts": 1790589783,
           "stars": 5185
         }
       ],
@@ -2757,7 +3400,7 @@
         "workflow"
       ],
       "created_at": "2023-04-12T07:40:24Z",
-      "pushed_at": "2026-09-28T09:50:49Z",
+      "pushed_at": "2026-09-28T09:59:09Z",
       "quick_run": "git clone https://github.com/langgenius/dify",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -2778,6 +3421,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 157389
+        },
+        {
+          "ts": 1790589783,
           "stars": 157389
         }
       ],
@@ -2806,91 +3453,6 @@
         "age_days": 1265,
         "authenticity_score": 95,
         "open_issues": 795,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "zeweihan/aiworkdeck",
-      "name": "aiworkdeck",
-      "url": "https://github.com/zeweihan/aiworkdeck",
-      "description": "AI-native IDE workspace for legal and document-heavy workflows: files, agents, plugins, built-in document editing with tracked changes, OCR, evidence chains. VS Code for lawyers.",
-      "category": "Multi-Agent Frameworks",
-      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
-      "replaces": [
-        "autogen",
-        "langchain"
-      ],
-      "language": "Java",
-      "license": "AGPL-3.0",
-      "stars": 150,
-      "stars_24h": 0,
-      "trending_score": 12,
-      "topics": [
-        "ai-agents",
-        "ai-workspace",
-        "compliance",
-        "document-ai",
-        "document-management",
-        "due-diligence",
-        "electron",
-        "ide",
-        "legal-ai",
-        "legaltech",
-        "libreoffice",
-        "mcp",
-        "ocr",
-        "open-source",
-        "productivity",
-        "rag",
-        "self-hosted",
-        "spring-boot",
-        "vue",
-        "workspace"
-      ],
-      "created_at": "2026-01-21T11:27:27Z",
-      "pushed_at": "2026-09-28T09:55:13Z",
-      "quick_run": "git clone https://github.com/zeweihan/aiworkdeck",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790589197,
-          "stars": 150
-        },
-        {
-          "ts": 1790589549,
-          "stars": 150
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "desktop"
-        ],
-        "integrations": [
-          "mcp-server"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [
-          "self-hosted"
-        ],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 249,
-        "authenticity_score": 95,
-        "open_issues": 17,
         "is_stale": false
       }
     },
@@ -2949,6 +3511,10 @@
         {
           "ts": 1790589549,
           "stars": 3583
+        },
+        {
+          "ts": 1790589783,
+          "stars": 3583
         }
       ],
       "capabilities": {
@@ -2978,352 +3544,10 @@
       }
     },
     {
-      "full_name": "deepset-ai/haystack",
-      "name": "haystack",
-      "url": "https://github.com/deepset-ai/haystack",
-      "description": "Open-source AI orchestration framework for building context-engineered, production-ready LLM applications. Design modular pipelines and agent workflows with explicit control over retrieval, routing, memory, and generation. Built for scalable agents, RAG, multimodal applications, semantic search, and conversational systems.",
-      "category": "RAG Engines",
-      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
-      "replaces": [
-        "langchain",
-        "llamaindex"
-      ],
-      "language": "Python",
-      "license": "Apache-2.0",
-      "stars": 26622,
-      "stars_24h": 0,
-      "trending_score": 163,
-      "topics": [
-        "agent-framework",
-        "agentic-ai",
-        "agentic-rag",
-        "agents",
-        "ai",
-        "ai-agents",
-        "context-engineering",
-        "framework",
-        "genai",
-        "generative-ai",
-        "information-retrieval",
-        "large-language-models",
-        "llm",
-        "mcp",
-        "multi-agent",
-        "orchestration",
-        "python",
-        "rag",
-        "retrieval-augmented-generation",
-        "semantic-search"
-      ],
-      "created_at": "2019-11-14T09:05:28Z",
-      "pushed_at": "2026-09-28T09:50:31Z",
-      "quick_run": "git clone https://github.com/deepset-ai/haystack",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790587727,
-          "stars": 26622
-        },
-        {
-          "ts": 1790589197,
-          "stars": 26622
-        },
-        {
-          "ts": 1790589549,
-          "stars": 26622
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "mcp-server"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 2510,
-        "authenticity_score": 95,
-        "open_issues": 167,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "HelixDB/helix-db",
-      "name": "helix-db",
-      "url": "https://github.com/HelixDB/helix-db",
-      "description": "HelixDB is an OLTP graph database with native vector and full-text search built in Rust on Object Storage.",
-      "category": "RAG Engines",
-      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
-      "replaces": [
-        "langchain",
-        "llamaindex"
-      ],
-      "language": "Rust",
-      "license": "Apache-2.0",
-      "stars": 6102,
-      "stars_24h": 173,
-      "trending_score": 597,
-      "topics": [
-        "ai",
-        "cli",
-        "database",
-        "databases",
-        "graph-database",
-        "helix",
-        "helixdb",
-        "rag",
-        "rust",
-        "rust-crate",
-        "rust-lang",
-        "vector",
-        "vector-database",
-        "vector-db",
-        "vectorsearch"
-      ],
-      "created_at": "2024-11-23T11:02:14Z",
-      "pushed_at": "2026-09-28T09:56:38Z",
-      "quick_run": "git clone https://github.com/HelixDB/helix-db",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1789756348,
-          "stars": 5929
-        },
-        {
-          "ts": 1790587727,
-          "stars": 6102
-        },
-        {
-          "ts": 1790589197,
-          "stars": 6102
-        },
-        {
-          "ts": 1790589549,
-          "stars": 6102
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "cli"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 673,
-        "authenticity_score": 95,
-        "open_issues": 20,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "ggozad/haiku.rag",
-      "name": "haiku.rag",
-      "url": "https://github.com/ggozad/haiku.rag",
-      "description": "Agentic RAG for local and self-hosted document search: hybrid retrieval, reranking and multimodal RAG on embedded LanceDB, with Docling parsing and an MCP server",
-      "category": "Multi-Agent Frameworks",
-      "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
-      "replaces": [
-        "autogen",
-        "langchain"
-      ],
-      "language": "Python",
-      "license": "MIT",
-      "stars": 611,
-      "stars_24h": 0,
-      "trending_score": 24,
-      "topics": [
-        "ag-ui",
-        "agentic-rag",
-        "code-execution",
-        "code-mode",
-        "cross-encoder",
-        "docling",
-        "document-ai",
-        "document-ingestion",
-        "document-parsing",
-        "hallucination-prevention",
-        "lancedb",
-        "mcp-server",
-        "multimodal-rag",
-        "offline-llm",
-        "pydantic-ai",
-        "rag",
-        "rag-evaluation",
-        "reciprocal-rank-fusion",
-        "reranking"
-      ],
-      "created_at": "2024-10-13T15:12:23Z",
-      "pushed_at": "2026-09-28T09:58:06Z",
-      "quick_run": "git clone https://github.com/ggozad/haiku.rag",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790587727,
-          "stars": 611
-        },
-        {
-          "ts": 1790589197,
-          "stars": 611
-        },
-        {
-          "ts": 1790589549,
-          "stars": 611
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "cli",
-          "service"
-        ],
-        "integrations": [
-          "mcp-server"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [
-          "self-hosted"
-        ],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 714,
-        "authenticity_score": 95,
-        "open_issues": 6,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "comet-ml/opik",
-      "name": "opik",
-      "url": "https://github.com/comet-ml/opik",
-      "description": "Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, automated evaluations, and production-ready dashboards.",
-      "category": "RAG Engines",
-      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
-      "replaces": [
-        "langchain",
-        "llamaindex"
-      ],
-      "language": "Python",
-      "license": "Apache-2.0",
-      "stars": 22270,
-      "stars_24h": 3,
-      "trending_score": 158,
-      "topics": [
-        "evaluation",
-        "hacktoberfest",
-        "hacktoberfest2025",
-        "langchain",
-        "llama-index",
-        "llm",
-        "llm-evaluation",
-        "llm-observability",
-        "llmops",
-        "open-source",
-        "openai",
-        "playground",
-        "prompt-engineering"
-      ],
-      "created_at": "2023-05-10T12:57:13Z",
-      "pushed_at": "2026-09-28T09:58:53Z",
-      "quick_run": "git clone https://github.com/comet-ml/opik",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790587727,
-          "stars": 22267
-        },
-        {
-          "ts": 1790589197,
-          "stars": 22270
-        },
-        {
-          "ts": 1790589549,
-          "stars": 22270
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "orchestrators"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 1236,
-        "authenticity_score": 95,
-        "open_issues": 231,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "cortexkit/aft",
-      "name": "aft",
-      "url": "https://github.com/cortexkit/aft",
-      "description": "Give your agent a proper IDE and OS. The sensorimotor cortex for coding agents (OpenCode + Pi), part of CortexKit: symbol-aware edits, semantic search, code health, fast grep/glob, bash compression, background tasks, PTY.",
+      "full_name": "apache/doris",
+      "name": "doris",
+      "url": "https://github.com/apache/doris",
+      "description": "Apache Doris is a real-time analytics and hybrid search database for AI agents.",
       "category": "Multi-Agent Frameworks",
       "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
@@ -3332,37 +3556,58 @@
         "autogen",
         "langchain"
       ],
-      "language": "Rust",
-      "license": "MIT",
-      "stars": 314,
-      "stars_24h": 0,
-      "trending_score": 17,
+      "language": "Java",
+      "license": "Apache-2.0",
+      "stars": 16006,
+      "stars_24h": 46,
+      "trending_score": 264,
       "topics": [
-        "agent-framework",
+        "agent",
         "ai",
-        "ai-agents",
-        "ai-agents-framework",
-        "opencode",
-        "pi",
-        "pi-coding-agent",
-        "rag",
-        "vector-search"
+        "bigquery",
+        "database",
+        "delta-lake",
+        "hudi",
+        "iceberg",
+        "lakehouse",
+        "observability",
+        "olap",
+        "paimon",
+        "query-engine",
+        "real-time",
+        "redshift",
+        "search",
+        "snowflake",
+        "sql",
+        "vector"
       ],
-      "created_at": "2026-03-15T14:10:55Z",
-      "pushed_at": "2026-09-28T09:39:11Z",
-      "quick_run": "git clone https://github.com/cortexkit/aft",
+      "created_at": "2017-08-10T12:13:30Z",
+      "pushed_at": "2026-09-28T10:01:05Z",
+      "quick_run": "git clone https://github.com/apache/doris",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
       "authenticity_score": 95,
       "star_history": [
         {
+          "ts": 1789756348,
+          "stars": 15960
+        },
+        {
+          "ts": 1790587727,
+          "stars": 16007
+        },
+        {
           "ts": 1790589197,
-          "stars": 314
+          "stars": 16006
         },
         {
           "ts": 1790589549,
-          "stars": 314
+          "stars": 16006
+        },
+        {
+          "ts": 1790589783,
+          "stars": 16006
         }
       ],
       "capabilities": {
@@ -3375,7 +3620,9 @@
         "deployment": [
           "local-only"
         ],
-        "intent_tags": [],
+        "intent_tags": [
+          "real-time"
+        ],
         "hardware": {
           "is_cuda_ready": false,
           "cpu_supported": true,
@@ -3383,11 +3630,11 @@
         }
       },
       "health": {
-        "stage": "active",
+        "stage": "mature",
         "last_push_days": 0,
-        "age_days": 196,
+        "age_days": 3335,
         "authenticity_score": 95,
-        "open_issues": 39,
+        "open_issues": 1355,
         "is_stale": false
       }
     },
@@ -3449,6 +3696,10 @@
         {
           "ts": 1790589549,
           "stars": 12039
+        },
+        {
+          "ts": 1790589783,
+          "stars": 12039
         }
       ],
       "capabilities": {
@@ -3480,46 +3731,43 @@
       }
     },
     {
-      "full_name": "apache/doris",
-      "name": "doris",
-      "url": "https://github.com/apache/doris",
-      "description": "Apache Doris is a real-time analytics and hybrid search database for AI agents.",
-      "category": "Multi-Agent Frameworks",
-      "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+      "full_name": "HelixDB/helix-db",
+      "name": "helix-db",
+      "url": "https://github.com/HelixDB/helix-db",
+      "description": "HelixDB is an OLTP graph database with native vector and full-text search built in Rust on Object Storage.",
+      "category": "RAG Engines",
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
       "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
       "replaces": [
-        "autogen",
-        "langchain"
+        "langchain",
+        "llamaindex"
       ],
-      "language": "Java",
+      "language": "Rust",
       "license": "Apache-2.0",
-      "stars": 16006,
-      "stars_24h": 46,
-      "trending_score": 264,
+      "stars": 6102,
+      "stars_24h": 173,
+      "trending_score": 597,
       "topics": [
-        "agent",
         "ai",
-        "bigquery",
+        "cli",
         "database",
-        "delta-lake",
-        "hudi",
-        "iceberg",
-        "lakehouse",
-        "observability",
-        "olap",
-        "paimon",
-        "query-engine",
-        "real-time",
-        "redshift",
-        "search",
-        "snowflake",
-        "sql",
-        "vector"
+        "databases",
+        "graph-database",
+        "helix",
+        "helixdb",
+        "rag",
+        "rust",
+        "rust-crate",
+        "rust-lang",
+        "vector",
+        "vector-database",
+        "vector-db",
+        "vectorsearch"
       ],
-      "created_at": "2017-08-10T12:13:30Z",
-      "pushed_at": "2026-09-28T09:47:54Z",
-      "quick_run": "git clone https://github.com/apache/doris",
+      "created_at": "2024-11-23T11:02:14Z",
+      "pushed_at": "2026-09-28T09:56:38Z",
+      "quick_run": "git clone https://github.com/HelixDB/helix-db",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
       "is_local_first": true,
@@ -3527,24 +3775,28 @@
       "star_history": [
         {
           "ts": 1789756348,
-          "stars": 15960
+          "stars": 5929
         },
         {
           "ts": 1790587727,
-          "stars": 16007
+          "stars": 6102
         },
         {
           "ts": 1790589197,
-          "stars": 16006
+          "stars": 6102
         },
         {
           "ts": 1790589549,
-          "stars": 16006
+          "stars": 6102
+        },
+        {
+          "ts": 1790589783,
+          "stars": 6102
         }
       ],
       "capabilities": {
         "interaction": [
-          "library"
+          "cli"
         ],
         "integrations": [
           "standalone"
@@ -3552,9 +3804,7 @@
         "deployment": [
           "local-only"
         ],
-        "intent_tags": [
-          "real-time"
-        ],
+        "intent_tags": [],
         "hardware": {
           "is_cuda_ready": false,
           "cpu_supported": true,
@@ -3564,9 +3814,9 @@
       "health": {
         "stage": "mature",
         "last_push_days": 0,
-        "age_days": 3335,
+        "age_days": 673,
         "authenticity_score": 95,
-        "open_issues": 1354,
+        "open_issues": 20,
         "is_stale": false
       }
     },
@@ -3629,6 +3879,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 2020
+        },
+        {
+          "ts": 1790589783,
           "stars": 2020
         }
       ],
@@ -3714,6 +3968,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 129
+        },
+        {
+          "ts": 1790589783,
           "stars": 129
         }
       ],
@@ -3802,6 +4060,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 46270
+        },
+        {
+          "ts": 1790589783,
           "stars": 46270
         }
       ],
@@ -3892,6 +4154,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 40597
+        },
+        {
+          "ts": 1790589783,
           "stars": 40597
         }
       ],
@@ -3984,6 +4250,10 @@
         {
           "ts": 1790589549,
           "stars": 34859
+        },
+        {
+          "ts": 1790589783,
+          "stars": 34859
         }
       ],
       "capabilities": {
@@ -4073,6 +4343,10 @@
         {
           "ts": 1790589549,
           "stars": 1165
+        },
+        {
+          "ts": 1790589783,
+          "stars": 1165
         }
       ],
       "capabilities": {
@@ -4159,6 +4433,10 @@
         {
           "ts": 1790589549,
           "stars": 887
+        },
+        {
+          "ts": 1790589783,
+          "stars": 887
         }
       ],
       "capabilities": {
@@ -4227,7 +4505,7 @@
         "weaviate"
       ],
       "created_at": "2016-03-30T15:03:17Z",
-      "pushed_at": "2026-09-28T09:51:23Z",
+      "pushed_at": "2026-09-28T10:02:09Z",
       "quick_run": "git clone https://github.com/weaviate/weaviate",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -4248,6 +4526,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 16855
+        },
+        {
+          "ts": 1790589783,
           "stars": 16855
         }
       ],
@@ -4273,7 +4555,7 @@
         "last_push_days": 0,
         "age_days": 3833,
         "authenticity_score": 95,
-        "open_issues": 755,
+        "open_issues": 754,
         "is_stale": false
       }
     },
@@ -4312,7 +4594,7 @@
         "vector-databases"
       ],
       "created_at": "2025-10-21T11:31:11Z",
-      "pushed_at": "2026-09-28T09:56:39Z",
+      "pushed_at": "2026-09-28T09:59:37Z",
       "quick_run": "git clone https://github.com/oceanbase/seekdb",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -4329,6 +4611,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 3078
+        },
+        {
+          "ts": 1790589783,
           "stars": 3078
         }
       ],
@@ -4406,6 +4692,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 644
+        },
+        {
+          "ts": 1790589783,
           "stars": 644
         }
       ],
@@ -4494,6 +4784,10 @@
         {
           "ts": 1790589549,
           "stars": 76512
+        },
+        {
+          "ts": 1790589783,
+          "stars": 76512
         }
       ],
       "capabilities": {
@@ -4564,6 +4858,10 @@
         {
           "ts": 1790589549,
           "stars": 101
+        },
+        {
+          "ts": 1790589783,
+          "stars": 101
         }
       ],
       "capabilities": {
@@ -4622,7 +4920,7 @@
         "stable-diffusion"
       ],
       "created_at": "2026-07-05T13:43:17Z",
-      "pushed_at": "2026-09-28T09:55:36Z",
+      "pushed_at": "2026-09-28T10:00:40Z",
       "quick_run": "git clone https://github.com/perfectgf/lora-dataset-studio",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -4643,6 +4941,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 280
+        },
+        {
+          "ts": 1790589783,
           "stars": 280
         }
       ],
@@ -4726,6 +5028,10 @@
         {
           "ts": 1790589549,
           "stars": 1410
+        },
+        {
+          "ts": 1790589783,
+          "stars": 1410
         }
       ],
       "capabilities": {
@@ -4801,6 +5107,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 135295
+        },
+        {
+          "ts": 1790589783,
           "stars": 135295
         }
       ],
@@ -4885,6 +5195,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 257
+        },
+        {
+          "ts": 1790589783,
           "stars": 257
         }
       ],
@@ -4976,6 +5290,10 @@
         {
           "ts": 1790589549,
           "stars": 5694
+        },
+        {
+          "ts": 1790589783,
+          "stars": 5694
         }
       ],
       "capabilities": {
@@ -5058,6 +5376,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 202
+        },
+        {
+          "ts": 1790589783,
           "stars": 202
         }
       ],
@@ -5146,6 +5468,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 323
+        },
+        {
+          "ts": 1790589783,
           "stars": 323
         }
       ],
@@ -5239,6 +5565,10 @@
         {
           "ts": 1790589549,
           "stars": 237
+        },
+        {
+          "ts": 1790589783,
+          "stars": 237
         }
       ],
       "capabilities": {
@@ -5318,6 +5648,10 @@
         {
           "ts": 1790589549,
           "stars": 161
+        },
+        {
+          "ts": 1790589783,
+          "stars": 161
         }
       ],
       "capabilities": {
@@ -5392,6 +5726,10 @@
         {
           "ts": 1790589549,
           "stars": 990
+        },
+        {
+          "ts": 1790589783,
+          "stars": 990
         }
       ],
       "capabilities": {
@@ -5459,6 +5797,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 674
+        },
+        {
+          "ts": 1790589783,
           "stars": 674
         }
       ],
@@ -5530,6 +5872,10 @@
         {
           "ts": 1790589549,
           "stars": 1245
+        },
+        {
+          "ts": 1790589783,
+          "stars": 1245
         }
       ],
       "capabilities": {
@@ -5598,6 +5944,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 3515
+        },
+        {
+          "ts": 1790589783,
           "stars": 3515
         }
       ],
@@ -5673,6 +6023,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 290
+        },
+        {
+          "ts": 1790589783,
           "stars": 290
         }
       ],
@@ -5754,6 +6108,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 4613
+        },
+        {
+          "ts": 1790589783,
           "stars": 4613
         }
       ],
@@ -5841,6 +6199,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 212
+        },
+        {
+          "ts": 1790589783,
           "stars": 212
         }
       ],
@@ -5932,6 +6294,10 @@
         {
           "ts": 1790589549,
           "stars": 288
+        },
+        {
+          "ts": 1790589783,
+          "stars": 288
         }
       ],
       "capabilities": {
@@ -6017,6 +6383,10 @@
         {
           "ts": 1790589549,
           "stars": 1380
+        },
+        {
+          "ts": 1790589783,
+          "stars": 1380
         }
       ],
       "capabilities": {
@@ -6098,6 +6468,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 128
+        },
+        {
+          "ts": 1790589783,
           "stars": 128
         }
       ],
@@ -6189,6 +6563,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 769
+        },
+        {
+          "ts": 1790589783,
           "stars": 769
         }
       ],
@@ -6284,6 +6662,10 @@
         {
           "ts": 1790589549,
           "stars": 111
+        },
+        {
+          "ts": 1790589783,
+          "stars": 111
         }
       ],
       "capabilities": {
@@ -6377,6 +6759,10 @@
         {
           "ts": 1790589549,
           "stars": 12953
+        },
+        {
+          "ts": 1790589783,
+          "stars": 12953
         }
       ],
       "capabilities": {
@@ -6399,7 +6785,7 @@
       "health": {
         "stage": "active",
         "last_push_days": 77,
-        "age_days": 790,
+        "age_days": 791,
         "authenticity_score": 95,
         "open_issues": 60,
         "is_stale": false
@@ -6446,6 +6832,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 674
+        },
+        {
+          "ts": 1790589783,
           "stars": 674
         }
       ],
@@ -6532,6 +6922,10 @@
         {
           "ts": 1790589549,
           "stars": 126
+        },
+        {
+          "ts": 1790589783,
+          "stars": 126
         }
       ],
       "capabilities": {
@@ -6604,6 +6998,10 @@
         {
           "ts": 1790589549,
           "stars": 196
+        },
+        {
+          "ts": 1790589783,
+          "stars": 196
         }
       ],
       "capabilities": {
@@ -6673,6 +7071,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 378
+        },
+        {
+          "ts": 1790589783,
           "stars": 378
         }
       ],
@@ -6765,6 +7167,10 @@
         {
           "ts": 1790589549,
           "stars": 362
+        },
+        {
+          "ts": 1790589783,
+          "stars": 362
         }
       ],
       "capabilities": {
@@ -6841,6 +7247,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 137
+        },
+        {
+          "ts": 1790589783,
           "stars": 137
         }
       ],
@@ -6928,6 +7338,10 @@
         {
           "ts": 1790589549,
           "stars": 787
+        },
+        {
+          "ts": 1790589783,
+          "stars": 787
         }
       ],
       "capabilities": {
@@ -7002,6 +7416,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 145
+        },
+        {
+          "ts": 1790589783,
           "stars": 145
         }
       ],
@@ -7085,6 +7503,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 331
+        },
+        {
+          "ts": 1790589783,
           "stars": 331
         }
       ],
@@ -7176,6 +7598,10 @@
         {
           "ts": 1790589549,
           "stars": 485
+        },
+        {
+          "ts": 1790589783,
+          "stars": 485
         }
       ],
       "capabilities": {
@@ -7258,6 +7684,10 @@
         {
           "ts": 1790589549,
           "stars": 1748
+        },
+        {
+          "ts": 1790589783,
+          "stars": 1748
         }
       ],
       "capabilities": {
@@ -7327,6 +7757,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 2021
+        },
+        {
+          "ts": 1790589783,
           "stars": 2021
         }
       ],
@@ -7419,6 +7853,10 @@
         {
           "ts": 1790589549,
           "stars": 119
+        },
+        {
+          "ts": 1790589783,
+          "stars": 119
         }
       ],
       "capabilities": {
@@ -7502,6 +7940,10 @@
         {
           "ts": 1790589549,
           "stars": 211
+        },
+        {
+          "ts": 1790589783,
+          "stars": 211
         }
       ],
       "capabilities": {
@@ -7581,6 +8023,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 105
+        },
+        {
+          "ts": 1790589783,
           "stars": 105
         }
       ],
@@ -7667,6 +8113,10 @@
         {
           "ts": 1790589549,
           "stars": 109
+        },
+        {
+          "ts": 1790589783,
+          "stars": 109
         }
       ],
       "capabilities": {
@@ -7736,6 +8186,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 129
+        },
+        {
+          "ts": 1790589783,
           "stars": 129
         }
       ],
@@ -7826,6 +8280,10 @@
         {
           "ts": 1790589549,
           "stars": 2370
+        },
+        {
+          "ts": 1790589783,
+          "stars": 2370
         }
       ],
       "capabilities": {
@@ -7901,6 +8359,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 313
+        },
+        {
+          "ts": 1790589783,
           "stars": 313
         }
       ],
@@ -7987,6 +8449,10 @@
         {
           "ts": 1790589549,
           "stars": 2313
+        },
+        {
+          "ts": 1790589783,
+          "stars": 2313
         }
       ],
       "capabilities": {
@@ -8072,6 +8538,10 @@
         {
           "ts": 1790589549,
           "stars": 114
+        },
+        {
+          "ts": 1790589783,
+          "stars": 114
         }
       ],
       "capabilities": {
@@ -8149,6 +8619,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 2189
+        },
+        {
+          "ts": 1790589783,
           "stars": 2189
         }
       ],
@@ -8234,6 +8708,10 @@
         {
           "ts": 1790589549,
           "stars": 215
+        },
+        {
+          "ts": 1790589783,
+          "stars": 215
         }
       ],
       "capabilities": {
@@ -8303,7 +8781,7 @@
         "skills"
       ],
       "created_at": "2026-06-03T11:12:40Z",
-      "pushed_at": "2026-09-28T09:58:47Z",
+      "pushed_at": "2026-09-28T10:02:07Z",
       "quick_run": "git clone https://github.com/inkeep/open-knowledge",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -8324,6 +8802,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 4338
+        },
+        {
+          "ts": 1790589783,
           "stars": 4338
         }
       ],
@@ -8412,6 +8894,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 115
+        },
+        {
+          "ts": 1790589783,
           "stars": 115
         }
       ],
@@ -8505,6 +8991,10 @@
         {
           "ts": 1790589549,
           "stars": 4628
+        },
+        {
+          "ts": 1790589783,
+          "stars": 4628
         }
       ],
       "capabilities": {
@@ -8591,6 +9081,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 151
+        },
+        {
+          "ts": 1790589783,
           "stars": 151
         }
       ],
@@ -8684,6 +9178,10 @@
         {
           "ts": 1790589549,
           "stars": 5890
+        },
+        {
+          "ts": 1790589783,
+          "stars": 5890
         }
       ],
       "capabilities": {
@@ -8771,6 +9269,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 2465
+        },
+        {
+          "ts": 1790589783,
           "stars": 2465
         }
       ],
@@ -8863,6 +9365,10 @@
         {
           "ts": 1790589549,
           "stars": 166
+        },
+        {
+          "ts": 1790589783,
+          "stars": 166
         }
       ],
       "capabilities": {
@@ -8944,6 +9450,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 762
+        },
+        {
+          "ts": 1790589783,
           "stars": 762
         }
       ],
@@ -9033,6 +9543,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 598
+        },
+        {
+          "ts": 1790589783,
           "stars": 598
         }
       ],
@@ -9124,6 +9638,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 15270
+        },
+        {
+          "ts": 1790589783,
           "stars": 15270
         }
       ],
@@ -9217,6 +9735,10 @@
         {
           "ts": 1790589549,
           "stars": 106
+        },
+        {
+          "ts": 1790589783,
+          "stars": 106
         }
       ],
       "capabilities": {
@@ -9307,6 +9829,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 258
+        },
+        {
+          "ts": 1790589783,
           "stars": 258
         }
       ],
@@ -9402,6 +9928,10 @@
         {
           "ts": 1790589549,
           "stars": 675
+        },
+        {
+          "ts": 1790589783,
+          "stars": 675
         }
       ],
       "capabilities": {
@@ -9488,6 +10018,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 388
+        },
+        {
+          "ts": 1790589783,
           "stars": 388
         }
       ],
@@ -9580,6 +10114,10 @@
         {
           "ts": 1790589549,
           "stars": 704
+        },
+        {
+          "ts": 1790589783,
+          "stars": 704
         }
       ],
       "capabilities": {
@@ -9630,7 +10168,7 @@
       "trending_score": 22,
       "topics": [],
       "created_at": "2024-01-22T13:55:34Z",
-      "pushed_at": "2026-09-28T09:46:06Z",
+      "pushed_at": "2026-09-28T10:01:37Z",
       "quick_run": "git clone https://github.com/calimero-network/core",
       "hardware_req": "8GB Unified / Metal",
       "is_cuda_ready": false,
@@ -9651,6 +10189,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 171
+        },
+        {
+          "ts": 1790589783,
           "stars": 171
         }
       ],
@@ -9676,7 +10218,7 @@
         "last_push_days": 0,
         "age_days": 979,
         "authenticity_score": 95,
-        "open_issues": 155,
+        "open_issues": 153,
         "is_stale": false
       }
     },
@@ -9708,7 +10250,7 @@
         "rich-text"
       ],
       "created_at": "2022-07-12T16:48:23Z",
-      "pushed_at": "2026-09-28T09:53:39Z",
+      "pushed_at": "2026-09-28T09:59:57Z",
       "quick_run": "git clone https://github.com/loro-dev/loro",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -9729,6 +10271,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 6171
+        },
+        {
+          "ts": 1790589783,
           "stars": 6171
         }
       ],
@@ -9807,6 +10353,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 250
+        },
+        {
+          "ts": 1790589783,
           "stars": 250
         }
       ],
@@ -9899,6 +10449,10 @@
         {
           "ts": 1790589549,
           "stars": 23393
+        },
+        {
+          "ts": 1790589783,
+          "stars": 23393
         }
       ],
       "capabilities": {
@@ -9983,6 +10537,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 177
+        },
+        {
+          "ts": 1790589783,
           "stars": 177
         }
       ],
@@ -10076,6 +10634,10 @@
         {
           "ts": 1790589549,
           "stars": 201
+        },
+        {
+          "ts": 1790589783,
+          "stars": 201
         }
       ],
       "capabilities": {
@@ -10153,6 +10715,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 1899
+        },
+        {
+          "ts": 1790589783,
           "stars": 1899
         }
       ],
@@ -10244,6 +10810,10 @@
         {
           "ts": 1790589549,
           "stars": 682
+        },
+        {
+          "ts": 1790589783,
+          "stars": 682
         }
       ],
       "capabilities": {
@@ -10328,6 +10898,10 @@
         {
           "ts": 1790589549,
           "stars": 1929
+        },
+        {
+          "ts": 1790589783,
+          "stars": 1929
         }
       ],
       "capabilities": {
@@ -10405,6 +10979,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 573
+        },
+        {
+          "ts": 1790589783,
           "stars": 573
         }
       ],
@@ -10489,6 +11067,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 5179
+        },
+        {
+          "ts": 1790589783,
           "stars": 5179
         }
       ],
@@ -10576,6 +11158,10 @@
         {
           "ts": 1790589549,
           "stars": 6027
+        },
+        {
+          "ts": 1790589783,
+          "stars": 6027
         }
       ],
       "capabilities": {
@@ -10659,6 +11245,10 @@
         {
           "ts": 1790589549,
           "stars": 117
+        },
+        {
+          "ts": 1790589783,
+          "stars": 117
         }
       ],
       "capabilities": {
@@ -10739,6 +11329,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 667
+        },
+        {
+          "ts": 1790589783,
           "stars": 667
         }
       ],
@@ -10833,6 +11427,10 @@
         {
           "ts": 1790589549,
           "stars": 1093
+        },
+        {
+          "ts": 1790589783,
+          "stars": 1093
         }
       ],
       "capabilities": {
@@ -10916,6 +11514,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 4732
+        },
+        {
+          "ts": 1790589783,
           "stars": 4732
         }
       ],
@@ -11007,6 +11609,10 @@
         {
           "ts": 1790589549,
           "stars": 110
+        },
+        {
+          "ts": 1790589783,
+          "stars": 110
         }
       ],
       "capabilities": {
@@ -11097,6 +11703,10 @@
         {
           "ts": 1790589549,
           "stars": 340
+        },
+        {
+          "ts": 1790589783,
+          "stars": 340
         }
       ],
       "capabilities": {
@@ -11176,6 +11786,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 654
+        },
+        {
+          "ts": 1790589783,
           "stars": 654
         }
       ],
@@ -11263,6 +11877,10 @@
         {
           "ts": 1790589549,
           "stars": 131
+        },
+        {
+          "ts": 1790589783,
+          "stars": 131
         }
       ],
       "capabilities": {
@@ -11306,9 +11924,9 @@
       ],
       "language": "TypeScript",
       "license": "NOASSERTION",
-      "stars": 10970,
-      "stars_24h": 62,
-      "trending_score": 290,
+      "stars": 10971,
+      "stars_24h": 63,
+      "trending_score": 293,
       "topics": [
         "cli",
         "debug",
@@ -11340,6 +11958,10 @@
         {
           "ts": 1790589549,
           "stars": 10970
+        },
+        {
+          "ts": 1790589783,
+          "stars": 10971
         }
       ],
       "capabilities": {
@@ -11426,6 +12048,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 530
+        },
+        {
+          "ts": 1790589783,
           "stars": 530
         }
       ],
@@ -11517,6 +12143,10 @@
         {
           "ts": 1790589549,
           "stars": 7965
+        },
+        {
+          "ts": 1790589783,
+          "stars": 7965
         }
       ],
       "capabilities": {
@@ -11606,6 +12236,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 432
+        },
+        {
+          "ts": 1790589783,
           "stars": 432
         }
       ],
@@ -11698,6 +12332,10 @@
         {
           "ts": 1790589549,
           "stars": 1112
+        },
+        {
+          "ts": 1790589783,
+          "stars": 1112
         }
       ],
       "capabilities": {
@@ -11788,6 +12426,10 @@
         {
           "ts": 1790589549,
           "stars": 5009
+        },
+        {
+          "ts": 1790589783,
+          "stars": 5009
         }
       ],
       "capabilities": {
@@ -11856,6 +12498,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 110
+        },
+        {
+          "ts": 1790589783,
           "stars": 110
         }
       ],
@@ -11943,6 +12589,10 @@
         {
           "ts": 1790589549,
           "stars": 3363
+        },
+        {
+          "ts": 1790589783,
+          "stars": 3363
         }
       ],
       "capabilities": {
@@ -12016,6 +12666,10 @@
         {
           "ts": 1790589549,
           "stars": 146
+        },
+        {
+          "ts": 1790589783,
+          "stars": 146
         }
       ],
       "capabilities": {
@@ -12088,6 +12742,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 1063
+        },
+        {
+          "ts": 1790589783,
           "stars": 1063
         }
       ],

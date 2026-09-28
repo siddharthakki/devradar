@@ -1,8 +1,92 @@
 {
   "category": "RAG Engines",
-  "count": 9,
-  "updated_at": "2026-09-28T09:59:30.001055+00:00",
+  "count": 8,
+  "updated_at": "2026-09-28T10:03:03.917467+00:00",
   "repositories": [
+    {
+      "full_name": "comet-ml/opik",
+      "name": "opik",
+      "url": "https://github.com/comet-ml/opik",
+      "description": "Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, automated evaluations, and production-ready dashboards.",
+      "category": "RAG Engines",
+      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
+      "replaces": [
+        "langchain",
+        "llamaindex"
+      ],
+      "language": "Python",
+      "license": "Apache-2.0",
+      "stars": 22271,
+      "stars_24h": 4,
+      "trending_score": 161,
+      "topics": [
+        "evaluation",
+        "hacktoberfest",
+        "hacktoberfest2025",
+        "langchain",
+        "llama-index",
+        "llm",
+        "llm-evaluation",
+        "llm-observability",
+        "llmops",
+        "open-source",
+        "openai",
+        "playground",
+        "prompt-engineering"
+      ],
+      "created_at": "2023-05-10T12:57:13Z",
+      "pushed_at": "2026-09-28T09:58:53Z",
+      "quick_run": "git clone https://github.com/comet-ml/opik",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790587727,
+          "stars": 22267
+        },
+        {
+          "ts": 1790589197,
+          "stars": 22270
+        },
+        {
+          "ts": 1790589549,
+          "stars": 22270
+        },
+        {
+          "ts": 1790589783,
+          "stars": 22271
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "orchestrators"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 1236,
+        "authenticity_score": 95,
+        "open_issues": 231,
+        "is_stale": false
+      }
+    },
     {
       "full_name": "linagora/openrag",
       "name": "openrag",
@@ -32,6 +116,10 @@
       "star_history": [
         {
           "ts": 1790589549,
+          "stars": 248
+        },
+        {
+          "ts": 1790589783,
           "stars": 248
         }
       ],
@@ -120,6 +208,10 @@
         {
           "ts": 1790589549,
           "stars": 5185
+        },
+        {
+          "ts": 1790589783,
+          "stars": 5185
         }
       ],
       "capabilities": {
@@ -145,93 +237,6 @@
         "age_days": 468,
         "authenticity_score": 95,
         "open_issues": 111,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "deepset-ai/haystack",
-      "name": "haystack",
-      "url": "https://github.com/deepset-ai/haystack",
-      "description": "Open-source AI orchestration framework for building context-engineered, production-ready LLM applications. Design modular pipelines and agent workflows with explicit control over retrieval, routing, memory, and generation. Built for scalable agents, RAG, multimodal applications, semantic search, and conversational systems.",
-      "category": "RAG Engines",
-      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
-      "replaces": [
-        "langchain",
-        "llamaindex"
-      ],
-      "language": "Python",
-      "license": "Apache-2.0",
-      "stars": 26622,
-      "stars_24h": 0,
-      "trending_score": 163,
-      "topics": [
-        "agent-framework",
-        "agentic-ai",
-        "agentic-rag",
-        "agents",
-        "ai",
-        "ai-agents",
-        "context-engineering",
-        "framework",
-        "genai",
-        "generative-ai",
-        "information-retrieval",
-        "large-language-models",
-        "llm",
-        "mcp",
-        "multi-agent",
-        "orchestration",
-        "python",
-        "rag",
-        "retrieval-augmented-generation",
-        "semantic-search"
-      ],
-      "created_at": "2019-11-14T09:05:28Z",
-      "pushed_at": "2026-09-28T09:50:31Z",
-      "quick_run": "git clone https://github.com/deepset-ai/haystack",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790587727,
-          "stars": 26622
-        },
-        {
-          "ts": 1790589197,
-          "stars": 26622
-        },
-        {
-          "ts": 1790589549,
-          "stars": 26622
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "mcp-server"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 2510,
-        "authenticity_score": 95,
-        "open_issues": 167,
         "is_stale": false
       }
     },
@@ -293,6 +298,10 @@
         {
           "ts": 1790589549,
           "stars": 6102
+        },
+        {
+          "ts": 1790589783,
+          "stars": 6102
         }
       ],
       "capabilities": {
@@ -318,86 +327,6 @@
         "age_days": 673,
         "authenticity_score": 95,
         "open_issues": 20,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "comet-ml/opik",
-      "name": "opik",
-      "url": "https://github.com/comet-ml/opik",
-      "description": "Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, automated evaluations, and production-ready dashboards.",
-      "category": "RAG Engines",
-      "verdict": "Retrieval pipeline built for hybrid search and context-augmented generation.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "comparison": "Alternative to LangChain RAG (Focused retrieval pipeline)",
-      "replaces": [
-        "langchain",
-        "llamaindex"
-      ],
-      "language": "Python",
-      "license": "Apache-2.0",
-      "stars": 22270,
-      "stars_24h": 3,
-      "trending_score": 158,
-      "topics": [
-        "evaluation",
-        "hacktoberfest",
-        "hacktoberfest2025",
-        "langchain",
-        "llama-index",
-        "llm",
-        "llm-evaluation",
-        "llm-observability",
-        "llmops",
-        "open-source",
-        "openai",
-        "playground",
-        "prompt-engineering"
-      ],
-      "created_at": "2023-05-10T12:57:13Z",
-      "pushed_at": "2026-09-28T09:58:53Z",
-      "quick_run": "git clone https://github.com/comet-ml/opik",
-      "hardware_req": "Minimal CPU",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790587727,
-          "stars": 22267
-        },
-        {
-          "ts": 1790589197,
-          "stars": 22270
-        },
-        {
-          "ts": 1790589549,
-          "stars": 22270
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "orchestrators"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "Minimal CPU"
-        }
-      },
-      "health": {
-        "stage": "mature",
-        "last_push_days": 0,
-        "age_days": 1236,
-        "authenticity_score": 95,
-        "open_issues": 231,
         "is_stale": false
       }
     },
@@ -441,7 +370,7 @@
         "weaviate"
       ],
       "created_at": "2016-03-30T15:03:17Z",
-      "pushed_at": "2026-09-28T09:51:23Z",
+      "pushed_at": "2026-09-28T10:02:09Z",
       "quick_run": "git clone https://github.com/weaviate/weaviate",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -462,6 +391,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 16855
+        },
+        {
+          "ts": 1790589783,
           "stars": 16855
         }
       ],
@@ -487,7 +420,7 @@
         "last_push_days": 0,
         "age_days": 3833,
         "authenticity_score": 95,
-        "open_issues": 755,
+        "open_issues": 754,
         "is_stale": false
       }
     },
@@ -526,7 +459,7 @@
         "vector-databases"
       ],
       "created_at": "2025-10-21T11:31:11Z",
-      "pushed_at": "2026-09-28T09:56:39Z",
+      "pushed_at": "2026-09-28T09:59:37Z",
       "quick_run": "git clone https://github.com/oceanbase/seekdb",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -543,6 +476,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 3078
+        },
+        {
+          "ts": 1790589783,
           "stars": 3078
         }
       ],
@@ -632,6 +569,10 @@
         {
           "ts": 1790589549,
           "stars": 115
+        },
+        {
+          "ts": 1790589783,
+          "stars": 115
         }
       ],
       "capabilities": {
@@ -719,6 +660,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 151
+        },
+        {
+          "ts": 1790589783,
           "stars": 151
         }
       ],

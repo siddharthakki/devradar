@@ -1,7 +1,7 @@
 {
   "category": "CLI & TUI Tooling",
-  "count": 17,
-  "updated_at": "2026-09-28T09:59:30.001055+00:00",
+  "count": 18,
+  "updated_at": "2026-09-28T10:03:03.917467+00:00",
   "repositories": [
     {
       "full_name": "minipuft/claude-prompts-mcp",
@@ -49,6 +49,10 @@
         {
           "ts": 1790589549,
           "stars": 187
+        },
+        {
+          "ts": 1790589783,
+          "stars": 187
         }
       ],
       "capabilities": {
@@ -75,6 +79,86 @@
         "age_days": 574,
         "authenticity_score": 95,
         "open_issues": 8,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "1ay1/agentty",
+      "name": "agentty",
+      "url": "https://github.com/1ay1/agentty",
+      "description": "AI pair programming in your terminal \u2014 one static binary, sub-ms startup, any model",
+      "category": "CLI & TUI Tooling",
+      "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+      "replaces": [
+        "gui"
+      ],
+      "language": "C++",
+      "license": "MIT",
+      "stars": 614,
+      "stars_24h": 0,
+      "trending_score": 24,
+      "topics": [
+        "agentic-coding",
+        "ai-agent",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "claude-code-alternative",
+        "cli",
+        "coding-agent",
+        "cpp",
+        "developer-tools",
+        "llm",
+        "mcp",
+        "ollama",
+        "openai",
+        "rag",
+        "retrieval-augmented-generation",
+        "sandbox",
+        "static-binary",
+        "terminal",
+        "tui"
+      ],
+      "created_at": "2026-04-17T12:44:40Z",
+      "pushed_at": "2026-09-28T09:59:45Z",
+      "quick_run": "git clone https://github.com/1ay1/agentty",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589783,
+          "stars": 614
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "cli"
+        ],
+        "integrations": [
+          "mcp-server"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [
+          "drop-in-replacement"
+        ],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 163,
+        "authenticity_score": 95,
+        "open_issues": 0,
         "is_stale": false
       }
     },
@@ -134,6 +218,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 129
+        },
+        {
+          "ts": 1790589783,
           "stars": 129
         }
       ],
@@ -225,6 +313,10 @@
         {
           "ts": 1790589549,
           "stars": 682
+        },
+        {
+          "ts": 1790589783,
+          "stars": 682
         }
       ],
       "capabilities": {
@@ -311,6 +403,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 4732
+        },
+        {
+          "ts": 1790589783,
           "stars": 4732
         }
       ],
@@ -402,6 +498,10 @@
         {
           "ts": 1790589549,
           "stars": 110
+        },
+        {
+          "ts": 1790589783,
+          "stars": 110
         }
       ],
       "capabilities": {
@@ -492,6 +592,10 @@
         {
           "ts": 1790589549,
           "stars": 340
+        },
+        {
+          "ts": 1790589783,
+          "stars": 340
         }
       ],
       "capabilities": {
@@ -571,6 +675,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 654
+        },
+        {
+          "ts": 1790589783,
           "stars": 654
         }
       ],
@@ -658,6 +766,10 @@
         {
           "ts": 1790589549,
           "stars": 131
+        },
+        {
+          "ts": 1790589783,
+          "stars": 131
         }
       ],
       "capabilities": {
@@ -701,9 +813,9 @@
       ],
       "language": "TypeScript",
       "license": "NOASSERTION",
-      "stars": 10970,
-      "stars_24h": 62,
-      "trending_score": 290,
+      "stars": 10971,
+      "stars_24h": 63,
+      "trending_score": 293,
       "topics": [
         "cli",
         "debug",
@@ -735,6 +847,10 @@
         {
           "ts": 1790589549,
           "stars": 10970
+        },
+        {
+          "ts": 1790589783,
+          "stars": 10971
         }
       ],
       "capabilities": {
@@ -821,6 +937,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 530
+        },
+        {
+          "ts": 1790589783,
           "stars": 530
         }
       ],
@@ -912,6 +1032,10 @@
         {
           "ts": 1790589549,
           "stars": 7965
+        },
+        {
+          "ts": 1790589783,
+          "stars": 7965
         }
       ],
       "capabilities": {
@@ -1001,6 +1125,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 1112
+        },
+        {
+          "ts": 1790589783,
           "stars": 1112
         }
       ],
@@ -1092,6 +1220,10 @@
         {
           "ts": 1790589549,
           "stars": 5009
+        },
+        {
+          "ts": 1790589783,
+          "stars": 5009
         }
       ],
       "capabilities": {
@@ -1160,6 +1292,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 110
+        },
+        {
+          "ts": 1790589783,
           "stars": 110
         }
       ],
@@ -1247,6 +1383,10 @@
         {
           "ts": 1790589549,
           "stars": 3363
+        },
+        {
+          "ts": 1790589783,
+          "stars": 3363
         }
       ],
       "capabilities": {
@@ -1320,6 +1460,10 @@
         {
           "ts": 1790589549,
           "stars": 146
+        },
+        {
+          "ts": 1790589783,
+          "stars": 146
         }
       ],
       "capabilities": {
@@ -1392,6 +1536,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 1063
+        },
+        {
+          "ts": 1790589783,
           "stars": 1063
         }
       ],

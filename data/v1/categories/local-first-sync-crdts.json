@@ -1,7 +1,7 @@
 {
   "category": "Local-First Sync & CRDTs",
   "count": 14,
-  "updated_at": "2026-09-28T09:59:30.001055+00:00",
+  "updated_at": "2026-09-28T10:03:03.917467+00:00",
   "repositories": [
     {
       "full_name": "calimero-network/core",
@@ -23,7 +23,7 @@
       "trending_score": 22,
       "topics": [],
       "created_at": "2024-01-22T13:55:34Z",
-      "pushed_at": "2026-09-28T09:46:06Z",
+      "pushed_at": "2026-09-28T10:01:37Z",
       "quick_run": "git clone https://github.com/calimero-network/core",
       "hardware_req": "8GB Unified / Metal",
       "is_cuda_ready": false,
@@ -44,6 +44,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 171
+        },
+        {
+          "ts": 1790589783,
           "stars": 171
         }
       ],
@@ -69,7 +73,7 @@
         "last_push_days": 0,
         "age_days": 979,
         "authenticity_score": 95,
-        "open_issues": 155,
+        "open_issues": 153,
         "is_stale": false
       }
     },
@@ -101,7 +105,7 @@
         "rich-text"
       ],
       "created_at": "2022-07-12T16:48:23Z",
-      "pushed_at": "2026-09-28T09:53:39Z",
+      "pushed_at": "2026-09-28T09:59:57Z",
       "quick_run": "git clone https://github.com/loro-dev/loro",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -122,6 +126,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 6171
+        },
+        {
+          "ts": 1790589783,
           "stars": 6171
         }
       ],
@@ -200,6 +208,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 250
+        },
+        {
+          "ts": 1790589783,
           "stars": 250
         }
       ],
@@ -292,6 +304,10 @@
         {
           "ts": 1790589549,
           "stars": 23393
+        },
+        {
+          "ts": 1790589783,
+          "stars": 23393
         }
       ],
       "capabilities": {
@@ -376,6 +392,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 177
+        },
+        {
+          "ts": 1790589783,
           "stars": 177
         }
       ],
@@ -469,6 +489,10 @@
         {
           "ts": 1790589549,
           "stars": 201
+        },
+        {
+          "ts": 1790589783,
+          "stars": 201
         }
       ],
       "capabilities": {
@@ -546,6 +570,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 1899
+        },
+        {
+          "ts": 1790589783,
           "stars": 1899
         }
       ],
@@ -626,6 +654,10 @@
         {
           "ts": 1790589549,
           "stars": 1929
+        },
+        {
+          "ts": 1790589783,
+          "stars": 1929
         }
       ],
       "capabilities": {
@@ -703,6 +735,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 573
+        },
+        {
+          "ts": 1790589783,
           "stars": 573
         }
       ],
@@ -787,6 +823,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 5179
+        },
+        {
+          "ts": 1790589783,
           "stars": 5179
         }
       ],
@@ -874,6 +914,10 @@
         {
           "ts": 1790589549,
           "stars": 6027
+        },
+        {
+          "ts": 1790589783,
+          "stars": 6027
         }
       ],
       "capabilities": {
@@ -957,6 +1001,10 @@
         {
           "ts": 1790589549,
           "stars": 117
+        },
+        {
+          "ts": 1790589783,
+          "stars": 117
         }
       ],
       "capabilities": {
@@ -1037,6 +1085,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 667
+        },
+        {
+          "ts": 1790589783,
           "stars": 667
         }
       ],
@@ -1130,6 +1182,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 1093
+        },
+        {
+          "ts": 1790589783,
           "stars": 1093
         }
       ],

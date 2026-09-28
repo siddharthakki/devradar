@@ -1294,5 +1294,67 @@
     "replaces": [
       "gui"
     ]
+  },
+  "open-multi-agent/open-multi-agent": {
+    "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+    "replaces": [
+      "autogen",
+      "langchain"
+    ]
+  },
+  "agentconnect-md/agentconnect": {
+    "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+    "replaces": [
+      "autogen",
+      "langchain"
+    ]
+  },
+  "Cotal-AI/Cotal": {
+    "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+    "replaces": [
+      "autogen",
+      "langchain"
+    ]
+  },
+  "himovo/movo": {
+    "verdict": "Modern agentic framework with Model Context Protocol (MCP) tool-calling integration.",
+    "gotchas": "Fast-evolving experimental codebase (<60 days old); expect API surface shifts.",
+    "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+    "replaces": [
+      "autogen",
+      "langchain"
+    ]
+  },
+  "modelscope/evalscope": {
+    "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+    "replaces": [
+      "ollama",
+      "vllm"
+    ]
+  },
+  "promptfoo/promptfoo": {
+    "verdict": "Orchestration engine for multi-agent workflows and autonomous tool coordination.",
+    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "comparison": "Alternative to AutoGen & LangChain (Specialized agent coordinator)",
+    "replaces": [
+      "autogen",
+      "langchain"
+    ]
+  },
+  "1ay1/agentty": {
+    "verdict": "Keyboard-driven terminal utility built for fast, scriptable developer workflows.",
+    "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+    "comparison": "Alternative to GUI Utilities (Keyboard-driven terminal tool)",
+    "replaces": [
+      "gui"
+    ]
   }
 }

@@ -1,8 +1,88 @@
 {
   "category": "Local LLM Engines",
-  "count": 23,
-  "updated_at": "2026-09-28T09:59:30.001055+00:00",
+  "count": 24,
+  "updated_at": "2026-09-28T10:03:03.917467+00:00",
   "repositories": [
+    {
+      "full_name": "Helldez/BigMoeOnEdge",
+      "name": "BigMoeOnEdge",
+      "url": "https://github.com/Helldez/BigMoeOnEdge",
+      "description": "Run MoE models bigger than your RAM. Frontier-size MoE on a 12 GB phone, lossless, on stock llama.cpp",
+      "category": "Local LLM Engines",
+      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
+      "language": "C++",
+      "license": "Apache-2.0",
+      "stars": 595,
+      "stars_24h": 0,
+      "trending_score": 24,
+      "topics": [
+        "android",
+        "cpp",
+        "edge-ai",
+        "gemma",
+        "gguf",
+        "gpt-oss",
+        "inference",
+        "llama-cpp",
+        "llm",
+        "mixture-of-experts",
+        "moe",
+        "on-device-ai",
+        "qwen"
+      ],
+      "created_at": "2026-07-10T16:19:44Z",
+      "pushed_at": "2026-09-28T10:02:16Z",
+      "quick_run": "git clone https://github.com/Helldez/BigMoeOnEdge",
+      "hardware_req": "8GB Unified / Metal",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589197,
+          "stars": 595
+        },
+        {
+          "ts": 1790589549,
+          "stars": 595
+        },
+        {
+          "ts": 1790589783,
+          "stars": 595
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "8GB Unified / Metal"
+        }
+      },
+      "health": {
+        "stage": "active",
+        "last_push_days": 0,
+        "age_days": 79,
+        "authenticity_score": 95,
+        "open_issues": 28,
+        "is_stale": false
+      }
+    },
     {
       "full_name": "brycewang-stanford/StatsPAI",
       "name": "StatsPAI",
@@ -53,6 +133,10 @@
       "star_history": [
         {
           "ts": 1790589549,
+          "stars": 326
+        },
+        {
+          "ts": 1790589783,
           "stars": 326
         }
       ],
@@ -144,6 +228,10 @@
         {
           "ts": 1790589549,
           "stars": 36517
+        },
+        {
+          "ts": 1790589783,
+          "stars": 36517
         }
       ],
       "capabilities": {
@@ -229,6 +317,10 @@
         {
           "ts": 1790589549,
           "stars": 5766
+        },
+        {
+          "ts": 1790589783,
+          "stars": 5766
         }
       ],
       "capabilities": {
@@ -300,6 +392,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 1220
+        },
+        {
+          "ts": 1790589783,
           "stars": 1220
         }
       ],
@@ -379,6 +475,10 @@
         {
           "ts": 1790589549,
           "stars": 5952
+        },
+        {
+          "ts": 1790589783,
+          "stars": 5952
         }
       ],
       "capabilities": {
@@ -404,82 +504,6 @@
         "age_days": 397,
         "authenticity_score": 95,
         "open_issues": 556,
-        "is_stale": false
-      }
-    },
-    {
-      "full_name": "Helldez/BigMoeOnEdge",
-      "name": "BigMoeOnEdge",
-      "url": "https://github.com/Helldez/BigMoeOnEdge",
-      "description": "Run MoE models bigger than your RAM. Frontier-size MoE on a 12 GB phone, lossless, on stock llama.cpp",
-      "category": "Local LLM Engines",
-      "verdict": "Optimized for Apple Silicon unified memory; ideal for local on-device inference.",
-      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
-      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
-      "replaces": [
-        "ollama",
-        "vllm"
-      ],
-      "language": "C++",
-      "license": "Apache-2.0",
-      "stars": 595,
-      "stars_24h": 0,
-      "trending_score": 24,
-      "topics": [
-        "android",
-        "cpp",
-        "edge-ai",
-        "gemma",
-        "gguf",
-        "gpt-oss",
-        "inference",
-        "llama-cpp",
-        "llm",
-        "mixture-of-experts",
-        "moe",
-        "on-device-ai",
-        "qwen"
-      ],
-      "created_at": "2026-07-10T16:19:44Z",
-      "pushed_at": "2026-09-28T09:53:50Z",
-      "quick_run": "git clone https://github.com/Helldez/BigMoeOnEdge",
-      "hardware_req": "8GB Unified / Metal",
-      "is_cuda_ready": false,
-      "is_local_first": true,
-      "authenticity_score": 95,
-      "star_history": [
-        {
-          "ts": 1790589197,
-          "stars": 595
-        },
-        {
-          "ts": 1790589549,
-          "stars": 595
-        }
-      ],
-      "capabilities": {
-        "interaction": [
-          "library"
-        ],
-        "integrations": [
-          "standalone"
-        ],
-        "deployment": [
-          "local-only"
-        ],
-        "intent_tags": [],
-        "hardware": {
-          "is_cuda_ready": false,
-          "cpu_supported": true,
-          "floor": "8GB Unified / Metal"
-        }
-      },
-      "health": {
-        "stage": "active",
-        "last_push_days": 0,
-        "age_days": 79,
-        "authenticity_score": 95,
-        "open_issues": 29,
         "is_stale": false
       }
     },
@@ -531,6 +555,10 @@
         {
           "ts": 1790589549,
           "stars": 2899
+        },
+        {
+          "ts": 1790589783,
+          "stars": 2899
         }
       ],
       "capabilities": {
@@ -574,9 +602,9 @@
       ],
       "language": "C++",
       "license": "MIT",
-      "stars": 129751,
-      "stars_24h": 1049,
-      "trending_score": 3507,
+      "stars": 129753,
+      "stars_24h": 1051,
+      "trending_score": 3513,
       "topics": [
         "ggml"
       ],
@@ -599,6 +627,10 @@
         {
           "ts": 1790589549,
           "stars": 129751
+        },
+        {
+          "ts": 1790589783,
+          "stars": 129753
         }
       ],
       "capabilities": {
@@ -675,6 +707,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 6676
+        },
+        {
+          "ts": 1790589783,
           "stars": 6676
         }
       ],
@@ -758,6 +794,10 @@
         {
           "ts": 1790589549,
           "stars": 1663
+        },
+        {
+          "ts": 1790589783,
+          "stars": 1663
         }
       ],
       "capabilities": {
@@ -820,6 +860,10 @@
         {
           "ts": 1790589549,
           "stars": 4981
+        },
+        {
+          "ts": 1790589783,
+          "stars": 4981
         }
       ],
       "capabilities": {
@@ -863,9 +907,9 @@
       ],
       "language": "Python",
       "license": "Apache-2.0",
-      "stars": 6829,
-      "stars_24h": 3282,
-      "trending_score": 9928,
+      "stars": 6834,
+      "stars_24h": 3287,
+      "trending_score": 9943,
       "topics": [
         "agent-infrastructure",
         "ai-agents",
@@ -899,6 +943,10 @@
         {
           "ts": 1790589549,
           "stars": 6829
+        },
+        {
+          "ts": 1790589783,
+          "stars": 6834
         }
       ],
       "capabilities": {
@@ -990,6 +1038,10 @@
         {
           "ts": 1790589549,
           "stars": 92851
+        },
+        {
+          "ts": 1790589783,
+          "stars": 92851
         }
       ],
       "capabilities": {
@@ -1014,7 +1066,7 @@
         "last_push_days": 0,
         "age_days": 1326,
         "authenticity_score": 95,
-        "open_issues": 8338,
+        "open_issues": 8335,
         "is_stale": false
       }
     },
@@ -1075,6 +1127,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 2885
+        },
+        {
+          "ts": 1790589783,
           "stars": 2885
         }
       ],
@@ -1153,6 +1209,10 @@
         {
           "ts": 1790589549,
           "stars": 623
+        },
+        {
+          "ts": 1790589783,
+          "stars": 623
         }
       ],
       "capabilities": {
@@ -1178,6 +1238,70 @@
         "age_days": 1586,
         "authenticity_score": 95,
         "open_issues": 204,
+        "is_stale": false
+      }
+    },
+    {
+      "full_name": "modelscope/evalscope",
+      "name": "evalscope",
+      "url": "https://github.com/modelscope/evalscope",
+      "description": "A streamlined and customizable framework for efficient large model (LLM, VLM, AIGC) evaluation and performance benchmarking.",
+      "category": "Local LLM Engines",
+      "verdict": "Zero-cloud inference runner designed for private, offline execution.",
+      "gotchas": "Minimal hardware footprint; verify compatibility with your target language stack.",
+      "comparison": "Alternative to Ollama & vLLM (Self-hosted LLM runtime)",
+      "replaces": [
+        "ollama",
+        "vllm"
+      ],
+      "language": "Python",
+      "license": "Apache-2.0",
+      "stars": 3475,
+      "stars_24h": 0,
+      "trending_score": 58,
+      "topics": [
+        "evaluation",
+        "llm",
+        "performance",
+        "rag",
+        "vlm"
+      ],
+      "created_at": "2023-12-07T06:10:49Z",
+      "pushed_at": "2026-09-28T10:01:42Z",
+      "quick_run": "git clone https://github.com/modelscope/evalscope",
+      "hardware_req": "Minimal CPU",
+      "is_cuda_ready": false,
+      "is_local_first": true,
+      "authenticity_score": 95,
+      "star_history": [
+        {
+          "ts": 1790589783,
+          "stars": 3475
+        }
+      ],
+      "capabilities": {
+        "interaction": [
+          "library"
+        ],
+        "integrations": [
+          "standalone"
+        ],
+        "deployment": [
+          "local-only"
+        ],
+        "intent_tags": [],
+        "hardware": {
+          "is_cuda_ready": false,
+          "cpu_supported": true,
+          "floor": "Minimal CPU"
+        }
+      },
+      "health": {
+        "stage": "mature",
+        "last_push_days": 0,
+        "age_days": 1026,
+        "authenticity_score": 95,
+        "open_issues": 48,
         "is_stale": false
       }
     },
@@ -1221,6 +1345,10 @@
       "star_history": [
         {
           "ts": 1790589549,
+          "stars": 1509
+        },
+        {
+          "ts": 1790589783,
           "stars": 1509
         }
       ],
@@ -1292,7 +1420,7 @@
         "workflow"
       ],
       "created_at": "2023-04-12T07:40:24Z",
-      "pushed_at": "2026-09-28T09:50:49Z",
+      "pushed_at": "2026-09-28T09:59:09Z",
       "quick_run": "git clone https://github.com/langgenius/dify",
       "hardware_req": "Minimal CPU",
       "is_cuda_ready": false,
@@ -1313,6 +1441,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 157389
+        },
+        {
+          "ts": 1790589783,
           "stars": 157389
         }
       ],
@@ -1404,6 +1536,10 @@
         {
           "ts": 1790589549,
           "stars": 485
+        },
+        {
+          "ts": 1790589783,
+          "stars": 485
         }
       ],
       "capabilities": {
@@ -1485,6 +1621,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 1748
+        },
+        {
+          "ts": 1790589783,
           "stars": 1748
         }
       ],
@@ -1569,6 +1709,10 @@
         {
           "ts": 1790589549,
           "stars": 211
+        },
+        {
+          "ts": 1790589783,
+          "stars": 211
         }
       ],
       "capabilities": {
@@ -1639,6 +1783,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 129
+        },
+        {
+          "ts": 1790589783,
           "stars": 129
         }
       ],
@@ -1729,6 +1877,10 @@
         {
           "ts": 1790589549,
           "stars": 2370
+        },
+        {
+          "ts": 1790589783,
+          "stars": 2370
         }
       ],
       "capabilities": {
@@ -1818,6 +1970,10 @@
         },
         {
           "ts": 1790589549,
+          "stars": 432
+        },
+        {
+          "ts": 1790589783,
           "stars": 432
         }
       ],
